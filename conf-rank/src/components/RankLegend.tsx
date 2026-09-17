@@ -52,63 +52,63 @@ export default function RankLegend() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mb-6 rounded-xl border border-neutral-200 bg-white p-4 shadow-xs
-                    dark:border-neutral-800 dark:bg-neutral-900">
+    <div className="mb-6 rounded-xl border border-stone-200 bg-surface p-4 shadow-xs
+                    dark:border-stone-800 dark:bg-surface">
       <div className="flex items-center justify-between">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+          <span className="text-xs font-bold uppercase tracking-wider text-muted">
             Rank Guide & Color Legend:
           </span>
           <div className="flex flex-wrap items-center gap-1.5">
             <span className="inline-flex items-center gap-1 text-xs">
               <RankBadge rank="A*" size="sm" />
-              <span className="text-neutral-600 dark:text-neutral-300 font-medium">Flagship (top 7.5%)</span>
+              <span className="text-stone-700 dark:text-stone-300 font-medium">Flagship (top 7.5%)</span>
             </span>
-            <span className="text-neutral-300 dark:text-neutral-700">·</span>
+            <span className="text-stone-300 dark:text-stone-700">·</span>
             <span className="inline-flex items-center gap-1 text-xs">
               <RankBadge rank="A" size="sm" />
-              <span className="text-neutral-600 dark:text-neutral-300 font-medium">Premier (top 13%)</span>
+              <span className="text-stone-700 dark:text-stone-300 font-medium">Premier (top 13%)</span>
             </span>
-            <span className="text-neutral-300 dark:text-neutral-700">·</span>
+            <span className="text-stone-300 dark:text-stone-700">·</span>
             <span className="inline-flex items-center gap-1 text-xs">
               <RankBadge rank="B" size="sm" />
-              <span className="text-neutral-600 dark:text-neutral-300 font-medium">Established</span>
+              <span className="text-stone-700 dark:text-stone-300 font-medium">Established</span>
             </span>
-            <span className="text-neutral-300 dark:text-neutral-700">·</span>
+            <span className="text-stone-300 dark:text-stone-700">·</span>
             <span className="inline-flex items-center gap-1 text-xs">
               <RankBadge rank="C" size="sm" />
-              <span className="text-neutral-600 dark:text-neutral-300 font-medium">Recognized</span>
+              <span className="text-stone-700 dark:text-stone-300 font-medium">Recognized</span>
             </span>
           </div>
         </div>
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="ml-2 text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
+          className="ml-2 text-xs font-semibold text-accent hover:underline"
         >
           {open ? "Hide details ▲" : "View all tiers ▼"}
         </button>
       </div>
 
       {open && (
-        <div className="mt-4 grid grid-cols-1 gap-2.5 border-t border-neutral-100 pt-4 sm:grid-cols-2 lg:grid-cols-3
-                        dark:border-neutral-800">
+        <div className="mt-4 grid grid-cols-1 gap-2.5 border-t border-stone-200 pt-4 sm:grid-cols-2 lg:grid-cols-3
+                        dark:border-stone-800">
           {TIERS.map((tier) => (
             <div
               key={tier.rank}
-              className="rounded-lg border border-neutral-100 bg-neutral-50/70 p-3
-                         dark:border-neutral-800 dark:bg-neutral-950/50"
+              className="rounded-lg border border-stone-200 bg-stone-50/70 p-3
+                         dark:border-stone-800 dark:bg-stone-900/50"
             >
               <div className="flex items-center gap-2">
                 <RankBadge rank={tier.rank} size="md" />
-                <span className="font-bold text-neutral-900 text-xs dark:text-neutral-100">
+                <span className="font-bold text-stone-900 text-xs dark:text-stone-100">
                   {tier.label}
                 </span>
-                <span className="ml-auto text-[10px] font-semibold text-neutral-500 dark:text-neutral-400">
+                <span className="ml-auto text-[10px] font-semibold text-muted">
                   {tier.share}
                 </span>
               </div>
-              <p className="mt-1.5 text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              <p className="mt-1.5 text-xs text-muted leading-relaxed">
                 {tier.description}
               </p>
             </div>

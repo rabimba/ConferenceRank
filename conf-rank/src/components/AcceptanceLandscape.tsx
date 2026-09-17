@@ -7,27 +7,27 @@ import type { LandscapePoint } from "@/app/page";
 const RANK_COLORS: Record<string, { bg: string; text: string; bar: string; border: string }> = {
   "A*": {
     bg: "bg-amber-50 dark:bg-amber-950/40",
-    text: "text-amber-700 dark:text-amber-400",
+    text: "text-amber-800 dark:text-amber-300",
     bar: "bg-amber-500",
     border: "border-amber-200 dark:border-amber-800",
   },
   A: {
-    bg: "bg-blue-50 dark:bg-blue-950/40",
-    text: "text-blue-700 dark:text-blue-400",
-    bar: "bg-blue-500",
-    border: "border-blue-200 dark:border-blue-800",
+    bg: "bg-indigo-50 dark:bg-indigo-950/40",
+    text: "text-indigo-800 dark:text-indigo-300",
+    bar: "bg-indigo-600 dark:bg-indigo-400",
+    border: "border-indigo-200 dark:border-indigo-800",
   },
   B: {
     bg: "bg-teal-50 dark:bg-teal-950/40",
-    text: "text-teal-700 dark:text-teal-400",
-    bar: "bg-teal-500",
+    text: "text-teal-800 dark:text-teal-300",
+    bar: "bg-teal-600 dark:bg-teal-400",
     border: "border-teal-200 dark:border-teal-800",
   },
   C: {
-    bg: "bg-neutral-100 dark:bg-neutral-800",
-    text: "text-neutral-700 dark:text-neutral-300",
-    bar: "bg-neutral-400",
-    border: "border-neutral-300 dark:border-neutral-700",
+    bg: "bg-stone-100 dark:bg-stone-800",
+    text: "text-stone-700 dark:text-stone-300",
+    bar: "bg-stone-400",
+    border: "border-stone-300 dark:border-stone-700",
   },
 };
 
@@ -133,52 +133,52 @@ export default function AcceptanceLandscape({
       {/* KPI Stats Ribbon */}
       {statsSummary && (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <div className="rounded-xl border border-neutral-200 bg-neutral-50/50 p-3 dark:border-neutral-800 dark:bg-neutral-900/50">
-            <div className="text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+          <div className="rounded-xl border border-stone-200 bg-stone-50/50 p-3 dark:border-stone-800 dark:bg-stone-900/50">
+            <div className="text-[11px] font-semibold uppercase tracking-wider text-muted">
               Coverage
             </div>
-            <div className="mt-1 text-xl font-black text-neutral-900 dark:text-neutral-100">
-              {statsSummary.total} <span className="text-xs font-normal text-neutral-500">venues</span>
+            <div className="mt-1 text-xl font-black text-foreground">
+              {statsSummary.total} <span className="text-xs font-normal text-muted">venues</span>
             </div>
-            <div className="mt-0.5 text-[11px] text-neutral-500">
+            <div className="mt-0.5 text-[11px] text-muted">
               {totalAStar
                 ? `${aStarInData} of ${totalAStar} A* venues (${Math.round((aStarInData / totalAStar) * 100)}%)`
                 : `${aStarInData} A* venues`}
             </div>
           </div>
 
-          <div className="rounded-xl border border-neutral-200 bg-neutral-50/50 p-3 dark:border-neutral-800 dark:bg-neutral-900/50">
-            <div className="text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+          <div className="rounded-xl border border-stone-200 bg-stone-50/50 p-3 dark:border-stone-800 dark:bg-stone-900/50">
+            <div className="text-[11px] font-semibold uppercase tracking-wider text-muted">
               Median Selectivity
             </div>
-            <div className="mt-1 text-xl font-black text-blue-600 dark:text-blue-400">
+            <div className="mt-1 text-xl font-black text-accent">
               {statsSummary.median}%
             </div>
-            <div className="mt-0.5 text-[11px] text-neutral-500">
+            <div className="mt-0.5 text-[11px] text-muted">
               Mean: {statsSummary.avg}%
             </div>
           </div>
 
-          <div className="rounded-xl border border-neutral-200 bg-neutral-50/50 p-3 dark:border-neutral-800 dark:bg-neutral-900/50">
-            <div className="text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+          <div className="rounded-xl border border-stone-200 bg-stone-50/50 p-3 dark:border-stone-800 dark:bg-stone-900/50">
+            <div className="text-[11px] font-semibold uppercase tracking-wider text-muted">
               Most Selective
             </div>
-            <div className="mt-1 text-xl font-black text-emerald-600 dark:text-emerald-400">
+            <div className="mt-1 text-xl font-black text-emerald-700 dark:text-emerald-400">
               {statsSummary.min}%
             </div>
-            <div className="mt-0.5 text-[11px] text-neutral-500 truncate">
+            <div className="mt-0.5 text-[11px] text-muted truncate">
               {statsSummary.mostSelective?.acronym} ({statsSummary.mostSelective?.year})
             </div>
           </div>
 
-          <div className="rounded-xl border border-neutral-200 bg-neutral-50/50 p-3 dark:border-neutral-800 dark:bg-neutral-900/50">
-            <div className="text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+          <div className="rounded-xl border border-stone-200 bg-stone-50/50 p-3 dark:border-stone-800 dark:bg-stone-900/50">
+            <div className="text-[11px] font-semibold uppercase tracking-wider text-muted">
               Selective Range
             </div>
-            <div className="mt-1 text-xl font-black text-neutral-900 dark:text-neutral-100">
+            <div className="mt-1 text-xl font-black text-foreground">
               {statsSummary.min}% – {statsSummary.max}%
             </div>
-            <div className="mt-0.5 text-[11px] text-neutral-500">
+            <div className="mt-0.5 text-[11px] text-muted">
               across CS disciplines
             </div>
           </div>
@@ -186,14 +186,14 @@ export default function AcceptanceLandscape({
       )}
 
       {/* Sub-view Selector Tabs */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-200 pb-3 dark:border-neutral-800">
-        <div className="inline-flex rounded-lg bg-neutral-100 p-1 dark:bg-neutral-800 text-xs font-semibold">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-200 pb-3 dark:border-stone-800">
+        <div className="inline-flex rounded-lg bg-stone-100 p-1 dark:bg-stone-800 text-xs font-semibold">
           <button
             onClick={() => setViewMode("tier")}
             className={`rounded-md px-3 py-1.5 transition ${
               viewMode === "tier"
-                ? "bg-white text-neutral-900 shadow-xs dark:bg-neutral-900 dark:text-neutral-100"
-                : "text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-200"
+                ? "bg-surface text-foreground shadow-xs"
+                : "text-muted hover:text-foreground"
             }`}
           >
             Prestige Tier Comparison (A* → C)
@@ -202,8 +202,8 @@ export default function AcceptanceLandscape({
             onClick={() => setViewMode("field")}
             className={`rounded-md px-3 py-1.5 transition ${
               viewMode === "field"
-                ? "bg-white text-neutral-900 shadow-xs dark:bg-neutral-900 dark:text-neutral-100"
-                : "text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-200"
+                ? "bg-surface text-foreground shadow-xs"
+                : "text-muted hover:text-foreground"
             }`}
           >
             By Research Field
@@ -212,15 +212,15 @@ export default function AcceptanceLandscape({
             onClick={() => setViewMode("top")}
             className={`rounded-md px-3 py-1.5 transition ${
               viewMode === "top"
-                ? "bg-white text-neutral-900 shadow-xs dark:bg-neutral-900 dark:text-neutral-100"
-                : "text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-200"
+                ? "bg-surface text-foreground shadow-xs"
+                : "text-muted hover:text-foreground"
             }`}
           >
             All Venues List & Filter
           </button>
         </div>
 
-        <span className="text-xs text-neutral-500 dark:text-neutral-400">
+        <span className="text-xs text-muted">
           Showing latest reported cycle rate per venue
         </span>
       </div>
@@ -238,17 +238,17 @@ export default function AcceptanceLandscape({
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className={`px-2 py-0.5 rounded text-sm font-black ${theme.text} bg-white dark:bg-neutral-900 shadow-xs`}>
+                      <span className={`px-2 py-0.5 rounded text-sm font-black ${theme.text} bg-surface shadow-xs`}>
                         {tier.rank}
                       </span>
-                      <span className="text-xs font-semibold text-neutral-600 dark:text-neutral-400">
+                      <span className="text-xs font-semibold text-stone-600 dark:text-stone-400">
                         {tier.count} venues with stats
                       </span>
                     </div>
                     {tier.median != null && (
                       <div className="text-right">
-                        <span className="text-xs text-neutral-500">Median: </span>
-                        <span className="text-sm font-bold text-neutral-900 dark:text-neutral-100">
+                        <span className="text-xs text-muted">Median: </span>
+                        <span className="text-sm font-bold text-foreground">
                           {tier.median}%
                         </span>
                       </div>
@@ -257,13 +257,13 @@ export default function AcceptanceLandscape({
 
                   {tier.min != null && tier.max != null && (
                     <div className="mt-3">
-                      <div className="flex justify-between text-[11px] text-neutral-500 dark:text-neutral-400 mb-1">
+                      <div className="flex justify-between text-[11px] text-muted mb-1">
                         <span>Most selective: {tier.min}%</span>
                         <span>Avg: {tier.avg}%</span>
                         <span>Highest: {tier.max}%</span>
                       </div>
                       {/* Visual Range Bar */}
-                      <div className="relative h-2.5 w-full rounded-full bg-neutral-200 dark:bg-neutral-800 overflow-hidden">
+                      <div className="relative h-2.5 w-full rounded-full bg-stone-200 dark:bg-stone-800 overflow-hidden">
                         <div
                           className={`absolute h-full rounded-full ${theme.bar}`}
                           style={{
@@ -281,15 +281,15 @@ export default function AcceptanceLandscape({
                       <Link
                         key={v.id}
                         href={`/conference/${v.id}`}
-                        className="inline-flex items-center gap-1 rounded bg-white/90 px-2 py-1 text-xs font-medium text-neutral-800 shadow-2xs hover:bg-white hover:underline dark:bg-neutral-900/90 dark:text-neutral-200 dark:hover:bg-neutral-900"
+                        className="inline-flex items-center gap-1 rounded bg-surface/90 px-2 py-1 text-xs font-medium text-stone-800 shadow-2xs hover:bg-surface hover:underline dark:text-stone-200"
                         title={`${v.title} — ${v.rate}% (${v.year})`}
                       >
                         <span className="font-semibold">{v.acronym}</span>
-                        <span className="text-[10px] text-neutral-500">{v.rate}%</span>
+                        <span className="text-[10px] text-muted">{v.rate}%</span>
                       </Link>
                     ))}
                     {tier.venues.length > 10 && (
-                      <span className="inline-flex items-center px-1 text-[11px] text-neutral-500">
+                      <span className="inline-flex items-center px-1 text-[11px] text-muted">
                         +{tier.venues.length - 10} more
                       </span>
                     )}
@@ -308,25 +308,25 @@ export default function AcceptanceLandscape({
             {categoryTiers.map((cat) => (
               <div
                 key={cat.category}
-                className="rounded-xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900 shadow-xs"
+                className="rounded-xl border border-stone-200 bg-surface p-4 dark:border-stone-800 shadow-xs"
               >
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-bold text-sm text-neutral-900 dark:text-neutral-100 truncate pr-2">
+                  <h3 className="font-bold text-sm text-foreground truncate pr-2">
                     {cat.category}
                   </h3>
-                  <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 whitespace-nowrap">
+                  <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 whitespace-nowrap">
                     {cat.count} venue{cat.count === 1 ? "" : "s"}
                   </span>
                 </div>
 
-                <div className="flex items-center justify-between text-xs text-neutral-500 mb-1.5">
-                  <span>Median rate: <strong className="text-neutral-900 dark:text-neutral-100">{cat.median}%</strong></span>
+                <div className="flex items-center justify-between text-xs text-muted mb-1.5">
+                  <span>Median rate: <strong className="text-foreground">{cat.median}%</strong></span>
                   <span>Range: {cat.min}% – {cat.max}%</span>
                 </div>
 
-                <div className="relative h-2 w-full rounded-full bg-neutral-100 dark:bg-neutral-800 overflow-hidden mb-3">
+                <div className="relative h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden mb-3">
                   <div
-                    className="absolute h-full rounded-full bg-blue-500 dark:bg-blue-400"
+                    className="absolute h-full rounded-full bg-accent"
                     style={{
                       left: `${Math.max(0, (cat.min / 60) * 100)}%`,
                       width: `${Math.max(4, ((cat.max - cat.min) / 60) * 100)}%`,
@@ -339,14 +339,14 @@ export default function AcceptanceLandscape({
                     <Link
                       key={v.id}
                       href={`/conference/${v.id}`}
-                      className="inline-flex items-center gap-1 rounded border border-neutral-200 bg-neutral-50 px-2 py-0.5 text-xs text-neutral-700 hover:bg-neutral-100 hover:underline dark:border-neutral-800 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                      className="inline-flex items-center gap-1 rounded border border-stone-200 bg-stone-50 px-2 py-0.5 text-xs text-stone-700 hover:bg-stone-100 hover:underline dark:border-stone-800 dark:bg-stone-800/60 dark:text-stone-300 dark:hover:bg-stone-800"
                     >
                       <span className="font-semibold">{v.acronym}</span>
-                      <span className="text-[10px] text-neutral-500">{v.rate}%</span>
+                      <span className="text-[10px] text-muted">{v.rate}%</span>
                     </Link>
                   ))}
                   {cat.venues.length > 8 && (
-                    <span className="text-[11px] text-neutral-400 self-center">
+                    <span className="text-[11px] text-stone-400 self-center">
                       +{cat.venues.length - 8} more
                     </span>
                   )}
@@ -363,15 +363,15 @@ export default function AcceptanceLandscape({
           {/* Filters */}
           <div className="flex flex-wrap items-center gap-2">
             <div className="flex items-center gap-1.5 text-xs">
-              <span className="text-neutral-500 font-medium">Rank:</span>
+              <span className="text-muted font-medium">Rank:</span>
               {["ALL", "A*", "A", "B", "C"].map((r) => (
                 <button
                   key={r}
                   onClick={() => setSelectedRank(r)}
                   className={`px-2 py-1 rounded text-xs font-semibold transition ${
                     selectedRank === r
-                      ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
-                      : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-400"
+                      ? "bg-accent text-accent-contrast"
+                      : "bg-stone-100 text-stone-600 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400"
                   }`}
                 >
                   {r}
@@ -380,11 +380,11 @@ export default function AcceptanceLandscape({
             </div>
 
             <div className="flex items-center gap-1.5 text-xs ml-auto">
-              <span className="text-neutral-500 font-medium">Field:</span>
+              <span className="text-muted font-medium">Field:</span>
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="rounded border border-neutral-300 bg-white px-2 py-1 text-xs text-neutral-800 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"
+                className="rounded border border-stone-300 bg-surface px-2 py-1 text-xs text-foreground dark:border-stone-700"
               >
                 <option value="ALL">All Disciplines</option>
                 {categoryTiers.map((c) => (
@@ -408,26 +408,26 @@ export default function AcceptanceLandscape({
                 <Link
                   key={v.id}
                   href={`/conference/${v.id}`}
-                  className="group flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-2.5 hover:border-blue-400 hover:shadow-xs dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-blue-500 transition"
+                  className="group flex items-center justify-between rounded-lg border border-stone-200 bg-surface p-2.5 hover:border-accent hover:shadow-xs dark:border-stone-800 transition"
                 >
                   <div className="min-w-0 pr-2">
                     <div className="flex items-center gap-1.5">
-                      <span className="font-bold text-xs text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                      <span className="font-bold text-xs text-foreground group-hover:text-accent">
                         {v.acronym}
                       </span>
                       <span className={`text-[10px] px-1 py-0.2 rounded font-bold ${theme.bg} ${theme.text}`}>
                         {v.rank}
                       </span>
                     </div>
-                    <div className="text-[11px] text-neutral-500 dark:text-neutral-400 truncate max-w-[190px]">
+                    <div className="text-[11px] text-muted truncate max-w-[190px]">
                       {v.title}
                     </div>
                   </div>
                   <div className="text-right shrink-0">
-                    <div className="text-sm font-black text-blue-600 dark:text-blue-400">
+                    <div className="text-sm font-black text-accent">
                       {v.rate}%
                     </div>
-                    <div className="text-[10px] text-neutral-400">
+                    <div className="text-[10px] text-muted">
                       {v.year ?? "latest"}
                     </div>
                   </div>

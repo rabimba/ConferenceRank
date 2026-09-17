@@ -206,12 +206,10 @@ export default function Directory({
               setPage(1);
             }}
             placeholder="Filter by name or acronym…"
-            className="w-64 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm
-                       text-neutral-900 placeholder:text-neutral-500
-                       focus:border-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-900
-                       dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100
-                       dark:placeholder:text-neutral-400 dark:focus:border-neutral-400
-                       dark:focus:ring-neutral-400"
+            className="w-64 rounded-lg border border-stone-300 bg-surface px-3 py-2 text-sm
+                       text-foreground placeholder:text-muted
+                       focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent
+                       dark:border-stone-700 dark:placeholder:text-muted"
           />
           <div className="flex flex-wrap gap-1">
             {RANKS.map((r) => (
@@ -220,8 +218,8 @@ export default function Directory({
                 onClick={() => toggle(ranks, r.value, setRanks)}
                 className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
                   ranks.includes(r.value)
-                    ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-                    : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                    ? "bg-accent text-accent-contrast"
+                    : "bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
                 }`}
               >
                 {r.label}
@@ -234,8 +232,8 @@ export default function Directory({
                   setCats([]);
                   setSearch("");
                 }}
-                className="rounded-full px-3 py-1.5 text-xs font-medium text-neutral-500
-                           underline-offset-2 hover:underline dark:text-neutral-400"
+                className="rounded-full px-3 py-1.5 text-xs font-medium text-muted
+                           underline-offset-2 hover:underline"
               >
                 Clear filters
               </button>
@@ -245,12 +243,12 @@ export default function Directory({
             <button
               onClick={exportCsv}
               title="Export currently filtered list as CSV"
-              className="rounded-lg border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-700
-                         hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+              className="rounded-lg border border-stone-300 px-3 py-1.5 text-xs font-medium text-stone-700
+                         hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800"
             >
               Export CSV
             </button>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
+            <span className="text-sm text-muted">
               {filtered.length.toLocaleString()} venue{filtered.length === 1 ? "" : "s"}
             </span>
           </div>
@@ -262,8 +260,8 @@ export default function Directory({
               onClick={() => toggle(cats, cat as string, setCats)}
               className={`rounded-full px-3 py-1 text-xs font-medium transition ${
                 cats.includes(cat)
-                  ? "bg-blue-600 text-white"
-                  : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                  ? "bg-accent text-accent-contrast"
+                  : "bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
               }`}
             >
               {cat}
@@ -272,13 +270,13 @@ export default function Directory({
         </div>
       </div>
 
-      <div className="mt-4 overflow-x-auto rounded-xl border border-neutral-200
-                      dark:border-neutral-800">
+      <div className="mt-4 overflow-x-auto rounded-xl border border-stone-200
+                      dark:border-stone-800">
         <table className="w-full min-w-[720px] text-sm">
           <thead>
-            <tr className="border-b border-neutral-200 bg-neutral-50 text-left text-xs
-                           uppercase tracking-wide text-neutral-500
-                           dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400">
+            <tr className="border-b border-stone-200 bg-stone-50 text-left text-xs
+                           uppercase tracking-wide text-muted
+                           dark:border-stone-800 dark:bg-stone-900/50">
               {onCompare && (
                 <th className="w-10 px-3 py-3 text-center">
                   <span className="sr-only">Compare</span>
@@ -315,9 +313,9 @@ export default function Directory({
             {pageRows.map((c) => (
               <tr
                 key={c.id}
-                className={`border-b border-neutral-100 last:border-0 hover:bg-neutral-50
-                           dark:border-neutral-800/60 dark:hover:bg-neutral-900/60 ${
-                             selectedForCompare.includes(c.id) ? "bg-blue-50/50 dark:bg-blue-950/20" : ""
+                className={`border-b border-stone-200/60 last:border-0 hover:bg-stone-100/60
+                           dark:border-stone-800/60 dark:hover:bg-stone-900/60 ${
+                             selectedForCompare.includes(c.id) ? "bg-accent-soft/40 dark:bg-accent-soft/20" : ""
                            }`}
               >
                 {onCompare && (
@@ -327,40 +325,40 @@ export default function Directory({
                       aria-label={`Select ${c.acronym} for comparison`}
                       checked={selectedForCompare.includes(c.id)}
                       onChange={() => onCompare(c.id)}
-                      className="size-4 rounded border-neutral-300 text-blue-600 focus:ring-blue-500 dark:border-neutral-700 dark:bg-neutral-800"
+                      className="size-4 rounded border-stone-300 text-accent focus:ring-accent dark:border-stone-700 dark:bg-stone-800"
                     />
                   </td>
                 )}
                 <td className="px-4 py-2.5">
                   <RankBadge rank={c.rank} />
                 </td>
-                <td className="px-4 py-2.5 font-bold text-neutral-900 dark:text-neutral-100">
+                <td className="px-4 py-2.5 font-bold text-foreground">
                   <Link href={`/conference/${c.id}`} className="hover:underline">
                     {c.acronym || "—"}
                   </Link>
                 </td>
-                <td className="max-w-[420px] truncate px-4 py-2.5 text-neutral-700 dark:text-neutral-300">
+                <td className="max-w-[420px] truncate px-4 py-2.5 text-stone-700 dark:text-stone-300">
                   <Link href={`/conference/${c.id}`} className="hover:underline">
                     {c.title}
                   </Link>
                 </td>
                 <td className="px-4 py-2.5 tabular-nums">
                   {c.latest_rate != null ? (
-                    <span className="font-semibold text-neutral-800 dark:text-neutral-200">
+                    <span className="font-semibold text-foreground">
                       {c.latest_rate.toFixed(1)}%
                     </span>
                   ) : (
-                    <span className="text-xs text-neutral-500 dark:text-neutral-500">no data</span>
+                    <span className="text-xs text-muted">no data</span>
                   )}
                 </td>
-                <td className="px-4 py-2.5 tabular-nums text-neutral-700 dark:text-neutral-300">
+                <td className="px-4 py-2.5 tabular-nums text-stone-700 dark:text-stone-300">
                   {c.latest_accepted != null ? c.latest_accepted.toLocaleString() : "—"}
                 </td>
               </tr>
             ))}
             {pageRows.length === 0 && (
               <tr>
-                <td colSpan={onCompare ? 6 : 5} className="px-4 py-10 text-center text-neutral-500 dark:text-neutral-400">
+                <td colSpan={onCompare ? 6 : 5} className="px-4 py-10 text-center text-muted">
                   No venues match your filters.
                 </td>
               </tr>
@@ -375,16 +373,16 @@ export default function Directory({
           <button
             onClick={() => setPage((p) => Math.max(1, p - 1))}
             disabled={safePage === 1}
-            className="rounded-md border border-neutral-300 px-3 py-1.5 text-neutral-700
-                       enabled:hover:bg-neutral-100 disabled:opacity-40
-                       dark:border-neutral-700 dark:text-neutral-300 dark:enabled:hover:bg-neutral-800"
+            className="rounded-md border border-stone-300 px-3 py-1.5 text-stone-700
+                       enabled:hover:bg-stone-100 disabled:opacity-40
+                       dark:border-stone-700 dark:text-stone-300 dark:enabled:hover:bg-stone-800"
           >
             ← Prev
           </button>
           {pageWindow[0] > 1 && (
             <>
-              <button onClick={() => setPage(1)} className="rounded-md px-3 py-1.5 text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800">1</button>
-              {pageWindow[0] > 2 && <span className="px-1 text-neutral-400 dark:text-neutral-600">…</span>}
+              <button onClick={() => setPage(1)} className="rounded-md px-3 py-1.5 text-stone-600 hover:bg-stone-100 dark:text-stone-400 dark:hover:bg-stone-800">1</button>
+              {pageWindow[0] > 2 && <span className="px-1 text-muted">…</span>}
             </>
           )}
           {pageWindow.map((p) => (
@@ -393,8 +391,8 @@ export default function Directory({
               onClick={() => setPage(p)}
               className={`rounded-md px-3 py-1.5 font-semibold ${
                 p === safePage
-                  ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-                  : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
+                  ? "bg-accent text-accent-contrast"
+                  : "text-stone-600 hover:bg-stone-100 dark:text-stone-400 dark:hover:bg-stone-800"
               }`}
             >
               {p}
@@ -402,20 +400,20 @@ export default function Directory({
           ))}
           {pageWindow[pageWindow.length - 1] < totalPages && (
             <>
-              {pageWindow[pageWindow.length - 1] < totalPages - 1 && <span className="px-1 text-neutral-400 dark:text-neutral-600">…</span>}
-              <button onClick={() => setPage(totalPages)} className="rounded-md px-3 py-1.5 text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800">{totalPages}</button>
+              {pageWindow[pageWindow.length - 1] < totalPages - 1 && <span className="px-1 text-muted">…</span>}
+              <button onClick={() => setPage(totalPages)} className="rounded-md px-3 py-1.5 text-stone-600 hover:bg-stone-100 dark:text-stone-400 dark:hover:bg-stone-800">{totalPages}</button>
             </>
           )}
           <button
             onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
             disabled={safePage === totalPages}
-            className="rounded-md border border-neutral-300 px-3 py-1.5 text-neutral-700
-                       enabled:hover:bg-neutral-100 disabled:opacity-40
-                       dark:border-neutral-700 dark:text-neutral-300 dark:enabled:hover:bg-neutral-800"
+            className="rounded-md border border-stone-300 px-3 py-1.5 text-stone-700
+                       enabled:hover:bg-stone-100 disabled:opacity-40
+                       dark:border-stone-700 dark:text-stone-300 dark:enabled:hover:bg-stone-800"
           >
             Next →
           </button>
-          <span className="ml-2 text-xs text-neutral-500 dark:text-neutral-400">
+          <span className="ml-2 text-xs text-muted">
             {start + 1}–{Math.min(start + PAGE_SIZE, filtered.length)} of {filtered.length.toLocaleString()}
           </span>
         </nav>

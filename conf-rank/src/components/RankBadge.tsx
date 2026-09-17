@@ -6,7 +6,7 @@ const RANK_STYLES: Record<string, { classes: string; label: string }> = {
   },
   A: {
     classes:
-      "bg-blue-100 text-blue-900 ring-1 ring-blue-300 dark:bg-blue-950 dark:text-blue-200 dark:ring-blue-800",
+      "bg-indigo-100 text-indigo-900 ring-1 ring-indigo-300 dark:bg-indigo-950 dark:text-indigo-200 dark:ring-indigo-800",
     label: "A",
   },
   B: {
@@ -16,7 +16,7 @@ const RANK_STYLES: Record<string, { classes: string; label: string }> = {
   },
   C: {
     classes:
-      "bg-slate-100 text-slate-600 ring-1 ring-slate-300 dark:bg-slate-800 dark:text-slate-200 dark:ring-slate-600",
+      "bg-stone-100 text-stone-600 ring-1 ring-stone-300 dark:bg-stone-800 dark:text-stone-200 dark:ring-stone-600",
     label: "C",
   },
   "Australasian B": {
@@ -26,7 +26,7 @@ const RANK_STYLES: Record<string, { classes: string; label: string }> = {
   },
   "Australasian C": {
     classes:
-      "bg-slate-50 text-slate-500 ring-1 ring-slate-200 dark:bg-slate-800/60 dark:text-slate-300 dark:ring-slate-700",
+      "bg-stone-50 text-stone-500 ring-1 ring-stone-200 dark:bg-stone-800/60 dark:text-stone-300 dark:ring-stone-700",
     label: "Aus C",
   },
 };
@@ -67,8 +67,8 @@ export default function RankBadge({
       title={`CORE rank: ${rank}`}
       className={`inline-flex items-center rounded-full font-medium whitespace-nowrap ring-1 ${cls} ${
         isUnranked
-          ? "bg-neutral-50 text-neutral-500 ring-neutral-200 dark:bg-neutral-900 dark:text-neutral-400 dark:ring-neutral-700"
-          : "bg-violet-50 text-violet-700 ring-violet-200 dark:bg-violet-950 dark:text-violet-300 dark:ring-violet-800"
+          ? "bg-stone-100 text-stone-500 ring-stone-200 dark:bg-stone-900 dark:text-stone-400 dark:ring-stone-800"
+          : "bg-stone-200/70 text-stone-700 ring-stone-300 dark:bg-stone-800 dark:text-stone-300 dark:ring-stone-700"
       }`}
     >
       {label}

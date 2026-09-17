@@ -60,20 +60,20 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
   return (
     <div className="space-y-8">
       {/* Input Section */}
-      <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-xs dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="rounded-2xl border border-stone-200 bg-surface p-6 shadow-xs dark:border-stone-800">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100">
+            <h2 className="text-lg font-bold text-foreground">
               Paste Paper Abstract
             </h2>
-            <p className="text-xs text-neutral-500 dark:text-neutral-400">
+            <p className="text-xs text-muted">
               We analyze vocabulary, research categories, and methodology to suggest relevant CS conferences.
             </p>
           </div>
           {abstract && (
             <button
               onClick={() => setAbstract("")}
-              className="self-start text-xs font-semibold text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+              className="self-start text-xs font-semibold text-muted hover:text-foreground"
             >
               Clear input
             </button>
@@ -86,32 +86,32 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             onChange={(e) => setAbstract(e.target.value)}
             rows={6}
             placeholder="Paste your title and abstract here… (e.g. 'We propose an adaptive distributed consensus algorithm that minimizes latency in mobile ad-hoc networks…')"
-            className="w-full rounded-xl border border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-600 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-100 dark:placeholder:text-neutral-500 dark:focus:border-blue-400 dark:focus:bg-neutral-900 dark:focus:ring-blue-400"
+            className="w-full rounded-xl border border-stone-300 bg-stone-50 p-4 text-sm text-foreground placeholder:text-muted focus:border-accent focus:bg-surface focus:outline-none focus:ring-1 focus:ring-accent dark:border-stone-700 dark:bg-stone-900/50 dark:focus:border-accent dark:focus:bg-stone-900"
           />
         </div>
 
         {/* Quick sample buttons & word count */}
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <div className="flex flex-wrap items-center gap-1.5 text-neutral-600 dark:text-neutral-400">
+          <div className="flex flex-wrap items-center gap-1.5 text-stone-600 dark:text-stone-400">
             <span className="font-semibold">Try sample:</span>
             {SAMPLE_ABSTRACTS.map((sample) => (
               <button
                 key={sample.title}
                 type="button"
                 onClick={() => loadSample(sample.text)}
-                className="rounded-md border border-neutral-200 bg-white px-2 py-1 font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700 transition"
+                className="rounded-md border border-stone-200 bg-surface px-2 py-1 font-medium text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800 transition"
               >
                 {sample.title}
               </button>
             ))}
           </div>
 
-          <div className="text-neutral-500 dark:text-neutral-400">
+          <div className="text-muted">
             {result.wordCount > 0 && (
               <span>
                 {result.wordCount} words{" "}
                 {result.isTooShort && (
-                  <span className="text-amber-600 dark:text-amber-400">
+                  <span className="text-amber-700 dark:text-amber-400">
                     (need ~35+ for accurate match)
                   </span>
                 )}
@@ -121,10 +121,10 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
         </div>
 
         {/* Filters and Ambition */}
-        <div className="mt-5 border-t border-neutral-100 pt-5 dark:border-neutral-800">
+        <div className="mt-5 border-t border-stone-200 pt-5 dark:border-stone-800">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-bold text-neutral-700 dark:text-neutral-300">
+              <span className="text-xs font-bold text-stone-700 dark:text-stone-300">
                 Target Ambition:
               </span>
               {(
@@ -141,8 +141,8 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
                   title={tier.desc}
                   className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
                     ambition === tier.id
-                      ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
-                      : "border border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                      ? "bg-accent text-accent-contrast"
+                      : "border border-stone-200 bg-surface text-stone-600 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800"
                   }`}
                 >
                   {tier.label}
@@ -150,12 +150,12 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
               ))}
             </div>
 
-            <label className="flex items-center gap-2 text-xs font-medium text-neutral-600 dark:text-neutral-400 cursor-pointer select-none">
+            <label className="flex items-center gap-2 text-xs font-medium text-muted cursor-pointer select-none">
               <input
                 type="checkbox"
                 checked={includeUnranked}
                 onChange={(e) => setIncludeUnranked(e.target.checked)}
-                className="rounded border-neutral-300 text-blue-600 focus:ring-blue-500"
+                className="rounded border-stone-300 text-accent focus:ring-accent"
               />
               <span>Include Unranked Venues</span>
             </label>
@@ -165,18 +165,18 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
 
       {/* Abstract Analysis Signals */}
       {result.detectedCategories.length > 0 && (
-        <div className="rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 shadow-xs">
+        <div className="rounded-xl border border-stone-200 bg-surface p-5 dark:border-stone-800 shadow-xs">
           <div className="flex items-center justify-between gap-3">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-muted">
               Detected Research Focus
             </h3>
             <span
               className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${
                 result.confidence === "high"
-                  ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
+                  ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300"
                   : result.confidence === "medium"
-                    ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300"
-                    : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
+                    ? "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
+                    : "bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300"
               }`}
               title="Confidence reflects keyword signal strength and abstract length"
             >
@@ -187,7 +187,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             {result.detectedCategories.map((c) => (
               <span
                 key={c.category}
-                className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950/70 dark:text-blue-300"
+                className="inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent"
               >
                 <span>{c.category}</span>
                 <span className="text-[10px] font-normal opacity-75">
@@ -198,7 +198,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             {result.detectedMethodologies.map((m) => (
               <span
                 key={m.label}
-                className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300"
+                className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300"
               >
                 <span>🔬 {m.label}</span>
               </span>
@@ -206,7 +206,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
           </div>
 
           {result.detectedKeywords.length > 0 && (
-            <div className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+            <div className="mt-3 text-xs text-muted">
               <span className="font-semibold">Key terms found:</span>{" "}
               {result.detectedKeywords.join(", ")}
             </div>
@@ -216,23 +216,23 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
 
       {/* Results Section */}
       {result.isTooShort ? (
-        <div className="rounded-xl border border-dashed border-neutral-300 p-12 text-center dark:border-neutral-700">
-          <div className="mx-auto grid size-12 place-items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400 text-xl font-bold">
+        <div className="rounded-xl border border-dashed border-stone-300 p-12 text-center dark:border-stone-700">
+          <div className="mx-auto grid size-12 place-items-center rounded-full bg-accent-soft text-accent text-xl font-bold">
             💡
           </div>
-          <h3 className="mt-4 text-base font-bold text-neutral-900 dark:text-neutral-100">
+          <h3 className="mt-4 text-base font-bold text-foreground">
             Ready to find your venue
           </h3>
-          <p className="mx-auto mt-1 max-w-md text-xs text-neutral-500 dark:text-neutral-400">
+          <p className="mx-auto mt-1 max-w-md text-xs text-muted">
             Paste your draft abstract above or click one of the quick samples to see tailored venue recommendations across CORE prestige tiers.
           </p>
         </div>
       ) : result.suggestions.length === 0 ? (
-        <div className="rounded-xl border border-neutral-200 bg-white p-8 text-center dark:border-neutral-800 dark:bg-neutral-900">
-          <p className="text-sm font-semibold text-neutral-700 dark:text-neutral-300">
+        <div className="rounded-xl border border-stone-200 bg-surface p-8 text-center dark:border-stone-800">
+          <p className="text-sm font-semibold text-stone-700 dark:text-stone-300">
             No matching conferences found for the detected topics.
           </p>
-          <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+          <p className="mt-1 text-xs text-muted">
             Try expanding your abstract text or enabling &quot;Include Unranked Venues&quot;.
           </p>
         </div>
@@ -243,10 +243,10 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             tieredSuggestions.stretch.length > 0 && (
               <div>
                 <div className="mb-3 flex items-center gap-2">
-                  <span className="text-sm font-bold text-neutral-900 dark:text-neutral-100">
+                  <span className="text-sm font-bold text-foreground">
                     🚀 Stretch Venues (A* & Highly Selective)
                   </span>
-                  <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                  <span className="text-xs text-muted">
                     ({tieredSuggestions.stretch.length})
                   </span>
                 </div>
@@ -263,10 +263,10 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             tieredSuggestions.target.length > 0 && (
               <div>
                 <div className="mb-3 flex items-center gap-2">
-                  <span className="text-sm font-bold text-neutral-900 dark:text-neutral-100">
+                  <span className="text-sm font-bold text-foreground">
                     🎯 Target Venues (Solid CORE A & Strong B Matches)
                   </span>
-                  <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                  <span className="text-xs text-muted">
                     ({tieredSuggestions.target.length})
                   </span>
                 </div>
@@ -283,10 +283,10 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             tieredSuggestions.safe.length > 0 && (
               <div>
                 <div className="mb-3 flex items-center gap-2">
-                  <span className="text-sm font-bold text-neutral-900 dark:text-neutral-100">
+                  <span className="text-sm font-bold text-foreground">
                     🛡️ Accessible / Backup Venues (B, C & Higher Acceptance)
                   </span>
-                  <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                  <span className="text-xs text-muted">
                     ({tieredSuggestions.safe.length})
                   </span>
                 </div>
@@ -301,8 +301,8 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
       )}
 
       {/* Methodology & CFP Disclaimer */}
-      <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-xs text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-400">
-        <p className="font-semibold text-neutral-800 dark:text-neutral-200">
+      <div className="rounded-xl border border-stone-200 bg-stone-50 p-4 text-xs text-stone-600 dark:border-stone-800 dark:bg-stone-900/50 dark:text-stone-400">
+        <p className="font-semibold text-stone-800 dark:text-stone-200">
           How this matching works:
         </p>
         <p className="mt-1">
@@ -317,17 +317,17 @@ function VenueCard({ suggestion }: { suggestion: Suggestion }) {
   const { venue, matchPercentage, reasons } = suggestion;
 
   return (
-    <div className="flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-4 shadow-xs transition hover:border-neutral-300 hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-neutral-700">
+    <div className="flex flex-col justify-between rounded-xl border border-stone-200 bg-surface p-4 shadow-xs transition hover:border-stone-300 hover:shadow-md dark:border-stone-800 dark:hover:border-stone-700">
       <div>
         <div className="flex items-start justify-between gap-2">
           <Link
             href={`/conference/${venue.id}/`}
             className="group flex flex-col"
           >
-            <span className="text-base font-black text-neutral-900 group-hover:text-blue-600 dark:text-neutral-100 dark:group-hover:text-blue-400 transition">
+            <span className="text-base font-black text-foreground group-hover:text-accent transition">
               {venue.acronym || venue.title.slice(0, 16)}
             </span>
-            <span className="line-clamp-2 text-xs text-neutral-500 dark:text-neutral-400">
+            <span className="line-clamp-2 text-xs text-muted">
               {venue.title}
             </span>
           </Link>
@@ -337,29 +337,29 @@ function VenueCard({ suggestion }: { suggestion: Suggestion }) {
         {/* Fit Score & Progress Bar */}
         <div className="mt-3">
           <div className="flex items-center justify-between text-xs">
-            <span className="font-semibold text-neutral-700 dark:text-neutral-300">
+            <span className="font-semibold text-stone-700 dark:text-stone-300">
               Fit Score
             </span>
             <span
               className={`font-black ${
                 matchPercentage >= 75
-                  ? "text-emerald-600 dark:text-emerald-400"
+                  ? "text-emerald-700 dark:text-emerald-400"
                   : matchPercentage >= 50
-                    ? "text-blue-600 dark:text-blue-400"
-                    : "text-neutral-600 dark:text-neutral-400"
+                    ? "text-accent"
+                    : "text-muted"
               }`}
             >
               {matchPercentage}%
             </span>
           </div>
-          <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-neutral-100 dark:bg-neutral-800">
+          <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-stone-100 dark:bg-stone-800">
             <div
               className={`h-full rounded-full transition-all duration-500 ${
                 matchPercentage >= 75
-                  ? "bg-emerald-500"
+                  ? "bg-emerald-600"
                   : matchPercentage >= 50
-                    ? "bg-blue-500"
-                    : "bg-neutral-400"
+                    ? "bg-accent"
+                    : "bg-stone-400"
               }`}
               style={{ width: `${matchPercentage}%` }}
             />
@@ -371,7 +371,7 @@ function VenueCard({ suggestion }: { suggestion: Suggestion }) {
           {venue.categories.slice(0, 2).map((cat) => (
             <span
               key={cat}
-              className="rounded bg-neutral-100 px-1.5 py-0.5 text-[10px] font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
+              className="rounded bg-stone-100 px-1.5 py-0.5 text-[10px] font-medium text-stone-700 dark:bg-stone-800 dark:text-stone-300"
             >
               {cat}
             </span>
@@ -379,33 +379,33 @@ function VenueCard({ suggestion }: { suggestion: Suggestion }) {
         </div>
 
         {/* Reasons */}
-        <ul className="mt-3 space-y-1 text-[11px] text-neutral-500 dark:text-neutral-400">
+        <ul className="mt-3 space-y-1 text-[11px] text-muted">
           {reasons.slice(0, 2).map((r, i) => (
             <li key={i} className="flex items-center gap-1.5">
-              <span className="text-blue-500 dark:text-blue-400">•</span>
+              <span className="text-accent">•</span>
               <span className="truncate">{r}</span>
             </li>
           ))}
         </ul>
       </div>
 
-      <div className="mt-4 flex items-center justify-between border-t border-neutral-100 pt-3 dark:border-neutral-800 text-xs">
+      <div className="mt-4 flex items-center justify-between border-t border-stone-200 pt-3 dark:border-stone-800 text-xs">
         {venue.latest_rate !== null ? (
-          <span className="text-neutral-500 dark:text-neutral-400">
+          <span className="text-muted">
             Acceptance:{" "}
-            <strong className="text-neutral-800 dark:text-neutral-200">
+            <strong className="text-stone-800 dark:text-stone-200">
               {venue.latest_rate}%
             </strong>
           </span>
         ) : (
-          <span className="text-neutral-400 dark:text-neutral-500">
+          <span className="text-muted">
             No acceptance data
           </span>
         )}
 
         <Link
           href={`/conference/${venue.id}/`}
-          className="font-bold text-blue-600 hover:underline dark:text-blue-400"
+          className="font-bold text-accent hover:underline"
         >
           View stats →
         </Link>

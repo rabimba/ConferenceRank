@@ -17,8 +17,8 @@ import {
 } from "recharts";
 
 const COLORS = [
-  "#2563eb", "#dc2626", "#16a34a", "#d97706", "#7c3aed",
-  "#0891b2", "#db2777", "#65a30d",
+  "#8C2F39", "#B45309", "#3F6212", "#8A6D1D", "#6B3FA0",
+  "#0F766E", "#B3364A", "#57534E",
 ];
 
 const axis = {
@@ -44,8 +44,8 @@ export function AcceptanceTrendChart({
       <AreaChart data={data} margin={{ top: 8, right: 12, bottom: 0, left: -14 }}>
         <defs>
           <linearGradient id="rateFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#2563eb" stopOpacity={0.25} />
-            <stop offset="100%" stopColor="#2563eb" stopOpacity={0.02} />
+            <stop offset="0%" stopColor="var(--accent)" stopOpacity={0.25} />
+            <stop offset="100%" stopColor="var(--accent)" stopOpacity={0.02} />
           </linearGradient>
         </defs>
         <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
@@ -58,7 +58,7 @@ export function AcceptanceTrendChart({
         <Area
           type="monotone"
           dataKey="rate"
-          stroke="#2563eb"
+          stroke="var(--accent)"
           strokeWidth={2}
           fill="url(#rateFill)"
           dot={{ r: 2.5 }}
@@ -85,7 +85,7 @@ export function PapersPerYearChart({
         {data.some((d) => d.submitted != null) && (
           <Bar dataKey="submitted" name="Submitted" fill="var(--chart-submitted)" radius={[3, 3, 0, 0]} />
         )}
-        <Bar dataKey="accepted" name="Accepted" fill="#16a34a" radius={[3, 3, 0, 0]} />
+        <Bar dataKey="accepted" name="Accepted" fill="var(--success)" radius={[3, 3, 0, 0]} />
       </BarChart>
     </ResponsiveContainer>
   );
@@ -129,9 +129,9 @@ export function RankHistoryChart({
         <Line
           type="stepAfter"
           dataKey="y"
-          stroke="#d97706"
+          stroke="var(--warn)"
           strokeWidth={2.5}
-          dot={{ r: 4, fill: "#d97706" }}
+          dot={{ r: 4, fill: "var(--warn)" }}
           activeDot={{ r: 5 }}
         />
       </LineChart>

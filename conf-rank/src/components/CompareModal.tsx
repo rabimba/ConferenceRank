@@ -43,15 +43,15 @@ export default function CompareModal({
         role="dialog"
         aria-modal="true"
         aria-label="Venue comparison"
-        className="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl dark:border-neutral-800 dark:bg-neutral-900"
+        className="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl border border-stone-200 bg-surface p-6 shadow-2xl dark:border-stone-800"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between border-b border-neutral-100 pb-4 dark:border-neutral-800">
+        <div className="flex items-center justify-between border-b border-stone-200 pb-4 dark:border-stone-800">
           <div>
-            <h2 className="text-lg font-black tracking-tight text-neutral-900 dark:text-neutral-100">
+            <h2 className="text-lg font-black tracking-tight text-foreground">
               Venue Comparison
             </h2>
-            <p className="text-xs text-neutral-500 dark:text-neutral-400">
+            <p className="text-xs text-muted">
               Side-by-side analysis of selected conferences ({venues.length})
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function CompareModal({
             ref={closeRef}
             onClick={onClose}
             aria-label="Close comparison"
-            className="rounded-lg p-2 text-neutral-400 hover:bg-neutral-100 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+            className="rounded-lg p-2 text-stone-400 hover:bg-stone-100 hover:text-stone-700 dark:hover:bg-stone-800 dark:hover:text-stone-200"
           >
             ✕
           </button>
@@ -69,8 +69,8 @@ export default function CompareModal({
           <table className="w-full text-left text-sm">
             <tbody>
               {/* Header / Acronym & Title */}
-              <tr className="border-b border-neutral-100 dark:border-neutral-800">
-                <th className="w-36 py-3 font-semibold text-neutral-400 dark:text-neutral-500 text-xs uppercase">
+              <tr className="border-b border-stone-200 dark:border-stone-800">
+                <th className="w-36 py-3 font-semibold text-muted text-xs uppercase">
                   Venue
                 </th>
                 {venues.map((v) => (
@@ -80,20 +80,20 @@ export default function CompareModal({
                         <div className="flex items-center gap-2">
                           <Link
                             href={`/conference/${v.id}`}
-                            className="font-bold text-neutral-900 hover:underline dark:text-neutral-100"
+                            className="font-bold text-foreground hover:underline"
                           >
                             {v.acronym}
                           </Link>
                           <RankBadge rank={v.rank} size="sm" />
                         </div>
-                        <div className="mt-1 text-xs text-neutral-500 dark:text-neutral-400 line-clamp-2">
+                        <div className="mt-1 text-xs text-muted line-clamp-2">
                           {v.title}
                         </div>
                       </div>
                       <button
                         onClick={() => onRemove(v.id)}
                         title="Remove from comparison"
-                        className="text-xs text-neutral-400 hover:text-red-500"
+                        className="text-xs text-stone-400 hover:text-red-600"
                       >
                         ✕
                       </button>
@@ -103,20 +103,20 @@ export default function CompareModal({
               </tr>
 
               {/* CORE Rank */}
-              <tr className="border-b border-neutral-100 dark:border-neutral-800">
-                <th className="py-3 font-semibold text-neutral-400 dark:text-neutral-500 text-xs uppercase">
+              <tr className="border-b border-stone-200 dark:border-stone-800">
+                <th className="py-3 font-semibold text-muted text-xs uppercase">
                   CORE Rank
                 </th>
                 {venues.map((v) => (
-                  <td key={v.id} className="py-3 pr-4 font-semibold text-neutral-800 dark:text-neutral-200">
+                  <td key={v.id} className="py-3 pr-4 font-semibold text-foreground">
                     {v.rank}
                   </td>
                 ))}
               </tr>
 
               {/* Acceptance Rate */}
-              <tr className="border-b border-neutral-100 dark:border-neutral-800">
-                <th className="py-3 font-semibold text-neutral-400 dark:text-neutral-500 text-xs uppercase">
+              <tr className="border-b border-stone-200 dark:border-stone-800">
+                <th className="py-3 font-semibold text-muted text-xs uppercase">
                   Acceptance Rate
                 </th>
                 {venues.map((v) => {
@@ -125,13 +125,13 @@ export default function CompareModal({
                     <td key={v.id} className="py-3 pr-4">
                       {stat?.rate != null ? (
                         <div>
-                          <span className="font-bold text-blue-600 dark:text-blue-400">
+                          <span className="font-bold text-accent">
                             {stat.rate}%
                           </span>
-                          <span className="ml-1 text-xs text-neutral-400">({stat.year})</span>
+                          <span className="ml-1 text-xs text-muted">({stat.year})</span>
                         </div>
                       ) : (
-                        <span className="text-xs text-neutral-400">No data</span>
+                        <span className="text-xs text-muted">No data</span>
                       )}
                     </td>
                   );
@@ -139,20 +139,20 @@ export default function CompareModal({
               </tr>
 
               {/* Papers Accepted */}
-              <tr className="border-b border-neutral-100 dark:border-neutral-800">
-                <th className="py-3 font-semibold text-neutral-400 dark:text-neutral-500 text-xs uppercase">
+              <tr className="border-b border-stone-200 dark:border-stone-800">
+                <th className="py-3 font-semibold text-muted text-xs uppercase">
                   Accepted (Latest)
                 </th>
                 {venues.map((v) => {
                   const stat = v.stats?.[v.stats.length - 1];
                   const acc = stat?.accepted ?? stat?.accepted_short;
                   return (
-                    <td key={v.id} className="py-3 pr-4 tabular-nums text-neutral-700 dark:text-neutral-300">
+                    <td key={v.id} className="py-3 pr-4 tabular-nums text-stone-700 dark:text-stone-300">
                       {acc != null ? (
                         <div>
                           <span>{acc.toLocaleString()}</span>
                           {stat?.submitted && (
-                            <span className="text-xs text-neutral-400 ml-1">
+                            <span className="text-xs text-muted ml-1">
                               / {stat.submitted.toLocaleString()} sub
                             </span>
                           )}
@@ -166,8 +166,8 @@ export default function CompareModal({
               </tr>
 
               {/* Categories */}
-              <tr className="border-b border-neutral-100 dark:border-neutral-800">
-                <th className="py-3 font-semibold text-neutral-400 dark:text-neutral-500 text-xs uppercase">
+              <tr className="border-b border-stone-200 dark:border-stone-800">
+                <th className="py-3 font-semibold text-muted text-xs uppercase">
                   Categories
                 </th>
                 {venues.map((v) => (
@@ -176,7 +176,7 @@ export default function CompareModal({
                       {v.categories.map((c) => (
                         <span
                           key={c}
-                          className="rounded-md bg-neutral-100 px-2 py-0.5 text-[11px] text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300"
+                          className="rounded-md bg-stone-100 px-2 py-0.5 text-[11px] text-stone-700 dark:bg-stone-800 dark:text-stone-300"
                         >
                           {c}
                         </span>
@@ -187,8 +187,8 @@ export default function CompareModal({
               </tr>
 
               {/* Community Rating */}
-              <tr className="border-b border-neutral-100 dark:border-neutral-800">
-                <th className="py-3 font-semibold text-neutral-400 dark:text-neutral-500 text-xs uppercase">
+              <tr className="border-b border-stone-200 dark:border-stone-800">
+                <th className="py-3 font-semibold text-muted text-xs uppercase">
                   Rating
                 </th>
                 {venues.map((v) => (
@@ -200,7 +200,7 @@ export default function CompareModal({
 
               {/* External Links */}
               <tr>
-                <th className="py-3 font-semibold text-neutral-400 dark:text-neutral-500 text-xs uppercase">
+                <th className="py-3 font-semibold text-muted text-xs uppercase">
                   Links
                 </th>
                 {venues.map((v) => (
@@ -208,7 +208,7 @@ export default function CompareModal({
                     <div className="flex gap-2 text-xs">
                       <Link
                         href={`/conference/${v.id}`}
-                        className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                        className="font-medium text-accent hover:underline"
                       >
                         Full Details ↗
                       </Link>
@@ -217,7 +217,7 @@ export default function CompareModal({
                           href={v.dblp_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-neutral-500 hover:underline"
+                          className="text-muted hover:underline"
                         >
                           DBLP ↗
                         </a>

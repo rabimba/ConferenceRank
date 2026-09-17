@@ -17,10 +17,10 @@ export default function ThemeToggle() {
       aria-label="Toggle dark mode"
       title={isDark ? "Switch to light" : "Switch to dark"}
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="grid size-9 place-items-center rounded-lg border border-neutral-300
-                 bg-white text-neutral-600 transition hover:bg-neutral-100
-                 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300
-                 dark:hover:bg-neutral-800"
+      className="grid size-9 place-items-center rounded-lg border border-stone-300
+                 bg-surface text-stone-600 transition hover:bg-stone-100 hover:text-foreground
+                 dark:border-stone-700 dark:text-stone-300
+                 dark:hover:bg-stone-800"
     >
       {mounted ? (
         isDark ? (

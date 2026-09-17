@@ -143,12 +143,10 @@ export default function VenueLookup() {
           }
         }}
         placeholder="Look up a venue… (e.g. NeurIPS, CVPR, security)"
-        className="w-full rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm
-                   text-neutral-900 placeholder:text-neutral-500
-                   focus:border-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-900
-                   dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100
-                   dark:placeholder:text-neutral-400 dark:focus:border-neutral-400
-                   dark:focus:ring-neutral-400"
+        className="w-full rounded-lg border border-stone-300 bg-surface px-4 py-2 text-sm
+                   text-foreground placeholder:text-muted
+                   focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent
+                   dark:border-stone-700 dark:placeholder:text-muted"
         aria-label="Look up a venue"
       />
       {open && results.length > 0 && (
@@ -158,8 +156,8 @@ export default function VenueLookup() {
           role="listbox"
           aria-label="Matching venues"
           className="absolute z-50 mt-1 w-full overflow-hidden rounded-lg border
-                     border-neutral-200 bg-white py-1 shadow-lg
-                     dark:border-neutral-700 dark:bg-neutral-900"
+                     border-stone-200 bg-surface py-1 shadow-lg
+                     dark:border-stone-800"
         >
           {results.map((c, i) => (
             <li
@@ -172,16 +170,16 @@ export default function VenueLookup() {
                 onMouseEnter={() => setActive(i)}
                 onClick={() => go(c)}
                 className={`flex w-full items-center gap-3 px-4 py-2 text-left text-sm
-                            ${i === active ? "bg-neutral-100 dark:bg-neutral-800" : ""}`}
+                            ${i === active ? "bg-stone-100 dark:bg-stone-800" : ""}`}
               >
-                <span className="font-semibold text-neutral-900 dark:text-neutral-100">
+                <span className="font-semibold text-foreground">
                   {c.acronym || c.title.slice(0, 12)}
                 </span>
-                <span className="truncate text-neutral-500 dark:text-neutral-400">
+                <span className="truncate text-muted">
                   {c.title}
                 </span>
                 {c.rank && (
-                  <span className="ml-auto text-[11px] font-bold text-neutral-600 dark:text-neutral-400">
+                  <span className="ml-auto text-[11px] font-bold text-muted">
                     {c.rank}
                   </span>
                 )}
@@ -191,14 +189,14 @@ export default function VenueLookup() {
         </ul>
       )}
       {open && q && results.length === 0 && (
-        <div className="absolute z-50 mt-1 w-full rounded-lg border border-neutral-200
-                        bg-white px-4 py-3 text-sm text-neutral-500 shadow-lg
-                        dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-400">
+        <div className="absolute z-50 mt-1 w-full rounded-lg border border-stone-200
+                        bg-surface px-4 py-3 text-sm text-muted shadow-lg
+                        dark:border-stone-800">
           {loadState === "error" ? (
             <span>
               Venue index failed to load.{" "}
               <button
-                className="underline hover:text-neutral-700 dark:hover:text-neutral-200"
+                className="underline hover:text-foreground"
                 onClick={() => {
                   setLoadState("idle");
                   ensureIndex();

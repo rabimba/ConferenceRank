@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-12 border-t border-neutral-200 pt-6 pb-12 text-xs text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-neutral-100 dark:border-neutral-800">
+    <footer className="mt-12 border-t border-border pt-6 pb-12 text-xs text-muted">
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-border">
         <div className="flex items-center gap-4">
-          <Link href="/" className="font-semibold text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100">
+          <Link href="/" className="font-semibold text-stone-700 hover:text-foreground dark:text-stone-300">
             Directory
           </Link>
-          <Link href="/suggest/" className="font-semibold text-blue-600 hover:underline dark:text-blue-400 inline-flex items-center gap-1">
+          <Link href="/suggest/" className="font-semibold text-accent hover:underline inline-flex items-center gap-1">
             <span>✨</span>
             <span>Venue Suggester</span>
           </Link>
@@ -21,9 +21,9 @@ export function SiteFooter() {
           Education Assoc. of Australasia). This site is an independent view over public data;
           always verify with venue before submitting.
         </p>
-        <p className="inline-flex items-center gap-1.5 whitespace-nowrap font-medium text-neutral-700 dark:text-neutral-300">
+        <p className="inline-flex items-center gap-1.5 whitespace-nowrap font-medium text-stone-700 dark:text-stone-300">
           <span>Made with</span>
-          <span className="text-red-500 animate-pulse inline-block" role="img" aria-label="love">
+          <span className="text-accent animate-pulse inline-block" role="img" aria-label="love">
             ❤️
           </span>
           <span>by</span>
@@ -31,7 +31,7 @@ export function SiteFooter() {
             href="https://rabimba.github.io/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+            className="font-semibold text-accent hover:underline"
           >
             Rabimba
           </a>

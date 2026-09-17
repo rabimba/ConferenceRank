@@ -33,14 +33,14 @@ export default function SuggestPage() {
   });
 
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
+    <div className="min-h-screen bg-background">
       <SiteHeader />
       <main className="mx-auto max-w-6xl px-4 py-8">
         {/* Navigation Breadcrumb */}
         <div className="mb-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-1 text-xs font-semibold text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition"
+            className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-foreground transition"
           >
             ← Back to Conference Directory
           </Link>
@@ -48,16 +48,16 @@ export default function SuggestPage() {
 
         {/* Page Header */}
         <div className="mb-8">
-          <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700 dark:bg-blue-950/70 dark:text-blue-300">
+          <div className="inline-flex items-center gap-2 rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">
             <span>✨ Keyword &amp; Similarity Matching</span>
             <span>•</span>
             <span>{slimVenues.length} Venues Indexed</span>
           </div>
 
-          <h1 className="mt-3 text-3xl font-black tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-4xl">
+          <h1 className="mt-3 text-3xl font-black tracking-tight text-foreground sm:text-4xl">
             Venue Suggester
           </h1>
-          <p className="mt-2 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+          <p className="mt-2 max-w-2xl text-sm text-muted">
             Paste your draft abstract to find the best-fitting computer science conferences. We match vocabulary, methodologies, and topics across CORE prestige tiers (A* to C) with historical acceptance rate context.
           </p>
         </div>

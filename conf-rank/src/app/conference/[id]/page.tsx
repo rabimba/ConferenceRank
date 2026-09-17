@@ -46,14 +46,13 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="rounded-xl border border-neutral-200 bg-white p-5
-                        dark:border-neutral-800 dark:bg-neutral-900">
+    <section className="rounded-xl border border-stone-200 bg-surface p-5
+                        dark:border-stone-800">
       <div className="mb-3 flex items-baseline justify-between gap-4">
-        <h2 className="text-sm font-bold uppercase tracking-wide text-neutral-500
-                       dark:text-neutral-400">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
           {title}
         </h2>
-        {note && <span className="text-[11px] text-neutral-500 dark:text-neutral-500">{note}</span>}
+        {note && <span className="text-[11px] text-muted">{note}</span>}
       </div>
       {children}
     </section>
@@ -118,7 +117,7 @@ export default async function ConferencePage({
   const recentWpy = wpy.filter((d) => d.year >= 2005);
 
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
+    <div className="min-h-screen bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -134,25 +133,25 @@ export default async function ConferencePage({
       />
       <SiteHeader />
       <main className="mx-auto max-w-6xl space-y-5 px-4 py-8">
-        <Link href="/" className="text-xs text-neutral-600 hover:underline dark:text-neutral-400">
+        <Link href="/" className="text-xs text-muted hover:underline hover:text-foreground">
           ← All venues
         </Link>
 
         {/* Header */}
-        <div className="rounded-xl border border-neutral-200 bg-white p-6
-                        dark:border-neutral-800 dark:bg-neutral-900">
+        <div className="rounded-xl border border-stone-200 bg-surface p-6
+                        dark:border-stone-800">
           <div className="flex flex-wrap items-center gap-3">
             <RankBadge rank={c.rank} size="lg" />
-            <h1 className="text-2xl font-black tracking-tight text-neutral-900 dark:text-neutral-100">
+            <h1 className="text-2xl font-black tracking-tight text-foreground">
               {c.acronym}
             </h1>
-            <span className="text-neutral-600 dark:text-neutral-400">{c.title}</span>
+            <span className="text-muted">{c.title}</span>
           </div>
 
           {/* Quick-take verdict summary */}
-          <div className="mt-3 rounded-lg border border-neutral-100 bg-neutral-50 px-4 py-2.5 text-xs text-neutral-700
-                          dark:border-neutral-800 dark:bg-neutral-950/60 dark:text-neutral-300">
-            <span className="font-semibold text-neutral-900 dark:text-neutral-100">Quick take: </span>
+          <div className="mt-3 rounded-lg border border-stone-200 bg-stone-50 px-4 py-2.5 text-xs text-stone-700
+                          dark:border-stone-800 dark:bg-stone-900/60 dark:text-stone-300">
+            <span className="font-semibold text-foreground">Quick take: </span>
             {c.rank === "A*"
               ? "Flagship international venue (top 7.5% tier). Highly competitive with premier global impact."
               : c.rank === "A"
@@ -163,7 +162,7 @@ export default async function ConferencePage({
                     ? "Recognized venue meeting standard peer-review criteria."
                     : `Conference ranked as ${c.rank} in CORE/ICORE evaluation.`}
             {lastStat?.rate != null && (
-              <span className="ml-1 font-medium text-blue-700 dark:text-blue-400">
+              <span className="ml-1 font-medium text-accent">
                 Recent acceptance rate: {lastStat.rate}% ({lastStat.year}).
               </span>
             )}
@@ -173,14 +172,13 @@ export default async function ConferencePage({
             {c.categories.map((cat) => (
               <span
                 key={cat}
-                className="rounded-full bg-blue-50 px-2.5 py-1 font-medium text-blue-700
-                           dark:bg-blue-950 dark:text-blue-300"
+                className="rounded-full bg-accent-soft px-2.5 py-1 font-medium text-accent"
               >
                 {cat}
               </span>
             ))}
             {c.avg_rating && (
-              <span className="rounded-full bg-amber-50 px-2.5 py-1 font-medium text-amber-700
+              <span className="rounded-full bg-amber-50 px-2.5 py-1 font-medium text-amber-800
                                dark:bg-amber-950 dark:text-amber-300">
                 ★ {c.avg_rating} community rating
               </span>
@@ -190,8 +188,8 @@ export default async function ConferencePage({
                 href={c.dblp_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-neutral-100 px-2.5 py-1 font-medium text-neutral-700 hover:bg-neutral-200
-                           dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                className="rounded-full bg-stone-100 px-2.5 py-1 font-medium text-stone-700 hover:bg-stone-200
+                           dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
               >
                 DBLP ↗
               </a>
@@ -201,8 +199,8 @@ export default async function ConferencePage({
                 href={`https://portal.core.edu.au/conf-ranks/${c.id}/`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-neutral-100 px-2.5 py-1 font-medium text-neutral-700 hover:bg-neutral-200
-                           dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                className="rounded-full bg-stone-100 px-2.5 py-1 font-medium text-stone-700 hover:bg-stone-200
+                           dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
               >
                 ICORE ↗
               </a>
@@ -211,34 +209,34 @@ export default async function ConferencePage({
           {stats.length > 0 && lastStat && (
             <div className="mt-4 flex flex-wrap gap-6 text-sm">
               <div>
-                <div className="text-2xl font-black text-neutral-900 dark:text-neutral-100">
+                <div className="text-2xl font-black text-foreground">
                   {lastStat.rate != null
                     ? `${lastStat.rate}%`
                     : lastStat.rate_short != null
                       ? `${lastStat.rate_short}% (short)`
                       : "—"}
                 </div>
-                <div className="text-xs text-neutral-500 dark:text-neutral-400">
+                <div className="text-xs text-muted">
                   acceptance ({lastStat.year})
                 </div>
               </div>
               <div>
-                <div className="text-2xl font-black text-neutral-900 dark:text-neutral-100">
+                <div className="text-2xl font-black text-foreground">
                   {(lastStat.accepted ?? lastStat.accepted_short)?.toLocaleString() ?? "—"}
                 </div>
-                <div className="text-xs text-neutral-500 dark:text-neutral-400">
+                <div className="text-xs text-muted">
                   papers accepted ({lastStat.year})
                 </div>
               </div>
               <div>
-                <div className="text-2xl font-black text-neutral-900 dark:text-neutral-100">
+                <div className="text-2xl font-black text-foreground">
                   {(
                     lastStat.submitted ??
                     lastStat.submitted_short ??
                     lastStat.total
                   )?.toLocaleString() ?? "—"}
                 </div>
-                <div className="text-xs text-neutral-500 dark:text-neutral-400">
+                <div className="text-xs text-muted">
                   submissions ({lastStat.year})
                 </div>
               </div>
@@ -325,14 +323,14 @@ export default async function ConferencePage({
               {oa.institutions.map((inst, i) => (
                 <li
                   key={inst.name}
-                  className="flex items-center gap-3 rounded-lg px-2 py-1.5 text-sm odd:bg-neutral-50
-                             dark:odd:bg-neutral-800/40"
+                  className="flex items-center gap-3 rounded-lg px-2 py-1.5 text-sm odd:bg-stone-50
+                             dark:odd:bg-stone-800/40"
                 >
-                  <span className="w-6 text-right font-black text-neutral-400 dark:text-neutral-600">
+                  <span className="w-6 text-right font-black text-muted">
                     {i + 1}
                   </span>
-                  <span className="font-medium text-neutral-800 dark:text-neutral-200">{inst.name}</span>
-                  <span className="ml-auto font-semibold text-neutral-500 dark:text-neutral-400">
+                  <span className="font-medium text-foreground">{inst.name}</span>
+                  <span className="ml-auto font-semibold text-muted">
                     {inst.count.toLocaleString()} papers
                   </span>
                 </li>
@@ -347,8 +345,8 @@ export default async function ConferencePage({
             <div className="overflow-x-auto">
               <table className="w-full min-w-[560px] text-sm">
                 <thead>
-                  <tr className="border-b border-neutral-200 text-left text-xs uppercase tracking-wide text-neutral-500
-                                 dark:border-neutral-800 dark:text-neutral-400">
+                  <tr className="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-muted
+                                 dark:border-stone-800">
                     <th className="py-2 pr-4">Year</th>
                     <th className="py-2 pr-4">Submitted</th>
                     <th className="py-2 pr-4">Accepted</th>
@@ -359,26 +357,26 @@ export default async function ConferencePage({
                 </thead>
                 <tbody>
                   {[...stats].reverse().map((s) => (
-                    <tr key={s.year} className="border-b border-neutral-100 last:border-0
-                                               dark:border-neutral-800/60">
-                      <td className="py-2 pr-4 font-semibold text-neutral-800 dark:text-neutral-200 tabular-nums">{s.year}</td>
-                      <td className="py-2 pr-4 text-neutral-700 dark:text-neutral-300 tabular-nums">
+                    <tr key={s.year} className="border-b border-stone-200/60 last:border-0
+                                               dark:border-stone-800/60">
+                      <td className="py-2 pr-4 font-semibold text-foreground tabular-nums">{s.year}</td>
+                      <td className="py-2 pr-4 text-stone-700 dark:text-stone-300 tabular-nums">
                         {(s.submitted ?? s.total)?.toLocaleString() ?? "—"}
                       </td>
-                      <td className="py-2 pr-4 text-neutral-700 dark:text-neutral-300 tabular-nums">
+                      <td className="py-2 pr-4 text-stone-700 dark:text-stone-300 tabular-nums">
                         {(s.accepted ?? s.accepted_short)?.toLocaleString() ?? "—"}
                       </td>
-                      <td className="py-2 pr-4 font-semibold text-neutral-800 dark:text-neutral-200 tabular-nums">
+                      <td className="py-2 pr-4 font-semibold text-foreground tabular-nums">
                         {s.rate != null ? `${s.rate}%` : s.rate_short != null ? `${s.rate_short}% (short)` : "—"}
                       </td>
-                      <td className="py-2 pr-4 text-xs text-neutral-500 dark:text-neutral-400">
+                      <td className="py-2 pr-4 text-xs text-muted">
                         {s.tiers && Object.keys(s.tiers).length > 0
                           ? Object.entries(s.tiers)
                               .map(([k, v]) => `${k}: ${v.toLocaleString()}`)
                               .join(", ")
                           : s.note ?? ""}
                       </td>
-                      <td className="py-2 text-neutral-500 dark:text-neutral-400">{s.location ?? "—"}</td>
+                      <td className="py-2 text-muted">{s.location ?? "—"}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -389,11 +387,11 @@ export default async function ConferencePage({
 
         {stats.length === 0 && !oa && (
           <Section title="Acceptance statistics">
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            <p className="text-sm text-muted">
               No acceptance-rate or topic data is available for this venue yet.
               See the{" "}
               <a
-                className="text-blue-600 hover:underline dark:text-blue-400"
+                className="text-accent hover:underline"
                 href={`https://portal.core.edu.au/conf-ranks/${c.id}/`}
                 target="_blank"
                 rel="noopener noreferrer"

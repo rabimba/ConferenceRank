@@ -89,21 +89,21 @@ export default function Home() {
   const totalAStar = venues.filter((v) => v.rank === "A*").length;
 
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
+    <div className="min-h-screen bg-background">
       <SiteHeader />
       <main className="mx-auto max-w-6xl px-4 py-8">
         <div className="mb-6">
-          <h1 className="text-2xl font-black tracking-tight text-neutral-900 dark:text-neutral-100">
+          <h1 className="text-2xl font-black tracking-tight text-foreground">
             Find the right venue for your research
           </h1>
-          <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+          <p className="mt-1 text-sm text-muted">
             ICORE/CORE rankings, acceptance-rate trends, topics and publishing
             institutions for {venues.length.toLocaleString()} computer-science
             venues — {ranked.toLocaleString()} CORE-ranked,{" "}
             {withStats.toLocaleString()} with acceptance statistics.{" "}
             <Link
               href="/suggest/"
-              className="font-semibold text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300 inline-flex items-center gap-1"
+              className="font-semibold text-accent hover:underline inline-flex items-center gap-1"
             >
               <span>Have an abstract? Try the Venue Suggester →</span>
             </Link>
@@ -119,10 +119,10 @@ export default function Home() {
                   <Link
                     key={v.id}
                     href={`/conference/${v.id}`}
-                    className="inline-flex items-center gap-1 rounded-md bg-white px-2 py-1 font-semibold text-neutral-800 shadow-xs hover:underline dark:bg-neutral-900 dark:text-neutral-200"
+                    className="inline-flex items-center gap-1 rounded-md bg-surface px-2 py-1 font-semibold text-foreground shadow-xs hover:underline"
                   >
                     <span>{v.acronym}</span>
-                    <span className="text-[10px] text-neutral-400">
+                    <span className="text-[10px] text-muted">
                       ({v.fromRank} → {v.toRank})
                     </span>
                   </Link>
