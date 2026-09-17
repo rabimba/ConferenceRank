@@ -4,22 +4,23 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Directory, { type DirectoryEntry } from "./Directory";
 import CompareModal from "./CompareModal";
-import { RankRateScatterChart, type LandscapePoint } from "./Charts";
+import AcceptanceLandscape from "./AcceptanceLandscape";
+import type { LandscapePoint } from "@/app/page";
 import type { Conference } from "@/lib/types";
 
 export default function HomeClient({
   venues,
   entries,
-  scatterPoints,
+  landscapePoints,
 }: {
   venues: Conference[];
   entries: DirectoryEntry[];
-  scatterPoints: LandscapePoint[];
+  landscapePoints: LandscapePoint[];
 }) {
   const router = useRouter();
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [showModal, setShowModal] = useState(false);
-  const [showScatter, setShowScatter] = useState(false);
+  const [showLandscape, setShowLandscape] = useState(true);
 
   const toggleCompare = (id: string) => {
     setCompareIds((prev) =>
@@ -35,35 +36,31 @@ export default function HomeClient({
 
   return (
     <>
-      {/* Landscape Scatterplot Toggle */}
-      <div className="mb-6 rounded-xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900 shadow-xs">
+      {/* Acceptance Rate & Selectivity Landscape */}
+      <div className="mb-8 rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 shadow-xs">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-sm font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
-              <span>📊 Conference Landscape (Rank vs. Acceptance Rate)</span>
+            <h2 className="text-base font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
+              <span>📊 Conference Selectivity Landscape</span>
               <span className="text-xs font-normal text-neutral-500 dark:text-neutral-400">
-                ({scatterPoints.length} venues with stats)
+                ({landscapePoints.length} venues with acceptance stats)
               </span>
             </h2>
             <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">
-              Compare selectivity against CORE prestige tier. Dot size corresponds to papers accepted.
+              Benchmark acceptance rates across CORE prestige tiers (A* through C) and computer science fields.
             </p>
           </div>
           <button
-            onClick={() => setShowScatter(!showScatter)}
+            onClick={() => setShowLandscape(!showLandscape)}
             className="rounded-lg border border-neutral-300 px-3 py-1.5 text-xs font-semibold text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 transition"
           >
-            {showScatter ? "Hide Chart ▲" : "Show Chart ▼"}
+            {showLandscape ? "Hide Section ▲" : "Show Section ▼"}
           </button>
         </div>
-        {showScatter && (
-          <div className="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
-            <RankRateScatterChart
-              data={scatterPoints}
-              onSelectVenue={(id) => {
-                router.push(`/conference/${id}`);
-              }}
-            />
+
+        {showLandscape && (
+          <div className="mt-5 pt-5 border-t border-neutral-100 dark:border-neutral-800">
+            <AcceptanceLandscape points={landscapePoints} />
           </div>
         )}
       </div>

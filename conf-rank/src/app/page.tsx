@@ -5,7 +5,6 @@ import RankLegend from "@/components/RankLegend";
 import HomeClient from "@/components/HomeClient";
 import { getConferences } from "@/lib/data";
 import type { Conference } from "@/lib/types";
-import type { LandscapePoint } from "@/components/Charts";
 
 function buildDirectory(c: Conference[]) {
   return c.map((r) => {
@@ -34,18 +33,34 @@ function buildDirectory(c: Conference[]) {
   });
 }
 
-function buildScatterPoints(venues: Conference[]): LandscapePoint[] {
+export interface LandscapePoint {
+  id: string;
+  acronym: string;
+  title: string;
+  rank: string;
+  rate: number;
+  accepted?: number;
+  year?: number;
+  categories: string[];
+}
+
+function buildLandscapePoints(venues: Conference[]): LandscapePoint[] {
   const points: LandscapePoint[] = [];
   for (const c of venues) {
-    if (!c.stats) continue;
-    for (const s of c.stats) {
+    if (!c.stats || !c.stats.length) continue;
+    // Sort descending to find the MOST RECENT valid acceptance rate
+    const sorted = [...c.stats].sort((a, b) => b.year - a.year);
+    for (const s of sorted) {
       if (s.rate && s.rate > 0 && s.rate < 60) {
         points.push({
           id: c.id,
           acronym: c.acronym,
+          title: c.title,
           rank: c.rank,
           rate: Math.round(s.rate * 10) / 10,
           accepted: s.accepted ?? s.total,
+          year: s.year,
+          categories: c.categories ?? [],
         });
         break;
       }
@@ -90,7 +105,7 @@ function getRisingVenues(venues: Conference[]) {
 export default function Home() {
   const venues = getConferences();
   const entries = buildDirectory(venues);
-  const scatterPoints = buildScatterPoints(venues);
+  const landscapePoints = buildLandscapePoints(venues);
   const ranked = venues.filter((v) => ["A*", "A", "B", "C"].includes(v.rank)).length;
   const withStats = venues.filter((v) => v.stats && v.stats.length > 0).length;
   const risingVenues = getRisingVenues(venues);
@@ -136,7 +151,7 @@ export default function Home() {
         <HomeClient
           venues={venues}
           entries={entries}
-          scatterPoints={scatterPoints}
+          landscapePoints={landscapePoints}
         />
         <SiteFooter />
       </main>
