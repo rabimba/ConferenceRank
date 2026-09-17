@@ -5,6 +5,7 @@ import SiteHeader from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import RankBadge from "@/components/RankBadge";
 import WatchlistButton from "@/components/WatchlistButton";
+import ConferenceDeadlineCard from "@/components/ConferenceDeadlineCard";
 import {
   AcceptanceTrendChart,
   PapersPerYearChart,
@@ -80,6 +81,15 @@ export default async function ConferencePage({
       submitted: s.submitted ?? s.submitted_short ?? s.total ?? undefined,
     }));
   const lastStat = stats[stats.length - 1];
+  const activeDeadline = (() => {
+    if (!c.deadlines || !c.deadlines.length) return null;
+    const now = Date.now();
+    const sorted = [...c.deadlines].sort(
+      (a, b) => new Date(a.paper_deadline).getTime() - new Date(b.paper_deadline).getTime()
+    );
+    const future = sorted.find((d) => new Date(d.paper_deadline).getTime() >= now - 86400000 * 14);
+    return future || sorted[sorted.length - 1];
+  })();
   const histData = (c.rank_history ?? [])
     .filter((h) => h.year)
     .map((h) => ({ year: h.year!, rank: h.rank }))
@@ -244,6 +254,11 @@ export default async function ConferencePage({
             </div>
           )}
         </div>
+
+        {/* Next Submission Deadline Callout */}
+        {activeDeadline && (
+          <ConferenceDeadlineCard venue={c} deadline={activeDeadline} />
+        )}
 
         {/* Acceptance trend + papers */}
         {rateData.length > 1 && (
