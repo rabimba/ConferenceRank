@@ -1,32 +1,32 @@
 const RANK_STYLES: Record<string, { classes: string; label: string }> = {
   "A*": {
     classes:
-      "bg-amber-100 text-amber-900 ring-1 ring-amber-300 dark:bg-amber-950 dark:text-amber-200 dark:ring-amber-800",
+      "bg-amber-100/90 text-amber-950 ring-1 ring-amber-300/80 dark:bg-amber-950/70 dark:text-amber-200 dark:ring-amber-700/60",
     label: "A*",
   },
   A: {
     classes:
-      "bg-indigo-100 text-indigo-900 ring-1 ring-indigo-300 dark:bg-indigo-950 dark:text-indigo-200 dark:ring-indigo-800",
+      "bg-orange-100/80 text-orange-950 ring-1 ring-orange-300/80 dark:bg-orange-950/70 dark:text-orange-200 dark:ring-orange-700/60",
     label: "A",
   },
   B: {
     classes:
-      "bg-teal-100 text-teal-900 ring-1 ring-teal-300 dark:bg-teal-950 dark:text-teal-200 dark:ring-teal-800",
+      "bg-emerald-100/70 text-emerald-950 ring-1 ring-emerald-300/70 dark:bg-emerald-950/60 dark:text-emerald-200 dark:ring-emerald-800/60",
     label: "B",
   },
   C: {
     classes:
-      "bg-stone-100 text-stone-600 ring-1 ring-stone-300 dark:bg-stone-800 dark:text-stone-200 dark:ring-stone-600",
+      "bg-stone-200/70 text-stone-800 ring-1 ring-stone-300/80 dark:bg-stone-800/80 dark:text-stone-200 dark:ring-stone-700/60",
     label: "C",
   },
   "Australasian B": {
     classes:
-      "bg-teal-50 text-teal-700 ring-1 ring-teal-200 dark:bg-teal-950/60 dark:text-teal-300 dark:ring-teal-800",
+      "bg-emerald-50 text-emerald-900 ring-1 ring-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:ring-emerald-800/60",
     label: "Aus B",
   },
   "Australasian C": {
     classes:
-      "bg-stone-50 text-stone-500 ring-1 ring-stone-200 dark:bg-stone-800/60 dark:text-stone-300 dark:ring-stone-700",
+      "bg-stone-100 text-stone-700 ring-1 ring-stone-200 dark:bg-stone-800/50 dark:text-stone-300 dark:ring-stone-700/50",
     label: "Aus C",
   },
 };
