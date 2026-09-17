@@ -38,6 +38,19 @@ export interface OpenAlexData {
   institutions: InstitutionCount[];
 }
 
+export interface ConferenceDeadline {
+  cycle?: string | null;
+  year: number;
+  abstract_deadline?: string | null;
+  paper_deadline: string;
+  notification_date?: string | null;
+  timezone: string;
+  location?: string | null;
+  conference_dates?: string | null;
+  cfp_url?: string | null;
+  source?: string;
+}
+
 export interface Conference {
   id: string;
   title: string;
@@ -51,6 +64,7 @@ export interface Conference {
   stats: YearStat[] | null;
   stats_source: "papercopilot" | "lixin4ever" | "papercopilot+lixin4ever" | null;
   openalex?: OpenAlexData;
+  deadlines?: ConferenceDeadline[] | null;
 }
 
 export const ALL_CATEGORIES = [
