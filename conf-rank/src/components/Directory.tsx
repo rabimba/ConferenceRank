@@ -30,30 +30,61 @@ const RANKS = [
 ] as const;
 const PAGE_SIZE = 50;
 
+const PRIMARY_CATEGORIES = [
+  "Artificial Intelligence",
+  "Machine Learning",
+  "Computer Vision & Multimedia",
+  "Cybersecurity & Privacy",
+  "Data Management & Mining",
+  "Distributed Systems & Networks",
+  "Software Engineering & PL",
+];
+
 type SortKey = "rank" | "rate" | "accepted" | "acronym" | "title";
 
 function readUrl(): {
   q: string;
   cats: string[];
   ranks: string[];
+  sort: SortKey;
+  dir: "asc" | "desc";
   page: number;
 } {
-  if (typeof window === "undefined") return { q: "", cats: [], ranks: [], page: 1 };
+  if (typeof window === "undefined")
+    return { q: "", cats: [], ranks: [], sort: "rank", dir: "asc", page: 1 };
   const p = new URLSearchParams(window.location.search);
+  const rawSort = p.get("sort");
+  const validSort: SortKey =
+    rawSort === "rate" || rawSort === "accepted" || rawSort === "acronym" || rawSort === "title"
+      ? rawSort
+      : "rank";
+  const rawDir = p.get("dir");
+  const validDir: "asc" | "desc" = rawDir === "desc" ? "desc" : "asc";
   return {
     q: p.get("q") ?? "",
     cats: (p.get("cats") ?? "").split(",").filter(Boolean),
     ranks: (p.get("ranks") ?? "").split(",").filter(Boolean),
+    sort: validSort,
+    dir: validDir,
     page: Math.max(1, parseInt(p.get("page") ?? "1", 10) || 1),
   };
 }
 
-function writeUrl(q: string, cats: string[], ranks: string[], page: number) {
+function writeUrl(
+  q: string,
+  cats: string[],
+  ranks: string[],
+  sort: SortKey,
+  dir: "asc" | "desc",
+  page: number
+) {
   if (typeof window === "undefined") return;
   const p = new URLSearchParams();
   if (q) p.set("q", q);
   if (cats.length) p.set("cats", cats.join(","));
   if (ranks.length) p.set("ranks", ranks.join(","));
+  if (sort !== "rank") p.set("sort", sort);
+  if (dir !== "asc") p.set("dir", dir);
   if (page > 1) p.set("page", String(page));
   const qs = p.toString();
   window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
@@ -75,6 +106,7 @@ export default function Directory({
   const [dir, setDir] = useState<"asc" | "desc">("asc");
   const [page, setPage] = useState(1);
   const [hydrated, setHydrated] = useState(false);
+  const [showAllCats, setShowAllCats] = useState(false);
 
   // hydrate filter state from the URL once on mount
   useEffect(() => {
@@ -82,6 +114,8 @@ export default function Directory({
     setSearch(u.q);
     setCats(u.cats);
     setRanks(u.ranks);
+    setSort(u.sort);
+    setDir(u.dir);
     setPage(u.page);
     setHydrated(true);
   }, []);
@@ -144,8 +178,17 @@ export default function Directory({
 
   // sync URL whenever state changes (after initial hydration)
   useEffect(() => {
-    if (hydrated) writeUrl(search, cats, ranks, safePage);
-  }, [search, cats, ranks, safePage, hydrated]);
+    if (hydrated) writeUrl(search, cats, ranks, sort, dir, safePage);
+  }, [search, cats, ranks, sort, dir, safePage, hydrated]);
+
+  const visibleCategories = useMemo(() => {
+    if (showAllCats) return ALL_CATEGORIES;
+    return ALL_CATEGORIES.filter(
+      (cat) => PRIMARY_CATEGORIES.includes(cat) || cats.includes(cat)
+    );
+  }, [showAllCats, cats]);
+
+  const hiddenCategoriesCount = ALL_CATEGORIES.length - visibleCategories.length;
 
   const toggle = (arr: string[], v: string, set: (a: string[]) => void) => {
     set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
@@ -198,28 +241,43 @@ export default function Directory({
     <div>
       <div className="space-y-3">
         <div className="flex flex-wrap items-center gap-2">
-          <input
-            type="search"
-            value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-              setPage(1);
-            }}
-            placeholder="Filter by name or acronym…"
-            className="w-64 rounded-lg border border-stone-300 bg-surface px-3 py-2 text-sm
-                       text-foreground placeholder:text-muted
-                       focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent
-                       dark:border-stone-700 dark:placeholder:text-muted"
-          />
-          <div className="flex flex-wrap gap-1">
+          <div className="relative w-full sm:w-72">
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+                setPage(1);
+              }}
+              placeholder="Filter by name or acronym…"
+              className="w-full rounded-lg border border-border bg-surface px-3 py-2 pr-8 text-sm
+                         text-foreground placeholder:text-muted
+                         focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+            />
+            {search && (
+              <button
+                type="button"
+                onClick={() => {
+                  setSearch("");
+                  setPage(1);
+                }}
+                aria-label="Clear search"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-muted hover:text-foreground text-sm font-bold"
+              >
+                ×
+              </button>
+            )}
+          </div>
+          <div className="flex flex-wrap items-center gap-1">
+            <span className="text-xs font-semibold text-muted mr-1">Rank:</span>
             {RANKS.map((r) => (
               <button
                 key={r.value}
                 onClick={() => toggle(ranks, r.value, setRanks)}
                 className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
                   ranks.includes(r.value)
-                    ? "bg-accent text-accent-contrast"
-                    : "bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
+                    ? "bg-accent text-accent-contrast shadow-xs"
+                    : "border border-border bg-surface text-foreground/80 hover:border-stone-400 hover:text-foreground dark:hover:border-stone-600"
                 }`}
               >
                 {r.label}
@@ -243,8 +301,8 @@ export default function Directory({
             <button
               onClick={exportCsv}
               title="Export currently filtered list as CSV"
-              className="rounded-lg border border-stone-300 px-3 py-1.5 text-xs font-medium text-stone-700
-                         hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800"
+              className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-foreground/80
+                         hover:bg-stone-100 dark:hover:bg-stone-800 transition"
             >
               Export CSV
             </button>
@@ -253,41 +311,60 @@ export default function Directory({
             </span>
           </div>
         </div>
-        <div className="flex flex-wrap gap-1.5">
-          {ALL_CATEGORIES.map((cat) => (
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span className="text-xs font-semibold text-muted mr-1">Topic:</span>
+          {visibleCategories.map((cat) => (
             <button
               key={cat}
               onClick={() => toggle(cats, cat as string, setCats)}
               className={`rounded-full px-3 py-1 text-xs font-medium transition ${
                 cats.includes(cat)
-                  ? "bg-accent text-accent-contrast"
-                  : "bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
+                  ? "bg-accent text-accent-contrast shadow-xs"
+                  : "border border-border bg-surface text-foreground/80 hover:border-stone-400 hover:text-foreground dark:hover:border-stone-600"
               }`}
             >
               {cat}
             </button>
           ))}
+          {ALL_CATEGORIES.length > PRIMARY_CATEGORIES.length && (
+            <button
+              type="button"
+              onClick={() => setShowAllCats(!showAllCats)}
+              className="rounded-full border border-dashed border-border px-3 py-1 text-xs font-semibold text-muted hover:border-accent hover:text-accent transition"
+            >
+              {showAllCats ? "Show fewer ▴" : `+ ${hiddenCategoriesCount} more ▾`}
+            </button>
+          )}
         </div>
       </div>
 
-      <div className="mt-4 overflow-x-auto rounded-xl border border-stone-200
-                      dark:border-stone-800">
+      <div className="mt-4 overflow-x-auto rounded-xl border border-border shadow-xs">
         <table className="w-full min-w-[720px] text-sm">
           <thead>
-            <tr className="border-b border-stone-200 bg-stone-50 text-left text-xs
+            <tr className="border-b border-border bg-stone-100/70 text-left text-xs
                            uppercase tracking-wide text-muted
-                           dark:border-stone-800 dark:bg-stone-900/50">
+                           dark:bg-stone-900/80">
               {onCompare && (
-                <th className="w-10 px-3 py-3 text-center">
+                <th className="sticky left-0 z-20 w-10 bg-surface px-3 py-3 text-center">
                   <span className="sr-only">Compare</span>
                 </th>
               )}
-              <th className="px-4 py-3 font-semibold" aria-sort={ariaSort("rank")}>
+              <th
+                className={`sticky z-20 bg-surface px-4 py-3 font-semibold ${
+                  onCompare ? "left-10" : "left-0"
+                }`}
+                aria-sort={ariaSort("rank")}
+              >
                 <button type="button" onClick={() => setSortKey("rank")} className="uppercase tracking-wide">
                   Rank{arrow("rank")}
                 </button>
               </th>
-              <th className="px-4 py-3 font-semibold" aria-sort={ariaSort("acronym")}>
+              <th
+                className={`sticky z-20 bg-surface border-r border-border/80 px-4 py-3 font-semibold shadow-[2px_0_4px_-2px_rgba(0,0,0,0.06)] ${
+                  onCompare ? "left-[92px]" : "left-[52px]"
+                }`}
+                aria-sort={ariaSort("acronym")}
+              >
                 <button type="button" onClick={() => setSortKey("acronym")} className="uppercase tracking-wide">
                   Acronym{arrow("acronym")}
                 </button>
@@ -310,52 +387,62 @@ export default function Directory({
             </tr>
           </thead>
           <tbody>
-            {pageRows.map((c) => (
-              <tr
-                key={c.id}
-                className={`border-b border-stone-200/60 last:border-0 hover:bg-stone-100/60
-                           dark:border-stone-800/60 dark:hover:bg-stone-900/60 ${
-                             selectedForCompare.includes(c.id) ? "bg-accent-soft/40 dark:bg-accent-soft/20" : ""
-                           }`}
-              >
-                {onCompare && (
-                  <td className="px-3 py-2.5 text-center">
-                    <input
-                      type="checkbox"
-                      aria-label={`Select ${c.acronym} for comparison`}
-                      checked={selectedForCompare.includes(c.id)}
-                      onChange={() => onCompare(c.id)}
-                      className="size-4 rounded border-stone-300 text-accent focus:ring-accent dark:border-stone-700 dark:bg-stone-800"
-                    />
-                  </td>
-                )}
-                <td className="px-4 py-2.5">
-                  <RankBadge rank={c.rank} />
-                </td>
-                <td className="px-4 py-2.5 font-bold text-foreground">
-                  <Link href={`/conference/${c.id}`} className="hover:underline">
-                    {c.acronym || "—"}
-                  </Link>
-                </td>
-                <td className="max-w-[420px] truncate px-4 py-2.5 text-stone-700 dark:text-stone-300">
-                  <Link href={`/conference/${c.id}`} className="hover:underline">
-                    {c.title}
-                  </Link>
-                </td>
-                <td className="px-4 py-2.5 tabular-nums">
-                  {c.latest_rate != null ? (
-                    <span className="font-semibold text-foreground">
-                      {c.latest_rate.toFixed(1)}%
-                    </span>
-                  ) : (
-                    <span className="text-xs text-muted">no data</span>
+            {pageRows.map((c) => {
+              const isSelected = selectedForCompare.includes(c.id);
+              const rowBg = isSelected
+                ? "bg-accent-soft/40 dark:bg-accent-soft/20"
+                : "bg-surface group-hover:bg-stone-100/70 dark:bg-surface dark:group-hover:bg-stone-900/70";
+              return (
+                <tr
+                  key={c.id}
+                  className={`group border-b border-border/60 last:border-0 hover:bg-stone-100/70
+                             dark:hover:bg-stone-900/70 ${
+                               isSelected ? "bg-accent-soft/40 dark:bg-accent-soft/20" : ""
+                             }`}
+                >
+                  {onCompare && (
+                    <td className={`sticky left-0 z-10 px-3 py-2.5 text-center transition ${rowBg}`}>
+                      <input
+                        type="checkbox"
+                        aria-label={`Select ${c.acronym} for comparison`}
+                        checked={isSelected}
+                        onChange={() => onCompare(c.id)}
+                        className="size-4 rounded border-border text-accent focus:ring-accent dark:border-stone-700 dark:bg-stone-800"
+                      />
+                    </td>
                   )}
-                </td>
-                <td className="px-4 py-2.5 tabular-nums text-stone-700 dark:text-stone-300">
-                  {c.latest_accepted != null ? c.latest_accepted.toLocaleString() : "—"}
-                </td>
-              </tr>
-            ))}
+                  <td className={`sticky z-10 px-4 py-2.5 transition ${onCompare ? "left-10" : "left-0"} ${rowBg}`}>
+                    <RankBadge rank={c.rank} />
+                  </td>
+                  <td
+                    className={`sticky z-10 border-r border-border/80 px-4 py-2.5 font-bold text-foreground shadow-[2px_0_4px_-2px_rgba(0,0,0,0.06)] transition ${
+                      onCompare ? "left-[92px]" : "left-[52px]"
+                    } ${rowBg}`}
+                  >
+                    <Link href={`/conference/${c.id}`} className="hover:underline">
+                      {c.acronym || "—"}
+                    </Link>
+                  </td>
+                  <td className="max-w-[420px] truncate px-4 py-2.5 text-foreground/90">
+                    <Link href={`/conference/${c.id}`} className="hover:underline">
+                      {c.title}
+                    </Link>
+                  </td>
+                  <td className="px-4 py-2.5 tabular-nums">
+                    {c.latest_rate != null ? (
+                      <span className="font-semibold text-foreground">
+                        {c.latest_rate.toFixed(1)}%
+                      </span>
+                    ) : (
+                      <span className="text-xs text-muted">no data</span>
+                    )}
+                  </td>
+                  <td className="px-4 py-2.5 tabular-nums text-foreground/80">
+                    {c.latest_accepted != null ? c.latest_accepted.toLocaleString() : "—"}
+                  </td>
+                </tr>
+              );
+            })}
             {pageRows.length === 0 && (
               <tr>
                 <td colSpan={onCompare ? 6 : 5} className="px-4 py-10 text-center text-muted">
@@ -373,15 +460,15 @@ export default function Directory({
           <button
             onClick={() => setPage((p) => Math.max(1, p - 1))}
             disabled={safePage === 1}
-            className="rounded-md border border-stone-300 px-3 py-1.5 text-stone-700
+            className="rounded-md border border-border bg-surface px-3 py-1.5 text-foreground/80
                        enabled:hover:bg-stone-100 disabled:opacity-40
-                       dark:border-stone-700 dark:text-stone-300 dark:enabled:hover:bg-stone-800"
+                       dark:enabled:hover:bg-stone-800 transition"
           >
             ← Prev
           </button>
           {pageWindow[0] > 1 && (
             <>
-              <button onClick={() => setPage(1)} className="rounded-md px-3 py-1.5 text-stone-600 hover:bg-stone-100 dark:text-stone-400 dark:hover:bg-stone-800">1</button>
+              <button onClick={() => setPage(1)} className="rounded-md px-3 py-1.5 text-foreground/80 hover:bg-stone-100 dark:hover:bg-stone-800 transition">1</button>
               {pageWindow[0] > 2 && <span className="px-1 text-muted">…</span>}
             </>
           )}
@@ -389,10 +476,10 @@ export default function Directory({
             <button
               key={p}
               onClick={() => setPage(p)}
-              className={`rounded-md px-3 py-1.5 font-semibold ${
+              className={`rounded-md px-3 py-1.5 font-semibold transition ${
                 p === safePage
-                  ? "bg-accent text-accent-contrast"
-                  : "text-stone-600 hover:bg-stone-100 dark:text-stone-400 dark:hover:bg-stone-800"
+                  ? "bg-accent text-accent-contrast shadow-xs"
+                  : "text-foreground/80 hover:bg-stone-100 dark:hover:bg-stone-800"
               }`}
             >
               {p}
@@ -401,15 +488,15 @@ export default function Directory({
           {pageWindow[pageWindow.length - 1] < totalPages && (
             <>
               {pageWindow[pageWindow.length - 1] < totalPages - 1 && <span className="px-1 text-muted">…</span>}
-              <button onClick={() => setPage(totalPages)} className="rounded-md px-3 py-1.5 text-stone-600 hover:bg-stone-100 dark:text-stone-400 dark:hover:bg-stone-800">{totalPages}</button>
+              <button onClick={() => setPage(totalPages)} className="rounded-md px-3 py-1.5 text-foreground/80 hover:bg-stone-100 dark:hover:bg-stone-800 transition">{totalPages}</button>
             </>
           )}
           <button
             onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
             disabled={safePage === totalPages}
-            className="rounded-md border border-stone-300 px-3 py-1.5 text-stone-700
+            className="rounded-md border border-border bg-surface px-3 py-1.5 text-foreground/80
                        enabled:hover:bg-stone-100 disabled:opacity-40
-                       dark:border-stone-700 dark:text-stone-300 dark:enabled:hover:bg-stone-800"
+                       dark:enabled:hover:bg-stone-800 transition"
           >
             Next →
           </button>

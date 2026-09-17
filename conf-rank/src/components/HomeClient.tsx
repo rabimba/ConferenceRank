@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Directory, { type DirectoryEntry } from "./Directory";
 import CompareModal from "./CompareModal";
 import AcceptanceLandscape from "./AcceptanceLandscape";
@@ -44,7 +44,7 @@ export default function HomeClient({
   return (
     <>
       {/* Acceptance Rate & Selectivity Landscape */}
-      <div className="mb-8 rounded-xl border border-stone-200 bg-surface p-5 dark:border-stone-800 shadow-xs">
+      <div className="mb-8 rounded-xl border border-border bg-surface p-5 shadow-xs">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-base font-bold text-foreground flex items-center gap-2">
@@ -59,28 +59,30 @@ export default function HomeClient({
           </div>
           <button
             onClick={() => setShowLandscape(!showLandscape)}
-            className="rounded-lg border border-stone-300 px-3 py-1.5 text-xs font-semibold text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800 transition"
+            className="rounded-lg border border-border px-3 py-1.5 text-xs font-semibold text-foreground/80 hover:bg-stone-100 dark:hover:bg-stone-800 transition"
           >
             {showLandscape ? "Hide Section ▲" : "Show Section ▼"}
           </button>
         </div>
 
         {showLandscape && (
-          <div className="mt-5 pt-5 border-t border-stone-200 dark:border-stone-800">
+          <div className="mt-5 pt-5 border-t border-border">
             <AcceptanceLandscape points={landscapePoints} totalAStar={totalAStar} />
           </div>
         )}
       </div>
 
-      <Directory
-        venues={entries}
-        onCompare={toggleCompare}
-        selectedForCompare={compareIds}
-      />
+      <Suspense fallback={<div className="py-12 text-center text-sm text-muted">Loading directory...</div>}>
+        <Directory
+          venues={entries}
+          onCompare={toggleCompare}
+          selectedForCompare={compareIds}
+        />
+      </Suspense>
 
       {/* Floating Compare Drawer / Bar */}
       {compareIds.length > 0 && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-3 rounded-full border border-stone-300 bg-surface/95 px-5 py-2.5 shadow-xl backdrop-blur-md dark:border-stone-700">
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-3 rounded-full border border-border bg-surface/95 px-5 py-2.5 shadow-xl backdrop-blur-md">
           <span className="text-xs font-bold text-foreground">
             {compareIds.length} venue{compareIds.length === 1 ? "" : "s"} selected
           </span>

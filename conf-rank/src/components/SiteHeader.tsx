@@ -20,7 +20,7 @@ export default function SiteHeader() {
         <div className="flex items-center gap-2">
           <Link
             href="/suggest/"
-            className="hidden items-center gap-1.5 rounded-lg border border-border bg-stone-50 px-3 py-1.5 text-xs font-bold text-stone-700 hover:border-accent hover:bg-accent-soft hover:text-accent sm:inline-flex dark:bg-stone-900 dark:text-stone-300 dark:hover:border-accent dark:hover:bg-accent-soft dark:hover:text-accent transition"
+            className="hidden items-center gap-1.5 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-bold text-foreground hover:border-accent hover:bg-accent-soft hover:text-accent sm:inline-flex dark:hover:border-accent dark:hover:bg-accent-soft dark:hover:text-accent transition"
           >
             <span>✨</span>
             <span>Suggest Venue</span>

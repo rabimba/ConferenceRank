@@ -46,8 +46,7 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="rounded-xl border border-stone-200 bg-surface p-5
-                        dark:border-stone-800">
+    <section className="rounded-xl border border-border bg-surface p-5 shadow-xs">
       <div className="mb-3 flex items-baseline justify-between gap-4">
         <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
           {title}

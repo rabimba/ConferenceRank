@@ -52,8 +52,7 @@ export default function RankLegend() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mb-6 rounded-xl border border-stone-200 bg-surface p-4 shadow-xs
-                    dark:border-stone-800 dark:bg-surface">
+    <div className="mb-6 rounded-xl border border-border bg-surface p-4 shadow-xs">
       <div className="flex items-center justify-between">
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-xs font-bold uppercase tracking-wider text-muted">
@@ -91,13 +90,12 @@ export default function RankLegend() {
       </div>
 
       {open && (
-        <div className="mt-4 grid grid-cols-1 gap-2.5 border-t border-stone-200 pt-4 sm:grid-cols-2 lg:grid-cols-3
-                        dark:border-stone-800">
+        <div className="mt-4 grid grid-cols-1 gap-2.5 border-t border-border pt-4 sm:grid-cols-2 lg:grid-cols-3">
           {TIERS.map((tier) => (
             <div
               key={tier.rank}
-              className="rounded-lg border border-stone-200 bg-stone-50/70 p-3
-                         dark:border-stone-800 dark:bg-stone-900/50"
+              className="rounded-lg border border-border bg-stone-50/50 p-3
+                         dark:bg-stone-900/40"
             >
               <div className="flex items-center gap-2">
                 <RankBadge rank={tier.rank} size="md" />
