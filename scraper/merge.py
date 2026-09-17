@@ -106,6 +106,36 @@ def merge():
     lixin_by_acr = {norm_acr(k): v for k, v in lixin.items()}
     manual_by_acr = {norm_acr(k): v for k, v in manual.items()}
 
+    # acronym aliases: source-key -> CORE acronym (normed)
+    ALIASES = {
+        "oakland": "sp", "ieeep": "sp",
+        "www": "thewebconf",
+        "naacl": "naaclhlt",
+        "siggrapha": "siggraphasia",
+        "acmsiggraph": "siggraph",
+        "sigkdd": "kdd",
+        "wisec": "acmwisec",
+    }
+
+    def aliased(table: dict, acr: str) -> list[dict] | None:
+        """Lookup acr in table, following aliases in both directions."""
+        hit = table.get(acr)
+        if hit:
+            return hit
+        for src, dst in ALIASES.items():
+            other = dst if acr == src else src if acr == dst else None
+            if other:
+                hit = table.get(other)
+                if hit:
+                    return hit
+        return None
+
+    def as_float(x):
+        try:
+            return float(x)
+        except (TypeError, ValueError):
+            return None
+
     out = []
     for v in core:
         acr = norm_acr(v.get("acronym", ""))
@@ -117,7 +147,7 @@ def merge():
             "for_codes": v.get("for_codes", []),
             "categories": sorted({FOR_CATEGORIES.get(c, "Other") for c in v.get("for_codes", [])}),
             "dblp_url": v.get("dblp_url"),
-            "avg_rating": v.get("avg_rating"),
+            "avg_rating": as_float(v.get("avg_rating")),
             "rank_history": [
                 {
                     "source": h["source"],
@@ -131,20 +161,9 @@ def merge():
 
         # Multi-tier acceptance stats:
         # Priority per year: manual (highest/curated) > lixin > papercopilot
-        # Alias lookups
-        ms = manual_by_acr.get(acr)
-        if not ms and acr in ("oakland", "ieeep"):
-            ms = manual_by_acr.get("sp")
-
-        lx = lixin_by_acr.get(acr)
-        if not lx:
-            lx = lixin_by_acr.get({"www": "thewebconf", "naacl": "naaclhlt"}.get(acr, ""))
-
-        pc_stats = pc_by_acr.get(acr)
-        if not pc_stats and acr == "www":
-            pc_stats = pc_by_acr.get("thewebconf")
-        elif not pc_stats and acr == "siggrapha":
-            pc_stats = pc_by_acr.get("siggraphasia")
+        ms = aliased(manual_by_acr, acr)
+        lx = aliased(lixin_by_acr, acr)
+        pc_stats = aliased(pc_by_acr, acr)
 
         # Combine by year with priority: manual > lixin > pc
         by_year = {}
@@ -193,6 +212,13 @@ def merge():
     n_oa = sum(1 for r in out if r.get("openalex"))
     n_hist = sum(1 for r in out if r["rank_history"])
     print(f"venues: {len(out)} | with stats: {n_stats} | with openalex: {n_oa} | with rank history: {n_hist}")
+
+    core_acrs = {norm_acr(v.get("acronym", "")) for v in core}
+    core_acrs |= set(ALIASES.values()) | set(ALIASES.keys())
+    for label, table in (("papercopilot", pc_by_acr), ("lixin", lixin_by_acr), ("manual", manual_by_acr)):
+        missing = sorted(k for k in table if k not in core_acrs)
+        if missing:
+            print(f"unmatched {label} keys: {', '.join(missing)}")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, separators=(",", ":")))

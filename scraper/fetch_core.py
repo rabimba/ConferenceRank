@@ -9,13 +9,14 @@ Cached under scraper/data/raw/core/. Output: scraper/data/core.json
 import csv
 import io
 import json
+import os
 import re
 import time
 from pathlib import Path
 
 import requests
 
-CA_BUNDLE = "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem"
+CA_BUNDLE = os.environ.get("PROXY_CA", "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem")
 
 BASE = "https://portal.core.edu.au/conf-ranks/"
 SOURCES = [
@@ -29,12 +30,8 @@ DELAY = 1.0
 
 session = requests.Session()
 session.headers.update({"User-Agent": UA})
-try:
-    import os
-    if os.path.exists(CA_BUNDLE):
-        session.verify = CA_BUNDLE
-except Exception:
-    pass
+if os.path.exists(CA_BUNDLE):
+    session.verify = CA_BUNDLE
 
 
 def cached_get(url: str, name: str) -> str:
@@ -42,11 +39,22 @@ def cached_get(url: str, name: str) -> str:
     path = RAW / name
     if path.exists():
         return path.read_text(encoding="utf-8")
-    r = session.get(url, timeout=60)
-    r.raise_for_status()
-    path.write_text(r.text, encoding="utf-8")
-    time.sleep(DELAY)
-    return r.text
+    last_err = None
+    for attempt in range(3):
+        try:
+            r = session.get(url, timeout=60)
+            if r.status_code == 429:
+                retry_after = int(r.headers.get("Retry-After", "5"))
+                time.sleep(min(retry_after, 60))
+                continue
+            r.raise_for_status()
+            path.write_text(r.text, encoding="utf-8")
+            time.sleep(DELAY)
+            return r.text
+        except requests.RequestException as e:
+            last_err = e
+            time.sleep(2 * (attempt + 1))
+    raise last_err
 
 
 def fetch_csv(source: str) -> list[dict]:
@@ -68,13 +76,7 @@ def fetch_csv(source: str) -> list[dict]:
     return rows
 
 
-DETAIL_RE = re.compile(
-    r"Source:\s*(?P<source>[A-Z0-9]+)\s*</[^>]+>\s*"
-    r"Rank:\s*(?P<rank>[^<]+?)\s*(?:</|$)",
-    re.S,
-)
-FOR_RE = re.compile(r"Field Of Research:\s*([0-9A-Za-z]+)\s*-\s*([^<(]+)")
-DBLP_RE = re.compile(r"DBLP Source:\s*<a[^>]*href=\"([^\"]+)\"")
+DBLP_RE = re.compile(r"DBLP Source:\s*(?:<a[^>]*href=\"([^\"]+)\"[^>]*>|(https?://\S+))", re.I)
 TITLE_RE = re.compile(r"<h2[^>]*>([^<]+)</h2>")
 RATING_RE = re.compile(r"Average User Rating:\s*([\d.N/A]+)")
 
@@ -98,9 +100,12 @@ def parse_detail(html: str) -> dict:
     title_m = TITLE_RE.search(html)
     dblp_m = DBLP_RE.search(html)
     rating_m = RATING_RE.search(html)
+    dblp_url = None
+    if dblp_m:
+        dblp_url = dblp_m.group(1) or dblp_m.group(2)
     return {
         "title": title_m.group(1).strip() if title_m else None,
-        "dblp_url": dblp_m.group(1) if dblp_m else None,
+        "dblp_url": dblp_url,
         "avg_rating": rating_m.group(1).strip() if rating_m else None,
         "history": history,
     }
@@ -128,8 +133,8 @@ def main():
             continue
         d = parse_detail(html)
         row["rank_history"] = d["history"]
-        if d["dblp_url"] and row.get("has_dblp"):
-            row["dblp_url"] = d["dblp_url"]
+        if d["dblp_url"]:
+            row["dblp_url"] = d["dblp_url"].strip().rstrip(".,;")
         if d["avg_rating"] and d["avg_rating"] != "N/A":
             row["avg_rating"] = d["avg_rating"]
         done += 1

@@ -11,19 +11,28 @@ export default function HomeClient({
   venues,
   entries,
   landscapePoints,
+  totalAStar,
 }: {
   venues: Conference[];
   entries: DirectoryEntry[];
   landscapePoints: LandscapePoint[];
+  totalAStar: number;
 }) {
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [showModal, setShowModal] = useState(false);
   const [showLandscape, setShowLandscape] = useState(false);
+  const [capNotice, setCapNotice] = useState(false);
 
   const toggleCompare = (id: string) => {
-    setCompareIds((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : prev.length < 4 ? [...prev, id] : prev
-    );
+    setCompareIds((prev) => {
+      if (prev.includes(id)) return prev.filter((x) => x !== id);
+      if (prev.length >= 4) {
+        setCapNotice(true);
+        setTimeout(() => setCapNotice(false), 2500);
+        return prev;
+      }
+      return [...prev, id];
+    });
   };
 
   const removeCompare = (id: string) => {
@@ -58,7 +67,7 @@ export default function HomeClient({
 
         {showLandscape && (
           <div className="mt-5 pt-5 border-t border-neutral-100 dark:border-neutral-800">
-            <AcceptanceLandscape points={landscapePoints} />
+            <AcceptanceLandscape points={landscapePoints} totalAStar={totalAStar} />
           </div>
         )}
       </div>
@@ -100,6 +109,15 @@ export default function HomeClient({
           >
             Clear
           </button>
+        </div>
+      )}
+
+      {capNotice && (
+        <div
+          role="status"
+          className="fixed bottom-20 left-1/2 -translate-x-1/2 z-40 rounded-full bg-neutral-900 px-4 py-2 text-xs font-semibold text-white shadow-lg dark:bg-neutral-100 dark:text-neutral-900"
+        >
+          Compare is limited to 4 venues
         </div>
       )}
 

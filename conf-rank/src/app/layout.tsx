@@ -13,13 +13,37 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.GITHUB_ACTIONS === "true"
+    ? `https://${(process.env.GITHUB_REPOSITORY ?? "rabimba/ranking").split("/")[0]}.github.io/${(process.env.GITHUB_REPOSITORY ?? "rabimba/ranking").split("/")[1]}`
+    : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  title: "ConferenceRank — CS venue rankings, acceptance rates & trends",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "ConferenceRank — CS venue rankings, acceptance rates & trends",
+    template: "%s",
+  },
   description:
     "One-stop shop to evaluate computer-science conference venues: CORE/ICORE ranks, rank history, acceptance-rate trends, topics and top publishing institutions.",
+  openGraph: {
+    siteName: "ConferenceRank",
+    type: "website",
+    title: "ConferenceRank — CS venue rankings, acceptance rates & trends",
+    description:
+      "CORE/ICORE ranks, rank history, acceptance-rate trends, topics and top publishing institutions for computer-science venues.",
+  },
+  twitter: {
+    card: "summary",
+    title: "ConferenceRank — CS venue rankings, acceptance rates & trends",
+    description:
+      "CORE/ICORE ranks, rank history, acceptance-rate trends, topics and top publishing institutions for computer-science venues.",
+  },
+  robots: { index: true, follow: true },
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg`, type: "image/svg+xml" },
     ],
   },
 };

@@ -23,7 +23,7 @@ export function SiteFooter() {
         </p>
         <p className="inline-flex items-center gap-1.5 whitespace-nowrap font-medium text-neutral-700 dark:text-neutral-300">
           <span>Made with</span>
-          <span className="text-red-500 animate-pulse inline-block" aria-label="love">
+          <span className="text-red-500 animate-pulse inline-block" role="img" aria-label="love">
             ❤️
           </span>
           <span>by</span>

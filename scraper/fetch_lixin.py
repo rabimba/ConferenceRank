@@ -7,7 +7,9 @@ Output: scraper/data/lixin.json
 """
 
 import json
+import os
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -15,18 +17,14 @@ import requests
 URL = "https://raw.githubusercontent.com/lixin4ever/Conference-Acceptance-Rate/master/README.md"
 RAW = Path(__file__).parent / "data" / "raw" / "lixin_readme.md"
 OUT = Path(__file__).parent / "data" / "lixin.json"
-CA = "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem"
+CA = os.environ.get("PROXY_CA", "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem")
 
 ROW = re.compile(r"^\|\s*([A-Za-z][A-Za-z0-9&@ .+\-/']*)\s*(?:'(\d{2}))?\s*\|(.*)\|\s*$")
 CELL = re.compile(r"([\d.]+)%\s*\((\d+)/(\d+|\?[\d,.]*)\)")
 
 session = requests.Session()
-try:
-    import os
-    if os.path.exists(CA):
-        session.verify = CA
-except Exception:
-    pass
+if os.path.exists(CA):
+    session.verify = CA
 
 
 def main():
@@ -34,8 +32,15 @@ def main():
     if RAW.exists():
         text = RAW.read_text()
     else:
-        r = session.get(URL, timeout=60, headers={"User-Agent": "Mozilla/5.0"})
-        r.raise_for_status()
+        for attempt in range(3):
+            try:
+                r = session.get(URL, timeout=60, headers={"User-Agent": "Mozilla/5.0"})
+                r.raise_for_status()
+                break
+            except requests.RequestException:
+                if attempt == 2:
+                    raise
+                time.sleep(2 * (attempt + 1))
         text = r.text
         RAW.write_text(text)
 

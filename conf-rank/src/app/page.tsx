@@ -4,22 +4,13 @@ import { SiteFooter } from "@/components/SiteFooter";
 import RankLegend from "@/components/RankLegend";
 import HomeClient from "@/components/HomeClient";
 import { getConferences } from "@/lib/data";
+import { latestStat } from "@/lib/stats";
+import { rankWeight } from "@/lib/ranks";
 import type { Conference } from "@/lib/types";
 
 function buildDirectory(c: Conference[]) {
   return c.map((r) => {
-    let latest_rate: number | null = null;
-    let latest_accepted: number | null = null;
-    if (r.stats && r.stats.length) {
-      const sorted = [...r.stats].sort((a, b) => b.year - a.year);
-      for (const s of sorted) {
-        if (s.rate && s.rate > 0 && s.rate < 60) {
-          latest_rate = Math.round(s.rate * 100) / 100;
-          break;
-        }
-      }
-      latest_accepted = sorted[0].accepted ?? sorted[0].accepted_short ?? null;
-    }
+    const { rate, accepted } = latestStat(r);
     return {
       id: r.id,
       acronym: r.acronym,
@@ -27,8 +18,8 @@ function buildDirectory(c: Conference[]) {
       rank: r.rank,
       categories: r.categories,
       has_stats: Boolean(r.stats),
-      latest_rate,
-      latest_accepted,
+      latest_rate: rate === null ? null : Math.round(rate * 100) / 100,
+      latest_accepted: accepted,
     };
   });
 }
@@ -48,35 +39,21 @@ function buildLandscapePoints(venues: Conference[]): LandscapePoint[] {
   const points: LandscapePoint[] = [];
   for (const c of venues) {
     if (!c.stats || !c.stats.length) continue;
-    // Sort descending to find the MOST RECENT valid acceptance rate
-    const sorted = [...c.stats].sort((a, b) => b.year - a.year);
-    for (const s of sorted) {
-      if (s.rate && s.rate > 0 && s.rate < 60) {
-        points.push({
-          id: c.id,
-          acronym: c.acronym,
-          title: c.title,
-          rank: c.rank,
-          rate: Math.round(s.rate * 10) / 10,
-          accepted: s.accepted ?? s.total,
-          year: s.year,
-          categories: c.categories ?? [],
-        });
-        break;
-      }
-    }
+    const { rate, accepted, year } = latestStat(c);
+    if (rate === null) continue;
+    points.push({
+      id: c.id,
+      acronym: c.acronym,
+      title: c.title,
+      rank: c.rank,
+      rate: Math.round(rate * 10) / 10,
+      accepted: accepted ?? undefined,
+      year: year ?? undefined,
+      categories: c.categories ?? [],
+    });
   }
   return points;
 }
-
-const RANK_WEIGHTS: Record<string, number> = {
-  "A*": 4,
-  A: 3,
-  B: 2,
-  "Australasian B": 2,
-  C: 1,
-  "Australasian C": 1,
-};
 
 function getRisingVenues(venues: Conference[]) {
   const rising = [];
@@ -87,8 +64,8 @@ function getRisingVenues(venues: Conference[]) {
     if (hist.length < 2) continue;
     const curr = hist[hist.length - 1];
     const prev = hist[hist.length - 2];
-    const currW = RANK_WEIGHTS[curr.rank] ?? 0;
-    const prevW = RANK_WEIGHTS[prev.rank] ?? 0;
+    const currW = rankWeight(curr.rank);
+    const prevW = rankWeight(prev.rank);
     if (currW > prevW && prevW > 0) {
       rising.push({
         id: c.id,
@@ -109,6 +86,7 @@ export default function Home() {
   const ranked = venues.filter((v) => ["A*", "A", "B", "C"].includes(v.rank)).length;
   const withStats = venues.filter((v) => v.stats && v.stats.length > 0).length;
   const risingVenues = getRisingVenues(venues);
+  const totalAStar = venues.filter((v) => v.rank === "A*").length;
 
   return (
     <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
@@ -158,6 +136,7 @@ export default function Home() {
           venues={venues}
           entries={entries}
           landscapePoints={landscapePoints}
+          totalAStar={totalAStar}
         />
         <SiteFooter />
       </main>

@@ -9,6 +9,7 @@ Output: scraper/data/papercopilot.json
 """
 
 import json
+import os
 import re
 import time
 from pathlib import Path
@@ -18,17 +19,13 @@ import requests
 BASE = "https://papercopilot.com"
 RAW = Path(__file__).parent / "data" / "raw" / "papercopilot"
 OUT = Path(__file__).parent / "data" / "papercopilot.json"
-CA = "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem"
+CA = os.environ.get("PROXY_CA", "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem")
 DELAY = 1.0
 
 session = requests.Session()
 session.headers.update({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"})
-try:
-    import os
-    if os.path.exists(CA):
-        session.verify = CA
-except Exception:
-    pass
+if os.path.exists(CA):
+    session.verify = CA
 
 
 def cached_get(url: str, name: str) -> str:
@@ -36,16 +33,26 @@ def cached_get(url: str, name: str) -> str:
     path = RAW / name
     if path.exists():
         return path.read_text(encoding="utf-8")
-    r = session.get(url, timeout=60)
-    r.raise_for_status()
-    path.write_text(r.text, encoding="utf-8")
-    time.sleep(DELAY)
-    return r.text
+    last_err = None
+    for attempt in range(3):
+        try:
+            r = session.get(url, timeout=60)
+            if r.status_code == 429:
+                retry_after = int(r.headers.get("Retry-After", "5"))
+                time.sleep(min(retry_after, 60))
+                continue
+            r.raise_for_status()
+            path.write_text(r.text, encoding="utf-8")
+            time.sleep(DELAY)
+            return r.text
+        except requests.RequestException as e:
+            last_err = e
+            time.sleep(2 * (attempt + 1))
+    raise last_err
 
 
 TIER_LABEL_RE = re.compile(r'data-summary-tier-label="([^"]+)"')
 NUM_CELL_RE = re.compile(r"^\s*([\d,.]+)(?:\s*\(([\d.]+)%\))?\s*$")
-YEAR_ROW = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
 
 
 def parse_venue_full(html: str) -> list[dict]:
@@ -203,10 +210,10 @@ def main():
     for i, (slug, url) in enumerate(sorted(urls.items()), 1):
         try:
             html = cached_get(url, f"{slug}.html")
+            recs = parse_venue_full(html)
         except Exception as e:
             print(f"  ! {slug}: {e}")
             continue
-        recs = parse_venue_full(html)
         if recs:
             result[slug] = recs
         if i % 10 == 0:

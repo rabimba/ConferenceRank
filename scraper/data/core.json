@@ -94,6 +94,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ant",
   "avg_rating": "4.5"
  },
  {
@@ -125,7 +126,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hcomp"
  },
  {
   "id": "2354",
@@ -145,7 +147,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/aies/index.html"
  },
  {
   "id": "9",
@@ -212,6 +215,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sera",
   "avg_rating": "4.0"
  },
  {
@@ -283,6 +287,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigcomm",
   "avg_rating": "5.0"
  },
  {
@@ -353,7 +358,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ccs"
  },
  {
   "id": "13",
@@ -424,6 +430,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cscw",
   "avg_rating": "5.0"
  },
  {
@@ -496,6 +503,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigecom",
   "avg_rating": "5.0"
  },
  {
@@ -566,7 +574,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sensys"
  },
  {
   "id": "2355",
@@ -586,7 +595,8 @@
     "for": "4601",
     "for_name": "Applied computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/lats/index.html"
  },
  {
   "id": "18",
@@ -656,7 +666,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/oopsla"
  },
  {
   "id": "2313",
@@ -680,7 +691,8 @@
     "for": "4604",
     "for_name": "Cybersecurity and privacy"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/wisec/index.html"
  },
  {
   "id": "21",
@@ -746,7 +758,8 @@
     "for": "08",
     "for_name": "Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigite"
  },
  {
   "id": "2319",
@@ -771,6 +784,7 @@
     "for_name": "Computer Systems Engineering"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fpga/index.html",
   "avg_rating": "5.0"
  },
  {
@@ -906,7 +920,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/gis"
  },
  {
   "id": "24",
@@ -973,6 +988,7 @@
     "for_name": "Distributed Computing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/conext",
   "avg_rating": "5.0"
  },
  {
@@ -1044,7 +1060,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cikm"
  },
  {
   "id": "2351",
@@ -1064,7 +1081,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tvx/index.html"
  },
  {
   "id": "1488",
@@ -1131,6 +1149,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tabletop",
   "avg_rating": "4.0"
  },
  {
@@ -1202,7 +1221,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/kdd"
  },
  {
   "id": "27",
@@ -1272,7 +1292,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mobicom"
  },
  {
   "id": "2338",
@@ -1291,7 +1312,8 @@
     "for": "4603",
     "for_name": "Computer vision and multimedia computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mmasia/index.html"
  },
  {
   "id": "28",
@@ -1357,7 +1379,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/recsys"
  },
  {
   "id": "29",
@@ -1427,7 +1450,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigir"
  },
  {
   "id": "30",
@@ -1498,7 +1522,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ics"
  },
  {
   "id": "52",
@@ -1569,6 +1594,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/sigsoft",
   "avg_rating": "5.0"
  },
  {
@@ -1636,7 +1662,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wsdm"
  },
  {
   "id": "1825",
@@ -1706,7 +1733,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/huc"
  },
  {
   "id": "32",
@@ -1778,7 +1806,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isca"
  },
  {
   "id": "33",
@@ -1849,7 +1878,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hpdc"
  },
  {
   "id": "34",
@@ -1919,7 +1949,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwcmc"
  },
  {
   "id": "37",
@@ -1990,6 +2021,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mm",
   "avg_rating": "5.0"
  },
  {
@@ -2010,7 +2042,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mmsys/index.html"
  },
  {
   "id": "38",
@@ -2083,6 +2116,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/siggraph",
   "avg_rating": "5.0"
  },
  {
@@ -2102,7 +2136,8 @@
     "for": "4607",
     "for_name": "Graphics, augmented reality and games"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mig/index.html"
  },
  {
   "id": "42",
@@ -2174,6 +2209,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sca",
   "avg_rating": "4.0"
  },
  {
@@ -2193,7 +2229,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/chiir/index.html"
  },
  {
   "id": "45",
@@ -2264,6 +2301,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mobisys",
   "avg_rating": "5.0"
  },
  {
@@ -2334,7 +2372,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pods"
  },
  {
   "id": "48",
@@ -2404,7 +2443,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sosp"
  },
  {
   "id": "49",
@@ -2474,7 +2514,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lctrts"
  },
  {
   "id": "50",
@@ -2544,7 +2585,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pepm"
  },
  {
   "id": "78",
@@ -2614,7 +2656,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pads"
  },
  {
   "id": "54",
@@ -2680,7 +2723,8 @@
     "for": "0899",
     "for_name": "Other Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/siguccs"
  },
  {
   "id": "55",
@@ -2750,7 +2794,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigcse"
  },
  {
   "id": "56",
@@ -2820,7 +2865,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigmod"
  },
  {
   "id": "57",
@@ -2878,7 +2924,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/group/index.html"
  },
  {
   "id": "1775",
@@ -2945,6 +2992,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sacmat",
   "avg_rating": "4.0"
  },
  {
@@ -3015,7 +3063,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sac"
  },
  {
   "id": "2352",
@@ -3034,7 +3083,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/apgv/index.html"
  },
  {
   "id": "2003",
@@ -3098,7 +3148,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/doceng"
  },
  {
   "id": "58",
@@ -3168,7 +3219,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mobihoc"
  },
  {
   "id": "63",
@@ -3238,7 +3290,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/podc"
  },
  {
   "id": "64",
@@ -3376,6 +3429,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/stoc",
   "avg_rating": "5.0"
  },
  {
@@ -3447,6 +3501,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/uist",
   "avg_rating": "5.0"
  },
  {
@@ -3513,7 +3568,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vrst"
  },
  {
   "id": "69",
@@ -3583,7 +3639,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hotnets"
  },
  {
   "id": "82",
@@ -3653,7 +3710,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/popl"
  },
  {
   "id": "84",
@@ -3723,7 +3781,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pldi"
  },
  {
   "id": "85",
@@ -3794,7 +3853,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/si3d"
  },
  {
   "id": "2310",
@@ -3819,7 +3879,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/hri/index.html"
  },
  {
   "id": "76",
@@ -3890,6 +3951,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mswim",
   "avg_rating": "5.0"
  },
  {
@@ -3920,7 +3982,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "http://dblp.org/db/conf/ieeesec/index.html"
  },
  {
   "id": "79",
@@ -3991,6 +4054,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/middleware",
   "avg_rating": "4.0"
  },
  {
@@ -4061,7 +4125,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/soda"
  },
  {
   "id": "2278",
@@ -4092,7 +4157,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/wosp"
  },
  {
   "id": "86",
@@ -4158,7 +4224,8 @@
     "for": "08",
     "for_name": "Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aiccsa"
  },
  {
   "id": "89",
@@ -4229,6 +4296,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acivs",
   "avg_rating": "3.0"
  },
  {
@@ -4296,6 +4364,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/avi",
   "avg_rating": "5.0"
  },
  {
@@ -4367,6 +4436,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/crypto",
   "avg_rating": "5.0"
  },
  {
@@ -4386,7 +4456,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/aft/index.html"
  },
  {
   "id": "97",
@@ -4456,7 +4527,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aiml"
  },
  {
   "id": "98",
@@ -4526,7 +4598,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/nips"
  },
  {
   "id": "106",
@@ -4592,7 +4665,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/alt"
  },
  {
   "id": "108",
@@ -4662,7 +4736,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wads"
  },
  {
   "id": "1968",
@@ -4727,6 +4802,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/amia",
   "avg_rating": "5.0"
  },
  {
@@ -4794,6 +4870,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acsac",
   "avg_rating": "4.0"
  },
  {
@@ -4856,7 +4933,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/csl"
  },
  {
   "id": "126",
@@ -4926,7 +5004,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iticse"
  },
  {
   "id": "127",
@@ -4992,7 +5071,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pst"
  },
  {
   "id": "132",
@@ -5129,7 +5209,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cogsci"
  },
  {
   "id": "1729",
@@ -5195,7 +5276,8 @@
     "for": "0899",
     "for_name": "Other Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigdial"
  },
  {
   "id": "143",
@@ -5332,7 +5414,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/nldb"
  },
  {
   "id": "145",
@@ -5469,7 +5552,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/asplos"
  },
  {
   "id": "2186",
@@ -5512,7 +5596,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/aiai"
  },
  {
   "id": "917",
@@ -5579,7 +5664,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/artsit"
  },
  {
   "id": "162",
@@ -5649,7 +5735,8 @@
     "source": "CORE2008",
     "rank": "L"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aspdac"
  },
  {
   "id": "61",
@@ -5715,7 +5802,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/asiaccs"
  },
  {
   "id": "159",
@@ -5785,7 +5873,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/apcc"
  },
  {
   "id": "240",
@@ -5925,7 +6014,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/apbc"
  },
  {
   "id": "178",
@@ -6061,7 +6151,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/apnoms"
  },
  {
   "id": "185",
@@ -6197,7 +6288,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/apsec"
  },
  {
   "id": "167",
@@ -6267,7 +6359,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/accv"
  },
  {
   "id": "2188",
@@ -6311,6 +6404,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aciids",
   "avg_rating": "4.6"
  },
  {
@@ -6366,6 +6460,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acml",
   "avg_rating": "4.7"
  },
  {
@@ -6436,7 +6531,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aplas"
  },
  {
   "id": "189",
@@ -6506,7 +6602,8 @@
     "source": "CORE2008",
     "rank": "L"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acssc"
  },
  {
   "id": "196",
@@ -6577,6 +6674,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acl",
   "avg_rating": "5.0"
  },
  {
@@ -6718,6 +6816,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ace",
   "avg_rating": "4.0"
  },
  {
@@ -6859,6 +6958,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acisp",
   "avg_rating": "4.0"
  },
  {
@@ -7000,7 +7100,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/adc"
  },
  {
   "id": "1954",
@@ -7056,7 +7157,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/adcs"
  },
  {
   "id": "222",
@@ -7122,7 +7224,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/auisc"
  },
  {
   "id": "224",
@@ -7190,7 +7293,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ausai/index.html"
  },
  {
   "id": "1966",
@@ -7246,7 +7350,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acl-alta"
  },
  {
   "id": "229",
@@ -7453,6 +7558,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ozchi",
   "avg_rating": "5.0"
  },
  {
@@ -7524,7 +7630,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ausdm"
  },
  {
   "id": "261",
@@ -7665,6 +7772,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/kbse",
   "avg_rating": "5.0"
  },
  {
@@ -7731,7 +7839,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ast"
  },
  {
   "id": "288",
@@ -7797,7 +7906,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/bsn"
  },
  {
   "id": "294",
@@ -7902,6 +8012,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/bmvc",
   "avg_rating": "5.0"
  },
  {
@@ -7921,7 +8032,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/cpp/index.html"
  },
  {
   "id": "2259",
@@ -7952,7 +8064,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/chiplay"
  },
  {
   "id": "319",
@@ -8089,6 +8202,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cpm",
   "avg_rating": "4.0"
  },
  {
@@ -8155,7 +8269,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cie"
  },
  {
   "id": "327",
@@ -8221,7 +8336,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/cisis-spain"
  },
  {
   "id": "331",
@@ -8292,7 +8408,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cav"
  },
  {
   "id": "2289",
@@ -8322,7 +8439,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/casc"
  },
  {
   "id": "333",
@@ -8460,7 +8578,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cgi"
  },
  {
   "id": "2229",
@@ -8559,7 +8678,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isaga"
  },
  {
   "id": "346",
@@ -8629,7 +8749,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/uai"
  },
  {
   "id": "348",
@@ -8695,7 +8816,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/amta"
  },
  {
   "id": "349",
@@ -8831,7 +8953,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eamt"
  },
  {
   "id": "2217",
@@ -8863,7 +8986,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/eusflat"
  },
  {
   "id": "355",
@@ -8929,7 +9053,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/xpu"
  },
  {
   "id": "2291",
@@ -8959,7 +9084,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/calco"
  },
  {
   "id": "356",
@@ -9029,7 +9155,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aaim"
  },
  {
   "id": "361",
@@ -9099,7 +9226,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cocoa"
  },
  {
   "id": "371",
@@ -9170,7 +9298,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/conll"
  },
  {
   "id": "2219",
@@ -9202,7 +9331,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/fedcsis"
  },
  {
   "id": "1839",
@@ -9268,7 +9398,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fast"
  },
  {
   "id": "365",
@@ -9339,7 +9470,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fun"
  },
  {
   "id": "732",
@@ -9406,7 +9538,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cig"
  },
  {
   "id": "368",
@@ -9472,7 +9605,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ciss"
  },
  {
   "id": "2201",
@@ -9514,7 +9648,8 @@
     "for": "1005",
     "for_name": "Communications Technologies&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icin"
  },
  {
   "id": "369",
@@ -9584,7 +9719,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cidr"
  },
  {
   "id": "370",
@@ -9654,7 +9790,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ipco"
  },
  {
   "id": "2292",
@@ -9686,7 +9823,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mkm"
  },
  {
   "id": "1245",
@@ -9752,7 +9890,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/itp"
  },
  {
   "id": "124",
@@ -9824,6 +9963,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/colt",
   "avg_rating": "5.0"
  },
  {
@@ -9851,6 +9991,7 @@
     "for_name": "Artificial intelligence"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/corl/index.html",
   "avg_rating": "5.0"
  },
  {
@@ -9917,7 +10058,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/scn"
  },
  {
   "id": "380",
@@ -9983,7 +10125,8 @@
     "for": "08",
     "for_name": "Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/csee/index.html"
  },
  {
   "id": "381",
@@ -10053,7 +10196,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/softcom"
  },
  {
   "id": "384",
@@ -10119,7 +10263,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tamc"
  },
  {
   "id": "385",
@@ -10185,7 +10330,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vda"
  },
  {
   "id": "398",
@@ -10251,7 +10397,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cdve"
  },
  {
   "id": "2346",
@@ -10269,7 +10416,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/candc/index.html"
  },
  {
   "id": "1710",
@@ -10339,7 +10487,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ctrsa"
  },
  {
   "id": "407",
@@ -10405,7 +10554,8 @@
     "for": "08",
     "for_name": "Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sofsem"
  },
  {
   "id": "408",
@@ -10475,7 +10625,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dcc"
  },
  {
   "id": "410",
@@ -10546,7 +10697,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dawak"
  },
  {
   "id": "2243",
@@ -10576,7 +10728,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/btw"
  },
  {
   "id": "1996",
@@ -10621,6 +10774,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dac",
   "avg_rating": "5.0"
  },
  {
@@ -10693,6 +10847,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/date",
   "avg_rating": "5.0"
  },
  {
@@ -10763,7 +10918,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ACMdis"
  },
  {
   "id": "2177",
@@ -10805,7 +10961,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dese"
  },
  {
   "id": "425",
@@ -10875,7 +11032,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dlt"
  },
  {
   "id": "1997",
@@ -10931,7 +11089,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dafx"
  },
  {
   "id": "427",
@@ -11002,7 +11161,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/digra"
  },
  {
   "id": "428",
@@ -11068,7 +11228,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dicta"
  },
  {
   "id": "2191",
@@ -11112,7 +11273,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dis"
  },
  {
   "id": "1324",
@@ -11182,7 +11344,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dna"
  },
  {
   "id": "439",
@@ -11248,7 +11411,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dls"
  },
  {
   "id": "446",
@@ -11315,6 +11479,7 @@
     "for_name": "Data Format&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/edm",
   "avg_rating": "4.5"
  },
  {
@@ -11375,7 +11540,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/emas"
  },
  {
   "id": "448",
@@ -11446,6 +11612,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/emnlp",
   "avg_rating": "5.0"
  },
  {
@@ -11490,6 +11657,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eics",
   "avg_rating": "5.0"
  },
  {
@@ -11615,7 +11783,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eatis"
  },
  {
   "id": "458",
@@ -11682,7 +11851,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eurovr"
  },
  {
   "id": "459",
@@ -11815,7 +11985,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/egpgv"
  },
  {
   "id": "462",
@@ -11883,6 +12054,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vissym",
   "avg_rating": "5.0"
  },
  {
@@ -11953,7 +12125,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecrts"
  },
  {
   "id": "464",
@@ -12020,7 +12193,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/euromicro"
  },
  {
   "id": "2334",
@@ -12039,7 +12213,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/dsd/index.html"
  },
  {
   "id": "465",
@@ -12109,7 +12284,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pdp"
  },
  {
   "id": "468",
@@ -12180,6 +12356,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eacl",
   "avg_rating": "5.0"
  },
  {
@@ -12318,7 +12495,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecai"
  },
  {
   "id": "475",
@@ -12458,7 +12636,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecscw"
  },
  {
   "id": "479",
@@ -12529,6 +12708,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eccv",
   "avg_rating": "5.0"
  },
  {
@@ -12641,7 +12821,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/evoW/evocop2019.html"
  },
  {
   "id": "481",
@@ -12711,7 +12892,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eurogp"
  },
  {
   "id": "483",
@@ -12782,6 +12964,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecir",
   "avg_rating": "3.0"
  },
  {
@@ -12854,6 +13037,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pkdd",
   "avg_rating": "5.0"
  },
  {
@@ -12884,7 +13068,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecmdafa"
  },
  {
   "id": "521",
@@ -12951,6 +13136,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eumas",
   "avg_rating": "3.0"
  },
  {
@@ -13021,7 +13207,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecoop"
  },
  {
   "id": "489",
@@ -13154,6 +13341,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/europlop",
   "avg_rating": "5.0"
  },
  {
@@ -13208,7 +13396,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecsa"
  },
  {
   "id": "495",
@@ -13274,7 +13463,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecsqaru"
  },
  {
   "id": "2262",
@@ -13306,6 +13496,7 @@
     "for_name": "Applied computing"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ectel",
   "avg_rating": "4.7"
  },
  {
@@ -13350,7 +13541,8 @@
     "for": "0899",
     "for_name": "Other Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/edcc"
  },
  {
   "id": "505",
@@ -13420,7 +13612,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pvm"
  },
  {
   "id": "510",
@@ -13491,6 +13684,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eurospi",
   "avg_rating": "5.0"
  },
  {
@@ -13562,6 +13756,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/esa",
   "avg_rating": "5.0"
  },
  {
@@ -13628,7 +13823,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/esann"
  },
  {
   "id": "514",
@@ -13699,6 +13895,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/esop",
   "avg_rating": "4.0"
  },
  {
@@ -13769,7 +13966,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/esorics"
  },
  {
   "id": "519",
@@ -13901,7 +14099,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ejc"
  },
  {
   "id": "525",
@@ -13972,6 +14171,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eurosys",
   "avg_rating": "5.0"
  },
  {
@@ -14042,7 +14242,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/emmsad/index.html"
  },
  {
   "id": "2021",
@@ -14107,6 +14308,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/esws",
   "avg_rating": "5.0"
  },
  {
@@ -14177,7 +14379,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/edbt"
  },
  {
   "id": "2263",
@@ -14209,7 +14412,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/etra"
  },
  {
   "id": "2318",
@@ -14234,6 +14438,7 @@
     "for_name": "Computer Systems Engineering"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fpl/index.html",
   "avg_rating": "5.0"
  },
  {
@@ -14301,6 +14506,7 @@
     "for_name": "Data Format&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fc",
   "avg_rating": "5.0"
  },
  {
@@ -14371,7 +14577,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fqas"
  },
  {
   "id": "538",
@@ -14455,6 +14662,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fmcad",
   "avg_rating": "4.5"
  },
  {
@@ -14521,7 +14729,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fdl"
  },
  {
   "id": "546",
@@ -14592,6 +14801,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/foga",
   "avg_rating": "5.0"
  },
  {
@@ -14663,7 +14873,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fossacs"
  },
  {
   "id": "548",
@@ -14734,6 +14945,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fsttcs",
   "avg_rating": "5.0"
  },
  {
@@ -14792,7 +15004,8 @@
     "for": "09",
     "for_name": "Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fie"
  },
  {
   "id": "554",
@@ -14862,7 +15075,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fase"
  },
  {
   "id": "556",
@@ -14933,6 +15147,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/gecco",
   "avg_rating": "5.0"
  },
  {
@@ -15099,6 +15314,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dimva",
   "avg_rating": "4.0"
  },
  {
@@ -15169,7 +15385,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/gd"
  },
  {
   "id": "573",
@@ -15236,7 +15453,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/graphicsinterface"
  },
  {
   "id": "574",
@@ -15306,7 +15524,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/haskell"
  },
  {
   "id": "2198",
@@ -15550,7 +15769,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hsi"
  },
  {
   "id": "2215",
@@ -15592,7 +15812,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hai"
  },
  {
   "id": "2036",
@@ -15740,7 +15961,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ciarp"
  },
  {
   "id": "2265",
@@ -15771,7 +15993,8 @@
     "for": "4601",
     "for_name": "Applied computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icteri"
  },
  {
   "id": "595",
@@ -15837,7 +16060,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/asru"
  },
  {
   "id": "596",
@@ -15907,7 +16131,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/bibe"
  },
  {
   "id": "599",
@@ -15973,7 +16198,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/csfw"
  },
  {
   "id": "2247",
@@ -16004,7 +16230,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/fruct"
  },
  {
   "id": "2184",
@@ -16046,7 +16273,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cogsima"
  },
  {
   "id": "602",
@@ -16112,7 +16340,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/coco"
  },
  {
   "id": "604",
@@ -16183,6 +16412,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cvpr",
   "avg_rating": "5.0"
  },
  {
@@ -16254,6 +16484,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lcn",
   "avg_rating": "4.0"
  },
  {
@@ -16320,7 +16551,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mss"
  },
  {
   "id": "611",
@@ -16391,6 +16623,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/smc",
   "avg_rating": "4.8"
  },
  {
@@ -16458,7 +16691,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vr"
  },
  {
   "id": "2061",
@@ -16529,6 +16763,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cec",
   "avg_rating": "4.8"
  },
  {
@@ -16595,7 +16830,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/services"
  },
  {
   "id": "616",
@@ -16661,7 +16897,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ccnc"
  },
  {
   "id": "2185",
@@ -16704,6 +16941,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eurosp",
   "avg_rating": "5.0"
  },
  {
@@ -16728,7 +16966,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ets/index.html"
  },
  {
   "id": "2347",
@@ -16747,7 +16986,8 @@
     "for": "4601",
     "for_name": "Applied computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/educon/index.html"
  },
  {
   "id": "620",
@@ -16870,6 +17110,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/globecom",
   "avg_rating": "5.0"
  },
  {
@@ -16894,7 +17135,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iecon/index.html"
  },
  {
   "id": "2037",
@@ -16950,7 +17192,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iasam"
  },
  {
   "id": "2042",
@@ -16995,6 +17238,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icassp",
   "avg_rating": "4.5"
  },
  {
@@ -17060,7 +17304,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/icalt"
  },
  {
   "id": "92",
@@ -17130,7 +17375,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/avss"
  },
  {
   "id": "629",
@@ -17196,7 +17442,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fgr"
  },
  {
   "id": "2274",
@@ -17228,7 +17475,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/bigdataconf"
  },
  {
   "id": "2304",
@@ -17255,6 +17503,7 @@
     "for_name": "Distributed computing and systems software"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/icbc2/index.html",
   "avg_rating": "5.0"
  },
  {
@@ -17322,6 +17571,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/IEEEcloud",
   "avg_rating": "5.0"
  },
  {
@@ -17421,6 +17671,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cloudcom",
   "avg_rating": "4.5"
  },
  {
@@ -17491,7 +17742,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cluster"
  },
  {
   "id": "633",
@@ -17558,7 +17810,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/IEEEicci"
  },
  {
   "id": "2343",
@@ -17576,7 +17829,8 @@
     "for": "4603",
     "for_name": "Computer vision and multimedia computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccp/index.html"
  },
  {
   "id": "637",
@@ -17643,6 +17897,7 @@
     "for_name": "Information and Computing Sciences&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cit",
   "avg_rating": "4.0"
  },
  {
@@ -17712,6 +17967,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/infocom",
   "avg_rating": "4.9"
  },
  {
@@ -17737,6 +17993,7 @@
     "for_name": "Computer Systems Engineering"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccd/index.html",
   "avg_rating": "4.0"
  },
  {
@@ -17808,6 +18065,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccv",
   "avg_rating": "5.0"
  },
  {
@@ -17828,7 +18086,8 @@
     "for": "4603",
     "for_name": "Computer vision and multimedia computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/cbmi/index.html"
  },
  {
   "id": "641",
@@ -17966,6 +18225,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icdm",
   "avg_rating": "5.0"
  },
  {
@@ -17997,7 +18257,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/dsaa"
  },
  {
   "id": "2182",
@@ -18110,7 +18371,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dcoss"
  },
  {
   "id": "2047",
@@ -18175,6 +18437,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icdar",
   "avg_rating": "5.0"
  },
  {
@@ -18247,7 +18510,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eScience"
  },
  {
   "id": "1472",
@@ -18317,7 +18581,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/healthcom"
  },
  {
   "id": "2322",
@@ -18341,7 +18606,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/etfa/index.html"
  },
  {
   "id": "646",
@@ -18412,7 +18678,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iceccs"
  },
  {
   "id": "2248",
@@ -18443,7 +18710,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/icfec"
  },
  {
   "id": "649",
@@ -18514,6 +18782,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fuzzIEEE",
   "avg_rating": "5.0"
  },
  {
@@ -18580,7 +18849,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icgse"
  },
  {
   "id": "652",
@@ -18647,6 +18917,7 @@
     "for_name": "Distributed Computing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hpcc",
   "avg_rating": "4.0"
  },
  {
@@ -18718,6 +18989,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icip",
   "avg_rating": "2.5"
  },
  {
@@ -18742,7 +19014,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/indin/index.html"
  },
  {
   "id": "657",
@@ -18809,7 +19082,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iri"
  },
  {
   "id": "658",
@@ -18875,7 +19149,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isi"
  },
  {
   "id": "660",
@@ -18941,7 +19216,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccp2"
  },
  {
   "id": "661",
@@ -19007,7 +19283,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/is"
  },
  {
   "id": "663",
@@ -19077,7 +19354,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mass"
  },
  {
   "id": "664",
@@ -19147,7 +19425,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icmcs"
  },
  {
   "id": "669",
@@ -19219,6 +19498,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/percom",
   "avg_rating": "5.0"
  },
  {
@@ -19286,6 +19566,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwpc",
   "avg_rating": "5.0"
  },
  {
@@ -19311,6 +19592,7 @@
     "for_name": "Computer Systems Engineering"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/qce/index.html",
   "avg_rating": "5.0"
  },
  {
@@ -19331,7 +19613,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ro-man/index.html"
  },
  {
   "id": "2051",
@@ -19389,6 +19672,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icra",
   "avg_rating": "4.5"
  },
  {
@@ -19459,7 +19743,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/secon"
  },
  {
   "id": "2339",
@@ -19479,7 +19764,8 @@
     "for": "4601",
     "for_name": "Applied computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/smartcomp/index.html"
  },
  {
   "id": "2280",
@@ -19509,7 +19795,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/saner"
  },
  {
   "id": "676",
@@ -19580,6 +19867,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icsm",
   "avg_rating": "5.0"
  },
  {
@@ -19650,7 +19938,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/IEEEscc"
  },
  {
   "id": "1757",
@@ -19721,6 +20010,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vcip",
   "avg_rating": "5.0"
  },
  {
@@ -19791,7 +20081,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icws"
  },
  {
   "id": "679",
@@ -19840,6 +20131,7 @@
     "for_name": "Communications Technologies&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wimob",
   "avg_rating": "5.0"
  },
  {
@@ -19906,7 +20198,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/edoc"
  },
  {
   "id": "683",
@@ -19976,7 +20269,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/igarss"
  },
  {
   "id": "685",
@@ -20047,6 +20341,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ijcnn",
   "avg_rating": "4.2"
  },
  {
@@ -20119,6 +20414,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ipps",
   "avg_rating": "4.0"
  },
  {
@@ -20189,7 +20485,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ipccc"
  },
  {
   "id": "690",
@@ -20260,6 +20557,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/re",
   "avg_rating": "5.0"
  },
  {
@@ -20362,6 +20660,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wowmom",
   "avg_rating": "4.9"
  },
  {
@@ -20525,6 +20824,7 @@
     "for_name": "Computer Systems Engineering"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iscas/index.html",
   "avg_rating": "5.0"
  },
  {
@@ -20595,7 +20895,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ccgrid"
  },
  {
   "id": "2350",
@@ -20615,7 +20916,8 @@
     "for": "4601",
     "for_name": "Applied computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/cbms/index.html"
  },
  {
   "id": "699",
@@ -20682,6 +20984,7 @@
     "for_name": "Data Format&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isit",
   "avg_rating": "5.0"
  },
  {
@@ -20748,7 +21051,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ism"
  },
  {
   "id": "702",
@@ -20819,6 +21123,7 @@
     "rank": "C"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/nca",
   "avg_rating": "5.0"
  },
  {
@@ -20885,7 +21190,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ispa"
  },
  {
   "id": "705",
@@ -20951,7 +21257,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ispass"
  },
  {
   "id": "706",
@@ -21021,7 +21328,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pimrc"
  },
  {
   "id": "749",
@@ -21087,7 +21395,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/rsp"
  },
  {
   "id": "703",
@@ -21157,7 +21466,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isorc"
  },
  {
   "id": "708",
@@ -21227,7 +21537,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/iswc"
  },
  {
   "id": "710",
@@ -21285,7 +21596,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/itc/index.html"
  },
  {
   "id": "711",
@@ -21353,6 +21665,7 @@
     "for_name": "Data Format&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/msr",
   "avg_rating": "4.7"
  },
  {
@@ -21420,7 +21733,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vissoft"
  },
  {
   "id": "718",
@@ -21487,6 +21801,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/scam",
   "avg_rating": "4.0"
  },
  {
@@ -21557,7 +21872,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwqos"
  },
  {
   "id": "2088",
@@ -21613,7 +21929,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/lanman"
  },
  {
   "id": "723",
@@ -21683,7 +22000,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/noms"
  },
  {
   "id": "724",
@@ -21749,7 +22067,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pacificvis"
  },
  {
   "id": "725",
@@ -21820,6 +22139,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/rtas",
   "avg_rating": "4.0"
  },
  {
@@ -21890,7 +22210,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tencon"
  },
  {
   "id": "726",
@@ -22155,7 +22476,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cifer"
  },
  {
   "id": "735",
@@ -22353,7 +22675,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cibcb"
  },
  {
   "id": "738",
@@ -22551,7 +22874,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/arith"
  },
  {
   "id": "744",
@@ -22622,6 +22946,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iscc",
   "avg_rating": "5.0"
  },
  {
@@ -22687,7 +23012,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fccm"
  },
  {
   "id": "745",
@@ -22757,7 +23083,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/focs"
  },
  {
   "id": "746",
@@ -22823,7 +23150,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hoti"
  },
  {
   "id": "748",
@@ -22893,7 +23221,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lics"
  },
  {
   "id": "750",
@@ -22963,7 +23292,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sp"
  },
  {
   "id": "752",
@@ -23034,6 +23364,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vl",
   "avg_rating": "4.0"
  },
  {
@@ -23105,6 +23436,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vtc",
   "avg_rating": "5.0"
  },
  {
@@ -23171,7 +23503,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/visualization"
  },
  {
   "id": "2315",
@@ -23195,7 +23528,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vts/index.html"
  },
  {
   "id": "760",
@@ -23265,7 +23599,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wcnc"
  },
  {
   "id": "763",
@@ -23336,6 +23671,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wacv",
   "avg_rating": "5.0"
  },
  {
@@ -23406,7 +23742,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hpsr"
  },
  {
   "id": "782",
@@ -23473,6 +23810,7 @@
     "for_name": "Information and Computing Sciences&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ACISicis",
   "avg_rating": "4.0"
  },
  {
@@ -23499,7 +23837,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/asunam/index.html"
  },
  {
   "id": "2275",
@@ -23531,7 +23870,8 @@
     "for": "4611",
     "for_name": "Machine learning"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/bdc"
  },
  {
   "id": "783",
@@ -23603,6 +23943,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccad",
   "avg_rating": "5.0"
  },
  {
@@ -23622,7 +23963,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/islped/index.html"
  },
  {
   "id": "785",
@@ -23693,7 +24035,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ismar"
  },
  {
   "id": "787",
@@ -23765,6 +24108,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dsn",
   "avg_rating": "5.0"
  },
  {
@@ -23831,7 +24175,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/euc"
  },
  {
   "id": "2356",
@@ -23849,7 +24194,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vlsi/index.html"
  },
  {
   "id": "792",
@@ -23921,6 +24267,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iros",
   "avg_rating": "5.0"
  },
  {
@@ -24196,7 +24543,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sec"
  },
  {
   "id": "801",
@@ -24266,7 +24614,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dais"
  },
  {
   "id": "810",
@@ -24332,7 +24681,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/npc"
  },
  {
   "id": "806",
@@ -24403,6 +24753,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/networking",
   "avg_rating": "5.0"
  },
  {
@@ -24467,7 +24818,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/performance"
  },
  {
   "id": "805",
@@ -24596,6 +24948,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/interact",
   "avg_rating": "5.0"
  },
  {
@@ -24660,7 +25013,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dbsec"
  },
  {
   "id": "2242",
@@ -24690,7 +25044,8 @@
     "for": "46",
     "for_name": "Information and Computing Sciences"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ifip8-1"
  },
  {
   "id": "809",
@@ -24785,7 +25140,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/pemwn/index.html"
  },
  {
   "id": "812",
@@ -24849,7 +25205,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/im"
  },
  {
   "id": "814",
@@ -24919,7 +25276,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ifsa"
  },
  {
   "id": "816",
@@ -24985,7 +25343,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ima"
  },
  {
   "id": "817",
@@ -25055,7 +25414,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ivcnz"
  },
  {
   "id": "2267",
@@ -25156,7 +25516,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ilp"
  },
  {
   "id": "820",
@@ -25289,7 +25650,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ih"
  },
  {
   "id": "822",
@@ -25361,6 +25723,7 @@
     "rank": "C"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iiwas",
   "avg_rating": "4.0"
  },
  {
@@ -25497,7 +25860,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ispec"
  },
  {
   "id": "826",
@@ -25634,6 +25998,7 @@
     "rank": "C"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/itw",
   "avg_rating": "4.0"
  },
  {
@@ -25879,7 +26244,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/innovations"
  },
  {
   "id": "836",
@@ -26020,7 +26386,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fmics"
  },
  {
   "id": "842",
@@ -26091,7 +26458,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ifm"
  },
  {
   "id": "845",
@@ -26162,7 +26530,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ida"
  },
  {
   "id": "2203",
@@ -26204,7 +26573,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/idc"
  },
  {
   "id": "847",
@@ -26274,7 +26644,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ismb"
  },
  {
   "id": "2062",
@@ -26330,7 +26701,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ivs"
  },
  {
   "id": "849",
@@ -26398,6 +26770,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iva",
   "avg_rating": "4.0"
  },
  {
@@ -26573,7 +26946,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/automotiveUI/index.html"
  },
  {
   "id": "2258",
@@ -26603,7 +26977,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/assets"
  },
  {
   "id": "861",
@@ -26673,7 +27048,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/balt"
  },
  {
   "id": "864",
@@ -26744,6 +27120,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icalp",
   "avg_rating": "5.0"
  },
  {
@@ -26815,6 +27192,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sirocco",
   "avg_rating": "4.0"
  },
  {
@@ -26885,7 +27263,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ictac"
  },
  {
   "id": "870",
@@ -26956,6 +27335,7 @@
     "rank": "L"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/csr",
   "avg_rating": "4.0"
  },
  {
@@ -27026,7 +27406,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/compsac"
  },
  {
   "id": "872",
@@ -27096,7 +27477,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icer"
  },
  {
   "id": "882",
@@ -27167,7 +27549,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/zum"
  },
  {
   "id": "873",
@@ -27233,7 +27616,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hpcasia"
  },
  {
   "id": "1448",
@@ -27303,7 +27687,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/walcom"
  },
  {
   "id": "77",
@@ -27376,7 +27761,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sc"
  },
  {
   "id": "876",
@@ -27443,6 +27829,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icfca",
   "avg_rating": "4.0"
  },
  {
@@ -27514,6 +27901,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/bpm",
   "avg_rating": "4.8"
  },
  {
@@ -27546,7 +27934,8 @@
     "for": "4601",
     "for_name": "Applied computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mis4tel"
  },
  {
   "id": "2266",
@@ -27578,6 +27967,7 @@
     "for_name": "Applied computing"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/ilrn",
   "avg_rating": "5.0"
  },
  {
@@ -27646,7 +28036,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/atc"
  },
  {
   "id": "887",
@@ -27783,7 +28174,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/adma"
  },
  {
   "id": "890",
@@ -27854,6 +28246,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aina",
   "avg_rating": "4.3"
  },
  {
@@ -27925,6 +28318,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/caise",
   "avg_rating": "4.5"
  },
  {
@@ -27957,6 +28351,7 @@
     "for_name": "Computer vision and multimedia computation"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/atsip",
   "avg_rating": "5.0"
  },
  {
@@ -28089,7 +28484,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/momm"
  },
  {
   "id": "901",
@@ -28156,6 +28552,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acii",
   "avg_rating": "5.0"
  },
  {
@@ -28222,7 +28619,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icaart"
  },
  {
   "id": "2337",
@@ -28241,7 +28639,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cain"
  },
  {
   "id": "905",
@@ -28311,7 +28710,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ica3pp"
  },
  {
   "id": "906",
@@ -28381,7 +28781,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ciac"
  },
  {
   "id": "2228",
@@ -28413,7 +28814,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/aist"
  },
  {
   "id": "2218",
@@ -28446,6 +28848,7 @@
     "for_name": "Artificial intelligence"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/evoW/evoappl2019.html",
   "avg_rating": "5.0"
  },
  {
@@ -28513,6 +28916,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/acns",
   "avg_rating": "5.0"
  },
  {
@@ -28655,7 +29059,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icail"
  },
  {
   "id": "912",
@@ -28722,6 +29127,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icaisc",
   "avg_rating": "4.9"
  },
  {
@@ -28790,6 +29196,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aistats",
   "avg_rating": "5.0"
  },
  {
@@ -28855,7 +29262,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aied"
  },
  {
   "id": "151",
@@ -28925,7 +29333,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aime"
  },
  {
   "id": "2314",
@@ -28952,6 +29361,7 @@
     "for_name": "Artificial intelligence"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/evomusart/",
   "avg_rating": "5.0"
  },
  {
@@ -29007,7 +29417,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aimsa"
  },
  {
   "id": "915",
@@ -29077,7 +29488,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icann"
  },
  {
   "id": "461",
@@ -29144,7 +29556,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/egve"
  },
  {
   "id": "918",
@@ -29214,7 +29627,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cade"
  },
  {
   "id": "919",
@@ -29284,7 +29698,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icaps"
  },
  {
   "id": "923",
@@ -29354,7 +29769,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/IEEEares"
  },
  {
   "id": "925",
@@ -29424,7 +29840,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/broadnets"
  },
  {
   "id": "928",
@@ -29491,6 +29908,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccbr",
   "avg_rating": "4.0"
  },
  {
@@ -29521,7 +29939,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/closer"
  },
  {
   "id": "2332",
@@ -29539,7 +29958,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ic2e/index.html"
  },
  {
   "id": "933",
@@ -29606,6 +30026,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/colcom",
   "avg_rating": "4.0"
  },
  {
@@ -29637,7 +30058,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/comsnets"
  },
  {
   "id": "2046",
@@ -29763,7 +30185,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cc"
  },
  {
   "id": "937",
@@ -29833,7 +30256,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cases"
  },
  {
   "id": "939",
@@ -29899,7 +30323,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cisis"
  },
  {
   "id": "2294",
@@ -29930,7 +30355,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "http://dblp.uni-trier.de/db/conf/complexis"
  },
  {
   "id": "941",
@@ -30064,6 +30490,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccci",
   "avg_rating": "4.7"
  },
  {
@@ -30107,6 +30534,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icccrea",
   "avg_rating": "5.0"
  },
  {
@@ -30173,7 +30601,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cis"
  },
  {
   "id": "949",
@@ -30244,6 +30673,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/coling",
   "avg_rating": "5.0"
  },
  {
@@ -30262,7 +30692,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/comma/index.html"
  },
  {
   "id": "950",
@@ -30332,7 +30763,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/recomb"
  },
  {
   "id": "952",
@@ -30403,6 +30835,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccS",
   "avg_rating": "5.0"
  },
  {
@@ -30469,7 +30902,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccsa"
  },
  {
   "id": "955",
@@ -30539,7 +30973,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/caip"
  },
  {
   "id": "2038",
@@ -30603,7 +31038,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icccn"
  },
  {
   "id": "961",
@@ -30673,7 +31109,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/safecomp"
  },
  {
   "id": "962",
@@ -30739,7 +31176,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cscwd"
  },
  {
   "id": "2261",
@@ -30770,7 +31208,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "http://dblp.uni-trier.de/db/conf/csedu"
  },
  {
   "id": "2232",
@@ -30802,7 +31241,8 @@
     "for": "4603",
     "for_name": "Computer vision and multimedia computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iccvg"
  },
  {
   "id": "964",
@@ -30868,7 +31308,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icvs"
  },
  {
   "id": "2260",
@@ -30898,7 +31339,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/chira"
  },
  {
   "id": "965",
@@ -30968,7 +31410,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cata"
  },
  {
   "id": "966",
@@ -31034,7 +31477,8 @@
     "for": "0899",
     "for_name": "Other Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icchp"
  },
  {
   "id": "967",
@@ -31176,6 +31620,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cocoon",
   "avg_rating": "4.5"
  },
  {
@@ -31312,7 +31757,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/er"
  },
  {
   "id": "973",
@@ -31383,7 +31829,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/concur"
  },
  {
   "id": "977",
@@ -31454,7 +31901,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icarcv"
  },
  {
   "id": "2286",
@@ -31486,6 +31934,7 @@
     "for_name": "Software engineering"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/codit",
   "avg_rating": "4.0"
  },
  {
@@ -31505,7 +31954,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icse-chase/index.html"
  },
  {
   "id": "979",
@@ -31645,7 +32095,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/coordination"
  },
  {
   "id": "982",
@@ -31711,7 +32162,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cans"
  },
  {
   "id": "983",
@@ -31781,7 +32233,8 @@
     "source": "CORE2008",
     "rank": "L"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/indocrypt"
  },
  {
   "id": "985",
@@ -31850,6 +32303,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cw",
   "avg_rating": "5.0"
  },
  {
@@ -31920,7 +32374,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icde"
  },
  {
   "id": "2302",
@@ -31951,7 +32406,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/data"
  },
  {
   "id": "987",
@@ -32022,7 +32478,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dexa"
  },
  {
   "id": "988",
@@ -32092,7 +32549,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dasfaa"
  },
  {
   "id": "989",
@@ -32162,7 +32620,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icdt"
  },
  {
   "id": "991",
@@ -32229,6 +32688,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/depcos",
   "avg_rating": "4.9"
  },
  {
@@ -32295,7 +32755,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dasc"
  },
  {
   "id": "997",
@@ -32392,7 +32853,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/dcai"
  },
  {
   "id": "1000",
@@ -32458,7 +32920,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icdcit"
  },
  {
   "id": "1001",
@@ -32529,6 +32992,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icdcn",
   "avg_rating": "4.7"
  },
  {
@@ -32600,6 +33064,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icdcs",
   "avg_rating": "5.0"
  },
  {
@@ -32806,7 +33271,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/rtcsa"
  },
  {
   "id": "16",
@@ -32876,7 +33342,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/emsoft"
  },
  {
   "id": "497",
@@ -32947,6 +33414,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ewsn",
   "avg_rating": "4.8"
  },
  {
@@ -32989,7 +33457,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/euspn"
  },
  {
   "id": "1011",
@@ -33055,7 +33524,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eann"
  },
  {
   "id": "1019",
@@ -33123,7 +33593,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwec"
  },
  {
   "id": "1022",
@@ -33194,6 +33665,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ease",
   "avg_rating": "5.0"
  },
  {
@@ -33260,7 +33732,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/enase"
  },
  {
   "id": "2344",
@@ -33279,7 +33752,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/emo/index.html"
  },
  {
   "id": "2328",
@@ -33299,7 +33773,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/wfcs/index.html"
  },
  {
   "id": "1031",
@@ -33369,7 +33844,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icfem"
  },
  {
   "id": "2279",
@@ -33400,7 +33876,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/memocode"
  },
  {
   "id": "1033",
@@ -33467,7 +33944,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fois"
  },
  {
   "id": "2290",
@@ -33497,7 +33975,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/fscd"
  },
  {
   "id": "1035",
@@ -33563,7 +34042,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icfhr"
  },
  {
   "id": "1036",
@@ -33629,7 +34109,8 @@
     "for": "08",
     "for_name": "Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fit"
  },
  {
   "id": "1037",
@@ -33699,7 +34180,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icfp"
  },
  {
   "id": "1039",
@@ -33769,7 +34251,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/gpce"
  },
  {
   "id": "1042",
@@ -33840,7 +34323,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/gg"
  },
  {
   "id": "1044",
@@ -33906,7 +34390,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/gpc"
  },
  {
   "id": "1422",
@@ -33977,7 +34462,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/codesisss"
  },
  {
   "id": "1184",
@@ -34047,7 +34533,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/qshine"
  },
  {
   "id": "1048",
@@ -34118,6 +34605,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hipc",
   "avg_rating": "5.0"
  },
  {
@@ -34254,7 +34742,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/chi"
  },
  {
   "id": "1054",
@@ -34325,6 +34814,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mhci",
   "avg_rating": "5.0"
  },
  {
@@ -34391,7 +34881,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hais"
  },
  {
   "id": "1056",
@@ -34457,7 +34948,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/his"
  },
  {
   "id": "1058",
@@ -34528,6 +35020,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iciap",
   "avg_rating": "3.0"
  },
  {
@@ -34595,7 +35088,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icig"
  },
  {
   "id": "1060",
@@ -34661,7 +35155,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icisp"
  },
  {
   "id": "2333",
@@ -34681,7 +35176,8 @@
     "for": "4603",
     "for_name": "Computer vision and multimedia computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ipas2/index.html"
  },
  {
   "id": "1062",
@@ -34751,7 +35247,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wia"
  },
  {
   "id": "2244",
@@ -34782,7 +35279,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ipin"
  },
  {
   "id": "1064",
@@ -34850,7 +35348,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ieaaie"
  },
  {
   "id": "2276",
@@ -34881,7 +35380,8 @@
     "for": "4611",
     "for_name": "Machine learning"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iddm"
  },
  {
   "id": "2226",
@@ -34911,7 +35411,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icinco"
  },
  {
   "id": "1066",
@@ -34977,7 +35478,8 @@
     "for": "08",
     "for_name": "Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ictd"
  },
  {
   "id": "2241",
@@ -35075,7 +35577,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/enter"
  },
  {
   "id": "1068",
@@ -35141,7 +35644,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icics"
  },
  {
   "id": "1071",
@@ -35277,7 +35781,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fusion"
  },
  {
   "id": "1073",
@@ -35348,7 +35853,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ipmu"
  },
  {
   "id": "1076",
@@ -35418,7 +35924,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/secrypt"
  },
  {
   "id": "1077",
@@ -35484,7 +35991,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icisc"
  },
  {
   "id": "1081",
@@ -35550,7 +36058,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iciss"
  },
  {
   "id": "2234",
@@ -35580,7 +36089,8 @@
     "for": "4604",
     "for_name": "Cybersecurity and privacy"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icissp"
  },
  {
   "id": "1083",
@@ -35717,7 +36227,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iv"
  },
  {
   "id": "837",
@@ -35787,7 +36298,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iics"
  },
  {
   "id": "1090",
@@ -35857,7 +36369,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cpaior"
  },
  {
   "id": "1093",
@@ -35927,7 +36440,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ideal"
  },
  {
   "id": "1216",
@@ -35997,7 +36511,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/somet"
  },
  {
   "id": "1097",
@@ -36063,7 +36578,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iske"
  },
  {
   "id": "1098",
@@ -36130,7 +36646,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isda"
  },
  {
   "id": "1099",
@@ -36200,7 +36717,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cicling"
  },
  {
   "id": "1100",
@@ -36271,7 +36789,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/its"
  },
  {
   "id": "1101",
@@ -36342,6 +36861,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iui",
   "avg_rating": "5.0"
  },
  {
@@ -36404,6 +36924,7 @@
     "for_name": "Other Information and Computing Sciences&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icids",
   "avg_rating": "4.8"
  },
  {
@@ -36633,7 +37154,8 @@
     "for": "4604",
     "for_name": "Cybersecurity and privacy"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iotbd"
  },
  {
   "id": "1108",
@@ -36699,7 +37221,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ita"
  },
  {
   "id": "1110",
@@ -36770,6 +37293,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ekaw",
   "avg_rating": "4.3"
  },
  {
@@ -36903,7 +37427,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ksem"
  },
  {
   "id": "1113",
@@ -36974,6 +37499,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/kes",
   "avg_rating": "4.7"
  },
  {
@@ -37040,7 +37566,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lata"
  },
  {
   "id": "2268",
@@ -37072,6 +37599,7 @@
     "for_name": "Human-centred computing"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lak",
   "avg_rating": "5.0"
  },
  {
@@ -37102,7 +37630,8 @@
     "for": "4611",
     "for_name": "Machine learning"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iclr"
  },
  {
   "id": "1117",
@@ -37172,7 +37701,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/jurix"
  },
  {
   "id": "1119",
@@ -37243,7 +37773,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iclp"
  },
  {
   "id": "1120",
@@ -37314,7 +37845,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lpnmr"
  },
  {
   "id": "1121",
@@ -37384,7 +37916,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icml"
  },
  {
   "id": "1122",
@@ -37451,6 +37984,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icmla",
   "avg_rating": "2.0"
  },
  {
@@ -37517,7 +38051,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icmlc"
  },
  {
   "id": "1124",
@@ -37583,7 +38118,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icmv"
  },
  {
   "id": "1692",
@@ -37649,7 +38185,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pppj"
  },
  {
   "id": "1125",
@@ -37719,7 +38256,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/comad"
  },
  {
   "id": "2205",
@@ -37762,6 +38300,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/medes",
   "avg_rating": "4.3"
  },
  {
@@ -37792,7 +38331,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mfps"
  },
  {
   "id": "2277",
@@ -37823,7 +38363,8 @@
     "for": "4611",
     "for_name": "Machine learning"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mmar"
  },
  {
   "id": "1131",
@@ -37893,7 +38434,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mobiquitous"
  },
  {
   "id": "1133",
@@ -37965,6 +38507,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mdm",
   "avg_rating": "3.0"
  },
  {
@@ -38104,7 +38647,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/medi"
  },
  {
   "id": "1244",
@@ -38175,6 +38719,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/models",
   "avg_rating": "5.0"
  },
  {
@@ -38206,7 +38751,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/modelsward"
  },
  {
   "id": "507",
@@ -38276,7 +38822,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ecms"
  },
  {
   "id": "1140",
@@ -38342,7 +38889,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mdai"
  },
  {
   "id": "1143",
@@ -38412,7 +38960,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mmm"
  },
  {
   "id": "44",
@@ -38483,7 +39032,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mir"
  },
  {
   "id": "1144",
@@ -38550,6 +39100,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icmi",
   "avg_rating": "4.0"
  },
  {
@@ -38616,7 +39167,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icnc"
  },
  {
   "id": "813",
@@ -38686,7 +39238,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cnsm"
  },
  {
   "id": "1146",
@@ -38752,7 +39305,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/nss"
  },
  {
   "id": "1147",
@@ -38823,6 +39377,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icnp",
   "avg_rating": "5.0"
  },
  {
@@ -38854,7 +39409,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/netsoft/"
  },
  {
   "id": "1152",
@@ -38924,7 +39480,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iconip"
  },
  {
   "id": "2340",
@@ -38944,7 +39501,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/nesy/index.html"
  },
  {
   "id": "2220",
@@ -38974,7 +39532,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icores"
  },
  {
   "id": "1160",
@@ -39180,7 +39739,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pdcat"
  },
  {
   "id": "1163",
@@ -39320,7 +39880,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icpads"
  },
  {
   "id": "1165",
@@ -39391,6 +39952,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/IEEEpact",
   "avg_rating": "4.0"
  },
  {
@@ -39461,7 +40023,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icpp"
  },
  {
   "id": "1168",
@@ -39528,6 +40091,7 @@
     "for_name": "Distributed Computing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ppam",
   "avg_rating": "4.7"
  },
  {
@@ -39598,7 +40162,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icpr"
  },
  {
   "id": "2230",
@@ -39629,6 +40194,7 @@
     "for_name": "Computer vision and multimedia computation"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icpram",
   "avg_rating": "5.0"
  },
  {
@@ -39677,7 +40243,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/persuasive"
  },
  {
   "id": "2224",
@@ -39708,7 +40275,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/pacbb"
  },
  {
   "id": "1279",
@@ -39778,7 +40346,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pkc"
  },
  {
   "id": "1175",
@@ -39848,7 +40417,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cp"
  },
  {
   "id": "1176",
@@ -39919,7 +40489,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ppdp"
  },
  {
   "id": "1177",
@@ -39989,7 +40560,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/opodis"
  },
  {
   "id": "1663",
@@ -40059,7 +40631,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/prima"
  },
  {
   "id": "358",
@@ -40129,7 +40702,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aofa"
  },
  {
   "id": "2307",
@@ -40154,7 +40728,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/icpm/index.html"
  },
  {
   "id": "1182",
@@ -40220,7 +40795,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/provsec"
  },
  {
   "id": "2312",
@@ -40247,6 +40823,7 @@
     "for_name": "Human-centred computing"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/qomex/",
   "avg_rating": "5.0"
  },
  {
@@ -40278,7 +40855,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/rtns"
  },
  {
   "id": "1188",
@@ -40344,7 +40922,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ranlp"
  },
  {
   "id": "1189",
@@ -40410,7 +40989,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/RelMiCS"
  },
  {
   "id": "1191",
@@ -40480,7 +41060,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/adaEurope"
  },
  {
   "id": "1192",
@@ -40546,7 +41127,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/rcis"
  },
  {
   "id": "2309",
@@ -40571,7 +41153,8 @@
     "for": "4613",
     "for_name": "Theory of computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/rc/index.html"
  },
  {
   "id": "1193",
@@ -40637,7 +41220,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/crisis"
  },
  {
   "id": "1194",
@@ -40774,6 +41358,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/rv",
   "avg_rating": "4.2"
  },
  {
@@ -40844,7 +41429,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ssdbm"
  },
  {
   "id": "1198",
@@ -40911,6 +41497,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/securecomm",
   "avg_rating": "3.0"
  },
  {
@@ -40977,7 +41564,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sin"
  },
  {
   "id": "1203",
@@ -41119,6 +41707,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icsoc",
   "avg_rating": "4.0"
  },
  {
@@ -41149,7 +41738,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/sisap"
  },
  {
   "id": "2298",
@@ -41179,7 +41769,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "http://dblp.uni-trier.de/db/conf/simultech"
  },
  {
   "id": "2178",
@@ -41221,7 +41812,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icost"
  },
  {
   "id": "1206",
@@ -41287,7 +41879,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icsoft"
  },
  {
   "id": "1217",
@@ -41358,6 +41951,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ispw",
   "avg_rating": "5.0"
  },
  {
@@ -41429,6 +42023,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icsa",
   "avg_rating": "4.9"
  },
  {
@@ -41500,6 +42095,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icse",
   "avg_rating": "4.7"
  },
  {
@@ -41640,7 +42236,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sefm"
  },
  {
   "id": "1212",
@@ -41711,7 +42308,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/seke"
  },
  {
   "id": "1214",
@@ -41780,6 +42378,7 @@
     "for_name": "Information and Computing Sciences&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/snpd",
   "avg_rating": "5.0"
  },
  {
@@ -41847,6 +42446,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sle",
   "avg_rating": "4.8"
  },
  {
@@ -41987,7 +42587,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icsr"
  },
  {
   "id": "1221",
@@ -42054,6 +42655,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icst",
   "avg_rating": "4.8"
  },
  {
@@ -42163,7 +42765,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icseng"
  },
  {
   "id": "2288",
@@ -42193,7 +42796,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/icse/techdebt2019.html"
  },
  {
   "id": "2285",
@@ -42223,7 +42827,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pts"
  },
  {
   "id": "1236",
@@ -42289,7 +42894,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tap"
  },
  {
   "id": "1237",
@@ -42359,7 +42965,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/apn"
  },
  {
   "id": "1238",
@@ -42426,7 +43033,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fdg"
  },
  {
   "id": "1239",
@@ -42497,7 +43105,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/kr"
  },
  {
   "id": "2180",
@@ -42540,6 +43149,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/quatic",
   "avg_rating": "5.0"
  },
  {
@@ -42746,7 +43356,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/eurocrypt"
  },
  {
   "id": "1243",
@@ -42816,7 +43427,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/asiacrypt"
  },
  {
   "id": "2202",
@@ -42858,7 +43470,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ictir"
  },
  {
   "id": "1246",
@@ -42928,7 +43541,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tableaux"
  },
  {
   "id": "1250",
@@ -43000,6 +43614,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sat",
   "avg_rating": "5.0"
  },
  {
@@ -43056,7 +43671,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ercimdl"
  },
  {
   "id": "1251",
@@ -43127,6 +43743,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ictai",
   "avg_rating": "5.0"
  },
  {
@@ -43193,7 +43810,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/trustbus"
  },
  {
   "id": "790",
@@ -43260,6 +43878,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/trustcom",
   "avg_rating": "4.0"
  },
  {
@@ -43327,7 +43946,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/uic"
  },
  {
   "id": "1255",
@@ -43393,7 +44013,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/uc"
  },
  {
   "id": "1259",
@@ -43460,6 +44081,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/um",
   "avg_rating": "5.0"
  },
  {
@@ -43491,7 +44113,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/vehits"
  },
  {
   "id": "1261",
@@ -43561,7 +44184,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vldb"
  },
  {
   "id": "1262",
@@ -43631,7 +44255,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vee"
  },
  {
   "id": "2168",
@@ -43756,6 +44381,7 @@
     "rank": "C"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vlsid",
   "avg_rating": "5.0"
  },
  {
@@ -43812,6 +44438,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icwsm",
   "avg_rating": "4.0"
  },
  {
@@ -43879,6 +44506,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/icwe",
   "avg_rating": "4.5"
  },
  {
@@ -43949,7 +44577,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/webist"
  },
  {
   "id": "1271",
@@ -44020,7 +44649,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wise"
  },
  {
   "id": "2257",
@@ -44050,7 +44680,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wincom"
  },
  {
   "id": "2211",
@@ -44328,7 +44959,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/cdmake"
  },
  {
   "id": "1296",
@@ -44468,7 +45100,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ideas"
  },
  {
   "id": "2022",
@@ -44525,6 +45158,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/europar",
   "avg_rating": "5.0"
  },
  {
@@ -44657,7 +45291,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/faw"
  },
  {
   "id": "1313",
@@ -44730,6 +45365,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ijcai",
   "avg_rating": "5.0"
  },
  {
@@ -44802,7 +45438,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ijcar"
  },
  {
   "id": "922",
@@ -44873,6 +45510,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ifaamas",
   "avg_rating": "5.0"
  },
  {
@@ -44899,7 +45537,8 @@
     "for": "4603",
     "for_name": "Computer vision and multimedia computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/icb/index.html"
  },
  {
   "id": "2221",
@@ -44930,7 +45569,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ijcci"
  },
  {
   "id": "1316",
@@ -44996,7 +45636,8 @@
     "for": "08",
     "for_name": "Information and Computing Sciences&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ic3k"
  },
  {
   "id": "1317",
@@ -45066,7 +45707,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ijcnlp"
  },
  {
   "id": "1195",
@@ -45132,7 +45774,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ijcrs"
  },
  {
   "id": "2216",
@@ -45164,7 +45807,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/rulemlrr"
  },
  {
   "id": "1320",
@@ -45363,7 +46007,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/inlg"
  },
  {
   "id": "1329",
@@ -45429,7 +46074,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/inoc"
  },
  {
   "id": "1331",
@@ -45499,7 +46145,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pcs"
  },
  {
   "id": "1338",
@@ -45570,6 +46217,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/semweb",
   "avg_rating": "4.6"
  },
  {
@@ -45667,7 +46315,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sagt"
  },
  {
   "id": "1349",
@@ -45738,6 +46387,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isaac",
   "avg_rating": "5.0"
  },
  {
@@ -45786,7 +46436,8 @@
     "for": "1005",
     "for_name": "Communications Technologies&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/algosensors"
  },
  {
   "id": "1352",
@@ -45852,7 +46503,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/saci"
  },
  {
   "id": "1353",
@@ -45984,7 +46636,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isaim"
  },
  {
   "id": "1355",
@@ -46120,7 +46773,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/atva"
  },
  {
   "id": "1358",
@@ -46256,7 +46910,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isads"
  },
  {
   "id": "1362",
@@ -46326,7 +46981,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cgo"
  },
  {
   "id": "1364",
@@ -46394,6 +47050,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iscopt",
   "avg_rating": "5.0"
  },
  {
@@ -46465,6 +47122,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/compgeom",
   "avg_rating": "5.0"
  },
  {
@@ -46531,7 +47189,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sbac-pad"
  },
  {
   "id": "2329",
@@ -46549,7 +47208,8 @@
     "for": "CSE",
     "for_name": "Computer Systems Engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ddecs/index.html"
  },
  {
   "id": "1374",
@@ -46619,7 +47279,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wdag"
  },
  {
   "id": "696",
@@ -46687,7 +47348,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dsrt"
  },
  {
   "id": "1376",
@@ -46758,6 +47420,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/esem",
   "avg_rating": "5.0"
  },
  {
@@ -46824,7 +47487,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wea"
  },
  {
   "id": "540",
@@ -46896,6 +47560,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fm",
   "avg_rating": "4.0"
  },
  {
@@ -46962,7 +47627,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ismis"
  },
  {
   "id": "1382",
@@ -47032,7 +47698,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/flops"
  },
  {
   "id": "1383",
@@ -47103,6 +47770,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fct",
   "avg_rating": "4.0"
  },
  {
@@ -47240,7 +47908,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hpca"
  },
  {
   "id": "1388",
@@ -47377,7 +48046,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isita"
  },
  {
   "id": "1391",
@@ -47444,7 +48114,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/inista"
  },
  {
   "id": "1394",
@@ -47510,7 +48181,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sisy"
  },
  {
   "id": "1395",
@@ -47581,6 +48253,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/latin",
   "avg_rating": "4.0"
  },
  {
@@ -47647,7 +48320,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isola"
  },
  {
   "id": "1397",
@@ -47718,7 +48392,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lopstr"
  },
  {
   "id": "1398",
@@ -47789,6 +48464,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mfcs",
   "avg_rating": "5.0"
  },
  {
@@ -47860,7 +48536,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/iwmm"
  },
  {
   "id": "2098",
@@ -47913,6 +48590,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/micro/index.html",
   "avg_rating": "5.0"
  },
  {
@@ -47983,7 +48661,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wiopt"
  },
  {
   "id": "2204",
@@ -48026,6 +48705,7 @@
     "for_name": "Computer Hardware&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isncc",
   "avg_rating": "5.0"
  },
  {
@@ -48093,6 +48773,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isnn",
   "avg_rating": "4.0"
  },
  {
@@ -48159,7 +48840,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/onward"
  },
  {
   "id": "1432",
@@ -48225,7 +48907,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wikis"
  },
  {
   "id": "1405",
@@ -48291,7 +48974,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ispdc"
  },
  {
   "id": "1510",
@@ -48361,7 +49045,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwpec"
  },
  {
   "id": "1410",
@@ -48431,7 +49116,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isrr"
  },
  {
   "id": "2283",
@@ -48462,7 +49148,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ssbse"
  },
  {
   "id": "2281",
@@ -48493,6 +49180,7 @@
     "for_name": "Software engineering"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/seams",
   "avg_rating": "2.0"
  },
  {
@@ -48524,7 +49212,8 @@
     "for": "4612",
     "for_name": "Software engineering"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/setta"
  },
  {
   "id": "1411",
@@ -48595,6 +49284,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/issre",
   "avg_rating": "5.0"
  },
  {
@@ -48665,7 +49355,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/issta"
  },
  {
   "id": "1416",
@@ -48735,7 +49426,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ssd"
  },
  {
   "id": "1413",
@@ -48942,6 +49634,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/spire",
   "avg_rating": "5.0"
  },
  {
@@ -49012,7 +49705,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/issac"
  },
  {
   "id": "1421",
@@ -49079,6 +49773,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/synasc",
   "avg_rating": "3.0"
  },
  {
@@ -49215,7 +49910,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/time"
  },
  {
   "id": "1425",
@@ -49356,6 +50052,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/stacs",
   "avg_rating": "4.0"
  },
  {
@@ -49422,7 +50119,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tase"
  },
  {
   "id": "1539",
@@ -49556,7 +50254,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/isvc"
  },
  {
   "id": "269",
@@ -49627,6 +50326,7 @@
     "rank": "L"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/itnac",
   "avg_rating": "4.8"
  },
  {
@@ -49669,7 +50369,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/teletraffic"
  },
  {
   "id": "1436",
@@ -49802,7 +50503,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wordnet"
  },
  {
   "id": "1440",
@@ -49872,7 +50574,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwann"
  },
  {
   "id": "2183",
@@ -49914,7 +50617,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwinac"
  },
  {
   "id": "2295",
@@ -50015,7 +50719,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/approx"
  },
  {
   "id": "1458",
@@ -50150,6 +50855,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwoca",
   "avg_rating": "4.0"
  },
  {
@@ -50216,7 +50922,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwcia"
  },
  {
   "id": "2160",
@@ -50277,6 +50984,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/coin-ws/",
   "avg_rating": "4.0"
  },
  {
@@ -50343,7 +51051,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/critis"
  },
  {
   "id": "2238",
@@ -50373,7 +51082,8 @@
     "for": "4605",
     "for_name": "Data management and data science"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/damon"
  },
  {
   "id": "1464",
@@ -50443,7 +51153,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dolap"
  },
  {
   "id": "1466",
@@ -50509,7 +51220,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwdw"
  },
  {
   "id": "1998",
@@ -50573,7 +51285,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/das"
  },
  {
   "id": "1471",
@@ -50705,7 +51418,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/fse"
  },
  {
   "id": "1476",
@@ -50842,7 +51556,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wg"
  },
  {
   "id": "1486",
@@ -51044,7 +51759,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wisa"
  },
  {
   "id": "1504",
@@ -51176,7 +51892,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mabs"
  },
  {
   "id": "1508",
@@ -51247,6 +51964,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mmsp",
   "avg_rating": "5.0"
  },
  {
@@ -51313,7 +52031,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pqcrypto"
  },
  {
   "id": "2009",
@@ -51441,6 +52160,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/refsq",
   "avg_rating": "4.0"
  },
  {
@@ -51507,7 +52227,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwsec"
  },
  {
   "id": "1528",
@@ -51644,7 +52365,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/scopes"
  },
  {
   "id": "1536",
@@ -51710,7 +52432,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wafr"
  },
  {
   "id": "1540",
@@ -51777,7 +52500,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vizsec"
  },
  {
   "id": "1541",
@@ -51847,7 +52571,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/w2gis"
  },
  {
   "id": "1546",
@@ -51915,6 +52640,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wetice",
   "avg_rating": "5.0"
  },
  {
@@ -51987,6 +52713,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/www",
   "avg_rating": "4.5"
  },
  {
@@ -52058,6 +52785,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/imc",
   "avg_rating": "5.0"
  },
  {
@@ -52129,6 +52857,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/interspeech",
   "avg_rating": "5.0"
  },
  {
@@ -52196,7 +52925,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/supercomputer"
  },
  {
   "id": "1556",
@@ -52332,7 +53062,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iwsm"
  },
  {
   "id": "958",
@@ -52398,7 +53129,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/visigrapp"
  },
  {
   "id": "1579",
@@ -52537,6 +53269,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/kcap",
   "avg_rating": "4.7"
  },
  {
@@ -52725,7 +53458,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lrec"
  },
  {
   "id": "2227",
@@ -52757,7 +53491,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/ldk"
  },
  {
   "id": "1589",
@@ -52795,7 +53530,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/clei"
  },
  {
   "id": "1592",
@@ -52831,7 +53567,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/lagos"
  },
  {
   "id": "1596",
@@ -52902,7 +53639,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lpar"
  },
  {
   "id": "1597",
@@ -52972,7 +53710,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/lfcs"
  },
  {
   "id": "1598",
@@ -53043,7 +53782,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/jelia"
  },
  {
   "id": "1599",
@@ -53109,7 +53849,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mtsummit"
  },
  {
   "id": "1600",
@@ -53175,7 +53916,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mva"
  },
  {
   "id": "1834",
@@ -53245,7 +53987,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mcu"
  },
  {
   "id": "2097",
@@ -53371,7 +54114,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mpc"
  },
  {
   "id": "39",
@@ -53442,6 +54186,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sigmetrics",
   "avg_rating": "5.0"
  },
  {
@@ -53509,7 +54254,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/miccai"
  },
  {
   "id": "2270",
@@ -53539,7 +54285,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mc"
  },
  {
   "id": "1615",
@@ -53575,7 +54322,8 @@
     "for": "1203",
     "for_name": "Design Practice and Management&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/mum"
  },
  {
   "id": "1618",
@@ -53673,7 +54421,8 @@
     "for": "4603",
     "for_name": "Computer vision and multimedia computation"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/missi"
  },
  {
   "id": "1629",
@@ -53746,6 +54495,7 @@
     "rank": "A*"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/aaai",
   "avg_rating": "5.0"
  },
  {
@@ -53873,6 +54623,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/nossdav",
   "avg_rating": "5.0"
  },
  {
@@ -53939,7 +54690,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/nspw"
  },
  {
   "id": "1643",
@@ -54037,6 +54789,7 @@
     "for_name": "Human-centred computing"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/nordichi",
   "avg_rating": "4.0"
  },
  {
@@ -54108,6 +54861,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/naacl",
   "avg_rating": "5.0"
  },
  {
@@ -54175,7 +54929,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/iolts"
  },
  {
   "id": "1658",
@@ -54245,7 +55000,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/paclic"
  },
  {
   "id": "1660",
@@ -54316,7 +55072,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pg"
  },
  {
   "id": "1661",
@@ -54386,7 +55143,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pricai"
  },
  {
   "id": "1662",
@@ -54454,7 +55212,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/prdc"
  },
  {
   "id": "1664",
@@ -54526,7 +55285,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pkaw"
  },
  {
   "id": "1666",
@@ -54596,7 +55356,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/psb"
  },
  {
   "id": "1667",
@@ -54666,7 +55427,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pakdd"
  },
  {
   "id": "1670",
@@ -54733,6 +55495,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/psivt",
   "avg_rating": "5.0"
  },
  {
@@ -54804,6 +55567,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ppsn",
   "avg_rating": "5.0"
  },
  {
@@ -54874,7 +55638,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/pam"
  },
  {
   "id": "1680",
@@ -54992,7 +55757,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/epia"
  },
  {
   "id": "2171",
@@ -55048,6 +55814,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/paams",
   "avg_rating": "4.0"
  },
  {
@@ -55118,7 +55885,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/padl"
  },
  {
   "id": "1688",
@@ -55254,7 +56022,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/stringology"
  },
  {
   "id": "1691",
@@ -55324,7 +56093,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ppopp"
  },
  {
   "id": "1442",
@@ -55391,6 +56161,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.org/db/journals/popets",
   "avg_rating": "5.0"
  },
  {
@@ -55457,7 +56228,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/psd"
  },
  {
   "id": "1696",
@@ -55528,6 +56300,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/profes",
   "avg_rating": "4.2"
  },
  {
@@ -55598,7 +56371,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/rtss"
  },
  {
   "id": "1705",
@@ -55734,7 +56508,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/robocup"
  },
  {
   "id": "138",
@@ -55804,7 +56579,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sacrypt"
  },
  {
   "id": "2210",
@@ -55846,7 +56622,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/i-semantics"
  },
  {
   "id": "1723",
@@ -55912,7 +56689,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sgai"
  },
  {
   "id": "1724",
@@ -56115,6 +56893,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sdm",
   "avg_rating": "5.0"
  },
  {
@@ -56184,6 +56963,7 @@
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/siggrapha",
   "avg_rating": "5.0"
  },
  {
@@ -56216,7 +56996,8 @@
     "for": "4602",
     "for_name": "Artificial intelligence"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/sashimi-ws"
  },
  {
   "id": "1733",
@@ -56352,7 +57133,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cisc"
  },
  {
   "id": "1737",
@@ -56423,6 +57205,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/cardis",
   "avg_rating": "4.0"
  },
  {
@@ -56521,6 +57304,7 @@
     "for_name": "Software engineering"
    }
   ],
+  "dblp_url": "https://dblp.org/db/conf/splc",
   "avg_rating": "5.0"
  },
  {
@@ -56592,6 +57376,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/qrs",
   "avg_rating": "4.0"
  },
  {
@@ -56663,6 +57448,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sas",
   "avg_rating": "4.8"
  },
  {
@@ -56733,7 +57519,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ssspr"
  },
  {
   "id": "1771",
@@ -56804,6 +57591,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/mascots",
   "avg_rating": "5.0"
  },
  {
@@ -56940,7 +57728,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/adbis"
  },
  {
   "id": "1784",
@@ -57008,6 +57797,7 @@
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sgp",
   "avg_rating": "5.0"
  },
  {
@@ -57064,7 +57854,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hotchips"
  },
  {
   "id": "1789",
@@ -57135,6 +57926,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/nsdi",
   "avg_rating": "5.0"
  },
  {
@@ -57206,6 +57998,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/spaa",
   "avg_rating": "5.0"
  },
  {
@@ -57277,6 +58070,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/srds",
   "avg_rating": "5.0"
  },
  {
@@ -57347,7 +58141,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/sss"
  },
  {
   "id": "2167",
@@ -57403,6 +58198,7 @@
     "for_name": "Computer Software&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/soups",
   "avg_rating": "5.0"
  },
  {
@@ -57469,7 +58265,8 @@
     "for": "0806",
     "for_name": "Information Systems&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tei"
  },
  {
   "id": "1802",
@@ -57535,7 +58332,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tridentcom"
  },
  {
   "id": "2255",
@@ -57566,7 +58364,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/systor"
  },
  {
   "id": "2353",
@@ -57586,7 +58385,8 @@
     "for": "4608",
     "for_name": "Human-centred computing"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/dev/index.html"
  },
  {
   "id": "2197",
@@ -57628,7 +58428,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fnc"
  },
  {
   "id": "2179",
@@ -57670,7 +58471,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/intenv"
  },
  {
   "id": "2213",
@@ -57714,7 +58516,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vecos"
  },
  {
   "id": "1408",
@@ -57784,7 +58587,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/raid"
  },
  {
   "id": "2212",
@@ -57826,7 +58630,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/socs"
  },
  {
   "id": "1812",
@@ -57892,7 +58697,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.org/db/conf/diagrams"
  },
  {
   "id": "1814",
@@ -57962,7 +58768,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tark"
  },
  {
   "id": "1815",
@@ -58029,7 +58836,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tcc"
  },
  {
   "id": "1818",
@@ -58100,6 +58908,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/tacas",
   "avg_rating": "5.0"
  },
  {
@@ -58237,7 +59046,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/usenix"
  },
  {
   "id": "1840",
@@ -58308,6 +59118,7 @@
     "rank": "A"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ndss",
   "avg_rating": "5.0"
  },
  {
@@ -58378,7 +59189,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/uss"
  },
  {
   "id": "1842",
@@ -58448,7 +59260,8 @@
     "source": "CORE2008",
     "rank": "A*"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/osdi"
  },
  {
   "id": "1845",
@@ -58518,7 +59331,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/hotos"
  },
  {
   "id": "2252",
@@ -58550,7 +59364,8 @@
     "for": "4606",
     "for_name": "Distributed computing and systems software"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ucc"
  },
  {
   "id": "1847",
@@ -58620,7 +59435,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vmcai"
  },
  {
   "id": "1851",
@@ -58752,7 +59568,8 @@
     "for": "0801",
     "for_name": "Artificial Intelligence and Image Processing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/vinci"
  },
  {
   "id": "1856",
@@ -58888,7 +59705,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/apweb"
  },
  {
   "id": "1865",
@@ -58958,7 +59776,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wsc"
  },
  {
   "id": "1867",
@@ -59024,7 +59843,8 @@
     "for": "0803",
     "for_name": "Computer Software&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wistp"
  },
  {
   "id": "1870",
@@ -59094,7 +59914,8 @@
     "source": "CORE2008",
     "rank": "A"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/alenex"
  },
  {
   "id": "1871",
@@ -59161,7 +59982,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/atmos"
  },
  {
   "id": "1873",
@@ -59231,7 +60053,8 @@
     "source": "CORE2008",
     "rank": "C"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/waw"
  },
  {
   "id": "1874",
@@ -59301,7 +60124,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wabi"
  },
  {
   "id": "1878",
@@ -59433,7 +60257,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/waoa"
  },
  {
   "id": "1891",
@@ -59566,7 +60391,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wcae"
  },
  {
   "id": "1893",
@@ -59703,6 +60529,7 @@
     "rank": "B"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/ches",
   "avg_rating": "5.0"
  },
  {
@@ -59835,7 +60662,8 @@
     "for": "0804",
     "for_name": "Data Format&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/fdtc"
  },
  {
   "id": "1905",
@@ -59971,7 +60799,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/jsspp"
  },
  {
   "id": "1912",
@@ -60041,7 +60870,8 @@
     "source": "CORE2008",
     "rank": "B"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wollic"
  },
  {
   "id": "1914",
@@ -60107,7 +60937,8 @@
     "for": "0805",
     "for_name": "Distributed Computing&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/wmcsa"
  },
  {
   "id": "1927",
@@ -60240,7 +61071,8 @@
     "for": "0802",
     "for_name": "Computation Theory and Mathematics&dagger;"
    }
-  ]
+  ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/waifi"
  },
  {
   "id": "2014",
@@ -60340,6 +61172,7 @@
     "for_name": "Information Systems&dagger;"
    }
   ],
+  "dblp_url": "https://dblp.uni-trier.de/db/conf/worldcist",
   "avg_rating": "4.9"
  },
  {

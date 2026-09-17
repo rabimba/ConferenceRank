@@ -33,7 +33,13 @@ const RANK_COLORS: Record<string, { bg: string; text: string; bar: string; borde
 
 type ViewMode = "field" | "tier" | "top";
 
-export default function AcceptanceLandscape({ points }: { points: LandscapePoint[] }) {
+export default function AcceptanceLandscape({
+  points,
+  totalAStar,
+}: {
+  points: LandscapePoint[];
+  totalAStar?: number;
+}) {
   const [viewMode, setViewMode] = useState<ViewMode>("tier");
   const [selectedRank, setSelectedRank] = useState<string>("ALL");
   const [selectedCategory, setSelectedCategory] = useState<string>("ALL");
@@ -104,6 +110,12 @@ export default function AcceptanceLandscape({ points }: { points: LandscapePoint
       .sort((a, b) => b.count - a.count);
   }, [points]);
 
+  // A* coverage, derived from data
+  const aStarInData = useMemo(
+    () => points.filter((p) => p.rank === "A*").length,
+    [points],
+  );
+
   // Top Most Selective Venues
   const sortedVenues = useMemo(() => {
     let filtered = points;
@@ -129,7 +141,9 @@ export default function AcceptanceLandscape({ points }: { points: LandscapePoint
               {statsSummary.total} <span className="text-xs font-normal text-neutral-500">venues</span>
             </div>
             <div className="mt-0.5 text-[11px] text-neutral-500">
-              52 of 62 A* venues (84%)
+              {totalAStar
+                ? `${aStarInData} of ${totalAStar} A* venues (${Math.round((aStarInData / totalAStar) * 100)}%)`
+                : `${aStarInData} A* venues`}
             </div>
           </div>
 
@@ -383,7 +397,11 @@ export default function AcceptanceLandscape({ points }: { points: LandscapePoint
           </div>
 
           {/* Sorted Ranked Venues Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 max-h-[420px] overflow-y-auto p-1">
+          <div
+            tabIndex={0}
+            aria-label="Scrollable list of venues by acceptance rate"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 max-h-[420px] overflow-y-auto p-1"
+          >
             {sortedVenues.map((v) => {
               const theme = RANK_COLORS[v.rank] ?? RANK_COLORS["C"];
               return (

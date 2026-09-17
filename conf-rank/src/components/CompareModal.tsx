@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
 import type { Conference } from "@/lib/types";
@@ -13,6 +14,23 @@ export default function CompareModal({
   onClose: () => void;
   onRemove: (id: string) => void;
 }) {
+  const panelRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  // Escape to close, autofocus close button, restore focus on unmount
+  useEffect(() => {
+    const prevActive = document.activeElement as HTMLElement | null;
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      prevActive?.focus?.();
+    };
+  }, [onClose]);
+
   if (venues.length === 0) return null;
 
   return (
@@ -21,6 +39,10 @@ export default function CompareModal({
       onClick={onClose}
     >
       <div
+        ref={panelRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Venue comparison"
         className="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl dark:border-neutral-800 dark:bg-neutral-900"
         onClick={(e) => e.stopPropagation()}
       >
@@ -34,7 +56,9 @@ export default function CompareModal({
             </p>
           </div>
           <button
+            ref={closeRef}
             onClick={onClose}
+            aria-label="Close comparison"
             className="rounded-lg p-2 text-neutral-400 hover:bg-neutral-100 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
           >
             ✕

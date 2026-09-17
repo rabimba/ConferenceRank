@@ -3,6 +3,22 @@ import {
   METHODOLOGY_SIGNALS,
   ENGLISH_STOPWORDS,
 } from "./lexicon";
+import { buildTfidfIndex, similarity, type TfidfIndex } from "./similarity";
+
+let tfidfCache: { venuesKey: string; index: TfidfIndex } | null = null;
+
+function getTfidfIndex(venues: SuggesterVenue[]): TfidfIndex {
+  const key = `${venues.length}:${venues[0]?.id ?? ""}:${venues[venues.length - 1]?.id ?? ""}`;
+  if (tfidfCache && tfidfCache.venuesKey === key) return tfidfCache.index;
+  const index = buildTfidfIndex(
+    venues.map((v) => ({
+      id: v.id,
+      text: [v.title, v.acronym, ...v.categories, ...(v.topics ?? [])].join(" "),
+    })),
+  );
+  tfidfCache = { venuesKey: key, index };
+  return index;
+}
 
 export interface SuggesterVenue {
   id: string;
@@ -13,6 +29,8 @@ export interface SuggesterVenue {
   latest_rate: number | null;
   latest_accepted: number | null;
   has_stats: boolean;
+  /** OpenAlex top topics when available — enrich similarity matching */
+  topics?: string[];
 }
 
 export type AmbitionTier = "all" | "stretch" | "target" | "safe";
@@ -235,6 +253,7 @@ export function suggestVenues(
   const tokenSet = new Set(tokens);
   const topCategoryMap = new Map<string, number>();
   const maxScore = categoryScores[0]?.score || 1;
+  const tfidf = getTfidfIndex(venues);
 
   for (const cs of categoryScores.slice(0, 4)) {
     // Normalized category weight between 0.2 and 1.0
@@ -277,7 +296,12 @@ export function suggestVenues(
     const titleOverlapScore =
       Math.min(titleMatches.length * 0.15 + (hasAcronymMention ? 0.35 : 0), 0.6);
 
-    if (categoryAffinity === 0 && titleOverlapScore === 0) {
+    // 2b. TF-IDF cosine similarity against venue doc (title+categories+topics).
+    // Captures stems/bigrams beyond the curated lexicon; capped at 0.6 so a
+    // strongly related venue with no exact keyword hit can still surface.
+    const simScore = Math.min(similarity(tfidf, venue.id, abstract) * 2.2, 0.6);
+
+    if (categoryAffinity === 0 && titleOverlapScore === 0 && simScore < 0.15) {
       continue;
     }
 
@@ -289,12 +313,11 @@ export function suggestVenues(
     );
 
     // 4. Combined score formula:
-    // Category match is primary (55%)
-    // Title keyword overlap is secondary (25%)
-    // Ambition / rank profile fit (20%)
+    // Category match 40% · title overlap 15% · doc similarity 25% · ambition 20%
     const rawScore =
-      categoryAffinity * 0.55 +
-      titleOverlapScore * 0.25 +
+      categoryAffinity * 0.4 +
+      titleOverlapScore * 0.15 +
+      simScore * 0.25 +
       ambitionAdjustment;
 
     // Normalize to 0-100%
@@ -310,6 +333,9 @@ export function suggestVenues(
       reasons.push(
         `${topCat} fit${termCount > 0 ? ` (${termCount} keyword${termCount > 1 ? "s" : ""})` : ""}`
       );
+    }
+    if (simScore >= 0.25) {
+      reasons.push("Strong text similarity to venue scope/topics");
     }
     if (titleMatches.length > 0) {
       reasons.push(

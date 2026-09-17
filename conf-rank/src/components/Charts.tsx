@@ -11,12 +11,9 @@ import {
   Line,
   LineChart,
   ResponsiveContainer,
-  Scatter,
-  ScatterChart,
   Tooltip,
   XAxis,
   YAxis,
-  ZAxis,
 } from "recharts";
 
 const COLORS = [
@@ -201,118 +198,6 @@ export function TopicShareChart({
           ))}
         </Bar>
       </BarChart>
-    </ResponsiveContainer>
-  );
-}
-
-export interface LandscapePoint {
-  id: string;
-  acronym: string;
-  rank: string;
-  rate: number;
-  accepted?: number;
-}
-
-const RANK_NUM: Record<string, number> = {
-  "A*": 4,
-  A: 3,
-  B: 2,
-  C: 1,
-};
-
-export function RankRateScatterChart({
-  data,
-  onSelectVenue,
-}: {
-  data: LandscapePoint[];
-  onSelectVenue?: (id: string) => void;
-}) {
-  const points = data
-    .filter((d) => RANK_NUM[d.rank] != null)
-    .map((d) => ({
-      ...d,
-      rankNum: RANK_NUM[d.rank],
-      size: Math.max(40, Math.min(250, (d.accepted ?? 100) / 10)),
-    }));
-
-  return (
-    <ResponsiveContainer width="100%" height={260}>
-      <ScatterChart margin={{ top: 12, right: 20, bottom: 10, left: -10 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
-        <XAxis
-          type="number"
-          dataKey="rankNum"
-          name="Rank"
-          ticks={[1, 2, 3, 4]}
-          domain={[0.5, 4.5]}
-          tickFormatter={(v: number) => ({ 1: "C", 2: "B", 3: "A", 4: "A*" })[v] ?? ""}
-          {...axis}
-        />
-        <YAxis
-          type="number"
-          dataKey="rate"
-          name="Acceptance Rate"
-          unit="%"
-          domain={[5, 55]}
-          {...axis}
-        />
-        <ZAxis type="number" dataKey="size" range={[60, 350]} />
-        <Tooltip
-          contentStyle={tooltipStyle}
-          cursor={{ strokeDasharray: "3 3" }}
-          content={({ payload }) => {
-            if (!payload || !payload.length) return null;
-            const item = payload[0].payload as LandscapePoint;
-            return (
-              <div
-                style={tooltipStyle}
-                className="p-2.5 shadow-lg bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800"
-              >
-                <div className="font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
-                  <span>{item.acronym}</span>
-                  <span className="text-xs px-1.5 py-0.5 rounded font-bold bg-neutral-100 dark:bg-neutral-800">
-                    {item.rank}
-                  </span>
-                </div>
-                <div className="mt-1 text-xs text-neutral-600 dark:text-neutral-300">
-                  Acceptance Rate: <span className="font-semibold text-blue-600 dark:text-blue-400">{item.rate}%</span>
-                </div>
-                {item.accepted != null && (
-                  <div className="text-xs text-neutral-500 dark:text-neutral-400">
-                    Papers: {item.accepted.toLocaleString()}
-                  </div>
-                )}
-                {onSelectVenue && (
-                  <div className="mt-1.5 text-[10px] text-blue-500 font-medium">Click point to view</div>
-                )}
-              </div>
-            );
-          }}
-        />
-        <Scatter
-          name="Venues"
-          data={points}
-          fill="#2563eb"
-          onClick={(p: unknown) => {
-            const pt = p as { payload?: LandscapePoint };
-            if (pt?.payload?.id && onSelectVenue) {
-              onSelectVenue(pt.payload.id);
-            }
-          }}
-        >
-          {points.map((entry) => {
-            const color =
-              entry.rank === "A*"
-                ? "#d97706"
-                : entry.rank === "A"
-                  ? "#2563eb"
-                  : entry.rank === "B"
-                    ? "#0d9488"
-                    : "#64748b";
-            return <Cell key={entry.id} fill={color} className="cursor-pointer hover:opacity-80" />;
-          })}
-        </Scatter>
-      </ScatterChart>
     </ResponsiveContainer>
   );
 }

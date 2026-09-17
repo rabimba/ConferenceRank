@@ -46,21 +46,12 @@ export interface Conference {
   for_codes: string[];
   categories: string[];
   dblp_url?: string | null;
-  avg_rating?: string | null;
+  avg_rating?: number | null;
   rank_history: RankHistoryEntry[];
   stats: YearStat[] | null;
   stats_source: "papercopilot" | "lixin4ever" | "papercopilot+lixin4ever" | null;
   openalex?: OpenAlexData;
 }
-
-export const RANK_ORDER: Record<string, number> = {
-  "A*": 1,
-  A: 2,
-  B: 3,
-  "Australasian B": 4,
-  C: 5,
-  "Australasian C": 6,
-};
 
 export const ALL_CATEGORIES = [
   "Artificial Intelligence",
@@ -79,6 +70,4 @@ export const ALL_CATEGORIES = [
   "General & Interdisciplinary CS",
 ] as const;
 
-export function rankOrder(rank: string): number {
-  return RANK_ORDER[rank] ?? 90;
-}
+export { RANK_ORDER, rankOrder } from "./ranks";

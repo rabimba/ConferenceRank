@@ -13,10 +13,11 @@ Output: scraper/data/openalex.json
 {core_id: {source_ids, works_per_year, topics, topics_by_year, institutions}}
 """
 
+import argparse
+import datetime
 import json
 import os
 import re
-import subprocess
 import time
 import unicodedata
 from pathlib import Path
@@ -28,9 +29,10 @@ UA = "conf-rank-scraper/1.0 (mailto:icore.conference.ranks@gmail.com)"
 RAW = Path(__file__).parent / "data" / "raw" / "openalex"
 OUT = Path(__file__).parent / "data" / "openalex.json"
 CORE = Path(__file__).parent / "data" / "core.json"
-CA = "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem"
+CA = os.environ.get("PROXY_CA", "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem")
 DELAY = 0.15  # OpenAlex polite pool
-LAST_5 = [2020, 2021, 2022, 2023, 2024]
+_y = datetime.date.today().year
+LAST_5 = list(range(_y - 5, _y))  # last 5 complete years
 
 
 session = requests.Session()
@@ -40,6 +42,10 @@ session.headers.update({
 })
 if os.path.exists(CA):
     session.verify = CA
+
+
+class RateLimited(Exception):
+    """Raised when API keeps 429ing; abort run so venue isn't recorded as no-match."""
 
 
 def api_get(path: str, params: dict) -> dict:
@@ -53,9 +59,10 @@ def api_get(path: str, params: dict) -> dict:
     p = RAW / f"{cache_key}.json"
     if p.exists():
         return json.loads(p.read_text(encoding="utf-8"))
-    
+
     url = f"{API}{path}"
-    for attempt in range(3):
+    n_429 = 0
+    for attempt in range(6):
         try:
             r = session.get(url, params=params, timeout=20)
             if r.status_code == 200:
@@ -68,10 +75,21 @@ def api_get(path: str, params: dict) -> dict:
                 return data
             elif r.status_code == 404:
                 return {}
+            elif r.status_code == 429:
+                n_429 += 1
+                retry_after = int(r.headers.get("Retry-After", "10"))
+                wait = min(retry_after, 120)
+                print(f"  429 rate-limited; waiting {wait}s", flush=True)
+                time.sleep(wait)
             else:
-                time.sleep(1 + attempt)
-        except Exception as e:
-            time.sleep(1 + attempt)
+                time.sleep(2 ** attempt)
+        except RateLimited:
+            raise
+        except Exception:
+            time.sleep(2 ** attempt)
+    if n_429 >= 3:
+        raise RateLimited(f"persistent 429 on {path}")
+    print(f"  gave up on {path} after retries", flush=True)
     return {}
 
 
@@ -211,6 +229,13 @@ def fetch_venue(src_ids: list[str]) -> dict:
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--limit", type=int, default=0,
+                    help="max venues to process this run (0 = no limit)")
+    ap.add_argument("--refresh-unmatched", action="store_true",
+                    help="retry venues previously recorded as no-match")
+    args = ap.parse_args()
+
     if not CORE.exists():
         print("core.json missing - run fetch_core.py first", flush=True)
         return
@@ -224,23 +249,36 @@ def main():
     result = {}
     if OUT.exists():  # resume support
         result = json.loads(OUT.read_text())
-        print(f"Resuming with {len(result)} already matched", flush=True)
+        print(f"Resuming with {sum(1 for x in result.values() if x)} matched, "
+              f"{sum(1 for x in result.values() if x is None)} known no-match", flush=True)
 
-    matched = len(result)
-    for i, v in enumerate(venues, 1):
-        vid = v["id"]
-        if vid in result:
-            continue
-        m = match_source(v.get("acronym", ""), v.get("title", ""))
-        if not m:
-            continue
-        sibs = collect_sibling_sources(m["id"], m["name"])
-        result[vid] = {"match": m, **fetch_venue(sibs)}
-        matched += 1
-        if matched % 20 == 0:
-            print(f"  processed {i}/{len(venues)}, matched {matched}", flush=True)
-            OUT.write_text(json.dumps(result))
-    OUT.write_text(json.dumps(result))
+    def save():
+        OUT.write_text(json.dumps(result))
+
+    matched = sum(1 for x in result.values() if x)
+    processed = 0
+    try:
+        for i, v in enumerate(venues, 1):
+            vid = v["id"]
+            if vid in result and (result[vid] is not None or not args.refresh_unmatched):
+                continue
+            if args.limit and processed >= args.limit:
+                print(f"--limit {args.limit} reached; stopping", flush=True)
+                break
+            processed += 1
+            m = match_source(v.get("acronym", ""), v.get("title", ""))
+            if not m:
+                result[vid] = None  # remember no-match; skip on future runs
+            else:
+                sibs = collect_sibling_sources(m["id"], m["name"])
+                result[vid] = {"match": m, **fetch_venue(sibs)}
+                matched += 1
+            if processed % 10 == 0:
+                print(f"  processed {i}/{len(venues)} (new {processed}), matched {matched}", flush=True)
+                save()
+    except RateLimited as e:
+        print(f"Rate-limited persistently ({e}); saving progress and exiting.", flush=True)
+    save()
     print(f"Matched {matched}/{len(venues)} -> {OUT}", flush=True)
 
 

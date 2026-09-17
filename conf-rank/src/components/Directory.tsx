@@ -4,7 +4,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
-import { ALL_CATEGORIES, rankOrder } from "@/lib/types";
+import { ALL_CATEGORIES } from "@/lib/types";
+import { rankOrder } from "@/lib/ranks";
 
 export interface DirectoryEntry {
   id: string;
@@ -181,14 +182,16 @@ export default function Directory({
       c.latest_rate != null ? c.latest_rate.toFixed(1) : "",
       c.latest_accepted != null ? c.latest_accepted : "",
     ]);
-    const csvContent = "data:text/csv;charset=utf-8," + [headers.join(","), ...rows.map((r) => r.join(","))].join("\n");
-    const encodedUri = encodeURI(csvContent);
+    const csvText = [headers.join(","), ...rows.map((r) => r.join(","))].join("\n");
+    const blob = new Blob([csvText], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
+    link.setAttribute("href", url);
     link.setAttribute("download", `conferences_filtered_${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   return (

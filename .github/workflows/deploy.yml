@@ -36,7 +36,7 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.basepath.outputs.bp }}
         run: |
           cd conf-rank
-          npm install
+          npm ci
           npx eslint src
           npm run build
           touch out/.nojekyll

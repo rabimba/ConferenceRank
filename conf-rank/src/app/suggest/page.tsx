@@ -4,6 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import SuggestClient from "@/components/SuggestClient";
 import { getConferences } from "@/lib/data";
+import { latestStat } from "@/lib/stats";
 import type { SuggesterVenue } from "@/lib/suggest";
 
 export const metadata: Metadata = {
@@ -17,29 +18,17 @@ export default function SuggestPage() {
 
   // Build a slim payload for the client component (avoiding full 900KB serialization)
   const slimVenues: SuggesterVenue[] = venues.map((c) => {
-    let latest_rate: number | null = null;
-    let latest_accepted: number | null = null;
-
-    if (c.stats && c.stats.length) {
-      const sorted = [...c.stats].sort((a, b) => b.year - a.year);
-      for (const s of sorted) {
-        if (s.rate && s.rate > 0 && s.rate < 60) {
-          latest_rate = Math.round(s.rate * 100) / 100;
-          break;
-        }
-      }
-      latest_accepted = sorted[0].accepted ?? sorted[0].accepted_short ?? null;
-    }
-
+    const { rate, accepted } = latestStat(c);
     return {
       id: c.id,
       acronym: c.acronym,
       title: c.title,
       rank: c.rank,
       categories: c.categories,
-      latest_rate,
-      latest_accepted,
+      latest_rate: rate === null ? null : Math.round(rate * 100) / 100,
+      latest_accepted: accepted,
       has_stats: Boolean(c.stats && c.stats.length > 0),
+      topics: c.openalex?.topics?.slice(0, 8).map((t) => t.name),
     };
   });
 
@@ -60,7 +49,7 @@ export default function SuggestPage() {
         {/* Page Header */}
         <div className="mb-8">
           <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700 dark:bg-blue-950/70 dark:text-blue-300">
-            <span>✨ AI &amp; Lexical Matching</span>
+            <span>✨ Keyword &amp; Similarity Matching</span>
             <span>•</span>
             <span>{slimVenues.length} Venues Indexed</span>
           </div>

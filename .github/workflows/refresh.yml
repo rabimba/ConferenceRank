@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -22,20 +26,25 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: |
-          pip install requests pyyaml
+        run: pip install -r scraper/requirements.txt
 
-      - name: Run Scrapers and Refresh Data
+      - name: Run scrapers
         run: |
-          python3 scraper/fetch_lixin.py || true
-          python3 scraper/fetch_papercopilot.py || true
-          python3 scraper/merge.py
+          python3 scraper/fetch_lixin.py
+          python3 scraper/fetch_papercopilot.py
+
+      - name: Refresh OpenAlex slice (tolerant)
+        run: python3 scraper/fetch_openalex.py --limit 150
+        continue-on-error: true
+
+      - name: Merge data
+        run: python3 scraper/merge.py
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add conf-rank/src/data/ conferences.json scraper/data/ public/
+          git add conf-rank/src/data/conferences.json conf-rank/public/search-index.json conf-rank/public/venue-embeddings.json scraper/data/
           if git diff --staged --quiet; then
             echo "No changes in conference statistics."
           else

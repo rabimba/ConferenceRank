@@ -25,9 +25,14 @@ export async function generateMetadata({
   const { id } = await params;
   const c = getConference(id);
   if (!c) return {};
+  const title = `${c.acronym} — ${c.title} | ConferenceRank`;
+  const description = `CORE rank ${c.rank}. ${c.title}: acceptance rates, rank history, topics, top publishing institutions.`;
   return {
-    title: `${c.acronym} — ${c.title} | ConferenceRank`,
-    description: `CORE rank ${c.rank}. ${c.title}: acceptance rates, rank history, topics, top publishing institutions.`,
+    title,
+    description,
+    alternates: { canonical: `/conference/${c.id}/` },
+    openGraph: { title, description, type: "article" },
+    twitter: { card: "summary", title, description },
   };
 }
 
@@ -114,6 +119,19 @@ export default async function ConferencePage({
 
   return (
     <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Dataset",
+            name: `${c.acronym} — ${c.title}`,
+            description: `CORE rank ${c.rank}. Acceptance rates, rank history, topics, and top publishing institutions for ${c.title}.`,
+            keywords: [c.acronym, c.title, ...c.categories].join(", "),
+            isPartOf: { "@type": "WebSite", name: "ConferenceRank" },
+          }),
+        }}
+      />
       <SiteHeader />
       <main className="mx-auto max-w-6xl space-y-5 px-4 py-8">
         <Link href="/" className="text-xs text-neutral-600 hover:underline dark:text-neutral-400">
@@ -178,15 +196,17 @@ export default async function ConferencePage({
                 DBLP ↗
               </a>
             )}
-            <a
-              href={`https://portal.core.edu.au/conf-ranks/${c.id}/`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-neutral-100 px-2.5 py-1 font-medium text-neutral-700 hover:bg-neutral-200
-                         dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
-            >
-              ICORE ↗
-            </a>
+            {/^\d+$/.test(c.id) && (
+              <a
+                href={`https://portal.core.edu.au/conf-ranks/${c.id}/`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-neutral-100 px-2.5 py-1 font-medium text-neutral-700 hover:bg-neutral-200
+                           dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+              >
+                ICORE ↗
+              </a>
+            )}
           </div>
           {stats.length > 0 && lastStat && (
             <div className="mt-4 flex flex-wrap gap-6 text-sm">

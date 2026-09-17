@@ -166,9 +166,23 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
       {/* Abstract Analysis Signals */}
       {result.detectedCategories.length > 0 && (
         <div className="rounded-xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 shadow-xs">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
-            Detected Research Focus
-          </h3>
+          <div className="flex items-center justify-between gap-3">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+              Detected Research Focus
+            </h3>
+            <span
+              className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${
+                result.confidence === "high"
+                  ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
+                  : result.confidence === "medium"
+                    ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300"
+                    : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
+              }`}
+              title="Confidence reflects keyword signal strength and abstract length"
+            >
+              {result.confidence} confidence
+            </span>
+          </div>
           <div className="mt-3 flex flex-wrap gap-2">
             {result.detectedCategories.map((c) => (
               <span
@@ -292,7 +306,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
           How this matching works:
         </p>
         <p className="mt-1">
-          Suggestions combine multi-word keyword extraction against 14 computer science sub-fields, title token overlap, and CORE prestige rankings. Acceptance rates are shown for context when available. Always consult the conference&apos;s formal Call for Papers (CFP) to confirm specific track requirements and page limits before submitting.
+          Suggestions combine multi-word keyword extraction against 14 computer science sub-fields, TF-IDF document similarity over venue titles/categories/OpenAlex topics, and CORE prestige rankings. Acceptance rates are shown for context when available. Always consult the conference&apos;s formal Call for Papers (CFP) to confirm specific track requirements and page limits before submitting.
         </p>
       </div>
     </div>

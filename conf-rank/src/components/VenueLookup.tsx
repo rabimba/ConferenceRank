@@ -10,6 +10,8 @@ interface SearchEntry {
   rank: string;
 }
 
+type LoadState = "idle" | "loading" | "ok" | "error";
+
 let cachedIndex: SearchEntry[] | null = null;
 let fetchPromise: Promise<SearchEntry[]> | null = null;
 
@@ -17,14 +19,17 @@ function loadIndex(): Promise<SearchEntry[]> {
   if (cachedIndex) return Promise.resolve(cachedIndex);
   if (fetchPromise) return fetchPromise;
   fetchPromise = fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/search-index.json`)
-    .then((r) => r.json())
+    .then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
     .then((d: SearchEntry[]) => {
       cachedIndex = d;
       return d;
     })
-    .catch(() => {
+    .catch((e) => {
       fetchPromise = null;
-      return [] as SearchEntry[];
+      throw e;
     });
   return fetchPromise;
 }
@@ -35,8 +40,10 @@ export default function VenueLookup() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
   const [index, setIndex] = useState<SearchEntry[]>(cachedIndex ?? []);
+  const [loadState, setLoadState] = useState<LoadState>(cachedIndex ? "ok" : "idle");
   const boxRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
   const router = useRouter();
 
   // debounce query input
@@ -47,11 +54,24 @@ export default function VenueLookup() {
     return () => clearTimeout(handler);
   }, [q]);
 
-  // lazy load on focus / keystroke
+  const ensureIndex = () => {
+    if (cachedIndex || loadState === "loading") return;
+    setLoadState("loading");
+    loadIndex()
+      .then((d) => {
+        setIndex(d);
+        setLoadState("ok");
+      })
+      .catch(() => setLoadState("error"));
+  };
+
+  // lazy load after mount (microtask defers setState out of the effect body)
   useEffect(() => {
-    if (cachedIndex || index.length) return;
-    loadIndex().then(setIndex);
-  }, [index.length]);
+    if (cachedIndex) return;
+    const t = setTimeout(ensureIndex, 0);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const results = useMemo(() => {
     const query = debouncedQ.toLowerCase().trim();
@@ -84,11 +104,20 @@ export default function VenueLookup() {
     inputRef.current?.blur();
   };
 
+  const listboxId = "venue-lookup-listbox";
+
   return (
     <div ref={boxRef} className="relative w-full max-w-md">
       <input
         ref={inputRef}
         type="search"
+        role="combobox"
+        aria-expanded={open && results.length > 0}
+        aria-controls={listboxId}
+        aria-activedescendant={
+          open && results[active] ? `${listboxId}-option-${results[active].id}` : undefined
+        }
+        aria-autocomplete="list"
         value={q}
         onChange={(e) => {
           setQ(e.target.value);
@@ -96,7 +125,7 @@ export default function VenueLookup() {
           setActive(0);
         }}
         onFocus={() => {
-          if (!cachedIndex && !index.length) loadIndex().then(setIndex);
+          ensureIndex();
           if (q) setOpen(true);
         }}
         onKeyDown={(e) => {
@@ -123,11 +152,22 @@ export default function VenueLookup() {
         aria-label="Look up a venue"
       />
       {open && results.length > 0 && (
-        <ul className="absolute z-50 mt-1 w-full overflow-hidden rounded-lg border
-                       border-neutral-200 bg-white py-1 shadow-lg
-                       dark:border-neutral-700 dark:bg-neutral-900">
+        <ul
+          ref={listRef}
+          id={listboxId}
+          role="listbox"
+          aria-label="Matching venues"
+          className="absolute z-50 mt-1 w-full overflow-hidden rounded-lg border
+                     border-neutral-200 bg-white py-1 shadow-lg
+                     dark:border-neutral-700 dark:bg-neutral-900"
+        >
           {results.map((c, i) => (
-            <li key={c.id}>
+            <li
+              key={c.id}
+              id={`${listboxId}-option-${c.id}`}
+              role="option"
+              aria-selected={i === active}
+            >
               <button
                 onMouseEnter={() => setActive(i)}
                 onClick={() => go(c)}
@@ -154,7 +194,24 @@ export default function VenueLookup() {
         <div className="absolute z-50 mt-1 w-full rounded-lg border border-neutral-200
                         bg-white px-4 py-3 text-sm text-neutral-500 shadow-lg
                         dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-400">
-          {index.length === 0 ? "Loading venue index…" : `No venues match “${q}”`}
+          {loadState === "error" ? (
+            <span>
+              Venue index failed to load.{" "}
+              <button
+                className="underline hover:text-neutral-700 dark:hover:text-neutral-200"
+                onClick={() => {
+                  setLoadState("idle");
+                  ensureIndex();
+                }}
+              >
+                Retry
+              </button>
+            </span>
+          ) : loadState !== "ok" ? (
+            "Loading venue index…"
+          ) : (
+            `No venues match “${q}”`
+          )}
         </div>
       )}
     </div>
