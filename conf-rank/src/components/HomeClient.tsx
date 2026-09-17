@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Directory, { type DirectoryEntry } from "./Directory";
 import CompareModal from "./CompareModal";
 import AcceptanceLandscape from "./AcceptanceLandscape";
@@ -17,10 +16,9 @@ export default function HomeClient({
   entries: DirectoryEntry[];
   landscapePoints: LandscapePoint[];
 }) {
-  const router = useRouter();
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [showModal, setShowModal] = useState(false);
-  const [showLandscape, setShowLandscape] = useState(true);
+  const [showLandscape, setShowLandscape] = useState(false);
 
   const toggleCompare = (id: string) => {
     setCompareIds((prev) =>

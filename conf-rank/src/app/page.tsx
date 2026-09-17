@@ -122,7 +122,13 @@ export default function Home() {
             ICORE/CORE rankings, acceptance-rate trends, topics and publishing
             institutions for {venues.length.toLocaleString()} computer-science
             venues — {ranked.toLocaleString()} CORE-ranked,{" "}
-            {withStats.toLocaleString()} with acceptance statistics.
+            {withStats.toLocaleString()} with acceptance statistics.{" "}
+            <Link
+              href="/suggest/"
+              className="font-semibold text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300 inline-flex items-center gap-1"
+            >
+              <span>Have an abstract? Try the Venue Suggester →</span>
+            </Link>
           </p>
 
           {risingVenues.length > 0 && (
