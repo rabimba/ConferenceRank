@@ -4,6 +4,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
+import WatchlistButton from "./WatchlistButton";
+import { useWatchlist } from "@/lib/watchlist";
 import { ALL_CATEGORIES } from "@/lib/types";
 import { rankOrder } from "@/lib/ranks";
 
@@ -107,6 +109,8 @@ export default function Directory({
   const [page, setPage] = useState(1);
   const [hydrated, setHydrated] = useState(false);
   const [showAllCats, setShowAllCats] = useState(false);
+  const [onlyWatchlist, setOnlyWatchlist] = useState(false);
+  const { watchlist } = useWatchlist();
 
   // hydrate filter state from the URL once on mount
   useEffect(() => {
@@ -123,6 +127,7 @@ export default function Directory({
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
     let list = venues.filter((c) => {
+      if (onlyWatchlist && !watchlist.includes(c.id)) return false;
       if (q && !c.title.toLowerCase().includes(q) && !c.acronym.toLowerCase().includes(q))
         return false;
       if (cats.length && !c.categories.some((cat) => cats.includes(cat))) return false;
@@ -169,7 +174,7 @@ export default function Directory({
       }
     });
     return list;
-  }, [venues, search, cats, ranks, sort, dir]);
+  }, [venues, search, cats, ranks, sort, dir, onlyWatchlist, watchlist]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
@@ -283,12 +288,29 @@ export default function Directory({
                 {r.label}
               </button>
             ))}
-            {(ranks.length > 0 || cats.length > 0 || search) && (
+            <button
+              type="button"
+              onClick={() => {
+                setOnlyWatchlist(!onlyWatchlist);
+                setPage(1);
+              }}
+              title="Show only bookmarked target venues"
+              className={`rounded-full px-3 py-1.5 text-xs font-semibold transition inline-flex items-center gap-1 ${
+                onlyWatchlist
+                  ? "bg-amber-500 text-stone-950 font-bold shadow-xs"
+                  : "border border-border bg-surface text-foreground/80 hover:border-amber-400 hover:text-amber-600 dark:hover:border-amber-500"
+              }`}
+            >
+              <span>⭐</span>
+              <span>Watchlist{watchlist.length > 0 ? ` (${watchlist.length})` : ""}</span>
+            </button>
+            {(ranks.length > 0 || cats.length > 0 || search || onlyWatchlist) && (
               <button
                 onClick={() => {
                   setRanks([]);
                   setCats([]);
                   setSearch("");
+                  setOnlyWatchlist(false);
                 }}
                 className="rounded-full px-3 py-1.5 text-xs font-medium text-muted
                            underline-offset-2 hover:underline"
@@ -419,9 +441,12 @@ export default function Directory({
                       onCompare ? "left-[92px]" : "left-[52px]"
                     } ${rowBg}`}
                   >
-                    <Link href={`/conference/${c.id}`} className="hover:underline">
-                      {c.acronym || "—"}
-                    </Link>
+                    <div className="flex items-center justify-between gap-1.5">
+                      <Link href={`/conference/${c.id}`} className="hover:underline truncate">
+                        {c.acronym || "—"}
+                      </Link>
+                      <WatchlistButton venueId={c.id} acronym={c.acronym} size="sm" />
+                    </div>
                   </td>
                   <td className="max-w-[420px] truncate px-4 py-2.5 text-foreground/90">
                     <Link href={`/conference/${c.id}`} className="hover:underline">

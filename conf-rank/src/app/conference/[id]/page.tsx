@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import RankBadge from "@/components/RankBadge";
+import WatchlistButton from "@/components/WatchlistButton";
 import {
   AcceptanceTrendChart,
   PapersPerYearChart,
@@ -137,19 +138,20 @@ export default async function ConferencePage({
         </Link>
 
         {/* Header */}
-        <div className="rounded-xl border border-stone-200 bg-surface p-6
-                        dark:border-stone-800">
-          <div className="flex flex-wrap items-center gap-3">
-            <RankBadge rank={c.rank} size="lg" />
-            <h1 className="text-2xl font-black tracking-tight text-foreground">
-              {c.acronym}
-            </h1>
-            <span className="text-muted">{c.title}</span>
+        <div className="rounded-xl border border-border bg-surface p-6 shadow-xs">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center gap-3">
+              <RankBadge rank={c.rank} size="lg" />
+              <h1 className="text-2xl font-black tracking-tight text-foreground">
+                {c.acronym}
+              </h1>
+              <span className="text-muted">{c.title}</span>
+            </div>
+            <WatchlistButton venueId={c.id} acronym={c.acronym} size="md" showLabel={true} className="border border-border bg-surface px-3 py-1.5 shadow-xs" />
           </div>
 
           {/* Quick-take verdict summary */}
-          <div className="mt-3 rounded-lg border border-stone-200 bg-stone-50 px-4 py-2.5 text-xs text-stone-700
-                          dark:border-stone-800 dark:bg-stone-900/60 dark:text-stone-300">
+          <div className="mt-3 rounded-lg border border-border bg-stone-50/70 px-4 py-2.5 text-xs text-foreground/80 dark:bg-stone-900/60">
             <span className="font-semibold text-foreground">Quick take: </span>
             {c.rank === "A*"
               ? "Flagship international venue (top 7.5% tier). Highly competitive with premier global impact."
