@@ -1,0 +1,2129 @@
+{
+ "3dv": [
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 121,
+    "Oral": 21
+   },
+   "accepted": 142,
+   "total": 353,
+   "rate": 40.23,
+   "location": "Singapore, Singapore"
+  }
+ ],
+ "aaai": [
+  {
+   "year": 2021,
+   "tiers": {
+    "Technical": 1620
+   },
+   "accepted": 1692,
+   "total": 7911,
+   "rate": 21.39
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Technical": 1319
+   },
+   "accepted": 1349,
+   "total": 9020,
+   "rate": 14.96
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Technical": 1578
+   },
+   "accepted": 1721,
+   "total": 8777,
+   "rate": 19.61
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Technical": 2501
+   },
+   "accepted": 2342,
+   "total": 9862,
+   "rate": 23.75,
+   "location": "Vancouver, Canada"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Technical": 3182
+   },
+   "accepted": 3032,
+   "total": 12957,
+   "rate": 23.4,
+   "location": "Philadelphia, USA"
+  },
+  {
+   "year": 2026,
+   "tiers": {},
+   "total": 23000
+  }
+ ],
+ "acl": [
+  {
+   "year": 2021,
+   "tiers": {
+    "Long": 571,
+    "Short": 139
+   },
+   "accepted": 710
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Long": 603,
+    "Short": 97,
+    "Findings": 331
+   },
+   "accepted": 1031
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Long": 911,
+    "Short": 164,
+    "Findings": 901,
+    "Industry": 76
+   },
+   "accepted": 2052
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Long": 863,
+    "Short": 77,
+    "Findings": 953,
+    "System demonstrations": 38
+   },
+   "accepted": 1915,
+   "total": 4407,
+   "rate": 43.45,
+   "location": "Bangkok, Thailand"
+  },
+  {
+   "year": 2025,
+   "tiers": {},
+   "accepted": 3091,
+   "total": 8360,
+   "rate": 36.97,
+   "location": "Vienna, Austria"
+  }
+ ],
+ "ai4x": [
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 92,
+    "Oral": 144
+   },
+   "accepted": 236,
+   "total": 236,
+   "rate": 100.0,
+   "location": "Singapore, Singapore"
+  }
+ ],
+ "aistats": [
+  {
+   "year": 1995,
+   "tiers": {
+    "Poster": 64
+   },
+   "accepted": 64
+  },
+  {
+   "year": 1997,
+   "tiers": {
+    "Poster": 59
+   },
+   "accepted": 59
+  },
+  {
+   "year": 1999,
+   "tiers": {
+    "Poster": 20
+   },
+   "accepted": 20
+  },
+  {
+   "year": 2001,
+   "tiers": {
+    "Poster": 46
+   },
+   "accepted": 46
+  },
+  {
+   "year": 2003,
+   "tiers": {
+    "Poster": 44
+   },
+   "accepted": 44
+  },
+  {
+   "year": 2005,
+   "tiers": {
+    "Poster": 58
+   },
+   "accepted": 58
+  },
+  {
+   "year": 2007,
+   "tiers": {
+    "Poster": 86
+   },
+   "accepted": 86
+  },
+  {
+   "year": 2009,
+   "tiers": {
+    "Poster": 84
+   },
+   "accepted": 84
+  },
+  {
+   "year": 2010,
+   "tiers": {
+    "Poster": 126
+   },
+   "accepted": 126
+  },
+  {
+   "year": 2011,
+   "tiers": {
+    "Poster": 107
+   },
+   "accepted": 107
+  },
+  {
+   "year": 2012,
+   "tiers": {
+    "Poster": 158
+   },
+   "accepted": 158
+  },
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 71
+   },
+   "accepted": 71
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 122
+   },
+   "accepted": 122
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 126
+   },
+   "accepted": 126
+  },
+  {
+   "year": 2016,
+   "tiers": {
+    "Poster": 164
+   },
+   "accepted": 164
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 167
+   },
+   "accepted": 167
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 216
+   },
+   "accepted": 216
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 360
+   },
+   "accepted": 360
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 423
+   },
+   "accepted": 423
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 455
+   },
+   "accepted": 455
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 492
+   },
+   "accepted": 492
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 496
+   },
+   "accepted": 496
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 547
+   },
+   "accepted": 546,
+   "total": 1980,
+   "rate": 27.58,
+   "location": "Valencia, Spain"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 546,
+    "Oral": 37
+   },
+   "accepted": 583,
+   "total": 1861,
+   "rate": 31.33,
+   "location": "Mai Khao, Thailand"
+  }
+ ],
+ "alt": [
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 51
+   },
+   "accepted": 51,
+   "total": 144,
+   "rate": 35.42,
+   "location": "Milan, Italy"
+  }
+ ],
+ "colm": [
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 299
+   },
+   "accepted": 299,
+   "total": 1036,
+   "rate": 28.86,
+   "location": "Philadelphia, United States"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 418
+   },
+   "accepted": 418,
+   "total": 418,
+   "rate": 100.0,
+   "location": "Montreal, Canada"
+  }
+ ],
+ "corl": [
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 127,
+    "Oral": 26
+   },
+   "accepted": 153,
+   "total": 408,
+   "rate": 37.5
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 164,
+    "Oral": 33
+   },
+   "accepted": 197,
+   "total": 504,
+   "rate": 39.09
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 166,
+    "Oral": 33
+   },
+   "accepted": 199,
+   "total": 498,
+   "rate": 39.96,
+   "location": "Atlanta, USA"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 264
+   },
+   "accepted": 264,
+   "total": 671,
+   "rate": 39.34,
+   "location": "Munich, Germany"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 221,
+    "Oral": 42
+   },
+   "accepted": 263,
+   "total": 263,
+   "rate": 100.0,
+   "location": "Seoul, Korea"
+  }
+ ],
+ "cvpr": [
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 412,
+    "Oral": 60
+   },
+   "accepted": 472,
+   "total": 1816,
+   "rate": 25.99,
+   "location": "Portland, USA"
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 436,
+    "Oral": 104
+   },
+   "accepted": 540,
+   "total": 1807,
+   "rate": 29.88,
+   "location": "Columbus, USA"
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 531,
+    "Oral": 71
+   },
+   "accepted": 602,
+   "total": 2123,
+   "rate": 28.36,
+   "location": "Boston, USA"
+  },
+  {
+   "year": 2016,
+   "tiers": {
+    "Poster": 437,
+    "Oral": 83,
+    "Spotlight": 123
+   },
+   "accepted": 643,
+   "total": 2145,
+   "rate": 29.98,
+   "location": "Las Vegas, USA"
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 568,
+    "Oral": 71,
+    "Spotlight": 144
+   },
+   "accepted": 783,
+   "total": 2680,
+   "rate": 29.22,
+   "location": "Hawaii, USA"
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 685,
+    "Oral": 70,
+    "Spotlight": 224
+   },
+   "accepted": 979,
+   "total": 3359,
+   "rate": 29.15,
+   "location": "Salt Lake City, USA"
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 1006,
+    "Oral": 288
+   },
+   "accepted": 1300,
+   "total": 5165,
+   "rate": 25.17,
+   "location": "Long Beach, USA"
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 1132,
+    "Oral": 335
+   },
+   "accepted": 1467,
+   "total": 6424,
+   "rate": 22.84
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 1661
+   },
+   "accepted": 1661,
+   "total": 7500,
+   "rate": 22.15
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 1720,
+    "Oral": 342
+   },
+   "accepted": 2062,
+   "total": 8262,
+   "rate": 24.96,
+   "location": "New Orleans, USA"
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 2136,
+    "Highlight": 235,
+    "Award candidates": 12
+   },
+   "accepted": 2360,
+   "total": 9155,
+   "rate": 25.78,
+   "location": "Vancouver, Canada"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 2305,
+    "Highlight": 324,
+    "Oral": 90
+   },
+   "accepted": 2719,
+   "total": 11532,
+   "rate": 23.58,
+   "location": "Seattle, USA"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 2468,
+    "Highlight": 388,
+    "Award candidate": 15
+   },
+   "accepted": 2878,
+   "total": 13008,
+   "rate": 22.12,
+   "location": "Nashville, USA"
+  },
+  {
+   "year": 2026,
+   "tiers": {},
+   "accepted": 4090,
+   "total": 16092,
+   "rate": 25.42
+  }
+ ],
+ "eccv": [
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 717,
+    "Oral": 59
+   },
+   "accepted": 776,
+   "total": 2439,
+   "rate": 31.82,
+   "location": "Munich, Germany"
+  },
+  {
+   "year": 2020,
+   "tiers": {},
+   "total": 5025
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 1488,
+    "Oral": 157
+   },
+   "accepted": 1645,
+   "total": 6773,
+   "rate": 24.29,
+   "location": "Tel Aviv, Israel"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 2395,
+    "Oral": 200
+   },
+   "accepted": 2595,
+   "total": 8585,
+   "rate": 30.23,
+   "location": "Milano, Italy"
+  }
+ ],
+ "emnlp": [
+  {
+   "year": 2021,
+   "tiers": {
+    "Main": 847,
+    "Finding": 423,
+    "System demonstrations": 42
+   },
+   "accepted": 1312
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Main": 826,
+    "Finding": 548,
+    "Industry": 65
+   },
+   "accepted": 1439
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Reject": 9,
+    "Long main": 862,
+    "Short main": 133,
+    "Long findings": 818,
+    "Short findings": 198
+   },
+   "accepted": 2011,
+   "total": 4909,
+   "rate": 40.97,
+   "location": "Singapore, Singapore"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Main": 1234,
+    "Finding": 976,
+    "Industry": 119,
+    "System demonstrations": 50
+   },
+   "accepted": 2379,
+   "total": 6395,
+   "rate": 37.2,
+   "location": "Miami, USA"
+  }
+ ],
+ "iccv": [
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 413,
+    "Oral": 41
+   },
+   "accepted": 454,
+   "total": 1629,
+   "rate": 27.87,
+   "location": "Sydney, Australia"
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 469,
+    "Oral": 56
+   },
+   "accepted": 525,
+   "total": 1698,
+   "rate": 30.92,
+   "location": "Santiago, Chile"
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 520,
+    "Spotlight": 56,
+    "Oral": 45
+   },
+   "accepted": 621,
+   "total": 2143,
+   "rate": 28.98,
+   "location": "Venice, Italy"
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 862,
+    "Oral": 200
+   },
+   "accepted": 1062,
+   "total": 4303,
+   "rate": 24.68,
+   "location": "Seoul, South Korea"
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 1612
+   },
+   "accepted": 1612,
+   "total": 6152,
+   "rate": 26.2,
+   "location": "Virtual, Virtual"
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 2010,
+    "Oral": 145
+   },
+   "accepted": 2155,
+   "total": 8620,
+   "rate": 25.0,
+   "location": "Paris, France"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 2702
+   },
+   "accepted": 2698,
+   "total": 11152,
+   "rate": 24.19,
+   "location": "Honolulu, USA"
+  }
+ ],
+ "iclr": [
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 9,
+    "Oral": 14,
+    "Reject": 12
+   },
+   "accepted": 23,
+   "total": 67,
+   "rate": 34.33
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 69
+   },
+   "accepted": 69,
+   "total": 69,
+   "rate": 100.0
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 183,
+    "Oral": 15,
+    "Reject": 245
+   },
+   "accepted": 198,
+   "total": 490,
+   "rate": 40.41
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 314,
+    "Oral": 23,
+    "Reject": 496
+   },
+   "accepted": 337,
+   "total": 1013,
+   "rate": 33.27
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 478,
+    "Oral": 24,
+    "Reject": 921
+   },
+   "accepted": 502,
+   "total": 1579,
+   "rate": 31.79
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 531,
+    "Spotlight": 108,
+    "Reject": 1526,
+    "Talk": 48
+   },
+   "accepted": 687,
+   "total": 2594,
+   "rate": 26.48
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 693,
+    "Spotlight": 114,
+    "Oral": 53,
+    "Reject": 1756
+   },
+   "accepted": 860,
+   "total": 3014,
+   "rate": 28.53
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 866,
+    "Spotlight": 174,
+    "Oral": 55,
+    "Reject": 1582
+   },
+   "accepted": 1095,
+   "total": 3422,
+   "rate": 32.0
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 1204,
+    "Spotlight": 280,
+    "Oral": 91,
+    "Reject": 2285
+   },
+   "accepted": 1575,
+   "total": 4955,
+   "rate": 31.79,
+   "location": "Kigali, Rwanda"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 1807,
+    "Spotlight": 367,
+    "Oral": 86,
+    "Reject": 3438
+   },
+   "accepted": 2260,
+   "total": 7304,
+   "rate": 30.94,
+   "location": "Vienna, Austria"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 3110,
+    "Spotlight": 380,
+    "Oral": 213,
+    "Reject": 4911
+   },
+   "accepted": 3703,
+   "total": 11672,
+   "rate": 31.73,
+   "location": "Singapore, Singapore"
+  },
+  {
+   "year": 2026,
+   "tiers": {
+    "Poster": 5117,
+    "Oral": 223,
+    "Reject": 8418
+   },
+   "accepted": 5340,
+   "total": 19814,
+   "rate": 26.95
+  }
+ ],
+ "icml": [
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 283
+   },
+   "accepted": 283
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 310
+   },
+   "accepted": 310
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 270
+   },
+   "accepted": 270,
+   "total": 1037,
+   "rate": 26.04
+  },
+  {
+   "year": 2016,
+   "tiers": {
+    "Poster": 322
+   },
+   "accepted": 322
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 434
+   },
+   "accepted": 434,
+   "total": 1676,
+   "rate": 25.89
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Oral": 621
+   },
+   "accepted": 621,
+   "total": 2473,
+   "rate": 25.11
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Oral": 773
+   },
+   "accepted": 773,
+   "total": 3424,
+   "rate": 22.58
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 1084
+   },
+   "accepted": 1084,
+   "total": 4990,
+   "rate": 21.72
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Spotlight": 1017,
+    "Oral": 166
+   },
+   "accepted": 1183,
+   "total": 5513,
+   "rate": 21.46
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Spotlight": 1115,
+    "Oral": 118
+   },
+   "accepted": 1233,
+   "total": 5630,
+   "rate": 21.9
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 1673,
+    "Oral": 155
+   },
+   "accepted": 1828,
+   "total": 6538,
+   "rate": 27.96,
+   "location": "Hawaii, USA"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 2609,
+    "Spotlight": 191,
+    "Oral": 144
+   },
+   "accepted": 2944,
+   "total": 9653,
+   "rate": 30.5,
+   "location": "Vienna, Austria"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 2947,
+    "Spotlight": 313,
+    "Oral": 108,
+    "Reject": 162
+   },
+   "accepted": 3260,
+   "total": 12107,
+   "rate": 26.93,
+   "location": "Vancouver, Canada"
+  },
+  {
+   "year": 2026,
+   "tiers": {
+    "Poster": 1
+   },
+   "accepted": 1,
+   "total": 418,
+   "rate": 0.24
+  }
+ ],
+ "icra": [
+  {
+   "year": 2000,
+   "tiers": {
+    "Poster": 167
+   },
+   "accepted": 167
+  },
+  {
+   "year": 2001,
+   "tiers": {
+    "Poster": 174
+   },
+   "accepted": 174
+  },
+  {
+   "year": 2002,
+   "tiers": {
+    "Poster": 164
+   },
+   "accepted": 164
+  },
+  {
+   "year": 2003,
+   "tiers": {
+    "Poster": 248
+   },
+   "accepted": 248
+  },
+  {
+   "year": 2004,
+   "tiers": {
+    "Poster": 173
+   },
+   "accepted": 173
+  },
+  {
+   "year": 2005,
+   "tiers": {
+    "Poster": 770
+   },
+   "accepted": 770
+  },
+  {
+   "year": 2006,
+   "tiers": {
+    "Poster": 680
+   },
+   "accepted": 680
+  },
+  {
+   "year": 2007,
+   "tiers": {
+    "Poster": 807
+   },
+   "accepted": 807
+  },
+  {
+   "year": 2008,
+   "tiers": {
+    "Poster": 665
+   },
+   "accepted": 665
+  },
+  {
+   "year": 2009,
+   "tiers": {
+    "Poster": 712
+   },
+   "accepted": 712
+  },
+  {
+   "year": 2010,
+   "tiers": {
+    "Poster": 874
+   },
+   "accepted": 874
+  },
+  {
+   "year": 2011,
+   "tiers": {
+    "Poster": 1019
+   },
+   "accepted": 1019
+  },
+  {
+   "year": 2012,
+   "tiers": {
+    "Poster": 836
+   },
+   "accepted": 836
+  },
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 873
+   },
+   "accepted": 873
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 1037
+   },
+   "accepted": 1037
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 940
+   },
+   "accepted": 940
+  },
+  {
+   "year": 2016,
+   "tiers": {
+    "Poster": 48
+   },
+   "accepted": 48
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 798
+   },
+   "accepted": 798
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 817
+   },
+   "accepted": 817
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 1025
+   },
+   "accepted": 1025
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 1073
+   },
+   "accepted": 1073
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 1387
+   },
+   "accepted": 1387
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 931
+   },
+   "accepted": 931
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 1341
+   },
+   "accepted": 1341
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 1760
+   },
+   "accepted": 1760,
+   "location": "Yokohama, Japan"
+  }
+ ],
+ "ijcai": [
+  {
+   "year": 2020,
+   "tiers": {},
+   "accepted": 592,
+   "total": 4717,
+   "rate": 12.55
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 586
+   },
+   "accepted": 587,
+   "total": 4204,
+   "rate": 13.96
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 678
+   },
+   "accepted": 679,
+   "total": 4535,
+   "rate": 14.97
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 639
+   },
+   "accepted": 643,
+   "total": 4566,
+   "rate": 14.08
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 790
+   },
+   "accepted": 1048
+  }
+ ],
+ "iros": [
+  {
+   "year": 2000,
+   "tiers": {
+    "Poster": 127
+   },
+   "accepted": 127
+  },
+  {
+   "year": 2001,
+   "tiers": {
+    "Poster": 96
+   },
+   "accepted": 96
+  },
+  {
+   "year": 2002,
+   "tiers": {
+    "Poster": 165
+   },
+   "accepted": 165
+  },
+  {
+   "year": 2003,
+   "tiers": {
+    "Poster": 127
+   },
+   "accepted": 127
+  },
+  {
+   "year": 2004,
+   "tiers": {
+    "Poster": 152
+   },
+   "accepted": 152
+  },
+  {
+   "year": 2005,
+   "tiers": {
+    "Poster": 663
+   },
+   "accepted": 663
+  },
+  {
+   "year": 2006,
+   "tiers": {
+    "Poster": 1004
+   },
+   "accepted": 1004
+  },
+  {
+   "year": 2007,
+   "tiers": {
+    "Poster": 692
+   },
+   "accepted": 692
+  },
+  {
+   "year": 2008,
+   "tiers": {
+    "Poster": 687
+   },
+   "accepted": 687
+  },
+  {
+   "year": 2009,
+   "tiers": {
+    "Poster": 949
+   },
+   "accepted": 949
+  },
+  {
+   "year": 2010,
+   "tiers": {
+    "Poster": 992
+   },
+   "accepted": 992
+  },
+  {
+   "year": 2011,
+   "tiers": {
+    "Poster": 787
+   },
+   "accepted": 787
+  },
+  {
+   "year": 2012,
+   "tiers": {
+    "Poster": 860
+   },
+   "accepted": 860
+  },
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 913
+   },
+   "accepted": 913
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 749
+   },
+   "accepted": 749
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 970
+   },
+   "accepted": 970
+  },
+  {
+   "year": 2016,
+   "tiers": {
+    "Poster": 830
+   },
+   "accepted": 830
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 878
+   },
+   "accepted": 878
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 1089
+   },
+   "accepted": 1089
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 934
+   },
+   "accepted": 934
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 1129
+   },
+   "accepted": 1129
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 1035
+   },
+   "accepted": 1035
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 1214
+   },
+   "accepted": 1214
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 1195
+   },
+   "accepted": 1195
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 1419
+   },
+   "accepted": 1419,
+   "location": "Abu Dhabi, UAE"
+  }
+ ],
+ "kdd": [
+  {
+   "year": 2024,
+   "tiers": {},
+   "accepted": 411,
+   "total": 2046,
+   "rate": 20.09,
+   "location": "Barcelona, Spain"
+  }
+ ],
+ "neurips": [
+  {
+   "year": 1987,
+   "tiers": {
+    "Poster": 90
+   },
+   "accepted": 90
+  },
+  {
+   "year": 1988,
+   "tiers": {
+    "Poster": 94
+   },
+   "accepted": 94
+  },
+  {
+   "year": 1989,
+   "tiers": {
+    "Poster": 101
+   },
+   "accepted": 101
+  },
+  {
+   "year": 1990,
+   "tiers": {
+    "Poster": 143
+   },
+   "accepted": 143
+  },
+  {
+   "year": 1991,
+   "tiers": {
+    "Poster": 144
+   },
+   "accepted": 144
+  },
+  {
+   "year": 1992,
+   "tiers": {
+    "Poster": 127
+   },
+   "accepted": 127
+  },
+  {
+   "year": 1993,
+   "tiers": {
+    "Poster": 158
+   },
+   "accepted": 158
+  },
+  {
+   "year": 1994,
+   "tiers": {
+    "Poster": 140
+   },
+   "accepted": 140
+  },
+  {
+   "year": 1995,
+   "tiers": {
+    "Poster": 152
+   },
+   "accepted": 152
+  },
+  {
+   "year": 1996,
+   "tiers": {
+    "Poster": 152
+   },
+   "accepted": 152
+  },
+  {
+   "year": 1997,
+   "tiers": {
+    "Poster": 150
+   },
+   "accepted": 150
+  },
+  {
+   "year": 1998,
+   "tiers": {
+    "Poster": 151
+   },
+   "accepted": 151
+  },
+  {
+   "year": 1999,
+   "tiers": {
+    "Poster": 150
+   },
+   "accepted": 150
+  },
+  {
+   "year": 2000,
+   "tiers": {
+    "Poster": 152
+   },
+   "accepted": 152
+  },
+  {
+   "year": 2001,
+   "tiers": {
+    "Poster": 197
+   },
+   "accepted": 197,
+   "total": 650,
+   "rate": 30.31
+  },
+  {
+   "year": 2002,
+   "tiers": {
+    "Poster": 207
+   },
+   "accepted": 207,
+   "total": 710,
+   "rate": 29.15
+  },
+  {
+   "year": 2003,
+   "tiers": {
+    "Poster": 198
+   },
+   "accepted": 198,
+   "total": 717,
+   "rate": 27.62
+  },
+  {
+   "year": 2004,
+   "tiers": {
+    "Poster": 207
+   },
+   "accepted": 207
+  },
+  {
+   "year": 2005,
+   "tiers": {
+    "Poster": 207
+   },
+   "accepted": 207,
+   "total": 822,
+   "rate": 25.18
+  },
+  {
+   "year": 2006,
+   "tiers": {},
+   "total": 833
+  },
+  {
+   "year": 2007,
+   "tiers": {},
+   "total": 973
+  },
+  {
+   "year": 2008,
+   "tiers": {},
+   "total": 1022
+  },
+  {
+   "year": 2009,
+   "tiers": {},
+   "total": 1105
+  },
+  {
+   "year": 2010,
+   "tiers": {},
+   "total": 1219,
+   "location": "Vancouver, Canada"
+  },
+  {
+   "year": 2011,
+   "tiers": {},
+   "total": 1400,
+   "location": "Granada, Spain"
+  },
+  {
+   "year": 2012,
+   "tiers": {},
+   "total": 1397,
+   "location": "Lake Tahoe, USA"
+  },
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 288,
+    "Spotlight": 52,
+    "Oral": 20
+   },
+   "accepted": 360,
+   "total": 1420,
+   "rate": 25.35,
+   "location": "Lake Tahoe, USA"
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 329,
+    "Spotlight": 62,
+    "Oral": 20
+   },
+   "accepted": 411,
+   "total": 1678,
+   "rate": 24.49,
+   "location": "Montreal, Canada"
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 321,
+    "Spotlight": 67,
+    "Oral": 15
+   },
+   "accepted": 403,
+   "total": 1838,
+   "rate": 21.93,
+   "location": "Montreal, Canada"
+  },
+  {
+   "year": 2016,
+   "tiers": {
+    "Poster": 523,
+    "Oral": 45
+   },
+   "accepted": 568,
+   "total": 2425,
+   "rate": 23.42,
+   "location": "Spain, Barcelona"
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 538,
+    "Spotlight": 112,
+    "Oral": 41
+   },
+   "accepted": 691,
+   "total": 3240,
+   "rate": 21.33,
+   "location": "Long Beach, USA"
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 812,
+    "Spotlight": 167,
+    "Oral": 30
+   },
+   "accepted": 1009,
+   "total": 4856,
+   "rate": 20.78,
+   "location": "Montreal, Canada"
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 1227,
+    "Spotlight": 164,
+    "Oral": 36
+   },
+   "accepted": 1427,
+   "total": 6743,
+   "rate": 21.16,
+   "location": "Vancouver, Canada"
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 1513,
+    "Spotlight": 280,
+    "Oral": 106
+   },
+   "accepted": 1899,
+   "total": 9467,
+   "rate": 20.06,
+   "location": "Virtual, Virtual"
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 2019,
+    "Spotlight": 260,
+    "Oral": 55,
+    "Reject": 133
+   },
+   "accepted": 2334,
+   "total": 9122,
+   "rate": 25.59,
+   "location": "Virtual, Virtual"
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Reject": 153
+   },
+   "accepted": 2671,
+   "total": 10411,
+   "rate": 25.66,
+   "location": "New Orleans, USA"
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 2773,
+    "Spotlight": 378,
+    "Oral": 67,
+    "Reject": 176
+   },
+   "accepted": 3218,
+   "total": 12345,
+   "rate": 26.07,
+   "location": "New Orleans, USA"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 3648,
+    "Spotlight": 326,
+    "Oral": 61,
+    "Reject": 201
+   },
+   "accepted": 4035,
+   "total": 15671,
+   "rate": 25.75,
+   "location": "Vancouver, Canada"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 4515,
+    "Spotlight": 683,
+    "Oral": 77,
+    "Reject": 251
+   },
+   "accepted": 5275,
+   "total": 5526,
+   "rate": 95.46,
+   "location": "San Diego, USA"
+  }
+ ],
+ "rss": [
+  {
+   "year": 2005,
+   "tiers": {
+    "Poster": 48
+   },
+   "accepted": 48
+  },
+  {
+   "year": 2006,
+   "tiers": {
+    "Poster": 39
+   },
+   "accepted": 39
+  },
+  {
+   "year": 2007,
+   "tiers": {
+    "Poster": 42
+   },
+   "accepted": 42
+  },
+  {
+   "year": 2008,
+   "tiers": {
+    "Poster": 40
+   },
+   "accepted": 40
+  },
+  {
+   "year": 2009,
+   "tiers": {
+    "Poster": 39
+   },
+   "accepted": 39
+  },
+  {
+   "year": 2010,
+   "tiers": {
+    "Poster": 40
+   },
+   "accepted": 40
+  },
+  {
+   "year": 2011,
+   "tiers": {
+    "Poster": 45
+   },
+   "accepted": 45
+  },
+  {
+   "year": 2012,
+   "tiers": {
+    "Poster": 60
+   },
+   "accepted": 60
+  },
+  {
+   "year": 2013,
+   "tiers": {
+    "Poster": 55
+   },
+   "accepted": 55
+  },
+  {
+   "year": 2014,
+   "tiers": {
+    "Poster": 57
+   },
+   "accepted": 57
+  },
+  {
+   "year": 2015,
+   "tiers": {
+    "Poster": 49
+   },
+   "accepted": 49
+  },
+  {
+   "year": 2016,
+   "tiers": {
+    "Poster": 47
+   },
+   "accepted": 47
+  },
+  {
+   "year": 2017,
+   "tiers": {
+    "Poster": 75
+   },
+   "accepted": 75
+  },
+  {
+   "year": 2018,
+   "tiers": {
+    "Poster": 71
+   },
+   "accepted": 71
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Poster": 84
+   },
+   "accepted": 84
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 103
+   },
+   "accepted": 103
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Poster": 92
+   },
+   "accepted": 92
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 74
+   },
+   "accepted": 74
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 112
+   },
+   "accepted": 112
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 134
+   },
+   "accepted": 134,
+   "location": "Delft, Netherlands"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 163
+   },
+   "accepted": 163,
+   "location": "Los Angeles, USA"
+  }
+ ],
+ "siggraph": [
+  {
+   "year": 2018,
+   "tiers": {
+    "Technical paper": 128,
+    "Tog paper": 39
+   },
+   "accepted": 128,
+   "total": 464,
+   "rate": 27.59
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Technical paper": 111,
+    "Tog paper": 31,
+    "Poster": 74
+   },
+   "accepted": 111,
+   "total": 385,
+   "rate": 28.83,
+   "location": "Los Angeles, USA"
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Technical paper": 123,
+    "Tog paper": 40,
+    "Poster": 69
+   },
+   "accepted": 123,
+   "total": 443,
+   "rate": 27.77,
+   "location": "Virtual, Virtual"
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Technical paper": 149,
+    "Tog paper": 28,
+    "Poster": 45
+   },
+   "accepted": 149,
+   "total": 444,
+   "rate": 33.56,
+   "location": "Chicago, USA"
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Technical paper": 194,
+    "Conference": 61,
+    "Journal": 133,
+    "Tog paper": 53,
+    "Poster": 66
+   },
+   "accepted": 194,
+   "total": 610,
+   "rate": 31.8,
+   "location": "Vancouver, Canada"
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Technical paper": 212,
+    "Conference": 86,
+    "Journal": 126,
+    "Tog paper": 27
+   },
+   "accepted": 212,
+   "total": 611,
+   "rate": 34.7,
+   "location": "Los Angeles, USA"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Technical paper": 252,
+    "Conference": 134,
+    "Journal": 118,
+    "Tog paper": 27
+   },
+   "accepted": 252,
+   "total": 844,
+   "rate": 29.86,
+   "location": "Denver, USA"
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Technical paper": 306,
+    "Tog paper": 24,
+    "Poster": 380
+   },
+   "accepted": 710,
+   "location": "Vancouver, Canada"
+  }
+ ],
+ "siggraph-asia": [
+  {
+   "year": 2018,
+   "tiers": {
+    "Technical paper": 112
+   },
+   "accepted": 112,
+   "total": 353,
+   "rate": 31.73
+  },
+  {
+   "year": 2019,
+   "tiers": {
+    "Technical paper": 93
+   },
+   "accepted": 93,
+   "total": 309,
+   "rate": 30.1
+  },
+  {
+   "year": 2020,
+   "tiers": {
+    "Technical paper": 109,
+    "Poster": 39
+   },
+   "accepted": 109,
+   "total": 305,
+   "rate": 35.74
+  },
+  {
+   "year": 2021,
+   "tiers": {
+    "Technical paper": 92
+   },
+   "accepted": 92,
+   "total": 270,
+   "rate": 34.07,
+   "location": "Tokyo, Japan"
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Technical paper": 150,
+    "Conference": 53,
+    "Journal": 97,
+    "Poster": 56
+   },
+   "accepted": 150,
+   "total": 407,
+   "rate": 36.86,
+   "location": "Daegu, South Korea"
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Technical paper": 224,
+    "Conference": 122,
+    "Journal": 102,
+    "Tog paper": 9
+   },
+   "accepted": 224,
+   "total": 665,
+   "rate": 33.68,
+   "location": "Sydney, Australia"
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Technical paper": 265
+   },
+   "accepted": 265,
+   "location": "Tokyo, Japan"
+  }
+ ],
+ "wacv": [
+  {
+   "year": 2020,
+   "tiers": {
+    "Poster": 378
+   },
+   "accepted": 378,
+   "total": 1096,
+   "rate": 34.49
+  },
+  {
+   "year": 2022,
+   "tiers": {
+    "Poster": 406
+   },
+   "accepted": 406,
+   "total": 1172,
+   "rate": 34.64
+  },
+  {
+   "year": 2023,
+   "tiers": {
+    "Poster": 641
+   },
+   "accepted": 641,
+   "total": 1577,
+   "rate": 40.65
+  },
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 846
+   },
+   "accepted": 846,
+   "total": 2043,
+   "rate": 41.41
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 929
+   },
+   "accepted": 929,
+   "location": "Tucson, USA"
+  }
+ ],
+ "www": [
+  {
+   "year": 2024,
+   "tiers": {
+    "Poster": 216,
+    "Oral": 189
+   },
+   "accepted": 405,
+   "total": 2008,
+   "rate": 20.17
+  },
+  {
+   "year": 2025,
+   "tiers": {
+    "Poster": 254,
+    "Oral": 155
+   },
+   "accepted": 409,
+   "total": 409,
+   "rate": 100.0
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+name: Weekly Stats Refresh
+
+on:
+  schedule:
+    # Run every Monday at 04:00 UTC
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install requests pyyaml
+
+      - name: Run Scrapers and Refresh Data
+        run: |
+          python3 scraper/fetch_lixin.py || true
+          python3 scraper/fetch_papercopilot.py || true
+          python3 scraper/merge.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add conf-rank/src/data/ conferences.json scraper/data/ public/
+          if git diff --staged --quiet; then
+            echo "No changes in conference statistics."
+          else
+            git commit -m "chore(data): auto-refresh conference statistics"
+            git push origin main
+          fi

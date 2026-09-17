@@ -1,0 +1,7 @@
+node_modules/
+out/
+.next/
+scraper/data/raw/
+scraper/*.log
+*.pyc
+.DS_Store
