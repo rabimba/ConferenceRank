@@ -3,43 +3,43 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #FAF6EE;
-  --surface: #FFFDF8;
-  --foreground: #241F1C;
-  --muted: #6E6660;
-  --border: #E8E0D2;
-  --accent: #8C2F39;
-  --accent-hover: #72242D;
-  --accent-soft: #F7E8E6;
+  --background: #F5F1EA;
+  --surface: #FDFBF7;
+  --foreground: #292524;
+  --muted: #78716C;
+  --border: #E7E0D4;
+  --accent: #C2410C;
+  --accent-hover: #9A3412;
+  --accent-soft: #FFEDD5;
   --accent-contrast: #FFFDF8;
-  --success: #3F6212;
+  --success: #15803D;
   --warn: #B45309;
-  --chart-grid: #E8E0D2;
-  --chart-axis: #D3C9B8;
-  --chart-tick: #6E6660;
-  --chart-tooltip-border: #E8E0D2;
-  --chart-tooltip-bg: #FFFDF8;
-  --chart-submitted: #D3C9B8;
+  --chart-grid: #E7E0D4;
+  --chart-axis: #D6CEBE;
+  --chart-tick: #78716C;
+  --chart-tooltip-border: #E7E0D4;
+  --chart-tooltip-bg: #FDFBF7;
+  --chart-submitted: #D6CEBE;
 }
 
 .dark {
-  --background: #161210;
-  --surface: #1F1A17;
-  --foreground: #EFE9E2;
-  --muted: #A79E95;
-  --border: #352C27;
-  --accent: #E88A93;
-  --accent-hover: #F0A5AC;
-  --accent-soft: #3A1F22;
-  --accent-contrast: #161210;
-  --success: #A3E635;
+  --background: #1C1917;
+  --surface: #292524;
+  --foreground: #F5F5F4;
+  --muted: #A8A29E;
+  --border: #44403C;
+  --accent: #FB923C;
+  --accent-hover: #FDBA74;
+  --accent-soft: #431407;
+  --accent-contrast: #1C1917;
+  --success: #4ADE80;
   --warn: #FBBF24;
-  --chart-grid: #2A231F;
-  --chart-axis: #3F352F;
-  --chart-tick: #A79E95;
-  --chart-tooltip-border: #3F352F;
-  --chart-tooltip-bg: #1F1A17;
-  --chart-submitted: #4A3E37;
+  --chart-grid: #292524;
+  --chart-axis: #44403C;
+  --chart-tick: #A8A29E;
+  --chart-tooltip-border: #44403C;
+  --chart-tooltip-bg: #292524;
+  --chart-submitted: #57534E;
 }
 
 @theme inline {
