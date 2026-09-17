@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -132,12 +133,14 @@ export default function Home() {
           )}
         </div>
         <RankLegend />
-        <HomeClient
-          venues={venues}
-          entries={entries}
-          landscapePoints={landscapePoints}
-          totalAStar={totalAStar}
-        />
+        <Suspense fallback={<div className="py-12 text-center text-sm text-muted">Loading ConferenceRank...</div>}>
+          <HomeClient
+            venues={venues}
+            entries={entries}
+            landscapePoints={landscapePoints}
+            totalAStar={totalAStar}
+          />
+        </Suspense>
         <SiteFooter />
       </main>
     </div>

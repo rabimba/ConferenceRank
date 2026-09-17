@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -33,13 +34,14 @@ export default function DeadlinesView({
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [timeWindow, setTimeWindow] = useState<"30" | "60" | "90" | "all" | "passed">("60");
   const [onlyWatchlist, setOnlyWatchlist] = useState(false);
-  const [, setTick] = useState(0);
+  const [now, setNow] = useState<number>(0);
 
   const { watchlist } = useWatchlist();
 
-  // Re-calculate countdowns every minute
+  // Update current time on mount and every minute
   useEffect(() => {
-    const timer = setInterval(() => setTick((t) => t + 1), 60000);
+    setNow(Date.now());
+    const timer = setInterval(() => setNow(Date.now()), 60000);
     return () => clearInterval(timer);
   }, []);
 
@@ -64,7 +66,7 @@ export default function DeadlinesView({
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
-    const now = Date.now();
+    const currentTime = now || 1773700000000; // fallback timestamp before hydration
 
     return allEntries
       .filter((item) => {
@@ -86,7 +88,7 @@ export default function DeadlinesView({
         }
 
         const targetDate = parseDeadlineToDate(item.deadline.paper_deadline, item.deadline.timezone);
-        const diffDays = (targetDate.getTime() - now) / (1000 * 60 * 60 * 24);
+        const diffDays = (targetDate.getTime() - currentTime) / (1000 * 60 * 60 * 24);
 
         if (timeWindow === "30") return diffDays >= 0 && diffDays <= 30;
         if (timeWindow === "60") return diffDays >= 0 && diffDays <= 60;
@@ -100,7 +102,7 @@ export default function DeadlinesView({
         const dateB = parseDeadlineToDate(b.deadline.paper_deadline, b.deadline.timezone).getTime();
         return timeWindow === "passed" ? dateB - dateA : dateA - dateB;
       });
-  }, [allEntries, search, selectedRank, selectedCategory, timeWindow, onlyWatchlist, watchlist]);
+  }, [allEntries, search, selectedRank, selectedCategory, timeWindow, onlyWatchlist, watchlist, now]);
 
   return (
     <div className="space-y-4">
@@ -334,7 +336,7 @@ export default function DeadlinesView({
           <span className="text-3xl block mb-2">🗓️</span>
           <h3 className="text-sm font-bold text-foreground">No deadlines found matching your filters</h3>
           <p className="mt-1 text-xs text-muted">
-            Try expanding the timeframe to "All Upcoming" or clearing specific category filters.
+            Try expanding the timeframe to &quot;All Upcoming&quot; or clearing specific category filters.
           </p>
           <button
             type="button"

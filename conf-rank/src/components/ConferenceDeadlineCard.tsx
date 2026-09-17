@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import type { ConferenceDeadline } from "@/lib/types";
 import {
   parseDeadlineToDate,
@@ -12,18 +13,40 @@ import {
 
 export default function ConferenceDeadlineCard({
   venue,
-  deadline,
+  deadline: propDeadline,
+  deadlines,
 }: {
   venue: { acronym: string; title: string };
-  deadline: ConferenceDeadline;
+  deadline?: ConferenceDeadline;
+  deadlines?: ConferenceDeadline[] | null;
 }) {
-  const [, setTick] = useState(0);
+  const [now, setNow] = useState<number>(0);
 
   // Update countdown every 60 seconds
   useEffect(() => {
-    const timer = setInterval(() => setTick((t) => t + 1), 60000);
+    setNow(Date.now());
+    const timer = setInterval(() => setNow(Date.now()), 60000);
     return () => clearInterval(timer);
   }, []);
+
+  const deadline = useMemo(() => {
+    if (propDeadline) return propDeadline;
+    if (!deadlines || !deadlines.length) return null;
+    const currentTime = now || 1773700000000;
+    const sorted = [...deadlines].sort(
+      (a, b) =>
+        parseDeadlineToDate(a.paper_deadline, a.timezone).getTime() -
+        parseDeadlineToDate(b.paper_deadline, b.timezone).getTime()
+    );
+    const future = sorted.find(
+      (d) =>
+        parseDeadlineToDate(d.paper_deadline, d.timezone).getTime() >=
+        currentTime - 86400000 * 14
+    );
+    return future || sorted[sorted.length - 1];
+  }, [propDeadline, deadlines, now]);
+
+  if (!deadline) return null;
 
   const targetDate = parseDeadlineToDate(deadline.paper_deadline, deadline.timezone);
   const countdown = getCountdown(targetDate);
