@@ -32,6 +32,7 @@ jobs:
         run: |
           python3 scraper/fetch_lixin.py
           python3 scraper/fetch_papercopilot.py
+          python3 scraper/fetch_deadlines.py
 
       - name: Refresh OpenAlex slice (tolerant)
         run: python3 scraper/fetch_openalex.py --limit 150

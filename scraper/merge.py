@@ -94,6 +94,11 @@ def merge():
     except FileNotFoundError:
         print("openalex.json missing (optional)")
         oa = {}
+    try:
+        deadlines = json.loads((D / "deadlines.json").read_text())
+    except FileNotFoundError:
+        print("deadlines.json missing (optional)")
+        deadlines = {}
 
     pc_by_acr = {}
     for slug, recs in pc.items():
@@ -205,13 +210,16 @@ def merge():
                 "topics_by_year": oa_data["topics_by_year"],
                 "institutions": oa_data["institutions"],
             }
+
+        rec["deadlines"] = deadlines.get(v["id"])
         out.append(rec)
 
     # sanity
     n_stats = sum(1 for r in out if r["stats"])
     n_oa = sum(1 for r in out if r.get("openalex"))
+    n_ddl = sum(1 for r in out if r.get("deadlines"))
     n_hist = sum(1 for r in out if r["rank_history"])
-    print(f"venues: {len(out)} | with stats: {n_stats} | with openalex: {n_oa} | with rank history: {n_hist}")
+    print(f"venues: {len(out)} | with stats: {n_stats} | with openalex: {n_oa} | with deadlines: {n_ddl} | with rank history: {n_hist}")
 
     core_acrs = {norm_acr(v.get("acronym", "")) for v in core}
     core_acrs |= set(ALIASES.values()) | set(ALIASES.keys())
