@@ -5,6 +5,8 @@ import SiteHeader from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import RankBadge from "@/components/RankBadge";
 import WatchlistButton from "@/components/WatchlistButton";
+import ShareButton from "@/components/ShareButton";
+import type { ShareCardData } from "@/lib/shareCard";
 import ConferenceDeadlineCard from "@/components/ConferenceDeadlineCard";
 import {
   AcceptanceTrendChart,
@@ -141,6 +143,24 @@ export default async function ConferencePage({
     .sort((a, b) => a.year - b.year);
   const recentWpy = wpy.filter((d) => d.year >= 2005);
 
+  const nextDeadlineStr = c.deadlines && c.deadlines.length > 0
+    ? `${c.deadlines[0].paper_deadline} (${c.deadlines[0].timezone || "AoE"})`
+    : null;
+
+  const shareVenueData: ShareCardData = {
+    type: "venue",
+    acronym: c.acronym,
+    title: c.title,
+    rank: c.rank,
+    categories: c.categories,
+    acceptanceRate: lastStat?.rate ?? lastStat?.rate_short ?? null,
+    acceptanceYear: lastStat?.year ?? null,
+    acceptedPapers: lastStat?.accepted ?? lastStat?.accepted_short ?? null,
+    submissions: lastStat?.submitted ?? lastStat?.submitted_short ?? lastStat?.total ?? null,
+    nextDeadline: nextDeadlineStr,
+    communityRating: c.avg_rating ?? null,
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <script
@@ -172,7 +192,15 @@ export default async function ConferencePage({
               </h1>
               <span className="text-muted">{c.title}</span>
             </div>
-            <WatchlistButton venueId={c.id} acronym={c.acronym} size="md" showLabel={true} className="border border-border bg-surface px-3 py-1.5 shadow-xs" />
+            <div className="flex items-center gap-2">
+              <ShareButton
+                data={shareVenueData}
+                label="Share Venue"
+                size="md"
+                className="border border-border bg-surface px-3 py-1.5 shadow-xs text-foreground/85 hover:border-accent hover:text-accent"
+              />
+              <WatchlistButton venueId={c.id} acronym={c.acronym} size="md" showLabel={true} className="border border-border bg-surface px-3 py-1.5 shadow-xs" />
+            </div>
           </div>
 
           {/* Quick-take verdict summary */}

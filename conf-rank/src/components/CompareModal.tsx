@@ -3,6 +3,9 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
+import ShareButton from "./ShareButton";
+import { latestStat } from "@/lib/stats";
+import type { ShareCardData } from "@/lib/shareCard";
 import type { Conference } from "@/lib/types";
 
 export default function CompareModal({
@@ -59,6 +62,20 @@ export default function CompareModal({
 
   if (venues.length === 0) return null;
 
+  const compareShareData: ShareCardData = {
+    type: "comparison",
+    title: "Conference Comparison",
+    venues: venues.map((v) => {
+      const stat = latestStat(v);
+      return {
+        acronym: v.acronym,
+        title: v.title,
+        rank: v.rank,
+        rate: stat.rate != null ? stat.rate : null,
+      };
+    }),
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs"
@@ -81,14 +98,22 @@ export default function CompareModal({
               Side-by-side analysis of selected conferences ({venues.length})
             </p>
           </div>
-          <button
-            ref={closeRef}
-            onClick={onClose}
-            aria-label="Close comparison"
-            className="rounded-lg p-2 text-stone-400 hover:bg-stone-100 hover:text-stone-700 dark:hover:bg-stone-800 dark:hover:text-stone-200"
-          >
-            ✕
-          </button>
+          <div className="flex items-center gap-2">
+            <ShareButton
+              data={compareShareData}
+              label="Share Comparison"
+              size="sm"
+              className="border border-border bg-surface px-3 py-1.5 shadow-2xs hover:border-accent hover:text-accent"
+            />
+            <button
+              ref={closeRef}
+              onClick={onClose}
+              aria-label="Close comparison"
+              className="rounded-lg p-2 text-stone-400 hover:bg-stone-100 hover:text-stone-700 dark:hover:bg-stone-800 dark:hover:text-stone-200"
+            >
+              ✕
+            </button>
+          </div>
         </div>
 
         <div className="mt-4 overflow-x-auto">

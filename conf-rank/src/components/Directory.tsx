@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
 import WatchlistButton from "./WatchlistButton";
+import ShareButton from "./ShareButton";
+import type { ShareCardData } from "@/lib/shareCard";
 import { useWatchlist } from "@/lib/watchlist";
 import { ALL_CATEGORIES } from "@/lib/types";
 import { rankOrder } from "@/lib/ranks";
@@ -220,26 +222,24 @@ export default function Directory({
     return w;
   })();
 
-  const exportCsv = () => {
-    const headers = ["Rank", "Acronym", "Title", "Categories", "Acceptance Rate (%)", "Accepted Papers"];
-    const rows = filtered.map((c) => [
-      `"${c.rank.replace(/"/g, '""')}"`,
-      `"${c.acronym.replace(/"/g, '""')}"`,
-      `"${c.title.replace(/"/g, '""')}"`,
-      `"${c.categories.join("; ").replace(/"/g, '""')}"`,
-      c.latest_rate != null ? c.latest_rate.toFixed(1) : "",
-      c.latest_accepted != null ? c.latest_accepted : "",
-    ]);
-    const csvText = [headers.join(","), ...rows.map((r) => r.join(","))].join("\n");
-    const blob = new Blob([csvText], { type: "text/csv;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.setAttribute("href", url);
-    link.setAttribute("download", `conferences_filtered_${new Date().toISOString().slice(0, 10)}.csv`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+  const shareData: ShareCardData = {
+    type: "directory",
+    title: "Computer Science Venues",
+    subtitle:
+      ranks.length > 0 || cats.length > 0 || search || onlyWatchlist
+        ? `Filtered by: ${[
+            ranks.length > 0 ? `Rank ${ranks.join("/")}` : null,
+            cats.length > 0 ? cats.join(", ") : null,
+            search ? `"${search}"` : null,
+            onlyWatchlist ? "Watchlist" : null,
+          ]
+            .filter(Boolean)
+            .join(" • ")}`
+        : "Complete CORE / ICORE Conference Directory",
+    count: filtered.length,
+    ranks,
+    categories: cats,
+    sampleVenues: filtered.slice(0, 8).map((c) => c.acronym),
   };
 
   return (
@@ -319,15 +319,13 @@ export default function Directory({
               </button>
             )}
           </div>
-          <div className="ml-auto flex items-center gap-3">
-            <button
-              onClick={exportCsv}
-              title="Export currently filtered list as CSV"
-              className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-foreground/80
-                         hover:bg-stone-100 dark:hover:bg-stone-800 transition"
-            >
-              Export CSV
-            </button>
+          <div className="ml-auto flex items-center gap-2.5">
+            <ShareButton
+              data={shareData}
+              label="Share View"
+              size="sm"
+              className="border border-border bg-surface text-foreground/80 hover:border-accent hover:text-accent shadow-2xs"
+            />
             <span className="text-sm text-muted">
               {filtered.length.toLocaleString()} venue{filtered.length === 1 ? "" : "s"}
             </span>
