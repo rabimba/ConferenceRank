@@ -17,8 +17,10 @@ const geistMono = Geist_Mono({
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.GITHUB_ACTIONS === "true"
-    ? `https://${(process.env.GITHUB_REPOSITORY ?? "rabimba/ranking").split("/")[0]}.github.io/${(process.env.GITHUB_REPOSITORY ?? "rabimba/ranking").split("/")[1]}`
-    : "http://localhost:3000");
+    ? `https://${(process.env.GITHUB_REPOSITORY ?? "rabimba/ConferenceRank").split("/")[0]}.github.io/${(process.env.GITHUB_REPOSITORY ?? "rabimba/ConferenceRank").split("/")[1]}`
+    : "https://rabimba.github.io/ConferenceRank");
+
+const ogImageUrl = `${siteUrl.replace(/\/$/, "")}/og-image.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
       "CORE/ICORE rankings, historical acceptance rates, topics, and upcoming submission deadlines for 980+ computer science conferences.",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`,
+        url: ogImageUrl,
         width: 1200,
         height: 630,
         alt: "ConferenceRank — Computer Science Conference Rankings, Acceptance Rates & Deadlines",
@@ -68,7 +70,7 @@ export const metadata: Metadata = {
     title: "ConferenceRank — CS Venue Rankings, Acceptance Rates & Deadlines",
     description:
       "CORE/ICORE rankings, historical acceptance rates, topics, and upcoming submission deadlines for 980+ computer science conferences.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`],
+    images: [ogImageUrl],
   },
   robots: {
     index: true,

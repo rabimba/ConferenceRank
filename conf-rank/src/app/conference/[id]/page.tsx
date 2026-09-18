@@ -29,6 +29,13 @@ export async function generateMetadata({
   if (!c) return {};
   const title = `${c.acronym} — ${c.title}`;
   const description = `CORE rank ${c.rank}. ${c.title}: acceptance rates, rank history, topics, top publishing institutions.`;
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.GITHUB_ACTIONS === "true"
+      ? `https://${(process.env.GITHUB_REPOSITORY ?? "rabimba/ConferenceRank").split("/")[0]}.github.io/${(process.env.GITHUB_REPOSITORY ?? "rabimba/ConferenceRank").split("/")[1]}`
+      : "https://rabimba.github.io/ConferenceRank");
+  const ogImageUrl = `${siteUrl.replace(/\/$/, "")}/og-image.png`;
+
   return {
     title,
     description,
@@ -39,7 +46,7 @@ export async function generateMetadata({
       type: "article",
       images: [
         {
-          url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: `${c.acronym} — ${c.title}`,
@@ -50,7 +57,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`],
+      images: [ogImageUrl],
     },
   };
 }

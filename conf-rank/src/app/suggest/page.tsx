@@ -7,6 +7,13 @@ import { getConferences } from "@/lib/data";
 import { latestStat } from "@/lib/stats";
 import type { SuggesterVenue } from "@/lib/suggest";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.GITHUB_ACTIONS === "true"
+    ? `https://${(process.env.GITHUB_REPOSITORY ?? "rabimba/ConferenceRank").split("/")[0]}.github.io/${(process.env.GITHUB_REPOSITORY ?? "rabimba/ConferenceRank").split("/")[1]}`
+    : "https://rabimba.github.io/ConferenceRank");
+const ogImageUrl = `${siteUrl.replace(/\/$/, "")}/og-image.png`;
+
 export const metadata: Metadata = {
   title: "Venue Suggester — Find Target Conferences for Your Paper",
   description:
@@ -18,7 +25,7 @@ export const metadata: Metadata = {
       "Paste your paper title and abstract to get ranked CS conference suggestions tailored by CORE prestige tiers, acceptance rates, and topics.",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`,
+        url: ogImageUrl,
         width: 1200,
         height: 630,
         alt: "ConferenceRank Venue Suggester",
@@ -27,10 +34,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Venue Suggester — Find Target Conferences for Your Paper | ConferenceRank",
+    title: "Venue Suggester — Find Target Conferences for Your Paper",
     description:
       "Paste your paper title and abstract to get ranked CS conference suggestions tailored by CORE prestige tiers, acceptance rates, and topics.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`],
+    images: [ogImageUrl],
   },
 };
 
