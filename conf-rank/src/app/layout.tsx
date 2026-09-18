@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
@@ -22,28 +23,70 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "ConferenceRank — CS venue rankings, acceptance rates & trends",
-    template: "%s",
+    default: "ConferenceRank — CS Venue Rankings, Acceptance Rates & Deadlines",
+    template: "%s | ConferenceRank",
   },
   description:
-    "One-stop shop to evaluate computer-science conference venues: CORE/ICORE ranks, rank history, acceptance-rate trends, topics and top publishing institutions.",
+    "Evaluate computer science conferences: CORE/ICORE rankings (A*, A, B, C), multi-year acceptance rates, upcoming submission deadlines (AoE), and research topics across 980+ CS venues.",
+  keywords: [
+    "computer science conferences",
+    "CORE rankings",
+    "ICORE rankings",
+    "conference acceptance rates",
+    "upcoming CS deadlines",
+    "AI conference deadlines",
+    "call for papers",
+    "Anywhere on Earth AoE",
+    "conference selectivity",
+    "academic publishing",
+  ],
+  authors: [{ name: "ConferenceRank" }],
+  creator: "ConferenceRank",
+  publisher: "ConferenceRank",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     siteName: "ConferenceRank",
     type: "website",
-    title: "ConferenceRank — CS venue rankings, acceptance rates & trends",
+    locale: "en_US",
+    url: siteUrl,
+    title: "ConferenceRank — CS Venue Rankings, Acceptance Rates & Deadlines",
     description:
-      "CORE/ICORE ranks, rank history, acceptance-rate trends, topics and top publishing institutions for computer-science venues.",
+      "CORE/ICORE rankings, historical acceptance rates, topics, and upcoming submission deadlines for 980+ computer science conferences.",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "ConferenceRank — Computer Science Conference Rankings, Acceptance Rates & Deadlines",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "ConferenceRank — CS venue rankings, acceptance rates & trends",
+    card: "summary_large_image",
+    title: "ConferenceRank — CS Venue Rankings, Acceptance Rates & Deadlines",
     description:
-      "CORE/ICORE ranks, rank history, acceptance-rate trends, topics and top publishing institutions for computer-science venues.",
+      "CORE/ICORE rankings, historical acceptance rates, topics, and upcoming submission deadlines for 980+ computer science conferences.",
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: [
       { url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg`, type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg` },
     ],
   },
 };
@@ -56,6 +99,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        {/* Google tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q1D3XG6NY2"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q1D3XG6NY2');
+          `}
+        </Script>
+
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>

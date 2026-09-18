@@ -91,6 +91,23 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "ConferenceRank",
+            description:
+              "Computer Science conference rankings (CORE/ICORE), acceptance rate trends, upcoming submission deadlines (AoE), and venue suggester.",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "/?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
       <SiteHeader />
       <main className="mx-auto max-w-6xl px-4 py-8">
         <div className="mb-6">

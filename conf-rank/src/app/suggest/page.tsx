@@ -8,9 +8,30 @@ import { latestStat } from "@/lib/stats";
 import type { SuggesterVenue } from "@/lib/suggest";
 
 export const metadata: Metadata = {
-  title: "Venue Suggester | ConferenceRank",
+  title: "Venue Suggester — Find Target Conferences for Your Paper",
   description:
     "Find the right computer science conference for your paper abstract using CORE rankings, acceptance selectivity, and topic matching.",
+  alternates: { canonical: "/suggest/" },
+  openGraph: {
+    title: "Venue Suggester — Find Target Conferences for Your Paper",
+    description:
+      "Paste your paper title and abstract to get ranked CS conference suggestions tailored by CORE prestige tiers, acceptance rates, and topics.",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "ConferenceRank Venue Suggester",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Venue Suggester — Find Target Conferences for Your Paper | ConferenceRank",
+    description:
+      "Paste your paper title and abstract to get ranked CS conference suggestions tailored by CORE prestige tiers, acceptance rates, and topics.",
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`],
+  },
 };
 
 export default function SuggestPage() {

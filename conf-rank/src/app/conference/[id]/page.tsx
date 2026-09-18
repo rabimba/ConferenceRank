@@ -27,14 +27,31 @@ export async function generateMetadata({
   const { id } = await params;
   const c = getConference(id);
   if (!c) return {};
-  const title = `${c.acronym} — ${c.title} | ConferenceRank`;
+  const title = `${c.acronym} — ${c.title}`;
   const description = `CORE rank ${c.rank}. ${c.title}: acceptance rates, rank history, topics, top publishing institutions.`;
   return {
     title,
     description,
     alternates: { canonical: `/conference/${c.id}/` },
-    openGraph: { title, description, type: "article" },
-    twitter: { card: "summary", title, description },
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: `${c.acronym} — ${c.title}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/og-image.png`],
+    },
   };
 }
 
