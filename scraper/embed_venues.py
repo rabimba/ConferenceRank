@@ -21,7 +21,7 @@ MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 
 def venue_doc(c: dict) -> str:
-    parts = [c["title"]]
+    parts = [c.get("title") or c.get("id", "")]
     if c.get("acronym"):
         parts.append(f"({c['acronym']})")
     if c.get("categories"):
@@ -50,7 +50,10 @@ def main():
 
     payload = {"model": MODEL, "dims": int(emb.shape[1]), "vectors": vectors}
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(payload, separators=(",", ":")))
+    import os
+    tmp = OUT.with_suffix(".tmp")
+    tmp.write_text(json.dumps(payload, separators=(",", ":")))
+    os.replace(tmp, OUT)
     print(f"wrote -> {OUT} ({OUT.stat().st_size // 1024} KB)")
 
 

@@ -48,6 +48,14 @@ class RateLimited(Exception):
     """Raised when API keeps 429ing; abort run so venue isn't recorded as no-match."""
 
 
+class FetchFailed(Exception):
+    """Raised on transient fetch failure (retry exhaustion, API error, decode error).
+
+    Distinct from a genuine 404/empty result: callers must NOT record this as
+    a permanent no-match, or the venue would be skipped on all future runs.
+    """
+
+
 def api_get(path: str, params: dict) -> dict:
     """Fetch with session and local file caching."""
     import hashlib
@@ -68,8 +76,7 @@ def api_get(path: str, params: dict) -> dict:
             if r.status_code == 200:
                 data = r.json()
                 if "error" in data or "Error" in data:
-                    print(f"  API error for {path}: {str(data.get('error'))[:80]}", flush=True)
-                    return {}
+                    raise FetchFailed(f"API error for {path}: {str(data.get('error'))[:80]}")
                 p.write_text(json.dumps(data), encoding="utf-8")
                 time.sleep(DELAY)
                 return data
@@ -83,14 +90,14 @@ def api_get(path: str, params: dict) -> dict:
                 time.sleep(wait)
             else:
                 time.sleep(2 ** attempt)
-        except RateLimited:
+        except (RateLimited, FetchFailed):
             raise
-        except Exception:
+        except (requests.RequestException, json.JSONDecodeError) as e:
+            print(f"  transient error on {path} (attempt {attempt + 1}): {e}", flush=True)
             time.sleep(2 ** attempt)
     if n_429 >= 3:
         raise RateLimited(f"persistent 429 on {path}")
-    print(f"  gave up on {path} after retries", flush=True)
-    return {}
+    raise FetchFailed(f"gave up on {path} after retries")
 
 
 def norm(s: str) -> str:
@@ -248,12 +255,21 @@ def main():
 
     result = {}
     if OUT.exists():  # resume support
-        result = json.loads(OUT.read_text())
-        print(f"Resuming with {sum(1 for x in result.values() if x)} matched, "
-              f"{sum(1 for x in result.values() if x is None)} known no-match", flush=True)
+        try:
+            result = json.loads(OUT.read_text())
+        except (json.JSONDecodeError, OSError) as e:
+            backup = OUT.with_suffix(".corrupt.json")
+            print(f"  corrupt {OUT.name} ({e}); backing up to {backup.name} and starting fresh", flush=True)
+            OUT.replace(backup)
+            result = {}
+        if result:
+            print(f"Resuming with {sum(1 for x in result.values() if x)} matched, "
+                  f"{sum(1 for x in result.values() if x is None)} known no-match", flush=True)
 
     def save():
-        OUT.write_text(json.dumps(result))
+        tmp = OUT.with_suffix(".tmp")
+        tmp.write_text(json.dumps(result))
+        os.replace(tmp, OUT)
 
     matched = sum(1 for x in result.values() if x)
     processed = 0
@@ -278,6 +294,10 @@ def main():
                 save()
     except RateLimited as e:
         print(f"Rate-limited persistently ({e}); saving progress and exiting.", flush=True)
+    except FetchFailed as e:
+        # Transient failure: do NOT record as no-match. Save progress; the
+        # current venue stays unrecorded and is retried on the next run.
+        print(f"Fetch failed mid-run ({e}); saving progress and exiting.", flush=True)
     save()
     print(f"Matched {matched}/{len(venues)} -> {OUT}", flush=True)
 

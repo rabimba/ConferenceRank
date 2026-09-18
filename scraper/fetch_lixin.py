@@ -10,6 +10,7 @@ import json
 import os
 import re
 import time
+from datetime import date
 from pathlib import Path
 
 import requests
@@ -20,7 +21,7 @@ OUT = Path(__file__).parent / "data" / "lixin.json"
 CA = os.environ.get("PROXY_CA", "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem")
 
 ROW = re.compile(r"^\|\s*([A-Za-z][A-Za-z0-9&@ .+\-/']*)\s*(?:'(\d{2}))?\s*\|(.*)\|\s*$")
-CELL = re.compile(r"([\d.]+)%\s*\((\d+)/(\d+|\?[\d,.]*)\)")
+CELL = re.compile(r"([\d.]+)%\s*\(([\d,]+)/([\d,]+|\?[\d,.]*)\)")
 
 session = requests.Session()
 if os.path.exists(CA):
@@ -56,7 +57,9 @@ def main():
             name, yy = nm.group(1), nm.group(2)
         if not yy:
             continue
-        year = 1900 + int(yy) if int(yy) > 30 else 2000 + int(yy)
+        # Two-digit year pivot relative to current year (no hardcoded 30 cutoff).
+        century = 2000 if int(yy) <= date.today().year % 100 + 1 else 1900
+        year = century + int(yy)
         acronym = name.strip().upper().replace(" ", "")
         cells = CELL.findall(rest)
         if not cells:
@@ -65,15 +68,15 @@ def main():
         rec = {"year": year}
         rate, acc, sub = cells[0]
         rec["rate"] = float(rate)
-        rec["accepted"] = int(acc)
-        if sub.isdigit():
+        rec["accepted"] = int(acc.replace(",", ""))
+        if sub.replace(",", "").isdigit():
             rec["submitted"] = int(sub.replace(",", ""))
         # long+short: combine if both exist
         if len(cells) > 1:
             r2, a2, s2 = cells[1]
             rec["rate_short"] = float(r2)
-            rec["accepted_short"] = int(a2)
-            if s2.isdigit():
+            rec["accepted_short"] = int(a2.replace(",", ""))
+            if s2.replace(",", "").isdigit():
                 rec["submitted_short"] = int(s2.replace(",", ""))
         # trailing note (orals/posters breakdown etc)
         note = re.sub(r"[\d.]+%\s*\([\d/?]+\)|[|]", " ", rest).strip(" -")
@@ -86,7 +89,9 @@ def main():
         v.sort(key=lambda r: r["year"])
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(result, indent=1))
+    tmp = OUT.with_suffix(".tmp")
+    tmp.write_text(json.dumps(result, indent=1))
+    os.replace(tmp, OUT)
     print(f"Wrote {len(result)} acronyms -> {OUT}")
     for k in list(result)[:8]:
         print(" ", k, [r["year"] for r in result[k]][:12])

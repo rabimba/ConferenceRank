@@ -159,7 +159,13 @@ def parse_venue_full(html: str) -> list[dict]:
             continue
         rec = {"year": year, "tiers": {}}
         rec["accepted"], rec["rate"] = vals[idx]
-        rec["total"] = total if total else round(rec["accepted"] * 100.0 / rec["rate"])
+        if rec["rate"] and rec["rate"] > 0:
+            rec["total"] = total if total else round(rec["accepted"] * 100.0 / rec["rate"])
+        elif total:
+            rec["total"] = total
+        else:
+            # 0% rate with no total column — cannot derive; skip row rather than crash
+            continue
         rest = vals[idx + 1:]
         n_tiers = max(len(tier_names) - 1, 0)
         tier_vals = rest[:n_tiers] if n_tiers else []
@@ -220,7 +226,9 @@ def main():
             print(f"  {i}/{len(urls)} ({len(result)} with data)")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(result, indent=1))
+    tmp = OUT.with_suffix(".tmp")
+    tmp.write_text(json.dumps(result, indent=1))
+    os.replace(tmp, OUT)
     print(f"Wrote {len(result)} venues -> {OUT}")
 
 

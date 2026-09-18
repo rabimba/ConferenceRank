@@ -32,18 +32,16 @@ export default function ConferenceDeadlineCard({
   const deadline = useMemo(() => {
     if (propDeadline) return propDeadline;
     if (!deadlines || !deadlines.length) return null;
-    const currentTime = now || 1773700000000;
-    const sorted = [...deadlines].sort(
-      (a, b) =>
-        parseDeadlineToDate(a.paper_deadline, a.timezone).getTime() -
-        parseDeadlineToDate(b.paper_deadline, b.timezone).getTime()
-    );
-    const future = sorted.find(
-      (d) =>
-        parseDeadlineToDate(d.paper_deadline, d.timezone).getTime() >=
-        currentTime - 86400000 * 14
-    );
-    return future || sorted[sorted.length - 1];
+    const sorted = [...deadlines]
+      .map((d) => ({ d, ts: parseDeadlineToDate(d.paper_deadline, d.timezone).getTime() }))
+      .filter((x) => !isNaN(x.ts))
+      .sort((a, b) => a.ts - b.ts);
+    if (!sorted.length) return deadlines[deadlines.length - 1];
+    // Pre-hydration (`now` unset): show the latest deadline rather than picking
+    // against a stale hardcoded timestamp.
+    if (!now) return sorted[sorted.length - 1].d;
+    const future = sorted.find((x) => x.ts >= now - 86400000 * 14);
+    return (future ?? sorted[sorted.length - 1]).d;
   }, [propDeadline, deadlines, now]);
 
   if (!deadline) return null;

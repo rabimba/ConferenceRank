@@ -22,6 +22,7 @@ export interface VenueWithDeadline {
   rank: string;
   categories: string[];
   deadline: ConferenceDeadline;
+  ts: number; // precomputed deadline timestamp (ms); NaN if unparseable
 }
 
 export default function DeadlinesView({
@@ -45,7 +46,7 @@ export default function DeadlinesView({
     return () => clearInterval(timer);
   }, []);
 
-  // Flatten all venues and their deadline entries
+  // Flatten all venues and their deadline entries; parse each deadline once.
   const allEntries = useMemo(() => {
     const list: VenueWithDeadline[] = [];
     for (const v of venues) {
@@ -58,6 +59,7 @@ export default function DeadlinesView({
           rank: v.rank,
           categories: v.categories || [],
           deadline: d,
+          ts: parseDeadlineToDate(d.paper_deadline, d.timezone).getTime(),
         });
       }
     }
@@ -66,7 +68,10 @@ export default function DeadlinesView({
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
-    const currentTime = now || 1773700000000; // fallback timestamp before hydration
+    // Before hydration `now` is 0 — render nothing rather than filtering
+    // against a stale hardcoded date.
+    if (!now) return [];
+    const currentTime = now;
 
     return allEntries
       .filter((item) => {
@@ -87,8 +92,8 @@ export default function DeadlinesView({
           return false;
         }
 
-        const targetDate = parseDeadlineToDate(item.deadline.paper_deadline, item.deadline.timezone);
-        const diffDays = (targetDate.getTime() - currentTime) / (1000 * 60 * 60 * 24);
+        if (isNaN(item.ts)) return false;
+        const diffDays = (item.ts - currentTime) / (1000 * 60 * 60 * 24);
 
         if (timeWindow === "30") return diffDays >= 0 && diffDays <= 30;
         if (timeWindow === "60") return diffDays >= 0 && diffDays <= 60;
@@ -97,11 +102,7 @@ export default function DeadlinesView({
         // "all"
         return diffDays >= 0;
       })
-      .sort((a, b) => {
-        const dateA = parseDeadlineToDate(a.deadline.paper_deadline, a.deadline.timezone).getTime();
-        const dateB = parseDeadlineToDate(b.deadline.paper_deadline, b.deadline.timezone).getTime();
-        return timeWindow === "passed" ? dateB - dateA : dateA - dateB;
-      });
+      .sort((a, b) => (timeWindow === "passed" ? b.ts - a.ts : a.ts - b.ts));
   }, [allEntries, search, selectedRank, selectedCategory, timeWindow, onlyWatchlist, watchlist, now]);
 
   return (
@@ -213,7 +214,7 @@ export default function DeadlinesView({
       {/* Deadlines Grid */}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {filtered.map((item, idx) => {
-          const targetDate = parseDeadlineToDate(item.deadline.paper_deadline, item.deadline.timezone);
+          const targetDate = new Date(item.ts);
           const countdown = getCountdown(targetDate);
           const display = formatDeadlineDisplay(item.deadline.paper_deadline, item.deadline.timezone);
           const gcalUrl = generateGoogleCalendarUrl(item, item.deadline);
@@ -331,7 +332,13 @@ export default function DeadlinesView({
         })}
       </div>
 
-      {filtered.length === 0 && (
+      {!now && (
+        <div className="rounded-xl border border-border bg-surface p-12 text-center shadow-xs">
+          <p className="text-xs text-muted">Loading deadlines…</p>
+        </div>
+      )}
+
+      {now !== 0 && filtered.length === 0 && (
         <div className="rounded-xl border border-border bg-surface p-12 text-center shadow-xs">
           <span className="text-3xl block mb-2">🗓️</span>
           <h3 className="text-sm font-bold text-foreground">No deadlines found matching your filters</h3>

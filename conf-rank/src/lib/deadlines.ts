@@ -1,15 +1,41 @@
 import type { ConferenceDeadline } from "./types";
 
 /**
+ * Resolves an IANA timezone name (e.g. "Asia/Tokyo", "America/Los_Angeles")
+ * to its UTC offset at a specific instant, honoring DST. Returns null if the
+ * runtime cannot resolve the zone.
+ */
+function resolveIanaOffset(iana: string, at: Date): string | null {
+  try {
+    const dtf = new Intl.DateTimeFormat("en-US", {
+      timeZone: iana,
+      timeZoneName: "longOffset",
+    });
+    const part = dtf.formatToParts(at).find((p) => p.type === "timeZoneName");
+    if (!part) return null;
+    // "GMT+9", "GMT-07:00", or "GMT" (zero offset)
+    const m = part.value.match(/^GMT(?:([+-])(\d{1,2})(?::(\d{2}))?)?$/);
+    if (!m) return null;
+    if (!m[1]) return "Z";
+    return `${m[1]}${m[2].padStart(2, "0")}:${(m[3] ?? "00").padStart(2, "0")}`;
+  } catch {
+    return null; // unknown IANA name
+  }
+}
+
+/**
  * Normalizes timezone string to an ISO offset or recognized specifier.
  * AoE (Anywhere on Earth) is UTC-12.
+ *
+ * `at` anchors IANA-zone resolution to the deadline date so DST is correct.
+ * Unknown zones log a warning and fall back to AoE.
  */
-export function normalizeTimezoneOffset(tz?: string | null): string {
+export function normalizeTimezoneOffset(tz?: string | null, at?: Date): string {
   if (!tz) return "-12:00"; // default to AoE
   const clean = tz.trim();
   if (clean.toUpperCase() === "AOE") return "-12:00";
   if (clean.toUpperCase() === "UTC" || clean.toUpperCase() === "GMT") return "Z";
-  
+
   // Format "UTC-12", "UTC+8", "GMT+2"
   const utcMatch = clean.match(/^(?:UTC|GMT)([+-])(\d{1,2})(?::(\d{2}))?$/i);
   if (utcMatch) {
@@ -27,14 +53,27 @@ export function normalizeTimezoneOffset(tz?: string | null): string {
     return `${sign}${hours}:00`;
   }
 
-  // Common US timezones
-  if (clean.includes("Los_Angeles") || clean.toUpperCase() === "PT" || clean.toUpperCase() === "PST" || clean.toUpperCase() === "PDT") {
-    return "-07:00";
-  }
-  if (clean.includes("New_York") || clean.toUpperCase() === "ET" || clean.toUpperCase() === "EST" || clean.toUpperCase() === "EDT") {
-    return "-04:00";
+  // IANA zones (e.g. "America/Los_Angeles", "Asia/Tokyo") and common aliases.
+  // Resolve at the deadline date so PST vs PDT is correct.
+  const ALIASES: Record<string, string> = {
+    PT: "America/Los_Angeles", PST: "America/Los_Angeles", PDT: "America/Los_Angeles",
+    ET: "America/New_York", EST: "America/New_York", EDT: "America/New_York",
+    CT: "America/Chicago", CST: "America/Chicago", CDT: "America/Chicago",
+    MT: "America/Denver", MST: "America/Denver", MDT: "America/Denver",
+    CET: "Europe/Paris", CEST: "Europe/Paris",
+    BST: "Europe/London",
+    JST: "Asia/Tokyo",
+    AEST: "Australia/Sydney", AEDT: "Australia/Sydney",
+  };
+  const iana = ALIASES[clean.toUpperCase()] ?? (clean.includes("/") ? clean : null);
+  if (iana) {
+    const resolved = resolveIanaOffset(iana, at ?? new Date());
+    if (resolved) return resolved;
   }
 
+  if (typeof console !== "undefined") {
+    console.warn(`[deadlines] unrecognized timezone "${tz}"; falling back to AoE (UTC-12)`);
+  }
   return "-12:00";
 }
 
@@ -65,12 +104,18 @@ export function parseDeadlineToDate(deadlineStr: string, timezoneStr?: string | 
     }
   }
 
-  const offset = normalizeTimezoneOffset(timezoneStr);
+  // Resolve IANA offsets at the deadline date (DST-correct). A preliminary
+  // parse at UTC gives the approximate instant; 1h boundary skew is harmless.
+  const approx = new Date(`${datePart}T${timePart}Z`);
+  const anchor = isNaN(approx.getTime()) ? new Date() : approx;
+  const offset = normalizeTimezoneOffset(timezoneStr, anchor);
   const isoStr = offset === "Z" ? `${datePart}T${timePart}Z` : `${datePart}T${timePart}${offset}`;
-  
+
   const parsed = new Date(isoStr);
   if (isNaN(parsed.getTime())) {
-    // Fallback: standard Date parse
+    // Fallback: standard Date parse (browser-local tz). Logged — callers that
+    // render raw strings on invalid dates should see this in the console.
+    console.warn(`[deadlines] could not parse "${deadlineStr}" with tz "${timezoneStr}"; using local parse`);
     return new Date(raw);
   }
   return parsed;
@@ -147,6 +192,7 @@ export function generateGoogleCalendarUrl(
   deadline: ConferenceDeadline
 ): string {
   const targetDate = parseDeadlineToDate(deadline.paper_deadline, deadline.timezone);
+  if (isNaN(targetDate.getTime())) return "#"; // unparseable deadline — no calendar event
   const endIso = targetDate.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
   // 2 hours event window
   const startDate = new Date(targetDate.getTime() - 2 * 60 * 60 * 1000);
@@ -178,6 +224,7 @@ export function generateIcsContent(
   deadline: ConferenceDeadline
 ): string {
   const targetDate = parseDeadlineToDate(deadline.paper_deadline, deadline.timezone);
+  if (isNaN(targetDate.getTime())) return ""; // unparseable deadline — empty ICS
   const endIso = targetDate.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
   const startDate = new Date(targetDate.getTime() - 2 * 60 * 60 * 1000);
   const startIso = startDate.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
@@ -218,6 +265,7 @@ export function downloadIcsFile(
 ): void {
   if (typeof window === "undefined") return;
   const icsText = generateIcsContent(venue, deadline);
+  if (!icsText) return; // unparseable deadline
   const blob = new Blob([icsText], { type: "text/calendar;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");

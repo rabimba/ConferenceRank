@@ -1,6 +1,7 @@
 """Merge CORE + PaperCopilot + lixin + OpenAlex -> src/data/conferences.json"""
 
 import json
+import os
 import re
 from pathlib import Path
 
@@ -62,8 +63,9 @@ def clean_stats(stats: list[dict]) -> list[dict]:
         tiers = s.get("tiers") or {}
         if y is None or y > this_year:
             continue
-        # If rate is present, ensure it's a realistic percentage
-        if rate is not None and (rate <= 0 or rate >= 60):
+        # If rate is present, ensure it's a realistic percentage (workshops can
+        # legitimately exceed 60%; only near-100% implies a broken parse).
+        if rate is not None and (rate <= 0 or rate >= 95):
             continue
         # We need at least an accepted count (>= 5) or a valid rate
         if accepted is None and rate is None:
@@ -80,10 +82,27 @@ def clean_stats(stats: list[dict]) -> list[dict]:
     return out
 
 
+def _load_required(name: str):
+    path = D / name
+    if not path.exists():
+        raise FileNotFoundError(f"{name} missing — run its fetcher first")
+    try:
+        return json.loads(path.read_text())
+    except json.JSONDecodeError as e:
+        raise SystemExit(f"{name} is corrupt ({e}) — re-run its fetcher") from e
+
+
+def _atomic_write(path: Path, text: str):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(text)
+    os.replace(tmp, path)
+
+
 def merge():
-    core = json.loads((D / "core.json").read_text())
-    pc = json.loads((D / "papercopilot.json").read_text())
-    lixin = json.loads((D / "lixin.json").read_text())
+    core = _load_required("core.json")
+    pc = _load_required("papercopilot.json")
+    lixin = _load_required("lixin.json")
     try:
         manual = json.loads((D / "manual_stats.json").read_text())
     except FileNotFoundError:
@@ -182,16 +201,18 @@ def merge():
                 sources_used.add("papercopilot")
 
         if lx:
-            for s in lx:
-                if s.get("year"):
-                    by_year[s["year"]] = s
-            sources_used.add("lixin4ever")
+            rows = [s for s in lx if s.get("year")]
+            for s in rows:
+                by_year[s["year"]] = s
+            if rows:
+                sources_used.add("lixin4ever")
 
         if ms:
-            for s in ms:
-                if s.get("year"):
-                    by_year[s["year"]] = s
-            sources_used.add("csconferences/ccf")
+            rows = [s for s in ms if s.get("year")]
+            for s in rows:
+                by_year[s["year"]] = s
+            if rows:
+                sources_used.add("csconferences/ccf")
 
         if by_year:
             all_stats = sorted(by_year.values(), key=lambda r: r["year"])
@@ -228,8 +249,7 @@ def merge():
         if missing:
             print(f"unmatched {label} keys: {', '.join(missing)}")
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(out, separators=(",", ":")))
+    _atomic_write(OUT, json.dumps(out, separators=(",", ":")))
     print(f"wrote -> {OUT} ({OUT.stat().st_size // 1024} KB)")
 
     # search index for VenueLookup (lazy-fetched): id/acronym/title/rank only
@@ -239,7 +259,7 @@ def merge():
         {"id": r["id"], "acronym": r["acronym"], "title": r["title"], "rank": r["rank"]}
         for r in out
     ]
-    (PUBLIC / "search-index.json").write_text(json.dumps(search_idx, separators=(",", ":")))
+    _atomic_write(PUBLIC / "search-index.json", json.dumps(search_idx, separators=(",", ":")))
     print(f"wrote -> public/search-index.json ({(PUBLIC / 'search-index.json').stat().st_size // 1024} KB)")
 
     # slim directory list for the home table: fields needed to render rows + filter
@@ -272,7 +292,7 @@ def merge():
         for r in out
     ]
     slim_path = Path(__file__).parent / "data" / "directory.json"
-    slim_path.write_text(json.dumps(slim, separators=(",", ":")))
+    _atomic_write(slim_path, json.dumps(slim, separators=(",", ":")))
     print(f"wrote -> data/directory.json ({slim_path.stat().st_size // 1024} KB)")
 
 

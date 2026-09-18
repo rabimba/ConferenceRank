@@ -57,6 +57,10 @@ def norm_acr(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+# Keep deadlines for the current and previous year (older cycles are noise).
+MIN_YEAR = datetime.now().year - 1
+
+
 def load_venues_map():
     """Build acronym and title lookups from CORE conferences."""
     core_path = D / "core.json"
@@ -95,19 +99,34 @@ def parse_ccf_deadlines(by_acr, by_title):
     """Download and parse CCF deadlines archive."""
     RAW.mkdir(parents=True, exist_ok=True)
     zip_path = RAW / "ccf_deadlines.zip"
-    
+
     if not zip_path.exists() or (datetime.now().timestamp() - zip_path.stat().st_mtime > 86400 * 3):
         print("Fetching ccf-deadlines repository archive...")
         try:
             r = session.get("https://github.com/ccfddl/ccf-deadlines/archive/refs/heads/main.zip", timeout=60)
             r.raise_for_status()
-            zip_path.write_bytes(r.content)
+            tmp = zip_path.with_suffix(".tmp")
+            tmp.write_bytes(r.content)
+            os.replace(tmp, zip_path)
         except Exception as e:
             print(f"Warning: Failed to fetch ccf-deadlines archive: {e}")
             if not zip_path.exists():
                 return {}
 
-    z = zipfile.ZipFile(zip_path)
+    try:
+        z = zipfile.ZipFile(zip_path)
+    except zipfile.BadZipFile:
+        # Corrupt/truncated download — delete and refetch once before giving up.
+        print("Warning: ccf-deadlines zip corrupt; refetching...")
+        zip_path.unlink(missing_ok=True)
+        try:
+            r = session.get("https://github.com/ccfddl/ccf-deadlines/archive/refs/heads/main.zip", timeout=60)
+            r.raise_for_status()
+            zip_path.write_bytes(r.content)
+            z = zipfile.ZipFile(zip_path)
+        except Exception as e:
+            print(f"Warning: ccf-deadlines refetch failed: {e}")
+            return {}
     res = {}
 
     for name in z.namelist():
@@ -131,7 +150,7 @@ def parse_ccf_deadlines(by_acr, by_title):
 
                 for c in conf.get("confs", []):
                     year = c.get("year")
-                    if not year or not isinstance(year, int) or year < 2024:
+                    if not year or not isinstance(year, int) or year < MIN_YEAR:
                         continue
                     timeline = c.get("timeline", [])
                     tz = c.get("timezone", "AoE")
@@ -185,7 +204,7 @@ def parse_ai_deadlines(by_acr, by_title):
             res[vid] = []
 
         year = c.get("year")
-        if not year or not isinstance(year, int) or year < 2024:
+        if not year or not isinstance(year, int) or year < MIN_YEAR:
             continue
 
         ddl = clean_deadline_str(c.get("deadline"))
@@ -243,7 +262,7 @@ def parse_sec_deadlines(by_acr, by_title):
             res[vid] = []
 
         year = c.get("year")
-        if not year or not isinstance(year, int) or year < 2024:
+        if not year or not isinstance(year, int) or year < MIN_YEAR:
             continue
 
         deadlines = c.get("deadline", [])
@@ -276,6 +295,20 @@ def parse_sec_deadlines(by_acr, by_title):
     return res
 
 
+def _parse_deadline_date(s: str | None) -> datetime | None:
+    """Best-effort parse of deadline strings (ISO or 'May 1, 2026' style)."""
+    if not s:
+        return None
+    s = str(s).strip()
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y-%m-%d",
+                "%B %d, %Y %H:%M", "%B %d, %Y", "%b %d, %Y"):
+        try:
+            return datetime.strptime(s[:24], fmt)
+        except ValueError:
+            continue
+    return None
+
+
 def merge_deadlines():
     by_acr, by_title = load_venues_map()
     print(f"Loaded {len(by_acr)} venues for deadline mapping.")
@@ -289,23 +322,33 @@ def merge_deadlines():
 
     for vid in all_vids:
         entries = []
-        seen = set()
-        
-        # Priority: sec / ai / ccf
+        seen = {}
+
+        # Priority: sec / ai / ccf. Dedup on (year, parsed date) so the same
+        # deadline in different string formats collapses; missing fields are
+        # backfilled from lower-priority duplicates instead of being dropped.
         for item in (sec.get(vid, []) + ai.get(vid, []) + ccf.get(vid, [])):
-            key = (item["year"], item["paper_deadline"][:10])
+            dt = _parse_deadline_date(item["paper_deadline"])
+            key = (item["year"], dt.date().isoformat() if dt else str(item["paper_deadline"])[:10])
             if key in seen:
+                existing = entries[seen[key]]
+                for field in ("abstract_deadline", "notification_date", "location",
+                              "conference_dates", "cfp_url", "cycle"):
+                    if not existing.get(field) and item.get(field):
+                        existing[field] = item[field]
                 continue
-            seen.add(key)
+            seen[key] = len(entries)
             entries.append(item)
 
-        # Sort entries chronologically by paper_deadline
-        entries.sort(key=lambda x: str(x["paper_deadline"]))
+        # Sort chronologically by parsed date; unparseable entries last.
+        entries.sort(key=lambda x: _parse_deadline_date(x["paper_deadline"]) or datetime.max)
         if entries:
             merged[vid] = entries
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(merged, indent=2), encoding="utf-8")
+    tmp = OUT.with_suffix(".tmp")
+    tmp.write_text(json.dumps(merged, indent=2), encoding="utf-8")
+    os.replace(tmp, OUT)
     print(f"Wrote {len(merged)} conferences with deadlines to {OUT}")
     return merged
 

@@ -26,6 +26,11 @@ export default function HomeClient({
   const searchParams = useSearchParams();
   const tabParam = searchParams.get("tab");
   const [tabOverride, setTabOverride] = useState<"directory" | "deadlines" | null>(null);
+  // URL param wins whenever it changes (e.g. header "Deadlines" link); the
+  // local override only applies for in-page tab clicks after that.
+  useEffect(() => {
+    setTabOverride(null);
+  }, [tabParam]);
   const activeTab = tabOverride ?? (tabParam === "deadlines" ? "deadlines" : "directory");
 
   const [compareIds, setCompareIds] = useState<string[]>([]);

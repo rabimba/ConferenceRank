@@ -80,6 +80,19 @@ function getRisingVenues(venues: Conference[]) {
   return rising.slice(0, 8);
 }
 
+// HomeClient needs deadlines (list + watchlist banner) and stats (compare modal)
+// but not the heavy OpenAlex topics/institutions or rank_history blobs — strip
+// them so the serialized RSC payload stays small.
+function toClientVenue(c: Conference): Conference {
+  return {
+    ...c,
+    openalex: undefined,
+    rank_history: [],
+    for_codes: [],
+    stats_source: null,
+  };
+}
+
 export default function Home() {
   const venues = getConferences();
   const entries = buildDirectory(venues);
@@ -152,7 +165,7 @@ export default function Home() {
         <RankLegend />
         <Suspense fallback={<div className="py-12 text-center text-sm text-muted">Loading ConferenceRank...</div>}>
           <HomeClient
-            venues={venues}
+            venues={venues.map(toClientVenue)}
             entries={entries}
             landscapePoints={landscapePoints}
             totalAStar={totalAStar}

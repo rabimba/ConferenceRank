@@ -114,14 +114,18 @@ def parse_detail(html: str) -> dict:
 def main():
     print("Fetching CSV exports...")
     all_rows: dict[str, dict] = {}
+    # Merge every edition, newest first: venues absent from ICORE2026 are kept
+    # (marked via `source_edition`) instead of vanishing silently.
     for source in SOURCES:
         rows = fetch_csv(source)
         print(f"  {source}: {len(rows)} rows")
-        if source == "ICORE2026":
-            for r in rows:
-                all_rows[r["id"]] = r
+        for r in rows:
+            if r["id"] in all_rows:
+                continue  # newest edition already claimed this venue
+            r["source_edition"] = source
+            all_rows[r["id"]] = r
 
-    print(f"Total venues (ICORE2026): {len(all_rows)}")
+    print(f"Total venues (all editions): {len(all_rows)}")
 
     print("Fetching detail pages (rank history)...")
     done = 0
@@ -142,7 +146,9 @@ def main():
             print(f"  {done}/{len(all_rows)}")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(list(all_rows.values()), indent=1))
+    tmp = OUT.with_suffix(".tmp")
+    tmp.write_text(json.dumps(list(all_rows.values()), indent=1))
+    os.replace(tmp, OUT)
     print(f"Wrote {len(all_rows)} venues -> {OUT}")
 
 
