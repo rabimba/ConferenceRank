@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
 import {
@@ -9,6 +9,14 @@ import {
   type AmbitionTier,
   type Suggestion,
 } from "@/lib/suggest";
+import { getVenueEmbeddingIndex } from "@/lib/embedding-index";
+import {
+  embedAbstract,
+  initEmbedder,
+  getEmbedderState,
+  subscribeEmbedderState,
+  type EmbedderState,
+} from "@/lib/embedder";
 
 const SAMPLE_ABSTRACTS = [
   {
@@ -30,13 +38,72 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
   const [ambition, setAmbition] = useState<AmbitionTier>("all");
   const [includeUnranked, setIncludeUnranked] = useState(false);
 
+  // Neural embedding states
+  const [embedderState, setEmbedderState] = useState<EmbedderState>(getEmbedderState());
+  const [embeddingScores, setEmbeddingScores] = useState<Map<string, number> | null>(null);
+  const [isEmbeddingCalculating, setIsEmbeddingCalculating] = useState(false);
+  const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Subscribe to embedder status updates
+  useEffect(() => {
+    return subscribeEmbedderState(setEmbedderState);
+  }, []);
+
+  // Preload embedder and venue embeddings index on mount
+  useEffect(() => {
+    initEmbedder().catch(() => {});
+    getVenueEmbeddingIndex().catch(() => {});
+  }, []);
+
+  // Debounced semantic embedding calculation
+  useEffect(() => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+
+    const trimmed = abstract.trim();
+    const wordCount = trimmed ? trimmed.split(/\s+/).length : 0;
+
+    debounceTimerRef.current = setTimeout(async () => {
+      if (wordCount < 30) {
+        setEmbeddingScores(null);
+        setIsEmbeddingCalculating(false);
+        return;
+      }
+
+      setIsEmbeddingCalculating(true);
+      try {
+        const [index, queryVec] = await Promise.all([
+          getVenueEmbeddingIndex(),
+          embedAbstract(trimmed),
+        ]);
+
+        if (index && queryVec) {
+          const scores = index.computeSimilarity(queryVec);
+          setEmbeddingScores(scores);
+        }
+      } catch (err) {
+        console.warn("Failed to compute semantic embeddings:", err);
+      } finally {
+        setIsEmbeddingCalculating(false);
+      }
+    }, 350);
+
+    return () => {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+      }
+    };
+  }, [abstract]);
+
   const result = useMemo(() => {
     return suggestVenues(abstract, venues, {
       ambition,
       topN: 18,
       includeUnranked,
+      embeddingScores: embeddingScores ?? undefined,
     });
-  }, [abstract, venues, ambition, includeUnranked]);
+  }, [abstract, venues, ambition, includeUnranked, embeddingScores]);
 
   // Group suggestions into tiers
   const tieredSuggestions = useMemo(() => {
@@ -67,13 +134,16 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
               Paste Paper Abstract
             </h2>
             <p className="text-xs text-muted">
-              We analyze vocabulary, research categories, and methodology to suggest relevant CS conferences.
+              We analyze vocabulary, research categories, and 384-dim semantic embeddings to suggest relevant CS conferences.
             </p>
           </div>
           {abstract && (
             <button
-              onClick={() => setAbstract("")}
-              className="self-start text-xs font-semibold text-muted hover:text-foreground"
+              onClick={() => {
+                setAbstract("");
+                setEmbeddingScores(null);
+              }}
+              className="self-start text-xs font-semibold text-muted hover:text-foreground cursor-pointer"
             >
               Clear input
             </button>
@@ -90,7 +160,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
           />
         </div>
 
-        {/* Quick sample buttons & word count */}
+        {/* Quick sample buttons, word count & AI status */}
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-xs">
           <div className="flex flex-wrap items-center gap-1.5 text-stone-600 dark:text-stone-400">
             <span className="font-semibold">Try sample:</span>
@@ -99,14 +169,19 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
                 key={sample.title}
                 type="button"
                 onClick={() => loadSample(sample.text)}
-                className="rounded-md border border-stone-200 bg-surface px-2 py-1 font-medium text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800 transition"
+                className="rounded-md border border-stone-200 bg-surface px-2 py-1 font-medium text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800 transition cursor-pointer"
               >
                 {sample.title}
               </button>
             ))}
           </div>
 
-          <div className="text-muted">
+          <div className="flex items-center gap-3 text-muted">
+            {isEmbeddingCalculating && (
+              <span className="inline-flex items-center gap-1 text-[11px] font-medium text-accent animate-pulse">
+                <span>🧠 Calculating neural embedding…</span>
+              </span>
+            )}
             {result.wordCount > 0 && (
               <span>
                 {result.wordCount} words{" "}
@@ -119,6 +194,25 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             )}
           </div>
         </div>
+
+        {/* Model download progress bar if loading */}
+        {embedderState.status === "loading" && embedderState.progress > 0 && (
+          <div className="mt-4 rounded-xl border border-indigo-100 bg-indigo-50/70 p-3 dark:border-indigo-950 dark:bg-indigo-950/30">
+            <div className="flex items-center justify-between text-xs font-semibold text-indigo-900 dark:text-indigo-200">
+              <span className="flex items-center gap-1.5">
+                <span className="animate-spin text-indigo-600">⚡</span>
+                {embedderState.statusText}
+              </span>
+              <span>{embedderState.progress}%</span>
+            </div>
+            <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-indigo-200/60 dark:bg-indigo-900">
+              <div
+                className="h-full rounded-full bg-indigo-600 transition-all duration-300"
+                style={{ width: `${embedderState.progress}%` }}
+              />
+            </div>
+          </div>
+        )}
 
         {/* Filters and Ambition */}
         <div className="mt-5 border-t border-stone-200 pt-5 dark:border-stone-800">
@@ -139,7 +233,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
                   key={tier.id}
                   onClick={() => setAmbition(tier.id)}
                   title={tier.desc}
-                  className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
+                  className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition cursor-pointer ${
                     ambition === tier.id
                       ? "bg-accent text-accent-contrast"
                       : "border border-stone-200 bg-surface text-stone-600 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800"
@@ -166,10 +260,17 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
       {/* Abstract Analysis Signals */}
       {result.detectedCategories.length > 0 && (
         <div className="rounded-xl border border-stone-200 bg-surface p-5 dark:border-stone-800 shadow-xs">
-          <div className="flex items-center justify-between gap-3">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-muted">
-              Detected Research Focus
-            </h3>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-muted">
+                Detected Research Focus
+              </h3>
+              {result.isSemanticReady && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2 py-0.5 text-[10px] font-bold text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300">
+                  <span>🧠 Neural AI Active</span>
+                </span>
+              )}
+            </div>
             <span
               className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${
                 result.confidence === "high"
@@ -178,7 +279,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
                     ? "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
                     : "bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300"
               }`}
-              title="Confidence reflects keyword signal strength and abstract length"
+              title="Confidence reflects neural semantic similarity and abstract length"
             >
               {result.confidence} confidence
             </span>
@@ -306,7 +407,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
           How this matching works:
         </p>
         <p className="mt-1">
-          Suggestions combine multi-word keyword extraction against 14 computer science sub-fields, TF-IDF document similarity over venue titles/categories/OpenAlex topics, and CORE prestige rankings. Acceptance rates are shown for context when available. Always consult the conference&apos;s formal Call for Papers (CFP) to confirm specific track requirements and page limits before submitting.
+          Suggestions combine 384-dimensional neural semantic embeddings (running locally in your browser via WebAssembly with zero server tracking), multi-word keyword extraction across 14 computer science sub-fields, TF-IDF document similarity over venue titles/categories/topics, and CORE prestige rankings. Acceptance rates are shown for context when available. Always consult the conference&apos;s formal Call for Papers (CFP) to confirm specific track requirements and page limits before submitting.
         </p>
       </div>
     </div>
@@ -314,7 +415,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
 }
 
 function VenueCard({ suggestion }: { suggestion: Suggestion }) {
-  const { venue, matchPercentage, reasons } = suggestion;
+  const { venue, matchPercentage, reasons, semanticScore } = suggestion;
 
   return (
     <div className="flex flex-col justify-between rounded-xl border border-stone-200 bg-surface p-4 shadow-xs transition hover:border-stone-300 hover:shadow-md dark:border-stone-800 dark:hover:border-stone-700">
@@ -337,8 +438,16 @@ function VenueCard({ suggestion }: { suggestion: Suggestion }) {
         {/* Fit Score & Progress Bar */}
         <div className="mt-3">
           <div className="flex items-center justify-between text-xs">
-            <span className="font-semibold text-stone-700 dark:text-stone-300">
-              Fit Score
+            <span className="font-semibold text-stone-700 dark:text-stone-300 flex items-center gap-1.5">
+              <span>Fit Score</span>
+              {semanticScore !== undefined && semanticScore >= 0.35 && (
+                <span
+                  title={`Neural semantic similarity: ${(semanticScore * 100).toFixed(0)}%`}
+                  className="rounded bg-indigo-100 px-1 py-0.2 text-[9px] font-bold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
+                >
+                  Neural Match
+                </span>
+              )}
             </span>
             <span
               className={`font-black ${

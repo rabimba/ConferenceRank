@@ -1,0 +1,416 @@
+[
+  {
+    "venue_id": "11",
+    "venue_acronym": "SIGCOMM",
+    "venue_title": "ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+    "venue_rank": "A*",
+    "paper_title": "Internet backbones in space",
+    "abstract": "Several \"NewSpace\" companies have launched the first of thousands of planned satellites for providing global broadband Internet service. The resulting low-Earth-orbit (LEO) constellations will not only bridge the digital divide by providing service to remote areas, but they also promise much lower latency than terrestrial fiber for long-distance routes. We show that unlocking this potential is non-trivial: such constellations provide inherently variable connectivity, which today's Internet is ill-suited to accommodate. We therefore study cost-performance tradeoffs in the design space for Internet routing that incorporates satellite connectivity examining four solutions ranging from naively using BGP to an ideal, clean-slate design. We find that the optimal solution is provided by a path-aware networking architecture in which end-hosts obtain information and control over network paths. However, a pragmatic and more deployable approach inspired by the design of content distribution networks can also achieve stable and close-to-optimal performance.",
+    "word_count": 144
+  },
+  {
+    "venue_id": "11",
+    "venue_acronym": "SIGCOMM",
+    "venue_title": "ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+    "venue_rank": "A*",
+    "paper_title": "Coronavirus contact tracing",
+    "abstract": "Many countries are deploying Covid-19 contact tracing apps that use Bluetooth Low Energy (LE) to detect proximity within 2m for 15 minutes. However, Bluetooth LE is an unproven technology for this application, raising concerns about the efficacy of these apps. Indeed, measurements indicate that the Bluetooth LE received signal strength can be strongly affected by factors including (i) the model of handset used, (ii) the relative orientation of handsets, (iii) absorption by human bodies, bags etc. and (iv) radio wave reflection from walls, floors, furniture. The impact on received signal strength is comparable with that caused by moving 2m, and so has the potential to seriously affect the reliability of proximity detection. These effects are due the physics of radio propagation and suggest that the development of accurate methods for proximity detection based on Bluetooth LE received signal strength is likely to be challenging. We call for action in three areas. Firstly, measurements are needed that allow the added value of deployed apps within the overall contact tracing system to be evaluated, e.g. data on how many of the people notified by the app would not have been found by manual contact tracing and what fraction of people notified by an app actually test positive for Covid-19. Secondly, the 2m/15 minute proximity limit is only a rough guideline. The real requirement is to use handset sensing to evaluate infection risk and this requires a campaign to collect measurements of both handset sensor data and infection outcomes. Thirdly, a concerted effort is needed to collect controlled Bluetooth LE measurements in a wide range of real-world environments, the data reported here being only a first step in that direction.",
+    "word_count": 277
+  },
+  {
+    "venue_id": "12",
+    "venue_acronym": "CCS",
+    "venue_title": "ACM Conference on Computer and Communications Security",
+    "venue_rank": "A*",
+    "paper_title": "Understanding Security Issues in the NFT Ecosystem",
+    "abstract": "Non-Fungible Tokens (NFTs) have emerged as a way to collect digital art as well as an investment vehicle. Despite having been popularized only recently, NFT markets have witnessed several high-profile (and high-value) asset sales and a tremendous growth in trading volumes over the last year. Unfortunately, these marketplaces have not yet received much security scrutiny. Instead, most academic research has focused on attacks against decentralized finance (DeFi) protocols and automated techniques to detect smart-contract vulnerabilities. To the best of our knowledge, we are the first to study the market dynamics and security issues of the multi-billion dollar NFT ecosystem.",
+    "word_count": 99
+  },
+  {
+    "venue_id": "12",
+    "venue_acronym": "CCS",
+    "venue_title": "ACM Conference on Computer and Communications Security",
+    "venue_rank": "A*",
+    "paper_title": "Enhanced Membership Inference Attacks against Machine Learning Models",
+    "abstract": "How much does a machine learning algorithm leak about its training data, and why? Membership inference attacks are used as an auditing tool to quantify this leakage. In this paper, we present a comprehensivehypothesis testing framework that enables us not only to formally express the prior work in a consistent way, but also to design new membership inference attacks that use reference models to achieve a significantly higher power (true positive rate) for any (false positive rate) error. More importantly, we explainwhy different attacks perform differently. We present a template for indistinguishability games, and provide an interpretation of attack success rate across different instances of the game. We discuss various uncertainties of attackers that arise from the formulation of the problem, and show how our approach tries to minimize the attack uncertainty to the one bit secret about the presence or absence of a data point in the training set. We perform adifferential analysis between all types of attacks, explain the gap between them, and show what causes data points to be vulnerable to an attack (as the reasons vary due to different granularities of memorization, from overfitting to conditional memorization). Our auditing framework is openly accessible as part of thePrivacy Meter software tool.",
+    "word_count": 204
+  },
+  {
+    "venue_id": "13",
+    "venue_acronym": "CSCW",
+    "venue_title": "ACM Conference on Computer Supported Cooperative Work",
+    "venue_rank": "A",
+    "paper_title": "APTNER: A Specific Dataset for NER Missions in Cyber Threat Intelligence Field",
+    "abstract": "This paper provides a new dataset for Named Entity Recognition (NER) missions in cyber threat intelligence (CTI) studying. To the best of our knowledge, the proposed dataset is the biggest and challenging one in the field to comply with the STIX 2.1 specification. We collected the APT (Advanced Persistent Threats) reports from different network security companies and manually annotated them. Then we constructed a dataset named APTNER, which can be used for NER joint and multi-task learning tasks in CTI. Apart from common labels like IP, URL, mal-ware, location and so on, APTNER contains 21 categories, which make APTNER more challenging than other NER datasets in CTI field and we have proved the rationality of the dataset. For ease of comparison studies, we realize several state-of-the-art baselines and report their analysis. To facilitate future work on fine-grained NER for CTI, we make APTNER public at https://github.com/wangxuren/APTNER.",
+    "word_count": 146
+  },
+  {
+    "venue_id": "13",
+    "venue_acronym": "CSCW",
+    "venue_title": "ACM Conference on Computer Supported Cooperative Work",
+    "venue_rank": "A",
+    "paper_title": "GraphDDoS: Effective DDoS Attack Detection Using Graph Neural Networks",
+    "abstract": "Distributed Denial of Service (DDoS) attacks have occurred frequently in recent years, causing massive damage. It is critical to detect DDoS attacks fast and accurately. Previous Deep Learning (DL) methods for detecting DDoS attacks barely leverage the relationships between packets and between flows in traffic, which are crucial information that can significantly improve detection performance. This paper proposes GraphDDoS, a GNN-based approach for detecting DDoS attacks using endpoint traffic graphs. Concretely, we convert traffic into endpoint traffic graphs, containing information of packets\u2019 relationships (structure of a single flow) and flows\u2019 relationships (burst information and periodic information of multiple flows). Then, converted endpoint traffic graphs are sent to the GNN classifier to learn DDoS attack patterns accurately. The experiments with well-known datasets show that GraphDDoS outperforms the state-of-the-art DL-based approaches. The effectiveness is mainly introduced by the capability of GraphDDoS to learn patterns of attacks structured as graphs.",
+    "word_count": 147
+  },
+  {
+    "venue_id": "14",
+    "venue_acronym": "EC",
+    "venue_title": "ACM Conference on Economics and Computation",
+    "venue_rank": "A*",
+    "paper_title": "Artificial Intelligence and Auction Design",
+    "abstract": "Motivated by online advertising auctions, we study auction design in repeated auctions played by simple Artificial Intelligence algorithms (Q-learning). We find that first-price auctions with no additional feedback lead to tacit-collusive outcomes (bids lower than values), while second-price auctions do not. We show that the difference is driven by the incentive in first-price auctions to outbid opponents by just one bid increment. This facilitates re-coordination on low bids after a phase of experimentation. We also show that providing information about the lowest bid to win, as introduced by Google at the time of the switch to first-price auctions, increases competitiveness of auctions.",
+    "word_count": 102
+  },
+  {
+    "venue_id": "14",
+    "venue_acronym": "EC",
+    "venue_title": "ACM Conference on Economics and Computation",
+    "venue_rank": "A*",
+    "paper_title": "Optimal Routing for Constant Function Market Makers",
+    "abstract": "We consider the problem of optimally executing an order involving multiple crypto-assets, sometimes called tokens, on a network of multiple constant function market makers (CFMMs). When we ignore the fixed cost associated with executing an order on a CFMM, this optimal routing problem can be cast as a convex optimization problem, which is computationally tractable. When we include the fixed costs, the optimal routing problem is a mixed-integer convex problem, which can be solved using (sometimes slow) global optimization methods, or approximately solved using various heuristics based on convex optimization. The optimal routing problem includes as a special case the problem of identifying an arbitrage present in a network of CFMMs, or certifying that none exists.",
+    "word_count": 116
+  },
+  {
+    "venue_id": "18",
+    "venue_acronym": "OOPSLA",
+    "venue_title": "ACM Conference on Object Oriented Programming Systems Languages and Applications",
+    "venue_rank": "A",
+    "paper_title": "Durable Functions: Semantics for Stateful Serverless",
+    "abstract": "Serverless, or Functions-as-a-Service (FaaS), is an increasingly popular paradigm for application development, as it provides implicit elastic scaling and load based billing. However, the weak execution guarantees and intrinsic compute-storage separation of FaaS create serious challenges when developing applications that require persistent state, reliable progress, or synchronization. This has motivated a new generation of serverless frameworks that provide stateful abstractions. For instance, Azure's Durable Functions (DF) programming model enhances FaaS with actors, workflows, and critical sections. As a programming model, DF is interesting because it combines task and actor parallelism, which makes it suitable for a wide range of serverless applications. We describe DF both informally, using examples, and formally, using an idealized high-level model based on the untyped lambda calculus. Next, we demystify how the DF runtime can (1) execute in a distributed unreliable serverless environment with compute-storage separation, yet still conform to the fault-free high-level model, and (2) persist execution progress without requiring checkpointing support by the language runtime. To this end we define two progressively more complex execution models, which contain the compute-storage separation and the record-replay, and prove that they are equivalent to the high-level model.",
+    "word_count": 190
+  },
+  {
+    "venue_id": "18",
+    "venue_acronym": "OOPSLA",
+    "venue_title": "ACM Conference on Object Oriented Programming Systems Languages and Applications",
+    "venue_rank": "A",
+    "paper_title": "Structure interpretation of text formats",
+    "abstract": "Data repositories often consist of text files in a wide variety of standard formats, ad-hoc formats, as well as mixtures of formats where data in one format is embedded into a different format. It is therefore a significant challenge to parse these files into a structured tabular form, which is important to enable any downstream data processing. We present Unravel, an extensible framework for structure interpretation of ad-hoc formats. Unravel can automatically, with no user input, extract tabular data from a diverse range of standard, ad-hoc and mixed format files. The framework is also easily extensible to add support for previously unseen formats, and also supports interactivity from the user in terms of examples to guide the system when specialized data extraction is desired. Our key insight is to allow arbitrary combination of extraction and parsing techniques through a concept called partial structures. Partial structures act as a common language through which the file structure can be shared and refined by different techniques. This makes Unravel more powerful than applying the individual techniques in parallel or sequentially. Further, with this rule-based extensible approach, we introduce the novel notion of re-interpretation where the variety of techniques supported by our system can be exploited to improve accuracy while optimizing for particular quality measures or restricted environments. On our benchmark of 617 text files gathered from a variety of sources, Unravel is able to extract the intended table in many more cases compared to state-of-the-art techniques.",
+    "word_count": 243
+  },
+  {
+    "venue_id": "25",
+    "venue_acronym": "CIKM",
+    "venue_title": "ACM International Conference on Information and Knowledge Management",
+    "venue_rank": "A",
+    "paper_title": "On analyzing the household energy consumption detection for citizen behavioral analysis carbon footprint awareness by deep residual networks",
+    "abstract": "With the exponential growth of household activities particularly due to the lock-down in COVID-19 pandemic as well as with the usual trend of amplified use of energy consuming appliances, household energy usages are becoming extremely high Consequently, high energy consumption pattern results in severe increase of air pollution and carbon footprint Carbon footprint is mainly caused by the greenhouse gases while burning of fossil fuels for producing different forms of energy In order to restrict the carbon footprint, one of the approaches is to analyze the citizen behavioral pattern by detecting the household appliances We propose deep neural network based supervised learning algorithm that is capable of classifying the household appliances from energy consumption data More specifically, we use deep residual networks (ResNet) where learning of the residual functions makes the trained model more robust by transforming the representation learning problem to residual learning problem Our empirical study on publicly available relevant datasets from UCR timeseries archive demonstrates significantly better and consistent performance over baseline algorithms and state-of-the-art methods \u00a9 2020 CEUR-WS All rights reserved",
+    "word_count": 175
+  },
+  {
+    "venue_id": "25",
+    "venue_acronym": "CIKM",
+    "venue_title": "ACM International Conference on Information and Knowledge Management",
+    "venue_rank": "A",
+    "paper_title": "Word and graph embeddings for covid-19 retweet prediction",
+    "abstract": "In this paper, we present our solution for COVID-19 retweet prediction challenge. The proposed approach consists of feature engineering and modeling. For feature engineering, we leverage both hand-crafted and unsupervised learning features. As the provided data set is large, we implement auto-encoding algorithms to reduce feature dimension. To develop predictive models, we utilize ensemble learning and deep learning algorithms. We then combine these models to generate the final blended model. Moreover, to stabilize the predictions, we also apply bagging as well as down-sampling techniques to remove the tweets where number of retweets equals to zero. Our solution is ranked First on the public test set and second on the private test set. \u00a9 2020 CEUR-WS. All rights reserved.",
+    "word_count": 118
+  },
+  {
+    "venue_id": "27",
+    "venue_acronym": "MOBICOM",
+    "venue_title": "ACM International Conference on Mobile Computing and Networking",
+    "venue_rank": "A*",
+    "paper_title": "PyramidFL",
+    "abstract": "Federated learning (FL) is an emerging distributed machine learning (ML) paradigm with enhanced privacy, aiming to achieve a \"good\" ML model for as many as participants while consuming as little as wall clock time. By executing across thousands or even millions of clients, FL demonstrates heterogeneous statistical characteristics and system divergence widely across participants, making its training suffer when adopting the traditional ML paradigm. The root cause of the training efficiency degradation is the random client selection criteria. Although existing FL paradigms propose several optimization schemes for client selection, they are still coarse-grained due to their under-exploitation on the clients' data and system heterogeneity, yielding sub-optimal performance for a variety of FL applications. In this paper, we propose PyramidFL1 to speed up the FL training while achieving a higher final model performance (i.e., time-to-accuracy). The core of PyramidFL is a fine-grained client selection, in which PyramidFL does not only focus on the divergence of those selected participants and non-selected ones for client selection but also fully exploits the data and system heterogeneity within selected clients to profile their utility more efficiently. Specifically, PyramidFL first determines the utility-based client selection from the global (i.e., server) view and then optimizes its utility profiling locally (i.e., client) for further client selection. In this way, we can prioritize the use of those clients with higher statistical and system utility consistently. In comparison with the state-of-the-art (i.e., Oort), our evaluation on the open-source FL benchmark shows that PyramidFL improves the final model accuracy by 3.68% -- 7.33%, with a speedup of 2.71 x -- 13.66X on the wall clock time consumption.",
+    "word_count": 266
+  },
+  {
+    "venue_id": "27",
+    "venue_acronym": "MOBICOM",
+    "venue_title": "ACM International Conference on Mobile Computing and Networking",
+    "venue_rank": "A*",
+    "paper_title": "VIPS",
+    "abstract": "Infrastructure-assisted autonomous driving is an emerging paradigm that expects to significantly improve the driving safety of autonomous vehicles. The key enabling technology for this vision is to fuse LiDAR results from the roadside infrastructure and the vehicle to improve the vehicle's perception in real time. In this work, we propose VIPS, a novel lightweight system that can achieve decimeter-level and real-time (up to 100 ms) perception fusion between driving vehicles and roadside infrastructure. The key idea of VIPS is to exploit highly efficient matching of graph structures that encode objects' lean representations as well as their relationships, such as locations, semantics, sizes, and spatial distribution. Moreover, by leveraging the tracked motion trajectories, VIPS can maintain the spatial and temporal consistency of the scene, which effectively mitigates the impact of asynchronous data frames and unpredictable communication/compute delays. We implement VIPS end-to-end based on a campus smart lamppost testbed. To evaluate the performance of VIPS under diverse situations, we also collect two new multi-view point cloud datasets using the smart lamppost testbed and an autonomous driving simulator, respectively. Experiment results show that VIPS can extend the vehicle's perception range by 140% within 58 ms on average, and delivers a 4X improvement in perception fusion accuracy and 47X data transmission saving over existing approaches. A video demo of VIPS based on the lamppost dataset is available at https://youtu.be/zW4oi_EWOu0.",
+    "word_count": 225
+  },
+  {
+    "venue_id": "28",
+    "venue_acronym": "RecSys",
+    "venue_title": "ACM International Conference on Recommender Systems",
+    "venue_rank": "A",
+    "paper_title": "A dynamic human-in-the-loop recommender system for evidence-based clinical staging of COVID-19",
+    "abstract": "In this position paper, we discuss the potential use of a reinforcement learning (RL)-based human-in-the-loop recommender system to support clinical management of COVID-19 COVID-19 is a disease of extraordinary complexity that even the most experienced clinicians are struggling to understand There is an urgent need for an evidence-based model for predicting the severity of the COVID-19 disease and its complications that can guide individual clinical management decisions Such a model will utilize a diverse set of information to determine a patient's disease severity and associated risk of complications An immediate application would be a clinical protocol tailored for COVID-19 patient care;this is a critical need both today and for future studies of potential treatments \u00a9 2020 Copyright for the individual papers remains with the authors Use permitted under Creative Commons License Attribution 4 0 International (CC BY 4 0)",
+    "word_count": 139
+  },
+  {
+    "venue_id": "28",
+    "venue_acronym": "RecSys",
+    "venue_title": "ACM International Conference on Recommender Systems",
+    "venue_rank": "A",
+    "paper_title": "Exploring Artist Gender Bias in Music Recommendation.",
+    "abstract": "Music Recommender Systems (mRS) are designed to give personalised and meaningful recommendations of items (i.e. songs, playlists or artists) to a user base, thereby reflecting and further complementing individual users' specific music preferences. Whilst accuracy metrics have been widely applied to evaluate recommendations in mRS literature, evaluating a user's item utility from other impact-oriented perspectives, including their potential for discrimination, is still a novel evaluation practice in the music domain. In this work, we center our attention on a specific phenomenon for which we want to estimate if mRS may exacerbate its impact: gender bias. Our work presents an exploratory study, analyzing the extent to which commonly deployed state of the art Collaborative Filtering(CF) algorithms may act to further increase or decrease artist gender bias. To assess group biases introduced by CF, we deploy a recently proposed metric of bias disparity on two listening event datasets: the LFM-1b dataset, and the earlier constructed Celma's dataset. Our work traces the causes of disparity to variations in input gender distributions and user-item preferences, highlighting the effect such configurations can have on user's gender bias after recommendation generation.",
+    "word_count": 185
+  },
+  {
+    "venue_id": "29",
+    "venue_acronym": "SIGIR",
+    "venue_title": "ACM International Conference on Research and Development in Information Retrieval",
+    "venue_rank": "A*",
+    "paper_title": "Are Graph Augmentations Necessary?",
+    "abstract": "Contrastive learning (CL) recently has spurred a fruitful line of research in the field of recommendation, since its ability to extract self-supervised signals from the raw data is well-aligned with recommender systems' needs for tackling the data sparsity issue. A typical pipeline of CL-based recommendation models is first augmenting the user-item bipartite graph with structure perturbations, and then maximizing the node representation consistency between different graph augmentations. Although this paradigm turns out to be effective, what underlies the performance gains is still a mystery. In this paper, we first experimentally disclose that, in CL-based recommendation models, CL operates by learning more uniform user/item representations that can implicitly mitigate the popularity bias. Meanwhile, we reveal that the graph augmentations, which used to be considered necessary, just play a trivial role. Based on this finding, we propose a simple CL method which discards the graph augmentations and instead adds uniform noises to the embedding space for creating contrastive views. A comprehensive experimental study on three benchmark datasets demonstrates that, though it appears strikingly simple, the proposed method can smoothly adjust the uniformity of learned representations and has distinct advantages over its graph augmentation-based counterparts in terms of recommendation accuracy and training efficiency. The code is released at https://github.com/Coder-Yu/QRec.",
+    "word_count": 206
+  },
+  {
+    "venue_id": "29",
+    "venue_acronym": "SIGIR",
+    "venue_title": "ACM International Conference on Research and Development in Information Retrieval",
+    "venue_rank": "A*",
+    "paper_title": "Knowledge Graph Contrastive Learning for Recommendation",
+    "abstract": "Knowledge Graphs (KGs) have been utilized as useful side information to improve recommendation quality. In those recommender systems, knowledge graph information often contains fruitful facts and inherent semantic relatedness among items. However, the success of such methods relies on the high quality knowledge graphs, and may not learn quality representations with two challenges: i) The long-tail distribution of entities results in sparse supervision signals for KG-enhanced item representation; ii) Real-world knowledge graphs are often noisy and contain topic-irrelevant connections between items and entities. Such KG sparsity and noise make the item-entity dependent relations deviate from reflecting their true characteristics, which significantly amplifies the noise effect and hinders the accurate representation of user's preference.",
+    "word_count": 113
+  },
+  {
+    "venue_id": "2264",
+    "venue_acronym": "HCOMP",
+    "venue_title": "AAAI Conference on Human Computation and Crowdsourcing",
+    "venue_rank": "B",
+    "paper_title": "A Checklist to Combat Cognitive Biases in Crowdsourcing",
+    "abstract": "Recent research has demonstrated that cognitive biases such as the confirmation bias or the anchoring effect can negatively affect the quality of crowdsourced data. In practice, however, such biases go unnoticed unless specifically assessed or controlled for. Task requesters need to ensure that task workflow and design choices do not trigger workers\u2019 cognitive biases. Moreover, to facilitate the reuse of crowdsourced data collections, practitioners can benefit from understanding whether and which cognitive biases may be associated with the data. To this end, we propose a 12-item checklist adapted from business psychology to combat cognitive biases in crowdsourcing. We demonstrate the practical application of this checklist in a case study on viewpoint annotations for search results. Through a retrospective analysis of relevant crowdsourcing research that has been published at HCOMP in 2018, 2019, and 2020, we show that cognitive biases may often affect crowd workers but are typically not considered as potential sources of poor data quality. The checklist we propose is a practical tool that requesters can use to improve their task designs and appropriately describe potential limitations of collected data. It contributes to a body of efforts towards making human-labeled data more reliable and reusable.",
+    "word_count": 196
+  },
+  {
+    "venue_id": "2264",
+    "venue_acronym": "HCOMP",
+    "venue_title": "AAAI Conference on Human Computation and Crowdsourcing",
+    "venue_rank": "B",
+    "paper_title": "Connecting Algorithmic Research and Usage Contexts: A Perspective of Contextualized Evaluation for Explainable AI",
+    "abstract": "Recent years have seen a surge of interest in the field of explainable AI (XAI), with a plethora of algorithms proposed in the literature. However, a lack of consensus on how to evaluate XAI hinders the advancement of the field. We highlight that XAI is not a monolithic set of technologies---researchers and practitioners have begun to leverage XAI algorithms to build XAI systems that serve different usage contexts, such as model debugging and decision-support. Algorithmic research of XAI, however, often does not account for these diverse downstream usage contexts, resulting in limited effectiveness or even unintended consequences for actual users, as well as difficulties for practitioners to make technical choices. We argue that one way to close the gap is to develop evaluation methods that account for different user requirements in these usage contexts. Towards this goal, we introduce a perspective of contextualized XAI evaluation by considering the relative importance of XAI evaluation criteria for prototypical usage contexts of XAI. To explore the context dependency of XAI evaluation criteria, we conduct two survey studies, one with XAI topical experts and another with crowd workers. Our results urge for responsible AI research with usage-informed evaluation practices, and provide a nuanced understanding of user requirements for XAI in different usage contexts.",
+    "word_count": 209
+  },
+  {
+    "venue_id": "2354",
+    "venue_acronym": "AIES",
+    "venue_title": "AAAI/ACM Conference on AI, Ethics, and Society",
+    "venue_rank": "C",
+    "paper_title": "Fooling LIME and SHAP",
+    "abstract": "As machine learning black boxes are increasingly being deployed in domains such as healthcare and criminal justice, there is growing emphasis on building tools and techniques for explaining these black boxes in an interpretable manner. Such explanations are being leveraged by domain experts to diagnose systematic errors and underlying biases of black boxes. In this paper, we demonstrate that post hoc explanations techniques that rely on input perturbations, such as LIME and SHAP, are not reliable. Specifically, we propose a novel scaffolding technique that effectively hides the biases of any given classifier by allowing an adversarial entity to craft an arbitrary desired explanation. Our approach can be used to scaffold any biased classifier in such a way that its predictions on the input data distribution still remain biased, but the post hoc explanations of the scaffolded classifier look innocuous. Using extensive evaluation with multiple real world datasets (including COMPAS), we demonstrate how extremely biased (racist) classifiers crafted by our framework can easily fool popular explanation techniques such as LIME and SHAP into generating innocuous explanations which do not reflect the underlying biases.",
+    "word_count": 182
+  },
+  {
+    "venue_id": "2354",
+    "venue_acronym": "AIES",
+    "venue_title": "AAAI/ACM Conference on AI, Ethics, and Society",
+    "venue_rank": "C",
+    "paper_title": "Saving Face",
+    "abstract": "Although essential to revealing biased performance, well intentioned attempts at algorithmic auditing can have effects that may harm the very populations these measures are meant to protect. This concern is even more salient while auditing biometric systems such as facial recognition, where the data is sensitive and the technology is often used in ethically questionable manners. We demonstrate a set of fiveethical concerns in the particular case of auditing commercial facial processing technology, highlighting additional design considerations and ethical tensions the auditor needs to be aware of so as not exacerbate or complement the harms propagated by the audited system. We go further to provide tangible illustrations of these concerns, and conclude by reflecting on what these concerns mean for the role of the algorithmic audit and the fundamental product limitations they reveal.",
+    "word_count": 133
+  },
+  {
+    "venue_id": "21",
+    "venue_acronym": "SIGITE",
+    "venue_title": "ACM Information Technology Education",
+    "venue_rank": "National: USA",
+    "paper_title": "Library strategies in the Cyber-Physical Society",
+    "abstract": "The Fourth Industrial Revolution leads to cyber-physical systems facilitating communication not only between machines and people, but between machines themselves (Straub, 2015). Such radical changes give rise to the cyber-physical society including not only the physical and virtual spaces, but the human social, and cultural sphere as well (Monostori 2019). Several professions and trades disappear and new ones emerge on the labour market while the skills required of employees have changed too (World Economy Forum, 2018). Hence the need for institutions capable of preparing people to meet such challenges becomes pressing. In the United States libraries are expected train the population for the use of technological devices brought about by the Fourth Industrial Revolution along with improving the respective digital competence levels (Horrigan, 2016). Furthermore, various international strategies and the changing learning environment assign new tasks for libraries...",
+    "word_count": 138
+  },
+  {
+    "venue_id": "23",
+    "venue_acronym": "ACE",
+    "venue_title": "ACM International Conference on Advances in Computer Entertainment (merged with DIMEA, Digital Interactive Media in Entertainment and Arts, in 2009)",
+    "venue_rank": "C",
+    "paper_title": "How much and why are we willing to pay for energy-efficient homes? A stated preferences analysis in Barcelona",
+    "abstract": "En la literatura, la evidencia emp\u00edrica sobre las primas verdes para los hogares con eficiencia energ\u00e9tica no proporciona las razones que producen tal incremento de precios. Este documento, utilizando encuestas de preferencias declaradas, explora si los hogares en Barcelona est\u00e1n dispuestos a pagar (WTP) por una mejora en la clasificaci\u00f3n proveniente de los Certificados de Eficiencia Energ\u00e9tica (EPC) y las razones que explican su variaci\u00f3n. Los resultados sugieren que, en general, las personas desconocen el esquema EPC y tienden a confundir el rendimiento energ\u00e9tico de los hogares con la calidad arquitect\u00f3nica general. Dichas limitaciones reducen la WTP para hogares eficientes, mientras que otras percepciones como la comodidad y una mejor condici\u00f3n de salud asociada con el rendimiento energ\u00e9tico parecen estar correlacionadas positivamente. Adem\u00e1s, el an\u00e1lisis estratificado indica la existencia de sensibilidades divergentes asociadas con condiciones socioecon\u00f3micas. En general, plantea desaf\u00edos importantes para el dise\u00f1o de pol\u00edticas p\u00fablicas dirigidas a fomentar la difusi\u00f3n de hogares con eficiencia energ\u00e9tica. Los resultados de este documento implican desaf\u00edos importantes para la comunicaci\u00f3n de la pol\u00edtica de EPC en Espa\u00f1a, no solo porque la sociedad no es monol\u00edtica, tiene motivaciones divergentes cuando se apuesta por una vivienda eficiente, sino tambi\u00e9n porque la informaci\u00f3n superficial parece ser ineficiente para crear conciencia sobre la implicaci\u00f3n del rendimiento energ\u00e9tico de los edificios. En la literatura, l'evid\u00e8ncia emp\u00edrica sobre les primes verds per a les llars amb efici\u00e8ncia energ\u00e8tica no proporciona les raons que produeixen aquest increment de preus. Aquest document, utilitzant enquestes de prefer\u00e8ncies declarades, explora si les llars a Barcelona estan disposats a pagar (WTP) per una millora en la classificaci\u00f3 provinent dels Certificats d'Efici\u00e8ncia Energ\u00e8tica (EPC) i les raons que expliquen la seva variaci\u00f3. Els resultats suggereixen que, en general, les persones desconeixen l'esquema EPC i tendeixen a confondre el rendiment energ\u00e8tic de les llars amb la qualitat arquitect\u00f2nica general. Aquestes limitacions redueixen la WTP per a llars eficients, mentre que altres percepcions com la comoditat i una millor condici\u00f3 de salut associada amb el rendiment energ\u00e8tic semblen estar correlacionades positivament. A m\u00e9s, l'an\u00e0lisi estratificat indica l'exist\u00e8ncia de sensibilitats divergents associades amb condicions socioecon\u00f2miques. En general, planteja reptes importants per al disseny de pol\u00edtiques p\u00fabliques dirigides a fomentar la difusi\u00f3 de llars amb efici\u00e8ncia energ\u00e8tica. Els resultats d'aquest document impliquen reptes importants per a la comunicaci\u00f3 de la pol\u00edtica d'EPC a Espanya, no nom\u00e9s perqu\u00e8 la societat no \u00e9s monol\u00edtica, t\u00e9 motivacions divergents quan s'aposta per un habitatge eficient, sin\u00f3 tamb\u00e9 perqu\u00e8 la informaci\u00f3 superficial sembla ser ineficient per a crear consci\u00e8ncia sobre la implicaci\u00f3 del rendiment energ\u00e8tic dels edificis.Paraules clau: Valoraci\u00f3 contingent; valoraci\u00f3 de b\u00e9ns immobles; efici\u00e8ncia energ\u00e8tica; certificat d'efici\u00e8ncia energ\u00e8tica In the literature, the empirical evidence on the green premium for energy-efficient homes does not provide the reasons that produce such price increment. This paper, using stated preferences surveys, explores whether households in Barcelona are willing to pay (WTP) for an improvement in the ranking coming from Energy Performance Certificates (EPC) and the reasons explaining its variance. The results suggest that, in general, people are unaware of the EPC scheme, and tend to confound energy performance of homes with the overall architectonic quality. Such limitations reduce the WTP for efficient homes, while other perceptions such as comfort and an improved health condition associated with energy performance appear as positively correlated. Furthermore, the stratified analysis indicates the existence of divergent sensibilities associated with socioeconomic conditions. On the whole, it poses important challenges for the design of public policies aimed at fostering the diffusion of energy-efficient homes. The findings of this paper imply important challenges for the communication of the EPC policy in Spain, not only because society is not monolithic, having divergent motivations when bidding for efficient housing, but also because superficial information seems to be inefficient in creating awareness on the implication of the energy performance of buildings.",
+    "word_count": 634
+  },
+  {
+    "venue_id": "23",
+    "venue_acronym": "ACE",
+    "venue_title": "ACM International Conference on Advances in Computer Entertainment (merged with DIMEA, Digital Interactive Media in Entertainment and Arts, in 2009)",
+    "venue_rank": "C",
+    "paper_title": "La ciudad que quisi\u00e9ramos despu\u00e9s de COVID-19",
+    "abstract": "La pandemia de COVID-19 ha impactado profundamente las econom\u00edas e incrementado la desigualdad y la pobreza. Los cambios pueden ser tan profundos que dif\u00edcilmente las cosas ser\u00e1n igual que antes en la regi\u00f3n latinoamericana y en sus ciudades. La magnitud del fen\u00f3meno ha sido muy diferente en los pa\u00edses con mayor presencia de la enfermedad. Reconocemos que esta emergencia es apenas la \u201cpunta del iceberg\u201d de la crisis sist\u00e9mica del capitalismo y que sus impactos en las ciudades han sido profundos. Una breve revisi\u00f3n del contexto hist\u00f3rico reciente del desarrollo desigual e insustentable en el subcontinente muestra que ha generado ciudades con problemas tan profundos en lo social, econ\u00f3mico, espacial y ambiental, que representan un caldo de cultivo para la pandemia, para las amenazas (cambio clim\u00e1tico, desigualdad socioespacial) y para otras crisis sanitarias que seguramente vendr\u00e1n en el futuro. Ante este panorama, proponemos que \u201cotra ciudad es posible\u201d si reconocemos que se necesitan cambios de fondo m\u00e1s all\u00e1 de lo ordinario: salir del capitalismo f\u00f3sil, reducir el consumo de energ\u00eda, recuperar los ecosistemas, transformar las ciudades. Requerimos una \u201cmatriz territorial\u201d diferente que reconozca a las ciudades como espacios para el desarrollo y no destinos fatales; que ponga por delante el \u201cderecho a la ciudad\u201d y el \u201cderecho de la naturaleza\u201d; que sean bien gobernadas con la participaci\u00f3n de los ciudadanos. Recuperemos las buenas experiencias: teletrabajo con derechos, reconstruir a fondo las pol\u00edticas de vivienda, de expansi\u00f3n urbana y de movilidad. \u00bfEs posible imaginar una respuesta tan en\u00e9rgica como ante COVID-19 frente al cambio clim\u00e1tico y la desigualdad socioespacial? La pand\u00e8mia de COVID-19 ha impactat profundament les economies i incrementat la desigualtat i la pobresa. Els canvis poden ser tan profunds que dif\u00edcilment les coses seran igual que abans a la regi\u00f3 llatinoamericana i en les seves ciutats. La magnitud del fenomen ha estat molt diferent en els pa\u00efsos amb major pres\u00e8ncia de la malaltia. Reconeixem que aquesta emerg\u00e8ncia \u00e9s tot just la \"punta de l'iceberg\" de la crisi sist\u00e8mica del capitalisme i que els seus impactes a les ciutats han estat profunds. Una breu revisi\u00f3 del context hist\u00f2ric recent del desenvolupament desigual i insostenible en el subcontinent mostra que ha generat ciutats amb problemes tan profunds en el social, econ\u00f2mic, espacial i ambiental, que representen un brou de cultiu per a la pand\u00e8mia, per les amenaces (canvi clim\u00e0tic , desigualtat socioespacial) i per altres crisis sanit\u00e0ries que segurament vindran en el futur. Davant d'aquest panorama, proposem que \"una altra ciutat \u00e9s possible\" si reconeixem que calen canvis de fons m\u00e9s enll\u00e0 de l'ordinari: sortir del capitalisme f\u00f2ssil, reduir el consum d'energia, recuperar els ecosistemes, transformar les ciutats. Requerim una \"matriu territorial\" diferent que reconegui a les ciutats com espais per al desenvolupament i no destinacions fatals; que posi per davant el \"dret a la ciutat\" i el \"dret de la natura\"; que siguin ben governades amb la participaci\u00f3 dels ciutadans. Recuperem les bones experi\u00e8ncies: teletreball amb drets, reconstruir a fons les pol\u00edtiques d'habitatge, d'expansi\u00f3 urbana i de mobilitat. \u00c9s possible imaginar una resposta tan en\u00e8rgica com davant COVID-19 davant del canvi clim\u00e0tic i la desigualtat socioespacial? COVID-19 pandemic has deeply affected the economy and deepening inequality and poverty. Changes are going to be so deep that it is difficult to imagine that things will be as they were before the disease in Latin American countries and their cities. The magnitude of the phenomenon has been different among Latin American countries. We recognize that this crisis is the \u201ctop of the iceberg\u201d of capitalism endemic crisis and that its impacts on cities have been profound. A brief account of the recent historical urban context of Latin American unequal and unsustainable development process shows that it has delivered cities with social, economic, spatial and environmental deep problems which represent a breeding ground for COVID-19, as well as for climate change and social inequality\u2019s threats and for new pandemics to come. Before this panorama, we propose that \u201canother city is possible\u201d, if it is recognized that deep changes have to be carried out beyond the ordinary ones: the health of fossil capitalism; reduce energy consumption; recover ecosystems; transform cities. A different \u201cterritorial matrix\u201d that recognizes cities as spaces for development, not as fatal destinies is needed; able to put ahead of the \u201cright to the city\u201d and the \u201cright of nature\u201d and that cities should be well governed with social participation. We have to recover recent good practices: work at home with labor rights, thoroughly rebuild housing, urban expansion, and mobility policies. Is it possible to imagine a response as energetic as before COVID-19 against climate change and socio-spatial inequality?",
+    "word_count": 767
+  },
+  {
+    "venue_id": "2351",
+    "venue_acronym": "IMX",
+    "venue_title": "ACM International Conference on Interactive Media Experiences",
+    "venue_rank": "C",
+    "paper_title": "Hugging from A Distance: Building Interpersonal Relationships in Social Virtual Reality",
+    "abstract": "This paper focuses on how the emerging social VR systems, as new and unique social interaction spaces that afford high-fidelity and multidimensional physical presence, may support building interpersonal relationships in a more nuanced, immersive, and embodied way. Based on 30 interviews, our investigation focuses on 1) the main reasons why people build and foster interpersonal relationships in social VR; 2) various novel activities through which users can foster relationships in social VR; and 3) the complicated influences of social VR mediated relationships on users\u2019 online and offline social lives. We contribute to better understanding mediated interactive experiences by shedding light on the novel role of social VR in transforming how people meet, interact, and establish connections with others compared to other forms of media. We also provide potential directions to inform the design of future social VR systems to better afford healthy, fulfilling, and supportive interpersonal relationships.",
+    "word_count": 147
+  },
+  {
+    "venue_id": "2351",
+    "venue_acronym": "IMX",
+    "venue_title": "ACM International Conference on Interactive Media Experiences",
+    "venue_rank": "C",
+    "paper_title": "Audience Management Practices of Live Streamers on Twitch",
+    "abstract": "Live streaming is a unique medium that merges different layers of communication by facilitating individual, group, and mass communication simultaneously. Streamers who broadcast themselves on live streaming platforms such as Twitch are their own media entity and have the challenge of having to manage interactions with many different types of online audiences beyond the translucent platform interfaces. Through qualitative interviews with 25 Twitch streamers, in this paper we share streamers\u2019 practices of discovering audience composition, categorizing audience groups, and developing appropriate mechanisms to interact with them despite geographical, technological, and temporal limitations. We discuss streamers\u2019 appropriation of real-time signals provided by these platforms as sources of information, and their dependence on both technology and voluntary human labor to scale their media entity. We conclude with design recommendations for streaming platforms to provide streamer-centric tools for audience management, especially for knowledge discovery and growth management. .",
+    "word_count": 145
+  },
+  {
+    "venue_id": "31",
+    "venue_acronym": "WSDM",
+    "venue_title": "ACM International Conference on Web Search and Data Mining",
+    "venue_rank": "A",
+    "paper_title": "Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation",
+    "abstract": "Recent advancements of sequential deep learning models such as Transformer and BERT have significantly facilitated the sequential recommendation. However, according to our study, the distribution of item embeddings generated by these models tends to degenerate into an anisotropic shape, which may result in high semantic similarities among embeddings. In this paper, both empirical and theoretical investigations of this representation degeneration problem are first provided, based on which a novel recommender model DuoRec is proposed to improve the item embeddings distribution. Specifically, in light of the uniformity property of contrastive learning, a contrastive regularization is designed for DuoRec to reshape the distribution of sequence representations. Given the convention that the recommendation task is performed by measuring the similarity between sequence representations and item embeddings in the same space via dot product, the regularization can be implicitly applied to the item embedding distribution. Existing contrastive learning methods mainly rely on data level augmentation for user-item interaction sequences through item cropping, masking, or reordering and can hardly provide semantically consistent augmentation samples. In DuoRec, a model-level augmentation is proposed based on Dropout to enable better semantic preserving. Furthermore, a novel sampling strategy is developed, where sequences having the same target item are chosen hard positive samples. Extensive experiments conducted on five datasets demonstrate the superior performance of the proposed DuoRec model compared with baseline methods. Visualization results of the learned representations validate that DuoRec can largely alleviate the representation degeneration problem.",
+    "word_count": 238
+  },
+  {
+    "venue_id": "31",
+    "venue_acronym": "WSDM",
+    "venue_title": "ACM International Conference on Web Search and Data Mining",
+    "venue_rank": "A",
+    "paper_title": "Graph Neural Networks for Recommender System",
+    "abstract": "Recently, graph neural network (GNN) has become the new state-of-the-art approach in many recommendation problems, with its strong ability to handle structured data and to explore high-order information. However, as the recommendation tasks are diverse and various in the real world, it is quite challenging to design proper GNN methods for specific problems. In this tutorial, we focus on the critical challenges of GNN-based recommendation and the potential solutions. Specifically, we start from an extensive background of recommender systems and graph neural networks. Then we fully discuss why GNNs are required in recommender systems and the four parts of challenges, including graph construction, network design, optimization, and computation efficiency. Then, we discuss how to address these challenges by elaborating on the recent advances of GNN-based recommendation models, with a systematic taxonomy from four critical perspectives: stages, scenarios, objectives, and applications. Last, we finalize this tutorial with conclusions and discuss important future directions.",
+    "word_count": 152
+  },
+  {
+    "venue_id": "34",
+    "venue_acronym": "IWCMC",
+    "venue_title": "ACM International Wireless Communications and Mobile Computing Conference",
+    "venue_rank": "B",
+    "paper_title": "Towards Supporting Intelligence in 5G/6G Core Networks: NWDAF Implementation and Initial Analysis",
+    "abstract": "Wireless networks, in the fifth-generation and beyond, must support diverse network applications which will support the numerous and demanding connections of today's and tomorrow's devices. Requirements such as high data rates, low latencies, and reliability are crucial considerations and artificial intelligence is incorporated to achieve these requirements for a large number of connected devices. Specifically, intelligent methods and frameworks for advanced analysis are employed by the 5G Core Network Data Analytics Function (NWDAF) to detect patterns and ascribe detailed action information to accommodate end users and improve network performance. To this end, the work presented in this paper incorporates a functional NWDAF into a 5G network developed using open source software. Furthermore, an analysis of the network data collected by the NWDAF and the valuable insights which can be drawn from it have been presented with detailed Network Function interactions. An example application of such insights used for intelligent network management is outlined. Finally, the expected limitations of 5G networks are discussed as motivation for the development of 6G networks.",
+    "word_count": 170
+  },
+  {
+    "venue_id": "34",
+    "venue_acronym": "IWCMC",
+    "venue_title": "ACM International Wireless Communications and Mobile Computing Conference",
+    "venue_rank": "B",
+    "paper_title": "Explainable AI-based Federated Deep Reinforcement Learning for Trusted Autonomous Driving",
+    "abstract": "Recently, the concept of autonomous driving became prevalent in the domain of intelligent transportation due to the promises of increased safety, traffic efficiency, fuel economy and reduced travel time. Numerous studies have been conducted in this area to help newcomer vehicles plan their trajectory and velocity. However, most of these proposals only consider trajectory planning using conjunction with a limited data set (i.e., metropolis areas, highways, and residential areas) or assume fully connected and automated vehicle environment. Moreover, these approaches are not explainable and lack trust regarding the contributions of the participating vehicles. To tackle these problems, we design an Explainable Artificial Intelligence (XAI) Federated Deep Reinforcement Learning model to improve the effectiveness and trustworthiness of the trajectory decisions for newcomer Autonomous Vehicles (AVs). When a newcomer AV seeks help for trajectory planning, the edge server launches a federated learning process to train the trajectory and velocity prediction model in a distributed collaborative fashion among participating AVs. One essential challenge in this approach is AVs selection, i.e., how to select the appropriate AVs that should participate in the federated learning process. For this purpose, XAI is first used to compute the contribution of each feature contributed by each vehicle to the overall solution. This helps us compute the trust value for each AV in the model. Then, a trust-based deep reinforcement learning model is put forward to make the selection decisions. Experiments using a real-life dataset show that our solution achieves better performance than benchmark solutions (i.e., Deep Q-Network (DQN), and Random Selection (RS)).",
+    "word_count": 254
+  },
+  {
+    "venue_id": "37",
+    "venue_acronym": "ACMMM",
+    "venue_title": "ACM Multimedia",
+    "venue_rank": "A*",
+    "paper_title": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
+    "abstract": "Self-supervised pre-training techniques have achieved remarkable progress in Document AI. Most multimodal pre-trained models use a masked language modeling objective to learn bidirectional representations on the text modality, but they differ in pre-training objectives for the image modality. This discrepancy adds difficulty to multimodal representation learning. In this paper, we propose LayoutLMv3 to pre-train multimodal Transformers for Document AI with unified text and image masking. Additionally, LayoutLMv3 is pre-trained with a word-patch alignment objective to learn cross-modal alignment by predicting whether the corresponding image patch of a text word is masked. The simple unified architecture and training objectives make LayoutLMv3 a general-purpose pre-trained model for both text-centric and image-centric Document AI tasks. Experimental results show that LayoutLMv3 achieves state-of-the-art performance not only in text-centric tasks, including form understanding, receipt understanding, and document visual question answering, but also in image-centric tasks such as document image classification and document layout analysis. The code and models are publicly available at https://aka.ms/layoutlmv3.",
+    "word_count": 158
+  },
+  {
+    "venue_id": "37",
+    "venue_acronym": "ACMMM",
+    "venue_title": "ACM Multimedia",
+    "venue_rank": "A*",
+    "paper_title": "MMRotate",
+    "abstract": "We present an open-source toolbox, named MMRotate, which provides a coherent algorithm framework of training, inferring, and evaluation for the popular rotated object detection algorithm based on deep learning. MMRotate implements 18 state-of-the-art algorithms and supports the three most frequently used angle definition methods. To facilitate future research and industrial applications of rotated object detection-related problems, we also provide a large number of trained models and detailed benchmarks to give insights into the performance of rotated object detection. MMRotate is publicly released at https://github.com/open-mmlab/mmrotate.",
+    "word_count": 84
+  },
+  {
+    "venue_id": "57",
+    "venue_acronym": "Group",
+    "venue_title": "ACM Special Interest Group on Supporting Group Work (was SIGGRoup)",
+    "venue_rank": "B",
+    "paper_title": "Lean Construction 4.0: Exploring the Challenges of Development in the AEC Industry",
+    "abstract": "In 1994, Lean Construction was understood as the application of Toyota Production principles to Construction.Since then, Lean Construction researchers and advocates have made two fundamental contributions: i) Lean Construction has become a production management theory in its own right; ii) Lean Construction has involved not only production management, but also people, technology, sustainability, safety, education, among others.With the arrival of the \"fourth industrial revolution\" or Industry 4.0, there has been seminal research attempts to acknowledge the influence of Industry 4.0 on the architecture-engineering-construction (AEC) industry (e.g.Construction 4.0), where the focus has been primarily on technology.However, for Lean Construction to keep evolving and serving the AEC industry, it must embrace the changes propelled by Industry 4.0, but maintain the people-processes-technology triad at its core.We argue that a shift towards Lean Construction 4.0 is needed, paying attention to the synergies between production management theory and digital/smart technologies.The term \"Lean Construction 4.0\" does represent the vision where we envision the AEC industry to be in the future, rather than its current status.The goal of this paper is not to propose an implementation plan, but to identify research needs and to motivate a discussion on the role of Lean Construction in facing the challenges of adopting Industry 4.0 in the AEC industry.",
+    "word_count": 208
+  },
+  {
+    "venue_id": "57",
+    "venue_acronym": "Group",
+    "venue_title": "ACM Special Interest Group on Supporting Group Work (was SIGGRoup)",
+    "venue_rank": "B",
+    "paper_title": "Lean Tools Proposal to Mitigate Delays and Cost Overruns in Construction Projects",
+    "abstract": "Construction projects are carried out under the triple constraint of cost, time, and scope, as stated in the project management literature.However, time and cost deviations in the construction industry are frequent, and their magnitude in many cases is considerable, generating harmful consequences.This paper developed a literature review to examine 33 research papers published since 1988 in the Web of Science database to identify the main factors causing these deviations, demonstrating that there is no evidence that it is a problem exclusive from a region, country, or project type.A list of 74 factors has been identified from the top ten reported in each paper.The factors were grouped, taking into account their origin.Simultaneously through literature review, tools, methods, and approaches of Lean Construction were also identified, and after an analysis of its nature, these tools were assigned to the previously identified factors considering the possibilities to mitigate their effects.For more than 88% of the identified factors, a Lean tool, method, or approach was identified, demonstrating that both topics are related, and the body of literature developed must be integrated.",
+    "word_count": 177
+  },
+  {
+    "venue_id": "65",
+    "venue_acronym": "STOC",
+    "venue_title": "ACM Symposium on Theory of Computing",
+    "venue_rank": "A*",
+    "paper_title": "Email Threat Detection Using Distinct Neural Network Approaches.",
+    "abstract": "This paper describes different approaches to detect malicious content in email interactions through a combination of machine learning and natural language processing tools. Specifically, several neural network designs are tested on word embedding representations to detect suspicious messages and separate them from non-suspicious, benign email. The proposed approaches are trained and tested on distinct email collections, including datasets constructed from publicly available corpora (such as Enron, APWG, etc.) as well as several smaller, non-public datasets used in recent government evaluations. Experimental results show that back-propagation both with and without recurrent neural layers outperforms current state of the art techniques that include supervised learning algorithms with stylometric elements of texts as features. Our results also demonstrate that word embedding vectors are effective means for capturing certain aspects of text meaning that can be teased out through machine learning in non-linear/complex neural networks, in order to obtain highly accurate detection of malicious emails based on email text alone.",
+    "word_count": 156
+  },
+  {
+    "venue_id": "65",
+    "venue_acronym": "STOC",
+    "venue_title": "ACM Symposium on Theory of Computing",
+    "venue_rank": "A*",
+    "paper_title": "Analysis of Online Conversations to Detect Cyberpredators Using Recurrent Neural Networks.",
+    "abstract": "We present an automated approach to analyze the text of an online conversation and determine whether one of the participants is a cyberpredator who is preying on another participant. The task is divided into two stages, 1) the classification of each message, and 2) the classification of the entire conversation. Each stage uses a Recurrent Neural Network (RNN) to perform the classification task.",
+    "word_count": 63
+  },
+  {
+    "venue_id": "97",
+    "venue_acronym": "AiML",
+    "venue_title": "Advances in Modal Logic",
+    "venue_rank": "B",
+    "paper_title": "Temporal interpretation of intuitionistic quantifiers",
+    "abstract": "We show that intuitionistic quantifiers admit the following temporal interpretation: $\\forall x A$ is true at a world $w$ iff $A$ is true at every object in the domain of every future world, and $\\exists x A$ is true at $w$ iff $A$ is true at some object in the domain of some past world. For this purpose we work with a predicate version of the well-known tense propositional logic $\\sf S4.t$. The predicate logic $\\sf Q^\\circ S4.t$ is obtained by weakening the axioms of the standard predicate extension $\\sf QS4.t$ of $\\sf S4.t$ along the lines Corsi weakened $\\sf QK$ to $\\sf Q^\\circ K$. The Godel translation embeds the predicate intuitionistic logic $\\sf IQC$ into $\\sf QS4$ fully and faithfully. We provide a temporal version of the Godel translation and prove that it embeds $\\sf IQC$ into $\\sf Q^\\circ S4.t$ fully and faithfully; that is, we show that a sentence is provable in $\\sf IQC$ iff its translation is provable in $\\sf Q^\\circ S4.t$. Faithfulness is proved using syntactic methods, while we prove fullness utilizing the generalized Kripke semantics of Corsi.",
+    "word_count": 182
+  },
+  {
+    "venue_id": "98",
+    "venue_acronym": "NeurIPS",
+    "venue_title": "Advances in Neural Information Processing Systems (was NIPS)",
+    "venue_rank": "A*",
+    "paper_title": "Training Generative Adversarial Networks with Limited Data",
+    "abstract": "Training generative adversarial networks (GAN) using too little data typically leads to discriminator overfitting, causing training to diverge. We propose an adaptive discriminator augmentation mechanism that significantly stabilizes training in limited data regimes. The approach does not require changes to loss functions or network architectures, and is applicable both when training from scratch and when fine-tuning an existing GAN on another dataset. We demonstrate, on several datasets, that good results are now possible using only a few thousand training images, often matching StyleGAN2 results with an order of magnitude fewer images. We expect this to open up new application domains for GANs. We also find that the widely used CIFAR-10 is, in fact, a limited data benchmark, and improve the record FID from 5.59 to 2.42.",
+    "word_count": 126
+  },
+  {
+    "venue_id": "98",
+    "venue_acronym": "NeurIPS",
+    "venue_title": "Advances in Neural Information Processing Systems (was NIPS)",
+    "venue_rank": "A*",
+    "paper_title": "Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains",
+    "abstract": "We show that passing input points through a simple Fourier feature mapping enables a multilayer perceptron (MLP) to learn high-frequency functions in low-dimensional problem domains. These results shed light on recent advances in computer vision and graphics that achieve state-of-the-art results by using MLPs to represent complex 3D objects and scenes. Using tools from the neural tangent kernel (NTK) literature, we show that a standard MLP fails to learn high frequencies both in theory and in practice. To overcome this spectral bias, we use a Fourier feature mapping to transform the effective NTK into a stationary kernel with a tunable bandwidth. We suggest an approach for selecting problem-specific Fourier features that greatly improves the performance of MLPs for low-dimensional regression tasks relevant to the computer vision and graphics communities.",
+    "word_count": 129
+  },
+  {
+    "venue_id": "211",
+    "venue_acronym": "ACE",
+    "venue_title": "Australasian Computing Education Conference (ACE)",
+    "venue_rank": "Australasian B",
+    "paper_title": "How much and why are we willing to pay for energy-efficient homes? A stated preferences analysis in Barcelona",
+    "abstract": "En la literatura, la evidencia emp\u00edrica sobre las primas verdes para los hogares con eficiencia energ\u00e9tica no proporciona las razones que producen tal incremento de precios. Este documento, utilizando encuestas de preferencias declaradas, explora si los hogares en Barcelona est\u00e1n dispuestos a pagar (WTP) por una mejora en la clasificaci\u00f3n proveniente de los Certificados de Eficiencia Energ\u00e9tica (EPC) y las razones que explican su variaci\u00f3n. Los resultados sugieren que, en general, las personas desconocen el esquema EPC y tienden a confundir el rendimiento energ\u00e9tico de los hogares con la calidad arquitect\u00f3nica general. Dichas limitaciones reducen la WTP para hogares eficientes, mientras que otras percepciones como la comodidad y una mejor condici\u00f3n de salud asociada con el rendimiento energ\u00e9tico parecen estar correlacionadas positivamente. Adem\u00e1s, el an\u00e1lisis estratificado indica la existencia de sensibilidades divergentes asociadas con condiciones socioecon\u00f3micas. En general, plantea desaf\u00edos importantes para el dise\u00f1o de pol\u00edticas p\u00fablicas dirigidas a fomentar la difusi\u00f3n de hogares con eficiencia energ\u00e9tica. Los resultados de este documento implican desaf\u00edos importantes para la comunicaci\u00f3n de la pol\u00edtica de EPC en Espa\u00f1a, no solo porque la sociedad no es monol\u00edtica, tiene motivaciones divergentes cuando se apuesta por una vivienda eficiente, sino tambi\u00e9n porque la informaci\u00f3n superficial parece ser ineficiente para crear conciencia sobre la implicaci\u00f3n del rendimiento energ\u00e9tico de los edificios. En la literatura, l'evid\u00e8ncia emp\u00edrica sobre les primes verds per a les llars amb efici\u00e8ncia energ\u00e8tica no proporciona les raons que produeixen aquest increment de preus. Aquest document, utilitzant enquestes de prefer\u00e8ncies declarades, explora si les llars a Barcelona estan disposats a pagar (WTP) per una millora en la classificaci\u00f3 provinent dels Certificats d'Efici\u00e8ncia Energ\u00e8tica (EPC) i les raons que expliquen la seva variaci\u00f3. Els resultats suggereixen que, en general, les persones desconeixen l'esquema EPC i tendeixen a confondre el rendiment energ\u00e8tic de les llars amb la qualitat arquitect\u00f2nica general. Aquestes limitacions redueixen la WTP per a llars eficients, mentre que altres percepcions com la comoditat i una millor condici\u00f3 de salut associada amb el rendiment energ\u00e8tic semblen estar correlacionades positivament. A m\u00e9s, l'an\u00e0lisi estratificat indica l'exist\u00e8ncia de sensibilitats divergents associades amb condicions socioecon\u00f2miques. En general, planteja reptes importants per al disseny de pol\u00edtiques p\u00fabliques dirigides a fomentar la difusi\u00f3 de llars amb efici\u00e8ncia energ\u00e8tica. Els resultats d'aquest document impliquen reptes importants per a la comunicaci\u00f3 de la pol\u00edtica d'EPC a Espanya, no nom\u00e9s perqu\u00e8 la societat no \u00e9s monol\u00edtica, t\u00e9 motivacions divergents quan s'aposta per un habitatge eficient, sin\u00f3 tamb\u00e9 perqu\u00e8 la informaci\u00f3 superficial sembla ser ineficient per a crear consci\u00e8ncia sobre la implicaci\u00f3 del rendiment energ\u00e8tic dels edificis.Paraules clau: Valoraci\u00f3 contingent; valoraci\u00f3 de b\u00e9ns immobles; efici\u00e8ncia energ\u00e8tica; certificat d'efici\u00e8ncia energ\u00e8tica In the literature, the empirical evidence on the green premium for energy-efficient homes does not provide the reasons that produce such price increment. This paper, using stated preferences surveys, explores whether households in Barcelona are willing to pay (WTP) for an improvement in the ranking coming from Energy Performance Certificates (EPC) and the reasons explaining its variance. The results suggest that, in general, people are unaware of the EPC scheme, and tend to confound energy performance of homes with the overall architectonic quality. Such limitations reduce the WTP for efficient homes, while other perceptions such as comfort and an improved health condition associated with energy performance appear as positively correlated. Furthermore, the stratified analysis indicates the existence of divergent sensibilities associated with socioeconomic conditions. On the whole, it poses important challenges for the design of public policies aimed at fostering the diffusion of energy-efficient homes. The findings of this paper imply important challenges for the communication of the EPC policy in Spain, not only because society is not monolithic, having divergent motivations when bidding for efficient housing, but also because superficial information seems to be inefficient in creating awareness on the implication of the energy performance of buildings.",
+    "word_count": 634
+  },
+  {
+    "venue_id": "211",
+    "venue_acronym": "ACE",
+    "venue_title": "Australasian Computing Education Conference (ACE)",
+    "venue_rank": "Australasian B",
+    "paper_title": "La ciudad que quisi\u00e9ramos despu\u00e9s de COVID-19",
+    "abstract": "La pandemia de COVID-19 ha impactado profundamente las econom\u00edas e incrementado la desigualdad y la pobreza. Los cambios pueden ser tan profundos que dif\u00edcilmente las cosas ser\u00e1n igual que antes en la regi\u00f3n latinoamericana y en sus ciudades. La magnitud del fen\u00f3meno ha sido muy diferente en los pa\u00edses con mayor presencia de la enfermedad. Reconocemos que esta emergencia es apenas la \u201cpunta del iceberg\u201d de la crisis sist\u00e9mica del capitalismo y que sus impactos en las ciudades han sido profundos. Una breve revisi\u00f3n del contexto hist\u00f3rico reciente del desarrollo desigual e insustentable en el subcontinente muestra que ha generado ciudades con problemas tan profundos en lo social, econ\u00f3mico, espacial y ambiental, que representan un caldo de cultivo para la pandemia, para las amenazas (cambio clim\u00e1tico, desigualdad socioespacial) y para otras crisis sanitarias que seguramente vendr\u00e1n en el futuro. Ante este panorama, proponemos que \u201cotra ciudad es posible\u201d si reconocemos que se necesitan cambios de fondo m\u00e1s all\u00e1 de lo ordinario: salir del capitalismo f\u00f3sil, reducir el consumo de energ\u00eda, recuperar los ecosistemas, transformar las ciudades. Requerimos una \u201cmatriz territorial\u201d diferente que reconozca a las ciudades como espacios para el desarrollo y no destinos fatales; que ponga por delante el \u201cderecho a la ciudad\u201d y el \u201cderecho de la naturaleza\u201d; que sean bien gobernadas con la participaci\u00f3n de los ciudadanos. Recuperemos las buenas experiencias: teletrabajo con derechos, reconstruir a fondo las pol\u00edticas de vivienda, de expansi\u00f3n urbana y de movilidad. \u00bfEs posible imaginar una respuesta tan en\u00e9rgica como ante COVID-19 frente al cambio clim\u00e1tico y la desigualdad socioespacial? La pand\u00e8mia de COVID-19 ha impactat profundament les economies i incrementat la desigualtat i la pobresa. Els canvis poden ser tan profunds que dif\u00edcilment les coses seran igual que abans a la regi\u00f3 llatinoamericana i en les seves ciutats. La magnitud del fenomen ha estat molt diferent en els pa\u00efsos amb major pres\u00e8ncia de la malaltia. Reconeixem que aquesta emerg\u00e8ncia \u00e9s tot just la \"punta de l'iceberg\" de la crisi sist\u00e8mica del capitalisme i que els seus impactes a les ciutats han estat profunds. Una breu revisi\u00f3 del context hist\u00f2ric recent del desenvolupament desigual i insostenible en el subcontinent mostra que ha generat ciutats amb problemes tan profunds en el social, econ\u00f2mic, espacial i ambiental, que representen un brou de cultiu per a la pand\u00e8mia, per les amenaces (canvi clim\u00e0tic , desigualtat socioespacial) i per altres crisis sanit\u00e0ries que segurament vindran en el futur. Davant d'aquest panorama, proposem que \"una altra ciutat \u00e9s possible\" si reconeixem que calen canvis de fons m\u00e9s enll\u00e0 de l'ordinari: sortir del capitalisme f\u00f2ssil, reduir el consum d'energia, recuperar els ecosistemes, transformar les ciutats. Requerim una \"matriu territorial\" diferent que reconegui a les ciutats com espais per al desenvolupament i no destinacions fatals; que posi per davant el \"dret a la ciutat\" i el \"dret de la natura\"; que siguin ben governades amb la participaci\u00f3 dels ciutadans. Recuperem les bones experi\u00e8ncies: teletreball amb drets, reconstruir a fons les pol\u00edtiques d'habitatge, d'expansi\u00f3 urbana i de mobilitat. \u00c9s possible imaginar una resposta tan en\u00e8rgica com davant COVID-19 davant del canvi clim\u00e0tic i la desigualtat socioespacial? COVID-19 pandemic has deeply affected the economy and deepening inequality and poverty. Changes are going to be so deep that it is difficult to imagine that things will be as they were before the disease in Latin American countries and their cities. The magnitude of the phenomenon has been different among Latin American countries. We recognize that this crisis is the \u201ctop of the iceberg\u201d of capitalism endemic crisis and that its impacts on cities have been profound. A brief account of the recent historical urban context of Latin American unequal and unsustainable development process shows that it has delivered cities with social, economic, spatial and environmental deep problems which represent a breeding ground for COVID-19, as well as for climate change and social inequality\u2019s threats and for new pandemics to come. Before this panorama, we propose that \u201canother city is possible\u201d, if it is recognized that deep changes have to be carried out beyond the ordinary ones: the health of fossil capitalism; reduce energy consumption; recover ecosystems; transform cities. A different \u201cterritorial matrix\u201d that recognizes cities as spaces for development, not as fatal destinies is needed; able to put ahead of the \u201cright to the city\u201d and the \u201cright of nature\u201d and that cities should be well governed with social participation. We have to recover recent good practices: work at home with labor rights, thoroughly rebuild housing, urban expansion, and mobility policies. Is it possible to imagine a response as energetic as before COVID-19 against climate change and socio-spatial inequality?",
+    "word_count": 767
+  },
+  {
+    "venue_id": "604",
+    "venue_acronym": "CVPR",
+    "venue_title": "IEEE Conference on Computer Vision and Pattern Recognition",
+    "venue_rank": "A*",
+    "paper_title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+    "abstract": "By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential evaluations. To enable DM training on limited computational resources while retaining their quality and flexibility, we apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion models on such a representation allows for the first time to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity. By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text or bounding boxes and high-resolution synthesis becomes possible in a convolutional manner. Our latent diffusion models (LDMs) achieve new state of the art scores for image inpainting and class-conditional image synthesis and highly competitive performance on various tasks, including unconditional image generation, text-to-image synthesis, and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs.",
+    "word_count": 205
+  },
+  {
+    "venue_id": "604",
+    "venue_acronym": "CVPR",
+    "venue_title": "IEEE Conference on Computer Vision and Pattern Recognition",
+    "venue_rank": "A*",
+    "paper_title": "A ConvNet for the 2020s",
+    "abstract": "The \u201cRoaring 20s\u201d of visual recognition began with the introduction of Vision Transformers (ViTs), which quickly superseded ConvNets as the state-of-the-art image classification model. A vanilla ViT, on the other hand, faces difficulties when applied to general computer vision tasks such as object detection and semantic segmentation. It is the hierarchical Transformers (e.g., Swin Transformers) that reintroduced several ConvNet priors, making Transformers practically viable as a generic vision backbone and demonstrating remarkable performance on a wide variety of vision tasks. However, the effectiveness of such hybrid approaches is still largely credited to the intrinsic superiority of Transformers, rather than the inherent inductive biases of convolutions. In this work, we reexamine the design spaces and test the limits of what a pure ConvNet can achieve. We gradually \u201cmodernize\u201d a standard ResNet toward the design of a vision Transformer, and discover several key components that contribute to the performance difference along the way. The outcome of this exploration is a family of pure ConvNet models dubbed ConvNeXt. Constructed entirely from standard ConvNet modules, ConvNeXts compete favorably with Transformers in terms of accuracy and scalability, achieving 87.8% ImageNet top-1 accuracy and outperforming Swin Transformers on COCO detection and ADE20K segmentation, while maintaining the simplicity and efficiency of standard ConvNets.",
+    "word_count": 206
+  },
+  {
+    "venue_id": "701",
+    "venue_acronym": "ISM",
+    "venue_title": "IEEE International Symposium on Multimedia",
+    "venue_rank": "C",
+    "paper_title": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
+    "abstract": "Self-supervised pre-training techniques have achieved remarkable progress in Document AI. Most multimodal pre-trained models use a masked language modeling objective to learn bidirectional representations on the text modality, but they differ in pre-training objectives for the image modality. This discrepancy adds difficulty to multimodal representation learning. In this paper, we propose LayoutLMv3 to pre-train multimodal Transformers for Document AI with unified text and image masking. Additionally, LayoutLMv3 is pre-trained with a word-patch alignment objective to learn cross-modal alignment by predicting whether the corresponding image patch of a text word is masked. The simple unified architecture and training objectives make LayoutLMv3 a general-purpose pre-trained model for both text-centric and image-centric Document AI tasks. Experimental results show that LayoutLMv3 achieves state-of-the-art performance not only in text-centric tasks, including form understanding, receipt understanding, and document visual question answering, but also in image-centric tasks such as document image classification and document layout analysis. The code and models are publicly available at https://aka.ms/layoutlmv3.",
+    "word_count": 158
+  },
+  {
+    "venue_id": "701",
+    "venue_acronym": "ISM",
+    "venue_title": "IEEE International Symposium on Multimedia",
+    "venue_rank": "C",
+    "paper_title": "MMRotate",
+    "abstract": "We present an open-source toolbox, named MMRotate, which provides a coherent algorithm framework of training, inferring, and evaluation for the popular rotated object detection algorithm based on deep learning. MMRotate implements 18 state-of-the-art algorithms and supports the three most frequently used angle definition methods. To facilitate future research and industrial applications of rotated object detection-related problems, we also provide a large number of trained models and detailed benchmarks to give insights into the performance of rotated object detection. MMRotate is publicly released at https://github.com/open-mmlab/mmrotate.",
+    "word_count": 84
+  }
+]

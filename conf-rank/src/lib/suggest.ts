@@ -44,6 +44,7 @@ export interface Suggestion {
   matchedKeywords: string[];
   titleKeywordMatches: string[];
   reasons: string[];
+  semanticScore?: number;
 }
 
 export interface CategoryScore {
@@ -57,6 +58,8 @@ export interface SuggestOptions {
   topN?: number;
   minCategoryScore?: number;
   includeUnranked?: boolean;
+  /** Precomputed semantic embedding cosine similarity per venue id */
+  embeddingScores?: Map<string, number>;
 }
 
 export interface SuggestResult {
@@ -67,6 +70,7 @@ export interface SuggestResult {
   wordCount: number;
   isTooShort: boolean;
   confidence: "high" | "medium" | "low";
+  isSemanticReady: boolean;
 }
 
 const RANK_BASE_WEIGHTS: Record<string, number> = {
@@ -221,6 +225,8 @@ export function suggestVenues(
   const ambition = options.ambition ?? "all";
   const topN = options.topN ?? 12;
   const includeUnranked = options.includeUnranked ?? false;
+  const embeddingScores = options.embeddingScores;
+  const isSemanticReady = Boolean(embeddingScores && embeddingScores.size > 0);
 
   const clean = cleanText(abstract);
   const tokens = tokenize(clean);
@@ -236,6 +242,7 @@ export function suggestVenues(
       wordCount,
       isTooShort: true,
       confidence: "low",
+      isSemanticReady,
     };
   }
 
@@ -244,7 +251,9 @@ export function suggestVenues(
 
   // Confidence assessment
   let confidence: "high" | "medium" | "low" = "low";
-  if (categoryScores.length > 0) {
+  if (isSemanticReady) {
+    confidence = wordCount >= 50 ? "high" : "medium";
+  } else if (categoryScores.length > 0) {
     const topScore = categoryScores[0].score;
     if (topScore >= 8 && wordCount >= 70) confidence = "high";
     else if (topScore >= 3.5) confidence = "medium";
@@ -279,7 +288,7 @@ export function suggestVenues(
       }
     }
 
-    // If no category match, skip this venue unless it has direct title overlap
+    // If no category match, check title/acronym overlap
     const venueTitleTokens = tokenize(cleanText(venue.title));
     const venueAcronymLower = venue.acronym.toLowerCase();
 
@@ -297,11 +306,18 @@ export function suggestVenues(
       Math.min(titleMatches.length * 0.15 + (hasAcronymMention ? 0.35 : 0), 0.6);
 
     // 2b. TF-IDF cosine similarity against venue doc (title+categories+topics).
-    // Captures stems/bigrams beyond the curated lexicon; capped at 0.6 so a
-    // strongly related venue with no exact keyword hit can still surface.
     const simScore = Math.min(similarity(tfidf, venue.id, abstract) * 2.2, 0.6);
 
-    if (categoryAffinity === 0 && titleOverlapScore === 0 && simScore < 0.15) {
+    // 2c. Semantic vector embedding score (cosine similarity, ~0.15..0.75)
+    const embedSim = embeddingScores?.get(venue.id) ?? 0;
+    const normalizedEmbed = Math.max(0, Math.min(1, (embedSim - 0.20) / 0.50));
+
+    if (
+      categoryAffinity === 0 &&
+      titleOverlapScore === 0 &&
+      simScore < 0.15 &&
+      (!isSemanticReady || embedSim < 0.28)
+    ) {
       continue;
     }
 
@@ -313,12 +329,23 @@ export function suggestVenues(
     );
 
     // 4. Combined score formula:
-    // Category match 40% · title overlap 15% · doc similarity 25% · ambition 20%
-    const rawScore =
-      categoryAffinity * 0.4 +
-      titleOverlapScore * 0.15 +
-      simScore * 0.25 +
-      ambitionAdjustment;
+    let rawScore: number;
+    if (isSemanticReady) {
+      // Hybrid: 50% neural embedding + 20% category affinity + 15% doc TF-IDF + 5% title + 10% ambition
+      rawScore =
+        normalizedEmbed * 0.50 +
+        categoryAffinity * 0.20 +
+        simScore * 0.15 +
+        titleOverlapScore * 0.05 +
+        ambitionAdjustment;
+    } else {
+      // Fallback: Category match 40% · title overlap 15% · doc similarity 25% · ambition 20%
+      rawScore =
+        categoryAffinity * 0.4 +
+        titleOverlapScore * 0.15 +
+        simScore * 0.25 +
+        ambitionAdjustment;
+    }
 
     // Normalize to 0-100%
     const boundedScore = Math.max(0.1, Math.min(rawScore, 1.0));
@@ -326,6 +353,15 @@ export function suggestVenues(
 
     // Reasons breakdown
     const reasons: string[] = [];
+    if (isSemanticReady) {
+      if (embedSim >= 0.50) {
+        reasons.push("Exceptional semantic fit to venue scope");
+      } else if (embedSim >= 0.38) {
+        reasons.push("High semantic match to published research");
+      } else if (embedSim >= 0.30) {
+        reasons.push("Semantic alignment with venue topics");
+      }
+    }
     if (matchedCategories.length > 0) {
       const topCat = matchedCategories[0];
       const catData = categoryScores.find((c) => c.category === topCat);
@@ -334,7 +370,7 @@ export function suggestVenues(
         `${topCat} fit${termCount > 0 ? ` (${termCount} keyword${termCount > 1 ? "s" : ""})` : ""}`
       );
     }
-    if (simScore >= 0.25) {
+    if (!isSemanticReady && simScore >= 0.25) {
       reasons.push("Strong text similarity to venue scope/topics");
     }
     if (titleMatches.length > 0) {
@@ -357,6 +393,7 @@ export function suggestVenues(
       matchedKeywords: matchedKeywords.slice(0, 8),
       titleKeywordMatches: titleMatches,
       reasons,
+      semanticScore: isSemanticReady ? embedSim : undefined,
     });
   }
 
@@ -371,5 +408,6 @@ export function suggestVenues(
     wordCount,
     isTooShort: false,
     confidence,
+    isSemanticReady,
   };
 }

@@ -1,23 +1,23 @@
 """Generate venue text embeddings for semantic suggest matching.
 
-Document per venue: title + categories + OpenAlex top topics (when available).
+Document per venue: title + acronym + categories + OpenAlex top topics (when available).
 Model: sentence-transformers/all-MiniLM-L6-v2 (384-dim), L2-normalized,
 quantized to int8 per-vector with per-vector scale factor.
 
 Output: conf-rank/public/venue-embeddings.json
 {model, dims, vectors: {id: {s: scale, q: [int8...]}}}
-
-Requires: pip install -r scraper/requirements-embed.txt
-Run after merge.py so conferences.json is fresh.
 """
 
 import json
+import os
 from pathlib import Path
+import torch
+import torch.nn.functional as F
+from transformers import AutoTokenizer, AutoModel
 
-D = Path(__file__).parent / "data"
 CONF = Path(__file__).parent.parent / "conf-rank" / "src" / "data" / "conferences.json"
 OUT = Path(__file__).parent.parent / "conf-rank" / "public" / "venue-embeddings.json"
-MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+MODEL_ID = "sentence-transformers/all-MiniLM-L6-v2"
 
 
 def venue_doc(c: dict) -> str:
@@ -33,28 +33,42 @@ def venue_doc(c: dict) -> str:
 
 
 def main():
-    from sentence_transformers import SentenceTransformer
-
     confs = json.loads(CONF.read_text())
     docs = [venue_doc(c) for c in confs]
-    print(f"Embedding {len(docs)} venue docs with {MODEL}...")
+    print(f"Embedding {len(docs)} venue docs with {MODEL_ID}...")
 
-    model = SentenceTransformer(MODEL)
-    emb = model.encode(docs, normalize_embeddings=True, show_progress_bar=True)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+    model = AutoModel.from_pretrained(MODEL_ID)
+    model.eval()
+
+    batch_size = 64
+    all_embs = []
+    for i in range(0, len(docs), batch_size):
+        batch = docs[i : i + batch_size]
+        encoded = tokenizer(
+            batch, padding=True, truncation=True, max_length=512, return_tensors="pt"
+        )
+        with torch.no_grad():
+            out = model(**encoded)
+        mask = encoded["attention_mask"].unsqueeze(-1).expand(out[0].size()).float()
+        emb = torch.sum(out[0] * mask, 1) / torch.clamp(mask.sum(1), min=1e-9)
+        normed = F.normalize(emb, p=2, dim=1)
+        all_embs.append(normed)
+
+    emb_tensor = torch.cat(all_embs, dim=0).cpu().numpy()
 
     vectors = {}
-    for c, vec in zip(confs, emb):
+    for c, vec in zip(confs, emb_tensor):
         scale = float(abs(vec).max()) or 1.0
-        q = [int(round(x / scale * 127)) for x in vec]
+        q = [int(round(float(x) / scale * 127)) for x in vec]
         vectors[c["id"]] = {"s": round(scale, 6), "q": q}
 
-    payload = {"model": MODEL, "dims": int(emb.shape[1]), "vectors": vectors}
+    payload = {"model": MODEL_ID, "dims": int(emb_tensor.shape[1]), "vectors": vectors}
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    import os
     tmp = OUT.with_suffix(".tmp")
     tmp.write_text(json.dumps(payload, separators=(",", ":")))
     os.replace(tmp, OUT)
-    print(f"wrote -> {OUT} ({OUT.stat().st_size // 1024} KB)")
+    print(f"Wrote -> {OUT} ({OUT.stat().st_size // 1024} KB)")
 
 
 if __name__ == "__main__":
