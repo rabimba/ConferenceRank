@@ -19,4 +19,10 @@ Deployed automatically to GitHub Pages via GitHub Actions.
 
 ---
 
+## License & Attribution
+
+This project is licensed under the [Apache License, Version 2.0](LICENSE).
+
+In accordance with Section 4(d) of the Apache-2.0 License, any redistribution, modification, or hosted derivative of this project must retain the attribution notice specified in the [NOTICE](NOTICE) file, linking back to [ConferenceRank](https://github.com/rabimba/ConferenceRank).
+
 Made with ❤️ by [Rabimba](https://rabimba.github.io/)
