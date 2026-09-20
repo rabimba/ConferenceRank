@@ -19,6 +19,13 @@ export default function SiteHeader() {
         </div>
         <div className="flex items-center gap-2">
           <Link
+            href="/journals/"
+            className="hidden items-center gap-1.5 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-bold text-foreground hover:border-accent hover:bg-accent-soft hover:text-accent sm:inline-flex dark:hover:border-accent dark:hover:bg-accent-soft dark:hover:text-accent transition"
+          >
+            <span>📚</span>
+            <span>Journals</span>
+          </Link>
+          <Link
             href="/?tab=deadlines"
             className="hidden items-center gap-1.5 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-bold text-foreground hover:border-accent hover:bg-accent-soft hover:text-accent sm:inline-flex dark:hover:border-accent dark:hover:bg-accent-soft dark:hover:text-accent transition"
           >
