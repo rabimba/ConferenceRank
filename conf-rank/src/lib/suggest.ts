@@ -2,8 +2,13 @@ import {
   CATEGORY_LEXICON,
   METHODOLOGY_SIGNALS,
   ENGLISH_STOPWORDS,
-} from "./lexicon";
-import { buildTfidfIndex, similarity, type TfidfIndex } from "./similarity";
+} from "./lexicon.ts";
+import {
+  buildTfidfIndex,
+  similarity,
+  type TfidfIndex,
+  type VenueType,
+} from "./similarity.ts";
 
 let tfidfCache: { venuesKey: string; index: TfidfIndex } | null = null;
 
@@ -14,6 +19,7 @@ function getTfidfIndex(venues: SuggesterVenue[]): TfidfIndex {
     venues.map((v) => ({
       id: v.id,
       text: [v.title, v.acronym, ...v.categories, ...(v.topics ?? [])].join(" "),
+      type: v.type ?? "conference",
     })),
   );
   tfidfCache = { venuesKey: key, index };
@@ -22,9 +28,12 @@ function getTfidfIndex(venues: SuggesterVenue[]): TfidfIndex {
 
 export interface SuggesterVenue {
   id: string;
+  type?: VenueType;
   acronym: string;
   title: string;
   rank: string;
+  core_rank?: string | null;
+  sjr_quartile?: string | null;
   categories: string[];
   latest_rate: number | null;
   latest_accepted: number | null;
@@ -55,6 +64,7 @@ export interface CategoryScore {
 
 export interface SuggestOptions {
   ambition?: AmbitionTier;
+  venueType?: "all" | VenueType;
   topN?: number;
   minCategoryScore?: number;
   includeUnranked?: boolean;
@@ -82,6 +92,10 @@ const RANK_BASE_WEIGHTS: Record<string, number> = {
   "Australasian C": 0.40,
   National: 0.30,
   Unranked: 0.20,
+  Q1: 0.85,
+  Q2: 0.65,
+  Q3: 0.45,
+  Q4: 0.35,
 };
 
 function cleanText(text: string): string {
@@ -168,9 +182,16 @@ function extractKeywordsAndCategories(cleanStr: string): {
 }
 
 function determineTier(venue: SuggesterVenue): "stretch" | "target" | "safe" {
-  if (venue.rank === "A*") return "stretch";
+  if (venue.rank === "A*" || venue.core_rank === "A*") return "stretch";
   if (venue.latest_rate !== null && venue.latest_rate <= 20) return "stretch";
-  if (venue.rank === "A") return "target";
+  if (
+    venue.rank === "A" ||
+    venue.core_rank === "A" ||
+    venue.sjr_quartile === "Q1" ||
+    venue.rank === "Q1"
+  ) {
+    return "target";
+  }
   if (venue.latest_rate !== null && venue.latest_rate <= 30) return "target";
   return "safe";
 }
@@ -189,11 +210,15 @@ function computeAmbitionAdjustment(
   const isModerate =
     rank === "A" ||
     rank === "B" ||
+    rank === "Q1" ||
+    rank === "Q2" ||
     (latestRate !== null && latestRate > 20 && latestRate <= 32);
   const isAccessible =
     rank === "C" ||
     rank === "Australasian B" ||
     rank === "Australasian C" ||
+    rank === "Q3" ||
+    rank === "Q4" ||
     (latestRate !== null && latestRate > 32);
 
   if (ambition === "stretch") {
@@ -272,6 +297,13 @@ export function suggestVenues(
   const scoredVenues: Suggestion[] = [];
 
   for (const venue of venues) {
+    if (options.venueType && options.venueType !== "all") {
+      const vType = venue.type ?? "conference";
+      if (vType !== options.venueType) {
+        continue;
+      }
+    }
+
     if (!includeUnranked && (venue.rank === "Unranked" || !venue.rank)) {
       continue;
     }

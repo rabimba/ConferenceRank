@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
+import DualRankBadge from "./DualRankBadge";
 import {
   suggestVenues,
   type SuggesterVenue,
@@ -33,8 +34,11 @@ const SAMPLE_ABSTRACTS = [
   },
 ];
 
+export type VenueTypeFilter = "all" | "conference" | "journal";
+
 export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) {
   const [abstract, setAbstract] = useState("");
+  const [venueType, setVenueType] = useState<VenueTypeFilter>("all");
   const [ambition, setAmbition] = useState<AmbitionTier>("all");
   const [includeUnranked, setIncludeUnranked] = useState(false);
 
@@ -96,14 +100,20 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
     };
   }, [abstract]);
 
+  const filteredVenues = useMemo(() => {
+    if (venueType === "all") return venues;
+    return venues.filter((v) => (v.type ?? "conference") === venueType);
+  }, [venues, venueType]);
+
   const result = useMemo(() => {
-    return suggestVenues(abstract, venues, {
+    return suggestVenues(abstract, filteredVenues, {
       ambition,
+      venueType,
       topN: 18,
       includeUnranked,
       embeddingScores: embeddingScores ?? undefined,
     });
-  }, [abstract, venues, ambition, includeUnranked, embeddingScores]);
+  }, [abstract, filteredVenues, ambition, venueType, includeUnranked, embeddingScores]);
 
   // Group suggestions into tiers
   const tieredSuggestions = useMemo(() => {
@@ -134,7 +144,7 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
               Paste Paper Abstract
             </h2>
             <p className="text-xs text-muted">
-              We analyze vocabulary, research categories, and 384-dim semantic embeddings to suggest relevant CS conferences.
+              We analyze vocabulary, research categories, and 384-dim semantic embeddings to suggest relevant CS conferences and journals.
             </p>
           </div>
           {abstract && (
@@ -214,32 +224,31 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
           </div>
         )}
 
-        {/* Filters and Ambition */}
-        <div className="mt-5 border-t border-stone-200 pt-5 dark:border-stone-800">
+        {/* Filters, Ambition, and Venue Type */}
+        <div className="mt-5 border-t border-stone-200 pt-5 dark:border-stone-800 space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs font-bold text-stone-700 dark:text-stone-300">
-                Target Ambition:
+                Venue Type:
               </span>
               {(
                 [
-                  { id: "all", label: "All Tiers", desc: "Balanced ranking" },
-                  { id: "stretch", label: "🚀 Stretch", desc: "A* & highly selective" },
-                  { id: "target", label: "🎯 Target", desc: "Solid CORE A / B matches" },
-                  { id: "safe", label: "🛡️ Safer Bet", desc: "Accessible B / C tiers" },
+                  { id: "all", label: "All" },
+                  { id: "conference", label: "Conferences" },
+                  { id: "journal", label: "Journals" },
                 ] as const
-              ).map((tier) => (
+              ).map((typeOpt) => (
                 <button
-                  key={tier.id}
-                  onClick={() => setAmbition(tier.id)}
-                  title={tier.desc}
+                  key={typeOpt.id}
+                  type="button"
+                  onClick={() => setVenueType(typeOpt.id)}
                   className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition cursor-pointer ${
-                    ambition === tier.id
+                    venueType === typeOpt.id
                       ? "bg-accent text-accent-contrast"
                       : "border border-stone-200 bg-surface text-stone-600 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800"
                   }`}
                 >
-                  {tier.label}
+                  {typeOpt.label}
                 </button>
               ))}
             </div>
@@ -253,6 +262,34 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
               />
               <span>Include Unranked Venues</span>
             </label>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-bold text-stone-700 dark:text-stone-300">
+              Target Ambition:
+            </span>
+            {(
+              [
+                { id: "all", label: "All Tiers", desc: "Balanced ranking" },
+                { id: "stretch", label: "🚀 Stretch", desc: "A* & highly selective" },
+                { id: "target", label: "🎯 Target", desc: "Solid CORE A / B matches" },
+                { id: "safe", label: "🛡️ Safer Bet", desc: "Accessible B / C tiers" },
+              ] as const
+            ).map((tier) => (
+              <button
+                key={tier.id}
+                type="button"
+                onClick={() => setAmbition(tier.id)}
+                title={tier.desc}
+                className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition cursor-pointer ${
+                  ambition === tier.id
+                    ? "bg-accent text-accent-contrast"
+                    : "border border-stone-200 bg-surface text-stone-600 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:bg-stone-800"
+                }`}
+              >
+                {tier.label}
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -325,20 +362,54 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
             Ready to find your venue
           </h3>
           <p className="mx-auto mt-1 max-w-md text-xs text-muted">
-            Paste your draft abstract above or click one of the quick samples to see tailored venue recommendations across CORE prestige tiers.
+            Paste your draft abstract above or click one of the quick samples to see tailored venue recommendations across CORE prestige tiers and SJR quartiles.
           </p>
         </div>
       ) : result.suggestions.length === 0 ? (
         <div className="rounded-xl border border-stone-200 bg-surface p-8 text-center dark:border-stone-800">
           <p className="text-sm font-semibold text-stone-700 dark:text-stone-300">
-            No matching conferences found for the detected topics.
+            No matching {venueType === "journal" ? "journals" : venueType === "conference" ? "conferences" : "venues"} found for the detected topics.
           </p>
           <p className="mt-1 text-xs text-muted">
-            Try expanding your abstract text or enabling &quot;Include Unranked Venues&quot;.
+            Try expanding your abstract text{venueType !== "all" ? ", switching filter to 'All'," : ""} or enabling &quot;Include Unranked Venues&quot;.
           </p>
         </div>
       ) : (
         <div className="space-y-8">
+          {/* Segmented type toggle above suggestion results */}
+          <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-stone-200 bg-surface px-4 py-3 dark:border-stone-800 shadow-xs">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-muted">
+                Filter by Type:
+              </span>
+              <div className="inline-flex rounded-lg border border-stone-200 bg-stone-100 p-0.5 dark:border-stone-700 dark:bg-stone-900">
+                {(
+                  [
+                    { id: "all", label: "All" },
+                    { id: "conference", label: "Conferences" },
+                    { id: "journal", label: "Journals" },
+                  ] as const
+                ).map((opt) => (
+                  <button
+                    key={opt.id}
+                    type="button"
+                    onClick={() => setVenueType(opt.id)}
+                    className={`rounded-md px-3 py-1 text-xs font-semibold transition cursor-pointer ${
+                      venueType === opt.id
+                        ? "bg-surface text-accent shadow-xs dark:bg-stone-800 dark:text-accent"
+                        : "text-stone-600 hover:text-foreground dark:text-stone-400"
+                    }`}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <span className="text-xs text-muted">
+              {result.suggestions.length} {venueType === "journal" ? "journals" : venueType === "conference" ? "conferences" : "venues"} matched
+            </span>
+          </div>
+
           {/* Section: Stretch Venues */}
           {(ambition === "all" || ambition === "stretch") &&
             tieredSuggestions.stretch.length > 0 && (
@@ -416,23 +487,42 @@ export default function SuggestClient({ venues }: { venues: SuggesterVenue[] }) 
 
 function VenueCard({ suggestion }: { suggestion: Suggestion }) {
   const { venue, matchPercentage, reasons, semanticScore } = suggestion;
+  const isJournal = venue.type === "journal";
+  const venueHref = isJournal ? `/journal/${venue.id}/` : `/conference/${venue.id}/`;
 
   return (
     <div className="flex flex-col justify-between rounded-xl border border-stone-200 bg-surface p-4 shadow-xs transition hover:border-stone-300 hover:shadow-md dark:border-stone-800 dark:hover:border-stone-700">
       <div>
         <div className="flex items-start justify-between gap-2">
           <Link
-            href={`/conference/${venue.id}/`}
-            className="group flex flex-col"
+            href={venueHref}
+            className="group flex flex-col flex-1 min-w-0"
           >
-            <span className="text-base font-black text-foreground group-hover:text-accent transition">
-              {venue.acronym || venue.title.slice(0, 16)}
-            </span>
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="text-base font-black text-foreground group-hover:text-accent transition">
+                {venue.acronym || (isJournal ? venue.title : venue.title.slice(0, 16))}
+              </span>
+              {isJournal && (
+                <span className="rounded bg-purple-500/10 px-1.5 py-0.2 text-[9px] font-bold text-purple-700 dark:text-purple-300 border border-purple-500/20">
+                  Journal
+                </span>
+              )}
+            </div>
             <span className="line-clamp-2 text-xs text-muted">
               {venue.title}
             </span>
           </Link>
-          <RankBadge rank={venue.rank} size="sm" />
+          <div className="shrink-0">
+            {isJournal ? (
+              <DualRankBadge
+                coreRank={venue.core_rank}
+                sjrQuartile={venue.sjr_quartile}
+                size="sm"
+              />
+            ) : (
+              <RankBadge rank={venue.rank} size="sm" />
+            )}
+          </div>
         </div>
 
         {/* Fit Score & Progress Bar */}
@@ -508,15 +598,19 @@ function VenueCard({ suggestion }: { suggestion: Suggestion }) {
           </span>
         ) : (
           <span className="text-muted">
-            No acceptance data
+            {isJournal
+              ? venue.sjr_quartile
+                ? `SJR ${venue.sjr_quartile}`
+                : "Academic Journal"
+              : "No acceptance data"}
           </span>
         )}
 
         <Link
-          href={`/conference/${venue.id}/`}
+          href={venueHref}
           className="font-bold text-accent hover:underline"
         >
-          View stats →
+          {isJournal ? "View journal →" : "View stats →"}
         </Link>
       </div>
     </div>

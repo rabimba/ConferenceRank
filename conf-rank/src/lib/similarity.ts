@@ -4,7 +4,7 @@
  * rare terms like "differential" or "quantization"). Zero dependencies.
  */
 
-import { ENGLISH_STOPWORDS } from "./lexicon";
+import { ENGLISH_STOPWORDS } from "./lexicon.ts";
 
 function stem(w: string): string {
   // cheap suffix stripping for morphology ("networks"->"network", "learning"->"learn")
@@ -27,30 +27,38 @@ export function docTokens(text: string): string[] {
   return [...words, ...bigrams];
 }
 
-export interface TfidfIndex {
-  idf: Map<string, number>;
-  docs: Map<string, { tf: Map<string, number>; norm: number }>;
+export type VenueType = "conference" | "journal";
+
+export interface VenueDoc {
+  id: string;
+  text: string;
+  type?: VenueType;
 }
 
-export function buildTfidfIndex(docs: { id: string; text: string }[]): TfidfIndex {
+export interface TfidfIndex {
+  idf: Map<string, number>;
+  docs: Map<string, { tf: Map<string, number>; norm: number; type?: VenueType }>;
+}
+
+export function buildTfidfIndex(docs: VenueDoc[]): TfidfIndex {
   const df = new Map<string, number>();
-  const raw = docs.map(({ id, text }) => {
+  const raw = docs.map(({ id, text, type }) => {
     const tf = new Map<string, number>();
     for (const t of docTokens(text)) tf.set(t, (tf.get(t) ?? 0) + 1);
     for (const t of tf.keys()) df.set(t, (df.get(t) ?? 0) + 1);
-    return { id, tf };
+    return { id, tf, type };
   });
   const n = docs.length || 1;
   const idf = new Map<string, number>();
   for (const [t, c] of df) idf.set(t, Math.log(1 + n / c));
-  const out = new Map<string, { tf: Map<string, number>; norm: number }>();
-  for (const { id, tf } of raw) {
+  const out = new Map<string, { tf: Map<string, number>; norm: number; type?: VenueType }>();
+  for (const { id, tf, type } of raw) {
     let norm = 0;
     for (const [t, c] of tf) {
       const w = c * (idf.get(t) ?? 0);
       norm += w * w;
     }
-    out.set(id, { tf, norm: Math.sqrt(norm) || 1 });
+    out.set(id, { tf, norm: Math.sqrt(norm) || 1, type });
   }
   return { idf, docs: out };
 }
@@ -71,4 +79,41 @@ export function similarity(index: TfidfIndex, docId: string, queryText: string):
   }
   qnorm = Math.sqrt(qnorm) || 1;
   return dot / (qnorm * doc.norm);
+}
+
+export interface IndexableVenueInput {
+  id: string;
+  title: string;
+  acronym?: string | null;
+  categories?: string[];
+  topics?: string[];
+  type: VenueType;
+}
+
+/**
+ * Builds a normalized VenueDoc suitable for TF-IDF indexing from titles,
+ * categories, acronyms, and OpenAlex topics.
+ */
+export function buildVenueDoc(venue: IndexableVenueInput): VenueDoc {
+  const text = [
+    venue.title,
+    venue.acronym ?? "",
+    ...(venue.categories ?? []),
+    ...(venue.topics ?? []),
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return {
+    id: venue.id,
+    type: venue.type,
+    text,
+  };
+}
+
+/**
+ * Index a mixed list of conferences and journals into a TF-IDF index.
+ */
+export function indexVenueDocuments(venues: IndexableVenueInput[]): TfidfIndex {
+  return buildTfidfIndex(venues.map(buildVenueDoc));
 }
