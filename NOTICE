@@ -8,3 +8,11 @@ Under Section 4(d) of the Apache License, Version 2.0, any distribution or
 derivative work based on ConferenceRank must include this notice and retain
 prominent attribution linking back to ConferenceRank:
 https://github.com/rabimba/ConferenceRank
+
+Third-Party Data & Rankings Attribution:
+- CORE Conference and Journal Rankings © Computing Research and Education
+  Association of Australasia (CORE / ICORE: https://www.core.edu.au,
+  https://portal.core.edu.au/jnl-ranks/).
+- SCImago Journal & Country Rank (SJR) indicators © SCImago Lab / Scopus (Elsevier B.V.),
+  used under CC BY-NC-SA 4.0 (https://www.scimagojr.com). Indicator dataset compiled
+  and maintained by Michael E. Rose (SCImagoJournalRankIndicators).

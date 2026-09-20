@@ -1,6 +1,6 @@
 # ConferenceRank scrapers
 
-Pipeline (run in order):
+## Conference Pipeline (run in order):
 
 ```
 python3 fetch_core.py           # ~25 min: ICORE CSV + 987 detail pages (rank history)
@@ -13,6 +13,18 @@ cd ../conf-rank && npm run build
 ```
 
 All raw responses cached under `data/raw/` — re-runs are cheap and resume-safe.
+
+## Journal Pipeline
+
+Run to fetch and merge journal rankings (CORE Journal portal + SCImago Journal Rank indicators):
+
+```bash
+python3 fetch_core_journals.py   # downloads CORE2020 & ERA2010 journal rankings -> data/core_journals.json
+python3 fetch_sjr.py             # downloads & filters SCImago CS journals (field 17xx) -> data/sjr.json
+python3 merge_journals.py        # merges CORE + SJR datasets -> conf-rank/src/data/journals.json
+```
+
+Raw files cached under `data/raw/core_journals/` and `data/raw/sjr_all.csv`.
 
 ## CLI flags
 
@@ -35,7 +47,8 @@ Not wired into the UI yet — the suggester uses lexicon + TF-IDF similarity
 
 ## Data Sources
 
-- **CORE Rankings**: © CORE / ICORE ranking portal.
+- **CORE Conference & Journal Rankings**: © CORE / ICORE ranking portal (Computing Research and Education Association of Australasia).
+- **SCImago Journal Rank (SJR)**: CS journal indicators and quartiles © SCImago Lab / Scopus (Elsevier B.V.), CC BY-NC-SA 4.0; dataset compiled by Michael E. Rose.
 - **Paper Copilot**: per-year acceptance rate, tiers (oral, poster), totals.
 - **lixin4ever**: historical acceptance rates for major AI/ML/NLP/vision venues.
 - **csconferences & ccf-deadlines (`manual_stats.json`)**: multi-decade acceptance rates for major systems, theory, databases, networks, graphics, and security venues (SIGCOMM, SOSP, OSDI, IEEE S&P, USENIX Security, SIGMOD, VLDB, MICRO, ISCA, ASPLOS, FAST, PLDI, POPL, STOC, FOCS, SODA, CRYPTO, etc.).
@@ -53,5 +66,5 @@ Not wired into the UI yet — the suggester uses lexicon + TF-IDF similarity
 - **Proxy CA**: set `PROXY_CA` env var to a custom CA bundle when behind a mitm
   proxy (defaults to a machine-local path, ignored if absent). For
   `embed_venues.py` / HF downloads also set `SSL_CERT_FILE`/`REQUESTS_CA_BUNDLE`.
-- Rank data © CORE/ICORE. Acceptance stats © Paper Copilot, lixin4ever.
+- Rank data © CORE/ICORE. Journal indicators © SCImago Lab. Acceptance stats © Paper Copilot, lixin4ever.
   Topics/institutions via OpenAlex (indexed subset, relative shares).
