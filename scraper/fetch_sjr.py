@@ -15,6 +15,14 @@ CACHED_RAW_FILE = Path("/var/folders/6v/d2458d5j3r78w9tm_hqcl05h0000gp/T/opencod
 def clean_issn(s):
     return re.sub(r"[^0-9X]", "", s.upper())
 
+def parse_issns(raw_issn):
+    res = []
+    for part in re.split(r"[,;\s]+", raw_issn or ""):
+        c = clean_issn(part)
+        if c and len(c) == 8:
+            res.append(c)
+    return res
+
 def fetch_and_parse_sjr():
     RAW_FILE.parent.mkdir(parents=True, exist_ok=True)
     if not RAW_FILE.exists():
@@ -45,7 +53,8 @@ def fetch_and_parse_sjr():
             sjr_str = row.get("SJR", "").strip()
             sjr = float(sjr_str) if sjr_str else None
             h_index = int(row.get("h-index", 0)) if row.get("h-index") else None
-            issn = clean_issn(row.get("Issn", ""))
+            raw_issn = row.get("Issn", "")
+            issns = parse_issns(raw_issn)
 
             if title not in journals:
                 journals[title] = {
@@ -53,8 +62,8 @@ def fetch_and_parse_sjr():
                     "issns": set(),
                     "history": {}
                 }
-            if issn:
-                journals[title]["issns"].add(issn)
+            for i in issns:
+                journals[title]["issns"].add(i)
             journals[title]["history"][year] = {
                 "year": year,
                 "sjr": sjr,

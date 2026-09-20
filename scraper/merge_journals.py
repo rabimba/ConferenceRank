@@ -33,15 +33,31 @@ def slugify(title):
 def clean_issn(s):
     return re.sub(r"[^0-9X]", "", s.upper())
 
+def split_and_clean_issns(raw_issn):
+    res = []
+    for part in re.split(r"[,;\s]+", raw_issn or ""):
+        c = clean_issn(part)
+        if c and len(c) == 8:
+            res.append(c)
+    return res
+
+def format_issn(s):
+    c = clean_issn(s)
+    if len(c) == 8:
+        return f"{c[:4]}-{c[4:]}"
+    return s
+
 def build_journal_record(jid, core_item, sjr_item):
     title = (core_item or {}).get("title") or (sjr_item or {}).get("title")
     issns = set()
     if core_item:
         for i in core_item.get("issns", []):
-            issns.add(i)
+            for ci in split_and_clean_issns(i):
+                issns.add(format_issn(ci))
     if sjr_item:
         for i in sjr_item.get("issns", []):
-            issns.add(i)
+            for ci in split_and_clean_issns(i):
+                issns.add(format_issn(ci))
 
     categories = []
     if core_item:
@@ -93,7 +109,8 @@ def main():
     for c in core_list:
         core_by_title[c["title"].lower().strip()] = c
         for i in c.get("issns", []):
-            core_by_issn[clean_issn(i)] = c
+            for ci in split_and_clean_issns(i):
+                core_by_issn[ci] = c
 
     merged = []
     used_core_ids = set()
@@ -102,9 +119,11 @@ def main():
     for s in sjr_list:
         matched_core = None
         for i in s.get("issns", []):
-            ci = clean_issn(i)
-            if ci in core_by_issn:
-                matched_core = core_by_issn[ci]
+            for ci in split_and_clean_issns(i):
+                if ci in core_by_issn:
+                    matched_core = core_by_issn[ci]
+                    break
+            if matched_core:
                 break
         if not matched_core:
             matched_core = core_by_title.get(s["title"].lower().strip())
