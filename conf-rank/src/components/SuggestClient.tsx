@@ -503,7 +503,7 @@ function VenueCard({ suggestion }: { suggestion: Suggestion }) {
                 {venue.acronym || (isJournal ? venue.title : venue.title.slice(0, 16))}
               </span>
               {isJournal && (
-                <span className="rounded bg-purple-500/10 px-1.5 py-0.2 text-[9px] font-bold text-purple-700 dark:text-purple-300 border border-purple-500/20">
+                <span className="rounded bg-purple-500/10 px-1.5 py-0.5 text-[9px] font-bold text-purple-700 dark:text-purple-300 border border-purple-500/20">
                   Journal
                 </span>
               )}

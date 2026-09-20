@@ -10,7 +10,7 @@ SJR_CSV_URL = "https://raw.githubusercontent.com/Michael-E-Rose/SCImagoJournalRa
 RAW_FILE = Path(__file__).parent / "data" / "raw" / "sjr_all.csv"
 OUT = Path(__file__).parent / "data" / "sjr.json"
 
-CACHED_RAW_FILE = Path("/var/folders/6v/d2458d5j3r78w9tm_hqcl05h0000gp/T/opencode/sjr_all.csv")
+CACHED_RAW_FILE = Path(os.environ.get("SJR_RAW_CSV", "")) if os.environ.get("SJR_RAW_CSV") else None
 
 def clean_issn(s):
     return re.sub(r"[^0-9X]", "", s.upper())

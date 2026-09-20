@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 import requests
 
-CA_BUNDLE = os.environ.get("PROXY_CA", "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem")
+CA_BUNDLE = os.environ.get("PROXY_CA", "")
 
 BASE = "https://portal.core.edu.au/jnl-ranks/"
 SOURCES = ["CORE2020", "ERA2010"]
