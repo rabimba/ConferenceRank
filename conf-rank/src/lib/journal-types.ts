@@ -12,6 +12,8 @@ export interface SJRData {
   history: SJRHistoryPoint[];
 }
 
+export type SJRRecord = SJRData;
+
 export interface JournalRankHistory {
   source: string;
   year?: number;

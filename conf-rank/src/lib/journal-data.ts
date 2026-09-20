@@ -1,14 +1,16 @@
-import journalsJson from "@/data/journals.json";
-import { Journal } from "./journal-types";
+import journalsJson from "../data/journals.json" with { type: "json" };
+import type { Journal } from "./journal-types";
 
 const journals = journalsJson as unknown as Journal[];
+let byId: Map<string, Journal> | null = null;
 
 export function getJournals(): Journal[] {
   return journals;
 }
 
 export function getJournalById(id: string): Journal | undefined {
-  return journals.find((j) => j.id === id);
+  if (!byId) byId = new Map(journals.map((j) => [j.id, j]));
+  return byId.get(id);
 }
 
 export function getAllJournalCategories(): string[] {

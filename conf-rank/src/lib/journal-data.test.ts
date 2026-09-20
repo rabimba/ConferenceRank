@@ -1,28 +1,6 @@
 import test, { describe, it } from "node:test";
 import assert from "node:assert";
-import journalsJson from "../data/journals.json" with { type: "json" };
-import type { Journal } from "./journal-types";
-
-// Test accessors logic directly against data import to ensure correctness under Node test runner
-const journals = journalsJson as unknown as Journal[];
-
-function getJournals(): Journal[] {
-  return journals;
-}
-
-function getJournalById(id: string): Journal | undefined {
-  return journals.find((j) => j.id === id);
-}
-
-function getAllJournalCategories(): string[] {
-  const cats = new Set<string>();
-  for (const j of journals) {
-    for (const c of j.categories) {
-      cats.add(c);
-    }
-  }
-  return Array.from(cats).sort();
-}
+import { getJournals, getJournalById, getAllJournalCategories } from "./journal-data.ts";
 
 describe("journal-data", () => {
   it("loads non-empty list of journals", () => {
