@@ -29,6 +29,7 @@ export interface Journal {
   publisher: string | null;
   country: string | null;
   core_rank: "A*" | "A" | "B" | "C" | "Unranked" | null;
+  core_note?: string;
   core_rank_history: JournalRankHistory[];
   sjr: SJRData | null;
   categories: string[];

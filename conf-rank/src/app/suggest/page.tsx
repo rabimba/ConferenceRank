@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import SuggestClient from "@/components/SuggestClient";
 import { getConferences } from "@/lib/data";
 import { getJournals } from "@/lib/journal-data";
+import { getJournalQuartile } from "@/lib/quartile";
 import { latestStat } from "@/lib/stats";
 import type { SuggesterVenue } from "@/lib/suggest";
 
@@ -64,14 +65,15 @@ export default function SuggestPage() {
       };
     }),
     ...journals.map((j): SuggesterVenue => {
+      const q = getJournalQuartile(j);
       return {
         id: j.id,
         type: "journal",
         acronym: j.acronym ?? "",
         title: j.title,
-        rank: j.core_rank ?? (j.sjr?.latest_quartile ?? "Unranked"),
+        rank: j.core_rank ?? q ?? "Unranked",
         core_rank: j.core_rank,
-        sjr_quartile: j.sjr?.latest_quartile ?? null,
+        sjr_quartile: q,
         categories: j.categories,
         latest_rate: null,
         latest_accepted: null,

@@ -13,7 +13,9 @@ import {
 let tfidfCache: { venuesKey: string; index: TfidfIndex } | null = null;
 
 function getTfidfIndex(venues: SuggesterVenue[]): TfidfIndex {
-  const key = `${venues.length}:${venues[0]?.id ?? ""}:${venues[venues.length - 1]?.id ?? ""}`;
+  // Hash sample across start, middle, end plus length to avoid cache key collision
+  const mid = Math.floor(venues.length / 2);
+  const key = `${venues.length}:${venues[0]?.id ?? ""}:${venues[mid]?.id ?? ""}:${venues[venues.length - 1]?.id ?? ""}`;
   if (tfidfCache && tfidfCache.venuesKey === key) return tfidfCache.index;
   const index = buildTfidfIndex(
     venues.map((v) => ({

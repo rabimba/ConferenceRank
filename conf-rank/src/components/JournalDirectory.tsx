@@ -4,10 +4,11 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import DualRankBadge from "./DualRankBadge";
-import type { Journal } from "@/lib/journal-types";
+import type { DirectoryJournal } from "@/lib/directory-types";
+import { getJournalQuartile } from "@/lib/quartile";
 
 export interface JournalDirectoryProps {
-  journals: Journal[];
+  journals: DirectoryJournal[];
   categories: string[];
 }
 
@@ -106,15 +107,8 @@ function getRankWeight(r: string | null): number {
   }
 }
 
-function getQuartile(j: Journal): "Q1" | "Q2" | "Q3" | "Q4" | null {
-  if (j.sjr?.latest_quartile) return j.sjr.latest_quartile;
-  const score = j.sjr?.latest_score;
-  if (score == null) return null;
-  // Fallback quartile estimate based on CS SJR distribution (Q1 >= 1.0, Q2 >= 0.5, Q3 >= 0.25)
-  if (score >= 1.0) return "Q1";
-  if (score >= 0.5) return "Q2";
-  if (score >= 0.25) return "Q3";
-  return "Q4";
+function getQuartile(j: DirectoryJournal): "Q1" | "Q2" | "Q3" | "Q4" | null {
+  return getJournalQuartile(j);
 }
 
 export default function JournalDirectory({ journals, categories }: JournalDirectoryProps) {
@@ -213,6 +207,12 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
   const safePage = Math.min(page, totalPages);
   const start = (safePage - 1) * PAGE_SIZE;
   const pageRows = filtered.slice(start, start + PAGE_SIZE);
+
+  useEffect(() => {
+    if (page > totalPages) {
+      setPage(totalPages);
+    }
+  }, [page, totalPages]);
 
   useEffect(() => {
     if (hydrated) {
@@ -367,7 +367,10 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
         <table className="w-full min-w-[700px] text-sm text-left">
           <thead>
             <tr className="border-b border-border bg-stone-100/70 text-xs uppercase tracking-wide text-muted dark:bg-stone-900/80">
-              <th className="px-4 py-3 font-semibold">
+              <th
+                className="px-4 py-3 font-semibold"
+                aria-sort={sort === "rank" ? (dir === "asc" ? "ascending" : "descending") : "none"}
+              >
                 <button
                   type="button"
                   onClick={() => handleSortChange("rank")}
@@ -376,7 +379,10 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
                   Rank{arrow("rank")}
                 </button>
               </th>
-              <th className="px-4 py-3 font-semibold">
+              <th
+                className="px-4 py-3 font-semibold"
+                aria-sort={sort === "title" ? (dir === "asc" ? "ascending" : "descending") : "none"}
+              >
                 <button
                   type="button"
                   onClick={() => handleSortChange("title")}
@@ -386,7 +392,10 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
                 </button>
               </th>
               <th className="px-4 py-3 font-semibold">Category</th>
-              <th className="px-4 py-3 font-semibold text-right">
+              <th
+                className="px-4 py-3 font-semibold text-right"
+                aria-sort={sort === "sjr" ? (dir === "asc" ? "ascending" : "descending") : "none"}
+              >
                 <button
                   type="button"
                   onClick={() => handleSortChange("sjr")}
@@ -395,7 +404,10 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
                   SJR Score{arrow("sjr")}
                 </button>
               </th>
-              <th className="px-4 py-3 font-semibold text-right">
+              <th
+                className="px-4 py-3 font-semibold text-right"
+                aria-sort={sort === "h_index" ? (dir === "asc" ? "ascending" : "descending") : "none"}
+              >
                 <button
                   type="button"
                   onClick={() => handleSortChange("h_index")}
@@ -506,6 +518,7 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
             <button
               type="button"
               key={p}
+              aria-current={p === safePage ? "page" : undefined}
               onClick={() => setPage(p)}
               className={`rounded-md px-3 py-1.5 font-semibold transition ${
                 p === safePage

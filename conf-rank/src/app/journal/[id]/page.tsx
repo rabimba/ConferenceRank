@@ -8,6 +8,7 @@ import WatchlistButton from "@/components/WatchlistButton";
 import SJRHistoryChart from "@/components/SJRHistoryChart";
 import { TopicShareChart } from "@/components/Charts";
 import { getJournalById, getJournals } from "@/lib/journal-data";
+import { getJournalQuartile, getQuickTakeVerdict } from "@/lib/quartile";
 
 export function generateStaticParams() {
   return getJournals().map((j) => ({ id: j.id }));
@@ -100,27 +101,12 @@ export default async function JournalPage({
   if (!j) notFound();
 
   const sjrHistory = [...(j.sjr?.history ?? [])].sort((a, b) => a.year - b.year);
-  const coreHistory = [...(j.core_rank_history ?? [])];
+  const coreHistory = j.core_rank_history ?? [];
   const oa = j.openalex;
 
-  const quickTakeVerdict = (() => {
-    if (j.core_rank === "A*") {
-      return "Flagship international journal. Top-tier scholarly prestige with high global impact and selectivity.";
-    }
-    if (j.core_rank === "A") {
-      return "Premier academic journal. Strong peer review, high citation visibility, and respected scholarly standards.";
-    }
-    if (j.core_rank === "B") {
-      return "Established international journal with solid peer-review and indexed research contributions.";
-    }
-    if (j.core_rank === "C") {
-      return "Recognized academic journal meeting baseline scholarly peer-review criteria.";
-    }
-    if (j.sjr?.latest_quartile === "Q1" || (j.sjr?.latest_score && j.sjr.latest_score >= 1.5)) {
-      return "High-impact scholarly journal with prominent SCImago citation metrics.";
-    }
-    return "Peer-reviewed academic journal in Computer Science and related research domains.";
-  })();
+  const latestQuartile = getJournalQuartile(j);
+
+  const quickTakeVerdict = getQuickTakeVerdict(j);
 
   return (
     <div className="min-h-screen bg-background">
@@ -136,7 +122,7 @@ export default async function JournalPage({
             publisher: j.publisher ? { "@type": "Organization", name: j.publisher } : undefined,
             keywords: [j.title, j.acronym, ...j.categories].filter(Boolean).join(", "),
             isPartOf: { "@type": "WebSite", name: "ConferenceRank" },
-          }),
+          }).replace(/</g, "\\u003c"),
         }}
       />
       <SiteHeader />
@@ -162,7 +148,7 @@ export default async function JournalPage({
             <div className="flex flex-wrap items-center gap-3">
               <DualRankBadge
                 coreRank={j.core_rank}
-                sjrQuartile={j.sjr?.latest_quartile}
+                sjrQuartile={latestQuartile}
                 size="lg"
               />
               <h1 className="text-2xl font-black tracking-tight text-foreground sm:text-3xl">
@@ -254,7 +240,7 @@ export default async function JournalPage({
             </div>
             <div>
               <div className="text-2xl font-black text-foreground">
-                {j.sjr?.latest_quartile ?? "—"}
+                {latestQuartile ?? "—"}
               </div>
               <div className="text-xs text-muted">SJR Quartile</div>
             </div>
