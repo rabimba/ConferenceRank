@@ -1,0 +1,3092 @@
+{
+ "2d-materials": {
+  "source_ids": [
+   "https://openalex.org/S4210229423"
+  ],
+  "works_per_year": {
+   "2017": 318,
+   "2019": 239,
+   "2016": 235,
+   "2021": 213,
+   "2020": 208,
+   "2018": 203,
+   "2022": 162,
+   "2024": 158,
+   "2023": 143,
+   "2025": 140,
+   "2015": 123,
+   "2026": 105,
+   "2014": 42,
+   "2013": 1
+  },
+  "two_year_mean_citedness": 4.17,
+  "topics": [
+   {
+    "name": "2D Materials and Applications",
+    "share": 0.2431
+   },
+   {
+    "name": "Graphene research and applications",
+    "share": 0.2147
+   },
+   {
+    "name": "MXene and MAX Phase Materials",
+    "share": 0.0874
+   },
+   {
+    "name": "Topological Materials and Phenomena",
+    "share": 0.0603
+   },
+   {
+    "name": "Perovskite Materials and Applications",
+    "share": 0.0506
+   },
+   {
+    "name": "Quantum and electron transport phenomena",
+    "share": 0.0299
+   },
+   {
+    "name": "Graphene and Nanomaterials Applications",
+    "share": 0.0227
+   },
+   {
+    "name": "Thermal properties of materials",
+    "share": 0.0214
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2421
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.2283
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.063
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0571
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0512
+    },
+    {
+     "name": "Thermal properties of materials",
+     "share": 0.0315
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.0295
+    },
+    {
+     "name": "Graphene and Nanomaterials Applications",
+     "share": 0.0256
+    }
+   ],
+   "2022": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2216
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1953
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.1108
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0554
+    },
+    {
+     "name": "Advancements in Battery Materials",
+     "share": 0.0449
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0422
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.029
+    },
+    {
+     "name": "Advanced Memory and Neural Computing",
+     "share": 0.0264
+    }
+   ],
+   "2023": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2197
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1676
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.104
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0665
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0491
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.026
+    },
+    {
+     "name": "Quantum Dots Synthesis And Properties",
+     "share": 0.0231
+    },
+    {
+     "name": "Electronic and Structural Properties of Oxides",
+     "share": 0.0231
+    }
+   ],
+   "2024": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2754
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1604
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.0829
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0749
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0508
+    },
+    {
+     "name": "Chalcogenide Semiconductor Thin Films",
+     "share": 0.0348
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.0267
+    },
+    {
+     "name": "Quantum Dots Synthesis And Properties",
+     "share": 0.0241
+    }
+   ],
+   "2025": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2137
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1489
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.0611
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0534
+    },
+    {
+     "name": "Chalcogenide Semiconductor Thin Films",
+     "share": 0.042
+    },
+    {
+     "name": "Semiconductor materials and devices",
+     "share": 0.0344
+    },
+    {
+     "name": "Supercapacitor Materials and Fabrication",
+     "share": 0.0305
+    },
+    {
+     "name": "Photonic and Optical Devices",
+     "share": 0.0305
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Centre National de la Recherche Scientifique",
+    "country": "",
+    "share": 0.079
+   },
+   {
+    "name": "National Institute for Materials Science",
+    "country": "",
+    "share": 0.0735
+   },
+   {
+    "name": "Chinese Academy of Sciences",
+    "country": "",
+    "share": 0.0646
+   },
+   {
+    "name": "University of Manchester",
+    "country": "",
+    "share": 0.0639
+   },
+   {
+    "name": "University of Chinese Academy of Sciences",
+    "country": "",
+    "share": 0.0391
+   },
+   {
+    "name": "Pennsylvania State University",
+    "country": "",
+    "share": 0.0385
+   },
+   {
+    "name": "National University of Singapore",
+    "country": "",
+    "share": 0.0364
+   },
+   {
+    "name": "Henry Royce Institute",
+    "country": "",
+    "share": 0.0364
+   },
+   {
+    "name": "Institut Catal\u00e0 de Nanoci\u00e8ncia i Nanotecnologia",
+    "country": "",
+    "share": 0.0364
+   },
+   {
+    "name": "Technical University of Denmark",
+    "country": "",
+    "share": 0.0337
+   }
+  ],
+  "is_oa": false,
+  "publisher": "IOP Publishing",
+  "country": "GB"
+ },
+ "20531583": {
+  "source_ids": [
+   "https://openalex.org/S4210229423"
+  ],
+  "works_per_year": {
+   "2017": 318,
+   "2019": 239,
+   "2016": 235,
+   "2021": 213,
+   "2020": 208,
+   "2018": 203,
+   "2022": 162,
+   "2024": 158,
+   "2023": 143,
+   "2025": 140,
+   "2015": 123,
+   "2026": 105,
+   "2014": 42,
+   "2013": 1
+  },
+  "two_year_mean_citedness": 4.17,
+  "topics": [
+   {
+    "name": "2D Materials and Applications",
+    "share": 0.2431
+   },
+   {
+    "name": "Graphene research and applications",
+    "share": 0.2147
+   },
+   {
+    "name": "MXene and MAX Phase Materials",
+    "share": 0.0874
+   },
+   {
+    "name": "Topological Materials and Phenomena",
+    "share": 0.0603
+   },
+   {
+    "name": "Perovskite Materials and Applications",
+    "share": 0.0506
+   },
+   {
+    "name": "Quantum and electron transport phenomena",
+    "share": 0.0299
+   },
+   {
+    "name": "Graphene and Nanomaterials Applications",
+    "share": 0.0227
+   },
+   {
+    "name": "Thermal properties of materials",
+    "share": 0.0214
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2421
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.2283
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.063
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0571
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0512
+    },
+    {
+     "name": "Thermal properties of materials",
+     "share": 0.0315
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.0295
+    },
+    {
+     "name": "Graphene and Nanomaterials Applications",
+     "share": 0.0256
+    }
+   ],
+   "2022": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2216
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1953
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.1108
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0554
+    },
+    {
+     "name": "Advancements in Battery Materials",
+     "share": 0.0449
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0422
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.029
+    },
+    {
+     "name": "Advanced Memory and Neural Computing",
+     "share": 0.0264
+    }
+   ],
+   "2023": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2197
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1676
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.104
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0665
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0491
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.026
+    },
+    {
+     "name": "Quantum Dots Synthesis And Properties",
+     "share": 0.0231
+    },
+    {
+     "name": "Electronic and Structural Properties of Oxides",
+     "share": 0.0231
+    }
+   ],
+   "2024": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2754
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1604
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.0829
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0749
+    },
+    {
+     "name": "Perovskite Materials and Applications",
+     "share": 0.0508
+    },
+    {
+     "name": "Chalcogenide Semiconductor Thin Films",
+     "share": 0.0348
+    },
+    {
+     "name": "Quantum and electron transport phenomena",
+     "share": 0.0267
+    },
+    {
+     "name": "Quantum Dots Synthesis And Properties",
+     "share": 0.0241
+    }
+   ],
+   "2025": [
+    {
+     "name": "2D Materials and Applications",
+     "share": 0.2137
+    },
+    {
+     "name": "Graphene research and applications",
+     "share": 0.1489
+    },
+    {
+     "name": "MXene and MAX Phase Materials",
+     "share": 0.0611
+    },
+    {
+     "name": "Topological Materials and Phenomena",
+     "share": 0.0534
+    },
+    {
+     "name": "Chalcogenide Semiconductor Thin Films",
+     "share": 0.042
+    },
+    {
+     "name": "Semiconductor materials and devices",
+     "share": 0.0344
+    },
+    {
+     "name": "Supercapacitor Materials and Fabrication",
+     "share": 0.0305
+    },
+    {
+     "name": "Photonic and Optical Devices",
+     "share": 0.0305
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Centre National de la Recherche Scientifique",
+    "country": "",
+    "share": 0.079
+   },
+   {
+    "name": "National Institute for Materials Science",
+    "country": "",
+    "share": 0.0735
+   },
+   {
+    "name": "Chinese Academy of Sciences",
+    "country": "",
+    "share": 0.0646
+   },
+   {
+    "name": "University of Manchester",
+    "country": "",
+    "share": 0.0639
+   },
+   {
+    "name": "University of Chinese Academy of Sciences",
+    "country": "",
+    "share": 0.0391
+   },
+   {
+    "name": "Pennsylvania State University",
+    "country": "",
+    "share": 0.0385
+   },
+   {
+    "name": "National University of Singapore",
+    "country": "",
+    "share": 0.0364
+   },
+   {
+    "name": "Henry Royce Institute",
+    "country": "",
+    "share": 0.0364
+   },
+   {
+    "name": "Institut Catal\u00e0 de Nanoci\u00e8ncia i Nanotecnologia",
+    "country": "",
+    "share": 0.0364
+   },
+   {
+    "name": "Technical University of Denmark",
+    "country": "",
+    "share": 0.0337
+   }
+  ],
+  "is_oa": false,
+  "publisher": "IOP Publishing",
+  "country": "GB"
+ },
+ "3-biotech": {
+  "source_ids": [
+   "https://openalex.org/S4210190239"
+  ],
+  "works_per_year": {
+   "2021": 552,
+   "2020": 549,
+   "2019": 494,
+   "2018": 475,
+   "2025": 460,
+   "2017": 427,
+   "2023": 419,
+   "2026": 399,
+   "2022": 348,
+   "2024": 321,
+   "2016": 254,
+   "2013": 84,
+   "2014": 78,
+   "2012": 66,
+   "2015": 48,
+   "2011": 41
+  },
+  "two_year_mean_citedness": 3.12,
+  "topics": [
+   {
+    "name": "Biofuel production and bioconversion",
+    "share": 0.0839
+   },
+   {
+    "name": "Enzyme Production and Characterization",
+    "share": 0.0679
+   },
+   {
+    "name": "Plant-Microbe Interactions and Immunity",
+    "share": 0.0652
+   },
+   {
+    "name": "Microbial Metabolic Engineering and Bioproduction",
+    "share": 0.0581
+   },
+   {
+    "name": "Plant tissue culture and regeneration",
+    "share": 0.0558
+   },
+   {
+    "name": "Enzyme Catalysis and Immobilization",
+    "share": 0.0506
+   },
+   {
+    "name": "Nanoparticles: synthesis and applications",
+    "share": 0.0417
+   },
+   {
+    "name": "Plant Virus Research Studies",
+    "share": 0.0375
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0758
+    },
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0682
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0625
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0606
+    },
+    {
+     "name": "Microbial Metabolic Engineering and Bioproduction",
+     "share": 0.053
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0511
+    },
+    {
+     "name": "Nanoparticles: synthesis and applications",
+     "share": 0.0417
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.036
+    }
+   ],
+   "2022": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0657
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0657
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0543
+    },
+    {
+     "name": "Microbial Metabolites in Food Biotechnology",
+     "share": 0.0486
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0429
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.04
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0371
+    },
+    {
+     "name": "Plant nutrient uptake and metabolism",
+     "share": 0.0371
+    }
+   ],
+   "2023": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0757
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0653
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0601
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0574
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0548
+    },
+    {
+     "name": "Genomics and Phylogenetic Studies",
+     "share": 0.047
+    },
+    {
+     "name": "Plant Pathogenic Bacteria Studies",
+     "share": 0.0444
+    },
+    {
+     "name": "Essential Oils and Antimicrobial Activity",
+     "share": 0.0366
+    }
+   ],
+   "2024": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0637
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0637
+    },
+    {
+     "name": "Microbial Metabolic Engineering and Bioproduction",
+     "share": 0.051
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0478
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0446
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0446
+    },
+    {
+     "name": "Plant biochemistry and biosynthesis",
+     "share": 0.0414
+    },
+    {
+     "name": "Essential Oils and Antimicrobial Activity",
+     "share": 0.0382
+    }
+   ],
+   "2025": [
+    {
+     "name": "Nanoparticles: synthesis and applications",
+     "share": 0.1098
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0549
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.052
+    },
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0462
+    },
+    {
+     "name": "Phytochemicals and Antioxidant Activities",
+     "share": 0.0434
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0376
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0376
+    },
+    {
+     "name": "Nanoparticle-Based Drug Delivery",
+     "share": 0.0347
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Indian Agricultural Research Institute",
+    "country": "",
+    "share": 0.0949
+   },
+   {
+    "name": "Manipal Academy of Higher Education",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Vellore Institute of Technology University",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Banaras Hindu University",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Academy of Scientific and Innovative Research",
+    "country": "",
+    "share": 0.0468
+   },
+   {
+    "name": "Amity University",
+    "country": "",
+    "share": 0.0461
+   },
+   {
+    "name": "Department of Biotechnology",
+    "country": "",
+    "share": 0.0455
+   },
+   {
+    "name": "King Saud University",
+    "country": "",
+    "share": 0.0435
+   },
+   {
+    "name": "Indian Agricultural Statistics Research Institute",
+    "country": "",
+    "share": 0.039
+   },
+   {
+    "name": "University of Delhi",
+    "country": "",
+    "share": 0.0357
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "DE"
+ },
+ "2190572X": {
+  "source_ids": [
+   "https://openalex.org/S4210190239"
+  ],
+  "works_per_year": {
+   "2021": 552,
+   "2020": 549,
+   "2019": 494,
+   "2018": 475,
+   "2025": 460,
+   "2017": 427,
+   "2023": 419,
+   "2026": 399,
+   "2022": 348,
+   "2024": 321,
+   "2016": 254,
+   "2013": 84,
+   "2014": 78,
+   "2012": 66,
+   "2015": 48,
+   "2011": 41
+  },
+  "two_year_mean_citedness": 3.12,
+  "topics": [
+   {
+    "name": "Biofuel production and bioconversion",
+    "share": 0.0839
+   },
+   {
+    "name": "Enzyme Production and Characterization",
+    "share": 0.0679
+   },
+   {
+    "name": "Plant-Microbe Interactions and Immunity",
+    "share": 0.0652
+   },
+   {
+    "name": "Microbial Metabolic Engineering and Bioproduction",
+    "share": 0.0581
+   },
+   {
+    "name": "Plant tissue culture and regeneration",
+    "share": 0.0558
+   },
+   {
+    "name": "Enzyme Catalysis and Immobilization",
+    "share": 0.0506
+   },
+   {
+    "name": "Nanoparticles: synthesis and applications",
+    "share": 0.0417
+   },
+   {
+    "name": "Plant Virus Research Studies",
+    "share": 0.0375
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0758
+    },
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0682
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0625
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0606
+    },
+    {
+     "name": "Microbial Metabolic Engineering and Bioproduction",
+     "share": 0.053
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0511
+    },
+    {
+     "name": "Nanoparticles: synthesis and applications",
+     "share": 0.0417
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.036
+    }
+   ],
+   "2022": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0657
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0657
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0543
+    },
+    {
+     "name": "Microbial Metabolites in Food Biotechnology",
+     "share": 0.0486
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0429
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.04
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0371
+    },
+    {
+     "name": "Plant nutrient uptake and metabolism",
+     "share": 0.0371
+    }
+   ],
+   "2023": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0757
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0653
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0601
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0574
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0548
+    },
+    {
+     "name": "Genomics and Phylogenetic Studies",
+     "share": 0.047
+    },
+    {
+     "name": "Plant Pathogenic Bacteria Studies",
+     "share": 0.0444
+    },
+    {
+     "name": "Essential Oils and Antimicrobial Activity",
+     "share": 0.0366
+    }
+   ],
+   "2024": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0637
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0637
+    },
+    {
+     "name": "Microbial Metabolic Engineering and Bioproduction",
+     "share": 0.051
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0478
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0446
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0446
+    },
+    {
+     "name": "Plant biochemistry and biosynthesis",
+     "share": 0.0414
+    },
+    {
+     "name": "Essential Oils and Antimicrobial Activity",
+     "share": 0.0382
+    }
+   ],
+   "2025": [
+    {
+     "name": "Nanoparticles: synthesis and applications",
+     "share": 0.1098
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0549
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.052
+    },
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0462
+    },
+    {
+     "name": "Phytochemicals and Antioxidant Activities",
+     "share": 0.0434
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0376
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0376
+    },
+    {
+     "name": "Nanoparticle-Based Drug Delivery",
+     "share": 0.0347
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Indian Agricultural Research Institute",
+    "country": "",
+    "share": 0.0949
+   },
+   {
+    "name": "Manipal Academy of Higher Education",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Vellore Institute of Technology University",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Banaras Hindu University",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Academy of Scientific and Innovative Research",
+    "country": "",
+    "share": 0.0468
+   },
+   {
+    "name": "Amity University",
+    "country": "",
+    "share": 0.0461
+   },
+   {
+    "name": "Department of Biotechnology",
+    "country": "",
+    "share": 0.0455
+   },
+   {
+    "name": "King Saud University",
+    "country": "",
+    "share": 0.0435
+   },
+   {
+    "name": "Indian Agricultural Statistics Research Institute",
+    "country": "",
+    "share": 0.039
+   },
+   {
+    "name": "University of Delhi",
+    "country": "",
+    "share": 0.0357
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "DE"
+ },
+ "21905738": {
+  "source_ids": [
+   "https://openalex.org/S4210190239"
+  ],
+  "works_per_year": {
+   "2021": 552,
+   "2020": 549,
+   "2019": 494,
+   "2018": 475,
+   "2025": 460,
+   "2017": 427,
+   "2023": 419,
+   "2026": 399,
+   "2022": 348,
+   "2024": 321,
+   "2016": 254,
+   "2013": 84,
+   "2014": 78,
+   "2012": 66,
+   "2015": 48,
+   "2011": 41
+  },
+  "two_year_mean_citedness": 3.12,
+  "topics": [
+   {
+    "name": "Biofuel production and bioconversion",
+    "share": 0.0839
+   },
+   {
+    "name": "Enzyme Production and Characterization",
+    "share": 0.0679
+   },
+   {
+    "name": "Plant-Microbe Interactions and Immunity",
+    "share": 0.0652
+   },
+   {
+    "name": "Microbial Metabolic Engineering and Bioproduction",
+    "share": 0.0581
+   },
+   {
+    "name": "Plant tissue culture and regeneration",
+    "share": 0.0558
+   },
+   {
+    "name": "Enzyme Catalysis and Immobilization",
+    "share": 0.0506
+   },
+   {
+    "name": "Nanoparticles: synthesis and applications",
+    "share": 0.0417
+   },
+   {
+    "name": "Plant Virus Research Studies",
+    "share": 0.0375
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0758
+    },
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0682
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0625
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0606
+    },
+    {
+     "name": "Microbial Metabolic Engineering and Bioproduction",
+     "share": 0.053
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0511
+    },
+    {
+     "name": "Nanoparticles: synthesis and applications",
+     "share": 0.0417
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.036
+    }
+   ],
+   "2022": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0657
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0657
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0543
+    },
+    {
+     "name": "Microbial Metabolites in Food Biotechnology",
+     "share": 0.0486
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0429
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.04
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0371
+    },
+    {
+     "name": "Plant nutrient uptake and metabolism",
+     "share": 0.0371
+    }
+   ],
+   "2023": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0757
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0653
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0601
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0574
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0548
+    },
+    {
+     "name": "Genomics and Phylogenetic Studies",
+     "share": 0.047
+    },
+    {
+     "name": "Plant Pathogenic Bacteria Studies",
+     "share": 0.0444
+    },
+    {
+     "name": "Essential Oils and Antimicrobial Activity",
+     "share": 0.0366
+    }
+   ],
+   "2024": [
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0637
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0637
+    },
+    {
+     "name": "Microbial Metabolic Engineering and Bioproduction",
+     "share": 0.051
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0478
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.0446
+    },
+    {
+     "name": "Enzyme Catalysis and Immobilization",
+     "share": 0.0446
+    },
+    {
+     "name": "Plant biochemistry and biosynthesis",
+     "share": 0.0414
+    },
+    {
+     "name": "Essential Oils and Antimicrobial Activity",
+     "share": 0.0382
+    }
+   ],
+   "2025": [
+    {
+     "name": "Nanoparticles: synthesis and applications",
+     "share": 0.1098
+    },
+    {
+     "name": "Plant Virus Research Studies",
+     "share": 0.0549
+    },
+    {
+     "name": "Plant tissue culture and regeneration",
+     "share": 0.052
+    },
+    {
+     "name": "Plant-Microbe Interactions and Immunity",
+     "share": 0.0462
+    },
+    {
+     "name": "Phytochemicals and Antioxidant Activities",
+     "share": 0.0434
+    },
+    {
+     "name": "Biofuel production and bioconversion",
+     "share": 0.0376
+    },
+    {
+     "name": "Enzyme Production and Characterization",
+     "share": 0.0376
+    },
+    {
+     "name": "Nanoparticle-Based Drug Delivery",
+     "share": 0.0347
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Indian Agricultural Research Institute",
+    "country": "",
+    "share": 0.0949
+   },
+   {
+    "name": "Manipal Academy of Higher Education",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Vellore Institute of Technology University",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Banaras Hindu University",
+    "country": "",
+    "share": 0.0481
+   },
+   {
+    "name": "Academy of Scientific and Innovative Research",
+    "country": "",
+    "share": 0.0468
+   },
+   {
+    "name": "Amity University",
+    "country": "",
+    "share": 0.0461
+   },
+   {
+    "name": "Department of Biotechnology",
+    "country": "",
+    "share": 0.0455
+   },
+   {
+    "name": "King Saud University",
+    "country": "",
+    "share": 0.0435
+   },
+   {
+    "name": "Indian Agricultural Statistics Research Institute",
+    "country": "",
+    "share": 0.039
+   },
+   {
+    "name": "University of Delhi",
+    "country": "",
+    "share": 0.0357
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "DE"
+ },
+ "3d-printing-in-medicine": {
+  "source_ids": [
+   "https://openalex.org/S4210191256"
+  ],
+  "works_per_year": {
+   "2025": 61,
+   "2023": 55,
+   "2024": 43,
+   "2017": 40,
+   "2021": 37,
+   "2026": 37,
+   "2020": 36,
+   "2022": 35,
+   "2019": 18,
+   "2018": 15,
+   "2016": 5,
+   "2015": 3
+  },
+  "two_year_mean_citedness": 3.7,
+  "topics": [
+   {
+    "name": "Anatomy and Medical Technology",
+    "share": 0.2843
+   },
+   {
+    "name": "Surgical Simulation and Training",
+    "share": 0.1396
+   },
+   {
+    "name": "3D Printing in Biomedical Research",
+    "share": 0.1028
+   },
+   {
+    "name": "Additive Manufacturing and 3D Printing Technologies",
+    "share": 0.0926
+   },
+   {
+    "name": "Orthopaedic implants and arthroplasty",
+    "share": 0.0431
+   },
+   {
+    "name": "Dental Implant Techniques and Outcomes",
+    "share": 0.0292
+   },
+   {
+    "name": "Bone fractures and treatments",
+    "share": 0.0254
+   },
+   {
+    "name": "Augmented Reality Applications",
+    "share": 0.0241
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.3039
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1373
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0784
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0686
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0392
+    },
+    {
+     "name": "Total Knee Arthroplasty Outcomes",
+     "share": 0.0392
+    },
+    {
+     "name": "Augmented Reality Applications",
+     "share": 0.0294
+    },
+    {
+     "name": "Infection Control and Ventilation",
+     "share": 0.0294
+    }
+   ],
+   "2022": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2692
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1282
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0769
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0641
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0641
+    },
+    {
+     "name": "Advanced Radiotherapy Techniques",
+     "share": 0.0256
+    },
+    {
+     "name": "Dental Implant Techniques and Outcomes",
+     "share": 0.0256
+    },
+    {
+     "name": "AI in cancer detection",
+     "share": 0.0256
+    }
+   ],
+   "2023": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2437
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1429
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.1261
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.1261
+    },
+    {
+     "name": "Dental Implant Techniques and Outcomes",
+     "share": 0.0252
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0252
+    },
+    {
+     "name": "Reconstructive Surgery and Microvascular Techniques",
+     "share": 0.0252
+    },
+    {
+     "name": "Bone fractures and treatments",
+     "share": 0.0252
+    }
+   ],
+   "2024": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2421
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1053
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0842
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0737
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0421
+    },
+    {
+     "name": "Bone Tissue Engineering Materials",
+     "share": 0.0316
+    },
+    {
+     "name": "Dental materials and restorations",
+     "share": 0.0316
+    },
+    {
+     "name": "Total Knee Arthroplasty Outcomes",
+     "share": 0.0316
+    }
+   ],
+   "2025": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1185
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0889
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0667
+    },
+    {
+     "name": "Facial Trauma and Fracture Management",
+     "share": 0.0444
+    },
+    {
+     "name": "Orthopedic Surgery and Rehabilitation",
+     "share": 0.037
+    },
+    {
+     "name": "Dental Implant Techniques and Outcomes",
+     "share": 0.0296
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0296
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "University of Ottawa",
+    "country": "",
+    "share": 0.0749
+   },
+   {
+    "name": "University College London",
+    "country": "",
+    "share": 0.0717
+   },
+   {
+    "name": "Ottawa Hospital",
+    "country": "",
+    "share": 0.0684
+   },
+   {
+    "name": "Brigham and Women's Hospital",
+    "country": "",
+    "share": 0.0489
+   },
+   {
+    "name": "University of Toronto",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "Mallinckrodt (United States)",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "Advanced Imaging Research (United States)",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "University of Cincinnati Medical Center",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "Mayo Clinic in Arizona",
+    "country": "",
+    "share": 0.0391
+   },
+   {
+    "name": "University of Cincinnati",
+    "country": "",
+    "share": 0.0391
+   }
+  ],
+  "is_oa": true,
+  "publisher": "BioMed Central",
+  "country": "DE"
+ },
+ "23656271": {
+  "source_ids": [
+   "https://openalex.org/S4210191256"
+  ],
+  "works_per_year": {
+   "2025": 61,
+   "2023": 55,
+   "2024": 43,
+   "2017": 40,
+   "2021": 37,
+   "2026": 37,
+   "2020": 36,
+   "2022": 35,
+   "2019": 18,
+   "2018": 15,
+   "2016": 5,
+   "2015": 3
+  },
+  "two_year_mean_citedness": 3.7,
+  "topics": [
+   {
+    "name": "Anatomy and Medical Technology",
+    "share": 0.2843
+   },
+   {
+    "name": "Surgical Simulation and Training",
+    "share": 0.1396
+   },
+   {
+    "name": "3D Printing in Biomedical Research",
+    "share": 0.1028
+   },
+   {
+    "name": "Additive Manufacturing and 3D Printing Technologies",
+    "share": 0.0926
+   },
+   {
+    "name": "Orthopaedic implants and arthroplasty",
+    "share": 0.0431
+   },
+   {
+    "name": "Dental Implant Techniques and Outcomes",
+    "share": 0.0292
+   },
+   {
+    "name": "Bone fractures and treatments",
+    "share": 0.0254
+   },
+   {
+    "name": "Augmented Reality Applications",
+    "share": 0.0241
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.3039
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1373
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0784
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0686
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0392
+    },
+    {
+     "name": "Total Knee Arthroplasty Outcomes",
+     "share": 0.0392
+    },
+    {
+     "name": "Augmented Reality Applications",
+     "share": 0.0294
+    },
+    {
+     "name": "Infection Control and Ventilation",
+     "share": 0.0294
+    }
+   ],
+   "2022": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2692
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1282
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0769
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0641
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0641
+    },
+    {
+     "name": "Advanced Radiotherapy Techniques",
+     "share": 0.0256
+    },
+    {
+     "name": "Dental Implant Techniques and Outcomes",
+     "share": 0.0256
+    },
+    {
+     "name": "AI in cancer detection",
+     "share": 0.0256
+    }
+   ],
+   "2023": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2437
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1429
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.1261
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.1261
+    },
+    {
+     "name": "Dental Implant Techniques and Outcomes",
+     "share": 0.0252
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0252
+    },
+    {
+     "name": "Reconstructive Surgery and Microvascular Techniques",
+     "share": 0.0252
+    },
+    {
+     "name": "Bone fractures and treatments",
+     "share": 0.0252
+    }
+   ],
+   "2024": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2421
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1053
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0842
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0737
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0421
+    },
+    {
+     "name": "Bone Tissue Engineering Materials",
+     "share": 0.0316
+    },
+    {
+     "name": "Dental materials and restorations",
+     "share": 0.0316
+    },
+    {
+     "name": "Total Knee Arthroplasty Outcomes",
+     "share": 0.0316
+    }
+   ],
+   "2025": [
+    {
+     "name": "Anatomy and Medical Technology",
+     "share": 0.2
+    },
+    {
+     "name": "Surgical Simulation and Training",
+     "share": 0.1185
+    },
+    {
+     "name": "3D Printing in Biomedical Research",
+     "share": 0.0889
+    },
+    {
+     "name": "Additive Manufacturing and 3D Printing Technologies",
+     "share": 0.0667
+    },
+    {
+     "name": "Facial Trauma and Fracture Management",
+     "share": 0.0444
+    },
+    {
+     "name": "Orthopedic Surgery and Rehabilitation",
+     "share": 0.037
+    },
+    {
+     "name": "Dental Implant Techniques and Outcomes",
+     "share": 0.0296
+    },
+    {
+     "name": "Orthopaedic implants and arthroplasty",
+     "share": 0.0296
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "University of Ottawa",
+    "country": "",
+    "share": 0.0749
+   },
+   {
+    "name": "University College London",
+    "country": "",
+    "share": 0.0717
+   },
+   {
+    "name": "Ottawa Hospital",
+    "country": "",
+    "share": 0.0684
+   },
+   {
+    "name": "Brigham and Women's Hospital",
+    "country": "",
+    "share": 0.0489
+   },
+   {
+    "name": "University of Toronto",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "Mallinckrodt (United States)",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "Advanced Imaging Research (United States)",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "University of Cincinnati Medical Center",
+    "country": "",
+    "share": 0.0423
+   },
+   {
+    "name": "Mayo Clinic in Arizona",
+    "country": "",
+    "share": 0.0391
+   },
+   {
+    "name": "University of Cincinnati",
+    "country": "",
+    "share": 0.0391
+   }
+  ],
+  "is_oa": true,
+  "publisher": "BioMed Central",
+  "country": "DE"
+ },
+ "3d-research": {
+  "source_ids": [
+   "https://openalex.org/S4210187823"
+  ],
+  "works_per_year": {
+   "2018": 59,
+   "2015": 43,
+   "2017": 40,
+   "2016": 36,
+   "2014": 32,
+   "2012": 31,
+   "2010": 26,
+   "2011": 25,
+   "2013": 24,
+   "2019": 21
+  },
+  "two_year_mean_citedness": null,
+  "topics": [
+   {
+    "name": "Advanced Vision and Imaging",
+    "share": 0.1165
+   },
+   {
+    "name": "Chaos-based Image/Signal Encryption",
+    "share": 0.0809
+   },
+   {
+    "name": "Computer Graphics and Visualization Techniques",
+    "share": 0.0777
+   },
+   {
+    "name": "Advanced Optical Imaging Technologies",
+    "share": 0.0761
+   },
+   {
+    "name": "Advanced Steganography and Watermarking Techniques",
+    "share": 0.0502
+   },
+   {
+    "name": "3D Shape Modeling and Analysis",
+    "share": 0.0502
+   },
+   {
+    "name": "Digital Holography and Microscopy",
+    "share": 0.0502
+   },
+   {
+    "name": "Robotics and Sensor-Based Localization",
+    "share": 0.0469
+   }
+  ],
+  "topics_by_year": {
+   "2021": [],
+   "2022": [],
+   "2023": [],
+   "2024": [],
+   "2025": []
+  },
+  "institutions": [
+   {
+    "name": "University of Technology Malaysia",
+    "country": "",
+    "share": 0.0963
+   },
+   {
+    "name": "Prince Sultan University",
+    "country": "",
+    "share": 0.0695
+   },
+   {
+    "name": "The NorthCap University",
+    "country": "",
+    "share": 0.0642
+   },
+   {
+    "name": "Sidi Mohamed Ben Abdellah University",
+    "country": "",
+    "share": 0.0588
+   },
+   {
+    "name": "Kwangwoon University",
+    "country": "",
+    "share": 0.0535
+   },
+   {
+    "name": "Quaid-i-Azam University",
+    "country": "",
+    "share": 0.0428
+   },
+   {
+    "name": "Dhofar University",
+    "country": "",
+    "share": 0.0428
+   },
+   {
+    "name": "Prince Sattam Bin Abdulaziz University",
+    "country": "",
+    "share": 0.0374
+   },
+   {
+    "name": "Chinese Academy of Sciences",
+    "country": "",
+    "share": 0.0374
+   },
+   {
+    "name": "Harbin Institute of Technology",
+    "country": "",
+    "share": 0.0321
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "KR"
+ },
+ "20926731": {
+  "source_ids": [
+   "https://openalex.org/S4210187823"
+  ],
+  "works_per_year": {
+   "2018": 59,
+   "2015": 43,
+   "2017": 40,
+   "2016": 36,
+   "2014": 32,
+   "2012": 31,
+   "2010": 26,
+   "2011": 25,
+   "2013": 24,
+   "2019": 21
+  },
+  "two_year_mean_citedness": null,
+  "topics": [
+   {
+    "name": "Advanced Vision and Imaging",
+    "share": 0.1165
+   },
+   {
+    "name": "Chaos-based Image/Signal Encryption",
+    "share": 0.0809
+   },
+   {
+    "name": "Computer Graphics and Visualization Techniques",
+    "share": 0.0777
+   },
+   {
+    "name": "Advanced Optical Imaging Technologies",
+    "share": 0.0761
+   },
+   {
+    "name": "Advanced Steganography and Watermarking Techniques",
+    "share": 0.0502
+   },
+   {
+    "name": "3D Shape Modeling and Analysis",
+    "share": 0.0502
+   },
+   {
+    "name": "Digital Holography and Microscopy",
+    "share": 0.0502
+   },
+   {
+    "name": "Robotics and Sensor-Based Localization",
+    "share": 0.0469
+   }
+  ],
+  "topics_by_year": {
+   "2021": [],
+   "2022": [],
+   "2023": [],
+   "2024": [],
+   "2025": []
+  },
+  "institutions": [
+   {
+    "name": "University of Technology Malaysia",
+    "country": "",
+    "share": 0.0963
+   },
+   {
+    "name": "Prince Sultan University",
+    "country": "",
+    "share": 0.0695
+   },
+   {
+    "name": "The NorthCap University",
+    "country": "",
+    "share": 0.0642
+   },
+   {
+    "name": "Sidi Mohamed Ben Abdellah University",
+    "country": "",
+    "share": 0.0588
+   },
+   {
+    "name": "Kwangwoon University",
+    "country": "",
+    "share": 0.0535
+   },
+   {
+    "name": "Quaid-i-Azam University",
+    "country": "",
+    "share": 0.0428
+   },
+   {
+    "name": "Dhofar University",
+    "country": "",
+    "share": 0.0428
+   },
+   {
+    "name": "Prince Sattam Bin Abdulaziz University",
+    "country": "",
+    "share": 0.0374
+   },
+   {
+    "name": "Chinese Academy of Sciences",
+    "country": "",
+    "share": 0.0374
+   },
+   {
+    "name": "Harbin Institute of Technology",
+    "country": "",
+    "share": 0.0321
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "KR"
+ },
+ "4or": {
+  "source_ids": [
+   "https://openalex.org/S4210191715"
+  ],
+  "works_per_year": {
+   "2020": 41,
+   "2006": 39,
+   "2011": 39,
+   "2007": 37,
+   "2016": 37,
+   "2010": 36,
+   "2012": 33,
+   "2021": 32,
+   "2019": 30,
+   "2023": 30,
+   "2017": 29,
+   "2022": 29,
+   "2013": 28,
+   "2008": 27,
+   "2018": 27,
+   "2014": 26,
+   "2005": 25,
+   "2025": 25,
+   "2015": 24,
+   "2024": 23,
+   "2026": 22,
+   "2004": 21,
+   "2009": 21,
+   "2003": 14
+  },
+  "two_year_mean_citedness": 1.03,
+  "topics": [
+   {
+    "name": "Vehicle Routing Optimization Methods",
+    "share": 0.1059
+   },
+   {
+    "name": "Scheduling and Optimization Algorithms",
+    "share": 0.0905
+   },
+   {
+    "name": "Optimization and Packing Problems",
+    "share": 0.0848
+   },
+   {
+    "name": "Advanced Manufacturing and Logistics Optimization",
+    "share": 0.0799
+   },
+   {
+    "name": "Advanced Optimization Algorithms Research",
+    "share": 0.0465
+   },
+   {
+    "name": "Optimization and Search Problems",
+    "share": 0.0456
+   },
+   {
+    "name": "Transportation and Mobility Innovations",
+    "share": 0.0448
+   },
+   {
+    "name": "Transportation Planning and Optimization",
+    "share": 0.035
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0645
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0645
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0645
+    },
+    {
+     "name": "Advanced Optimization Algorithms Research",
+     "share": 0.0645
+    },
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.0645
+    },
+    {
+     "name": "Rough Sets and Fuzzy Logic",
+     "share": 0.0484
+    },
+    {
+     "name": "Data Management and Algorithms",
+     "share": 0.0484
+    },
+    {
+     "name": "Optimization and Mathematical Programming",
+     "share": 0.0484
+    }
+   ],
+   "2022": [
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.1
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.1
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0833
+    },
+    {
+     "name": "Optimization and Search Problems",
+     "share": 0.0667
+    },
+    {
+     "name": "Complexity and Algorithms in Graphs",
+     "share": 0.05
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.05
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0333
+    },
+    {
+     "name": "Supply Chain and Inventory Management",
+     "share": 0.0333
+    }
+   ],
+   "2023": [
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.1053
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0702
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0702
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.0702
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0526
+    },
+    {
+     "name": "Traffic control and management",
+     "share": 0.0526
+    },
+    {
+     "name": "Advanced Optimization Algorithms Research",
+     "share": 0.0526
+    },
+    {
+     "name": "Sparse and Compressive Sensing Techniques",
+     "share": 0.0351
+    }
+   ],
+   "2024": [
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.1132
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0755
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0755
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0566
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0566
+    },
+    {
+     "name": "Bayesian Modeling and Causal Inference",
+     "share": 0.0566
+    },
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.0566
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.0566
+    }
+   ],
+   "2025": [
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0833
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0625
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.0625
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.0625
+    },
+    {
+     "name": "Optimization and Search Problems",
+     "share": 0.0625
+    },
+    {
+     "name": "Assembly Line Balancing Optimization",
+     "share": 0.0625
+    },
+    {
+     "name": "Distributed and Parallel Computing Systems",
+     "share": 0.0417
+    },
+    {
+     "name": "Risk and Portfolio Optimization",
+     "share": 0.0417
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Centre National de la Recherche Scientifique",
+    "country": "",
+    "share": 0.1654
+   },
+   {
+    "name": "University of Bologna",
+    "country": "",
+    "share": 0.0879
+   },
+   {
+    "name": "Ghent University",
+    "country": "",
+    "share": 0.0491
+   },
+   {
+    "name": "University of Calabria",
+    "country": "",
+    "share": 0.0413
+   },
+   {
+    "name": "KU Leuven",
+    "country": "",
+    "share": 0.0413
+   },
+   {
+    "name": "Universit\u00e9 Paris Dauphine-PSL",
+    "country": "",
+    "share": 0.0362
+   },
+   {
+    "name": "HEC Montr\u00e9al",
+    "country": "",
+    "share": 0.0336
+   },
+   {
+    "name": "Universit\u00e9 Libre de Bruxelles",
+    "country": "",
+    "share": 0.031
+   },
+   {
+    "name": "University of Li\u00e8ge",
+    "country": "",
+    "share": 0.031
+   },
+   {
+    "name": "University of Modena and Reggio Emilia",
+    "country": "",
+    "share": 0.0284
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "DE"
+ },
+ "16142411": {
+  "source_ids": [
+   "https://openalex.org/S4210191715"
+  ],
+  "works_per_year": {
+   "2020": 41,
+   "2006": 39,
+   "2011": 39,
+   "2007": 37,
+   "2016": 37,
+   "2010": 36,
+   "2012": 33,
+   "2021": 32,
+   "2019": 30,
+   "2023": 30,
+   "2017": 29,
+   "2022": 29,
+   "2013": 28,
+   "2008": 27,
+   "2018": 27,
+   "2014": 26,
+   "2005": 25,
+   "2025": 25,
+   "2015": 24,
+   "2024": 23,
+   "2026": 22,
+   "2004": 21,
+   "2009": 21,
+   "2003": 14
+  },
+  "two_year_mean_citedness": 1.03,
+  "topics": [
+   {
+    "name": "Vehicle Routing Optimization Methods",
+    "share": 0.1059
+   },
+   {
+    "name": "Scheduling and Optimization Algorithms",
+    "share": 0.0905
+   },
+   {
+    "name": "Optimization and Packing Problems",
+    "share": 0.0848
+   },
+   {
+    "name": "Advanced Manufacturing and Logistics Optimization",
+    "share": 0.0799
+   },
+   {
+    "name": "Advanced Optimization Algorithms Research",
+    "share": 0.0465
+   },
+   {
+    "name": "Optimization and Search Problems",
+    "share": 0.0456
+   },
+   {
+    "name": "Transportation and Mobility Innovations",
+    "share": 0.0448
+   },
+   {
+    "name": "Transportation Planning and Optimization",
+    "share": 0.035
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0645
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0645
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0645
+    },
+    {
+     "name": "Advanced Optimization Algorithms Research",
+     "share": 0.0645
+    },
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.0645
+    },
+    {
+     "name": "Rough Sets and Fuzzy Logic",
+     "share": 0.0484
+    },
+    {
+     "name": "Data Management and Algorithms",
+     "share": 0.0484
+    },
+    {
+     "name": "Optimization and Mathematical Programming",
+     "share": 0.0484
+    }
+   ],
+   "2022": [
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.1
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.1
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0833
+    },
+    {
+     "name": "Optimization and Search Problems",
+     "share": 0.0667
+    },
+    {
+     "name": "Complexity and Algorithms in Graphs",
+     "share": 0.05
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.05
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0333
+    },
+    {
+     "name": "Supply Chain and Inventory Management",
+     "share": 0.0333
+    }
+   ],
+   "2023": [
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.1053
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0702
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0702
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.0702
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0526
+    },
+    {
+     "name": "Traffic control and management",
+     "share": 0.0526
+    },
+    {
+     "name": "Advanced Optimization Algorithms Research",
+     "share": 0.0526
+    },
+    {
+     "name": "Sparse and Compressive Sensing Techniques",
+     "share": 0.0351
+    }
+   ],
+   "2024": [
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.1132
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0755
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0755
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0566
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0566
+    },
+    {
+     "name": "Bayesian Modeling and Causal Inference",
+     "share": 0.0566
+    },
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.0566
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.0566
+    }
+   ],
+   "2025": [
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0833
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0625
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.0625
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.0625
+    },
+    {
+     "name": "Optimization and Search Problems",
+     "share": 0.0625
+    },
+    {
+     "name": "Assembly Line Balancing Optimization",
+     "share": 0.0625
+    },
+    {
+     "name": "Distributed and Parallel Computing Systems",
+     "share": 0.0417
+    },
+    {
+     "name": "Risk and Portfolio Optimization",
+     "share": 0.0417
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Centre National de la Recherche Scientifique",
+    "country": "",
+    "share": 0.1654
+   },
+   {
+    "name": "University of Bologna",
+    "country": "",
+    "share": 0.0879
+   },
+   {
+    "name": "Ghent University",
+    "country": "",
+    "share": 0.0491
+   },
+   {
+    "name": "University of Calabria",
+    "country": "",
+    "share": 0.0413
+   },
+   {
+    "name": "KU Leuven",
+    "country": "",
+    "share": 0.0413
+   },
+   {
+    "name": "Universit\u00e9 Paris Dauphine-PSL",
+    "country": "",
+    "share": 0.0362
+   },
+   {
+    "name": "HEC Montr\u00e9al",
+    "country": "",
+    "share": 0.0336
+   },
+   {
+    "name": "Universit\u00e9 Libre de Bruxelles",
+    "country": "",
+    "share": 0.031
+   },
+   {
+    "name": "University of Li\u00e8ge",
+    "country": "",
+    "share": 0.031
+   },
+   {
+    "name": "University of Modena and Reggio Emilia",
+    "country": "",
+    "share": 0.0284
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "DE"
+ },
+ "16194500": {
+  "source_ids": [
+   "https://openalex.org/S4210191715"
+  ],
+  "works_per_year": {
+   "2020": 41,
+   "2006": 39,
+   "2011": 39,
+   "2007": 37,
+   "2016": 37,
+   "2010": 36,
+   "2012": 33,
+   "2021": 32,
+   "2019": 30,
+   "2023": 30,
+   "2017": 29,
+   "2022": 29,
+   "2013": 28,
+   "2008": 27,
+   "2018": 27,
+   "2014": 26,
+   "2005": 25,
+   "2025": 25,
+   "2015": 24,
+   "2024": 23,
+   "2026": 22,
+   "2004": 21,
+   "2009": 21,
+   "2003": 14
+  },
+  "two_year_mean_citedness": 1.03,
+  "topics": [
+   {
+    "name": "Vehicle Routing Optimization Methods",
+    "share": 0.1059
+   },
+   {
+    "name": "Scheduling and Optimization Algorithms",
+    "share": 0.0905
+   },
+   {
+    "name": "Optimization and Packing Problems",
+    "share": 0.0848
+   },
+   {
+    "name": "Advanced Manufacturing and Logistics Optimization",
+    "share": 0.0799
+   },
+   {
+    "name": "Advanced Optimization Algorithms Research",
+    "share": 0.0465
+   },
+   {
+    "name": "Optimization and Search Problems",
+    "share": 0.0456
+   },
+   {
+    "name": "Transportation and Mobility Innovations",
+    "share": 0.0448
+   },
+   {
+    "name": "Transportation Planning and Optimization",
+    "share": 0.035
+   }
+  ],
+  "topics_by_year": {
+   "2021": [
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0645
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0645
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0645
+    },
+    {
+     "name": "Advanced Optimization Algorithms Research",
+     "share": 0.0645
+    },
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.0645
+    },
+    {
+     "name": "Rough Sets and Fuzzy Logic",
+     "share": 0.0484
+    },
+    {
+     "name": "Data Management and Algorithms",
+     "share": 0.0484
+    },
+    {
+     "name": "Optimization and Mathematical Programming",
+     "share": 0.0484
+    }
+   ],
+   "2022": [
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.1
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.1
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0833
+    },
+    {
+     "name": "Optimization and Search Problems",
+     "share": 0.0667
+    },
+    {
+     "name": "Complexity and Algorithms in Graphs",
+     "share": 0.05
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.05
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0333
+    },
+    {
+     "name": "Supply Chain and Inventory Management",
+     "share": 0.0333
+    }
+   ],
+   "2023": [
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.1053
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0702
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0702
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.0702
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0526
+    },
+    {
+     "name": "Traffic control and management",
+     "share": 0.0526
+    },
+    {
+     "name": "Advanced Optimization Algorithms Research",
+     "share": 0.0526
+    },
+    {
+     "name": "Sparse and Compressive Sensing Techniques",
+     "share": 0.0351
+    }
+   ],
+   "2024": [
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.1132
+    },
+    {
+     "name": "Multi-Criteria Decision Making",
+     "share": 0.0755
+    },
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0755
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0566
+    },
+    {
+     "name": "Transportation Planning and Optimization",
+     "share": 0.0566
+    },
+    {
+     "name": "Bayesian Modeling and Causal Inference",
+     "share": 0.0566
+    },
+    {
+     "name": "Transportation and Mobility Innovations",
+     "share": 0.0566
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.0566
+    }
+   ],
+   "2025": [
+    {
+     "name": "Scheduling and Optimization Algorithms",
+     "share": 0.0833
+    },
+    {
+     "name": "Vehicle Routing Optimization Methods",
+     "share": 0.0625
+    },
+    {
+     "name": "Advanced Manufacturing and Logistics Optimization",
+     "share": 0.0625
+    },
+    {
+     "name": "Optimization and Packing Problems",
+     "share": 0.0625
+    },
+    {
+     "name": "Optimization and Search Problems",
+     "share": 0.0625
+    },
+    {
+     "name": "Assembly Line Balancing Optimization",
+     "share": 0.0625
+    },
+    {
+     "name": "Distributed and Parallel Computing Systems",
+     "share": 0.0417
+    },
+    {
+     "name": "Risk and Portfolio Optimization",
+     "share": 0.0417
+    }
+   ]
+  },
+  "institutions": [
+   {
+    "name": "Centre National de la Recherche Scientifique",
+    "country": "",
+    "share": 0.1654
+   },
+   {
+    "name": "University of Bologna",
+    "country": "",
+    "share": 0.0879
+   },
+   {
+    "name": "Ghent University",
+    "country": "",
+    "share": 0.0491
+   },
+   {
+    "name": "University of Calabria",
+    "country": "",
+    "share": 0.0413
+   },
+   {
+    "name": "KU Leuven",
+    "country": "",
+    "share": 0.0413
+   },
+   {
+    "name": "Universit\u00e9 Paris Dauphine-PSL",
+    "country": "",
+    "share": 0.0362
+   },
+   {
+    "name": "HEC Montr\u00e9al",
+    "country": "",
+    "share": 0.0336
+   },
+   {
+    "name": "Universit\u00e9 Libre de Bruxelles",
+    "country": "",
+    "share": 0.031
+   },
+   {
+    "name": "University of Li\u00e8ge",
+    "country": "",
+    "share": 0.031
+   },
+   {
+    "name": "University of Modena and Reggio Emilia",
+    "country": "",
+    "share": 0.0284
+   }
+  ],
+  "is_oa": false,
+  "publisher": "Springer Science+Business Media",
+  "country": "DE"
+ }
+}
