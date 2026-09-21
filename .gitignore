@@ -4,4 +4,6 @@ out/
 scraper/data/raw/
 scraper/*.log
 *.pyc
+*.pkl
+*.lock
 .DS_Store
