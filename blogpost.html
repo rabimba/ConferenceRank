@@ -1,0 +1,156 @@
+<style>
+  .pro-post-wrapper { line-height: 1.7; font-size: 1.1rem; }
+  .pro-post-wrapper h3 { font-size: 1.8rem; line-height: 1.3; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #eee; }
+  .pro-post-wrapper h4 { font-size: 1.4rem; line-height: 1.4; margin-top: 2rem; margin-bottom: 1rem; }
+  .pro-post-wrapper p { margin-bottom: 1.25rem; }
+  .pro-post-wrapper a { color: #4a90e2; text-decoration: none; background-image: linear-gradient(currentColor, currentColor); background-position: 0% 100%; background-repeat: no-repeat; background-size: 0% 1px; transition: background-size 0.3s; }
+  .pro-post-wrapper a:hover { background-size: 100% 1px; }
+  .pro-post-wrapper code { background-color: #f3f4f6; border: 1px solid #e5e7eb; padding: 0.2em 0.5em; font-size: 0.9em; border-radius: 4px; font-family: "Courier New", Courier, monospace; }
+  .pro-post-wrapper blockquote { border-left: 4px solid #4a90e2; margin: 2rem 0; padding: 1rem 1.5rem; background-color: #f9fafb; font-size: 1.2rem; font-style: italic; color: #4a5568; }
+  .pro-post-wrapper .styled-list { list-style: none; padding-left: 0; counter-reset: custom-counter; margin-top: 2rem; }
+  .pro-post-wrapper .styled-list li { counter-increment: custom-counter; margin-bottom: 1.5rem; position: relative; padding-left: 3rem; }
+  .pro-post-wrapper .styled-list li::before { content: counter(custom-counter); position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; line-height: 2rem; text-align: center; background-color: #4a90e2; color: #ffffff; border-radius: 50%; font-weight: bold; }
+  .pro-post-wrapper .image-caption { text-align: center; font-style: italic; color: #6b7280; margin-top: 0.5rem; margin-bottom: 2.5rem; font-size: 0.95rem; }
+  .pro-post-wrapper img { max-width: 100%; height: auto; display: block; margin: 2.5rem auto 0.5rem auto; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+
+  .pro-post-wrapper .stat-card {
+    margin: 2.5rem auto; padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%);
+    border: 1px solid #d2e3fc; border-left: 6px solid #4285f4; border-radius: 12px;
+    display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;
+  }
+  .pro-post-wrapper .stat-card .stat-big { font-size: 2.6rem; font-weight: 900; color: #202124; line-height: 1; }
+  .pro-post-wrapper .stat-card .stat-plus { color: #34a853; font-size: 1.8rem; font-weight: 900; }
+  .pro-post-wrapper .stat-card .stat-big-green { font-size: 2.6rem; font-weight: 900; color: #34a853; line-height: 1; }
+  .pro-post-wrapper .stat-card .stat-label { font-size: 0.95rem; color: #5f6368; font-weight: 500; flex-basis: 100%; }
+
+  .pro-post-wrapper .paths-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 2rem 0; }
+  .pro-post-wrapper .paths-grid .path-card { background: #ffffff; border: 1px solid #e5e7eb; border-top: 4px solid; border-radius: 10px; padding: 1.25rem; }
+  .pro-post-wrapper .paths-grid .path-blue   { border-top-color: #4285f4; }
+  .pro-post-wrapper .paths-grid .path-yellow { border-top-color: #fbbc04; }
+  .pro-post-wrapper .paths-grid .path-green  { border-top-color: #34a853; }
+  .pro-post-wrapper .paths-grid .path-red    { border-top-color: #ea4335; }
+  .pro-post-wrapper .paths-grid .path-card h5 { margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 800; color: #202124; }
+  .pro-post-wrapper .paths-grid .path-card p { margin: 0; font-size: 0.92rem; color: #3c4043; line-height: 1.5; }
+  .pro-post-wrapper .paths-grid .path-card code { font-size: 0.8em; background: #f3f4f6; padding: 0.1em 0.4em; }
+</style>
+
+<div class="pro-post-wrapper">
+
+  <p>It started with a spreadsheet I hated.</p>
+
+  <p>A couple of years back I was staring at a paper draft — finished experiments, decent results, zero idea where to send it. My advisor asked the question every advisor asks: <em>"Which venue?"</em> And I did what every graduate student does. I opened seventeen browser tabs. The CORE portal for ranks. WikiCFP for deadlines. A random blog post from 2019 listing acceptance rates that may or may not have been hallucinated. A PDF of SJR quartiles someone had circulated in our lab Slack. And a spreadsheet — my spreadsheet — where I had been hand-copying numbers like it was 1997.</p>
+
+  <p>Every promotion committee, every grant report, every thesis plan quietly runs on this same scattered, half-trusted data. And yet the tooling for answering one of the most consequential questions in research — <em>where should this work go?</em> — was basically folklore.</p>
+
+  <blockquote>We had LLMs that could write sonnets about tensors, but no single place to check if a conference was A*, when its deadline was, and whether its acceptance rate was 18% or 32%.</blockquote>
+
+  <p>So I did what I always do when annoyed by a dumb data problem. I started scraping.</p>
+
+  <h4>The Rabbit Hole</h4>
+
+  <p>The first version was selfish. A Python script that pulled the <a href="https://www.core.edu.au" target="_blank">CORE/ICORE portal</a> for conference ranks, glued on <a href="https://papercopilot.com" target="_blank">Paper Copilot</a> acceptance stats, and spat out a table I could grep. Then I wanted deadlines in the same view, so ccf-deadlines and ai-deadlines joined the pile. Then journals, because reviewers kept telling our lab <em>"this should be a journal paper"</em> — and that opened up SCImago quartiles, H-index, publisher metadata, the whole SJR dataset.</p>
+
+  <p>At some point the script became a pipeline, the pipeline became a website, and the website started getting shared around. That was the moment I realized this wasn't my private itch. This was everyone's itch.</p>
+
+  <div class="stat-card">
+    <span class="stat-big">12,769</span>
+    <span class="stat-label">venues indexed — 987 conferences and 11,782 journals across 22 research fields: all of computer science, plus physics, mathematics, chemistry, materials science, biochemistry, neuroscience, and earth sciences.</span>
+  </div>
+
+  <p>So I cleaned it up, licensed it Apache 2.0, wired the data refresh into GitHub Actions, and put the whole thing online. It's called <strong>ConferenceRank</strong>, it lives at <a href="https://rabimba.github.io/ConferenceRank/" target="_blank">rabimba.github.io/ConferenceRank</a>, and the source is on <a href="https://github.com/rabimba/ConferenceRank" target="_blank">GitHub</a>. No login. No tracking. No server you have to trust.</p>
+
+  <h4>What It Actually Does</h4>
+
+  <p>Under the hood it's one unified dataset and four lenses on top of it.</p>
+
+  <p><strong>The directory.</strong> Every venue gets CORE rank (A*, A, B, C) with full history across ICORE editions — so you can see that ICALP went A → A*, or that a venue you're about to trust got demoted to C. Journals carry <em>dual badges</em>: CORE tier and SJR quartile (Q1–Q4) side by side, with H-index, publisher, and ISSN. If your department counts CORE and your collaborators count Scopus, both evaluations are on one card.</p>
+
+  <p><strong>The acceptance-rate archive.</strong> Multi-year, in some cases multi-decade, selectivity data for 105+ top venues — systems (SOSP, OSDI, SIGCOMM), theory (STOC, FOCS), databases (SIGMOD, VLDB), security (IEEE S&amp;P, USENIX Security), AI/ML/NLP/vision. Not folklore numbers: year-by-year accepted/submitted counts from Paper Copilot, lixin4ever, and curated csconferences stats.</p>
+
+  <p><strong>The deadline tracker.</strong> 298+ upcoming submission deadlines with live Anywhere-on-Earth countdowns, one-click Google Calendar sync, and <code>.ics</code> export. Color-coded urgency. No timezone math at 2 AM.</p>
+
+  <p><strong>The venue suggester.</strong> This is my favorite part. You paste your draft title and abstract, and it suggests target conferences <em>and</em> journals — with reasons. Matching topics, methodology signals, prestige tier. Not "because the acronym is similar."</p>
+
+  <!--****************************************************************
+  *** IMAGE 1: audience.png — who this is for
+  Blogger Compose: place cursor here, Insert image, upload audience.png
+  ALTERNATE: replace src below with a public URL
+  ****************************************************************-->
+  <!--<img src="REPLACE_WITH_PUBLIC_URL/audience.png" alt="Five career stages — first-year PhD, postdoc, professor, industry researcher, and researchers outside CS — each with the same five questions about venue selection, mapped to the ConferenceRank feature that answers them.">-->
+  <p class="image-caption">Same five questions at every career stage. Different stakes.</p>
+
+  <h4>Why I Needed It (And Why You Probably Do Too)</h4>
+
+  <p>The use cases kept multiplying the longer I used it myself.</p>
+
+  <p><strong>The backward-planning problem.</strong> If you need three papers before a thesis defense, you can't discover deadlines after the CFP closes. You need to look 3–9 months out, pick targets, and schedule experiments backwards from the AoE cutoff. The deadline view is literally my lab's calendar now.</p>
+
+  <p><strong>The risk calibration problem.</strong> An 18% venue and a 32% venue are both "good conferences," but they imply very different submission strategies when a graduation timeline or a grant reporting cycle is on the line. Historical acceptance trends make that a decision instead of a prayer.</p>
+
+  <p><strong>The momentum problem.</strong> Miss a conference window or eat a rejection? Pivot to a rolling journal in the same topic area instead of stalling six months waiting for the next annual cycle. The suggester's All / Conferences / Journals toggle exists precisely for this moment.</p>
+
+  <p><strong>The predatory-venue problem.</strong> Students get spam invitations constantly. A ten-second check against the 11,782-journal directory — is it indexed, does it have a real SJR, is the quartile plausible — filters out the junk. If it's missing or shows an SJR of 0.05, we avoid it.</p>
+
+  <p><strong>The dossier problem.</strong> Tenure and promotion files need objective evidence. "Two papers in CORE A* flagships, three in Q1 journals with H-index &gt; 120" is a sentence a dean understands. The badges and rank histories make that sentence trivial to back up.</p>
+
+  <p><strong>The cross-field problem.</strong> This one surprised me. CORE only ranks computer science. But a quantum computing person needs to weigh STOC against <em>Physical Review Letters</em>. A computational biologist needs <em>Bioinformatics</em> and <em>PLOS Comp Bio</em> next to the ML venues. So I expanded the journal pipeline to seven pure-science fields — physics, math, chemistry, materials, biochem, neuroscience, earth sciences — under one taxonomy. And for grants mandating Open Access (NIH, NSF, Horizon Europe, Wellcome), OA flags and filters are built in, no journal-by-journal checking.</p>
+
+  <h4>The Engineering Underneath the Hood</h4>
+
+  <p>For my fellow engineers: the architecture is deliberately boring, and that's the point.</p>
+
+  <!--****************************************************************
+  *** IMAGE 2: pipeline.png — data pipeline diagram
+  Blogger Compose: Insert image here, upload pipeline.png
+  ALTERNATE: replace src below with a public URL
+  ****************************************************************-->
+  <!--<img src="REPLACE_WITH_PUBLIC_URL/pipeline.png" alt="ConferenceRank pipeline: ten public data sources flow into cache-first Python scrapers, merge into JSON artifacts, and ship as a static Next.js site on GitHub Pages. Feature cards below show 987 conferences, 11,782 journals, 105 venues with acceptance history, 298+ deadlines, in-browser suggester, and zero-login watchlist.">-->
+  <p class="image-caption">Ten public sources → cache-first scrapers → merged JSON → static site. Refresh runs weekly in GitHub Actions.</p>
+
+  <ol class="styled-list">
+    <li><strong>The scrapers are cache-first and resume-safe.</strong> Every raw response lives under <code>data/raw/</code>. The OpenAlex fetcher can take 45–90 minutes on a cold run, but re-runs cost seconds, and when the anonymous API's daily budget dies mid-run it exits cleanly and resumes after midnight UTC. The ICORE pass walks 987 detail pages to reconstruct rank history across editions.</li>
+    <li><strong>The merge is where the truth gets negotiated.</strong> Venues are matched to OpenAlex sources by acronym (strong signal) or title word overlap (≥0.5, conferences only, ≥50 works), with junk-match filtering — roughly 150–300 confident matches out of 954 ranked venues. Journal ISSNs get split, normalized, and deduped across CORE and SJR before the datasets fuse.</li>
+    <li><strong>The frontend is a fully static Next.js export.</strong> React 19, TypeScript, Tailwind, Recharts. No backend, no database, no API of mine to go down. GitHub Actions rebuilds and redeploys to Pages on every data refresh. My operational burden is approximately zero, which is exactly what a side project needs to survive.</li>
+  </ol>
+
+  <h4>The Suggester Deserves Its Own Section</h4>
+
+  <p>Here's the thing about asking an external service where to submit your paper: you're handing an unpublished idea to someone else's server. For anything genuinely novel — or anything from an industry lab — that's a non-starter.</p>
+
+  <p>So the suggester runs <em>entirely in your browser</em>. Your abstract gets embedded into 384-dimensional vectors with all-MiniLM-L6-v2, quantized to int8, executing in WebAssembly on your machine. Zero network calls with your text. The scoring blends that semantic similarity with a TF-IDF lexicon and keyword extraction across 14 CS subfields — which catches methodology signals (empirical evaluation vs. theoretical proof vs. systems benchmark), not just shared vocabulary — and then tiers results by CORE/SJR prestige. Every suggestion comes with its match reasons. And the whole filter state syncs into the URL, so <code>/journals?cat=Physics&amp;quartile=Q1&amp;sort=sjr</code> is a link you can email to a co-author.</p>
+
+  <blockquote>The confidentiality guarantee isn't a policy page. It's the architecture. I can't leak your draft because I never see it.</blockquote>
+
+  <p>There's also a small detail I'm disproportionately proud of: the venue deep-dive pages chart SJR and H-index back to 1999. Some journals have historical prestige but stagnating citations; some newer open-access venues are climbing fast. The trajectory matters as much as the snapshot when you're deciding where to commit your best work.</p>
+
+  <h4>Who This Is For</h4>
+
+  <div class="paths-grid">
+    <div class="path-card path-blue">
+      <h5>PhD Students</h5>
+      <p>Backward-plan from AoE deadlines, calibrate submission risk against graduation timelines, and learn the venue landscape of a new field without the folklore.</p>
+    </div>
+    <div class="path-card path-red">
+      <h5>Postdocs &amp; Industry Researchers</h5>
+      <p>Fellowship clocks run on venue tiers. Watchlist alerts, cross-area stats (systems vs. ML vs. theory), and zero-server abstract screening for unpublished work.</p>
+    </div>
+    <div class="path-card path-yellow">
+      <h5>Professors &amp; Lab Heads</h5>
+      <p>Mentoring across fifteen fields, spotting rising vs. declining venues from SJR history, predatory-venue checks, and dossier-ready evidence for promotion files.</p>
+    </div>
+    <div class="path-card path-green">
+      <h5>Everyone Outside CS</h5>
+      <p>Physics, math, chemistry, biochem, neuroscience, materials, earth science — 11,782 journals under one filter, with OA flags for grant compliance.</p>
+    </div>
+  </div>
+
+  <h4>Open Source, Obviously</h4>
+
+  <p>Everything is on GitHub: <a href="https://github.com/rabimba/ConferenceRank" target="_blank">rabimba/ConferenceRank</a>. The scraper pipeline is documented, the raw caches are yours, and the data sources are credited — ranks © CORE, journal indicators © SCImago Lab / Scopus (CC BY-NC-SA), acceptance stats © Paper Copilot and lixin4ever. If your lab wants to self-host it, extend the lexicon, or wire in a field I haven't covered, pull requests are welcome.</p>
+
+  <p><em>This project exists because I was tired of being the human glue between ten half-broken sources of truth. Somewhere out there is a first-year PhD student building the same spreadsheet I built. If ConferenceRank saves them even a fraction of that confusion — or saves one good paper from a predatory journal — then the scraping was worth it. And if you want to take it further, the code is open. Get in touch.</em></p>
+
+  <p><strong>Try it:</strong> <a href="https://rabimba.github.io/ConferenceRank/" target="_blank">rabimba.github.io/ConferenceRank</a> &nbsp;·&nbsp; <strong>Source:</strong> <a href="https://github.com/rabimba/ConferenceRank" target="_blank">github.com/rabimba/ConferenceRank</a></p>
+
+</div>
