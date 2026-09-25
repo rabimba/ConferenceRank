@@ -185,21 +185,40 @@ export function formatDeadlineDisplay(deadlineStr: string, timezoneStr?: string 
 }
 
 /**
+ * Resolves which deadline string a calendar/ICS export should target.
+ * Abstract mode falls back to the paper deadline when no abstract date exists.
+ */
+function resolveDeadlineTarget(
+  deadline: ConferenceDeadline,
+  kind: "paper" | "abstract"
+): { dateStr: string; isAbstract: boolean } {
+  if (kind === "abstract" && deadline.abstract_deadline) {
+    return { dateStr: deadline.abstract_deadline, isAbstract: true };
+  }
+  return { dateStr: deadline.paper_deadline, isAbstract: false };
+}
+
+/**
  * Generates 1-click Google Calendar URL for a conference deadline.
  */
 export function generateGoogleCalendarUrl(
   venue: { acronym: string; title: string },
-  deadline: ConferenceDeadline
+  deadline: ConferenceDeadline,
+  kind: "paper" | "abstract" = "paper"
 ): string {
-  const targetDate = parseDeadlineToDate(deadline.paper_deadline, deadline.timezone);
+  const { dateStr, isAbstract } = resolveDeadlineTarget(deadline, kind);
+  const targetDate = parseDeadlineToDate(dateStr, deadline.timezone);
   if (isNaN(targetDate.getTime())) return "#"; // unparseable deadline — no calendar event
   const endIso = targetDate.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
   // 2 hours event window
   const startDate = new Date(targetDate.getTime() - 2 * 60 * 60 * 1000);
   const startIso = startDate.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
 
-  const title = `${venue.acronym} ${deadline.year} Paper Submission Deadline`;
-  let details = `${venue.title}\n\nPaper Deadline: ${deadline.paper_deadline} (${deadline.timezone || "AoE"})`;
+  const title = isAbstract
+    ? `${venue.acronym} ${deadline.year} Abstract Registration Deadline`
+    : `${venue.acronym} ${deadline.year} Paper Submission Deadline`;
+  let details = `${venue.title}\n\n${isAbstract ? "Abstract" : "Paper"} Deadline: ${dateStr} (${deadline.timezone || "AoE"})`;
+  if (isAbstract) details += `\nPaper Deadline: ${deadline.paper_deadline} (${deadline.timezone || "AoE"})`;
   if (deadline.cycle) details += `\nTrack/Cycle: ${deadline.cycle}`;
   if (deadline.cfp_url) details += `\nCFP & Submission: ${deadline.cfp_url}`;
   if (deadline.conference_dates) details += `\nConference Dates: ${deadline.conference_dates}`;
@@ -221,18 +240,23 @@ export function generateGoogleCalendarUrl(
  */
 export function generateIcsContent(
   venue: { acronym: string; title: string },
-  deadline: ConferenceDeadline
+  deadline: ConferenceDeadline,
+  kind: "paper" | "abstract" = "paper"
 ): string {
-  const targetDate = parseDeadlineToDate(deadline.paper_deadline, deadline.timezone);
+  const { dateStr, isAbstract } = resolveDeadlineTarget(deadline, kind);
+  const targetDate = parseDeadlineToDate(dateStr, deadline.timezone);
   if (isNaN(targetDate.getTime())) return ""; // unparseable deadline — empty ICS
   const endIso = targetDate.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
   const startDate = new Date(targetDate.getTime() - 2 * 60 * 60 * 1000);
   const startIso = startDate.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
   const nowIso = new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
 
-  const uid = `${venue.acronym}-${deadline.year}-${targetDate.getTime()}@conferencerank.org`;
-  const summary = `${venue.acronym} ${deadline.year} Paper Submission Deadline`;
-  let description = `${venue.title}\\n\\nDeadline: ${deadline.paper_deadline} (${deadline.timezone || "AoE"})`;
+  const uid = `${venue.acronym}-${deadline.year}-${isAbstract ? "abs" : "paper"}-${targetDate.getTime()}@conferencerank.org`;
+  const summary = isAbstract
+    ? `${venue.acronym} ${deadline.year} Abstract Registration Deadline`
+    : `${venue.acronym} ${deadline.year} Paper Submission Deadline`;
+  let description = `${venue.title}\\n\\n${isAbstract ? "Abstract" : "Paper"} Deadline: ${dateStr} (${deadline.timezone || "AoE"})`;
+  if (isAbstract) description += `\\nPaper Deadline: ${deadline.paper_deadline} (${deadline.timezone || "AoE"})`;
   if (deadline.cycle) description += `\\nCycle: ${deadline.cycle}`;
   if (deadline.cfp_url) description += `\\nCFP: ${deadline.cfp_url}`;
 
@@ -261,16 +285,17 @@ export function generateIcsContent(
  */
 export function downloadIcsFile(
   venue: { acronym: string; title: string },
-  deadline: ConferenceDeadline
+  deadline: ConferenceDeadline,
+  kind: "paper" | "abstract" = "paper"
 ): void {
   if (typeof window === "undefined") return;
-  const icsText = generateIcsContent(venue, deadline);
+  const icsText = generateIcsContent(venue, deadline, kind);
   if (!icsText) return; // unparseable deadline
   const blob = new Blob([icsText], { type: "text/calendar;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `${venue.acronym}_${deadline.year}_deadline.ics`;
+  link.download = `${venue.acronym}_${deadline.year}${kind === "abstract" ? "_abstract" : ""}_deadline.ics`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

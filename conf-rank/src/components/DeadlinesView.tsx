@@ -15,6 +15,23 @@ import {
   downloadIcsFile,
 } from "@/lib/deadlines";
 
+const RANK_CHIPS = [
+  { value: "A*", label: "A* Flagship" },
+  { value: "A", label: "A Premier" },
+  { value: "B", label: "B Established" },
+  { value: "C", label: "C Recognized" },
+] as const;
+
+const PRIMARY_CATEGORIES = [
+  "Artificial Intelligence",
+  "Machine Learning",
+  "Computer Vision & Multimedia",
+  "Cybersecurity & Privacy",
+  "Data Management & Mining",
+  "Distributed Systems & Networks",
+  "Software Engineering & PL",
+];
+
 export interface VenueWithDeadline {
   id: string;
   acronym: string;
@@ -22,7 +39,7 @@ export interface VenueWithDeadline {
   rank: string;
   categories: string[];
   deadline: ConferenceDeadline;
-  ts: number; // precomputed deadline timestamp (ms); NaN if unparseable
+  ts: number; // precomputed effective-deadline timestamp (ms); NaN if unparseable/missing
 }
 
 export default function DeadlinesView({
@@ -31,13 +48,19 @@ export default function DeadlinesView({
   venues: Conference[];
 }) {
   const [search, setSearch] = useState("");
-  const [selectedRank, setSelectedRank] = useState<string>("all");
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedRanks, setSelectedRanks] = useState<string[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [showAllCats, setShowAllCats] = useState(false);
   const [timeWindow, setTimeWindow] = useState<"30" | "60" | "90" | "all" | "passed">("60");
+  const [deadlineType, setDeadlineType] = useState<"paper" | "abstract">("paper");
   const [onlyWatchlist, setOnlyWatchlist] = useState(false);
   const [now, setNow] = useState<number>(0);
 
   const { watchlist } = useWatchlist();
+
+  const toggle = (arr: string[], v: string, set: (a: string[]) => void) => {
+    set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+  };
 
   // Update current time on mount and every minute
   useEffect(() => {
@@ -46,12 +69,16 @@ export default function DeadlinesView({
     return () => clearInterval(timer);
   }, []);
 
-  // Flatten all venues and their deadline entries; parse each deadline once.
+  // Flatten all venues and their deadline entries; parse the effective deadline
+  // (paper or abstract, per the current toggle) once per mode.
   const allEntries = useMemo(() => {
     const list: VenueWithDeadline[] = [];
     for (const v of venues) {
       if (!v.deadlines || !v.deadlines.length) continue;
       for (const d of v.deadlines) {
+        const effective =
+          deadlineType === "abstract" ? d.abstract_deadline : d.paper_deadline;
+        if (!effective) continue; // abstract mode: skip entries without one
         list.push({
           id: v.id,
           acronym: v.acronym,
@@ -59,12 +86,12 @@ export default function DeadlinesView({
           rank: v.rank,
           categories: v.categories || [],
           deadline: d,
-          ts: parseDeadlineToDate(d.paper_deadline, d.timezone).getTime(),
+          ts: parseDeadlineToDate(effective, d.timezone).getTime(),
         });
       }
     }
     return list;
-  }, [venues]);
+  }, [venues, deadlineType]);
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
@@ -84,11 +111,14 @@ export default function DeadlinesView({
           if (!matchAcr && !matchTitle && !matchCycle) return false;
         }
 
-        if (selectedRank !== "all" && item.rank !== selectedRank) {
+        if (selectedRanks.length && !selectedRanks.includes(item.rank)) {
           return false;
         }
 
-        if (selectedCategory !== "all" && !item.categories.includes(selectedCategory)) {
+        if (
+          selectedCategories.length &&
+          !item.categories.some((c) => selectedCategories.includes(c))
+        ) {
           return false;
         }
 
@@ -103,7 +133,7 @@ export default function DeadlinesView({
         return diffDays >= 0;
       })
       .sort((a, b) => (timeWindow === "passed" ? b.ts - a.ts : a.ts - b.ts));
-  }, [allEntries, search, selectedRank, selectedCategory, timeWindow, onlyWatchlist, watchlist, now]);
+  }, [allEntries, search, selectedRanks, selectedCategories, timeWindow, onlyWatchlist, watchlist, now]);
 
   return (
     <div className="space-y-4">
@@ -157,6 +187,33 @@ export default function DeadlinesView({
             ))}
           </div>
 
+          {/* Paper/Abstract deadline-type toggle */}
+          <div className="flex items-center gap-1">
+            <span className="text-xs font-semibold text-muted mr-1">Deadline:</span>
+            {[
+              { id: "paper", label: "📄 Paper" },
+              { id: "abstract", label: "📝 Abstract" },
+            ].map((dt) => (
+              <button
+                key={dt.id}
+                type="button"
+                onClick={() => setDeadlineType(dt.id as typeof deadlineType)}
+                title={
+                  dt.id === "abstract"
+                    ? "Count down to abstract registration deadlines (venues without one are hidden)"
+                    : "Count down to full paper submission deadlines"
+                }
+                className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+                  deadlineType === dt.id
+                    ? "bg-accent text-accent-contrast shadow-xs"
+                    : "border border-border bg-surface text-foreground/80 hover:border-stone-400 hover:text-foreground dark:hover:border-stone-600"
+                }`}
+              >
+                {dt.label}
+              </button>
+            ))}
+          </div>
+
           {/* Watchlist toggle */}
           <button
             type="button"
@@ -172,42 +229,80 @@ export default function DeadlinesView({
           </button>
         </div>
 
-        {/* Secondary filters (Rank & Topic) */}
-        <div className="flex flex-wrap items-center gap-3 pt-2 border-t border-border/70 text-xs">
-          <div className="flex items-center gap-1.5">
+        {/* Secondary filters (Rank & Topic multi-select chips) */}
+        <div className="space-y-2 pt-2 border-t border-border/70 text-xs">
+          <div className="flex flex-wrap items-center gap-1.5">
             <span className="font-semibold text-muted">Rank:</span>
-            <select
-              value={selectedRank}
-              onChange={(e) => setSelectedRank(e.target.value)}
-              className="rounded-md border border-border bg-surface px-2 py-1 text-xs text-foreground focus:border-accent focus:outline-none"
-            >
-              <option value="all">All Tiers</option>
-              <option value="A*">A* Flagship</option>
-              <option value="A">A Premier</option>
-              <option value="B">B Established</option>
-              <option value="C">C Recognized</option>
-            </select>
+            {RANK_CHIPS.map((r) => (
+              <button
+                key={r.value}
+                type="button"
+                onClick={() => toggle(selectedRanks, r.value, setSelectedRanks)}
+                className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+                  selectedRanks.includes(r.value)
+                    ? "bg-accent text-accent-contrast shadow-xs"
+                    : "border border-border bg-surface text-foreground/80 hover:border-stone-400 hover:text-foreground dark:hover:border-stone-600"
+                }`}
+              >
+                {r.label}
+              </button>
+            ))}
           </div>
 
-          <div className="flex items-center gap-1.5">
+          <div className="flex flex-wrap items-center gap-1.5">
             <span className="font-semibold text-muted">Topic:</span>
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="rounded-md border border-border bg-surface px-2 py-1 text-xs text-foreground focus:border-accent focus:outline-none max-w-[220px]"
-            >
-              <option value="all">All Disciplines</option>
-              {ALL_CATEGORIES.map((cat) => (
-                <option key={cat} value={cat}>
-                  {cat}
-                </option>
-              ))}
-            </select>
+            {(showAllCats
+              ? ALL_CATEGORIES
+              : ALL_CATEGORIES.filter(
+                  (cat) =>
+                    PRIMARY_CATEGORIES.includes(cat) || selectedCategories.includes(cat)
+                )
+            ).map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => toggle(selectedCategories, cat as string, setSelectedCategories)}
+                className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+                  selectedCategories.includes(cat)
+                    ? "bg-accent text-accent-contrast shadow-xs"
+                    : "border border-border bg-surface text-foreground/80 hover:border-stone-400 hover:text-foreground dark:hover:border-stone-600"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+            {ALL_CATEGORIES.length > PRIMARY_CATEGORIES.length && (
+              <button
+                type="button"
+                onClick={() => setShowAllCats(!showAllCats)}
+                className="rounded-full border border-dashed border-border px-3 py-1 text-xs font-semibold text-muted hover:border-accent hover:text-accent transition"
+              >
+                {showAllCats
+                  ? "Show fewer ▴"
+                  : `+ ${ALL_CATEGORIES.length - PRIMARY_CATEGORIES.length} more ▾`}
+              </button>
+            )}
           </div>
 
-          <span className="ml-auto text-xs text-muted">
-            Found {filtered.length} deadline{filtered.length === 1 ? "" : "s"}
-          </span>
+          <div className="flex items-center">
+            {(selectedRanks.length > 0 || selectedCategories.length > 0 || search) && (
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedRanks([]);
+                  setSelectedCategories([]);
+                  setSearch("");
+                }}
+                className="rounded-full px-3 py-1 text-xs font-medium text-muted underline-offset-2 hover:underline"
+              >
+                Clear filters
+              </button>
+            )}
+            <span className="ml-auto text-xs text-muted">
+              Found {filtered.length} deadline{filtered.length === 1 ? "" : "s"}
+              {deadlineType === "abstract" ? " (abstract)" : ""}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -216,12 +311,18 @@ export default function DeadlinesView({
         {filtered.map((item, idx) => {
           const targetDate = new Date(item.ts);
           const countdown = getCountdown(targetDate);
-          const display = formatDeadlineDisplay(item.deadline.paper_deadline, item.deadline.timezone);
-          const gcalUrl = generateGoogleCalendarUrl(item, item.deadline);
+          const effectiveStr =
+            deadlineType === "abstract"
+              ? (item.deadline.abstract_deadline as string) // present: entries without one are filtered out
+              : item.deadline.paper_deadline;
+          const display = formatDeadlineDisplay(effectiveStr, item.deadline.timezone);
+          const gcalUrl = generateGoogleCalendarUrl(item, item.deadline, deadlineType);
+          const dlLabel =
+            deadlineType === "abstract" ? "Abstract Due:" : "Paper Deadline:";
 
           return (
             <div
-              key={`${item.id}-${item.deadline.paper_deadline}-${idx}`}
+              key={`${item.id}-${item.deadline.paper_deadline}-${deadlineType}-${idx}`}
               className="flex flex-col justify-between rounded-xl border border-border bg-surface p-4 shadow-xs hover:border-stone-400 dark:hover:border-stone-600 transition"
             >
               <div>
@@ -261,7 +362,7 @@ export default function DeadlinesView({
                 <div className="mt-3 rounded-lg border border-border/80 bg-stone-50/50 p-2.5 dark:bg-stone-900/30 text-xs space-y-1">
                   <div className="flex items-baseline justify-between gap-2">
                     <span className="font-semibold text-foreground">
-                      Paper Deadline:
+                      {dlLabel}
                     </span>
                     <span className="font-bold text-foreground">
                       {display.localDate}
@@ -274,11 +375,20 @@ export default function DeadlinesView({
                     <span>{display.originalWithTz}</span>
                   </div>
 
-                  {item.deadline.abstract_deadline && (
+                  {item.deadline.abstract_deadline && deadlineType === "paper" && (
                     <div className="pt-1 border-t border-border/50 text-[11px] flex justify-between text-muted">
                       <span>Abstract Due:</span>
                       <span className="font-medium text-foreground/90">
                         {formatDeadlineDisplay(item.deadline.abstract_deadline, item.deadline.timezone).localDate}
+                      </span>
+                    </div>
+                  )}
+
+                  {deadlineType === "abstract" && (
+                    <div className="pt-1 border-t border-border/50 text-[11px] flex justify-between text-muted">
+                      <span>Paper Deadline:</span>
+                      <span className="font-medium text-foreground/90">
+                        {formatDeadlineDisplay(item.deadline.paper_deadline, item.deadline.timezone).localDate}
                       </span>
                     </div>
                   )}
@@ -308,7 +418,7 @@ export default function DeadlinesView({
                 </a>
                 <button
                   type="button"
-                  onClick={() => downloadIcsFile(item, item.deadline)}
+                  onClick={() => downloadIcsFile(item, item.deadline, deadlineType)}
                   title="Download iCalendar (.ics) file"
                   className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs font-semibold text-foreground/90 hover:border-accent hover:text-accent transition inline-flex items-center gap-1 shadow-2xs"
                 >
@@ -349,9 +459,10 @@ export default function DeadlinesView({
             type="button"
             onClick={() => {
               setSearch("");
-              setSelectedRank("all");
-              setSelectedCategory("all");
+              setSelectedRanks([]);
+              setSelectedCategories([]);
               setTimeWindow("all");
+              setDeadlineType("paper");
               setOnlyWatchlist(false);
             }}
             className="mt-4 rounded-lg bg-accent px-3 py-1.5 text-xs font-semibold text-accent-contrast hover:bg-accent-hover transition"
