@@ -7,3 +7,9 @@ scraper/*.log
 *.pkl
 *.lock
 .DS_Store
+
+# generated static API (rebuilt on every build)
+conf-rank/public/api/
+
+# mcp build output
+mcp/dist/

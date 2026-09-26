@@ -5,7 +5,8 @@
   "license": "Apache-2.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:api": "node --experimental-strip-types scripts/build-api.ts",
+    "build": "npm run build:api && next build",
     "start": "next start",
     "lint": "eslint"
   },

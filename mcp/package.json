@@ -1,0 +1,30 @@
+{
+  "name": "conferencerank-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for ConferenceRank: CS conference/journal ranks, acceptance rates, and deadlines",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "conferencerank-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "smoke": "npm run build && node test/smoke.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "zod": "^3.25"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}
