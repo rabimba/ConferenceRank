@@ -1,0 +1,38 @@
+# ConferenceRank
+
+> Machine-readable dataset of computer-science conference and journal venues: CORE/ICORE ranks, SCImago (SJR) quartiles, multi-decade acceptance-rate history, and upcoming submission deadlines (AoE). 987 conferences, 11,782 journals across CS and 7 pure-science fields, refreshed weekly.
+
+## For AI agents
+
+Two integration paths, pick whichever your host supports:
+
+1. **MCP server (preferred)** — `npx conferencerank-mcp` (stdio). Tools: search_venues, get_venue, compare_venues, suggest_venues (abstract → ranked targets), upcoming_deadlines, acceptance_stats. See https://github.com/rabimba/ConferenceRank/tree/main/mcp
+2. **Static JSON API** — plain HTTPS GETs, no auth, cache-friendly. Manifest: https://rabimba.github.io/ConferenceRank/api/index.json
+
+## Static API endpoints
+
+Base: `https://rabimba.github.io/ConferenceRank/api/`
+
+- `index.json` — manifest: version, generatedAt (revalidate against this), endpoint list, counts
+- `conferences.json` — all 987 conferences, full records (rank, rank_history, stats, deadlines, categories, openalex topics)
+- `conference/{id}.json` — single conference by numeric id
+- `journals-index.json` — slim records for all 11,782 journals (id, title, acronym, core_rank, sjr_score, sjr_quartile, h_index, is_oa, categories, publisher, issn)
+- `journals/{letter}.json` — FULL journal records chunked by first letter of id (`a`–`z`, `0`–`9`, `other`). To fetch one journal: find its id in journals-index.json, then GET the chunk matching its first character and filter by id.
+- `deadlines.json` — upcoming submission deadlines only (flattened; includes venue id/acronym/rank/categories, paper_deadline, abstract_deadline when present, timezone, cfp_url), sorted chronologically
+
+## Key concepts
+
+- **CORE ranks**: A* (flagship) > A (premier) > B > C > Unranked. Also legacy `Australasian B/C` and `National` tiers.
+- **SJR quartiles**: Q1 (top 25%) > Q2 > Q3 > Q4, from SCImago/Scopus.
+- **Deadlines**: `paper_deadline` is the full-paper cutoff; `abstract_deadline` (when present) is the earlier abstract-registration cutoff — many venues reject papers without a registered abstract. Timezones are typically `AoE` (UTC-12) or IANA names.
+- **Acceptance stats**: per-year accepted/submitted/rate under `stats`; `latest_rate` is the most recent year's rate.
+
+## Data licensing
+
+Code is Apache-2.0. Rank data © CORE (core.edu.au). Journal indicators © SCImago Lab / Scopus, CC BY-NC-SA 4.0. Acceptance stats © Paper Copilot & lixin4ever. Always verify deadlines with the official CFP before advising submissions.
+
+## Links
+
+- Website: https://rabimba.github.io/ConferenceRank/
+- Source: https://github.com/rabimba/ConferenceRank
+- Full documentation: https://rabimba.github.io/ConferenceRank/llms-full.txt

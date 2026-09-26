@@ -1,0 +1,98 @@
+# ConferenceRank — Full Agent Documentation
+
+ConferenceRank is a static, open dataset of academic venues for computer science and adjacent pure sciences. This file is the complete integration guide for AI agents.
+
+## What the data answers
+
+- Is venue X any good? (CORE rank A*/A/B/C, SJR quartile Q1–Q4, H-index)
+- How hard is it to get in? (per-year acceptance rates, accepted/submitted counts, some venues back to the 1990s)
+- When is the deadline? (paper_deadline + abstract_deadline, AoE-normalized, with CFP links)
+- Where should this abstract go? (match by title/abstract text against venue categories, topics, ranks)
+- Is this journal legitimate or predatory? (indexed in CORE/SJR with publisher, ISSN, citation history — or absent)
+
+## MCP server (preferred integration)
+
+Package: `conferencerank-mcp` (stdio transport). Zero config; datasets are downloaded once and cached at `~/.cache/conferencerank/` with manifest-based revalidation.
+
+### Install snippets
+
+Claude Code:
+```
+claude mcp add conferencerank -- npx -y conferencerank-mcp
+```
+
+Claude Desktop / opencode / generic MCP host config:
+```json
+{
+  "mcpServers": {
+    "conferencerank": { "command": "npx", "args": ["-y", "conferencerank-mcp"] }
+  }
+}
+```
+
+### Tools
+
+- `search_venues(query, type?, ranks?, categories?, limit?)` — text search over title/acronym/publisher/ISSN with optional tier + discipline filters. `type` = conference | journal | all.
+- `get_venue(id)` — full record: rank history, acceptance stats, deadlines, SJR history, OpenAlex topics/institutions.
+- `compare_venues(ids[])` — side-by-side ranks, latest acceptance rate, SJR, H-index, deadlines.
+- `suggest_venues(abstract, type?, ambition?, topN?)` — TF-IDF + category-lexicon scoring (same algorithm as the site's /suggest page). `ambition` = stretch | target | safe | all. Returns ranked venues with match reasons.
+- `upcoming_deadlines(windowDays?, ranks?, categories?, deadlineType?)` — deadlines within N days; `deadlineType` = paper | abstract filters to entries having that date.
+- `acceptance_stats(id)` — full per-year acceptance history for one venue.
+
+## Static JSON API (no-MCP fallback)
+
+Base URL: `https://rabimba.github.io/ConferenceRank/api/`
+
+Workflow:
+1. GET `index.json` — check `generatedAt` against your cache.
+2. GET the endpoints you need (see llms.txt for the list).
+3. Cache aggressively; data refreshes weekly (Mondays ~05:00 UTC).
+
+### Schemas
+
+Conference record (conferences.json, conference/{id}.json):
+```json
+{
+  "id": "711", "title": "...", "acronym": "SOSP",
+  "rank": "A*", "for_codes": ["46"], "categories": ["Distributed Systems & Networks"],
+  "rank_history": [{ "source": "ICORE2026", "rank": "A*", "for": "46", "for_name": "..." }],
+  "stats": [{ "year": 2024, "accepted": 41, "submitted": 261, "rate": 15.7 }],
+  "stats_source": "papercopilot",
+  "deadlines": [{
+    "cycle": null, "year": 2026,
+    "abstract_deadline": "2026-04-01 23:59:59",
+    "paper_deadline": "2026-04-08 23:59:00",
+    "notification_date": null, "timezone": "AoE",
+    "location": "...", "conference_dates": "...", "cfp_url": "https://...",
+    "source": "ccf"
+  }],
+  "openalex": { "topics": [...], "institutions": [...], "works_per_year": {...} }
+}
+```
+
+Journal index record (journals-index.json — slim):
+```json
+{ "id": "acm-computing-surveys", "title": "...", "acronym": "CSUR",
+  "core_rank": "A*", "sjr_score": 7.183, "sjr_quartile": "Q1", "h_index": 217,
+  "is_oa": false, "categories": ["General & Interdisciplinary CS"],
+  "publisher": "ACM", "issn": ["0360-0300", "1557-7341"] }
+```
+
+Full journal record (inside journals/{letter}.json chunks) additionally has: `core_rank_history`, `sjr.history[]` (per-year sjr/quartile/h_index back to 1999), `country`, `dblp_url`, `openalex` (topics, institutions, works_per_year, two_year_mean_citedness).
+
+Deadline record (deadlines.json): conference deadline entry flattened with `venue_id`, `acronym`, `title`, `rank`, `categories`.
+
+## Interpretation guidance for agents
+
+- When a user asks "is X a good venue", report BOTH systems when available: CORE tier and SJR quartile. They measure different things (peer-review prestige vs. citation impact).
+- `abstract_deadline` earlier than `paper_deadline` means mandatory abstract registration; missing it usually disqualifies the submission. Surface it prominently.
+- Acceptance rates below ~20% are highly selective; 20–32% moderate; above ~35% accessible. Use this when calibrating "stretch/target/safe" advice.
+- A venue absent from both CORE and SJR with a spammy-sounding publisher is a predatory-venue red flag. Say so plainly.
+- Always recommend verifying deadlines on the official CFP (`cfp_url`) — community sources can lag.
+
+## Licensing & attribution
+
+- Site code: Apache-2.0 with NOTICE attribution (github.com/rabimba/ConferenceRank).
+- CORE/ICORE ranks © Computing Research and Education Association of Australasia.
+- SJR data © SCImago Lab / Scopus (Elsevier), CC BY-NC-SA 4.0 — non-commercial use with attribution.
+- Acceptance stats © Paper Copilot and lixin4ever (GitHub community datasets).

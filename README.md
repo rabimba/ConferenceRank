@@ -18,6 +18,16 @@ Deployed automatically to GitHub Pages via GitHub Actions.
 - **Data Sources**: Integrated from CORE (conferences & journals), SCImago Journal Rank (SJR), csconferences, ccf-deadlines, ai-deadlines, sec-deadlines, Paper Copilot, lixin4ever, OpenAlex, and DBLP.
 - **Automated Updates**: Scheduled GitHub Actions workflows automatically refresh statistics weekly and redeploy to GitHub Pages.
 
+## For AI Agents
+
+ConferenceRank is machine-consumable out of the box:
+
+- **MCP server** (`mcp/`): `npx conferencerank-mcp` gives any MCP-capable agent six typed tools — `search_venues`, `get_venue`, `compare_venues`, `suggest_venues` (abstract → targets), `upcoming_deadlines` (paper/abstract modes), `acceptance_stats`. Data is cached locally and revalidated against the manifest. See [`mcp/README.md`](mcp/README.md).
+- **Static JSON API**: `https://rabimba.github.io/ConferenceRank/api/` — `index.json` manifest, `conferences.json`, `journals-index.json`, per-letter `journals/{letter}.json` chunks, and `deadlines.json` (upcoming only). Regenerated on every build via `conf-rank/scripts/build-api.ts`.
+- **Agent skill**: [`skills/conferencerank/SKILL.md`](skills/conferencerank/SKILL.md) teaches non-MCP agents how to query the API and interpret ranks/quartiles/deadlines.
+- **llms.txt**: [`/llms.txt`](conf-rank/public/llms.txt) and [`/llms-full.txt`](conf-rank/public/llms-full.txt) ship with the site.
+
+
 ---
 
 ## License & Attribution
