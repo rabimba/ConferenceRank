@@ -68,7 +68,7 @@
 
   <p><strong>The acceptance-rate archive.</strong> Multi-year, in some cases multi-decade, selectivity data for 105+ top venues — systems (SOSP, OSDI, SIGCOMM), theory (STOC, FOCS), databases (SIGMOD, VLDB), security (IEEE S&amp;P, USENIX Security), AI/ML/NLP/vision. Not folklore numbers: year-by-year accepted/submitted counts from Paper Copilot, lixin4ever, and curated csconferences stats.</p>
 
-  <p><strong>The deadline tracker.</strong> 298+ upcoming submission deadlines with live Anywhere-on-Earth countdowns, one-click Google Calendar sync, and <code>.ics</code> export. Color-coded urgency. No timezone math at 2 AM.</p>
+  <p><strong>The deadline tracker.</strong> 298+ upcoming submission deadlines with live Anywhere-on-Earth countdowns, one-click Google Calendar sync, and <code>.ics</code> export. Color-coded urgency. No timezone math at 2 AM. Two upgrades landed since launch, both born from my own misses: <strong>multi-select rank and discipline filters</strong> — chip-select A* <em>and</em> A across systems <em>and</em> security, because nobody's plan lives in a single dropdown — and a <strong>Paper/Abstract mode toggle</strong>. That second one matters more than it looks: many top venues (CCS, S&amp;P, USENIX Security, AAAI) hard-reject papers without a registered abstract, due days <em>before</em> the paper cutoff. In Abstract mode the countdowns, sorting, and calendar exports all follow the abstract date — the deadline that actually decides whether your submission exists.</p>
 
   <p><strong>The venue suggester.</strong> This is my favorite part. You paste your draft title and abstract, and it suggests target conferences <em>and</em> journals — with reasons. Matching topics, methodology signals, prestige tier. Not "because the acronym is similar."</p>
 
@@ -144,6 +144,14 @@
       <p>Physics, math, chemistry, biochem, neuroscience, materials, earth science — 11,782 journals under one filter, with OA flags for grant compliance.</p>
     </div>
   </div>
+
+  <h4>Teaching the Machines to Read It</h4>
+
+  <p>One more thing changed since launch, and it's the part I'd have laughed at a year ago: <strong>the site now talks to AI agents directly.</strong> Not through screen-scraping — through a proper interface. The build now emits a static JSON API (<code>/api/index.json</code> manifest, per-venue files, letter-chunked journals, upcoming-only deadlines) alongside the HTML, and there's an <strong>MCP server</strong> — <code>npx conferencerank-mcp</code> — that gives any MCP-capable agent six tools over the dataset: search, get, compare, suggest-from-abstract, deadlines (paper or abstract mode), and acceptance history. Datasets cache locally on the agent's machine; your abstract never leaves it. For agents without MCP, a <a href="https://github.com/rabimba/ConferenceRank/tree/main/skills/conferencerank" target="_blank">skill file</a> teaches them the API directly, and <code>llms.txt</code> ships with the site.</p>
+
+  <blockquote>"Where should I send this paper?" is now a question your research agent can answer with real rank data, real acceptance rates, and the actual abstract deadline — instead of hallucinating a venue list from training data.</blockquote>
+
+  <p>That story deserves its own post. It's the next one.</p>
 
   <h4>Open Source, Obviously</h4>
 

@@ -1,0 +1,153 @@
+<style>
+  .pro-post-wrapper { line-height: 1.7; font-size: 1.1rem; }
+  .pro-post-wrapper h3 { font-size: 1.8rem; line-height: 1.3; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #eee; }
+  .pro-post-wrapper h4 { font-size: 1.4rem; line-height: 1.4; margin-top: 2rem; margin-bottom: 1rem; }
+  .pro-post-wrapper p { margin-bottom: 1.25rem; }
+  .pro-post-wrapper a { color: #4a90e2; text-decoration: none; background-image: linear-gradient(currentColor, currentColor); background-position: 0% 100%; background-repeat: no-repeat; background-size: 0% 1px; transition: background-size 0.3s; }
+  .pro-post-wrapper a:hover { background-size: 100% 1px; }
+  .pro-post-wrapper code { background-color: #f3f4f6; border: 1px solid #e5e7eb; padding: 0.2em 0.5em; font-size: 0.9em; border-radius: 4px; font-family: "Courier New", Courier, monospace; }
+  .pro-post-wrapper pre { background-color: #1c1917; color: #f5f5f4; border-radius: 8px; padding: 1rem 1.25rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; margin: 1.5rem 0; }
+  .pro-post-wrapper pre code { background: none; border: none; padding: 0; color: inherit; font-size: inherit; }
+  .pro-post-wrapper blockquote { border-left: 4px solid #4a90e2; margin: 2rem 0; padding: 1rem 1.5rem; background-color: #f9fafb; font-size: 1.2rem; font-style: italic; color: #4a5568; }
+  .pro-post-wrapper .styled-list { list-style: none; padding-left: 0; counter-reset: custom-counter; margin-top: 2rem; }
+  .pro-post-wrapper .styled-list li { counter-increment: custom-counter; margin-bottom: 1.5rem; position: relative; padding-left: 3rem; }
+  .pro-post-wrapper .styled-list li::before { content: counter(custom-counter); position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; line-height: 2rem; text-align: center; background-color: #4a90e2; color: #ffffff; border-radius: 50%; font-weight: bold; }
+  .pro-post-wrapper .image-caption { text-align: center; font-style: italic; color: #6b7280; margin-top: 0.5rem; margin-bottom: 2.5rem; font-size: 0.95rem; }
+  .pro-post-wrapper img, .pro-post-wrapper video { max-width: 100%; height: auto; display: block; margin: 2.5rem auto 0.5rem auto; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+  .pro-post-wrapper .stat-card { margin: 2.5rem auto; padding: 1.5rem 2rem; background: linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%); border: 1px solid #d2e3fc; border-left: 6px solid #4285f4; border-radius: 12px; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+  .pro-post-wrapper .stat-card .stat-big { font-size: 2.6rem; font-weight: 900; color: #202124; line-height: 1; }
+  .pro-post-wrapper .stat-card .stat-label { font-size: 0.95rem; color: #5f6368; font-weight: 500; flex-basis: 100%; }
+  .pro-post-wrapper .paths-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 2rem 0; }
+  .pro-post-wrapper .paths-grid .path-card { background: #ffffff; border: 1px solid #e5e7eb; border-top: 4px solid; border-radius: 10px; padding: 1.25rem; }
+  .pro-post-wrapper .paths-grid .path-blue   { border-top-color: #4285f4; }
+  .pro-post-wrapper .paths-grid .path-yellow { border-top-color: #fbbc04; }
+  .pro-post-wrapper .paths-grid .path-green  { border-top-color: #34a853; }
+  .pro-post-wrapper .paths-grid .path-red    { border-top-color: #ea4335; }
+  .pro-post-wrapper .paths-grid .path-card h5 { margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 800; color: #202124; }
+  .pro-post-wrapper .paths-grid .path-card p { margin: 0; font-size: 0.92rem; color: #3c4043; line-height: 1.5; }
+  .pro-post-wrapper .paths-grid .path-card code { font-size: 0.8em; background: #f3f4f6; padding: 0.1em 0.4em; }
+  .pro-post-wrapper .tool-pill { display: inline-block; background: #eef2ff; border: 1px solid #c7d2fe; color: #3730a3; border-radius: 6px; padding: 0.1em 0.5em; font-family: "Courier New", Courier, monospace; font-size: 0.85em; font-weight: 700; }
+</style>
+
+<div class="pro-post-wrapper">
+
+  <p>My research agent hallucinated a conference last week.</p>
+
+  <p>I asked it a simple question — <em>"what are the strong systems venues with deadlines in the next two months?"</em> — and it confidently returned a list. One venue had the wrong acceptance rate (off by 15 points). One deadline was from last year's cycle. And one conference, as far as I can tell, does not exist. The model wasn't dumb. It was doing what LLMs do when the ground truth isn't in the context: it filled the gap with plausible-sounding folklore.</p>
+
+  <p>This annoyed me more than it should have, because I had literally built the antidote. <a href="https://rkrants.blogspot.com/" target="_blank">Last post</a> I wrote about <a href="https://rabimba.github.io/ConferenceRank/" target="_blank">ConferenceRank</a> — the open dataset I maintain with CORE ranks, SJR quartiles, decades of acceptance rates, and live deadlines for 12,769 venues. The data was all there, refreshed weekly, verified. My agent just had no way to reach it.</p>
+
+  <blockquote>Agents don't need more training data about conferences. They need a way to <em>look it up</em>.</blockquote>
+
+  <p>So I taught the site to talk to agents. Three layers, all static, all open.</p>
+
+  <h4>Layer One: A Real API (That Isn't a Server)</h4>
+
+  <p>The site is a static GitHub Pages export — no backend, and I intend to keep it that way. But "static" doesn't mean "unreadable." Every build now also emits a JSON API next to the HTML:</p>
+
+  <ul>
+    <li><code>api/index.json</code> — a manifest with a <code>generatedAt</code> timestamp (so caches can revalidate) and counts</li>
+    <li><code>api/conferences.json</code> — all 987 conferences with rank history, stats, deadlines, topics</li>
+    <li><code>api/journals-index.json</code> + letter-chunked <code>api/journals/{a-z}.json</code> — all 11,782 journals</li>
+    <li><code>api/deadlines.json</code> — upcoming deadlines only, flattened, chronological, abstract cutoffs included</li>
+  </ul>
+
+  <p>Any HTTP client can read it. No auth, no rate limit, no key signup dance. The same weekly GitHub Actions run that refreshes the data regenerates the API, so agents always see what the website shows.</p>
+
+  <h4>Layer Two: The MCP Server</h4>
+
+  <p>Raw JSON is fine for scripts. For agents, the right interface is <a href="https://modelcontextprotocol.io" target="_blank">MCP</a> — the Model Context Protocol, the closest thing we have to a standard tool-socket for AI assistants. So I packaged one: <code>conferencerank-mcp</code>.</p>
+
+  <p>Six tools:</p>
+
+  <div class="paths-grid">
+    <div class="path-card path-blue">
+      <h5><span class="tool-pill">search_venues</span></h5>
+      <p>Free-text search over title, acronym, publisher, ISSN — with rank-tier and discipline filters.</p>
+    </div>
+    <div class="path-card path-green">
+      <h5><span class="tool-pill">get_venue</span></h5>
+      <p>Full dossier: rank history across CORE editions, per-year acceptance stats, SJR trajectory back to 1999.</p>
+    </div>
+    <div class="path-card path-yellow">
+      <h5><span class="tool-pill">compare_venues</span></h5>
+      <p>Side-by-side: ranks, rates, H-index, deadlines. The "NeurIPS vs ICML vs AAAI" question, answered with data.</p>
+    </div>
+    <div class="path-card path-red">
+      <h5><span class="tool-pill">suggest_venues</span></h5>
+      <p>Paste an abstract, get ranked targets with reasons — the same TF-IDF + lexicon engine as the site's suggester, with stretch/target/safe tiering.</p>
+    </div>
+    <div class="path-card path-blue">
+      <h5><span class="tool-pill">upcoming_deadlines</span></h5>
+      <p>Deadlines in a forward window, AoE-normalized, filterable by tier and field — in <strong>paper or abstract mode</strong>, because missing abstract registration kills the submission.</p>
+    </div>
+    <div class="path-card path-green">
+      <h5><span class="tool-pill">acceptance_stats</span></h5>
+      <p>The full year-by-year selectivity history for one venue. SOSP: 14 years of it.</p>
+    </div>
+  </div>
+
+  <p>Setup is one line. Claude Code:</p>
+
+  <pre><code>claude mcp add conferencerank -- npx -y conferencerank-mcp</code></pre>
+
+  <p>Or in any MCP host's config (Claude Desktop, opencode, etc.):</p>
+
+  <pre><code>{
+  "mcpServers": {
+    "conferencerank": {
+      "command": "npx",
+      "args": ["-y", "conferencerank-mcp"]
+    }
+  }
+}</code></pre>
+
+  <p>On first call the server downloads the dataset and caches it under <code>~/.cache/conferencerank/</code>, revalidating against the manifest timestamp. After that it's instant — and it works offline against the stale cache. True to the site's philosophy: <strong>your unpublished abstract never touches anyone's server.</strong> The suggester runs on the agent's machine, not mine.</p>
+
+  <h4>Watch It Work</h4>
+
+  <p>A one-minute tour: the live site (multi-select tier chips, the abstract-deadline toggle, the suggester, an SJR history page) — the exact surfaces the agent tools expose.</p>
+
+  <!--****************************************************************
+  *** VIDEO: conferencerank-tour.webm (60s, 1280x720)
+  BEST: upload to YouTube and replace this block with the embed iframe:
+  <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:12px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,0.12);margin:2.5rem 0 0.5rem 0;">
+    <iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+  </div>
+  ALT: host the webm/mp4 and use:
+  ****************************************************************-->
+  <!--<video controls preload="metadata" src="REPLACE_WITH_PUBLIC_URL/conferencerank-tour.webm"></video>-->
+  <p class="image-caption">Sixty seconds of ConferenceRank: A*/A chip filters, abstract-deadline mode, the venue suggester, and 27 years of SJR history.</p>
+
+  <p>And here's the agent side. With the MCP server registered, my assistant answered the original question for real:</p>
+
+  <pre><code>&gt; upcoming_deadlines(windowDays: 90, deadlineType: "abstract", ranks: ["A*","A"])
+
+16 deadlines found. VLDB (abstract due today), ECIR (today),
+AISTATS (4 days), ...</code></pre>
+
+  <p>Every one of those is backed by a CFP link the agent can hand me. No folklore. No invented venues.</p>
+
+  <h4>Layer Three: A Skill for Everything Else</h4>
+
+  <p>Not every agent speaks MCP. For the rest, there's a <a href="https://github.com/rabimba/ConferenceRank/tree/main/skills/conferencerank" target="_blank">skill file</a> — a plain SKILL.md that teaches any agent (Claude Code, opencode, Cursor, whatever reads skills) how to query the static API directly: which endpoint to fetch, how to resolve a journal's letter-chunk, how to interpret CORE vs. SJR, why the abstract deadline matters, and the predatory-venue heuristic (absent from both indexes + unknown publisher = red flag, say so).</p>
+
+  <p>And for agents that find the site organically: <code>llms.txt</code> and <code>llms-full.txt</code> ship at the root, documenting endpoints, schemas, and licensing.</p>
+
+  <h4>Why This Matters Beyond My Tool</h4>
+
+  <p>The pattern here is bigger than conference rankings. The next wave of useful agents won't be the ones with the biggest context windows — it'll be the ones plugged into <em>curated, fresh, ground-truth data</em>. Every niche dataset maintainer is sitting on something an agent could use, and most of those datasets are trapped behind HTML meant for human eyeballs.</p>
+
+  <p>The recipe I landed on is cheap enough for any side project: static JSON next to your HTML, a thin MCP wrapper that caches it, a skill file for everything else. Total new infrastructure cost: zero dollars. It runs on GitHub Pages.</p>
+
+  <blockquote>If your data answers a question people ask agents, give the agents a door. They'll stop hallucinating the answer.</blockquote>
+
+  <h4>Try It</h4>
+
+  <p>Point your agent at a draft abstract and ask where it should go. Ask it which Q1 journals in your field are rising over the last decade. Ask it what A* deadlines close in the next 60 days — and watch it cite the abstract cutoff too.</p>
+
+  <p><strong>MCP server:</strong> <a href="https://github.com/rabimba/ConferenceRank/tree/main/mcp" target="_blank">github.com/rabimba/ConferenceRank/mcp</a> &nbsp;·&nbsp; <strong>Skill:</strong> <a href="https://github.com/rabimba/ConferenceRank/tree/main/skills/conferencerank" target="_blank">skills/conferencerank</a> &nbsp;·&nbsp; <strong>API:</strong> <a href="https://rabimba.github.io/ConferenceRank/api/index.json" target="_blank">api/index.json</a> &nbsp;·&nbsp; <strong>Site:</strong> <a href="https://rabimba.github.io/ConferenceRank/" target="_blank">rabimba.github.io/ConferenceRank</a></p>
+
+  <p><em>The dataset was always the point. Now it's not just mine to use — it's your agent's. If you build something on top of it, I want to hear about it.</em></p>
+
+</div>
