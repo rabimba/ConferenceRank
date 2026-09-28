@@ -83,13 +83,19 @@ function writeUrl(
   page: number
 ) {
   if (typeof window === "undefined") return;
-  const p = new URLSearchParams();
+  const p = new URLSearchParams(window.location.search);
   if (q) p.set("q", q);
+  else p.delete("q");
   if (cats.length) p.set("cats", cats.join(","));
+  else p.delete("cats");
   if (ranks.length) p.set("ranks", ranks.join(","));
+  else p.delete("ranks");
   if (sort !== "rank") p.set("sort", sort);
+  else p.delete("sort");
   if (dir !== "asc") p.set("dir", dir);
+  else p.delete("dir");
   if (page > 1) p.set("page", String(page));
+  else p.delete("page");
   const qs = p.toString();
   window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
 }

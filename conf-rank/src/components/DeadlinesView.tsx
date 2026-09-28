@@ -4,7 +4,9 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
+import ShareButton from "./ShareButton";
 import WatchlistButton from "./WatchlistButton";
+import type { ShareCardData } from "@/lib/shareCard";
 import { useWatchlist } from "@/lib/watchlist";
 import { ALL_CATEGORIES, type Conference, type ConferenceDeadline } from "@/lib/types";
 import {
@@ -32,6 +34,66 @@ const PRIMARY_CATEGORIES = [
   "Software Engineering & PL",
 ];
 
+type TimeWindow = "30" | "60" | "90" | "all" | "passed";
+type DeadlineType = "paper" | "abstract";
+
+function readUrl(): {
+  q: string;
+  ranks: string[];
+  cats: string[];
+  window: TimeWindow;
+  dtype: DeadlineType;
+  watch: boolean;
+} {
+  if (typeof window === "undefined") {
+    return { q: "", ranks: [], cats: [], window: "60", dtype: "paper", watch: false };
+  }
+  const p = new URLSearchParams(window.location.search);
+  const rawWin = p.get("window");
+  const validWin: TimeWindow =
+    rawWin === "30" || rawWin === "60" || rawWin === "90" || rawWin === "all" || rawWin === "passed"
+      ? rawWin
+      : "60";
+  const rawDtype = p.get("dtype");
+  const validDtype: DeadlineType = rawDtype === "abstract" ? "abstract" : "paper";
+  return {
+    q: p.get("q") ?? "",
+    ranks: (p.get("ranks") ?? "").split(",").filter(Boolean),
+    cats: (p.get("cats") ?? "").split(",").filter(Boolean),
+    window: validWin,
+    dtype: validDtype,
+    watch: p.get("watch") === "1",
+  };
+}
+
+function writeUrl(
+  q: string,
+  ranks: string[],
+  cats: string[],
+  windowVal: TimeWindow,
+  dtype: DeadlineType,
+  watch: boolean
+) {
+  if (typeof window === "undefined") return;
+  const p = new URLSearchParams(window.location.search);
+  // Ensure tab=deadlines is present when sharing from deadlines view
+  p.set("tab", "deadlines");
+  if (q) p.set("q", q);
+  else p.delete("q");
+  if (ranks.length) p.set("ranks", ranks.join(","));
+  else p.delete("ranks");
+  if (cats.length) p.set("cats", cats.join(","));
+  else p.delete("cats");
+  if (windowVal !== "60") p.set("window", windowVal);
+  else p.delete("window");
+  if (dtype !== "paper") p.set("dtype", dtype);
+  else p.delete("dtype");
+  if (watch) p.set("watch", "1");
+  else p.delete("watch");
+  const qs = p.toString();
+  window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+}
+
 export interface VenueWithDeadline {
   id: string;
   acronym: string;
@@ -54,9 +116,35 @@ export default function DeadlinesView({
   const [timeWindow, setTimeWindow] = useState<"30" | "60" | "90" | "all" | "passed">("60");
   const [deadlineType, setDeadlineType] = useState<"paper" | "abstract">("paper");
   const [onlyWatchlist, setOnlyWatchlist] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
   const [now, setNow] = useState<number>(0);
 
   const { watchlist } = useWatchlist();
+
+  // Hydrate filter state from URL once on mount
+  useEffect(() => {
+    const u = readUrl();
+    if (u.q) setSearch(u.q);
+    if (u.ranks.length) setSelectedRanks(u.ranks);
+    if (u.cats.length) {
+      setSelectedCategories(u.cats);
+      // Auto-expand category list if any selected category isn't in primary
+      if (u.cats.some((c) => !PRIMARY_CATEGORIES.includes(c))) {
+        setShowAllCats(true);
+      }
+    }
+    if (u.window) setTimeWindow(u.window);
+    if (u.dtype) setDeadlineType(u.dtype);
+    if (u.watch) setOnlyWatchlist(true);
+    setHydrated(true);
+  }, []);
+
+  // Sync state changes back to URL after initial hydration
+  useEffect(() => {
+    if (hydrated) {
+      writeUrl(search, selectedRanks, selectedCategories, timeWindow, deadlineType, onlyWatchlist);
+    }
+  }, [search, selectedRanks, selectedCategories, timeWindow, deadlineType, onlyWatchlist, hydrated]);
 
   const toggle = (arr: string[], v: string, set: (a: string[]) => void) => {
     set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
@@ -134,6 +222,57 @@ export default function DeadlinesView({
       })
       .sort((a, b) => (timeWindow === "passed" ? b.ts - a.ts : a.ts - b.ts));
   }, [allEntries, search, selectedRanks, selectedCategories, timeWindow, onlyWatchlist, watchlist, now]);
+
+  const windowLabel = {
+    "30": "Next 30 Days",
+    "60": "Next 60 Days",
+    "90": "Next 90 Days",
+    all: "All Upcoming",
+    passed: "Recently Passed",
+  }[timeWindow];
+
+  // Distinct venues in the filtered deadline set for sample pills
+  const sampleVenues = useMemo(() => {
+    const seen = new Set<string>();
+    const list: string[] = [];
+    for (const item of filtered) {
+      if (!seen.has(item.acronym)) {
+        seen.add(item.acronym);
+        list.push(item.acronym);
+      }
+      if (list.length >= 8) break;
+    }
+    return list;
+  }, [filtered]);
+
+  const shareSubtitle = useMemo(() => {
+    const parts = [
+      selectedRanks.length > 0 ? `Rank ${selectedRanks.join("/")}` : null,
+      selectedCategories.length > 0 ? selectedCategories.join(", ") : null,
+      windowLabel,
+      deadlineType === "abstract" ? "Abstract Deadlines" : null,
+      search ? `"${search}"` : null,
+      onlyWatchlist ? "Watchlist" : null,
+    ].filter(Boolean);
+    return parts.length > 0
+      ? `Filtered by: ${parts.join(" • ")}`
+      : "Upcoming Conference Submission Deadlines (AoE)";
+  }, [selectedRanks, selectedCategories, windowLabel, deadlineType, search, onlyWatchlist]);
+
+  const shareData: ShareCardData = {
+    type: "directory",
+    title: deadlineType === "abstract" ? "Upcoming Abstract Deadlines" : "Upcoming Paper Deadlines",
+    subtitle: shareSubtitle,
+    count: filtered.length,
+    ranks: selectedRanks,
+    categories: selectedCategories,
+    sampleVenues,
+    metricLabel: "Deadlines",
+    caption:
+      deadlineType === "abstract"
+        ? "Abstract registration cutoffs (AoE) with 1-click Google Cal & .ics export"
+        : "Full paper cutoffs (AoE) with live countdowns & calendar sync",
+  };
 
   return (
     <div className="space-y-4">
@@ -284,24 +423,36 @@ export default function DeadlinesView({
             )}
           </div>
 
-          <div className="flex items-center">
-            {(selectedRanks.length > 0 || selectedCategories.length > 0 || search) && (
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            {(selectedRanks.length > 0 || selectedCategories.length > 0 || search || onlyWatchlist || timeWindow !== "60" || deadlineType !== "paper") && (
               <button
                 type="button"
                 onClick={() => {
                   setSelectedRanks([]);
                   setSelectedCategories([]);
                   setSearch("");
+                  setTimeWindow("60");
+                  setDeadlineType("paper");
+                  setOnlyWatchlist(false);
                 }}
                 className="rounded-full px-3 py-1 text-xs font-medium text-muted underline-offset-2 hover:underline"
               >
                 Clear filters
               </button>
             )}
-            <span className="ml-auto text-xs text-muted">
-              Found {filtered.length} deadline{filtered.length === 1 ? "" : "s"}
-              {deadlineType === "abstract" ? " (abstract)" : ""}
-            </span>
+
+            <div className="ml-auto flex items-center gap-2.5">
+              <ShareButton
+                data={shareData}
+                label="Share View"
+                size="sm"
+                className="border border-border bg-surface text-foreground/80 hover:border-accent hover:text-accent shadow-2xs"
+              />
+              <span className="text-xs text-muted">
+                Found {filtered.length} deadline{filtered.length === 1 ? "" : "s"}
+                {deadlineType === "abstract" ? " (abstract)" : ""}
+              </span>
+            </div>
           </div>
         </div>
       </div>
