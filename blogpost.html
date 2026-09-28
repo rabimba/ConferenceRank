@@ -11,7 +11,7 @@
   .pro-post-wrapper .styled-list li { counter-increment: custom-counter; margin-bottom: 1.5rem; position: relative; padding-left: 3rem; }
   .pro-post-wrapper .styled-list li::before { content: counter(custom-counter); position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; line-height: 2rem; text-align: center; background-color: #4a90e2; color: #ffffff; border-radius: 50%; font-weight: bold; }
   .pro-post-wrapper .image-caption { text-align: center; font-style: italic; color: #6b7280; margin-top: 0.5rem; margin-bottom: 2.5rem; font-size: 0.95rem; }
-  .pro-post-wrapper img { max-width: 100%; height: auto; display: block; margin: 2.5rem auto 0.5rem auto; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+  .pro-post-wrapper img, .pro-post-wrapper video { max-width: 100%; height: auto; display: block; margin: 2.5rem auto 0.5rem auto; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
 
   .pro-post-wrapper .stat-card {
     margin: 2.5rem auto; padding: 1.5rem 2rem;
@@ -71,6 +71,21 @@
   <p><strong>The deadline tracker.</strong> 298+ upcoming submission deadlines with live Anywhere-on-Earth countdowns, one-click Google Calendar sync, and <code>.ics</code> export. Color-coded urgency. No timezone math at 2 AM. Two upgrades landed since launch, both born from my own misses: <strong>multi-select rank and discipline filters</strong> — chip-select A* <em>and</em> A across systems <em>and</em> security, because nobody's plan lives in a single dropdown — and a <strong>Paper/Abstract mode toggle</strong>. That second one matters more than it looks: many top venues (CCS, S&amp;P, USENIX Security, AAAI) hard-reject papers without a registered abstract, due days <em>before</em> the paper cutoff. In Abstract mode the countdowns, sorting, and calendar exports all follow the abstract date — the deadline that actually decides whether your submission exists.</p>
 
   <p><strong>The venue suggester.</strong> This is my favorite part. You paste your draft title and abstract, and it suggests target conferences <em>and</em> journals — with reasons. Matching topics, methodology signals, prestige tier. Not "because the acronym is similar."</p>
+
+  <h4>Sixty Seconds of It in Action</h4>
+
+  <p>Words are cheap. Here's the actual site: the directory with A* filters, a conference page with fourteen years of acceptance history, the journals directory, the deadline board, and the suggester chewing on a real abstract.</p>
+
+  <!--****************************************************************
+  *** VIDEO: conferencerank-walkthrough.webm (67s, 1280x720)
+  BEST: upload to YouTube and replace this block with:
+  <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:12px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,0.12);margin:2.5rem 0 0.5rem 0;">
+    <iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+  </div>
+  ALT: host the webm and uncomment:
+  ****************************************************************-->
+  <!--<video controls preload="metadata" src="REPLACE_WITH_PUBLIC_URL/conferencerank-walkthrough.webm"></video>-->
+  <p class="image-caption">The full loop: find a venue, check its rank history, read its selectivity trend, catch its deadline, or let the suggester find it for you.</p>
 
   <!--****************************************************************
   *** IMAGE 1: audience.png — who this is for
