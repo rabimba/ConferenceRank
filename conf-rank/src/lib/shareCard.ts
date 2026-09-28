@@ -22,6 +22,10 @@ export interface ShareDirectoryData {
   categories?: string[];
   sampleVenues?: string[];
   url?: string;
+  /** Custom badge text for the count box (defaults to "Venues", e.g. "Deadlines") */
+  metricLabel?: string;
+  /** Subtitle inside count callout box */
+  caption?: string;
 }
 
 export interface ShareComparisonData {
@@ -318,13 +322,14 @@ function drawDirectoryCard(
 
   ctx.font = "800 64px system-ui, -apple-system, sans-serif";
   ctx.fillStyle = "#38bdf8";
-  const countStr = `${d.count.toLocaleString()} Venues`;
+  const label = d.metricLabel ?? "Venues";
+  const countStr = `${d.count.toLocaleString()} ${label}`;
   ctx.fillText(countStr, 96, boxY + 76);
 
   ctx.font = "500 18px system-ui, -apple-system, sans-serif";
   ctx.fillStyle = "#cbd5e1";
   ctx.fillText(
-    "Benchmark acceptance rates, AoE submission countdowns, and CORE tiers",
+    d.caption ?? "Benchmark acceptance rates, AoE submission countdowns, and CORE tiers",
     96,
     boxY + 124
   );
