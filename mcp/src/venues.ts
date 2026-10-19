@@ -59,6 +59,10 @@ function confSummary(c: Conference) {
 
 function journalSummary(j: JournalIndexEntry | Journal) {
   const full = "sjr" in j ? (j as Journal) : null;
+  const ifVal =
+    "impact_factor" in j && j.impact_factor !== undefined
+      ? j.impact_factor
+      : ((full?.openalex as { two_year_mean_citedness?: number | null } | undefined)?.two_year_mean_citedness ?? null);
   return {
     id: j.id, type: "journal" as const,
     acronym: j.acronym, title: j.title,
@@ -66,6 +70,7 @@ function journalSummary(j: JournalIndexEntry | Journal) {
     sjr_quartile: "sjr_quartile" in j ? j.sjr_quartile : full?.sjr?.latest_quartile ?? null,
     sjr_score: "sjr_score" in j ? j.sjr_score : full?.sjr?.latest_score ?? null,
     h_index: "h_index" in j ? j.h_index : full?.sjr?.latest_h_index ?? null,
+    impact_factor: ifVal,
     is_oa: j.is_oa, categories: j.categories, publisher: j.publisher, issn: j.issn,
   };
 }

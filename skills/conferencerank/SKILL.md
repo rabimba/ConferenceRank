@@ -14,7 +14,7 @@ Static JSON over HTTPS. No auth. Base: `https://rabimba.github.io/ConferenceRank
 | `index.json` | Manifest: version, generatedAt, counts |
 | `conferences.json` | All 987 conferences, full records (rank, rank_history, stats, deadlines, categories, openalex) — ~1.2MB |
 | `conference/{id}.json` | One conference (numeric id) |
-| `journals-index.json` | Slim records for all 11,782 journals (id, title, acronym, core_rank, sjr_score, sjr_quartile, h_index, is_oa, categories, publisher, issn) — ~2MB |
+| `journals-index.json` | Slim records for all 11,782 journals (id, title, acronym, core_rank, sjr_score, sjr_quartile, h_index, impact_factor, is_oa, categories, publisher, issn) — ~2MB |
 | `journals/{letter}.json` | FULL journal records chunked by first char of id (`a`–`z`, `0`–`9`, `other`) |
 | `deadlines.json` | Upcoming deadlines only, flattened with venue info, chronological |
 

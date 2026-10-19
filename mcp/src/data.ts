@@ -73,6 +73,7 @@ export interface JournalIndexEntry {
   sjr_score: number | null;
   sjr_quartile: string | null;
   h_index: number | null;
+  impact_factor?: number | null;
   is_oa: boolean;
   categories: string[];
   publisher: string | null;

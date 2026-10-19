@@ -85,6 +85,7 @@ const journalIndex = jrns.map((j) => ({
   sjr_score: j.sjr?.latest_score ?? null,
   sjr_quartile: j.sjr?.latest_quartile ?? null,
   h_index: j.sjr?.latest_h_index ?? null,
+  impact_factor: (j.openalex as { two_year_mean_citedness?: number | null } | undefined)?.two_year_mean_citedness ?? null,
   is_oa: j.is_oa,
   categories: j.categories,
   publisher: j.publisher,

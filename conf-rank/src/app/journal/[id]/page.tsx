@@ -29,6 +29,9 @@ export async function generateMetadata({
     j.sjr?.latest_quartile ? `SJR ${j.sjr.latest_quartile}` : null,
     j.sjr?.latest_score != null ? `SJR score ${j.sjr.latest_score}` : null,
     j.sjr?.latest_h_index != null ? `H-Index ${j.sjr.latest_h_index}` : null,
+    j.openalex?.two_year_mean_citedness != null
+      ? `Impact Factor ${j.openalex.two_year_mean_citedness}`
+      : null,
   ]
     .filter(Boolean)
     .join(", ");
@@ -190,6 +193,11 @@ export default async function JournalPage({
                 {j.sjr.latest_h_index != null ? ` (H-Index: ${j.sjr.latest_h_index})` : ""}.
               </span>
             )}
+            {oa?.two_year_mean_citedness != null && (
+              <span className="ml-1 font-medium text-accent">
+                Impact Factor: {oa.two_year_mean_citedness.toFixed(2)} (2-yr citedness, OpenAlex).
+              </span>
+            )}
           </div>
 
           {/* Metadata Badges & External Links */}
@@ -225,7 +233,7 @@ export default async function JournalPage({
           </div>
 
           {/* KPI Metrics Highlight Grid */}
-          <div className="mt-5 grid grid-cols-2 gap-4 border-t border-border pt-4 sm:grid-cols-4">
+          <div className="mt-5 grid grid-cols-2 gap-4 border-t border-border pt-4 sm:grid-cols-3 lg:grid-cols-5">
             <div>
               <div className="text-2xl font-black text-foreground">
                 {j.core_rank ?? "—"}
@@ -249,6 +257,12 @@ export default async function JournalPage({
                 {j.sjr?.latest_h_index != null ? j.sjr.latest_h_index.toLocaleString() : "—"}
               </div>
               <div className="text-xs text-muted">H-Index</div>
+            </div>
+            <div title="2-year mean citedness via OpenAlex (impact factor proxy)">
+              <div className="text-2xl font-black text-foreground">
+                {oa?.two_year_mean_citedness != null ? oa.two_year_mean_citedness.toFixed(2) : "—"}
+              </div>
+              <div className="text-xs text-muted">Impact Factor</div>
             </div>
           </div>
         </div>

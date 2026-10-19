@@ -16,7 +16,7 @@ Base: `https://rabimba.github.io/ConferenceRank/api/`
 - `index.json` — manifest: version, generatedAt (revalidate against this), endpoint list, counts
 - `conferences.json` — all 987 conferences, full records (rank, rank_history, stats, deadlines, categories, openalex topics)
 - `conference/{id}.json` — single conference by numeric id
-- `journals-index.json` — slim records for all 11,782 journals (id, title, acronym, core_rank, sjr_score, sjr_quartile, h_index, is_oa, categories, publisher, issn)
+- `journals-index.json` — slim records for all 11,782 journals (id, title, acronym, core_rank, sjr_score, sjr_quartile, h_index, impact_factor, is_oa, categories, publisher, issn)
 - `journals/{letter}.json` — FULL journal records chunked by first letter of id (`a`–`z`, `0`–`9`, `other`). To fetch one journal: find its id in journals-index.json, then GET the chunk matching its first character and filter by id.
 - `deadlines.json` — upcoming submission deadlines only (flattened; includes venue id/acronym/rank/categories, paper_deadline, abstract_deadline when present, timezone, cfp_url), sorted chronologically
 

@@ -29,7 +29,7 @@ const SJR_QUARTILES = [
   { value: "Q4", label: "Q4" },
 ] as const;
 
-type SortKey = "sjr" | "h_index" | "title" | "rank";
+type SortKey = "sjr" | "h_index" | "title" | "rank" | "if";
 
 function readUrl(): {
   q: string;
@@ -54,7 +54,7 @@ function readUrl(): {
   const p = new URLSearchParams(window.location.search);
   const rawSort = p.get("sort");
   const validSort: SortKey =
-    rawSort === "h_index" || rawSort === "title" || rawSort === "rank" || rawSort === "sjr"
+    rawSort === "h_index" || rawSort === "title" || rawSort === "rank" || rawSort === "sjr" || rawSort === "if"
       ? rawSort
       : "sjr";
   const rawDir = p.get("dir");
@@ -183,6 +183,15 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
         case "h_index": {
           const aVal = a.sjr?.latest_h_index;
           const bVal = b.sjr?.latest_h_index;
+          if (aVal == null && bVal == null) return a.title.localeCompare(b.title);
+          if (aVal == null) return 1;
+          if (bVal == null) return -1;
+          const diff = (aVal - bVal) * mul;
+          return diff !== 0 ? diff : a.title.localeCompare(b.title);
+        }
+        case "if": {
+          const aVal = a.impact_factor;
+          const bVal = b.impact_factor;
           if (aVal == null && bVal == null) return a.title.localeCompare(b.title);
           if (aVal == null) return 1;
           if (bVal == null) return -1;
@@ -364,7 +373,7 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
 
       {/* Directory Table */}
       <div className="mt-6 overflow-x-auto rounded-xl border border-border bg-surface shadow-xs">
-        <table className="w-full min-w-[700px] text-sm text-left">
+        <table className="w-full min-w-[820px] text-sm text-left">
           <thead>
             <tr className="border-b border-border bg-stone-100/70 text-xs uppercase tracking-wide text-muted dark:bg-stone-900/80">
               <th
@@ -402,6 +411,19 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
                   className="uppercase tracking-wide flex items-center gap-1 ml-auto"
                 >
                   SJR Score{arrow("sjr")}
+                </button>
+              </th>
+              <th
+                className="px-4 py-3 font-semibold text-right"
+                title="2-year mean citedness via OpenAlex (impact factor proxy)"
+                aria-sort={sort === "if" ? (dir === "asc" ? "ascending" : "descending") : "none"}
+              >
+                <button
+                  type="button"
+                  onClick={() => handleSortChange("if")}
+                  className="uppercase tracking-wide flex items-center gap-1 ml-auto"
+                >
+                  Impact Factor{arrow("if")}
                 </button>
               </th>
               <th
@@ -469,6 +491,15 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
                       <span className="text-xs text-muted">—</span>
                     )}
                   </td>
+                  <td className="px-4 py-3 text-right font-mono text-sm tabular-nums">
+                    {j.impact_factor != null ? (
+                      <span className="font-semibold text-foreground">
+                        {j.impact_factor.toFixed(2)}
+                      </span>
+                    ) : (
+                      <span className="text-xs text-muted">—</span>
+                    )}
+                  </td>
                   <td className="px-4 py-3 text-right font-mono text-sm tabular-nums text-foreground/80">
                     {j.sjr?.latest_h_index != null ? j.sjr.latest_h_index : "—"}
                   </td>
@@ -477,7 +508,7 @@ export default function JournalDirectory({ journals, categories }: JournalDirect
             })}
             {pageRows.length === 0 && (
               <tr>
-                <td colSpan={5} className="px-4 py-12 text-center text-muted">
+                <td colSpan={6} className="px-4 py-12 text-center text-muted">
                   No journals match your selected filters.
                 </td>
               </tr>

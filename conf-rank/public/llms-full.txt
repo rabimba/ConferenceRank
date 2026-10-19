@@ -73,7 +73,7 @@ Conference record (conferences.json, conference/{id}.json):
 Journal index record (journals-index.json — slim):
 ```json
 { "id": "acm-computing-surveys", "title": "...", "acronym": "CSUR",
-  "core_rank": "A*", "sjr_score": 7.183, "sjr_quartile": "Q1", "h_index": 217,
+  "core_rank": "A*", "sjr_score": 7.183, "sjr_quartile": "Q1", "h_index": 217, "impact_factor": 23.8,
   "is_oa": false, "categories": ["General & Interdisciplinary CS"],
   "publisher": "ACM", "issn": ["0360-0300", "1557-7341"] }
 ```

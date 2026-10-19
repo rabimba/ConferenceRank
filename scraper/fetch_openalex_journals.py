@@ -45,6 +45,13 @@ session.headers.update({
     "User-Agent": UA,
     "Accept": "application/json",
 })
+session.params = {"mailto": "icore.conference.ranks@gmail.com"}
+_api_key = os.environ.get("OPENALEX_API_KEY")
+if _api_key:
+    session.params["api_key"] = _api_key
+else:
+    print("WARNING: OPENALEX_API_KEY not set; using shared per-IP daily budget "
+          "(1000 req/day). Get a free key: https://help.openalex.org/api/authentication/", flush=True)
 if os.path.exists(CA):
     session.verify = CA
 
@@ -143,41 +150,54 @@ def group_counts(src_filter: str, group_by: str, extra: dict | None = None) -> l
         out.append({"key": g["key"], "name": g.get("key_display_name", str(g["key"])), "count": g["count"]})
     return out
 
-def fetch_journal_details(source: dict) -> dict:
+def fetch_journal_details(source: dict, stats_only: bool = False) -> dict:
     src_id = source["id"]
+    summary = source.get("summary_stats", {})
+    two_year = summary.get("2yr_mean_citedness") or summary.get("two_year_mean_citedness")
+    base = {
+        "source_ids": [src_id],
+        "two_year_mean_citedness": round(float(two_year), 2) if two_year is not None else None,
+        "is_oa": bool(source.get("is_oa", False)),
+        "publisher": source.get("host_organization_name") or None,
+        "country": source.get("country_code") or None,
+    }
+
+    if stats_only:
+        return {
+            **base,
+            "works_per_year": {},
+            "topics": [],
+            "topics_by_year": {},
+            "institutions": [],
+            "partial": True,
+        }
+
     wpy_raw = group_counts(src_id, "publication_year")
     works_per_year = {str(g["key"]): g["count"] for g in wpy_raw if str(g["key"]).isdigit()}
-    
+
     topics_raw = group_counts(src_id, "topics.id")
     total_works = sum(g["count"] for g in topics_raw) or 1
     topics = [{"name": g["name"], "share": round(g["count"] / total_works, 4)}
               for g in topics_raw[:8]]
-    
+
     topics_by_year = {}
     for y in LAST_5:
         ty = group_counts(src_id, "topics.id", {"publication_year": y})
         tot = sum(g["count"] for g in ty) or 1
         topics_by_year[str(y)] = [{"name": g["name"], "share": round(g["count"] / tot, 4)}
                                   for g in ty[:8]]
-    
+
     inst_raw = group_counts(src_id, "institutions.id")
     total_inst = sum(g["count"] for g in inst_raw) or 1
     institutions = [{"name": g["name"], "country": "", "share": round(g["count"] / total_inst, 4)}
                     for g in inst_raw[:10]]
-    
-    summary = source.get("summary_stats", {})
-    two_year = summary.get("2yr_mean_citedness") or summary.get("two_year_mean_citedness")
-    
+
     return {
-        "source_ids": [src_id],
+        **base,
         "works_per_year": works_per_year,
-        "two_year_mean_citedness": round(float(two_year), 2) if two_year is not None else None,
         "topics": topics,
         "topics_by_year": topics_by_year,
         "institutions": institutions,
-        "is_oa": bool(source.get("is_oa", False)),
-        "publisher": source.get("host_organization_name") or None,
-        "country": source.get("country_code") or None,
     }
 
 def main():
@@ -186,6 +206,8 @@ def main():
                     help="max journals to process this run (0 = no limit)")
     ap.add_argument("--refresh-unmatched", action="store_true",
                     help="retry journals previously recorded as no-match")
+    ap.add_argument("--stats-only", action="store_true",
+                    help="fetch only summary stats (impact factor etc.); ~1-2 API calls per journal")
     args = ap.parse_args()
 
     if not JOURNALS.exists():
@@ -215,7 +237,12 @@ def main():
         for i, j in enumerate(journals, 1):
             jid = j["id"]
             # Primary lookup key in result is jid
-            if jid in result and (result[jid] is not None or not args.refresh_unmatched):
+            existing = result.get(jid)
+            if existing is not None:
+                # skip complete entries; re-process partial (stats-only) entries in full mode
+                if not existing.get("partial") or args.stats_only:
+                    continue
+            elif jid in result and not args.refresh_unmatched:
                 continue
             if args.limit and processed >= args.limit:
                 print(f"--limit {args.limit} reached; stopping", flush=True)
@@ -239,7 +266,7 @@ def main():
             if not source:
                 result[jid] = None
             else:
-                details = fetch_journal_details(source)
+                details = fetch_journal_details(source, stats_only=args.stats_only)
                 result[jid] = details
                 # Also index by ISSN so merge can look up either way
                 for raw_i in j.get("issn", []):
@@ -252,8 +279,10 @@ def main():
                 save()
     except RateLimited as e:
         print(f"Rate-limited ({e}); saving progress and exiting.", flush=True)
+        raise SystemExit(1)
     except FetchFailed as e:
         print(f"Fetch failed ({e}); saving progress and exiting.", flush=True)
+        raise SystemExit(2)
     finally:
         save()
         print(f"Finished chunk. Total matched: {matched}")

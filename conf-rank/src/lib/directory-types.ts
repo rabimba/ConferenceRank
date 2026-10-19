@@ -14,6 +14,7 @@ export interface DirectoryJournal {
   } | null;
   categories: string[];
   is_oa: boolean;
+  impact_factor: number | null;
 }
 
 export function toDirectoryJournal(j: Journal): DirectoryJournal {
@@ -33,5 +34,6 @@ export function toDirectoryJournal(j: Journal): DirectoryJournal {
       : null,
     categories: j.categories,
     is_oa: j.is_oa,
+    impact_factor: j.openalex?.two_year_mean_citedness ?? null,
   };
 }
