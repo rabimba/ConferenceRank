@@ -853,6 +853,11 @@
    "accepted": 5340,
    "total": 19814,
    "rate": 26.95
+  },
+  {
+   "year": 2027,
+   "tiers": {},
+   "total": 42818
   }
  ],
  "icml": [
@@ -1733,6 +1738,15 @@
    "total": 5526,
    "rate": 95.46,
    "location": "San Diego, USA"
+  },
+  {
+   "year": 2026,
+   "tiers": {
+    "Poster": 5383,
+    "Spotlight": 213,
+    "Oral": 85
+   },
+   "accepted": 5681
   }
  ],
  "rss": [
