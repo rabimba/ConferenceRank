@@ -42,3 +42,15 @@ def test_blocked_loading(tmp_path):
     p = tmp_path / "blocked.json"
     p.write_text(json.dumps([{"acronym": "SPAM", "reason": "test"}]))
     assert load_blocked(p) == ["spam"]
+
+
+def test_blocked_removes_existing_entries():
+    out = discover([], blocked=[{"acronym": "OLDVEN", "reason": "duplicate"}],
+                   existing=[OLD], verify_fn=lambda c: "dblp:x")
+    assert out == []
+
+
+def test_workshop_titled_candidates_dropped():
+    ws = dict(COLM, id="or-ws1", acronym="WS1", title="Workshop on Spam Metrics")
+    out = discover([ws], blocked=[], existing=[], verify_fn=lambda c: "dblp:x")
+    assert out == []

@@ -40,6 +40,15 @@ jobs:
       - name: Merge data
         run: python3 scraper/merge.py
 
+      - name: Sanity gate
+        run: |
+          python3 - <<'PY'
+          import json
+          confs = json.load(open("conf-rank/src/data/conferences.json"))
+          assert len(confs) >= 900, f"conference count collapsed: {len(confs)}"
+          print(f"sanity ok: {len(confs)} venues")
+          PY
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"

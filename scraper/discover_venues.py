@@ -20,7 +20,7 @@ from pathlib import Path
 
 import requests
 
-from venue_match import DEFAULT_CATEGORY, area_to_categories, norm_acr, resolve_venue
+from venue_match import DEFAULT_CATEGORY, acr_from_group_id, area_to_categories, norm_acr, resolve_venue
 import fetch_deadlines as fd
 
 D = Path(__file__).parent / "data"
@@ -48,15 +48,8 @@ def _ratio(a: str, b: str) -> float:
 
 def openreview_candidate(gid: str) -> dict | None:
     """'AAAI.org/2027/Conference' -> {'id': 'or-aaai', 'acronym': 'AAAI', ...}."""
-    if not OR_CONF_RE.match(gid):
-        return None
-    # acronym = the path segment immediately before the year
-    parts = gid.split("/")
-    if len(parts) < 3:
-        return None
-    acr = parts[-3].strip()
-    acr = re.sub(r"\.(org|cc|net|io|ai)$", "", acr, flags=re.IGNORECASE)
-    if len(norm_acr(acr)) < 2:
+    acr = acr_from_group_id(gid)
+    if not acr or len(norm_acr(acr)) < 2:
         return None
     return {
         "id": f"or-{norm_acr(acr)}",
@@ -106,7 +99,7 @@ def _openreview_group_ok(gid: str, cand: dict) -> str | None:
 
 
 def _dblp_openalex_verify(candidate: dict) -> str | None:
-    """Opportunistic external verification; degrades to None on block/429."""
+    """Opportunistic external verification; network failures are transient (retry next run)."""
     acr = candidate.get("acronym", "")
     title = candidate.get("title", "")
     try:
@@ -124,8 +117,13 @@ def _dblp_openalex_verify(candidate: dict) -> str | None:
                 m = re.search(r"dblp\.org/db/(conf|journals)/([^/?#]+)/?$", url)
                 slug = m.group(2) if m else ""
                 return f"dblp:{slug or norm_acr(acr)}"
-    except Exception:
-        pass
+    except requests.RequestException as e:
+        print(f"Warning: DBLP verify {acr}: {e}", file=sys.stderr)
+        raise VerifyTransient(acr) from e
+    except (KeyError, ValueError) as e:
+        # bot-check pages / malformed JSON -> treat as transient too
+        print(f"Warning: DBLP verify {acr}: {e}", file=sys.stderr)
+        raise VerifyTransient(acr) from e
     try:
         r = session.get("https://api.openalex.org/sources",
                         params={"search": title or acr, "filter": "type:conference",
@@ -134,8 +132,9 @@ def _dblp_openalex_verify(candidate: dict) -> str | None:
         for src in r.json().get("results", [])[:3]:
             if _ratio(title or acr, src.get("display_name", "")) >= 0.75:
                 return f"openalex:{src.get('id', '').rsplit('/', 1)[-1]}"
-    except Exception:
-        pass
+    except requests.RequestException as e:
+        print(f"Warning: OpenAlex verify {acr}: {e}", file=sys.stderr)
+        raise VerifyTransient(acr) from e
     return None
 
 
@@ -170,6 +169,10 @@ def discover(candidates, blocked, existing, verify_fn) -> list[dict]:
     for cand in candidates:
         acr = norm_acr(cand.get("acronym", ""))
         if len(acr) < 2 or acr in blocked_set:
+            continue
+        title = cand.get("title") or cand.get("acronym", "")
+        # workshops are not conference venues
+        if title.strip().lower().startswith("workshop"):
             continue
         if cand["id"] in by_id:
             # union evidence
@@ -208,7 +211,14 @@ def discover(candidates, blocked, existing, verify_fn) -> list[dict]:
         }
         by_id[cand["id"]] = rec
 
-    return [by_id[k] for k in sorted(by_id)]
+    # the denylist also removes already-admitted venues (the removal mechanism)
+    return [
+        dict(v, evidence=sorted(v.get("evidence", [])))
+        for k, v in sorted(by_id.items())
+        if norm_acr(v.get("acronym", "")) not in blocked_set
+        and len(norm_acr(v.get("acronym", ""))) >= 2
+        and not (v.get("title") or "").strip().lower().startswith("workshop")
+    ]
 
 
 def _absorb_into_emerging(venue: dict, areas: list[str], dblp: str | None = None):

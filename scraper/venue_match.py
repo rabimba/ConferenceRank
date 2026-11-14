@@ -29,7 +29,6 @@ OVERRIDES: dict[str, str] = {
     "siggraphasia": "957",
     "sigopsatc": "44",
     "ec": "14",
-    "fse": "52",
     "hri": "2310",
 }
 
@@ -64,7 +63,8 @@ def area_to_categories(areas: list[str]) -> list[str]:
 def _dblp_slug(url: str) -> str:
     if not url:
         return ""
-    m = re.search(r"dblp\.org/(?:db/)?conf/([^/?#]+)/?$", url.strip().rstrip("/"))
+    m = re.search(r"dblp\.(?:org|uni-trier\.de|dagstuhl\.de)/(?:db/)?conf/([^/?#]+?)(?:/index\.html)?/?$",
+                  url.strip())
     if m:
         return m.group(1).lower()
     # ccfddl sometimes stores the bare DBLP slug ("dblp: mlsys")
@@ -83,6 +83,18 @@ def _rank_key(v: dict) -> int:
 
 def _acr_key(v: dict) -> str:
     return norm_acr(v.get("acronym", ""))
+
+
+def acr_from_group_id(gid: str) -> str | None:
+    """OpenReview venue group id -> acronym: the path segment before the year.
+    'AAAI.org/2027/Conference' -> 'AAAI'; 'ACM.org/TheWebConf/2027/Conference' -> 'TheWebConf'."""
+    if not re.match(r"^.+/20(?:2[5-9])/Conference$", gid):
+        return None
+    parts = gid.split("/")
+    if len(parts) < 3:
+        return None
+    acr = re.sub(r"\.(org|cc|net|io|ai)$", "", parts[-3].strip(), flags=re.IGNORECASE)
+    return acr or None
 
 
 def resolve_venue(
@@ -107,7 +119,7 @@ def resolve_venue(
     # Tier 2a: explicit overrides (highest priority for known collisions)
     if acr and acr in OVERRIDES:
         by_id = {v["id"]: v for v in universe}
-        if acr in OVERRIDES and OVERRIDES[acr] in by_id:
+        if OVERRIDES[acr] in by_id:
             return by_id[OVERRIDES[acr]]
 
     # Tier 2b: alias-normalized acronym

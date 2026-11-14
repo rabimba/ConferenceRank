@@ -11,13 +11,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:3DV/2025/Conference",
-      "openreview-year:3DV/2025/Conference",
       "openreview-verified:3DV/2026/Conference",
-      "openreview:3DV/2026/Conference",
+      "openreview-year:3DV/2025/Conference",
       "openreview-year:3DV/2026/Conference",
-      "openreview:3DV/2027/Conference",
-      "openreview-year:3DV/2027/Conference"
+      "openreview-year:3DV/2027/Conference",
+      "openreview:3DV/2025/Conference",
+      "openreview:3DV/2026/Conference",
+      "openreview:3DV/2027/Conference"
     ],
     "emerging": true
   },
@@ -33,9 +33,9 @@
     "dblp_url": null,
     "website": "https://2026.aaclnet.org/",
     "evidence": [
-      "openreview:aclweb.org/AACL-IJCNLP/2026/Conference",
+      "openreview-verified:aclweb.org/AACL-IJCNLP/2026/Conference",
       "openreview-year:aclweb.org/AACL-IJCNLP/2026/Conference",
-      "openreview-verified:aclweb.org/AACL-IJCNLP/2026/Conference"
+      "openreview:aclweb.org/AACL-IJCNLP/2026/Conference"
     ],
     "emerging": true
   },
@@ -51,9 +51,9 @@
     "dblp_url": null,
     "website": "http://cogsys.org/conference/2025/",
     "evidence": [
-      "openreview:cogsys.org/ACS/2025/Conference",
+      "openreview-verified:cogsys.org/ACS/2025/Conference",
       "openreview-year:cogsys.org/ACS/2025/Conference",
-      "openreview-verified:cogsys.org/ACS/2025/Conference"
+      "openreview:cogsys.org/ACS/2025/Conference"
     ],
     "emerging": true
   },
@@ -69,9 +69,9 @@
     "dblp_url": null,
     "website": "https://zardini.mit.edu/act2027/",
     "evidence": [
-      "openreview:AppliedCategoryTheory.org/ACT/2027/Conference",
+      "openreview-verified:AppliedCategoryTheory.org/ACT/2027/Conference",
       "openreview-year:AppliedCategoryTheory.org/ACT/2027/Conference",
-      "openreview-verified:AppliedCategoryTheory.org/ACT/2027/Conference"
+      "openreview:AppliedCategoryTheory.org/ACT/2027/Conference"
     ],
     "emerging": true
   },
@@ -87,9 +87,9 @@
     "dblp_url": null,
     "website": "https://www.idsai.manchester.ac.uk/connect/events/conference/advances-in-ai-conference2027/",
     "evidence": [
-      "openreview:ADSAI/2027/Conference",
+      "openreview-verified:ADSAI/2027/Conference",
       "openreview-year:ADSAI/2027/Conference",
-      "openreview-verified:ADSAI/2027/Conference"
+      "openreview:ADSAI/2027/Conference"
     ],
     "emerging": true
   },
@@ -105,9 +105,9 @@
     "dblp_url": null,
     "website": "https://adscai.cse.uom.lk/",
     "evidence": [
-      "openreview:ADScAI/2026/Conference",
+      "openreview-verified:ADScAI/2026/Conference",
       "openreview-year:ADScAI/2026/Conference",
-      "openreview-verified:ADScAI/2026/Conference"
+      "openreview:ADScAI/2026/Conference"
     ],
     "emerging": true
   },
@@ -123,11 +123,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:AfriLang_AI/2025/Conference",
-      "openreview-year:AfriLang_AI/2025/Conference",
       "openreview-verified:AfriLang_AI/2025/Conference",
-      "openreview:AfriLang_AI/2026/Conference",
-      "openreview-year:AfriLang_AI/2026/Conference"
+      "openreview-year:AfriLang_AI/2025/Conference",
+      "openreview-year:AfriLang_AI/2026/Conference",
+      "openreview:AfriLang_AI/2025/Conference",
+      "openreview:AfriLang_AI/2026/Conference"
     ],
     "emerging": true
   },
@@ -143,9 +143,9 @@
     "dblp_url": null,
     "website": "https://agents4science.stanford.edu/",
     "evidence": [
-      "openreview:Agents4Science/2025/Conference",
+      "openreview-verified:Agents4Science/2025/Conference",
       "openreview-year:Agents4Science/2025/Conference",
-      "openreview-verified:Agents4Science/2025/Conference"
+      "openreview:Agents4Science/2025/Conference"
     ],
     "emerging": true
   },
@@ -161,9 +161,9 @@
     "dblp_url": null,
     "website": "https://agile-gi.eu/",
     "evidence": [
-      "openreview:agile-gi.eu/AGILE/2025/Conference",
+      "openreview-verified:agile-gi.eu/AGILE/2025/Conference",
       "openreview-year:agile-gi.eu/AGILE/2025/Conference",
-      "openreview-verified:agile-gi.eu/AGILE/2025/Conference"
+      "openreview:agile-gi.eu/AGILE/2025/Conference"
     ],
     "emerging": true
   },
@@ -179,13 +179,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:AI4X.cc/2025/Conference",
-      "openreview-year:AI4X.cc/2025/Conference",
       "openreview-verified:AI4X.cc/2026/Conference",
-      "openreview:AI4X.cc/2026/Conference",
+      "openreview-year:AI4X.cc/2025/Conference",
       "openreview-year:AI4X.cc/2026/Conference",
-      "openreview:AI4X.cc/2027/Conference",
-      "openreview-year:AI4X.cc/2027/Conference"
+      "openreview-year:AI4X.cc/2027/Conference",
+      "openreview:AI4X.cc/2025/Conference",
+      "openreview:AI4X.cc/2026/Conference",
+      "openreview:AI4X.cc/2027/Conference"
     ],
     "emerging": true
   },
@@ -201,9 +201,9 @@
     "dblp_url": null,
     "website": "https://www.aiagents4qual.org/",
     "evidence": [
-      "openreview:AIAgents4Qual.org/2026/Conference",
+      "openreview-verified:AIAgents4Qual.org/2026/Conference",
       "openreview-year:AIAgents4Qual.org/2026/Conference",
-      "openreview-verified:AIAgents4Qual.org/2026/Conference"
+      "openreview:AIAgents4Qual.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -219,9 +219,9 @@
     "dblp_url": null,
     "website": "https:/www.aic2026.com",
     "evidence": [
-      "openreview:IEEE.org/AIC/2026/Conference",
+      "openreview-verified:IEEE.org/AIC/2026/Conference",
       "openreview-year:IEEE.org/AIC/2026/Conference",
-      "openreview-verified:IEEE.org/AIC/2026/Conference"
+      "openreview:IEEE.org/AIC/2026/Conference"
     ],
     "emerging": true
   },
@@ -237,9 +237,9 @@
     "dblp_url": null,
     "website": "https://www.twaicoe.org/",
     "evidence": [
-      "openreview:twaicoe.org/AICoEW/2026/Conference",
+      "openreview-verified:twaicoe.org/AICoEW/2026/Conference",
       "openreview-year:twaicoe.org/AICoEW/2026/Conference",
-      "openreview-verified:twaicoe.org/AICoEW/2026/Conference"
+      "openreview:twaicoe.org/AICoEW/2026/Conference"
     ],
     "emerging": true
   },
@@ -255,9 +255,9 @@
     "dblp_url": null,
     "website": "https://www.iimj.ac.in/ETABS/new/",
     "evidence": [
-      "openreview:AIETABS/2026/Conference",
+      "openreview-verified:AIETABS/2026/Conference",
       "openreview-year:AIETABS/2026/Conference",
-      "openreview-verified:AIETABS/2026/Conference"
+      "openreview:AIETABS/2026/Conference"
     ],
     "emerging": true
   },
@@ -273,9 +273,9 @@
     "dblp_url": null,
     "website": "https://www.aimlsystems.org/2026/",
     "evidence": [
-      "openreview:ACM.org/AIMLSystems/2026/Conference",
+      "openreview-verified:ACM.org/AIMLSystems/2026/Conference",
       "openreview-year:ACM.org/AIMLSystems/2026/Conference",
-      "openreview-verified:ACM.org/AIMLSystems/2026/Conference"
+      "openreview:ACM.org/AIMLSystems/2026/Conference"
     ],
     "emerging": true
   },
@@ -291,9 +291,9 @@
     "dblp_url": null,
     "website": "https://icsdweb.aegean.gr/aegeanrbtcs/airodyssey/",
     "evidence": [
-      "openreview:icsdweb.aegean.gr/AIRodyssey/2027/Conference",
+      "openreview-verified:icsdweb.aegean.gr/AIRodyssey/2027/Conference",
       "openreview-year:icsdweb.aegean.gr/AIRodyssey/2027/Conference",
-      "openreview-verified:icsdweb.aegean.gr/AIRodyssey/2027/Conference"
+      "openreview:icsdweb.aegean.gr/AIRodyssey/2027/Conference"
     ],
     "emerging": true
   },
@@ -309,9 +309,9 @@
     "dblp_url": null,
     "website": "https://www.coairesearch.org/aitc-2026",
     "evidence": [
-      "openreview:AITC/2026/Conference",
+      "openreview-verified:AITC/2026/Conference",
       "openreview-year:AITC/2026/Conference",
-      "openreview-verified:AITC/2026/Conference"
+      "openreview:AITC/2026/Conference"
     ],
     "emerging": true
   },
@@ -327,11 +327,11 @@
     "dblp_url": null,
     "website": "https://conf.researchr.org/home/aiware-2025",
     "evidence": [
-      "openreview:ACM.org/AIWare/2025/Conference",
-      "openreview-year:ACM.org/AIWare/2025/Conference",
       "openreview-verified:ACM.org/AIWare/2026/Conference",
-      "openreview:ACM.org/AIWare/2026/Conference",
-      "openreview-year:ACM.org/AIWare/2026/Conference"
+      "openreview-year:ACM.org/AIWare/2025/Conference",
+      "openreview-year:ACM.org/AIWare/2026/Conference",
+      "openreview:ACM.org/AIWare/2025/Conference",
+      "openreview:ACM.org/AIWare/2026/Conference"
     ],
     "emerging": true
   },
@@ -347,11 +347,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:AI-ZAMAN/2025/Conference",
-      "openreview-year:AI-ZAMAN/2025/Conference",
       "openreview-verified:AI-ZAMAN/2025/Conference",
-      "openreview:AI-ZAMAN/2026/Conference",
-      "openreview-year:AI-ZAMAN/2026/Conference"
+      "openreview-year:AI-ZAMAN/2025/Conference",
+      "openreview-year:AI-ZAMAN/2026/Conference",
+      "openreview:AI-ZAMAN/2025/Conference",
+      "openreview:AI-ZAMAN/2026/Conference"
     ],
     "emerging": true
   },
@@ -367,11 +367,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:AJCAI/2025/Conference",
-      "openreview-year:AJCAI/2025/Conference",
       "openreview-verified:AJCAI/2025/Conference",
-      "openreview:AJCAI/2026/Conference",
-      "openreview-year:AJCAI/2026/Conference"
+      "openreview-year:AJCAI/2025/Conference",
+      "openreview-year:AJCAI/2026/Conference",
+      "openreview:AJCAI/2025/Conference",
+      "openreview:AJCAI/2026/Conference"
     ],
     "emerging": true
   },
@@ -387,9 +387,9 @@
     "dblp_url": null,
     "website": "https://allerton.csl.illinois.edu/",
     "evidence": [
-      "openreview:Allerton/2026/Conference",
+      "openreview-verified:Allerton/2026/Conference",
       "openreview-year:Allerton/2026/Conference",
-      "openreview-verified:Allerton/2026/Conference"
+      "openreview:Allerton/2026/Conference"
     ],
     "emerging": true
   },
@@ -405,9 +405,9 @@
     "dblp_url": null,
     "website": "https://alpchi.org/",
     "evidence": [
-      "openreview:ALPCHI.org/2026/Conference",
+      "openreview-verified:ALPCHI.org/2026/Conference",
       "openreview-year:ALPCHI.org/2026/Conference",
-      "openreview-verified:ALPCHI.org/2026/Conference"
+      "openreview:ALPCHI.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -423,9 +423,9 @@
     "dblp_url": null,
     "website": "https://amlap2025.ff.cuni.cz/",
     "evidence": [
-      "openreview:AMLaP/2025/Conference",
+      "openreview-verified:AMLaP/2025/Conference",
       "openreview-year:AMLaP/2025/Conference",
-      "openreview-verified:AMLaP/2025/Conference"
+      "openreview:AMLaP/2025/Conference"
     ],
     "emerging": true
   },
@@ -441,9 +441,9 @@
     "dblp_url": null,
     "website": "https://www.tees.ac.uk/animexconference/index.cfm",
     "evidence": [
-      "openreview:Animex/2026/Conference",
+      "openreview-verified:Animex/2026/Conference",
       "openreview-year:Animex/2026/Conference",
-      "openreview-verified:Animex/2026/Conference"
+      "openreview:Animex/2026/Conference"
     ],
     "emerging": true
   },
@@ -459,9 +459,9 @@
     "dblp_url": null,
     "website": "https://anela.nl/activiteiten/anelaconferentie/",
     "evidence": [
-      "openreview:An\u00e9la/2027/Conference",
+      "openreview-verified:An\u00e9la/2027/Conference",
       "openreview-year:An\u00e9la/2027/Conference",
-      "openreview-verified:An\u00e9la/2027/Conference"
+      "openreview:An\u00e9la/2027/Conference"
     ],
     "emerging": true
   },
@@ -477,9 +477,9 @@
     "dblp_url": null,
     "website": "artofresearch.aalto.fi",
     "evidence": [
-      "openreview:aalto.fi/AoR/2026/Conference",
+      "openreview-verified:aalto.fi/AoR/2026/Conference",
       "openreview-year:aalto.fi/AoR/2026/Conference",
-      "openreview-verified:aalto.fi/AoR/2026/Conference"
+      "openreview:aalto.fi/AoR/2026/Conference"
     ],
     "emerging": true
   },
@@ -495,11 +495,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:SIGARAB.org/ArabicNLP/2025/Conference",
-      "openreview-year:SIGARAB.org/ArabicNLP/2025/Conference",
       "openreview-verified:SIGARAB.org/ArabicNLP/2025/Conference",
-      "openreview:SIGARAB.org/ArabicNLP/2026/Conference",
-      "openreview-year:SIGARAB.org/ArabicNLP/2026/Conference"
+      "openreview-year:SIGARAB.org/ArabicNLP/2025/Conference",
+      "openreview-year:SIGARAB.org/ArabicNLP/2026/Conference",
+      "openreview:SIGARAB.org/ArabicNLP/2025/Conference",
+      "openreview:SIGARAB.org/ArabicNLP/2026/Conference"
     ],
     "emerging": true
   },
@@ -515,9 +515,9 @@
     "dblp_url": null,
     "website": "https://archipel.scenari-community.org/",
     "evidence": [
-      "openreview:inria.fr/INRIA/Archipel/2026/Conference",
+      "openreview-verified:inria.fr/INRIA/Archipel/2026/Conference",
       "openreview-year:inria.fr/INRIA/Archipel/2026/Conference",
-      "openreview-verified:inria.fr/INRIA/Archipel/2026/Conference"
+      "openreview:inria.fr/INRIA/Archipel/2026/Conference"
     ],
     "emerging": true
   },
@@ -533,9 +533,9 @@
     "dblp_url": null,
     "website": "https://comptag.github.io/atmcs11/",
     "evidence": [
-      "openreview:appliedtopology.org/ATMCS/2025/Conference",
+      "openreview-verified:appliedtopology.org/ATMCS/2025/Conference",
       "openreview-year:appliedtopology.org/ATMCS/2025/Conference",
-      "openreview-verified:appliedtopology.org/ATMCS/2025/Conference"
+      "openreview:appliedtopology.org/ATMCS/2025/Conference"
     ],
     "emerging": true
   },
@@ -551,11 +551,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:NoDaLiDa/Baltic-HLT/2025/Conference",
-      "openreview-year:NoDaLiDa/Baltic-HLT/2025/Conference",
       "openreview-verified:NoDaLiDa/Baltic-HLT/2025/Conference",
-      "openreview:NoDaLiDa/Baltic-HLT/2027/Conference",
-      "openreview-year:NoDaLiDa/Baltic-HLT/2027/Conference"
+      "openreview-year:NoDaLiDa/Baltic-HLT/2025/Conference",
+      "openreview-year:NoDaLiDa/Baltic-HLT/2027/Conference",
+      "openreview:NoDaLiDa/Baltic-HLT/2025/Conference",
+      "openreview:NoDaLiDa/Baltic-HLT/2027/Conference"
     ],
     "emerging": true
   },
@@ -571,11 +571,11 @@
     "dblp_url": null,
     "website": "https://acm-bcb.org/",
     "evidence": [
-      "openreview:ACM.org/BCB/2025/Conference",
-      "openreview-year:ACM.org/BCB/2025/Conference",
       "openreview-verified:ACM.org/BCB/2026/Conference",
-      "openreview:ACM.org/BCB/2026/Conference",
-      "openreview-year:ACM.org/BCB/2026/Conference"
+      "openreview-year:ACM.org/BCB/2025/Conference",
+      "openreview-year:ACM.org/BCB/2026/Conference",
+      "openreview:ACM.org/BCB/2025/Conference",
+      "openreview:ACM.org/BCB/2026/Conference"
     ],
     "emerging": true
   },
@@ -591,9 +591,9 @@
     "dblp_url": null,
     "website": "https://www.crissp.be/bcgl-18-morphosyntactic-variation-and-expressivity/",
     "evidence": [
-      "openreview:BCGL/2026/Conference",
+      "openreview-verified:BCGL/2026/Conference",
       "openreview-year:BCGL/2026/Conference",
-      "openreview-verified:BCGL/2026/Conference"
+      "openreview:BCGL/2026/Conference"
     ],
     "emerging": true
   },
@@ -609,9 +609,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/mail.muni.cz/bcl2026cz",
     "evidence": [
-      "openreview:BCL/2026/Conference",
+      "openreview-verified:BCL/2026/Conference",
       "openreview-year:BCL/2026/Conference",
-      "openreview-verified:BCL/2026/Conference"
+      "openreview:BCL/2026/Conference"
     ],
     "emerging": true
   },
@@ -627,11 +627,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/EMBS/BHI/2025/Conference",
-      "openreview-year:IEEE.org/EMBS/BHI/2025/Conference",
       "openreview-verified:IEEE.org/EMBS/BHI/2025/Conference",
-      "openreview:IEEE.org/EMBS/BHI/2026/Conference",
-      "openreview-year:IEEE.org/EMBS/BHI/2026/Conference"
+      "openreview-year:IEEE.org/EMBS/BHI/2025/Conference",
+      "openreview-year:IEEE.org/EMBS/BHI/2026/Conference",
+      "openreview:IEEE.org/EMBS/BHI/2025/Conference",
+      "openreview:IEEE.org/EMBS/BHI/2026/Conference"
     ],
     "emerging": true
   },
@@ -647,9 +647,9 @@
     "dblp_url": null,
     "website": "https://bioc2026.bioconductor.org/",
     "evidence": [
-      "openreview:bioconductor.org/BioC/2026/Conference",
+      "openreview-verified:bioconductor.org/BioC/2026/Conference",
       "openreview-year:bioconductor.org/BioC/2026/Conference",
-      "openreview-verified:bioconductor.org/BioC/2026/Conference"
+      "openreview:bioconductor.org/BioC/2026/Conference"
     ],
     "emerging": true
   },
@@ -665,11 +665,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:BNAIC-BeNeLearn/2025/Conference",
-      "openreview-year:BNAIC-BeNeLearn/2025/Conference",
       "openreview-verified:BNAIC-BeNeLearn/2025/Conference",
-      "openreview:BNAIC-BeNeLearn/2026/Conference",
-      "openreview-year:BNAIC-BeNeLearn/2026/Conference"
+      "openreview-year:BNAIC-BeNeLearn/2025/Conference",
+      "openreview-year:BNAIC-BeNeLearn/2026/Conference",
+      "openreview:BNAIC-BeNeLearn/2025/Conference",
+      "openreview:BNAIC-BeNeLearn/2026/Conference"
     ],
     "emerging": true
   },
@@ -685,9 +685,9 @@
     "dblp_url": null,
     "website": "https://caisc2026.github.io/index.html",
     "evidence": [
-      "openreview:CAISc/2026/Conference",
+      "openreview-verified:CAISc/2026/Conference",
       "openreview-year:CAISc/2026/Conference",
-      "openreview-verified:CAISc/2026/Conference"
+      "openreview:CAISc/2026/Conference"
     ],
     "emerging": true
   },
@@ -703,11 +703,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:PFIA.fr/CAp/2025/Conference",
-      "openreview-year:PFIA.fr/CAp/2025/Conference",
       "openreview-verified:PFIA.fr/CAp/2025/Conference",
+      "openreview-year:CAp/2026/Conference",
+      "openreview-year:PFIA.fr/CAp/2025/Conference",
       "openreview:CAp/2026/Conference",
-      "openreview-year:CAp/2026/Conference"
+      "openreview:PFIA.fr/CAp/2025/Conference"
     ],
     "emerging": true
   },
@@ -723,9 +723,9 @@
     "dblp_url": null,
     "website": "https://lct-unv.github.io/capmw2026.github.io/",
     "evidence": [
-      "openreview:CAPMW/2026/Conference",
+      "openreview-verified:CAPMW/2026/Conference",
       "openreview-year:CAPMW/2026/Conference",
-      "openreview-verified:CAPMW/2026/Conference"
+      "openreview:CAPMW/2026/Conference"
     ],
     "emerging": true
   },
@@ -741,9 +741,9 @@
     "dblp_url": null,
     "website": "http://ccbr.mustedu.cn/",
     "evidence": [
-      "openreview:CCBR/2026/Conference",
+      "openreview-verified:CCBR/2026/Conference",
       "openreview-year:CCBR/2026/Conference",
-      "openreview-verified:CCBR/2026/Conference"
+      "openreview:CCBR/2026/Conference"
     ],
     "emerging": true
   },
@@ -759,9 +759,9 @@
     "dblp_url": null,
     "website": "https://www.cips-ir.org.cn/CCIR2024/",
     "evidence": [
-      "openreview:cips-ir.org/CCIR/2025/Conference",
+      "openreview-verified:cips-ir.org/CCIR/2025/Conference",
       "openreview-year:cips-ir.org/CCIR/2025/Conference",
-      "openreview-verified:cips-ir.org/CCIR/2025/Conference"
+      "openreview:cips-ir.org/CCIR/2025/Conference"
     ],
     "emerging": true
   },
@@ -777,11 +777,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:cipsc.org/CCKS/2025/Conference",
-      "openreview-year:cipsc.org/CCKS/2025/Conference",
       "openreview-verified:cipsc.org/CCKS/2025/Conference",
-      "openreview:cipsc.org/CCKS/2026/Conference",
-      "openreview-year:cipsc.org/CCKS/2026/Conference"
+      "openreview-year:cipsc.org/CCKS/2025/Conference",
+      "openreview-year:cipsc.org/CCKS/2026/Conference",
+      "openreview:cipsc.org/CCKS/2025/Conference",
+      "openreview:cipsc.org/CCKS/2026/Conference"
     ],
     "emerging": true
   },
@@ -797,9 +797,9 @@
     "dblp_url": null,
     "website": "http://cips-cl.org/static/CCL2025/index.html",
     "evidence": [
-      "openreview:cips-cl.org/CCL/2025/Conference",
+      "openreview-verified:cips-cl.org/CCL/2025/Conference",
       "openreview-year:cips-cl.org/CCL/2025/Conference",
-      "openreview-verified:cips-cl.org/CCL/2025/Conference"
+      "openreview:cips-cl.org/CCL/2025/Conference"
     ],
     "emerging": true
   },
@@ -815,11 +815,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:cipsc.org.cn/CCMT/2025/Conference",
-      "openreview-year:cipsc.org.cn/CCMT/2025/Conference",
       "openreview-verified:cipsc.org.cn/CCMT/2025/Conference",
-      "openreview:cipsc.org.cn/CCMT/2026/Conference",
-      "openreview-year:cipsc.org.cn/CCMT/2026/Conference"
+      "openreview-year:cipsc.org.cn/CCMT/2025/Conference",
+      "openreview-year:cipsc.org.cn/CCMT/2026/Conference",
+      "openreview:cipsc.org.cn/CCMT/2025/Conference",
+      "openreview:cipsc.org.cn/CCMT/2026/Conference"
     ],
     "emerging": true
   },
@@ -835,9 +835,9 @@
     "dblp_url": null,
     "website": "https://semantic-actual.ru/",
     "evidence": [
-      "openreview:semantic-actual.ru/CCSDA/2026/Conference",
+      "openreview-verified:semantic-actual.ru/CCSDA/2026/Conference",
       "openreview-year:semantic-actual.ru/CCSDA/2026/Conference",
-      "openreview-verified:semantic-actual.ru/CCSDA/2026/Conference"
+      "openreview:semantic-actual.ru/CCSDA/2026/Conference"
     ],
     "emerging": true
   },
@@ -853,11 +853,11 @@
     "dblp_url": null,
     "website": "https://www.chilconference.org/",
     "evidence": [
-      "openreview:chilconference.org/CHIL/2025/Conference",
-      "openreview-year:chilconference.org/CHIL/2025/Conference",
       "openreview-verified:chilconference.org/CHIL/2026/Conference",
-      "openreview:chilconference.org/CHIL/2026/Conference",
-      "openreview-year:chilconference.org/CHIL/2026/Conference"
+      "openreview-year:chilconference.org/CHIL/2025/Conference",
+      "openreview-year:chilconference.org/CHIL/2026/Conference",
+      "openreview:chilconference.org/CHIL/2025/Conference",
+      "openreview:chilconference.org/CHIL/2026/Conference"
     ],
     "emerging": true
   },
@@ -873,9 +873,9 @@
     "dblp_url": null,
     "website": "https://www.cecyt18.ipn.mx/congreso-internacional-de-educaci%c3%b3n-digital.html",
     "evidence": [
-      "openreview:IPN.mx/CIED/2026/Conference",
+      "openreview-verified:IPN.mx/CIED/2026/Conference",
       "openreview-year:IPN.mx/CIED/2026/Conference",
-      "openreview-verified:IPN.mx/CIED/2026/Conference"
+      "openreview:IPN.mx/CIED/2026/Conference"
     ],
     "emerging": true
   },
@@ -891,9 +891,9 @@
     "dblp_url": null,
     "website": "https://eventos.ucm.es/127441/detail/i-congreso-internacional-en-etica-y-traduccion-compromiso-social-y-deontologia-ante-las-dinamicas-d.html",
     "evidence": [
-      "openreview:UCM.es/CIET/2025/Conference",
+      "openreview-verified:UCM.es/CIET/2025/Conference",
       "openreview-year:UCM.es/CIET/2025/Conference",
-      "openreview-verified:UCM.es/CIET/2025/Conference"
+      "openreview:UCM.es/CIET/2025/Conference"
     ],
     "emerging": true
   },
@@ -909,13 +909,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/CISA/2025/Conference",
-      "openreview-year:IEEE.org/CISA/2025/Conference",
       "openreview-verified:IEEE.org/CISA/2026/Conference",
-      "openreview:IEEE.org/CISA/2026/Conference",
+      "openreview-year:IEEE.org/CISA/2025/Conference",
       "openreview-year:IEEE.org/CISA/2026/Conference",
-      "openreview:IEEE.org/CISA/2027/Conference",
-      "openreview-year:IEEE.org/CISA/2027/Conference"
+      "openreview-year:IEEE.org/CISA/2027/Conference",
+      "openreview:IEEE.org/CISA/2025/Conference",
+      "openreview:IEEE.org/CISA/2026/Conference",
+      "openreview:IEEE.org/CISA/2027/Conference"
     ],
     "emerging": true
   },
@@ -931,11 +931,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:uagraria.edu.ec/CITI/2025/Conference",
-      "openreview-year:uagraria.edu.ec/CITI/2025/Conference",
       "openreview-verified:uagraria.edu.ec/CITI/2025/Conference",
-      "openreview:uagraria.edu.ec/CITI/2027/Conference",
-      "openreview-year:uagraria.edu.ec/CITI/2027/Conference"
+      "openreview-year:uagraria.edu.ec/CITI/2025/Conference",
+      "openreview-year:uagraria.edu.ec/CITI/2027/Conference",
+      "openreview:uagraria.edu.ec/CITI/2025/Conference",
+      "openreview:uagraria.edu.ec/CITI/2027/Conference"
     ],
     "emerging": true
   },
@@ -951,13 +951,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:cclear.cc/CLeaR/2025/Conference",
-      "openreview-year:cclear.cc/CLeaR/2025/Conference",
       "openreview-verified:cclear.cc/CLeaR/2026/Conference",
-      "openreview:cclear.cc/CLeaR/2026/Conference",
+      "openreview-year:cclear.cc/CLeaR/2025/Conference",
       "openreview-year:cclear.cc/CLeaR/2026/Conference",
-      "openreview:cclear.cc/CLeaR/2027/Conference",
-      "openreview-year:cclear.cc/CLeaR/2027/Conference"
+      "openreview-year:cclear.cc/CLeaR/2027/Conference",
+      "openreview:cclear.cc/CLeaR/2025/Conference",
+      "openreview:cclear.cc/CLeaR/2026/Conference",
+      "openreview:cclear.cc/CLeaR/2027/Conference"
     ],
     "emerging": true
   },
@@ -973,9 +973,9 @@
     "dblp_url": null,
     "website": "https://clic2027.unipv.it/",
     "evidence": [
-      "openreview:CLiC-it/2027/Conference",
+      "openreview-verified:CLiC-it/2027/Conference",
       "openreview-year:CLiC-it/2027/Conference",
-      "openreview-verified:CLiC-it/2027/Conference"
+      "openreview:CLiC-it/2027/Conference"
     ],
     "emerging": true
   },
@@ -991,9 +991,9 @@
     "dblp_url": null,
     "website": "https://ikdd.acm.org/cods-2026/",
     "evidence": [
-      "openreview:ACM.org/IKDD/CODS/2026/Conference",
+      "openreview-verified:ACM.org/IKDD/CODS/2026/Conference",
       "openreview-year:ACM.org/IKDD/CODS/2026/Conference",
-      "openreview-verified:ACM.org/IKDD/CODS/2026/Conference"
+      "openreview:ACM.org/IKDD/CODS/2026/Conference"
     ],
     "emerging": true
   },
@@ -1009,11 +1009,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:lifelong-ml.cc/CoLLAs/2025/Conference",
-      "openreview-year:lifelong-ml.cc/CoLLAs/2025/Conference",
       "openreview-verified:lifelong-ml.cc/CoLLAs/2025/Conference",
-      "openreview:lifelong-ml.cc/CoLLAs/2026/Conference",
-      "openreview-year:lifelong-ml.cc/CoLLAs/2026/Conference"
+      "openreview-year:lifelong-ml.cc/CoLLAs/2025/Conference",
+      "openreview-year:lifelong-ml.cc/CoLLAs/2026/Conference",
+      "openreview:lifelong-ml.cc/CoLLAs/2025/Conference",
+      "openreview:lifelong-ml.cc/CoLLAs/2026/Conference"
     ],
     "emerging": true
   },
@@ -1029,9 +1029,9 @@
     "dblp_url": null,
     "website": "https://posithub.org/conga/2026/",
     "evidence": [
-      "openreview:CoNGA/2026/Conference",
+      "openreview-verified:CoNGA/2026/Conference",
       "openreview-year:CoNGA/2026/Conference",
-      "openreview-verified:CoNGA/2026/Conference"
+      "openreview:CoNGA/2026/Conference"
     ],
     "emerging": true
   },
@@ -1047,9 +1047,9 @@
     "dblp_url": null,
     "website": "https://cpal.cc/organization_committee/",
     "evidence": [
-      "openreview:CPAL.cc/2026/Conference",
+      "openreview-verified:CPAL.cc/2026/Conference",
       "openreview-year:CPAL.cc/2026/Conference",
-      "openreview-verified:CPAL.cc/2026/Conference"
+      "openreview:CPAL.cc/2026/Conference"
     ],
     "emerging": true
   },
@@ -1065,11 +1065,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/CRESS/2025/Conference",
-      "openreview-year:IEEE.org/CRESS/2025/Conference",
       "openreview-verified:IEEE.org/CRESS/2025/Conference",
-      "openreview:IEEE.org/CRESS/2026/Conference",
-      "openreview-year:IEEE.org/CRESS/2026/Conference"
+      "openreview-year:IEEE.org/CRESS/2025/Conference",
+      "openreview-year:IEEE.org/CRESS/2026/Conference",
+      "openreview:IEEE.org/CRESS/2025/Conference",
+      "openreview:IEEE.org/CRESS/2026/Conference"
     ],
     "emerging": true
   },
@@ -1085,9 +1085,9 @@
     "dblp_url": null,
     "website": "https://www.sophiehsqq.com/CROSS-LLM/",
     "evidence": [
-      "openreview:CROSS-LLM/2025/Conference",
+      "openreview-verified:CROSS-LLM/2025/Conference",
       "openreview-year:CROSS-LLM/2025/Conference",
-      "openreview-verified:CROSS-LLM/2025/Conference"
+      "openreview:CROSS-LLM/2025/Conference"
     ],
     "emerging": true
   },
@@ -1103,11 +1103,11 @@
     "dblp_url": null,
     "website": "https://www.computerrobotvision.org/",
     "evidence": [
-      "openreview:computerrobotvision.org/CRV/2025/Conference",
-      "openreview-year:computerrobotvision.org/CRV/2025/Conference",
       "openreview-verified:computerrobotvision.org/CRV/2026/Conference",
-      "openreview:computerrobotvision.org/CRV/2026/Conference",
-      "openreview-year:computerrobotvision.org/CRV/2026/Conference"
+      "openreview-year:computerrobotvision.org/CRV/2025/Conference",
+      "openreview-year:computerrobotvision.org/CRV/2026/Conference",
+      "openreview:computerrobotvision.org/CRV/2025/Conference",
+      "openreview:computerrobotvision.org/CRV/2026/Conference"
     ],
     "emerging": true
   },
@@ -1123,9 +1123,9 @@
     "dblp_url": null,
     "website": "https://cs2italy.org",
     "evidence": [
-      "openreview:CS2Italy.org/2025/Conference",
+      "openreview-verified:CS2Italy.org/2025/Conference",
       "openreview-year:CS2Italy.org/2025/Conference",
-      "openreview-verified:CS2Italy.org/2025/Conference"
+      "openreview:CS2Italy.org/2025/Conference"
     ],
     "emerging": true
   },
@@ -1141,9 +1141,9 @@
     "dblp_url": null,
     "website": "https://nosocss.org/conference.html",
     "evidence": [
-      "openreview:CS2Nordics/2026/Conference",
+      "openreview-verified:CS2Nordics/2026/Conference",
       "openreview-year:CS2Nordics/2026/Conference",
-      "openreview-verified:CS2Nordics/2026/Conference"
+      "openreview:CS2Nordics/2026/Conference"
     ],
     "emerging": true
   },
@@ -1159,9 +1159,9 @@
     "dblp_url": null,
     "website": "http://www.csaeconf.org/2025",
     "evidence": [
-      "openreview:csaeconf.org/CSAE/2025/Conference",
+      "openreview-verified:csaeconf.org/CSAE/2025/Conference",
       "openreview-year:csaeconf.org/CSAE/2025/Conference",
-      "openreview-verified:csaeconf.org/CSAE/2025/Conference"
+      "openreview:csaeconf.org/CSAE/2025/Conference"
     ],
     "emerging": true
   },
@@ -1177,11 +1177,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:CVIS/2025/Conference",
-      "openreview-year:CVIS/2025/Conference",
       "openreview-verified:CVIS/2025/Conference",
-      "openreview:CVIS/2026/Conference",
-      "openreview-year:CVIS/2026/Conference"
+      "openreview-year:CVIS/2025/Conference",
+      "openreview-year:CVIS/2026/Conference",
+      "openreview:CVIS/2025/Conference",
+      "openreview:CVIS/2026/Conference"
     ],
     "emerging": true
   },
@@ -1197,9 +1197,9 @@
     "dblp_url": null,
     "website": "https://deeplearningindaba.com/2025/",
     "evidence": [
-      "openreview:DeepLearningIndaba.com/2025/Conference",
+      "openreview-verified:DeepLearningIndaba.com/2025/Conference",
       "openreview-year:DeepLearningIndaba.com/2025/Conference",
-      "openreview-verified:DeepLearningIndaba.com/2025/Conference"
+      "openreview:DeepLearningIndaba.com/2025/Conference"
     ],
     "emerging": true
   },
@@ -1215,9 +1215,9 @@
     "dblp_url": null,
     "website": "https://deepmath-conference.com/",
     "evidence": [
-      "openreview:deepmath-conference.com/DeepMath/2025/Conference",
+      "openreview-verified:deepmath-conference.com/DeepMath/2025/Conference",
       "openreview-year:deepmath-conference.com/DeepMath/2025/Conference",
-      "openreview-verified:deepmath-conference.com/DeepMath/2025/Conference"
+      "openreview:deepmath-conference.com/DeepMath/2025/Conference"
     ],
     "emerging": true
   },
@@ -1233,9 +1233,9 @@
     "dblp_url": null,
     "website": "https://detec2026.sites.uu.nl",
     "evidence": [
-      "openreview:DETEC/2026/Conference",
+      "openreview-verified:DETEC/2026/Conference",
       "openreview-year:DETEC/2026/Conference",
-      "openreview-verified:DETEC/2026/Conference"
+      "openreview:DETEC/2026/Conference"
     ],
     "emerging": true
   },
@@ -1251,9 +1251,9 @@
     "dblp_url": null,
     "website": "https://dhdharti.in/2026/06/26/dharti2026/",
     "evidence": [
-      "openreview:DHARTI/2026/Conference",
+      "openreview-verified:DHARTI/2026/Conference",
       "openreview-year:DHARTI/2026/Conference",
-      "openreview-verified:DHARTI/2026/Conference"
+      "openreview:DHARTI/2026/Conference"
     ],
     "emerging": true
   },
@@ -1269,9 +1269,9 @@
     "dblp_url": null,
     "website": "https://2026.dhbenelux.org/",
     "evidence": [
-      "openreview:DH_Benelux/2026/Conference",
+      "openreview-verified:DH_Benelux/2026/Conference",
       "openreview-year:DH_Benelux/2026/Conference",
-      "openreview-verified:DH_Benelux/2026/Conference"
+      "openreview:DH_Benelux/2026/Conference"
     ],
     "emerging": true
   },
@@ -1287,9 +1287,9 @@
     "dblp_url": null,
     "website": "https://www.disll.unipd.it",
     "evidence": [
-      "openreview:DiGS/2026/Conference",
+      "openreview-verified:DiGS/2026/Conference",
       "openreview-year:DiGS/2026/Conference",
-      "openreview-verified:DiGS/2026/Conference"
+      "openreview:DiGS/2026/Conference"
     ],
     "emerging": true
   },
@@ -1305,11 +1305,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:ACM.org/EAAMO/2025/Conference",
-      "openreview-year:ACM.org/EAAMO/2025/Conference",
       "openreview-verified:ACM.org/EAAMO/2025/Conference",
-      "openreview:ACM.org/EAAMO/2026/Conference",
-      "openreview-year:ACM.org/EAAMO/2026/Conference"
+      "openreview-year:ACM.org/EAAMO/2025/Conference",
+      "openreview-year:ACM.org/EAAMO/2026/Conference",
+      "openreview:ACM.org/EAAMO/2025/Conference",
+      "openreview:ACM.org/EAAMO/2026/Conference"
     ],
     "emerging": true
   },
@@ -1325,9 +1325,9 @@
     "dblp_url": null,
     "website": "https://ecargument.org/",
     "evidence": [
-      "openreview:ECA/2027/Conference",
+      "openreview-verified:ECA/2027/Conference",
       "openreview-year:ECA/2027/Conference",
-      "openreview-verified:ECA/2027/Conference"
+      "openreview:ECA/2027/Conference"
     ],
     "emerging": true
   },
@@ -1343,9 +1343,9 @@
     "dblp_url": null,
     "website": "https://www.eddy-network.eu/in-person-events/eddy-2026-vienna",
     "evidence": [
-      "openreview:eddy-network.eu/EDDY/2026/Conference",
+      "openreview-verified:eddy-network.eu/EDDY/2026/Conference",
       "openreview-year:eddy-network.eu/EDDY/2026/Conference",
-      "openreview-verified:eddy-network.eu/EDDY/2026/Conference"
+      "openreview:eddy-network.eu/EDDY/2026/Conference"
     ],
     "emerging": true
   },
@@ -1361,9 +1361,9 @@
     "dblp_url": null,
     "website": "https://www.ehbea2026.com",
     "evidence": [
-      "openreview:EHBEA/2026/Conference",
+      "openreview-verified:EHBEA/2026/Conference",
       "openreview-year:EHBEA/2026/Conference",
-      "openreview-verified:EHBEA/2026/Conference"
+      "openreview:EHBEA/2026/Conference"
     ],
     "emerging": true
   },
@@ -1379,9 +1379,9 @@
     "dblp_url": null,
     "website": "https://elcpde2026.uz/",
     "evidence": [
-      "openreview:ELCPDE/2026/Conference",
+      "openreview-verified:ELCPDE/2026/Conference",
       "openreview-year:ELCPDE/2026/Conference",
-      "openreview-verified:ELCPDE/2026/Conference"
+      "openreview:ELCPDE/2026/Conference"
     ],
     "emerging": true
   },
@@ -1397,9 +1397,9 @@
     "dblp_url": null,
     "website": "https://elm-conference.net/",
     "evidence": [
-      "openreview:elm-conference.net/ELM/2026/Conference",
+      "openreview-verified:elm-conference.net/ELM/2026/Conference",
       "openreview-year:elm-conference.net/ELM/2026/Conference",
-      "openreview-verified:elm-conference.net/ELM/2026/Conference"
+      "openreview:elm-conference.net/ELM/2026/Conference"
     ],
     "emerging": true
   },
@@ -1415,9 +1415,9 @@
     "dblp_url": null,
     "website": "https://www.atala.org/content/journ%C3%A9e-d%C3%A9tude-emmental",
     "evidence": [
-      "openreview:ATALA.org/EMMenTAL/2027/Conference",
+      "openreview-verified:ATALA.org/EMMenTAL/2027/Conference",
       "openreview-year:ATALA.org/EMMenTAL/2027/Conference",
-      "openreview-verified:ATALA.org/EMMenTAL/2027/Conference"
+      "openreview:ATALA.org/EMMenTAL/2027/Conference"
     ],
     "emerging": true
   },
@@ -1433,9 +1433,9 @@
     "dblp_url": null,
     "website": "https://www.eur.nl/en/esphil/events/encode-closing-conference-2026-11-11",
     "evidence": [
-      "openreview:ENCODE/2026/Conference",
+      "openreview-verified:ENCODE/2026/Conference",
       "openreview-year:ENCODE/2026/Conference",
-      "openreview-verified:ENCODE/2026/Conference"
+      "openreview:ENCODE/2026/Conference"
     ],
     "emerging": true
   },
@@ -1451,9 +1451,9 @@
     "dblp_url": null,
     "website": "https://7eseiaconference.lneg.pt/",
     "evidence": [
-      "openreview:ESEIA/2026/Conference",
+      "openreview-verified:ESEIA/2026/Conference",
       "openreview-year:ESEIA/2026/Conference",
-      "openreview-verified:ESEIA/2026/Conference"
+      "openreview:ESEIA/2026/Conference"
     ],
     "emerging": true
   },
@@ -1469,9 +1469,9 @@
     "dblp_url": null,
     "website": "https://esrea2025.ff.cuni.cz",
     "evidence": [
-      "openreview:ESREA/2025/Conference",
+      "openreview-verified:ESREA/2025/Conference",
       "openreview-year:ESREA/2025/Conference",
-      "openreview-verified:ESREA/2025/Conference"
+      "openreview:ESREA/2025/Conference"
     ],
     "emerging": true
   },
@@ -1487,9 +1487,9 @@
     "dblp_url": null,
     "website": "https://www.eva.mpg.de/linguistic-and-cultural-evolution/events/2025-emerging-topics-in-typology/",
     "evidence": [
-      "openreview:ETT/2025/Conference",
+      "openreview-verified:ETT/2025/Conference",
       "openreview-year:ETT/2025/Conference",
-      "openreview-verified:ETT/2025/Conference"
+      "openreview:ETT/2025/Conference"
     ],
     "emerging": true
   },
@@ -1505,11 +1505,11 @@
     "dblp_url": null,
     "website": "https://eurobioc2025.bioconductor.org/",
     "evidence": [
-      "openreview:bioconductor.org/EuroBioC/2025/Conference",
-      "openreview-year:bioconductor.org/EuroBioC/2025/Conference",
       "openreview-verified:bioconductor.org/EuroBioC/2026/Conference",
-      "openreview:bioconductor.org/EuroBioC/2026/Conference",
-      "openreview-year:bioconductor.org/EuroBioC/2026/Conference"
+      "openreview-year:bioconductor.org/EuroBioC/2025/Conference",
+      "openreview-year:bioconductor.org/EuroBioC/2026/Conference",
+      "openreview:bioconductor.org/EuroBioC/2025/Conference",
+      "openreview:bioconductor.org/EuroBioC/2026/Conference"
     ],
     "emerging": true
   },
@@ -1525,9 +1525,9 @@
     "dblp_url": null,
     "website": "https://evolang2026.org/",
     "evidence": [
-      "openreview:EVOLANG.org/2026/Conference",
+      "openreview-verified:EVOLANG.org/2026/Conference",
       "openreview-year:EVOLANG.org/2026/Conference",
-      "openreview-verified:EVOLANG.org/2026/Conference"
+      "openreview:EVOLANG.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -1543,9 +1543,9 @@
     "dblp_url": null,
     "website": "2026.ewaf.org",
     "evidence": [
-      "openreview:EWAF.org/2026/Conference",
+      "openreview-verified:EWAF.org/2026/Conference",
       "openreview-year:EWAF.org/2026/Conference",
-      "openreview-verified:EWAF.org/2026/Conference"
+      "openreview:EWAF.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -1561,9 +1561,9 @@
     "dblp_url": null,
     "website": "https://sites.unica.it/6euroxphi",
     "evidence": [
-      "openreview:EXPhi/2026/Conference",
+      "openreview-verified:EXPhi/2026/Conference",
       "openreview-year:EXPhi/2026/Conference",
-      "openreview-verified:EXPhi/2026/Conference"
+      "openreview:EXPhi/2026/Conference"
     ],
     "emerging": true
   },
@@ -1579,11 +1579,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:ACM.org/FAccT/2026/Conference",
-      "openreview-year:ACM.org/FAccT/2026/Conference",
       "openreview-verified:ACM.org/FAccT/2026/Conference",
-      "openreview:ACM.org/FAccT/2027/Conference",
-      "openreview-year:ACM.org/FAccT/2027/Conference"
+      "openreview-year:ACM.org/FAccT/2026/Conference",
+      "openreview-year:ACM.org/FAccT/2027/Conference",
+      "openreview:ACM.org/FAccT/2026/Conference",
+      "openreview:ACM.org/FAccT/2027/Conference"
     ],
     "emerging": true
   },
@@ -1599,11 +1599,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:FARM/2025/Conference",
-      "openreview-year:FARM/2025/Conference",
       "openreview-verified:FARM/2025/Conference",
-      "openreview:FARM/2026/Conference",
-      "openreview-year:FARM/2026/Conference"
+      "openreview-year:FARM/2025/Conference",
+      "openreview-year:FARM/2026/Conference",
+      "openreview:FARM/2025/Conference",
+      "openreview:FARM/2026/Conference"
     ],
     "emerging": true
   },
@@ -1619,11 +1619,11 @@
     "dblp_url": null,
     "website": "https://fasl35.github.io/",
     "evidence": [
-      "openreview:FASL/2026/Conference",
-      "openreview-year:FASL/2026/Conference",
       "openreview-verified:FASL/2027/Conference",
-      "openreview:FASL/2027/Conference",
-      "openreview-year:FASL/2027/Conference"
+      "openreview-year:FASL/2026/Conference",
+      "openreview-year:FASL/2027/Conference",
+      "openreview:FASL/2026/Conference",
+      "openreview:FASL/2027/Conference"
     ],
     "emerging": true
   },
@@ -1639,9 +1639,9 @@
     "dblp_url": null,
     "website": "https://indico.cern.ch/event/1654479/",
     "evidence": [
-      "openreview:FastML/2026/Conference",
+      "openreview-verified:FastML/2026/Conference",
       "openreview-year:FastML/2026/Conference",
-      "openreview-verified:FastML/2026/Conference"
+      "openreview:FastML/2026/Conference"
     ],
     "emerging": true
   },
@@ -1657,9 +1657,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/fdsl-18",
     "evidence": [
-      "openreview:FDSL/2025/Conference",
+      "openreview-verified:FDSL/2025/Conference",
       "openreview-year:FDSL/2025/Conference",
-      "openreview-verified:FDSL/2025/Conference"
+      "openreview:FDSL/2025/Conference"
     ],
     "emerging": true
   },
@@ -1675,9 +1675,9 @@
     "dblp_url": null,
     "website": "https://fimh2027.sciencesconf.org/",
     "evidence": [
-      "openreview:FIMH/2027/Conference",
+      "openreview-verified:FIMH/2027/Conference",
       "openreview-year:FIMH/2027/Conference",
-      "openreview-verified:FIMH/2027/Conference"
+      "openreview:FIMH/2027/Conference"
     ],
     "emerging": true
   },
@@ -1693,9 +1693,9 @@
     "dblp_url": null,
     "website": "https://2026.flins.cc/",
     "evidence": [
-      "openreview:flins.cc/FLINS-ISKE/2026/Conference",
+      "openreview-verified:flins.cc/FLINS-ISKE/2026/Conference",
       "openreview-year:flins.cc/FLINS-ISKE/2026/Conference",
-      "openreview-verified:flins.cc/FLINS-ISKE/2026/Conference"
+      "openreview:flins.cc/FLINS-ISKE/2026/Conference"
     ],
     "emerging": true
   },
@@ -1711,9 +1711,9 @@
     "dblp_url": null,
     "website": "https://gac2027.phil.hhu.de/",
     "evidence": [
-      "openreview:GaC/2027/Conference",
+      "openreview-verified:GaC/2027/Conference",
       "openreview-year:GaC/2027/Conference",
-      "openreview-verified:GaC/2027/Conference"
+      "openreview:GaC/2027/Conference"
     ],
     "emerging": true
   },
@@ -1729,9 +1729,9 @@
     "dblp_url": null,
     "website": "https://www.gamesec-conf.org/",
     "evidence": [
-      "openreview:gamesec-conf.org/GameSec/2026/Conference",
+      "openreview-verified:gamesec-conf.org/GameSec/2026/Conference",
       "openreview-year:gamesec-conf.org/GameSec/2026/Conference",
-      "openreview-verified:gamesec-conf.org/GameSec/2026/Conference"
+      "openreview:gamesec-conf.org/GameSec/2026/Conference"
     ],
     "emerging": true
   },
@@ -1747,9 +1747,9 @@
     "dblp_url": null,
     "website": "https://gbcc2025.org/",
     "evidence": [
-      "openreview:bioconductor.org/GBCC/2025/Conference",
+      "openreview-verified:bioconductor.org/GBCC/2025/Conference",
       "openreview-year:bioconductor.org/GBCC/2025/Conference",
-      "openreview-verified:bioconductor.org/GBCC/2025/Conference"
+      "openreview:bioconductor.org/GBCC/2025/Conference"
     ],
     "emerging": true
   },
@@ -1765,9 +1765,9 @@
     "dblp_url": null,
     "website": "https://gariwenjibra.org/overview/",
     "evidence": [
-      "openreview:gariwenjibra.org/GICDL/2026/Conference",
+      "openreview-verified:gariwenjibra.org/GICDL/2026/Conference",
       "openreview-year:gariwenjibra.org/GICDL/2026/Conference",
-      "openreview-verified:gariwenjibra.org/GICDL/2026/Conference"
+      "openreview:gariwenjibra.org/GICDL/2026/Conference"
     ],
     "emerging": true
   },
@@ -1783,9 +1783,9 @@
     "dblp_url": null,
     "website": "https://www.unive.it/web/it/17646/home",
     "evidence": [
-      "openreview:GILS/2026/Conference",
+      "openreview-verified:GILS/2026/Conference",
       "openreview-year:GILS/2026/Conference",
-      "openreview-verified:GILS/2026/Conference"
+      "openreview:GILS/2026/Conference"
     ],
     "emerging": true
   },
@@ -1801,9 +1801,9 @@
     "dblp_url": null,
     "website": "https://giscience2025.org/",
     "evidence": [
-      "openreview:giscience.org/GIScience/2025/Conference",
+      "openreview-verified:giscience.org/GIScience/2025/Conference",
       "openreview-year:giscience.org/GIScience/2025/Conference",
-      "openreview-verified:giscience.org/GIScience/2025/Conference"
+      "openreview:giscience.org/GIScience/2025/Conference"
     ],
     "emerging": true
   },
@@ -1819,9 +1819,9 @@
     "dblp_url": null,
     "website": "https://going-romance.wp.hum.uu.nl/2026-going-romance-40-in-utrecht/",
     "evidence": [
-      "openreview:Going_Romance/2026/Conference",
+      "openreview-verified:Going_Romance/2026/Conference",
       "openreview-year:Going_Romance/2026/Conference",
-      "openreview-verified:Going_Romance/2026/Conference"
+      "openreview:Going_Romance/2026/Conference"
     ],
     "emerging": true
   },
@@ -1837,9 +1837,9 @@
     "dblp_url": null,
     "website": "http://www.grab-it.it/",
     "evidence": [
-      "openreview:GRAB-IT.it/2026/Conference",
+      "openreview-verified:GRAB-IT.it/2026/Conference",
       "openreview-year:GRAB-IT.it/2026/Conference",
-      "openreview-verified:GRAB-IT.it/2026/Conference"
+      "openreview:GRAB-IT.it/2026/Conference"
     ],
     "emerging": true
   },
@@ -1855,9 +1855,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/gt-frba-hf-conference-2025",
     "evidence": [
-      "openreview:GT-FRBA/HF/2025/Conference",
+      "openreview-verified:GT-FRBA/HF/2025/Conference",
       "openreview-year:GT-FRBA/HF/2025/Conference",
-      "openreview-verified:GT-FRBA/HF/2025/Conference"
+      "openreview:GT-FRBA/HF/2025/Conference"
     ],
     "emerging": true
   },
@@ -1873,9 +1873,9 @@
     "dblp_url": null,
     "website": "https://hi-paris.github.io/HiPARIS-Student-Conference-on-AI/",
     "evidence": [
-      "openreview:HPSCAI/2026/Conference",
+      "openreview-verified:HPSCAI/2026/Conference",
       "openreview-year:HPSCAI/2026/Conference",
-      "openreview-verified:HPSCAI/2026/Conference"
+      "openreview:HPSCAI/2026/Conference"
     ],
     "emerging": true
   },
@@ -1891,9 +1891,9 @@
     "dblp_url": null,
     "website": "https://www.ntu.edu.sg/soh/news-events/conferences/the-33rd-annual-meeting-of-the-international-association-of-chinese-linguistics",
     "evidence": [
-      "openreview:IACL/2027/Conference",
+      "openreview-verified:IACL/2027/Conference",
       "openreview-year:IACL/2027/Conference",
-      "openreview-verified:IACL/2027/Conference"
+      "openreview:IACL/2027/Conference"
     ],
     "emerging": true
   },
@@ -1909,9 +1909,9 @@
     "dblp_url": null,
     "website": "https://ias-19.org",
     "evidence": [
-      "openreview:ias-society.org/IAS/2025/Conference",
+      "openreview-verified:ias-society.org/IAS/2025/Conference",
       "openreview-year:ias-society.org/IAS/2025/Conference",
-      "openreview-verified:ias-society.org/IAS/2025/Conference"
+      "openreview:ias-society.org/IAS/2025/Conference"
     ],
     "emerging": true
   },
@@ -1927,9 +1927,9 @@
     "dblp_url": null,
     "website": "iaseai.org",
     "evidence": [
-      "openreview:IASEAI.org/2027/Conference",
+      "openreview-verified:IASEAI.org/2027/Conference",
       "openreview-year:IASEAI.org/2027/Conference",
-      "openreview-verified:IASEAI.org/2027/Conference"
+      "openreview:IASEAI.org/2027/Conference"
     ],
     "emerging": true
   },
@@ -1945,9 +1945,9 @@
     "dblp_url": null,
     "website": "https://www.iatl.org.il/",
     "evidence": [
-      "openreview:IATL.org/2026/Conference",
+      "openreview-verified:IATL.org/2026/Conference",
       "openreview-year:IATL.org/2026/Conference",
-      "openreview-verified:IATL.org/2026/Conference"
+      "openreview:IATL.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -1963,9 +1963,9 @@
     "dblp_url": null,
     "website": "https://pfia26.cril.fr/conf%C3%A9rences/ic/",
     "evidence": [
-      "openreview:cnrs.fr/IC/2026/Conference",
+      "openreview-verified:cnrs.fr/IC/2026/Conference",
       "openreview-year:cnrs.fr/IC/2026/Conference",
-      "openreview-verified:cnrs.fr/IC/2026/Conference"
+      "openreview:cnrs.fr/IC/2026/Conference"
     ],
     "emerging": true
   },
@@ -1981,11 +1981,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IC2S2.org/2025/Conference",
-      "openreview-year:IC2S2.org/2025/Conference",
       "openreview-verified:IC2S2.org/2025/Conference",
-      "openreview:IC2S2.org/2027/Conference",
-      "openreview-year:IC2S2.org/2027/Conference"
+      "openreview-year:IC2S2.org/2025/Conference",
+      "openreview-year:IC2S2.org/2027/Conference",
+      "openreview:IC2S2.org/2025/Conference",
+      "openreview:IC2S2.org/2027/Conference"
     ],
     "emerging": true
   },
@@ -2001,11 +2001,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/ICACI/2025/Conference",
-      "openreview-year:IEEE.org/ICACI/2025/Conference",
       "openreview-verified:IEEE.org/ICACI/2025/Conference",
-      "openreview:IEEE.org/ICACI/2026/Conference",
-      "openreview-year:IEEE.org/ICACI/2026/Conference"
+      "openreview-year:IEEE.org/ICACI/2025/Conference",
+      "openreview-year:IEEE.org/ICACI/2026/Conference",
+      "openreview:IEEE.org/ICACI/2025/Conference",
+      "openreview:IEEE.org/ICACI/2026/Conference"
     ],
     "emerging": true
   },
@@ -2021,11 +2021,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:ICAIS.cc/2025/Conference",
-      "openreview-year:ICAIS.cc/2025/Conference",
       "openreview-verified:ICAIS.cc/2025/Conference",
-      "openreview:bza.edu.cn/Beijing_Zhongguancun_Academy/ICAIS/2026/Conference",
-      "openreview-year:bza.edu.cn/Beijing_Zhongguancun_Academy/ICAIS/2026/Conference"
+      "openreview-year:ICAIS.cc/2025/Conference",
+      "openreview-year:bza.edu.cn/Beijing_Zhongguancun_Academy/ICAIS/2026/Conference",
+      "openreview:ICAIS.cc/2025/Conference",
+      "openreview:bza.edu.cn/Beijing_Zhongguancun_Academy/ICAIS/2026/Conference"
     ],
     "emerging": true
   },
@@ -2041,9 +2041,9 @@
     "dblp_url": null,
     "website": "https://www.icaitd.com",
     "evidence": [
-      "openreview:ICAITD/2026/Conference",
+      "openreview-verified:ICAITD/2026/Conference",
       "openreview-year:ICAITD/2026/Conference",
-      "openreview-verified:ICAITD/2026/Conference"
+      "openreview:ICAITD/2026/Conference"
     ],
     "emerging": true
   },
@@ -2059,9 +2059,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/icamma2026/home?authuser=0",
     "evidence": [
-      "openreview:IC-AMMA/2026/Conference",
+      "openreview-verified:IC-AMMA/2026/Conference",
       "openreview-year:IC-AMMA/2026/Conference",
-      "openreview-verified:IC-AMMA/2026/Conference"
+      "openreview:IC-AMMA/2026/Conference"
     ],
     "emerging": true
   },
@@ -2077,9 +2077,9 @@
     "dblp_url": null,
     "website": "https://icasdai.org/",
     "evidence": [
-      "openreview:ICASDAI.org/2026/Conference",
+      "openreview-verified:ICASDAI.org/2026/Conference",
       "openreview-year:ICASDAI.org/2026/Conference",
-      "openreview-verified:ICASDAI.org/2026/Conference"
+      "openreview:ICASDAI.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -2095,11 +2095,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:iccp-conference.org/ICCP/2025/Conference",
-      "openreview-year:iccp-conference.org/ICCP/2025/Conference",
       "openreview-verified:iccp-conference.org/ICCP/2025/Conference",
-      "openreview:iccp-conference.org/ICCP/2026/Conference",
-      "openreview-year:iccp-conference.org/ICCP/2026/Conference"
+      "openreview-year:iccp-conference.org/ICCP/2025/Conference",
+      "openreview-year:iccp-conference.org/ICCP/2026/Conference",
+      "openreview:iccp-conference.org/ICCP/2025/Conference",
+      "openreview:iccp-conference.org/ICCP/2026/Conference"
     ],
     "emerging": true
   },
@@ -2115,9 +2115,9 @@
     "dblp_url": null,
     "website": "https://iccsic.ieee.tn/",
     "evidence": [
-      "openreview:IEEE.org/ICCSIC/2026/Conference",
+      "openreview-verified:IEEE.org/ICCSIC/2026/Conference",
       "openreview-year:IEEE.org/ICCSIC/2026/Conference",
-      "openreview-verified:IEEE.org/ICCSIC/2026/Conference"
+      "openreview:IEEE.org/ICCSIC/2026/Conference"
     ],
     "emerging": true
   },
@@ -2133,9 +2133,9 @@
     "dblp_url": null,
     "website": "https://attend.ieee.org/icdl-2026/",
     "evidence": [
-      "openreview:IEEE.org/ICDL/2026/Conference",
+      "openreview-verified:IEEE.org/ICDL/2026/Conference",
       "openreview-year:IEEE.org/ICDL/2026/Conference",
-      "openreview-verified:IEEE.org/ICDL/2026/Conference"
+      "openreview:IEEE.org/ICDL/2026/Conference"
     ],
     "emerging": true
   },
@@ -2151,9 +2151,9 @@
     "dblp_url": null,
     "website": "https://www.icem16.kmutt.ac.th",
     "evidence": [
-      "openreview:ICEM/2025/Conference",
+      "openreview-verified:ICEM/2025/Conference",
       "openreview-year:ICEM/2025/Conference",
-      "openreview-verified:ICEM/2025/Conference"
+      "openreview:ICEM/2025/Conference"
     ],
     "emerging": true
   },
@@ -2169,13 +2169,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/ICHI/2025/Conference",
-      "openreview-year:IEEE.org/ICHI/2025/Conference",
       "openreview-verified:IEEE.org/ICHI/2026/Conference",
-      "openreview:IEEE.org/ICHI/2026/Conference",
+      "openreview-year:IEEE.org/ICHI/2025/Conference",
       "openreview-year:IEEE.org/ICHI/2026/Conference",
-      "openreview:IEEE.org/ICHI/2027/Conference",
-      "openreview-year:IEEE.org/ICHI/2027/Conference"
+      "openreview-year:IEEE.org/ICHI/2027/Conference",
+      "openreview:IEEE.org/ICHI/2025/Conference",
+      "openreview:IEEE.org/ICHI/2026/Conference",
+      "openreview:IEEE.org/ICHI/2027/Conference"
     ],
     "emerging": true
   },
@@ -2191,9 +2191,9 @@
     "dblp_url": null,
     "website": "https://ici2st.epn.edu.ec/index.php/en/",
     "evidence": [
-      "openreview:ICI2ST/2025/Conference",
+      "openreview-verified:ICI2ST/2025/Conference",
       "openreview-year:ICI2ST/2025/Conference",
-      "openreview-verified:ICI2ST/2025/Conference"
+      "openreview:ICI2ST/2025/Conference"
     ],
     "emerging": true
   },
@@ -2209,13 +2209,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/ICICIP/2025/Conference",
-      "openreview-year:IEEE.org/ICICIP/2025/Conference",
       "openreview-verified:IEEE.org/ICICIP/2026/Conference",
-      "openreview:IEEE.org/ICICIP/2026/Conference",
+      "openreview-year:IEEE.org/ICICIP/2025/Conference",
       "openreview-year:IEEE.org/ICICIP/2026/Conference",
-      "openreview:IEEE.org/ICICIP/2027/Conference",
-      "openreview-year:IEEE.org/ICICIP/2027/Conference"
+      "openreview-year:IEEE.org/ICICIP/2027/Conference",
+      "openreview:IEEE.org/ICICIP/2025/Conference",
+      "openreview:IEEE.org/ICICIP/2026/Conference",
+      "openreview:IEEE.org/ICICIP/2027/Conference"
     ],
     "emerging": true
   },
@@ -2231,9 +2231,9 @@
     "dblp_url": null,
     "website": "https://icict.org/",
     "evidence": [
-      "openreview:ICICT.org/2027/Conference",
+      "openreview-verified:ICICT.org/2027/Conference",
       "openreview-year:ICICT.org/2027/Conference",
-      "openreview-verified:ICICT.org/2027/Conference"
+      "openreview:ICICT.org/2027/Conference"
     ],
     "emerging": true
   },
@@ -2249,9 +2249,9 @@
     "dblp_url": null,
     "website": "https://www.icim.org/",
     "evidence": [
-      "openreview:ICIM.org/2026/Conference",
+      "openreview-verified:ICIM.org/2026/Conference",
       "openreview-year:ICIM.org/2026/Conference",
-      "openreview-verified:ICIM.org/2026/Conference"
+      "openreview:ICIM.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -2267,11 +2267,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/ICIST/2025/Conference",
-      "openreview-year:IEEE.org/ICIST/2025/Conference",
       "openreview-verified:IEEE.org/ICIST/2025/Conference",
-      "openreview:IEEE.org/ICIST/2026/Conference",
-      "openreview-year:IEEE.org/ICIST/2026/Conference"
+      "openreview-year:IEEE.org/ICIST/2025/Conference",
+      "openreview-year:IEEE.org/ICIST/2026/Conference",
+      "openreview:IEEE.org/ICIST/2025/Conference",
+      "openreview:IEEE.org/ICIST/2026/Conference"
     ],
     "emerging": true
   },
@@ -2287,9 +2287,9 @@
     "dblp_url": null,
     "website": "https://icities25.unicas.it/",
     "evidence": [
-      "openreview:I-CiTies/2025/Conference",
+      "openreview-verified:I-CiTies/2025/Conference",
       "openreview-year:I-CiTies/2025/Conference",
-      "openreview-verified:I-CiTies/2025/Conference"
+      "openreview:I-CiTies/2025/Conference"
     ],
     "emerging": true
   },
@@ -2305,9 +2305,9 @@
     "dblp_url": null,
     "website": "https://conference.mmumullana.org/icmmdu-2026/",
     "evidence": [
-      "openreview:mmumullana.org/ICMMDU/2026/Conference",
+      "openreview-verified:mmumullana.org/ICMMDU/2026/Conference",
       "openreview-year:mmumullana.org/ICMMDU/2026/Conference",
-      "openreview-verified:mmumullana.org/ICMMDU/2026/Conference"
+      "openreview:mmumullana.org/ICMMDU/2026/Conference"
     ],
     "emerging": true
   },
@@ -2323,11 +2323,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:ICOMP.cc/2025/Conference",
-      "openreview-year:ICOMP.cc/2025/Conference",
       "openreview-verified:ICOMP.cc/2025/Conference",
-      "openreview:ICOMP.cc/2026/Conference",
-      "openreview-year:ICOMP.cc/2026/Conference"
+      "openreview-year:ICOMP.cc/2025/Conference",
+      "openreview-year:ICOMP.cc/2026/Conference",
+      "openreview:ICOMP.cc/2025/Conference",
+      "openreview:ICOMP.cc/2026/Conference"
     ],
     "emerging": true
   },
@@ -2343,9 +2343,9 @@
     "dblp_url": null,
     "website": "https://sfb1252.uni-koeln.de/veranstaltungen/internationale-tagungen-workshops/icpl-iv-2026",
     "evidence": [
-      "openreview:ICPL/2026/Conference",
+      "openreview-verified:ICPL/2026/Conference",
       "openreview-year:ICPL/2026/Conference",
-      "openreview-verified:ICPL/2026/Conference"
+      "openreview:ICPL/2026/Conference"
     ],
     "emerging": true
   },
@@ -2361,9 +2361,9 @@
     "dblp_url": null,
     "website": "https://konferencia.unideb.hu/en/icsh17",
     "evidence": [
-      "openreview:unideb.hu/ICSH/2025/Conference",
+      "openreview-verified:unideb.hu/ICSH/2025/Conference",
       "openreview-year:unideb.hu/ICSH/2025/Conference",
-      "openreview-verified:unideb.hu/ICSH/2025/Conference"
+      "openreview:unideb.hu/ICSH/2025/Conference"
     ],
     "emerging": true
   },
@@ -2379,9 +2379,9 @@
     "dblp_url": null,
     "website": "https://www.icssi.org/",
     "evidence": [
-      "openreview:ICSSI.org/2025/Conference",
+      "openreview-verified:ICSSI.org/2025/Conference",
       "openreview-year:ICSSI.org/2025/Conference",
-      "openreview-verified:ICSSI.org/2025/Conference"
+      "openreview:ICSSI.org/2025/Conference"
     ],
     "emerging": true
   },
@@ -2397,9 +2397,9 @@
     "dblp_url": null,
     "website": "https://icvgip.in/2026/",
     "evidence": [
-      "openreview:ICVGIP.in/2026/Conference",
+      "openreview-verified:ICVGIP.in/2026/Conference",
       "openreview-year:ICVGIP.in/2026/Conference",
-      "openreview-verified:ICVGIP.in/2026/Conference"
+      "openreview:ICVGIP.in/2026/Conference"
     ],
     "emerging": true
   },
@@ -2415,9 +2415,9 @@
     "dblp_url": null,
     "website": "https://idrim2025.com/",
     "evidence": [
-      "openreview:IDRiM.org/2025/Conference",
+      "openreview-verified:IDRiM.org/2025/Conference",
       "openreview-year:IDRiM.org/2025/Conference",
-      "openreview-verified:IDRiM.org/2025/Conference"
+      "openreview:IDRiM.org/2025/Conference"
     ],
     "emerging": true
   },
@@ -2433,9 +2433,9 @@
     "dblp_url": null,
     "website": "https://ieee-ifetc.org/",
     "evidence": [
-      "openreview:IEEE.org/IFETC/2025/Conference",
+      "openreview-verified:IEEE.org/IFETC/2025/Conference",
       "openreview-year:IEEE.org/IFETC/2025/Conference",
-      "openreview-verified:IEEE.org/IFETC/2025/Conference"
+      "openreview:IEEE.org/IFETC/2025/Conference"
     ],
     "emerging": true
   },
@@ -2451,11 +2451,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IGG/2026/Conference",
-      "openreview-year:IGG/2026/Conference",
       "openreview-verified:IGG/2026/Conference",
-      "openreview:IGG/2027/Conference",
-      "openreview-year:IGG/2027/Conference"
+      "openreview-year:IGG/2026/Conference",
+      "openreview-year:IGG/2027/Conference",
+      "openreview:IGG/2026/Conference",
+      "openreview:IGG/2027/Conference"
     ],
     "emerging": true
   },
@@ -2471,9 +2471,9 @@
     "dblp_url": null,
     "website": "https://usar.acm.org/iic-air/",
     "evidence": [
-      "openreview:ACM.org/IIC-AIR/2027/Conference",
+      "openreview-verified:ACM.org/IIC-AIR/2027/Conference",
       "openreview-year:ACM.org/IIC-AIR/2027/Conference",
-      "openreview-verified:ACM.org/IIC-AIR/2027/Conference"
+      "openreview:ACM.org/IIC-AIR/2027/Conference"
     ],
     "emerging": true
   },
@@ -2489,9 +2489,9 @@
     "dblp_url": null,
     "website": "https://ijtcs-faw2026.github.io/IJTCS-FAW2026/",
     "evidence": [
-      "openreview:IJTCS-FAW/2026/Conference",
+      "openreview-verified:IJTCS-FAW/2026/Conference",
       "openreview-year:IJTCS-FAW/2026/Conference",
-      "openreview-verified:IJTCS-FAW/2026/Conference"
+      "openreview:IJTCS-FAW/2026/Conference"
     ],
     "emerging": true
   },
@@ -2507,9 +2507,9 @@
     "dblp_url": null,
     "website": "https://www.vitimechcon.com/home/aiml",
     "evidence": [
-      "openreview:iMECHCON/2025/Conference",
+      "openreview-verified:iMECHCON/2025/Conference",
       "openreview-year:iMECHCON/2025/Conference",
-      "openreview-verified:iMECHCON/2025/Conference"
+      "openreview:iMECHCON/2025/Conference"
     ],
     "emerging": true
   },
@@ -2525,11 +2525,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IMLIP.org/2025/Conference",
-      "openreview-year:IMLIP.org/2025/Conference",
       "openreview-verified:IMLIP.org/2025/Conference",
-      "openreview:IMLIP.org/2026/Conference",
-      "openreview-year:IMLIP.org/2026/Conference"
+      "openreview-year:IMLIP.org/2025/Conference",
+      "openreview-year:IMLIP.org/2026/Conference",
+      "openreview:IMLIP.org/2025/Conference",
+      "openreview:IMLIP.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -2545,9 +2545,9 @@
     "dblp_url": null,
     "website": "https://imol2025.github.io/",
     "evidence": [
-      "openreview:IMOL/2025/Conference",
+      "openreview-verified:IMOL/2025/Conference",
       "openreview-year:IMOL/2025/Conference",
-      "openreview-verified:IMOL/2025/Conference"
+      "openreview:IMOL/2025/Conference"
     ],
     "emerging": true
   },
@@ -2563,9 +2563,9 @@
     "dblp_url": null,
     "website": "https://bioclues.org/events/inbix/",
     "evidence": [
-      "openreview:INBIXiCOBLET/2026/Conference",
+      "openreview-verified:INBIXiCOBLET/2026/Conference",
       "openreview-year:INBIXiCOBLET/2026/Conference",
-      "openreview-verified:INBIXiCOBLET/2026/Conference"
+      "openreview:INBIXiCOBLET/2026/Conference"
     ],
     "emerging": true
   },
@@ -2581,9 +2581,9 @@
     "dblp_url": null,
     "website": "https://incob.apbionet.org/incob2025/",
     "evidence": [
-      "openreview:apbionet.org/InCoB/2025/Conference",
+      "openreview-verified:apbionet.org/InCoB/2025/Conference",
       "openreview-year:apbionet.org/InCoB/2025/Conference",
-      "openreview-verified:apbionet.org/InCoB/2025/Conference"
+      "openreview:apbionet.org/InCoB/2025/Conference"
     ],
     "emerging": true
   },
@@ -2599,9 +2599,9 @@
     "dblp_url": null,
     "website": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/",
     "evidence": [
-      "openreview:IN-CYPHER/2026/Conference",
+      "openreview-verified:IN-CYPHER/2026/Conference",
       "openreview-year:IN-CYPHER/2026/Conference",
-      "openreview-verified:IN-CYPHER/2026/Conference"
+      "openreview:IN-CYPHER/2026/Conference"
     ],
     "emerging": true
   },
@@ -2617,9 +2617,9 @@
     "dblp_url": null,
     "website": "https://intelsyst2026.emena.org/",
     "evidence": [
-      "openreview:emena.org/INTELSYST/2026/Conference",
+      "openreview-verified:emena.org/INTELSYST/2026/Conference",
       "openreview-year:emena.org/INTELSYST/2026/Conference",
-      "openreview-verified:emena.org/INTELSYST/2026/Conference"
+      "openreview:emena.org/INTELSYST/2026/Conference"
     ],
     "emerging": true
   },
@@ -2635,9 +2635,9 @@
     "dblp_url": null,
     "website": "https://2027.ipmi-conf.org/",
     "evidence": [
-      "openreview:ipmi-conf.org/IPMI/2027/Conference",
+      "openreview-verified:ipmi-conf.org/IPMI/2027/Conference",
       "openreview-year:ipmi-conf.org/IPMI/2027/Conference",
-      "openreview-verified:ipmi-conf.org/IPMI/2027/Conference"
+      "openreview:ipmi-conf.org/IPMI/2027/Conference"
     ],
     "emerging": true
   },
@@ -2653,9 +2653,9 @@
     "dblp_url": null,
     "website": "https://internationalsocietymoralpsychology.com/",
     "evidence": [
-      "openreview:ISMP/2026/Conference",
+      "openreview-verified:ISMP/2026/Conference",
       "openreview-year:ISMP/2026/Conference",
-      "openreview-verified:ISMP/2026/Conference"
+      "openreview:ISMP/2026/Conference"
     ],
     "emerging": true
   },
@@ -2671,9 +2671,9 @@
     "dblp_url": null,
     "website": "https://iwcs2025.github.io/",
     "evidence": [
-      "openreview:IWCS/2025/Conference",
+      "openreview-verified:IWCS/2025/Conference",
       "openreview-year:IWCS/2025/Conference",
-      "openreview-verified:IWCS/2025/Conference"
+      "openreview:IWCS/2025/Conference"
     ],
     "emerging": true
   },
@@ -2689,9 +2689,9 @@
     "dblp_url": null,
     "website": "https://jdi-2026.github.io",
     "evidence": [
-      "openreview:JDI/2026/Conference",
+      "openreview-verified:JDI/2026/Conference",
       "openreview-year:JDI/2026/Conference",
-      "openreview-verified:JDI/2026/Conference"
+      "openreview:JDI/2026/Conference"
     ],
     "emerging": true
   },
@@ -2707,11 +2707,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:JDSE/2025/Conference",
-      "openreview-year:JDSE/2025/Conference",
       "openreview-verified:JDSE/2025/Conference",
-      "openreview:JDSE/2026/Conference",
-      "openreview-year:JDSE/2026/Conference"
+      "openreview-year:JDSE/2025/Conference",
+      "openreview-year:JDSE/2026/Conference",
+      "openreview:JDSE/2025/Conference",
+      "openreview:JDSE/2026/Conference"
     ],
     "emerging": true
   },
@@ -2727,9 +2727,9 @@
     "dblp_url": null,
     "website": "https://pfia2025.u-bourgogne.fr/conferences/jiaf/",
     "evidence": [
-      "openreview:PFIA.fr/JIAF-JFPDA/2025/Conference",
+      "openreview-verified:PFIA.fr/JIAF-JFPDA/2025/Conference",
       "openreview-year:PFIA.fr/JIAF-JFPDA/2025/Conference",
-      "openreview-verified:PFIA.fr/JIAF-JFPDA/2025/Conference"
+      "openreview:PFIA.fr/JIAF-JFPDA/2025/Conference"
     ],
     "emerging": true
   },
@@ -2745,11 +2745,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:ETSII.us.es/JIETSII/2025/Conference",
-      "openreview-year:ETSII.us.es/JIETSII/2025/Conference",
       "openreview-verified:ETSII.us.es/JIETSII/2025/Conference",
-      "openreview:ETSII.us.es/JIETSII/2026/Conference",
-      "openreview-year:ETSII.us.es/JIETSII/2026/Conference"
+      "openreview-year:ETSII.us.es/JIETSII/2025/Conference",
+      "openreview-year:ETSII.us.es/JIETSII/2026/Conference",
+      "openreview:ETSII.us.es/JIETSII/2025/Conference",
+      "openreview:ETSII.us.es/JIETSII/2026/Conference"
     ],
     "emerging": true
   },
@@ -2765,9 +2765,9 @@
     "dblp_url": null,
     "website": "http://jim2026.sciencesconf.org/",
     "evidence": [
-      "openreview:JIM/2026/Conference",
+      "openreview-verified:JIM/2026/Conference",
       "openreview-year:JIM/2026/Conference",
-      "openreview-verified:JIM/2026/Conference"
+      "openreview:JIM/2026/Conference"
     ],
     "emerging": true
   },
@@ -2783,11 +2783,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:JITA/2025/Conference",
-      "openreview-year:JITA/2025/Conference",
       "openreview-verified:JITA/2025/Conference",
-      "openreview:JITA/2026/Conference",
-      "openreview-year:JITA/2026/Conference"
+      "openreview-year:JITA/2025/Conference",
+      "openreview-year:JITA/2026/Conference",
+      "openreview:JITA/2025/Conference",
+      "openreview:JITA/2026/Conference"
     ],
     "emerging": true
   },
@@ -2803,9 +2803,9 @@
     "dblp_url": null,
     "website": "https://soche.cl/xlviii-jornadas-nacionales-de-estadistica-2026/",
     "evidence": [
-      "openreview:JNE/2026/Conference",
+      "openreview-verified:JNE/2026/Conference",
       "openreview-year:JNE/2026/Conference",
-      "openreview-verified:JNE/2026/Conference"
+      "openreview:JNE/2026/Conference"
     ],
     "emerging": true
   },
@@ -2821,9 +2821,9 @@
     "dblp_url": null,
     "website": "https://judig.jerteh.rs/",
     "evidence": [
-      "openreview:JUDIG/2026/Conference",
+      "openreview-verified:JUDIG/2026/Conference",
       "openreview-year:JUDIG/2026/Conference",
-      "openreview-verified:JUDIG/2026/Conference"
+      "openreview:JUDIG/2026/Conference"
     ],
     "emerging": true
   },
@@ -2839,11 +2839,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:JWOC/2025/Conference",
-      "openreview-year:JWOC/2025/Conference",
       "openreview-verified:JWOC/2025/Conference",
-      "openreview:JWOC/2026/Conference",
-      "openreview-year:JWOC/2026/Conference"
+      "openreview-year:JWOC/2025/Conference",
+      "openreview-year:JWOC/2026/Conference",
+      "openreview:JWOC/2025/Conference",
+      "openreview:JWOC/2026/Conference"
     ],
     "emerging": true
   },
@@ -2859,9 +2859,9 @@
     "dblp_url": null,
     "website": "kolkom26.zib.de",
     "evidence": [
-      "openreview:KolKom/2026/Conference",
+      "openreview-verified:KolKom/2026/Conference",
       "openreview-year:KolKom/2026/Conference",
-      "openreview-verified:KolKom/2026/Conference"
+      "openreview:KolKom/2026/Conference"
     ],
     "emerging": true
   },
@@ -2877,11 +2877,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:GSCL.org/KONVENS/2025/Conference",
-      "openreview-year:GSCL.org/KONVENS/2025/Conference",
       "openreview-verified:GSCL.org/KONVENS/2025/Conference",
-      "openreview:GSCL.org/KONVENS/2026/Conference",
-      "openreview-year:GSCL.org/KONVENS/2026/Conference"
+      "openreview-year:GSCL.org/KONVENS/2025/Conference",
+      "openreview-year:GSCL.org/KONVENS/2026/Conference",
+      "openreview:GSCL.org/KONVENS/2025/Conference",
+      "openreview:GSCL.org/KONVENS/2026/Conference"
     ],
     "emerging": true
   },
@@ -2897,9 +2897,9 @@
     "dblp_url": null,
     "website": "https://music-informatics.kr/",
     "evidence": [
-      "openreview:music-informatics.kr/KSMI/2026/Conference",
+      "openreview-verified:music-informatics.kr/KSMI/2026/Conference",
       "openreview-year:music-informatics.kr/KSMI/2026/Conference",
-      "openreview-verified:music-informatics.kr/KSMI/2026/Conference"
+      "openreview:music-informatics.kr/KSMI/2026/Conference"
     ],
     "emerging": true
   },
@@ -2915,11 +2915,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:L4DC.org/2026/Conference",
-      "openreview-year:L4DC.org/2026/Conference",
       "openreview-verified:L4DC.org/2026/Conference",
-      "openreview:L4DC.org/2027/Conference",
-      "openreview-year:L4DC.org/2027/Conference"
+      "openreview-year:L4DC.org/2026/Conference",
+      "openreview-year:L4DC.org/2027/Conference",
+      "openreview:L4DC.org/2026/Conference",
+      "openreview:L4DC.org/2027/Conference"
     ],
     "emerging": true
   },
@@ -2935,9 +2935,9 @@
     "dblp_url": null,
     "website": "https://iclad.ai/",
     "evidence": [
-      "openreview:IEEE.org/LAD/2026/Conference",
+      "openreview-verified:IEEE.org/LAD/2026/Conference",
       "openreview-year:IEEE.org/LAD/2026/Conference",
-      "openreview-verified:IEEE.org/LAD/2026/Conference"
+      "openreview:IEEE.org/LAD/2026/Conference"
     ],
     "emerging": true
   },
@@ -2953,9 +2953,9 @@
     "dblp_url": null,
     "website": "https://gu-clasp.github.io/LARP",
     "evidence": [
-      "openreview:CLASP/LARP/2025/Conference",
+      "openreview-verified:CLASP/LARP/2025/Conference",
       "openreview-year:CLASP/LARP/2025/Conference",
-      "openreview-verified:CLASP/LARP/2025/Conference"
+      "openreview:CLASP/LARP/2025/Conference"
     ],
     "emerging": true
   },
@@ -2971,11 +2971,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:LATIN-R.com/2025/Conference",
-      "openreview-year:LATIN-R.com/2025/Conference",
       "openreview-verified:LATIN-R.com/2025/Conference",
-      "openreview:LATIN-R.com/2026/Conference",
-      "openreview-year:LATIN-R.com/2026/Conference"
+      "openreview-year:LATIN-R.com/2025/Conference",
+      "openreview-year:LATIN-R.com/2026/Conference",
+      "openreview:LATIN-R.com/2025/Conference",
+      "openreview:LATIN-R.com/2026/Conference"
     ],
     "emerging": true
   },
@@ -2991,9 +2991,9 @@
     "dblp_url": null,
     "website": "lcr2026.ff.cuni.cz",
     "evidence": [
-      "openreview:learnercorpusassociation.org/LCR/2026/Conference",
+      "openreview-verified:learnercorpusassociation.org/LCR/2026/Conference",
       "openreview-year:learnercorpusassociation.org/LCR/2026/Conference",
-      "openreview-verified:learnercorpusassociation.org/LCR/2026/Conference"
+      "openreview:learnercorpusassociation.org/LCR/2026/Conference"
     ],
     "emerging": true
   },
@@ -3009,9 +3009,9 @@
     "dblp_url": null,
     "website": "https://nytud.hu/esemeny/1st-international-conference-on-lexicology-and-lexicography",
     "evidence": [
-      "openreview:LexiKonf/2025/Conference",
+      "openreview-verified:LexiKonf/2025/Conference",
       "openreview-year:LexiKonf/2025/Conference",
-      "openreview-verified:LexiKonf/2025/Conference"
+      "openreview:LexiKonf/2025/Conference"
     ],
     "emerging": true
   },
@@ -3027,13 +3027,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:LFG/2025/Conference",
-      "openreview-year:LFG/2025/Conference",
       "openreview-verified:LFG/2026/Conference",
-      "openreview:LFG/2026/Conference",
+      "openreview-year:LFG/2025/Conference",
       "openreview-year:LFG/2026/Conference",
-      "openreview:LFG/2027/Conference",
-      "openreview-year:LFG/2027/Conference"
+      "openreview-year:LFG/2027/Conference",
+      "openreview:LFG/2025/Conference",
+      "openreview:LFG/2026/Conference",
+      "openreview:LFG/2027/Conference"
     ],
     "emerging": true
   },
@@ -3049,9 +3049,9 @@
     "dblp_url": null,
     "website": "https://mgrobol.codeberg.page/lift26/",
     "evidence": [
-      "openreview:LIFT2/2026/Conference",
+      "openreview-verified:LIFT2/2026/Conference",
       "openreview-year:LIFT2/2026/Conference",
-      "openreview-verified:LIFT2/2026/Conference"
+      "openreview:LIFT2/2026/Conference"
     ],
     "emerging": true
   },
@@ -3067,9 +3067,9 @@
     "dblp_url": null,
     "website": "http://linguisticsprague.ff.cuni.cz/index.html",
     "evidence": [
-      "openreview:CUNI.cz/Linguistics_Prague/2026/Conference",
+      "openreview-verified:CUNI.cz/Linguistics_Prague/2026/Conference",
       "openreview-year:CUNI.cz/Linguistics_Prague/2026/Conference",
-      "openreview-verified:CUNI.cz/Linguistics_Prague/2026/Conference"
+      "openreview:CUNI.cz/Linguistics_Prague/2026/Conference"
     ],
     "emerging": true
   },
@@ -3085,11 +3085,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:intelligent-optimization.org/LION/2025/Conference",
-      "openreview-year:intelligent-optimization.org/LION/2025/Conference",
       "openreview-verified:intelligent-optimization.org/LION/2025/Conference",
-      "openreview:intelligent-optimization.org/LION/2026/Conference",
-      "openreview-year:intelligent-optimization.org/LION/2026/Conference"
+      "openreview-year:intelligent-optimization.org/LION/2025/Conference",
+      "openreview-year:intelligent-optimization.org/LION/2026/Conference",
+      "openreview:intelligent-optimization.org/LION/2025/Conference",
+      "openreview:intelligent-optimization.org/LION/2026/Conference"
     ],
     "emerging": true
   },
@@ -3105,9 +3105,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/loft2026",
     "evidence": [
-      "openreview:LOFT/2026/Conference",
+      "openreview-verified:LOFT/2026/Conference",
       "openreview-year:LOFT/2026/Conference",
-      "openreview-verified:LOFT/2026/Conference"
+      "openreview:LOFT/2026/Conference"
     ],
     "emerging": true
   },
@@ -3123,9 +3123,9 @@
     "dblp_url": null,
     "website": "http://eventum.upf.edu/go/logms2026",
     "evidence": [
-      "openreview:LOGMS/2026/Conference",
+      "openreview-verified:LOGMS/2026/Conference",
       "openreview-year:LOGMS/2026/Conference",
-      "openreview-verified:LOGMS/2026/Conference"
+      "openreview:LOGMS/2026/Conference"
     ],
     "emerging": true
   },
@@ -3141,9 +3141,9 @@
     "dblp_url": null,
     "website": "https://www.mascsll.org/",
     "evidence": [
-      "openreview:mascsll.org/MASC-ALL/2026/Conference",
+      "openreview-verified:mascsll.org/MASC-ALL/2026/Conference",
       "openreview-year:mascsll.org/MASC-ALL/2026/Conference",
-      "openreview-verified:mascsll.org/MASC-ALL/2026/Conference"
+      "openreview:mascsll.org/MASC-ALL/2026/Conference"
     ],
     "emerging": true
   },
@@ -3159,9 +3159,9 @@
     "dblp_url": null,
     "website": "https://www.mascsll.org",
     "evidence": [
-      "openreview:mascsll.org/MASC-SLL/2025/Conference",
+      "openreview-verified:mascsll.org/MASC-SLL/2025/Conference",
       "openreview-year:mascsll.org/MASC-SLL/2025/Conference",
-      "openreview-verified:mascsll.org/MASC-SLL/2025/Conference"
+      "openreview:mascsll.org/MASC-SLL/2025/Conference"
     ],
     "emerging": true
   },
@@ -3177,13 +3177,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:mathai.club/MathAI/2025/Conference",
-      "openreview-year:mathai.club/MathAI/2025/Conference",
       "openreview-verified:mathai.club/MathAI/2026/Conference",
-      "openreview:mathai.club/MathAI/2026/Conference",
+      "openreview-year:mathai.club/MathAI/2025/Conference",
       "openreview-year:mathai.club/MathAI/2026/Conference",
-      "openreview:mathai.club/MathAI/2027/Conference",
-      "openreview-year:mathai.club/MathAI/2027/Conference"
+      "openreview-year:mathai.club/MathAI/2027/Conference",
+      "openreview:mathai.club/MathAI/2025/Conference",
+      "openreview:mathai.club/MathAI/2026/Conference",
+      "openreview:mathai.club/MathAI/2027/Conference"
     ],
     "emerging": true
   },
@@ -3199,9 +3199,9 @@
     "dblp_url": null,
     "website": "https://www.ukm.my/mention/",
     "evidence": [
-      "openreview:ukm.my/Universiti_Kebangsaan_Malaysia/MENTION/2025/Conference",
+      "openreview-verified:ukm.my/Universiti_Kebangsaan_Malaysia/MENTION/2025/Conference",
       "openreview-year:ukm.my/Universiti_Kebangsaan_Malaysia/MENTION/2025/Conference",
-      "openreview-verified:ukm.my/Universiti_Kebangsaan_Malaysia/MENTION/2025/Conference"
+      "openreview:ukm.my/Universiti_Kebangsaan_Malaysia/MENTION/2025/Conference"
     ],
     "emerging": true
   },
@@ -3217,13 +3217,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:MIDL.io/2025/Conference",
-      "openreview-year:MIDL.io/2025/Conference",
       "openreview-verified:MIDL.io/2026/Conference",
-      "openreview:MIDL.io/2026/Conference",
+      "openreview-year:MIDL.io/2025/Conference",
       "openreview-year:MIDL.io/2026/Conference",
-      "openreview:MIDL.io/2027/Conference",
-      "openreview-year:MIDL.io/2027/Conference"
+      "openreview-year:MIDL.io/2027/Conference",
+      "openreview:MIDL.io/2025/Conference",
+      "openreview:MIDL.io/2026/Conference",
+      "openreview:MIDL.io/2027/Conference"
     ],
     "emerging": true
   },
@@ -3239,9 +3239,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/mipr-2027/home",
     "evidence": [
-      "openreview:IEEE.org/MIPR/2027/Conference",
+      "openreview-verified:IEEE.org/MIPR/2027/Conference",
       "openreview-year:IEEE.org/MIPR/2027/Conference",
-      "openreview-verified:IEEE.org/MIPR/2027/Conference"
+      "openreview:IEEE.org/MIPR/2027/Conference"
     ],
     "emerging": true
   },
@@ -3257,11 +3257,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:cwsm.org/MisD/2025/Conference",
-      "openreview-year:cwsm.org/MisD/2025/Conference",
       "openreview-verified:cwsm.org/MisD/2025/Conference",
-      "openreview:cwsm.org/MisD/2026/Conference",
-      "openreview-year:cwsm.org/MisD/2026/Conference"
+      "openreview-year:cwsm.org/MisD/2025/Conference",
+      "openreview-year:cwsm.org/MisD/2026/Conference",
+      "openreview:cwsm.org/MisD/2025/Conference",
+      "openreview:cwsm.org/MisD/2026/Conference"
     ],
     "emerging": true
   },
@@ -3277,13 +3277,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:IEEE.org/MiTA/2025/Conference",
-      "openreview-year:IEEE.org/MiTA/2025/Conference",
       "openreview-verified:IEEE.org/MiTA/2026/Conference",
-      "openreview:IEEE.org/MiTA/2026/Conference",
+      "openreview-year:IEEE.org/MiTA/2025/Conference",
       "openreview-year:IEEE.org/MiTA/2026/Conference",
-      "openreview:IEEE.org/MiTA/2027/Conference",
-      "openreview-year:IEEE.org/MiTA/2027/Conference"
+      "openreview-year:IEEE.org/MiTA/2027/Conference",
+      "openreview:IEEE.org/MiTA/2025/Conference",
+      "openreview:IEEE.org/MiTA/2026/Conference",
+      "openreview:IEEE.org/MiTA/2027/Conference"
     ],
     "emerging": true
   },
@@ -3299,11 +3299,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:mlforhc.org/MLHC/2025/Conference",
-      "openreview-year:mlforhc.org/MLHC/2025/Conference",
       "openreview-verified:mlforhc.org/MLHC/2025/Conference",
-      "openreview:mlforhc.org/MLHC/2026/Conference",
-      "openreview-year:mlforhc.org/MLHC/2026/Conference"
+      "openreview-year:mlforhc.org/MLHC/2025/Conference",
+      "openreview-year:mlforhc.org/MLHC/2026/Conference",
+      "openreview:mlforhc.org/MLHC/2025/Conference",
+      "openreview:mlforhc.org/MLHC/2026/Conference"
     ],
     "emerging": true
   },
@@ -3319,9 +3319,9 @@
     "dblp_url": null,
     "website": "https://conference.mlinpl.org/2026/about-ml-in-pl-conference",
     "evidence": [
-      "openreview:MLinPL.org/2026/Conference",
+      "openreview-verified:MLinPL.org/2026/Conference",
       "openreview-year:MLinPL.org/2026/Conference",
-      "openreview-verified:MLinPL.org/2026/Conference"
+      "openreview:MLinPL.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -3337,9 +3337,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/mlmi2026",
     "evidence": [
-      "openreview:MLMI/2026/Conference",
+      "openreview-verified:MLMI/2026/Conference",
       "openreview-year:MLMI/2026/Conference",
-      "openreview-verified:MLMI/2026/Conference"
+      "openreview:MLMI/2026/Conference"
     ],
     "emerging": true
   },
@@ -3355,9 +3355,9 @@
     "dblp_url": null,
     "website": "https://mole2026.molweb.xyz/",
     "evidence": [
-      "openreview:MOLe/2026/Conference",
+      "openreview-verified:MOLe/2026/Conference",
       "openreview-year:MOLe/2026/Conference",
-      "openreview-verified:MOLe/2026/Conference"
+      "openreview:MOLe/2026/Conference"
     ],
     "emerging": true
   },
@@ -3373,9 +3373,9 @@
     "dblp_url": null,
     "website": "https://multipleyefc.github.io/2026/",
     "evidence": [
-      "openreview:multipleye.eu/MultiplEYE/2026/Conference",
+      "openreview-verified:multipleye.eu/MultiplEYE/2026/Conference",
       "openreview-year:multipleye.eu/MultiplEYE/2026/Conference",
-      "openreview-verified:multipleye.eu/MultiplEYE/2026/Conference"
+      "openreview:multipleye.eu/MultiplEYE/2026/Conference"
     ],
     "emerging": true
   },
@@ -3391,9 +3391,9 @@
     "dblp_url": null,
     "website": "https://www.iranianlinguistics.com",
     "evidence": [
-      "openreview:NACIL/2027/Conference",
+      "openreview-verified:NACIL/2027/Conference",
       "openreview-year:NACIL/2027/Conference",
-      "openreview-verified:NACIL/2027/Conference"
+      "openreview:NACIL/2027/Conference"
     ],
     "emerging": true
   },
@@ -3409,9 +3409,9 @@
     "dblp_url": null,
     "website": "https://nasslli25.shane.st/",
     "evidence": [
-      "openreview:NASSLLI/2025/Conference",
+      "openreview-verified:NASSLLI/2025/Conference",
       "openreview-year:NASSLLI/2025/Conference",
-      "openreview-verified:NASSLLI/2025/Conference"
+      "openreview:NASSLLI/2025/Conference"
     ],
     "emerging": true
   },
@@ -3427,9 +3427,9 @@
     "dblp_url": null,
     "website": "https://www.neglab.de/graduate-school/young-researchers-conference/",
     "evidence": [
-      "openreview:neglab.de/NbN/2026/Conference",
+      "openreview-verified:neglab.de/NbN/2026/Conference",
       "openreview-year:neglab.de/NbN/2026/Conference",
-      "openreview-verified:neglab.de/NbN/2026/Conference"
+      "openreview:neglab.de/NbN/2026/Conference"
     ],
     "emerging": true
   },
@@ -3445,9 +3445,9 @@
     "dblp_url": null,
     "website": "https://nels57.commons.gc.cuny.edu/",
     "evidence": [
-      "openreview:NELS/2026/Conference",
+      "openreview-verified:NELS/2026/Conference",
       "openreview-year:NELS/2026/Conference",
-      "openreview-verified:NELS/2026/Conference"
+      "openreview:NELS/2026/Conference"
     ],
     "emerging": true
   },
@@ -3463,9 +3463,9 @@
     "dblp_url": null,
     "website": "https://www.embs.org/event/13th-international-conference-on-neural-engineering-ner/",
     "evidence": [
-      "openreview:IEEE.org/EMBS/NER/2027/Conference",
+      "openreview-verified:IEEE.org/EMBS/NER/2027/Conference",
       "openreview-year:IEEE.org/EMBS/NER/2027/Conference",
-      "openreview-verified:IEEE.org/EMBS/NER/2027/Conference"
+      "openreview:IEEE.org/EMBS/NER/2027/Conference"
     ],
     "emerging": true
   },
@@ -3481,11 +3481,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:NERC/2025/Conference",
-      "openreview-year:NERC/2025/Conference",
       "openreview-verified:NERC/2025/Conference",
-      "openreview:NERC/2026/Conference",
-      "openreview-year:NERC/2026/Conference"
+      "openreview-year:NERC/2025/Conference",
+      "openreview-year:NERC/2026/Conference",
+      "openreview:NERC/2025/Conference",
+      "openreview:NERC/2026/Conference"
     ],
     "emerging": true
   },
@@ -3501,9 +3501,9 @@
     "dblp_url": null,
     "website": "https://netscix2026.github.io",
     "evidence": [
-      "openreview:NetSciX/2026/Conference",
+      "openreview-verified:NetSciX/2026/Conference",
       "openreview-year:NetSciX/2026/Conference",
-      "openreview-verified:NetSciX/2026/Conference"
+      "openreview:NetSciX/2026/Conference"
     ],
     "emerging": true
   },
@@ -3519,9 +3519,9 @@
     "dblp_url": null,
     "website": "https://neurmad.github.io/",
     "evidence": [
-      "openreview:NEUREASON/2026/Conference",
+      "openreview-verified:NEUREASON/2026/Conference",
       "openreview-year:NEUREASON/2026/Conference",
-      "openreview-verified:NEUREASON/2026/Conference"
+      "openreview:NEUREASON/2026/Conference"
     ],
     "emerging": true
   },
@@ -3537,11 +3537,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:neuroinfo.ru/Neuroinformatics/2025/Conference",
-      "openreview-year:neuroinfo.ru/Neuroinformatics/2025/Conference",
       "openreview-verified:neuroinfo.ru/Neuroinformatics/2025/Conference",
-      "openreview:neuroinfo.ru/Neuroinformatics/2026/Conference",
-      "openreview-year:neuroinfo.ru/Neuroinformatics/2026/Conference"
+      "openreview-year:neuroinfo.ru/Neuroinformatics/2025/Conference",
+      "openreview-year:neuroinfo.ru/Neuroinformatics/2026/Conference",
+      "openreview:neuroinfo.ru/Neuroinformatics/2025/Conference",
+      "openreview:neuroinfo.ru/Neuroinformatics/2026/Conference"
     ],
     "emerging": true
   },
@@ -3557,9 +3557,9 @@
     "dblp_url": null,
     "website": "http://neus-2026.github.io/",
     "evidence": [
-      "openreview:NeuS/2026/Conference",
+      "openreview-verified:NeuS/2026/Conference",
       "openreview-year:NeuS/2026/Conference",
-      "openreview-verified:NeuS/2026/Conference"
+      "openreview:NeuS/2026/Conference"
     ],
     "emerging": true
   },
@@ -3575,13 +3575,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:NLDL.org/2025/Conference",
-      "openreview-year:NLDL.org/2025/Conference",
       "openreview-verified:NLDL.org/2026/Conference",
-      "openreview:NLDL.org/2026/Conference",
+      "openreview-year:NLDL.org/2025/Conference",
       "openreview-year:NLDL.org/2026/Conference",
-      "openreview:NLDL.org/2027/Conference",
-      "openreview-year:NLDL.org/2027/Conference"
+      "openreview-year:NLDL.org/2027/Conference",
+      "openreview:NLDL.org/2025/Conference",
+      "openreview:NLDL.org/2026/Conference",
+      "openreview:NLDL.org/2027/Conference"
     ],
     "emerging": true
   },
@@ -3597,11 +3597,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:NLP4DH.com/2025/Conference",
-      "openreview-year:NLP4DH.com/2025/Conference",
       "openreview-verified:NLP4DH.com/2025/Conference",
-      "openreview:NLP4DH.com/2026/Conference",
-      "openreview-year:NLP4DH.com/2026/Conference"
+      "openreview-year:NLP4DH.com/2025/Conference",
+      "openreview-year:NLP4DH.com/2026/Conference",
+      "openreview:NLP4DH.com/2025/Conference",
+      "openreview:NLP4DH.com/2026/Conference"
     ],
     "emerging": true
   },
@@ -3617,9 +3617,9 @@
     "dblp_url": null,
     "website": "https://www.su.se/english/divisions/centre-for-research-on-bilingualism/about-the-centre/neurolinguistics-in-sweden-nls2026",
     "evidence": [
-      "openreview:biling.su.se/NLS/2026/Conference",
+      "openreview-verified:biling.su.se/NLS/2026/Conference",
       "openreview-year:biling.su.se/NLS/2026/Conference",
-      "openreview-verified:biling.su.se/NLS/2026/Conference"
+      "openreview:biling.su.se/NLS/2026/Conference"
     ],
     "emerging": true
   },
@@ -3635,9 +3635,9 @@
     "dblp_url": null,
     "website": "https://basla.uib.eu/nocrodep2025/",
     "evidence": [
-      "openreview:NOCroDeP/2025/Conference",
+      "openreview-verified:NOCroDeP/2025/Conference",
       "openreview-year:NOCroDeP/2025/Conference",
-      "openreview-verified:NOCroDeP/2025/Conference"
+      "openreview:NOCroDeP/2025/Conference"
     ],
     "emerging": true
   },
@@ -3653,9 +3653,9 @@
     "dblp_url": null,
     "website": "https://norsk-sprakteknologikonferanse.github.io/nettside/",
     "evidence": [
-      "openreview:NorSK/2026/Conference",
+      "openreview-verified:NorSK/2026/Conference",
       "openreview-year:NorSK/2026/Conference",
-      "openreview-verified:NorSK/2026/Conference"
+      "openreview:NorSK/2026/Conference"
     ],
     "emerging": true
   },
@@ -3671,9 +3671,9 @@
     "dblp_url": null,
     "website": "https://network-science-ai.github.io/",
     "evidence": [
-      "openreview:NSIA/2026/Conference",
+      "openreview-verified:NSIA/2026/Conference",
       "openreview-year:NSIA/2026/Conference",
-      "openreview-verified:NSIA/2026/Conference"
+      "openreview:NSIA/2026/Conference"
     ],
     "emerging": true
   },
@@ -3689,11 +3689,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:cnrs.fr/OASIS/2025/Conference",
-      "openreview-year:cnrs.fr/OASIS/2025/Conference",
       "openreview-verified:cnrs.fr/OASIS/2025/Conference",
-      "openreview:cnrs.fr/OASIS/2026/Conference",
-      "openreview-year:cnrs.fr/OASIS/2026/Conference"
+      "openreview-year:cnrs.fr/OASIS/2025/Conference",
+      "openreview-year:cnrs.fr/OASIS/2026/Conference",
+      "openreview:cnrs.fr/OASIS/2025/Conference",
+      "openreview:cnrs.fr/OASIS/2026/Conference"
     ],
     "emerging": true
   },
@@ -3709,9 +3709,9 @@
     "dblp_url": null,
     "website": "https://www.iliadconference.com/",
     "evidence": [
-      "openreview:iliadconference.com/ODYSSEY/2025/Conference",
+      "openreview-verified:iliadconference.com/ODYSSEY/2025/Conference",
       "openreview-year:iliadconference.com/ODYSSEY/2025/Conference",
-      "openreview-verified:iliadconference.com/ODYSSEY/2025/Conference"
+      "openreview:iliadconference.com/ODYSSEY/2025/Conference"
     ],
     "emerging": true
   },
@@ -3727,9 +3727,9 @@
     "dblp_url": null,
     "website": "https://ios2026.isye.gatech.edu/refereed-proceedings",
     "evidence": [
-      "openreview:INFORMS.org/Optimization_Society/2026/Conference",
+      "openreview-verified:INFORMS.org/Optimization_Society/2026/Conference",
       "openreview-year:INFORMS.org/Optimization_Society/2026/Conference",
-      "openreview-verified:INFORMS.org/Optimization_Society/2026/Conference"
+      "openreview:INFORMS.org/Optimization_Society/2026/Conference"
     ],
     "emerging": true
   },
@@ -3745,9 +3745,9 @@
     "dblp_url": null,
     "website": "http://optsolar.eu",
     "evidence": [
-      "openreview:optsolar.eu/OPTSOLAR/2025/Conference",
+      "openreview-verified:optsolar.eu/OPTSOLAR/2025/Conference",
       "openreview-year:optsolar.eu/OPTSOLAR/2025/Conference",
-      "openreview-verified:optsolar.eu/OPTSOLAR/2025/Conference"
+      "openreview:optsolar.eu/OPTSOLAR/2025/Conference"
     ],
     "emerging": true
   },
@@ -3763,9 +3763,9 @@
     "dblp_url": null,
     "website": "https://datascience.stanford.edu/events/center-decoding-universe/2026-conference-physics-and-ai-pai26",
     "evidence": [
-      "openreview:PAI/2026/Conference",
+      "openreview-verified:PAI/2026/Conference",
       "openreview-year:PAI/2026/Conference",
-      "openreview-verified:PAI/2026/Conference"
+      "openreview:PAI/2026/Conference"
     ],
     "emerging": true
   },
@@ -3781,9 +3781,9 @@
     "dblp_url": null,
     "website": "https://www.uv.es/pgm2026/",
     "evidence": [
-      "openreview:PGM/2026/Conference",
+      "openreview-verified:PGM/2026/Conference",
       "openreview-year:PGM/2026/Conference",
-      "openreview-verified:PGM/2026/Conference"
+      "openreview:PGM/2026/Conference"
     ],
     "emerging": true
   },
@@ -3799,9 +3799,9 @@
     "dblp_url": null,
     "website": "https://blog.studiumdigitale.uni-frankfurt.de/phracon-2027/",
     "evidence": [
-      "openreview:PhraConRep/2027/Conference",
+      "openreview-verified:PhraConRep/2027/Conference",
       "openreview-year:PhraConRep/2027/Conference",
-      "openreview-verified:PhraConRep/2027/Conference"
+      "openreview:PhraConRep/2027/Conference"
     ],
     "emerging": true
   },
@@ -3817,9 +3817,9 @@
     "dblp_url": null,
     "website": "https://hai.stanford.edu/events/2027-conference-on-physics-and-ai-phystat-2027",
     "evidence": [
-      "openreview:stanford.edu/Stanford_University/PhyStat/2027/Conference",
+      "openreview-verified:stanford.edu/Stanford_University/PhyStat/2027/Conference",
       "openreview-year:stanford.edu/Stanford_University/PhyStat/2027/Conference",
-      "openreview-verified:stanford.edu/Stanford_University/PhyStat/2027/Conference"
+      "openreview:stanford.edu/Stanford_University/PhyStat/2027/Conference"
     ],
     "emerging": true
   },
@@ -3835,11 +3835,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:UPENN.edu/PLC/2026/Conference",
-      "openreview-year:UPENN.edu/PLC/2026/Conference",
       "openreview-verified:UPENN.edu/PLC/2026/Conference",
-      "openreview:UPENN.edu/PLC/2027/Conference",
-      "openreview-year:UPENN.edu/PLC/2027/Conference"
+      "openreview-year:UPENN.edu/PLC/2026/Conference",
+      "openreview-year:UPENN.edu/PLC/2027/Conference",
+      "openreview:UPENN.edu/PLC/2026/Conference",
+      "openreview:UPENN.edu/PLC/2027/Conference"
     ],
     "emerging": true
   },
@@ -3855,11 +3855,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:ProbNum/2025/Conference",
-      "openreview-year:ProbNum/2025/Conference",
       "openreview-verified:ProbNum/2025/Conference",
-      "openreview:ProbNum/2026/Conference",
-      "openreview-year:ProbNum/2026/Conference"
+      "openreview-year:ProbNum/2025/Conference",
+      "openreview-year:ProbNum/2026/Conference",
+      "openreview:ProbNum/2025/Conference",
+      "openreview:ProbNum/2026/Conference"
     ],
     "emerging": true
   },
@@ -3875,9 +3875,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/protolang-2027/",
     "evidence": [
-      "openreview:Protolang/2027/Conference",
+      "openreview-verified:Protolang/2027/Conference",
       "openreview-year:Protolang/2027/Conference",
-      "openreview-verified:Protolang/2027/Conference"
+      "openreview:Protolang/2027/Conference"
     ],
     "emerging": true
   },
@@ -3893,9 +3893,9 @@
     "dblp_url": null,
     "website": "https://qnlp.ai/",
     "evidence": [
-      "openreview:qnlp.ai/QNLPAI/2026/Conference",
+      "openreview-verified:qnlp.ai/QNLPAI/2026/Conference",
       "openreview-year:qnlp.ai/QNLPAI/2026/Conference",
-      "openreview-verified:qnlp.ai/QNLPAI/2026/Conference"
+      "openreview:qnlp.ai/QNLPAI/2026/Conference"
     ],
     "emerging": true
   },
@@ -3911,9 +3911,9 @@
     "dblp_url": null,
     "website": "https://qualitawg.github.io/",
     "evidence": [
-      "openreview:QualITA/2025/Conference",
+      "openreview-verified:QualITA/2025/Conference",
       "openreview-year:QualITA/2025/Conference",
-      "openreview-verified:QualITA/2025/Conference"
+      "openreview:QualITA/2025/Conference"
     ],
     "emerging": true
   },
@@ -3929,9 +3929,9 @@
     "dblp_url": null,
     "website": "https://sfb1102.uni-saarland.de/",
     "evidence": [
-      "openreview:sfb1102.uni-saarland.de/RAILS/2025/Conference",
+      "openreview-verified:sfb1102.uni-saarland.de/RAILS/2025/Conference",
       "openreview-year:sfb1102.uni-saarland.de/RAILS/2025/Conference",
-      "openreview-verified:sfb1102.uni-saarland.de/RAILS/2025/Conference"
+      "openreview:sfb1102.uni-saarland.de/RAILS/2025/Conference"
     ],
     "emerging": true
   },
@@ -3947,9 +3947,9 @@
     "dblp_url": null,
     "website": "https://reldi.rs/en/conference/",
     "evidence": [
-      "openreview:ReLDI.rs/2025/Conference",
+      "openreview-verified:ReLDI.rs/2025/Conference",
       "openreview-year:ReLDI.rs/2025/Conference",
-      "openreview-verified:ReLDI.rs/2025/Conference"
+      "openreview:ReLDI.rs/2025/Conference"
     ],
     "emerging": true
   },
@@ -3965,9 +3965,9 @@
     "dblp_url": null,
     "website": "https://caprfiap2026.sciencesconf.org/",
     "evidence": [
-      "openreview:RFIAP/2026/Conference",
+      "openreview-verified:RFIAP/2026/Conference",
       "openreview-year:RFIAP/2026/Conference",
-      "openreview-verified:RFIAP/2026/Conference"
+      "openreview:RFIAP/2026/Conference"
     ],
     "emerging": true
   },
@@ -3983,11 +3983,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:albertarobotics.ca/RISEx/2025/Conference",
-      "openreview-year:albertarobotics.ca/RISEx/2025/Conference",
       "openreview-verified:albertarobotics.ca/RISEx/2025/Conference",
-      "openreview:albertarobotics.ca/RISEx/2026/Conference",
-      "openreview-year:albertarobotics.ca/RISEx/2026/Conference"
+      "openreview-year:albertarobotics.ca/RISEx/2025/Conference",
+      "openreview-year:albertarobotics.ca/RISEx/2026/Conference",
+      "openreview:albertarobotics.ca/RISEx/2025/Conference",
+      "openreview:albertarobotics.ca/RISEx/2026/Conference"
     ],
     "emerging": true
   },
@@ -4003,11 +4003,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:rl-conference.cc/RLC/2025/Conference",
-      "openreview-year:rl-conference.cc/RLC/2025/Conference",
       "openreview-verified:rl-conference.cc/RLC/2025/Conference",
-      "openreview:rl-conference.cc/RLC/2026/Conference",
-      "openreview-year:rl-conference.cc/RLC/2026/Conference"
+      "openreview-year:rl-conference.cc/RLC/2025/Conference",
+      "openreview-year:rl-conference.cc/RLC/2026/Conference",
+      "openreview:rl-conference.cc/RLC/2025/Conference",
+      "openreview:rl-conference.cc/RLC/2026/Conference"
     ],
     "emerging": true
   },
@@ -4023,9 +4023,9 @@
     "dblp_url": null,
     "website": "https://www.robomasterna.com/",
     "evidence": [
-      "openreview:robomasterna.com/RoboMaster_North_America/2025/Conference",
+      "openreview-verified:robomasterna.com/RoboMaster_North_America/2025/Conference",
       "openreview-year:robomasterna.com/RoboMaster_North_America/2025/Conference",
-      "openreview-verified:robomasterna.com/RoboMaster_North_America/2025/Conference"
+      "openreview:robomasterna.com/RoboMaster_North_America/2025/Conference"
     ],
     "emerging": true
   },
@@ -4041,11 +4041,11 @@
     "dblp_url": null,
     "website": "https://softroboticsconference.org/",
     "evidence": [
-      "openreview:IEEE.org/RoboSoft/2025/Conference",
-      "openreview-year:IEEE.org/RoboSoft/2025/Conference",
       "openreview-verified:IEEE.org/RoboSoft/2026/Conference",
-      "openreview:IEEE.org/RoboSoft/2026/Conference",
-      "openreview-year:IEEE.org/RoboSoft/2026/Conference"
+      "openreview-year:IEEE.org/RoboSoft/2025/Conference",
+      "openreview-year:IEEE.org/RoboSoft/2026/Conference",
+      "openreview:IEEE.org/RoboSoft/2025/Conference",
+      "openreview:IEEE.org/RoboSoft/2026/Conference"
     ],
     "emerging": true
   },
@@ -4061,9 +4061,9 @@
     "dblp_url": null,
     "website": "https://rosmeetup.ru/science-eng",
     "evidence": [
-      "openreview:ROSRM/2026/Conference",
+      "openreview-verified:ROSRM/2026/Conference",
       "openreview-year:ROSRM/2026/Conference",
-      "openreview-verified:ROSRM/2026/Conference"
+      "openreview:ROSRM/2026/Conference"
     ],
     "emerging": true
   },
@@ -4079,9 +4079,9 @@
     "dblp_url": null,
     "website": "https://nunojnunes.notion.site/Introduction-to-Research-Practices-e1c26278d50c4e099372c3759ebcece5?pvs=74",
     "evidence": [
-      "openreview:tecnico.ulisboa.pt/Instituto_Superior_T\u00e9cnico/RP/2025/Conference",
+      "openreview-verified:tecnico.ulisboa.pt/Instituto_Superior_T\u00e9cnico/RP/2025/Conference",
       "openreview-year:tecnico.ulisboa.pt/Instituto_Superior_T\u00e9cnico/RP/2025/Conference",
-      "openreview-verified:tecnico.ulisboa.pt/Instituto_Superior_T\u00e9cnico/RP/2025/Conference"
+      "openreview:tecnico.ulisboa.pt/Instituto_Superior_T\u00e9cnico/RP/2025/Conference"
     ],
     "emerging": true
   },
@@ -4097,9 +4097,9 @@
     "dblp_url": null,
     "website": "https://rs-latam.org/",
     "evidence": [
-      "openreview:RSLA/2026/Conference",
+      "openreview-verified:RSLA/2026/Conference",
       "openreview-year:RSLA/2026/Conference",
-      "openreview-verified:RSLA/2026/Conference"
+      "openreview:RSLA/2026/Conference"
     ],
     "emerging": true
   },
@@ -4115,11 +4115,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:SADASC.com/2026/Conference",
-      "openreview-year:SADASC.com/2026/Conference",
       "openreview-verified:SADASC.com/2026/Conference",
-      "openreview:SADASC.com/2027/Conference",
-      "openreview-year:SADASC.com/2027/Conference"
+      "openreview-year:SADASC.com/2026/Conference",
+      "openreview-year:SADASC.com/2027/Conference",
+      "openreview:SADASC.com/2026/Conference",
+      "openreview:SADASC.com/2027/Conference"
     ],
     "emerging": true
   },
@@ -4135,9 +4135,9 @@
     "dblp_url": null,
     "website": "https://spaceai.org.uk/",
     "evidence": [
-      "openreview:SAF/2026/Conference",
+      "openreview-verified:SAF/2026/Conference",
       "openreview-year:SAF/2026/Conference",
-      "openreview-verified:SAF/2026/Conference"
+      "openreview:SAF/2026/Conference"
     ],
     "emerging": true
   },
@@ -4153,11 +4153,11 @@
     "dblp_url": null,
     "website": "https://saltconf.github.io/salt35/",
     "evidence": [
-      "openreview:saltconf.github.io/SALT/2025/Conference",
-      "openreview-year:saltconf.github.io/SALT/2025/Conference",
       "openreview-verified:saltconf.github.io/SALT/2026/Conference",
-      "openreview:saltconf.github.io/SALT/2026/Conference",
-      "openreview-year:saltconf.github.io/SALT/2026/Conference"
+      "openreview-year:saltconf.github.io/SALT/2025/Conference",
+      "openreview-year:saltconf.github.io/SALT/2026/Conference",
+      "openreview:saltconf.github.io/SALT/2025/Conference",
+      "openreview:saltconf.github.io/SALT/2026/Conference"
     ],
     "emerging": true
   },
@@ -4173,9 +4173,9 @@
     "dblp_url": null,
     "website": "https://himscsce.org/sam27",
     "evidence": [
-      "openreview:american-cse.org/SAM/2027/Conference",
+      "openreview-verified:american-cse.org/SAM/2027/Conference",
       "openreview-year:american-cse.org/SAM/2027/Conference",
-      "openreview-verified:american-cse.org/SAM/2027/Conference"
+      "openreview:american-cse.org/SAM/2027/Conference"
     ],
     "emerging": true
   },
@@ -4191,9 +4191,9 @@
     "dblp_url": null,
     "website": "https://sampta25.univie.ac.at",
     "evidence": [
-      "openreview:SampTA/2025/Conference",
+      "openreview-verified:SampTA/2025/Conference",
       "openreview-year:SampTA/2025/Conference",
-      "openreview-verified:SampTA/2025/Conference"
+      "openreview:SampTA/2025/Conference"
     ],
     "emerging": true
   },
@@ -4209,9 +4209,9 @@
     "dblp_url": null,
     "website": "https://sccai2025.gtu.ge/",
     "evidence": [
-      "openreview:SCCAI/2025/Conference",
+      "openreview-verified:SCCAI/2025/Conference",
       "openreview-year:SCCAI/2025/Conference",
-      "openreview-verified:SCCAI/2025/Conference"
+      "openreview:SCCAI/2025/Conference"
     ],
     "emerging": true
   },
@@ -4227,9 +4227,9 @@
     "dblp_url": null,
     "website": "https://sds2027.ch/",
     "evidence": [
-      "openreview:IEEE.org/SDS/2027/Conference",
+      "openreview-verified:IEEE.org/SDS/2027/Conference",
       "openreview-year:IEEE.org/SDS/2027/Conference",
-      "openreview-verified:IEEE.org/SDS/2027/Conference"
+      "openreview:IEEE.org/SDS/2027/Conference"
     ],
     "emerging": true
   },
@@ -4245,9 +4245,9 @@
     "dblp_url": null,
     "website": "https://yayayayayayaa.github.io/sdu-ai-conference/",
     "evidence": [
-      "openreview:sdu.edu.cn/Shandong_University/SDUAI/2026/Conference",
+      "openreview-verified:sdu.edu.cn/Shandong_University/SDUAI/2026/Conference",
       "openreview-year:sdu.edu.cn/Shandong_University/SDUAI/2026/Conference",
-      "openreview-verified:sdu.edu.cn/Shandong_University/SDUAI/2026/Conference"
+      "openreview:sdu.edu.cn/Shandong_University/SDUAI/2026/Conference"
     ],
     "emerging": true
   },
@@ -4263,11 +4263,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:SIC/2025/Conference",
-      "openreview-year:SIC/2025/Conference",
       "openreview-verified:SIC/2025/Conference",
-      "openreview:SIC/2026/Conference",
-      "openreview-year:SIC/2026/Conference"
+      "openreview-year:SIC/2025/Conference",
+      "openreview-year:SIC/2026/Conference",
+      "openreview:SIC/2025/Conference",
+      "openreview:SIC/2026/Conference"
     ],
     "emerging": true
   },
@@ -4283,9 +4283,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/sicogg28",
     "evidence": [
-      "openreview:SICOGG/2026/Conference",
+      "openreview-verified:SICOGG/2026/Conference",
       "openreview-year:SICOGG/2026/Conference",
-      "openreview-verified:SICOGG/2026/Conference"
+      "openreview:SICOGG/2026/Conference"
     ],
     "emerging": true
   },
@@ -4301,9 +4301,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/sinfonija-18/",
     "evidence": [
-      "openreview:SinFonIJA/2025/Conference",
+      "openreview-verified:SinFonIJA/2025/Conference",
       "openreview-year:SinFonIJA/2025/Conference",
-      "openreview-verified:SinFonIJA/2025/Conference"
+      "openreview:SinFonIJA/2025/Conference"
     ],
     "emerging": true
   },
@@ -4319,9 +4319,9 @@
     "dblp_url": null,
     "website": "https://www.sitaconf.org/",
     "evidence": [
-      "openreview:IEEE.org/SITA/2025/Conference",
+      "openreview-verified:IEEE.org/SITA/2025/Conference",
       "openreview-year:IEEE.org/SITA/2025/Conference",
-      "openreview-verified:IEEE.org/SITA/2025/Conference"
+      "openreview:IEEE.org/SITA/2025/Conference"
     ],
     "emerging": true
   },
@@ -4337,9 +4337,9 @@
     "dblp_url": null,
     "website": "https://www.ltu.se/en/research/research-subjects/machine-learning/the-swedish-language-technology-conference",
     "evidence": [
-      "openreview:SLTC/2026/Conference",
+      "openreview-verified:SLTC/2026/Conference",
       "openreview-year:SLTC/2026/Conference",
-      "openreview-verified:SLTC/2026/Conference"
+      "openreview:SLTC/2026/Conference"
     ],
     "emerging": true
   },
@@ -4355,9 +4355,9 @@
     "dblp_url": null,
     "website": "https://www.iimj.ac.in/smf-2025.php",
     "evidence": [
-      "openreview:smfi.in/SMF/2025/Conference",
+      "openreview-verified:smfi.in/SMF/2025/Conference",
       "openreview-year:smfi.in/SMF/2025/Conference",
-      "openreview-verified:smfi.in/SMF/2025/Conference"
+      "openreview:smfi.in/SMF/2025/Conference"
     ],
     "emerging": true
   },
@@ -4373,9 +4373,9 @@
     "dblp_url": null,
     "website": "https://spaice.esa.int/",
     "evidence": [
-      "openreview:SPAICE.esa.int/2026/Conference",
+      "openreview-verified:SPAICE.esa.int/2026/Conference",
       "openreview-year:SPAICE.esa.int/2026/Conference",
-      "openreview-verified:SPAICE.esa.int/2026/Conference"
+      "openreview:SPAICE.esa.int/2026/Conference"
     ],
     "emerging": true
   },
@@ -4391,9 +4391,9 @@
     "dblp_url": null,
     "website": "https://sped.pub.ro/",
     "evidence": [
-      "openreview:IEEE.org/SpeD/2025/Conference",
+      "openreview-verified:IEEE.org/SpeD/2025/Conference",
       "openreview-year:IEEE.org/SpeD/2025/Conference",
-      "openreview-verified:IEEE.org/SpeD/2025/Conference"
+      "openreview:IEEE.org/SpeD/2025/Conference"
     ],
     "emerging": true
   },
@@ -4409,13 +4409,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:SPELLL.org/2025/Conference",
-      "openreview-year:SPELLL.org/2025/Conference",
       "openreview-verified:SPELLL.org/2025/Conference",
-      "openreview:SPELLL.org/2026/Conference",
+      "openreview-year:SPELLL.org/2025/Conference",
       "openreview-year:SPELLL.org/2026/Conference",
-      "openreview:SPELLL.org/2027/Conference",
-      "openreview-year:SPELLL.org/2027/Conference"
+      "openreview-year:SPELLL.org/2027/Conference",
+      "openreview:SPELLL.org/2025/Conference",
+      "openreview:SPELLL.org/2026/Conference",
+      "openreview:SPELLL.org/2027/Conference"
     ],
     "emerging": true
   },
@@ -4431,11 +4431,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:SPP/2026/Conference",
-      "openreview-year:SPP/2026/Conference",
       "openreview-verified:SPP/2026/Conference",
-      "openreview:SPP/2027/Conference",
-      "openreview-year:SPP/2027/Conference"
+      "openreview-year:SPP/2026/Conference",
+      "openreview-year:SPP/2027/Conference",
+      "openreview:SPP/2026/Conference",
+      "openreview:SPP/2027/Conference"
     ],
     "emerging": true
   },
@@ -4451,9 +4451,9 @@
     "dblp_url": null,
     "website": "https://ssc2025.tbm.tudelft.nl/",
     "evidence": [
-      "openreview:ESSA.eu.org/SSC/2025/Conference",
+      "openreview-verified:ESSA.eu.org/SSC/2025/Conference",
       "openreview-year:ESSA.eu.org/SSC/2025/Conference",
-      "openreview-verified:ESSA.eu.org/SSC/2025/Conference"
+      "openreview:ESSA.eu.org/SSC/2025/Conference"
     ],
     "emerging": true
   },
@@ -4469,9 +4469,9 @@
     "dblp_url": null,
     "website": "https://stab2027.github.io",
     "evidence": [
-      "openreview:slads.scichina.com/STAB/2027/Conference",
+      "openreview-verified:slads.scichina.com/STAB/2027/Conference",
       "openreview-year:slads.scichina.com/STAB/2027/Conference",
-      "openreview-verified:slads.scichina.com/STAB/2027/Conference"
+      "openreview:slads.scichina.com/STAB/2027/Conference"
     ],
     "emerging": true
   },
@@ -4487,9 +4487,9 @@
     "dblp_url": null,
     "website": "https://statsupai.org/STAIX2026/",
     "evidence": [
-      "openreview:STAI-X/2026/Conference",
+      "openreview-verified:STAI-X/2026/Conference",
       "openreview-year:STAI-X/2026/Conference",
-      "openreview-verified:STAI-X/2026/Conference"
+      "openreview:STAI-X/2026/Conference"
     ],
     "emerging": true
   },
@@ -4505,13 +4505,13 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:aclweb.org/StarSEM/2025/Conference",
-      "openreview-year:aclweb.org/StarSEM/2025/Conference",
       "openreview-verified:STARSEM/2026/Conference",
-      "openreview:STARSEM/2026/Conference",
       "openreview-year:STARSEM/2026/Conference",
-      "openreview:aclweb.org/StarSEM/2026/Conference",
-      "openreview-year:aclweb.org/StarSEM/2026/Conference"
+      "openreview-year:aclweb.org/StarSEM/2025/Conference",
+      "openreview-year:aclweb.org/StarSEM/2026/Conference",
+      "openreview:STARSEM/2026/Conference",
+      "openreview:aclweb.org/StarSEM/2025/Conference",
+      "openreview:aclweb.org/StarSEM/2026/Conference"
     ],
     "emerging": true
   },
@@ -4527,11 +4527,11 @@
     "dblp_url": null,
     "website": "https://vicom.info/sub30/",
     "evidence": [
-      "openreview:SuB/2025/Conference",
-      "openreview-year:SuB/2025/Conference",
       "openreview-verified:SuB/2026/Conference",
-      "openreview:SuB/2026/Conference",
-      "openreview-year:SuB/2026/Conference"
+      "openreview-year:SuB/2025/Conference",
+      "openreview-year:SuB/2026/Conference",
+      "openreview:SuB/2025/Conference",
+      "openreview:SuB/2026/Conference"
     ],
     "emerging": true
   },
@@ -4547,11 +4547,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2026/Conference",
-      "openreview-year:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2026/Conference",
       "openreview-verified:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2026/Conference",
-      "openreview:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2027/Conference",
-      "openreview-year:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2027/Conference"
+      "openreview-year:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2026/Conference",
+      "openreview-year:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2027/Conference",
+      "openreview:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2026/Conference",
+      "openreview:ai-days.swiss-ai-center.ch/Swiss_AI_Days/2027/Conference"
     ],
     "emerging": true
   },
@@ -4567,11 +4567,11 @@
     "dblp_url": null,
     "website": "https://www.swisstext.org/current/",
     "evidence": [
-      "openreview:SwissText.org/2026/Conference",
-      "openreview-year:SwissText.org/2026/Conference",
       "openreview-verified:SwissText.org/2027/Conference",
-      "openreview:SwissText.org/2027/Conference",
-      "openreview-year:SwissText.org/2027/Conference"
+      "openreview-year:SwissText.org/2026/Conference",
+      "openreview-year:SwissText.org/2027/Conference",
+      "openreview:SwissText.org/2026/Conference",
+      "openreview:SwissText.org/2027/Conference"
     ],
     "emerging": true
   },
@@ -4587,9 +4587,9 @@
     "dblp_url": null,
     "website": "https://t1p.de/syncc2026",
     "evidence": [
-      "openreview:SyNCC/2026/Conference",
+      "openreview-verified:SyNCC/2026/Conference",
       "openreview-year:SyNCC/2026/Conference",
-      "openreview-verified:SyNCC/2026/Conference"
+      "openreview:SyNCC/2026/Conference"
     ],
     "emerging": true
   },
@@ -4605,11 +4605,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:SyntaxFest/2025/Conference",
-      "openreview-year:SyntaxFest/2025/Conference",
       "openreview-verified:SyntaxFest/2025/Conference",
-      "openreview:SyntaxFest/2027/Conference",
-      "openreview-year:SyntaxFest/2027/Conference"
+      "openreview-year:SyntaxFest/2025/Conference",
+      "openreview-year:SyntaxFest/2027/Conference",
+      "openreview:SyntaxFest/2025/Conference",
+      "openreview:SyntaxFest/2027/Conference"
     ],
     "emerging": true
   },
@@ -4625,11 +4625,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:TAAI.org/2025/Conference",
-      "openreview-year:TAAI.org/2025/Conference",
       "openreview-verified:TAAI.org/2025/Conference",
-      "openreview:TAAI.org/2026/Conference",
-      "openreview-year:TAAI.org/2026/Conference"
+      "openreview-year:TAAI.org/2025/Conference",
+      "openreview-year:TAAI.org/2026/Conference",
+      "openreview:TAAI.org/2025/Conference",
+      "openreview:TAAI.org/2026/Conference"
     ],
     "emerging": true
   },
@@ -4645,11 +4645,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:TAG-DS/2025/Conference",
-      "openreview-year:TAG-DS/2025/Conference",
       "openreview-verified:TAG-DS/2025/Conference",
-      "openreview:TAG-DS/2026/Conference",
-      "openreview-year:TAG-DS/2026/Conference"
+      "openreview-year:TAG-DS/2025/Conference",
+      "openreview-year:TAG-DS/2026/Conference",
+      "openreview:TAG-DS/2025/Conference",
+      "openreview:TAG-DS/2026/Conference"
     ],
     "emerging": true
   },
@@ -4665,9 +4665,9 @@
     "dblp_url": null,
     "website": "https://tls.ling.utexas.edu/",
     "evidence": [
-      "openreview:utexas.edu/TLS/2026/Conference",
+      "openreview-verified:utexas.edu/TLS/2026/Conference",
       "openreview-year:utexas.edu/TLS/2026/Conference",
-      "openreview-verified:utexas.edu/TLS/2026/Conference"
+      "openreview:utexas.edu/TLS/2026/Conference"
     ],
     "emerging": true
   },
@@ -4683,9 +4683,9 @@
     "dblp_url": null,
     "website": "https://aub-transformed.com/",
     "evidence": [
-      "openreview:aub-transformed.com/TransformED/2025/Conference",
+      "openreview-verified:aub-transformed.com/TransformED/2025/Conference",
       "openreview-year:aub-transformed.com/TransformED/2025/Conference",
-      "openreview-verified:aub-transformed.com/TransformED/2025/Conference"
+      "openreview:aub-transformed.com/TransformED/2025/Conference"
     ],
     "emerging": true
   },
@@ -4701,9 +4701,9 @@
     "dblp_url": null,
     "website": "https://www.transitdata2026.ca/",
     "evidence": [
-      "openreview:TransitData/2026/Conference",
+      "openreview-verified:TransitData/2026/Conference",
       "openreview-year:TransitData/2026/Conference",
-      "openreview-verified:TransitData/2026/Conference"
+      "openreview:TransitData/2026/Conference"
     ],
     "emerging": true
   },
@@ -4719,9 +4719,9 @@
     "dblp_url": null,
     "website": "https://www.anglistik.rwth-aachen.de/cms/Anglistik/Forschung/Konferenzen-Veranstaltungen/~bofdcv/Translation-in-Transition-Conference/",
     "evidence": [
-      "openreview:TT/2026/Conference",
+      "openreview-verified:TT/2026/Conference",
       "openreview-year:TT/2026/Conference",
-      "openreview-verified:TT/2026/Conference"
+      "openreview:TT/2026/Conference"
     ],
     "emerging": true
   },
@@ -4737,9 +4737,9 @@
     "dblp_url": null,
     "website": "https://msp.cis.strath.ac.uk/types2025/",
     "evidence": [
-      "openreview:TYPES/2025/Conference",
+      "openreview-verified:TYPES/2025/Conference",
       "openreview-year:TYPES/2025/Conference",
-      "openreview-verified:TYPES/2025/Conference"
+      "openreview:TYPES/2025/Conference"
     ],
     "emerging": true
   },
@@ -4755,11 +4755,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:UCCTS/2025/Conference",
-      "openreview-year:UCCTS/2025/Conference",
       "openreview-verified:UCCTS/2025/Conference",
-      "openreview:UCCTS/2027/Conference",
-      "openreview-year:UCCTS/2027/Conference"
+      "openreview-year:UCCTS/2025/Conference",
+      "openreview-year:UCCTS/2027/Conference",
+      "openreview:UCCTS/2025/Conference",
+      "openreview:UCCTS/2027/Conference"
     ],
     "emerging": true
   },
@@ -4775,9 +4775,9 @@
     "dblp_url": null,
     "website": "https://uk-ai.org/ukai2026/",
     "evidence": [
-      "openreview:uk-ai.org/UKAI/2026/Conference",
+      "openreview-verified:uk-ai.org/UKAI/2026/Conference",
       "openreview-year:uk-ai.org/UKAI/2026/Conference",
-      "openreview-verified:uk-ai.org/UKAI/2026/Conference"
+      "openreview:uk-ai.org/UKAI/2026/Conference"
     ],
     "emerging": true
   },
@@ -4793,9 +4793,9 @@
     "dblp_url": null,
     "website": "https://ukrrin2026swansea.github.io/",
     "evidence": [
-      "openreview:UKRRIN/2026/Conference",
+      "openreview-verified:UKRRIN/2026/Conference",
       "openreview-year:UKRRIN/2026/Conference",
-      "openreview-verified:UKRRIN/2026/Conference"
+      "openreview:UKRRIN/2026/Conference"
     ],
     "emerging": true
   },
@@ -4811,9 +4811,9 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/valistad2025icwsm",
     "evidence": [
-      "openreview:icwsm.org/ValiSTAD/2025/Conference",
+      "openreview-verified:icwsm.org/ValiSTAD/2025/Conference",
       "openreview-year:icwsm.org/ValiSTAD/2025/Conference",
-      "openreview-verified:icwsm.org/ValiSTAD/2025/Conference"
+      "openreview:icwsm.org/ValiSTAD/2025/Conference"
     ],
     "emerging": true
   },
@@ -4829,9 +4829,9 @@
     "dblp_url": null,
     "website": "https://uclouvain.be/en/research-institutes/ilc/cecl/register-and-task-variation-in-learner-corpus-research.html",
     "evidence": [
-      "openreview:VAR4LCR/2025/Conference",
+      "openreview-verified:VAR4LCR/2025/Conference",
       "openreview-year:VAR4LCR/2025/Conference",
-      "openreview-verified:VAR4LCR/2025/Conference"
+      "openreview:VAR4LCR/2025/Conference"
     ],
     "emerging": true
   },
@@ -4847,11 +4847,11 @@
     "dblp_url": null,
     "website": null,
     "evidence": [
-      "openreview:WAFL/2026/Conference",
-      "openreview-year:WAFL/2026/Conference",
       "openreview-verified:WAFL/2026/Conference",
-      "openreview:WAFL/2027/Conference",
-      "openreview-year:WAFL/2027/Conference"
+      "openreview-year:WAFL/2026/Conference",
+      "openreview-year:WAFL/2027/Conference",
+      "openreview:WAFL/2026/Conference",
+      "openreview:WAFL/2027/Conference"
     ],
     "emerging": true
   },
@@ -4867,9 +4867,9 @@
     "dblp_url": null,
     "website": "https://wccfl43.github.io",
     "evidence": [
-      "openreview:WCCFL/2025/Conference",
+      "openreview-verified:WCCFL/2025/Conference",
       "openreview-year:WCCFL/2025/Conference",
-      "openreview-verified:WCCFL/2025/Conference"
+      "openreview:WCCFL/2025/Conference"
     ],
     "emerging": true
   },
@@ -4885,9 +4885,9 @@
     "dblp_url": null,
     "website": "https://na.eventscloud.com/website/93824/",
     "evidence": [
-      "openreview:WCMNM/2027/Conference",
+      "openreview-verified:WCMNM/2027/Conference",
       "openreview-year:WCMNM/2027/Conference",
-      "openreview-verified:WCMNM/2027/Conference"
+      "openreview:WCMNM/2027/Conference"
     ],
     "emerging": true
   },
@@ -4903,9 +4903,9 @@
     "dblp_url": null,
     "website": "https://wsl-iiitb.github.io/WebSciX-2026/",
     "evidence": [
-      "openreview:wsl.iiitb.ac.in/WebSciX/2026/Conference",
+      "openreview-verified:wsl.iiitb.ac.in/WebSciX/2026/Conference",
       "openreview-year:wsl.iiitb.ac.in/WebSciX/2026/Conference",
-      "openreview-verified:wsl.iiitb.ac.in/WebSciX/2026/Conference"
+      "openreview:wsl.iiitb.ac.in/WebSciX/2026/Conference"
     ],
     "emerging": true
   },
@@ -4921,9 +4921,9 @@
     "dblp_url": null,
     "website": "https://meta.wikimedia.org/wiki/Wikidata_and_research",
     "evidence": [
-      "openreview:wikimedia.it/Wikidata_and_Research/2025/Conference",
+      "openreview-verified:wikimedia.it/Wikidata_and_Research/2025/Conference",
       "openreview-year:wikimedia.it/Wikidata_and_Research/2025/Conference",
-      "openreview-verified:wikimedia.it/Wikidata_and_Research/2025/Conference"
+      "openreview:wikimedia.it/Wikidata_and_Research/2025/Conference"
     ],
     "emerging": true
   },
@@ -4939,9 +4939,9 @@
     "dblp_url": null,
     "website": "https://www.woproc2026.com/",
     "evidence": [
-      "openreview:WoProc/2026/Conference",
+      "openreview-verified:WoProc/2026/Conference",
       "openreview-year:WoProc/2026/Conference",
-      "openreview-verified:WoProc/2026/Conference"
+      "openreview:WoProc/2026/Conference"
     ],
     "emerging": true
   },
@@ -4957,9 +4957,9 @@
     "dblp_url": null,
     "website": "https://x-phi.uea.ac.uk/EuroX-Phi2025-conference/",
     "evidence": [
-      "openreview:XPhi/2025/Conference",
+      "openreview-verified:XPhi/2025/Conference",
       "openreview-year:XPhi/2025/Conference",
-      "openreview-verified:XPhi/2025/Conference"
+      "openreview:XPhi/2025/Conference"
     ],
     "emerging": true
   },
@@ -4975,9 +4975,9 @@
     "dblp_url": null,
     "website": "https://www.xprag2025.com/home",
     "evidence": [
-      "openreview:XPrag/2025/Conference",
+      "openreview-verified:XPrag/2025/Conference",
       "openreview-year:XPrag/2025/Conference",
-      "openreview-verified:XPrag/2025/Conference"
+      "openreview:XPrag/2025/Conference"
     ],
     "emerging": true
   },
@@ -4993,9 +4993,9 @@
     "dblp_url": null,
     "website": "https://xpragit2026.weebly.com/",
     "evidence": [
-      "openreview:XPRAGit.com/2026/Conference",
+      "openreview-verified:XPRAGit.com/2026/Conference",
       "openreview-year:XPRAGit.com/2026/Conference",
-      "openreview-verified:XPRAGit.com/2026/Conference"
+      "openreview:XPRAGit.com/2026/Conference"
     ],
     "emerging": true
   },
@@ -5011,25 +5011,8 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/sat-cps2026/",
     "evidence": [
-      "sec-deadlines:ACM SaT-CPS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-acmsiggraphasia",
-    "title": "ACM SIGGRAPH Annual Conference in Asia",
-    "acronym": "ACM SIGGRAPH ASIA",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": "siggrapha",
-    "website": "https://asia.siggraph.org/2025/",
-    "evidence": [
-      "ccf:ACM SIGGRAPH ASIA",
-      "feed-curated:ccf"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ACM SaT-CPS"
     ],
     "emerging": true
   },
@@ -5062,59 +5045,8 @@
     "dblp_url": null,
     "website": "https://acns-isc.github.io/2026/index.html",
     "evidence": [
-      "sec-deadlines:ACNS-ISC",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-acsw",
-    "title": "Workshop on Automotive Cyber-Security",
-    "acronym": "ACSW",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://acsw.unimore.it/",
-    "evidence": [
-      "sec-deadlines:ACSW",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-adnd",
-    "title": "Workshop on Active Defense and Deception",
-    "acronym": "ADND",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://adnd.work",
-    "evidence": [
-      "sec-deadlines:ADND",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-agentcy",
-    "title": "Workshop on Agentic AI for Cybersecurity: Offensive and Defensive Perspectives",
-    "acronym": "AgentCy",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/agentcy",
-    "evidence": [
-      "sec-deadlines:AgentCy",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ACNS-ISC"
     ],
     "emerging": true
   },
@@ -5130,42 +5062,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/aiccps",
     "evidence": [
-      "sec-deadlines:AI&CCPS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-aicydef",
-    "title": "Workshop on Trustworthy and Secure AI for Cyber Defense",
-    "acronym": "AICyDef",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://attend.ieee.org/dsc/trustworthy-secureai/",
-    "evidence": [
-      "sec-deadlines:AICyDef",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-aidc",
-    "title": "Workshop on Agentic AI in Offensive and Defensive Cyber Operations",
-    "acronym": "AIDC",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://aidcworkshop.github.io/",
-    "evidence": [
-      "sec-deadlines:AIDC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:AI&CCPS"
     ],
     "emerging": true
   },
@@ -5181,8 +5079,8 @@
     "dblp_url": null,
     "website": "http://aihws2026.aisylab.com/",
     "evidence": [
-      "sec-deadlines:AIHWS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:AIHWS"
     ],
     "emerging": true
   },
@@ -5198,25 +5096,8 @@
     "dblp_url": null,
     "website": "https://aiots26.github.io/main/",
     "evidence": [
-      "sec-deadlines:AIoTS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-aisec",
-    "title": "Workshop on Artificial Intelligence and Security",
-    "acronym": "AISec",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://aisec.cc",
-    "evidence": [
-      "sec-deadlines:AISec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:AIoTS"
     ],
     "emerging": true
   },
@@ -5232,8 +5113,8 @@
     "dblp_url": null,
     "website": "https://superviz.inria.fr/anubis26/",
     "evidence": [
-      "sec-deadlines:ANUBIS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ANUBIS"
     ],
     "emerging": true
   },
@@ -5249,8 +5130,8 @@
     "dblp_url": null,
     "website": "https://privacyforum.eu/callforpapers.html",
     "evidence": [
-      "sec-deadlines:APF",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:APF"
     ],
     "emerging": true
   },
@@ -5266,8 +5147,8 @@
     "dblp_url": null,
     "website": "https://iseclab.ec.t.kanazawa-u.ac.jp/en/APKC2026.html",
     "evidence": [
-      "sec-deadlines:APKC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:APKC"
     ],
     "emerging": true
   },
@@ -5323,40 +5204,6 @@
     "emerging": true
   },
   {
-    "id": "pc-apwebwaim",
-    "title": "APWeb-WAIM joint international conference on Web and Big Data",
-    "acronym": "APWeb-WAIM",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "Data Management & Mining"
-    ],
-    "dblp_url": "https://dblp.org/db/conf/APWeb/index.html",
-    "website": "https://apweb2025.sau.edu.cn/",
-    "evidence": [
-      "ccf:APWeb-WAIM",
-      "feed-curated:ccf"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-artman",
-    "title": "Workshop on Recent Advances in Resilient and Trustworthy MAchine learning-driveN systems",
-    "acronym": "ARTMAN",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://artman-workshop.gitlab.io/",
-    "evidence": [
-      "sec-deadlines:ARTMAN",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-asap",
     "title": "IEEE International Conference on Application-Specific Systems, Architectures, and Processors",
     "acronym": "ASAP",
@@ -5385,25 +5232,8 @@
     "dblp_url": null,
     "website": "https://www.asianhost.org/2026/",
     "evidence": [
-      "sec-deadlines:AsianHOST",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-asod",
-    "title": "Workshop on Advances in Secure Software Deployments",
-    "acronym": "ASOD",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/asod",
-    "evidence": [
-      "sec-deadlines:ASOD",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:AsianHOST"
     ],
     "emerging": true
   },
@@ -5419,8 +5249,8 @@
     "dblp_url": null,
     "website": "https://bcca-conference.org/2026/Workshops/B4TI.php",
     "evidence": [
-      "sec-deadlines:B4TI",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:B4TI"
     ],
     "emerging": true
   },
@@ -5436,8 +5266,8 @@
     "dblp_url": null,
     "website": "https://cascade-conference.org/",
     "evidence": [
-      "sec-deadlines:CASCADE",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CASCADE"
     ],
     "emerging": true
   },
@@ -5453,8 +5283,8 @@
     "dblp_url": null,
     "website": "http://cbtworkshop.org/",
     "evidence": [
-      "sec-deadlines:CBT",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CBT"
     ],
     "emerging": true
   },
@@ -5487,8 +5317,8 @@
     "dblp_url": null,
     "website": "https://ccsw.io/",
     "evidence": [
-      "sec-deadlines:CCSW",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CCSW"
     ],
     "emerging": true
   },
@@ -5504,8 +5334,8 @@
     "dblp_url": null,
     "website": "https://checkmate-workshop.github.io/",
     "evidence": [
-      "sec-deadlines:CheckMATE",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CheckMATE"
     ],
     "emerging": true
   },
@@ -5521,8 +5351,8 @@
     "dblp_url": null,
     "website": "https://cic.iacr.org/page/callforpapers",
     "evidence": [
-      "sec-deadlines:CiC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CiC"
     ],
     "emerging": true
   },
@@ -5538,8 +5368,8 @@
     "dblp_url": null,
     "website": "https://cimss2027.github.io/",
     "evidence": [
-      "sec-deadlines:CIMSS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CIMSS"
     ],
     "emerging": true
   },
@@ -5572,8 +5402,8 @@
     "dblp_url": null,
     "website": "https://www.cloudresiot.com/",
     "evidence": [
-      "sec-deadlines:CloudResIOT",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CloudResIOT"
     ],
     "emerging": true
   },
@@ -5657,8 +5487,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/cpra",
     "evidence": [
-      "sec-deadlines:CPRA",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CPRA"
     ],
     "emerging": true
   },
@@ -5674,8 +5504,8 @@
     "dblp_url": null,
     "website": "https://sites.google.com/view/cpsiotsec2026",
     "evidence": [
-      "sec-deadlines:CPSIoTSec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CPSIoTSec"
     ],
     "emerging": true
   },
@@ -5691,8 +5521,8 @@
     "dblp_url": null,
     "website": "https://cpss26.github.io/",
     "evidence": [
-      "sec-deadlines:CPSS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CPSS"
     ],
     "emerging": true
   },
@@ -5708,25 +5538,8 @@
     "dblp_url": null,
     "website": "https://spritz.math.unipd.it/events/2025/CPS-Sec2025/",
     "evidence": [
-      "sec-deadlines:CPS-Sec",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-csa",
-    "title": "Workshop on Recent Advances in Cyber Situational Awareness and Data-Centric Approaches",
-    "acronym": "CSA",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/csa",
-    "evidence": [
-      "sec-deadlines:CSA",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CPS-Sec"
     ],
     "emerging": true
   },
@@ -5742,8 +5555,8 @@
     "dblp_url": null,
     "website": "https://acm-cscs.org",
     "evidence": [
-      "sec-deadlines:CSCS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CSCS"
     ],
     "emerging": true
   },
@@ -5759,8 +5572,8 @@
     "dblp_url": null,
     "website": "https://cset25.isi.edu/",
     "evidence": [
-      "sec-deadlines:CSET",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CSET"
     ],
     "emerging": true
   },
@@ -5776,8 +5589,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/cuing",
     "evidence": [
-      "sec-deadlines:CUING",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CUING"
     ],
     "emerging": true
   },
@@ -5810,8 +5623,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/cyrestrust",
     "evidence": [
-      "sec-deadlines:CyResTrust",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:CyResTrust"
     ],
     "emerging": true
   },
@@ -5827,8 +5640,8 @@
     "dblp_url": null,
     "website": "https://data4softsec26.ieee-security.org",
     "evidence": [
-      "sec-deadlines:Data4SoftSec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:Data4SoftSec"
     ],
     "emerging": true
   },
@@ -5844,25 +5657,8 @@
     "dblp_url": null,
     "website": "https://dcs-ci.github.io",
     "evidence": [
-      "sec-deadlines:DCS-CI",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-defi",
-    "title": "Workshop on Decentralized Finance and Security",
-    "acronym": "DeFi",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://defiwork.shop/",
-    "evidence": [
-      "sec-deadlines:DeFi",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:DCS-CI"
     ],
     "emerging": true
   },
@@ -5878,8 +5674,8 @@
     "dblp_url": null,
     "website": "https://spritz.math.unipd.it/events/2025/devSecOpsRO/",
     "evidence": [
-      "sec-deadlines:DevSecOpsRO",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:DevSecOpsRO"
     ],
     "emerging": true
   },
@@ -5895,8 +5691,8 @@
     "dblp_url": null,
     "website": "https://dfrws.org/conferences/dfceurope2027/",
     "evidence": [
-      "sec-deadlines:DFC Europe",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:DFC Europe"
     ],
     "emerging": true
   },
@@ -5946,8 +5742,8 @@
     "dblp_url": null,
     "website": "https://deic.uab.cat/dpm/dpm2026/",
     "evidence": [
-      "sec-deadlines:DPM",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:DPM"
     ],
     "emerging": true
   },
@@ -5963,8 +5759,8 @@
     "dblp_url": null,
     "website": "https://attend.ieee.org/dsc/",
     "evidence": [
-      "sec-deadlines:DSC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:DSC"
     ],
     "emerging": true
   },
@@ -5980,8 +5776,8 @@
     "dblp_url": null,
     "website": "https://apwg.org/events/ecrime2026",
     "evidence": [
-      "sec-deadlines:eCrime",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:eCrime"
     ],
     "emerging": true
   },
@@ -5997,8 +5793,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/edid",
     "evidence": [
-      "sec-deadlines:EDId",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:EDId"
     ],
     "emerging": true
   },
@@ -6031,8 +5827,8 @@
     "dblp_url": null,
     "website": "https://energysp.github.io/",
     "evidence": [
-      "sec-deadlines:EnergySP",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:EnergySP"
     ],
     "emerging": true
   },
@@ -6082,8 +5878,8 @@
     "dblp_url": null,
     "website": "https://eurosec-workshop.github.io/",
     "evidence": [
-      "sec-deadlines:EuroSec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:EuroSec"
     ],
     "emerging": true
   },
@@ -6099,8 +5895,8 @@
     "dblp_url": null,
     "website": "https://eurousec2025.cis.strath.ac.uk/",
     "evidence": [
-      "sec-deadlines:EuroUSEC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:EuroUSEC"
     ],
     "emerging": true
   },
@@ -6133,8 +5929,8 @@
     "dblp_url": null,
     "website": "https://federated-learning.org/fl-asiaccs-2026/",
     "evidence": [
-      "sec-deadlines:FL",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:FL"
     ],
     "emerging": true
   },
@@ -6156,23 +5952,6 @@
     "emerging": true
   },
   {
-    "id": "pc-futureg",
-    "title": "Workshop on Security and Privacy of Next-Generation Networks",
-    "acronym": "FutureG",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ndss-symposium.org/ndss2026/submissions/cfp-futureg/",
-    "evidence": [
-      "sec-deadlines:FutureG",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-fuzzing",
     "title": "International Fuzzing Workshop",
     "acronym": "FUZZING",
@@ -6184,8 +5963,8 @@
     "dblp_url": null,
     "website": "https://fuzzing-workshop.github.io/",
     "evidence": [
-      "sec-deadlines:FUZZING",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:FUZZING"
     ],
     "emerging": true
   },
@@ -6218,25 +5997,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/grasec",
     "evidence": [
-      "sec-deadlines:GRASEC",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-haips",
-    "title": "Workshop on Human-Centered Privacy and Security for Language Models",
-    "acronym": "HAIPS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://haips.com",
-    "evidence": [
-      "sec-deadlines:HAIPS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:GRASEC"
     ],
     "emerging": true
   },
@@ -6252,8 +6014,8 @@
     "dblp_url": null,
     "website": "https://haspworkshop.org/2025/index.html",
     "evidence": [
-      "sec-deadlines:HASP",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:HASP"
     ],
     "emerging": true
   },
@@ -6303,8 +6065,8 @@
     "dblp_url": null,
     "website": "https://host.conferences.computer.org/2027/",
     "evidence": [
-      "sec-deadlines:HOST",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:HOST"
     ],
     "emerging": true
   },
@@ -6326,23 +6088,6 @@
     "emerging": true
   },
   {
-    "id": "pc-hs3",
-    "title": "Workshop on Hardware-Supported Software Security",
-    "acronym": "HS3",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://hs3-workshop.github.io/2026.html",
-    "evidence": [
-      "sec-deadlines:HS3",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-hscc",
     "title": "International Conference on Hybrid Systems: Computation and Control",
     "acronym": "HSCC",
@@ -6356,23 +6101,6 @@
     "evidence": [
       "ccf:HSCC",
       "feed-curated:ccf"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-humsec",
-    "title": "Workshop on Human-Targeted Cyber Threats and Defenses",
-    "acronym": "HumSec",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://humsec26.github.io/",
-    "evidence": [
-      "sec-deadlines:HumSec",
-      "feed-curated:sec-deadlines"
     ],
     "emerging": true
   },
@@ -6405,8 +6133,8 @@
     "dblp_url": null,
     "website": "https://ritechs.org/conferences/ICETCS2026",
     "evidence": [
-      "sec-deadlines:ICETCS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ICETCS"
     ],
     "emerging": true
   },
@@ -6422,8 +6150,8 @@
     "dblp_url": null,
     "website": "https://icsc-conference.org/2026/",
     "evidence": [
-      "sec-deadlines:ICSC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ICSC"
     ],
     "emerging": true
   },
@@ -6439,25 +6167,8 @@
     "dblp_url": null,
     "website": "https://www.acsac.org/2026/workshops/icss/",
     "evidence": [
-      "sec-deadlines:ICSS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-ieeecog",
-    "title": "IEEE Conference on Games",
-    "acronym": "IEEE CoG",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "Computer Vision & Multimedia"
-    ],
-    "dblp_url": "https://dblp.org/db/conf/cig/index.html",
-    "website": "https://cog2025.inesc-id.pt/",
-    "evidence": [
-      "ccf:IEEE CoG",
-      "feed-curated:ccf"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ICSS"
     ],
     "emerging": true
   },
@@ -6473,8 +6184,8 @@
     "dblp_url": null,
     "website": "https://ifip-summerschool.org/",
     "evidence": [
-      "sec-deadlines:IFIPSC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:IFIPSC"
     ],
     "emerging": true
   },
@@ -6507,8 +6218,8 @@
     "dblp_url": null,
     "website": "https://ifiptc11.org/wg114-events/wg114-workshop",
     "evidence": [
-      "sec-deadlines:IFIP WNDSS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:IFIP WNDSS"
     ],
     "emerging": true
   },
@@ -6541,25 +6252,8 @@
     "dblp_url": null,
     "website": "https://www.imf-conference.org/cfp.html",
     "evidence": [
-      "sec-deadlines:IMF",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-impact",
-    "title": "Workshop on Innovation in Metadata Privacy---Analysis and Construction Techniques",
-    "acronym": "IMPACT",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ndss-symposium.org/ndss2025/co-located-events/impact/",
-    "evidence": [
-      "sec-deadlines:IMPACT",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:IMF"
     ],
     "emerging": true
   },
@@ -6592,8 +6286,8 @@
     "dblp_url": null,
     "website": "https://www.isdfs.org/2027/",
     "evidence": [
-      "sec-deadlines:ISDFS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ISDFS"
     ],
     "emerging": true
   },
@@ -6626,25 +6320,8 @@
     "dblp_url": null,
     "website": "https://itasec.it/",
     "evidence": [
-      "sec-deadlines:ITASEC",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-lastx",
-    "title": "Workshop on LLM Assisted Security and Trust Exploration",
-    "acronym": "LAST-X",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ndss-symposium.org/ndss2026/submissions/cfp-last-x/",
-    "evidence": [
-      "sec-deadlines:LAST-X",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ITASEC"
     ],
     "emerging": true
   },
@@ -6660,8 +6337,8 @@
     "dblp_url": null,
     "website": "https://ciencias.medellin.unal.edu.co/eventos/latincrypt/",
     "evidence": [
-      "sec-deadlines:LATINCRYPT",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:LATINCRYPT"
     ],
     "emerging": true
   },
@@ -6677,8 +6354,8 @@
     "dblp_url": null,
     "website": "https://lightsec2026.com/",
     "evidence": [
-      "sec-deadlines:LightSEC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:LightSEC"
     ],
     "emerging": true
   },
@@ -6700,40 +6377,6 @@
     "emerging": true
   },
   {
-    "id": "pc-madweb",
-    "title": "Workshop on Measurements, Attacks, and Defenses for the Web",
-    "acronym": "MADWeb",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://madweb.work/",
-    "evidence": [
-      "sec-deadlines:MADWeb",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-magics",
-    "title": "Workshop on Migration and Agility in Cryptographic Systems",
-    "acronym": "MAgiCS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://magics.cs.hs-rm.de",
-    "evidence": [
-      "sec-deadlines:MAgiCS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-maliot",
     "title": "Malicious Software and Hardware in Internet of Things",
     "acronym": "MALIoT",
@@ -6745,8 +6388,8 @@
     "dblp_url": null,
     "website": "https://security.ucc.ie/mal-iot2026/",
     "evidence": [
-      "sec-deadlines:MALIoT",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:MALIoT"
     ],
     "emerging": true
   },
@@ -6762,42 +6405,8 @@
     "dblp_url": null,
     "website": "https://www.lcn-marcas.org",
     "evidence": [
-      "sec-deadlines:MarCaS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-metacrisp",
-    "title": "Workshop on Metascience and Critical Reflections in Security & Privacy",
-    "acronym": "MetaCRiSP",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://metacrisp.org",
-    "evidence": [
-      "sec-deadlines:MetaCRiSP",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-mist",
-    "title": "Workshop on Mobile and IoT Security Technologies",
-    "acronym": "MIST",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://mist-workshop.github.io/",
-    "evidence": [
-      "sec-deadlines:MIST",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:MarCaS"
     ],
     "emerging": true
   },
@@ -6847,8 +6456,8 @@
     "dblp_url": null,
     "website": "https://nextg-sec.github.io/",
     "evidence": [
-      "sec-deadlines:NextG-Sec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:NextG-Sec"
     ],
     "emerging": true
   },
@@ -6881,8 +6490,8 @@
     "dblp_url": null,
     "website": "http://nordsec2026.dk/",
     "evidence": [
-      "sec-deadlines:NordSec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:NordSec"
     ],
     "emerging": true
   },
@@ -6898,59 +6507,8 @@
     "dblp_url": null,
     "website": "https://nsclab.org/nss2026/",
     "evidence": [
-      "sec-deadlines:NSS-SocialSec",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-optimist",
-    "title": "Workshop on Open Tools, Interfaces and Metrics for Implementation Security Testing",
-    "acronym": "OPTIMIST",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://optimist-ose.org/ches26",
-    "evidence": [
-      "sec-deadlines:OPTIMIST",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-osvs",
-    "title": "Workshop on Operating Systems and Virtualization Security",
-    "acronym": "OSVS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://osvs.pages.dev",
-    "evidence": [
-      "sec-deadlines:OSVS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-plas",
-    "title": "Workshop on Programming Languages and Analysis for Security",
-    "acronym": "PLAS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://plas25.github.io/",
-    "evidence": [
-      "sec-deadlines:PLAS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:NSS-SocialSec"
     ],
     "emerging": true
   },
@@ -6966,8 +6524,8 @@
     "dblp_url": null,
     "website": "https://www.pqqs.org",
     "evidence": [
-      "sec-deadlines:PQQS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:PQQS"
     ],
     "emerging": true
   },
@@ -6983,8 +6541,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/pq-readysec",
     "evidence": [
-      "sec-deadlines:PQ-ReadySec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:PQ-ReadySec"
     ],
     "emerging": true
   },
@@ -7006,23 +6564,6 @@
     "emerging": true
   },
   {
-    "id": "pc-prism",
-    "title": "Workshop on Attack Provenance, Reasoning, and Investigation for Security in the Monitored Environment",
-    "acronym": "PRISM",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ndss-symposium.org/ndss2026/submissions/cfp-prism/",
-    "evidence": [
-      "sec-deadlines:PRISM",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-privaci",
     "title": "The Annual Symposium on Applications of Contextual Integrity",
     "acronym": "PrivaCI",
@@ -7034,8 +6575,8 @@
     "dblp_url": null,
     "website": "https://privaci.info/symposium/2027/cfp.html",
     "evidence": [
-      "sec-deadlines:PrivaCI",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:PrivaCI"
     ],
     "emerging": true
   },
@@ -7057,57 +6598,6 @@
     "emerging": true
   },
   {
-    "id": "pc-qcllm",
-    "title": "Workshop on Quantum Computing for Securing Large Language Models",
-    "acronym": "QCLLM",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/qcllm",
-    "evidence": [
-      "sec-deadlines:QCLLM",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-qsns",
-    "title": "Workshop on Quantum-Secure Networks and Systems",
-    "acronym": "QSNS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://qubip.eu/qsns2026/",
-    "evidence": [
-      "sec-deadlines:QSNS",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-rase",
-    "title": "Workshop on Reliable and trustworthy Automated Software Engineering",
-    "acronym": "RASE",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://conf.researchr.org/home/ase-2026/rase-2026",
-    "evidence": [
-      "sec-deadlines:RASE",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-rdgpt",
     "title": "International Workshop on Responsible Data Governance, Privacy, and Digital Transformation",
     "acronym": "RDGPT",
@@ -7119,25 +6609,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/rdgpt",
     "evidence": [
-      "sec-deadlines:RDGPT",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-ricss",
-    "title": "Workshop on Re-design Industrial Control Systems with Security",
-    "acronym": "RICSS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://ricssworkshop.github.io/",
-    "evidence": [
-      "sec-deadlines:RICSS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:RDGPT"
     ],
     "emerging": true
   },
@@ -7153,8 +6626,8 @@
     "dblp_url": null,
     "website": "https://risc.ieee-cs.org/2026/call-for-papers/",
     "evidence": [
-      "sec-deadlines:RISC",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:RISC"
     ],
     "emerging": true
   },
@@ -7176,23 +6649,6 @@
     "emerging": true
   },
   {
-    "id": "pc-safeedge",
-    "title": "Workshop on Security, Availability, and Fault-Tolerance in Edge AI Systems",
-    "acronym": "SAFE-EDGE",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/safe-edge",
-    "evidence": [
-      "sec-deadlines:SAFE-EDGE",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-safeml",
     "title": "International Workshop on Secure, Accountable, and Verifiable Machine Learning",
     "acronym": "SAFE-ML",
@@ -7204,25 +6660,8 @@
     "dblp_url": null,
     "website": "https://conf.researchr.org/home/icst-2026/safe-ml-2026",
     "evidence": [
-      "sec-deadlines:SAFE-ML",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-safer",
-    "title": "Workshop on Sustainable Security And Awareness For Next Generation Infrastructures",
-    "acronym": "SAFER",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/safer",
-    "evidence": [
-      "sec-deadlines:SAFER",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SAFE-ML"
     ],
     "emerging": true
   },
@@ -7238,8 +6677,8 @@
     "dblp_url": null,
     "website": "https://safethings25.ieee-security.org/",
     "evidence": [
-      "sec-deadlines:SafeThings",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SafeThings"
     ],
     "emerging": true
   },
@@ -7306,8 +6745,8 @@
     "dblp_url": null,
     "website": "https://acns-sci.github.io/",
     "evidence": [
-      "sec-deadlines:SCI",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SCI"
     ],
     "emerging": true
   },
@@ -7323,8 +6762,8 @@
     "dblp_url": null,
     "website": "https://scisec.org/",
     "evidence": [
-      "sec-deadlines:SciSec",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SciSec"
     ],
     "emerging": true
   },
@@ -7340,59 +6779,8 @@
     "dblp_url": null,
     "website": "https://scpconf.eu/",
     "evidence": [
-      "sec-deadlines:SCP",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-sdiotsec",
-    "title": "Workshop on Security and Privacy in Standardized IoT",
-    "acronym": "SDIoTSec",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://sdiotsec.github.io/",
-    "evidence": [
-      "sec-deadlines:SDIoTSec",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-secai",
-    "title": "Workshop on Security and Artificial Intelligance",
-    "acronym": "SECAI",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://sites.google.com/view/secai2026",
-    "evidence": [
-      "sec-deadlines:SECAI",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-seccps",
-    "title": "Workshop on Cybersecurity of Digital Twins and Interconnected Cyber Physical Systems",
-    "acronym": "SecCPS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://seccps.github.io/",
-    "evidence": [
-      "sec-deadlines:SecCPS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SCP"
     ],
     "emerging": true
   },
@@ -7408,42 +6796,8 @@
     "dblp_url": null,
     "website": "https://conf.researchr.org/home/secdev-2026",
     "evidence": [
-      "sec-deadlines:SecDev",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-secdustry",
-    "title": "Workshop on Cybersecurity in Industry 4.0 and Beyond",
-    "acronym": "Secdustry",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/secindustry",
-    "evidence": [
-      "sec-deadlines:Secdustry",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-sechealth",
-    "title": "Workshop on Cybersecurity in Healthcare Operations",
-    "acronym": "SecHealth",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/sechealth",
-    "evidence": [
-      "sec-deadlines:SecHealth",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SecDev"
     ],
     "emerging": true
   },
@@ -7459,8 +6813,8 @@
     "dblp_url": null,
     "website": "https://security4space.esa.int/2025/cfp/",
     "evidence": [
-      "sec-deadlines:Security for Space Systems",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:Security for Space Systems"
     ],
     "emerging": true
   },
@@ -7476,8 +6830,8 @@
     "dblp_url": null,
     "website": "https://emtechlab.github.io/sensors-security-privacy-workshop/",
     "evidence": [
-      "sec-deadlines:Sensors S&P",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:Sensors S&P"
     ],
     "emerging": true
   },
@@ -7493,25 +6847,8 @@
     "dblp_url": null,
     "website": "https://st.fbk.eu/events/SeRIM2026/",
     "evidence": [
-      "sec-deadlines:SeRIM",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-sia",
-    "title": "Workshop on Security in Aviation",
-    "acronym": "SIA",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ares-conference.eu/sia",
-    "evidence": [
-      "sec-deadlines:SIA",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SeRIM"
     ],
     "emerging": true
   },
@@ -7544,8 +6881,8 @@
     "dblp_url": null,
     "website": "https://simlaacns.github.io/",
     "evidence": [
-      "sec-deadlines:SiMLA",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SiMLA"
     ],
     "emerging": true
   },
@@ -7578,8 +6915,8 @@
     "dblp_url": null,
     "website": "https://smartsp.eai-conferences.org/",
     "evidence": [
-      "sec-deadlines:SmartSP",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SmartSP"
     ],
     "emerging": true
   },
@@ -7601,23 +6938,6 @@
     "emerging": true
   },
   {
-    "id": "pc-spacesec",
-    "title": "Workshop on the Security of Space and Satellite Systems",
-    "acronym": "SpaceSec",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://spacesec.info/",
-    "evidence": [
-      "sec-deadlines:SpaceSec",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
     "id": "pc-spaiml",
     "title": "2nd International Workshop on Security and Privacy-Preserving AI/ML",
     "acronym": "SPAIML",
@@ -7629,8 +6949,8 @@
     "dblp_url": null,
     "website": "https://spaiml.com/2027",
     "evidence": [
-      "sec-deadlines:SPAIML",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SPAIML"
     ],
     "emerging": true
   },
@@ -7646,8 +6966,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/spetvid",
     "evidence": [
-      "sec-deadlines:SPETViD",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SPETViD"
     ],
     "emerging": true
   },
@@ -7663,42 +6983,8 @@
     "dblp_url": null,
     "website": "https://ssresearch26.umbc.edu/",
     "evidence": [
-      "sec-deadlines:SSR",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-sure",
-    "title": "Workshop on Software Understanding and Reverse Engineering",
-    "acronym": "SURE",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://sure-workshop.org/",
-    "evidence": [
-      "sec-deadlines:SURE",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-systex",
-    "title": "Workshop on System Software for Trusted Execution",
-    "acronym": "SysTEX",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://systex-workshop.github.io/2026/",
-    "evidence": [
-      "sec-deadlines:SysTEX",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:SSR"
     ],
     "emerging": true
   },
@@ -7714,8 +7000,8 @@
     "dblp_url": null,
     "website": "https://takedown-workshop.com/",
     "evidence": [
-      "sec-deadlines:TAKEDOWN",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:TAKEDOWN"
     ],
     "emerging": true
   },
@@ -7731,8 +7017,8 @@
     "dblp_url": null,
     "website": "https://st.fbk.eu/events/TDI2026/",
     "evidence": [
-      "sec-deadlines:TDI",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:TDI"
     ],
     "emerging": true
   },
@@ -7748,25 +7034,8 @@
     "dblp_url": null,
     "website": "https://tps.ieee-cs.org/2026/call-for-papers/",
     "evidence": [
-      "sec-deadlines:TPS-ISA",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-trustai",
-    "title": "Workshop on Trustworthy AI for IoMT (Internet of Medical Things)",
-    "acronym": "TRUST-AI",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://trustai2026.web.illinois.edu/",
-    "evidence": [
-      "sec-deadlines:TRUST-AI",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:TPS-ISA"
     ],
     "emerging": true
   },
@@ -7782,76 +7051,8 @@
     "dblp_url": null,
     "website": "https://uasc.cc",
     "evidence": [
-      "sec-deadlines:uASC",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-ubicompiswc",
-    "title": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
-    "acronym": "UbiComp/ISWC",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": "huc",
-    "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
-    "evidence": [
-      "ccf:UbiComp/ISWC",
-      "feed-curated:ccf"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-wacco",
-    "title": "Workshop on Attackers and Cyber-Crime Operations",
-    "acronym": "WACCO",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://wacco-workshop.org/",
-    "evidence": [
-      "sec-deadlines:WACCO",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-waiti",
-    "title": "Workshop on AI for Cyber Threat Intelligence",
-    "acronym": "WAITI",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://waiti-workshop.github.io/",
-    "evidence": [
-      "sec-deadlines:WAITI",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-weis",
-    "title": "Workshop on the Economics of Information Security",
-    "acronym": "WEIS",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://weis2027.econinfosec.org/",
-    "evidence": [
-      "sec-deadlines:WEIS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:uASC"
     ],
     "emerging": true
   },
@@ -7901,8 +7102,8 @@
     "dblp_url": null,
     "website": "https://wifs2026.utt.fr/",
     "evidence": [
-      "sec-deadlines:WIFS",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:WIFS"
     ],
     "emerging": true
   },
@@ -7935,59 +7136,8 @@
     "dblp_url": null,
     "website": "https://www.usenix.org/conference/woot26/call-for-papers",
     "evidence": [
-      "sec-deadlines:WOOT",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-worma",
-    "title": "Workshop on Rethinking Malware Analysis",
-    "acronym": "WoRMA",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://worma.gitlab.io/2025/",
-    "evidence": [
-      "sec-deadlines:WoRMA",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-wosoc",
-    "title": "Workshop on SOC Operations and Construction",
-    "acronym": "WOSOC",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://www.ndss-symposium.org/ndss2026/submissions/cfp-wosoc/",
-    "evidence": [
-      "sec-deadlines:WOSOC",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-wpes",
-    "title": "Workshop on Privacy in the Electronic Society",
-    "acronym": "WPES",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://wpes2026.github.io/",
-    "evidence": [
-      "sec-deadlines:WPES",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:WOOT"
     ],
     "emerging": true
   },
@@ -8003,25 +7153,8 @@
     "dblp_url": null,
     "website": "https://www.ares-conference.eu/wsdf",
     "evidence": [
-      "sec-deadlines:WSDF",
-      "feed-curated:sec-deadlines"
-    ],
-    "emerging": true
-  },
-  {
-    "id": "pc-xrsecurity",
-    "title": "Workshop on Enhancing Security, Privacy, and Trust in Extended Reality (XR) Systems",
-    "acronym": "XR Security",
-    "rank": "Unranked",
-    "for_codes": [],
-    "categories": [
-      "General & Interdisciplinary CS"
-    ],
-    "dblp_url": null,
-    "website": "https://xrsecurity.github.io/2026/",
-    "evidence": [
-      "sec-deadlines:XR Security",
-      "feed-curated:sec-deadlines"
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:WSDF"
     ],
     "emerging": true
   }

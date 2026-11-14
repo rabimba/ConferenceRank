@@ -32,3 +32,20 @@ def test_area_mapping():
 
 def test_norm_acr():
     assert norm_acr("IEEE VIS") == "ieeevis"
+
+
+def test_dblp_slug_handles_uni_trier_and_index_html():
+    assert resolve_venue("X", "KDD", "https://dblp.uni-trier.de/db/conf/kdd", CORE)["id"] == "26"
+    # /index.html suffix must not become the slug
+    assert resolve_venue("X", "KDD", "https://dblp.org/db/conf/kdd/index.html", CORE)["id"] == "26"
+
+
+def test_no_fse_override_without_title_agreement():
+    # ccf "FSE" crypto entry (no dblp): must NOT land on A* id 52 via the override
+    v = resolve_venue("Fast Software Encryption", "FSE", None, CORE)
+    assert v is None or v["id"] != "52"
+
+
+def test_bare_dblp_slug_in_core_record():
+    v = dict(CORE[2], dblp_url="kdd")  # ccfddl-style bare slug
+    assert resolve_venue("Anything", "X", "https://dblp.uni-trier.de/db/conf/kdd", [v])["id"] == "26"

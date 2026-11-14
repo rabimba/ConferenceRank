@@ -31,11 +31,11 @@ Output: scraper/data/deadlines.json
 Deterministic: keys sorted, entries sorted by (year, paper_deadline, cycle).
 """
 
-import io
 import json
 import os
 import re
 import sys
+import time
 import zipfile
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -43,7 +43,7 @@ from pathlib import Path
 import requests
 import yaml
 
-from venue_match import norm_acr, resolve_venue
+from venue_match import acr_from_group_id, norm_acr, resolve_venue
 
 D = Path(__file__).parent / "data"
 RAW = D / "raw" / "deadlines"
@@ -67,7 +67,6 @@ MIN_YEAR = datetime.now().year - 1
 SOURCE_PRIORITY = {"ccf": 0, "conference-deadlines": 1, "sec-deadlines": 2, "openreview": 3}
 
 OPENREVIEW_API = "https://api2.openreview.net"
-OR_CONF_RE = re.compile(r"^(?P<org>.+?)/20(?:2[5-9])/Conference$")
 OR_DATE_RE = re.compile(
     r"(Abstract Registration|Submission Deadline):\s*"
     r"([A-Z][a-z]{2} \d{1,2} \d{4} \d{1,2}:\d{2}(?:AM|PM)?)"
@@ -268,10 +267,6 @@ def fetch_sec() -> list[dict]:
     return entries
 
 
-def _clean_org(org: str) -> str:
-    return re.sub(r"\.(org|cc|net|io|ai)$", "", org, flags=re.IGNORECASE)
-
-
 def _parse_or_date_str(m: re.Match) -> dict | None:
     label, when, tz = m.group(1), m.group(2), m.group(3)
     for fmt in ("%b %d %Y %I:%M%p", "%b %d %Y %I:%M"):
@@ -299,10 +294,9 @@ def fetch_openreview(core, extra_venues) -> list[dict]:
     universe = list(core) + (extra_venues or [])
     matched: dict[str, dict] = {}  # group id -> venue
     for gid in members:
-        m = OR_CONF_RE.match(gid)
-        if not m:
+        org = acr_from_group_id(gid)
+        if not org:
             continue
-        org = _clean_org(m.group("org"))
         v = resolve_venue(org, org, None, universe)
         if v:
             matched[gid] = v
@@ -386,12 +380,16 @@ def run_adapters(adapters) -> list[dict]:
 
 def build_deadlines(core, extra_venues, entries) -> dict:
     by_vid: dict[str, list[dict]] = {}
+    memo: dict[tuple, dict | None] = {}
 
     # Deterministic dedup: process entries in source-priority order.
     for e in sorted(entries, key=lambda x: SOURCE_PRIORITY.get(x.get("source"), 9)):
         if not e.get("year") or e["year"] < MIN_YEAR:
             continue
-        venue = resolve_venue(e.get("title", ""), e.get("acronym", ""), e.get("dblp"), core, extra_venues)
+        key = (e.get("title", ""), e.get("acronym", ""), e.get("dblp"))
+        if key not in memo:
+            memo[key] = resolve_venue(key[0], key[1], key[2], core, extra_venues)
+        venue = memo[key]
         if not venue:
             continue
         by_vid.setdefault(venue["id"], []).append(e)

@@ -45,7 +45,12 @@ jobs:
           assert all({"id", "title", "acronym", "rank"} <= set(c) for c in confs)
           emerging = [c for c in confs if c.get("emerging")]
           assert len(emerging) >= 1, "discovery produced zero emerging venues"
-          print(f"sanity ok: {len(confs)} venues, {len(emerging)} emerging")
+          ddls = json.load(open("scraper/data/deadlines.json"))
+          n_entries = sum(len(v) for v in ddls.values())
+          assert len(ddls) >= 300, f"deadline venue count collapsed: {len(ddls)}"
+          assert n_entries >= 800, f"deadline entry count collapsed: {n_entries}"
+          print(f"sanity ok: {len(confs)} venues, {len(emerging)} emerging, "
+                f"{len(ddls)} deadline venues, {n_entries} entries")
           PY
 
       - name: Commit and push changes

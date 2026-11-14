@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "acronym": "ACM SIGGRAPH ASIA",
+    "reason": "duplicate of CORE venue 957 (dblp:siggrapha)"
+  },
+  {
+    "acronym": "APWeb-WAIM",
+    "reason": "duplicate of CORE venue 165 (dblp:apweb)"
+  },
+  {
+    "acronym": "IEEE CoG",
+    "reason": "duplicate of CORE venue 732 (dblp:cig)"
+  },
+  {
+    "acronym": "UbiComp/ISWC",
+    "reason": "duplicate of CORE venue 1825 (dblp:huc)"
+  }
+]
