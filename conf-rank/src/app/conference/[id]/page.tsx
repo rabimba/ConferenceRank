@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import RankBadge from "@/components/RankBadge";
+import EmergingBadge from "@/components/EmergingBadge";
 import WatchlistButton from "@/components/WatchlistButton";
 import ShareButton from "@/components/ShareButton";
 import type { ShareCardData } from "@/lib/shareCard";
@@ -187,6 +188,7 @@ export default async function ConferencePage({
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex flex-wrap items-center gap-3">
               <RankBadge rank={c.rank} size="lg" />
+              {c.emerging && <EmergingBadge size="md" />}
               <h1 className="text-2xl font-black tracking-tight text-foreground">
                 {c.acronym}
               </h1>

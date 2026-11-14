@@ -4,6 +4,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
+import EmergingBadge from "./EmergingBadge";
 import ShareButton from "./ShareButton";
 import WatchlistButton from "./WatchlistButton";
 import type { ShareCardData } from "@/lib/shareCard";
@@ -100,6 +101,7 @@ export interface VenueWithDeadline {
   title: string;
   rank: string;
   categories: string[];
+  emerging: boolean;
   deadline: ConferenceDeadline;
   ts: number; // precomputed effective-deadline timestamp (ms); NaN if unparseable/missing
 }
@@ -173,6 +175,7 @@ export default function DeadlinesView({
           title: v.title,
           rank: v.rank,
           categories: v.categories || [],
+          emerging: v.emerging === true,
           deadline: d,
           ts: parseDeadlineToDate(effective, d.timezone).getTime(),
         });
@@ -481,6 +484,7 @@ export default function DeadlinesView({
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2 min-w-0">
                     <RankBadge rank={item.rank} size="sm" />
+                    {item.emerging && <EmergingBadge size="sm" />}
                     <Link
                       href={`/conference/${item.id}`}
                       className="font-bold text-base text-foreground hover:underline truncate"

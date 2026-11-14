@@ -4,6 +4,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import RankBadge from "./RankBadge";
+import EmergingBadge from "./EmergingBadge";
 import WatchlistButton from "./WatchlistButton";
 import ShareButton from "./ShareButton";
 import type { ShareCardData } from "@/lib/shareCard";
@@ -20,6 +21,7 @@ export interface DirectoryEntry {
   has_stats: boolean;
   latest_rate: number | null;
   latest_accepted: number | null;
+  emerging?: boolean;
 }
 
 const RANKS = [
@@ -438,7 +440,10 @@ export default function Directory({
                     </td>
                   )}
                   <td className={`sticky z-10 px-4 py-2.5 transition ${onCompare ? "left-10" : "left-0"} ${rowBg}`}>
-                    <RankBadge rank={c.rank} />
+                    <span className="flex items-center gap-1">
+                      <RankBadge rank={c.rank} />
+                      {c.emerging && <EmergingBadge size="sm" />}
+                    </span>
                   </td>
                   <td
                     className={`sticky z-10 border-r border-border/80 px-4 py-2.5 font-bold text-foreground shadow-[2px_0_4px_-2px_rgba(0,0,0,0.06)] transition ${
