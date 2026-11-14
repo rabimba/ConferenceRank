@@ -28,7 +28,7 @@ jobs:
         run: pip install -r scraper/requirements.txt
 
       - name: Discover new venues
-        run: python3 scraper/discover_venues.py
+        run: python3 scraper/discover_venues.py --verify-budget 200
 
       - name: Fetch deadlines
         run: python3 scraper/fetch_deadlines.py

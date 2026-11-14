@@ -62,8 +62,14 @@ def area_to_categories(areas: list[str]) -> list[str]:
 
 
 def _dblp_slug(url: str) -> str:
+    if not url:
+        return ""
     m = re.search(r"dblp\.org/(?:db/)?conf/([^/?#]+)/?$", url.strip().rstrip("/"))
-    return m.group(1).lower() if m else ""
+    if m:
+        return m.group(1).lower()
+    # ccfddl sometimes stores the bare DBLP slug ("dblp: mlsys")
+    s = url.strip().rstrip("/").lower()
+    return s if re.fullmatch(r"[a-z0-9][a-z0-9\-.]*", s) else ""
 
 
 def _venue_slug(v: dict) -> str:
