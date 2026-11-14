@@ -1,0 +1,76 @@
+name: Monthly Core & Journals Refresh
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt -r scraper/requirements-embed.txt
+
+      - name: CORE conference universe
+        run: python3 scraper/fetch_core.py
+
+      - name: Journal rankings
+        run: |
+          python3 scraper/fetch_core_journals.py
+          python3 scraper/fetch_sjr.py
+          python3 scraper/fetch_openalex_journals.py --limit 200 || true
+          python3 scraper/merge_journals.py
+
+      - name: OpenAlex conference slice (tolerant)
+        run: python3 scraper/fetch_openalex.py --limit 400
+        continue-on-error: true
+
+      - name: Merge conference data
+        run: python3 scraper/merge.py
+
+      - name: Re-embed venues when data changed
+        run: |
+          if ! git diff --quiet HEAD -- conf-rank/src/data/conferences.json; then
+            python3 scraper/embed_venues.py
+          else
+            echo "conferences.json unchanged; skipping embeddings"
+          fi
+
+      - name: Sanity gate
+        run: |
+          python3 - <<'PY'
+          import json
+          confs = json.load(open("conf-rank/src/data/conferences.json"))
+          assert len(confs) >= 900, f"conference count collapsed: {len(confs)}"
+          journals = json.load(open("conf-rank/src/data/journals.json"))
+          assert len(journals) >= 9000, f"journal count collapsed: {len(journals)}"
+          print(f"sanity ok: {len(confs)} conferences, {len(journals)} journals")
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add conf-rank/src/data/ conf-rank/public/search-index.json conf-rank/public/venue-embeddings.json scraper/data/
+          if git diff --staged --quiet; then
+            echo "No monthly changes."
+          else
+            git commit -m "chore(data): monthly core/journal/embedding refresh"
+            git push origin main
+          fi

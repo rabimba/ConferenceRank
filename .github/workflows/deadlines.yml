@@ -1,0 +1,61 @@
+name: Daily Deadlines Refresh
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Discover new venues
+        run: python3 scraper/discover_venues.py
+
+      - name: Fetch deadlines
+        run: python3 scraper/fetch_deadlines.py
+
+      - name: Merge data
+        run: python3 scraper/merge.py
+
+      - name: Sanity gate
+        run: |
+          python3 - <<'PY'
+          import json
+          confs = json.load(open("conf-rank/src/data/conferences.json"))
+          assert len(confs) >= 900, f"conference count collapsed: {len(confs)}"
+          assert all({"id", "title", "acronym", "rank"} <= set(c) for c in confs)
+          emerging = [c for c in confs if c.get("emerging")]
+          assert len(emerging) >= 1, "discovery produced zero emerging venues"
+          print(f"sanity ok: {len(confs)} venues, {len(emerging)} emerging")
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add conf-rank/src/data/conferences.json conf-rank/public/search-index.json conf-rank/public/venue-embeddings.json scraper/data/
+          if git diff --staged --quiet; then
+            echo "No deadline changes."
+          else
+            git commit -m "chore(data): daily deadline + venue discovery refresh"
+            git push origin main
+          fi

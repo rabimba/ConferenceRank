@@ -32,7 +32,6 @@ jobs:
         run: |
           python3 scraper/fetch_lixin.py
           python3 scraper/fetch_papercopilot.py
-          python3 scraper/fetch_deadlines.py
 
       - name: Refresh OpenAlex slice (tolerant)
         run: python3 scraper/fetch_openalex.py --limit 150
@@ -49,6 +48,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in conference statistics."
           else
-            git commit -m "chore(data): auto-refresh conference statistics"
+            git commit -m "chore(data): weekly acceptance-stats refresh"
             git push origin main
           fi
