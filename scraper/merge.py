@@ -2,8 +2,9 @@
 
 import json
 import os
-import re
 from pathlib import Path
+
+from venue_match import ALIASES, norm_acr
 
 D = Path(__file__).parent / "data"
 OUT = Path(__file__).parent.parent / "conf-rank" / "src" / "data" / "conferences.json"
@@ -44,10 +45,6 @@ SOURCE_YEAR = {
     "CORE2018": 2018, "CORE2017": 2017, "CORE2014": 2014, "CORE2013": 2013,
     "ERA2010": 2010, "CORE2008": 2008,
 }
-
-
-def norm_acr(s: str) -> str:
-    return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
 def clean_stats(stats: list[dict]) -> list[dict]:
@@ -129,17 +126,6 @@ def merge():
 
     lixin_by_acr = {norm_acr(k): v for k, v in lixin.items()}
     manual_by_acr = {norm_acr(k): v for k, v in manual.items()}
-
-    # acronym aliases: source-key -> CORE acronym (normed)
-    ALIASES = {
-        "oakland": "sp", "ieeep": "sp",
-        "www": "thewebconf",
-        "naacl": "naaclhlt",
-        "siggrapha": "siggraphasia",
-        "acmsiggraph": "siggraph",
-        "sigkdd": "kdd",
-        "wisec": "acmwisec",
-    }
 
     def aliased(table: dict, acr: str) -> list[dict] | None:
         """Lookup acr in table, following aliases in both directions."""
