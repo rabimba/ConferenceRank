@@ -307,14 +307,39 @@ def fetch_openreview(core, extra_venues) -> list[dict]:
         if v:
             matched[gid] = v
 
+    or_raw = RAW / "openreview"
+    or_raw.mkdir(parents=True, exist_ok=True)
+
+    def group_content(gid: str) -> dict | None:
+        """Group content with 7-day file cache (avoids ~400 daily re-fetches)."""
+        safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", gid)
+        p = or_raw / f"{safe}.json"
+        if p.exists() and not os.environ.get("FORCE_FETCH") \
+                and time.time() - p.stat().st_mtime < 7 * 86400:
+            try:
+                return json.loads(p.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                pass
+        gr = session.get(f"{OPENREVIEW_API}/groups", params={"id": gid}, timeout=30)
+        if gr.status_code == 429:
+            time.sleep(45)
+            gr = session.get(f"{OPENREVIEW_API}/groups", params={"id": gid}, timeout=30)
+        gr.raise_for_status()
+        content = gr.json()["groups"][0]["content"]
+        tmp = p.with_suffix(".tmp")
+        tmp.write_text(json.dumps(content), encoding="utf-8")
+        os.replace(tmp, p)
+        time.sleep(0.3)
+        return content
+
     entries: list[dict] = []
     for gid, venue in sorted(matched.items()):
         try:
-            gr = session.get(f"{OPENREVIEW_API}/groups", params={"id": gid}, timeout=30)
-            gr.raise_for_status()
-            content = gr.json()["groups"][0]["content"]
+            content = group_content(gid)
         except Exception as e:
             print(f"Warning: OpenReview group {gid}: {e}", file=sys.stderr)
+            continue
+        if content is None:
             continue
         date_blob = (content.get("date") or {}).get("value") or ""
         parsed = {}

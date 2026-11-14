@@ -89,6 +89,28 @@ def _load_required(name: str):
         raise SystemExit(f"{name} is corrupt ({e}) — re-run its fetcher") from e
 
 
+def build_emerging_records(discovered: list[dict], deadlines: dict) -> list[dict]:
+    """Append discovered (emerging) venues to the merged output."""
+    out = []
+    for dv in discovered:
+        out.append({
+            "id": dv["id"],
+            "title": dv.get("title", ""),
+            "acronym": dv.get("acronym", ""),
+            "rank": "Unranked",
+            "for_codes": [],
+            "categories": dv.get("categories") or ["General & Interdisciplinary CS"],
+            "dblp_url": dv.get("dblp_url"),
+            "avg_rating": None,
+            "rank_history": [],
+            "stats": None,
+            "stats_source": None,
+            "emerging": True,
+            "deadlines": deadlines.get(dv["id"]),
+        })
+    return out
+
+
 def _atomic_write(path: Path, text: str):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
@@ -115,6 +137,14 @@ def merge():
     except FileNotFoundError:
         print("deadlines.json missing (optional)")
         deadlines = {}
+    try:
+        discovered = json.loads((D / "discovered_venues.json").read_text())
+    except FileNotFoundError:
+        discovered = []
+    try:
+        ccf_rates = json.loads((D / "ccf_accept_rates.json").read_text())
+    except FileNotFoundError:
+        ccf_rates = {}
 
     pc_by_acr = {}
     for slug, recs in pc.items():
@@ -126,6 +156,7 @@ def merge():
 
     lixin_by_acr = {norm_acr(k): v for k, v in lixin.items()}
     manual_by_acr = {norm_acr(k): v for k, v in manual.items()}
+    ccf_by_acr = {norm_acr(k): v for k, v in ccf_rates.items()}
 
     def aliased(table: dict, acr: str) -> list[dict] | None:
         """Lookup acr in table, following aliases in both directions."""
@@ -170,12 +201,13 @@ def merge():
         }
 
         # Multi-tier acceptance stats:
-        # Priority per year: manual (highest/curated) > lixin > papercopilot
+        # Priority per year: manual (highest/curated) > ccfddl > lixin > papercopilot
         ms = aliased(manual_by_acr, acr)
+        cc = aliased(ccf_by_acr, acr)
         lx = aliased(lixin_by_acr, acr)
         pc_stats = aliased(pc_by_acr, acr)
 
-        # Combine by year with priority: manual > lixin > pc
+        # Combine by year with priority: manual > ccfddl > lixin > pc
         by_year = {}
         sources_used = set()
 
@@ -192,6 +224,13 @@ def merge():
                 by_year[s["year"]] = s
             if rows:
                 sources_used.add("lixin4ever")
+
+        if cc:
+            rows = [s for s in cc if s.get("year")]
+            for s in rows:
+                by_year[s["year"]] = s
+            if rows:
+                sources_used.add("ccfddl")
 
         if ms:
             rows = [s for s in ms if s.get("year")]
@@ -221,12 +260,15 @@ def merge():
         rec["deadlines"] = deadlines.get(v["id"])
         out.append(rec)
 
+    out.extend(build_emerging_records(discovered, deadlines))
+
     # sanity
     n_stats = sum(1 for r in out if r["stats"])
     n_oa = sum(1 for r in out if r.get("openalex"))
     n_ddl = sum(1 for r in out if r.get("deadlines"))
     n_hist = sum(1 for r in out if r["rank_history"])
-    print(f"venues: {len(out)} | with stats: {n_stats} | with openalex: {n_oa} | with deadlines: {n_ddl} | with rank history: {n_hist}")
+    n_emerging = sum(1 for r in out if r.get("emerging"))
+    print(f"venues: {len(out) - n_emerging} CORE + {n_emerging} emerging | with stats: {n_stats} | with openalex: {n_oa} | with deadlines: {n_ddl} | with rank history: {n_hist}")
 
     core_acrs = {norm_acr(v.get("acronym", "")) for v in core}
     core_acrs |= set(ALIASES.values()) | set(ALIASES.keys())
@@ -247,39 +289,6 @@ def merge():
     ]
     _atomic_write(PUBLIC / "search-index.json", json.dumps(search_idx, separators=(",", ":")))
     print(f"wrote -> public/search-index.json ({(PUBLIC / 'search-index.json').stat().st_size // 1024} KB)")
-
-    # slim directory list for the home table: fields needed to render rows + filter
-    def latest_rate(r):
-        if not r["stats"]:
-            return None
-        for s in sorted(r["stats"], key=lambda x: x["year"], reverse=True):
-            rate = s.get("rate")
-            if rate and 0 < rate < 60:
-                return round(rate, 2)
-        return None
-
-    def latest_accepted(r):
-        if not r["stats"]:
-            return None
-        s = max(r["stats"], key=lambda x: x["year"])
-        return s.get("accepted")
-
-    slim = [
-        {
-            "id": r["id"],
-            "acronym": r["acronym"],
-            "title": r["title"],
-            "rank": r["rank"],
-            "categories": r["categories"],
-            "has_stats": bool(r["stats"]),
-            "latest_rate": latest_rate(r),
-            "latest_accepted": latest_accepted(r),
-        }
-        for r in out
-    ]
-    slim_path = Path(__file__).parent / "data" / "directory.json"
-    _atomic_write(slim_path, json.dumps(slim, separators=(",", ":")))
-    print(f"wrote -> data/directory.json ({slim_path.stat().st_size // 1024} KB)")
 
 
 if __name__ == "__main__":
