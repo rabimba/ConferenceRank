@@ -1,0 +1,8002 @@
+{
+  "3dv": [
+    {
+      "year": 2025,
+      "rate": 40.23,
+      "accepted": 142,
+      "submitted": 353
+    },
+    {
+      "year": 2026,
+      "rate": 43.81,
+      "accepted": 177,
+      "submitted": 404
+    }
+  ],
+  "aaai": [
+    {
+      "year": 2024,
+      "rate": 23.75,
+      "accepted": 2342,
+      "submitted": 9862
+    },
+    {
+      "year": 2025,
+      "rate": 23.4,
+      "accepted": 3032,
+      "submitted": 12957
+    },
+    {
+      "year": 2026,
+      "rate": 17.6,
+      "accepted": 4167,
+      "submitted": 23680
+    }
+  ],
+  "aamas": [
+    {
+      "year": 2021,
+      "rate": 24.2,
+      "accepted": 152,
+      "submitted": 628
+    },
+    {
+      "year": 2022,
+      "rate": 26.1,
+      "accepted": 166,
+      "submitted": 636
+    },
+    {
+      "year": 2023,
+      "rate": 23.35,
+      "accepted": 237,
+      "submitted": 1015
+    },
+    {
+      "year": 2024,
+      "rate": 27.15,
+      "accepted": 230,
+      "submitted": 847
+    },
+    {
+      "year": 2025,
+      "rate": 24.49,
+      "accepted": 250,
+      "submitted": 1021
+    },
+    {
+      "year": 2026,
+      "rate": 24.87,
+      "accepted": 338,
+      "submitted": 1359
+    }
+  ],
+  "accv": [
+    {
+      "year": 2022,
+      "rate": 33.13,
+      "accepted": 277,
+      "submitted": 836
+    },
+    {
+      "year": 2024,
+      "rate": 32.06,
+      "accepted": 269,
+      "submitted": 839
+    }
+  ],
+  "acisp": [
+    {
+      "year": 2021,
+      "rate": 22.29,
+      "accepted": 35,
+      "submitted": 157
+    },
+    {
+      "year": 2022,
+      "rate": 40.32,
+      "accepted": 25,
+      "submitted": 62
+    },
+    {
+      "year": 2023,
+      "rate": 31.03,
+      "accepted": 27,
+      "submitted": 87
+    },
+    {
+      "year": 2024,
+      "rate": 30.17,
+      "accepted": 70,
+      "submitted": 232
+    },
+    {
+      "year": 2025,
+      "rate": 33.15,
+      "accepted": 60,
+      "submitted": 181
+    },
+    {
+      "year": 2026,
+      "rate": 26.54,
+      "accepted": 69,
+      "submitted": 260
+    }
+  ],
+  "acl": [
+    {
+      "year": 2021,
+      "rate": 21.19,
+      "accepted": 710,
+      "submitted": 3350
+    },
+    {
+      "year": 2022,
+      "rate": 20.75,
+      "accepted": 701,
+      "submitted": 3378
+    },
+    {
+      "year": 2023,
+      "rate": 22.08,
+      "accepted": 1074,
+      "submitted": 4864
+    },
+    {
+      "year": 2024,
+      "rate": 21.33,
+      "accepted": 940,
+      "submitted": 4407
+    },
+    {
+      "year": 2025,
+      "rate": 20.32,
+      "accepted": 1699,
+      "submitted": 8360
+    },
+    {
+      "year": 2026,
+      "rate": 18.9,
+      "accepted": 2296,
+      "submitted": 12148
+    }
+  ],
+  "acml": [
+    {
+      "year": 2021,
+      "rate": 30.42,
+      "accepted": 115,
+      "submitted": 378
+    },
+    {
+      "year": 2022,
+      "rate": 33.47,
+      "accepted": 83,
+      "submitted": 248
+    },
+    {
+      "year": 2024,
+      "rate": 26.06,
+      "accepted": 92,
+      "submitted": 353
+    },
+    {
+      "year": 2025,
+      "rate": 29.04,
+      "accepted": 79,
+      "submitted": 272
+    }
+  ],
+  "acmmm": [
+    {
+      "year": 2021,
+      "rate": 27.91,
+      "accepted": 542,
+      "submitted": 1942
+    },
+    {
+      "year": 2022,
+      "rate": 27.95,
+      "accepted": 691,
+      "submitted": 2472
+    },
+    {
+      "year": 2023,
+      "rate": 24.58,
+      "accepted": 902,
+      "submitted": 3669
+    },
+    {
+      "year": 2024,
+      "rate": 26.23,
+      "accepted": 1150,
+      "submitted": 4385
+    },
+    {
+      "year": 2025,
+      "rate": 23.45,
+      "accepted": 1250,
+      "submitted": 5330
+    }
+  ],
+  "acmsiggraph": [
+    {
+      "year": 2021,
+      "rate": 33.56,
+      "accepted": 149,
+      "submitted": 444
+    },
+    {
+      "year": 2022,
+      "rate": 21.8,
+      "accepted": 133,
+      "submitted": 610
+    },
+    {
+      "year": 2023,
+      "rate": 34.7,
+      "accepted": 212,
+      "submitted": 611
+    },
+    {
+      "year": 2024,
+      "rate": 29.86,
+      "accepted": 252,
+      "submitted": 844
+    },
+    {
+      "year": 2025,
+      "rate": 31.48,
+      "accepted": 306,
+      "submitted": 972
+    },
+    {
+      "year": 2026,
+      "rate": 27.78,
+      "accepted": 327,
+      "submitted": 1177
+    }
+  ],
+  "acmsiggraphasia": [
+    {
+      "year": 2024,
+      "rate": 29.48,
+      "accepted": 265,
+      "submitted": 899
+    },
+    {
+      "year": 2025,
+      "rate": 27.22,
+      "accepted": 301,
+      "submitted": 1106
+    },
+    {
+      "year": 2026,
+      "rate": 24.49,
+      "accepted": 322,
+      "submitted": 1315
+    }
+  ],
+  "acns": [
+    {
+      "year": 2021,
+      "rate": 19.89,
+      "accepted": 37,
+      "submitted": 186
+    },
+    {
+      "year": 2022,
+      "rate": 23.78,
+      "accepted": 44,
+      "submitted": 185
+    },
+    {
+      "year": 2023,
+      "rate": 20.15,
+      "accepted": 53,
+      "submitted": 263
+    },
+    {
+      "year": 2024,
+      "rate": 23.48,
+      "accepted": 54,
+      "submitted": 230
+    },
+    {
+      "year": 2025,
+      "rate": 22.82,
+      "accepted": 55,
+      "submitted": 241
+    },
+    {
+      "year": 2026,
+      "rate": 20.92,
+      "accepted": 59,
+      "submitted": 282
+    }
+  ],
+  "acsac": [
+    {
+      "year": 2021,
+      "rate": 24.54,
+      "accepted": 80,
+      "submitted": 326
+    },
+    {
+      "year": 2022,
+      "rate": 24.09,
+      "accepted": 73,
+      "submitted": 303
+    },
+    {
+      "year": 2023,
+      "rate": 23.98,
+      "accepted": 59,
+      "submitted": 246
+    },
+    {
+      "year": 2024,
+      "rate": 21.78,
+      "accepted": 83,
+      "submitted": 381
+    },
+    {
+      "year": 2025,
+      "rate": 18.83,
+      "accepted": 84,
+      "submitted": 446
+    }
+  ],
+  "adma": [
+    {
+      "year": 2021,
+      "rate": 52.59,
+      "accepted": 61,
+      "submitted": 116
+    },
+    {
+      "year": 2022,
+      "rate": 36.36,
+      "accepted": 72,
+      "submitted": 198
+    },
+    {
+      "year": 2023,
+      "rate": 42.94,
+      "accepted": 216,
+      "submitted": 503
+    },
+    {
+      "year": 2024,
+      "rate": 37.68,
+      "accepted": 159,
+      "submitted": 422
+    },
+    {
+      "year": 2025,
+      "rate": 44.95,
+      "accepted": 147,
+      "submitted": 327
+    }
+  ],
+  "aft": [
+    {
+      "year": 2021,
+      "rate": 20.0,
+      "accepted": 16,
+      "submitted": 80
+    },
+    {
+      "year": 2022,
+      "rate": 27.85,
+      "accepted": 22,
+      "submitted": 79
+    },
+    {
+      "year": 2023,
+      "rate": 31.0,
+      "accepted": 31,
+      "submitted": 100
+    },
+    {
+      "year": 2024,
+      "rate": 28.3,
+      "accepted": 30,
+      "submitted": 106
+    },
+    {
+      "year": 2025,
+      "rate": 25.93,
+      "accepted": 35,
+      "submitted": 135
+    }
+  ],
+  "aistats": [
+    {
+      "year": 2021,
+      "rate": 29.8,
+      "accepted": 455,
+      "submitted": 1527
+    },
+    {
+      "year": 2024,
+      "rate": 27.58,
+      "accepted": 546,
+      "submitted": 1980
+    },
+    {
+      "year": 2026,
+      "rate": 28.07,
+      "accepted": 590,
+      "submitted": 2102
+    }
+  ],
+  "alt": [
+    {
+      "year": 2021,
+      "rate": 29.3,
+      "accepted": 46,
+      "submitted": 157
+    },
+    {
+      "year": 2022,
+      "rate": 36.52,
+      "accepted": 42,
+      "submitted": 115
+    },
+    {
+      "year": 2023,
+      "rate": 36.09,
+      "accepted": 48,
+      "submitted": 133
+    },
+    {
+      "year": 2024,
+      "rate": 35.48,
+      "accepted": 44,
+      "submitted": 124
+    },
+    {
+      "year": 2025,
+      "rate": 35.42,
+      "accepted": 51,
+      "submitted": 144
+    }
+  ],
+  "aplas": [
+    {
+      "year": 2021,
+      "rate": 39.53,
+      "accepted": 17,
+      "submitted": 43
+    },
+    {
+      "year": 2022,
+      "rate": 45.45,
+      "accepted": 10,
+      "submitted": 22
+    },
+    {
+      "year": 2023,
+      "rate": 46.88,
+      "accepted": 15,
+      "submitted": 32
+    },
+    {
+      "year": 2024,
+      "rate": 48.65,
+      "accepted": 18,
+      "submitted": 37
+    },
+    {
+      "year": 2025,
+      "rate": 46.43,
+      "accepted": 13,
+      "submitted": 28
+    },
+    {
+      "year": 2026,
+      "rate": 44.12,
+      "accepted": 15,
+      "submitted": 34
+    }
+  ],
+  "apnet": [
+    {
+      "year": 2021,
+      "rate": 45.0,
+      "accepted": 9,
+      "submitted": 20
+    },
+    {
+      "year": 2022,
+      "rate": 48.0,
+      "accepted": 12,
+      "submitted": 25
+    },
+    {
+      "year": 2023,
+      "rate": 26.67,
+      "accepted": 24,
+      "submitted": 90
+    },
+    {
+      "year": 2024,
+      "rate": 27.27,
+      "accepted": 24,
+      "submitted": 88
+    },
+    {
+      "year": 2025,
+      "rate": 25.56,
+      "accepted": 34,
+      "submitted": 133
+    }
+  ],
+  "appt": [
+    {
+      "year": 2023,
+      "rate": 48.98,
+      "accepted": 24,
+      "submitted": 49
+    },
+    {
+      "year": 2025,
+      "rate": 36.49,
+      "accepted": 27,
+      "submitted": 74
+    }
+  ],
+  "apsec": [
+    {
+      "year": 2021,
+      "rate": 32.65,
+      "accepted": 48,
+      "submitted": 147
+    },
+    {
+      "year": 2022,
+      "rate": 33.07,
+      "accepted": 42,
+      "submitted": 127
+    },
+    {
+      "year": 2023,
+      "rate": 33.59,
+      "accepted": 43,
+      "submitted": 128
+    },
+    {
+      "year": 2025,
+      "rate": 28.22,
+      "accepted": 68,
+      "submitted": 241
+    }
+  ],
+  "apsys": [
+    {
+      "year": 2021,
+      "rate": 44.19,
+      "accepted": 19,
+      "submitted": 43
+    },
+    {
+      "year": 2022,
+      "rate": 52.63,
+      "accepted": 10,
+      "submitted": 19
+    },
+    {
+      "year": 2023,
+      "rate": 40.62,
+      "accepted": 13,
+      "submitted": 32
+    },
+    {
+      "year": 2024,
+      "rate": 45.45,
+      "accepted": 20,
+      "submitted": 44
+    },
+    {
+      "year": 2025,
+      "rate": 44.07,
+      "accepted": 26,
+      "submitted": 59
+    },
+    {
+      "year": 2026,
+      "rate": 44.19,
+      "accepted": 19,
+      "submitted": 43
+    }
+  ],
+  "apwebwaim": [
+    {
+      "year": 2025,
+      "rate": 28.81,
+      "accepted": 136,
+      "submitted": 472
+    }
+  ],
+  "asap": [
+    {
+      "year": 2021,
+      "rate": 29.27,
+      "accepted": 24,
+      "submitted": 82
+    },
+    {
+      "year": 2025,
+      "rate": 72.34,
+      "accepted": 34,
+      "submitted": 47
+    },
+    {
+      "year": 2026,
+      "rate": 51.81,
+      "accepted": 43,
+      "submitted": 83
+    }
+  ],
+  "ase": [
+    {
+      "year": 2021,
+      "rate": 18.64,
+      "accepted": 82,
+      "submitted": 440
+    },
+    {
+      "year": 2022,
+      "rate": 21.85,
+      "accepted": 116,
+      "submitted": 531
+    },
+    {
+      "year": 2023,
+      "rate": 21.17,
+      "accepted": 134,
+      "submitted": 633
+    },
+    {
+      "year": 2024,
+      "rate": 26.41,
+      "accepted": 155,
+      "submitted": 587
+    },
+    {
+      "year": 2025,
+      "rate": 20.76,
+      "accepted": 247,
+      "submitted": 1190
+    }
+  ],
+  "asiaccs": [
+    {
+      "year": 2021,
+      "rate": 19.34,
+      "accepted": 70,
+      "submitted": 362
+    },
+    {
+      "year": 2022,
+      "rate": 18.36,
+      "accepted": 85,
+      "submitted": 463
+    },
+    {
+      "year": 2023,
+      "rate": 17.25,
+      "accepted": 74,
+      "submitted": 429
+    }
+  ],
+  "asiacrypt": [
+    {
+      "year": 2021,
+      "rate": 27.86,
+      "accepted": 95,
+      "submitted": 341
+    },
+    {
+      "year": 2022,
+      "rate": 26.92,
+      "accepted": 98,
+      "submitted": 364
+    },
+    {
+      "year": 2023,
+      "rate": 28.27,
+      "accepted": 106,
+      "submitted": 375
+    },
+    {
+      "year": 2024,
+      "rate": 29.33,
+      "accepted": 127,
+      "submitted": 433
+    },
+    {
+      "year": 2025,
+      "rate": 26.83,
+      "accepted": 143,
+      "submitted": 533
+    }
+  ],
+  "aspdac": [
+    {
+      "year": 2021,
+      "rate": 33.94,
+      "accepted": 111,
+      "submitted": 327
+    },
+    {
+      "year": 2022,
+      "rate": 30.65,
+      "accepted": 95,
+      "submitted": 310
+    },
+    {
+      "year": 2023,
+      "rate": 31.1,
+      "accepted": 102,
+      "submitted": 328
+    },
+    {
+      "year": 2024,
+      "rate": 28.84,
+      "accepted": 139,
+      "submitted": 482
+    },
+    {
+      "year": 2025,
+      "rate": 31.28,
+      "accepted": 168,
+      "submitted": 537
+    },
+    {
+      "year": 2026,
+      "rate": 28.76,
+      "accepted": 176,
+      "submitted": 612
+    }
+  ],
+  "asplos": [
+    {
+      "year": 2021,
+      "rate": 18.84,
+      "accepted": 75,
+      "submitted": 398
+    },
+    {
+      "year": 2022,
+      "rate": 20.15,
+      "accepted": 80,
+      "submitted": 397
+    },
+    {
+      "year": 2023,
+      "rate": 25.25,
+      "accepted": 151,
+      "submitted": 598
+    }
+  ],
+  "assets": [
+    {
+      "year": 2021,
+      "rate": 29.03,
+      "accepted": 36,
+      "submitted": 124
+    },
+    {
+      "year": 2022,
+      "rate": 26.52,
+      "accepted": 35,
+      "submitted": 132
+    },
+    {
+      "year": 2025,
+      "rate": 29.75,
+      "accepted": 83,
+      "submitted": 279
+    }
+  ],
+  "ats": [
+    {
+      "year": 2024,
+      "rate": 21.76,
+      "accepted": 42,
+      "submitted": 193
+    }
+  ],
+  "atva": [
+    {
+      "year": 2021,
+      "rate": 30.67,
+      "accepted": 23,
+      "submitted": 75
+    },
+    {
+      "year": 2022,
+      "rate": 32.1,
+      "accepted": 26,
+      "submitted": 81
+    },
+    {
+      "year": 2023,
+      "rate": 32.17,
+      "accepted": 37,
+      "submitted": 115
+    },
+    {
+      "year": 2024,
+      "rate": 32.88,
+      "accepted": 24,
+      "submitted": 73
+    },
+    {
+      "year": 2025,
+      "rate": 35.59,
+      "accepted": 21,
+      "submitted": 59
+    }
+  ],
+  "bibm": [
+    {
+      "year": 2021,
+      "rate": 19.67,
+      "accepted": 143,
+      "submitted": 727
+    },
+    {
+      "year": 2022,
+      "rate": 19.83,
+      "accepted": 167,
+      "submitted": 842
+    }
+  ],
+  "bis": [
+    {
+      "year": 2021,
+      "rate": 34.41,
+      "accepted": 32,
+      "submitted": 93
+    },
+    {
+      "year": 2025,
+      "rate": 42.59,
+      "accepted": 23,
+      "submitted": 54
+    },
+    {
+      "year": 2026,
+      "rate": 42.47,
+      "accepted": 31,
+      "submitted": 73
+    }
+  ],
+  "blocksys": [
+    {
+      "year": 2021,
+      "rate": 51.02,
+      "accepted": 50,
+      "submitted": 98
+    },
+    {
+      "year": 2022,
+      "rate": 46.43,
+      "accepted": 26,
+      "submitted": 56
+    },
+    {
+      "year": 2023,
+      "rate": 48.39,
+      "accepted": 45,
+      "submitted": 93
+    },
+    {
+      "year": 2024,
+      "rate": 45.95,
+      "accepted": 34,
+      "submitted": 74
+    }
+  ],
+  "bmvc": [
+    {
+      "year": 2021,
+      "rate": 36.07,
+      "accepted": 435,
+      "submitted": 1206
+    },
+    {
+      "year": 2022,
+      "rate": 37.75,
+      "accepted": 365,
+      "submitted": 967
+    },
+    {
+      "year": 2023,
+      "rate": 32.76,
+      "accepted": 267,
+      "submitted": 815
+    },
+    {
+      "year": 2024,
+      "rate": 25.88,
+      "accepted": 264,
+      "submitted": 1020
+    },
+    {
+      "year": 2025,
+      "rate": 31.91,
+      "accepted": 276,
+      "submitted": 865
+    },
+    {
+      "year": 2026,
+      "rate": 27.9,
+      "accepted": 404,
+      "submitted": 1448
+    }
+  ],
+  "cade": [
+    {
+      "year": 2021,
+      "rate": 47.37,
+      "accepted": 36,
+      "submitted": 76
+    },
+    {
+      "year": 2023,
+      "rate": 44.59,
+      "accepted": 33,
+      "submitted": 74
+    },
+    {
+      "year": 2025,
+      "rate": 42.53,
+      "accepted": 37,
+      "submitted": 87
+    }
+  ],
+  "caise": [
+    {
+      "year": 2021,
+      "rate": 19.19,
+      "accepted": 33,
+      "submitted": 172
+    },
+    {
+      "year": 2022,
+      "rate": 15.27,
+      "accepted": 31,
+      "submitted": 203
+    },
+    {
+      "year": 2023,
+      "rate": 22.36,
+      "accepted": 36,
+      "submitted": 161
+    },
+    {
+      "year": 2024,
+      "rate": 20.0,
+      "accepted": 36,
+      "submitted": 180
+    },
+    {
+      "year": 2025,
+      "rate": 15.28,
+      "accepted": 35,
+      "submitted": 229
+    },
+    {
+      "year": 2026,
+      "rate": 13.9,
+      "accepted": 46,
+      "submitted": 331
+    }
+  ],
+  "cav": [
+    {
+      "year": 2021,
+      "rate": 27.24,
+      "accepted": 79,
+      "submitted": 290
+    },
+    {
+      "year": 2022,
+      "rate": 24.4,
+      "accepted": 51,
+      "submitted": 209
+    },
+    {
+      "year": 2023,
+      "rate": 25.67,
+      "accepted": 67,
+      "submitted": 261
+    },
+    {
+      "year": 2024,
+      "rate": 21.77,
+      "accepted": 69,
+      "submitted": 317
+    },
+    {
+      "year": 2025,
+      "rate": 25.9,
+      "accepted": 79,
+      "submitted": 305
+    },
+    {
+      "year": 2026,
+      "rate": 25.39,
+      "accepted": 81,
+      "submitted": 319
+    }
+  ],
+  "ccc": [
+    {
+      "year": 2021,
+      "rate": 35.34,
+      "accepted": 41,
+      "submitted": 116
+    },
+    {
+      "year": 2022,
+      "rate": 42.7,
+      "accepted": 38,
+      "submitted": 89
+    },
+    {
+      "year": 2023,
+      "rate": 48.65,
+      "accepted": 36,
+      "submitted": 74
+    },
+    {
+      "year": 2024,
+      "rate": 34.29,
+      "accepted": 36,
+      "submitted": 105
+    },
+    {
+      "year": 2025,
+      "rate": 39.56,
+      "accepted": 36,
+      "submitted": 91
+    },
+    {
+      "year": 2026,
+      "rate": 33.87,
+      "accepted": 42,
+      "submitted": 124
+    }
+  ],
+  "cccg": [
+    {
+      "year": 2021,
+      "rate": 76.79,
+      "accepted": 43,
+      "submitted": 56
+    },
+    {
+      "year": 2022,
+      "rate": 69.23,
+      "accepted": 45,
+      "submitted": 65
+    },
+    {
+      "year": 2023,
+      "rate": 73.47,
+      "accepted": 36,
+      "submitted": 49
+    },
+    {
+      "year": 2024,
+      "rate": 79.59,
+      "accepted": 39,
+      "submitted": 49
+    },
+    {
+      "year": 2025,
+      "rate": 63.77,
+      "accepted": 44,
+      "submitted": 69
+    },
+    {
+      "year": 2026,
+      "rate": 76.92,
+      "accepted": 50,
+      "submitted": 65
+    }
+  ],
+  "ccgrid": [
+    {
+      "year": 2021,
+      "rate": 26.09,
+      "accepted": 60,
+      "submitted": 230
+    }
+  ],
+  "ccs": [
+    {
+      "year": 2021,
+      "rate": 22.27,
+      "accepted": 196,
+      "submitted": 880
+    },
+    {
+      "year": 2023,
+      "rate": 19.15,
+      "accepted": 234,
+      "submitted": 1222
+    }
+  ],
+  "cf": [
+    {
+      "year": 2022,
+      "rate": 35.29,
+      "accepted": 24,
+      "submitted": 68
+    }
+  ],
+  "cgi": [
+    {
+      "year": 2021,
+      "rate": 54.69,
+      "accepted": 35,
+      "submitted": 64
+    }
+  ],
+  "ches": [
+    {
+      "year": 2021,
+      "rate": 31.2,
+      "accepted": 78,
+      "submitted": 250
+    },
+    {
+      "year": 2024,
+      "rate": 27.08,
+      "accepted": 101,
+      "submitted": 373
+    }
+  ],
+  "chi": [
+    {
+      "year": 2022,
+      "rate": 24.7,
+      "accepted": 637,
+      "submitted": 2579
+    },
+    {
+      "year": 2023,
+      "rate": 27.64,
+      "accepted": 879,
+      "submitted": 3180
+    },
+    {
+      "year": 2024,
+      "rate": 26.32,
+      "accepted": 1060,
+      "submitted": 4028
+    },
+    {
+      "year": 2025,
+      "rate": 24.91,
+      "accepted": 1249,
+      "submitted": 5014
+    },
+    {
+      "year": 2026,
+      "rate": 25.33,
+      "accepted": 1705,
+      "submitted": 6730
+    }
+  ],
+  "cicai": [
+    {
+      "year": 2021,
+      "rate": 34.2,
+      "accepted": 105,
+      "submitted": 307
+    },
+    {
+      "year": 2022,
+      "rate": 31.48,
+      "accepted": 164,
+      "submitted": 521
+    },
+    {
+      "year": 2023,
+      "rate": 26.86,
+      "accepted": 101,
+      "submitted": 376
+    }
+  ],
+  "cikm": [
+    {
+      "year": 2023,
+      "rate": 24.05,
+      "accepted": 354,
+      "submitted": 1472
+    },
+    {
+      "year": 2024,
+      "rate": 23.2,
+      "accepted": 347,
+      "submitted": 1496
+    },
+    {
+      "year": 2025,
+      "rate": 27.23,
+      "accepted": 443,
+      "submitted": 1627
+    }
+  ],
+  "cloud": [
+    {
+      "year": 2021,
+      "rate": 23.81,
+      "accepted": 25,
+      "submitted": 105
+    },
+    {
+      "year": 2022,
+      "rate": 22.4,
+      "accepted": 43,
+      "submitted": 192
+    }
+  ],
+  "cocoon": [
+    {
+      "year": 2021,
+      "rate": 42.75,
+      "accepted": 56,
+      "submitted": 131
+    },
+    {
+      "year": 2022,
+      "rate": 50.5,
+      "accepted": 51,
+      "submitted": 101
+    },
+    {
+      "year": 2023,
+      "rate": 41.1,
+      "accepted": 60,
+      "submitted": 146
+    },
+    {
+      "year": 2024,
+      "rate": 32.49,
+      "accepted": 90,
+      "submitted": 277
+    },
+    {
+      "year": 2025,
+      "rate": 28.27,
+      "accepted": 54,
+      "submitted": 191
+    },
+    {
+      "year": 2026,
+      "rate": 31.19,
+      "accepted": 34,
+      "submitted": 109
+    }
+  ],
+  "cogsci": [
+    {
+      "year": 2021,
+      "rate": 68.17,
+      "accepted": 484,
+      "submitted": 710
+    }
+  ],
+  "coling": [
+    {
+      "year": 2022,
+      "rate": 28.05,
+      "accepted": 632,
+      "submitted": 2253
+    },
+    {
+      "year": 2024,
+      "rate": 44.83,
+      "accepted": 1556,
+      "submitted": 3471
+    },
+    {
+      "year": 2025,
+      "rate": 27.91,
+      "accepted": 760,
+      "submitted": 2723
+    }
+  ],
+  "collaboratecom": [
+    {
+      "year": 2021,
+      "rate": 33.5,
+      "accepted": 69,
+      "submitted": 206
+    },
+    {
+      "year": 2022,
+      "rate": 33.33,
+      "accepted": 57,
+      "submitted": 171
+    },
+    {
+      "year": 2023,
+      "rate": 40.91,
+      "accepted": 72,
+      "submitted": 176
+    },
+    {
+      "year": 2024,
+      "rate": 35.84,
+      "accepted": 62,
+      "submitted": 173
+    },
+    {
+      "year": 2025,
+      "rate": 28.02,
+      "accepted": 58,
+      "submitted": 207
+    }
+  ],
+  "colm": [
+    {
+      "year": 2025,
+      "rate": 32.03,
+      "accepted": 418,
+      "submitted": 1305
+    }
+  ],
+  "colt": [
+    {
+      "year": 2020,
+      "rate": 30.93,
+      "accepted": 120,
+      "submitted": 388
+    },
+    {
+      "year": 2021,
+      "rate": 35.14,
+      "accepted": 136,
+      "submitted": 387
+    },
+    {
+      "year": 2022,
+      "rate": 32.98,
+      "accepted": 155,
+      "submitted": 470
+    },
+    {
+      "year": 2023,
+      "rate": 34.6,
+      "accepted": 164,
+      "submitted": 474
+    },
+    {
+      "year": 2024,
+      "rate": 35.71,
+      "accepted": 160,
+      "submitted": 448
+    },
+    {
+      "year": 2026,
+      "rate": 29.07,
+      "accepted": 191,
+      "submitted": 657
+    }
+  ],
+  "compsac": [
+    {
+      "year": 2022,
+      "rate": 23.11,
+      "accepted": 61,
+      "submitted": 264
+    },
+    {
+      "year": 2023,
+      "rate": 26.38,
+      "accepted": 62,
+      "submitted": 235
+    },
+    {
+      "year": 2024,
+      "rate": 23.99,
+      "accepted": 71,
+      "submitted": 296
+    },
+    {
+      "year": 2025,
+      "rate": 27.46,
+      "accepted": 81,
+      "submitted": 295
+    },
+    {
+      "year": 2026,
+      "rate": 27.69,
+      "accepted": 121,
+      "submitted": 437
+    }
+  ],
+  "concur": [
+    {
+      "year": 2021,
+      "rate": 36.46,
+      "accepted": 35,
+      "submitted": 96
+    },
+    {
+      "year": 2022,
+      "rate": 35.56,
+      "accepted": 32,
+      "submitted": 90
+    },
+    {
+      "year": 2023,
+      "rate": 37.76,
+      "accepted": 37,
+      "submitted": 98
+    },
+    {
+      "year": 2024,
+      "rate": 46.25,
+      "accepted": 37,
+      "submitted": 80
+    },
+    {
+      "year": 2025,
+      "rate": 43.37,
+      "accepted": 36,
+      "submitted": 83
+    },
+    {
+      "year": 2026,
+      "rate": 37.72,
+      "accepted": 43,
+      "submitted": 114
+    }
+  ],
+  "conext": [
+    {
+      "year": 2021,
+      "rate": 22.5,
+      "accepted": 27,
+      "submitted": 120
+    },
+    {
+      "year": 2023,
+      "rate": 18.47,
+      "accepted": 29,
+      "submitted": 157
+    }
+  ],
+  "conll": [
+    {
+      "year": 2021,
+      "rate": 23.01,
+      "accepted": 52,
+      "submitted": 226
+    },
+    {
+      "year": 2022,
+      "rate": 26.17,
+      "accepted": 28,
+      "submitted": 107
+    },
+    {
+      "year": 2023,
+      "rate": 27.97,
+      "accepted": 40,
+      "submitted": 143
+    },
+    {
+      "year": 2024,
+      "rate": 41.24,
+      "accepted": 40,
+      "submitted": 97
+    },
+    {
+      "year": 2025,
+      "rate": 18.43,
+      "accepted": 40,
+      "submitted": 217
+    },
+    {
+      "year": 2026,
+      "rate": 18.29,
+      "accepted": 47,
+      "submitted": 257
+    }
+  ],
+  "corl": [
+    {
+      "year": 2024,
+      "rate": 38.1,
+      "accepted": 264,
+      "submitted": 693
+    },
+    {
+      "year": 2025,
+      "rate": 35.69,
+      "accepted": 263,
+      "submitted": 737
+    },
+    {
+      "year": 2026,
+      "rate": 32.81,
+      "accepted": 687,
+      "submitted": 2094
+    }
+  ],
+  "cp": [
+    {
+      "year": 2021,
+      "rate": 44.19,
+      "accepted": 57,
+      "submitted": 129
+    },
+    {
+      "year": 2022,
+      "rate": 51.28,
+      "accepted": 40,
+      "submitted": 78
+    },
+    {
+      "year": 2023,
+      "rate": 40.37,
+      "accepted": 44,
+      "submitted": 109
+    },
+    {
+      "year": 2024,
+      "rate": 40.0,
+      "accepted": 38,
+      "submitted": 95
+    },
+    {
+      "year": 2025,
+      "rate": 38.68,
+      "accepted": 41,
+      "submitted": 106
+    },
+    {
+      "year": 2026,
+      "rate": 44.93,
+      "accepted": 62,
+      "submitted": 138
+    }
+  ],
+  "crypto": [
+    {
+      "year": 2021,
+      "rate": 24.18,
+      "accepted": 103,
+      "submitted": 426
+    },
+    {
+      "year": 2022,
+      "rate": 21.98,
+      "accepted": 100,
+      "submitted": 455
+    },
+    {
+      "year": 2023,
+      "rate": 25.89,
+      "accepted": 124,
+      "submitted": 479
+    },
+    {
+      "year": 2024,
+      "rate": 27.19,
+      "accepted": 143,
+      "submitted": 526
+    },
+    {
+      "year": 2025,
+      "rate": 24.26,
+      "accepted": 156,
+      "submitted": 643
+    },
+    {
+      "year": 2026,
+      "rate": 24.71,
+      "accepted": 193,
+      "submitted": 781
+    }
+  ],
+  "cscw": [
+    {
+      "year": 2018,
+      "rate": 26.11,
+      "accepted": 289,
+      "submitted": 1107
+    },
+    {
+      "year": 2026,
+      "rate": 30.46,
+      "accepted": 194,
+      "submitted": 637
+    }
+  ],
+  "cscwd": [
+    {
+      "year": 2023,
+      "rate": 84.47,
+      "accepted": 321,
+      "submitted": 380
+    },
+    {
+      "year": 2026,
+      "rate": 71.11,
+      "accepted": 741,
+      "submitted": 1042
+    }
+  ],
+  "csfw": [
+    {
+      "year": 2021,
+      "rate": 25.0,
+      "accepted": 43,
+      "submitted": 172
+    },
+    {
+      "year": 2022,
+      "rate": 19.39,
+      "accepted": 32,
+      "submitted": 165
+    },
+    {
+      "year": 2023,
+      "rate": 20.32,
+      "accepted": 38,
+      "submitted": 187
+    },
+    {
+      "year": 2024,
+      "rate": 21.95,
+      "accepted": 45,
+      "submitted": 205
+    }
+  ],
+  "ctrsa": [
+    {
+      "year": 2021,
+      "rate": 27.0,
+      "accepted": 27,
+      "submitted": 100
+    },
+    {
+      "year": 2022,
+      "rate": 28.74,
+      "accepted": 25,
+      "submitted": 87
+    },
+    {
+      "year": 2023,
+      "rate": 34.21,
+      "accepted": 26,
+      "submitted": 76
+    },
+    {
+      "year": 2024,
+      "rate": 38.3,
+      "accepted": 18,
+      "submitted": 47
+    },
+    {
+      "year": 2025,
+      "rate": 33.33,
+      "accepted": 17,
+      "submitted": 51
+    },
+    {
+      "year": 2026,
+      "rate": 30.77,
+      "accepted": 12,
+      "submitted": 39
+    }
+  ],
+  "cvc": [
+    {
+      "year": 2026,
+      "rate": 39.33,
+      "accepted": 105,
+      "submitted": 267
+    }
+  ],
+  "cvpr": [
+    {
+      "year": 2021,
+      "rate": 23.42,
+      "accepted": 1661,
+      "submitted": 7093
+    },
+    {
+      "year": 2023,
+      "rate": 25.77,
+      "accepted": 2359,
+      "submitted": 9155
+    },
+    {
+      "year": 2024,
+      "rate": 23.58,
+      "accepted": 2719,
+      "submitted": 11532
+    },
+    {
+      "year": 2025,
+      "rate": 22.12,
+      "accepted": 2878,
+      "submitted": 13008
+    },
+    {
+      "year": 2026,
+      "rate": 25.41,
+      "accepted": 4089,
+      "submitted": 16092
+    }
+  ],
+  "dac": [
+    {
+      "year": 2021,
+      "rate": 23.52,
+      "accepted": 215,
+      "submitted": 914
+    },
+    {
+      "year": 2022,
+      "rate": 22.59,
+      "accepted": 223,
+      "submitted": 987
+    },
+    {
+      "year": 2023,
+      "rate": 22.75,
+      "accepted": 263,
+      "submitted": 1156
+    },
+    {
+      "year": 2024,
+      "rate": 21.81,
+      "accepted": 337,
+      "submitted": 1545
+    }
+  ],
+  "dai": [
+    {
+      "year": 2021,
+      "rate": 48.39,
+      "accepted": 15,
+      "submitted": 31
+    }
+  ],
+  "dasfaa": [
+    {
+      "year": 2021,
+      "rate": 20.0,
+      "accepted": 98,
+      "submitted": 490
+    },
+    {
+      "year": 2022,
+      "rate": 13.26,
+      "accepted": 72,
+      "submitted": 543
+    },
+    {
+      "year": 2023,
+      "rate": 19.17,
+      "accepted": 125,
+      "submitted": 652
+    },
+    {
+      "year": 2024,
+      "rate": 20.36,
+      "accepted": 147,
+      "submitted": 722
+    },
+    {
+      "year": 2025,
+      "rate": 18.6,
+      "accepted": 136,
+      "submitted": 731
+    },
+    {
+      "year": 2026,
+      "rate": 27.34,
+      "accepted": 228,
+      "submitted": 834
+    }
+  ],
+  "date": [
+    {
+      "year": 2021,
+      "rate": 23.89,
+      "accepted": 183,
+      "submitted": 766
+    },
+    {
+      "year": 2023,
+      "rate": 24.58,
+      "accepted": 205,
+      "submitted": 834
+    },
+    {
+      "year": 2024,
+      "rate": 24.5,
+      "accepted": 244,
+      "submitted": 996
+    },
+    {
+      "year": 2025,
+      "rate": 24.9,
+      "accepted": 302,
+      "submitted": 1213
+    },
+    {
+      "year": 2026,
+      "rate": 24.81,
+      "accepted": 325,
+      "submitted": 1310
+    }
+  ],
+  "dexa": [
+    {
+      "year": 2026,
+      "rate": 43.9,
+      "accepted": 54,
+      "submitted": 123
+    }
+  ],
+  "dfrwsapac": [
+    {
+      "year": 2025,
+      "rate": 28.57,
+      "accepted": 14,
+      "submitted": 49
+    },
+    {
+      "year": 2026,
+      "rate": 19.74,
+      "accepted": 15,
+      "submitted": 76
+    }
+  ],
+  "dimva": [
+    {
+      "year": 2021,
+      "rate": 29.23,
+      "accepted": 19,
+      "submitted": 65
+    },
+    {
+      "year": 2022,
+      "rate": 28.21,
+      "accepted": 11,
+      "submitted": 39
+    },
+    {
+      "year": 2023,
+      "rate": 30.23,
+      "accepted": 13,
+      "submitted": 43
+    },
+    {
+      "year": 2025,
+      "rate": 24.27,
+      "accepted": 25,
+      "submitted": 103
+    }
+  ],
+  "dis": [
+    {
+      "year": 2022,
+      "rate": 21.54,
+      "accepted": 101,
+      "submitted": 469
+    }
+  ],
+  "dsn": [
+    {
+      "year": 2021,
+      "rate": 16.27,
+      "accepted": 48,
+      "submitted": 295
+    },
+    {
+      "year": 2022,
+      "rate": 18.22,
+      "accepted": 49,
+      "submitted": 269
+    },
+    {
+      "year": 2023,
+      "rate": 19.58,
+      "accepted": 47,
+      "submitted": 240
+    },
+    {
+      "year": 2024,
+      "rate": 20.59,
+      "accepted": 42,
+      "submitted": 204
+    },
+    {
+      "year": 2025,
+      "rate": 20.22,
+      "accepted": 56,
+      "submitted": 277
+    },
+    {
+      "year": 2026,
+      "rate": 19.76,
+      "accepted": 65,
+      "submitted": 329
+    }
+  ],
+  "eacl": [
+    {
+      "year": 2021,
+      "rate": 23.29,
+      "accepted": 326,
+      "submitted": 1400
+    },
+    {
+      "year": 2023,
+      "rate": 24.1,
+      "accepted": 281,
+      "submitted": 1166
+    },
+    {
+      "year": 2024,
+      "rate": 20.29,
+      "accepted": 226,
+      "submitted": 1114
+    },
+    {
+      "year": 2026,
+      "rate": 20.23,
+      "accepted": 445,
+      "submitted": 2200
+    }
+  ],
+  "ease": [
+    {
+      "year": 2026,
+      "rate": 26.14,
+      "accepted": 63,
+      "submitted": 241
+    }
+  ],
+  "ecai": [
+    {
+      "year": 2022,
+      "rate": 14.97,
+      "accepted": 679,
+      "submitted": 4537
+    },
+    {
+      "year": 2023,
+      "rate": 23.97,
+      "accepted": 391,
+      "submitted": 1631
+    },
+    {
+      "year": 2024,
+      "rate": 23.34,
+      "accepted": 547,
+      "submitted": 2344
+    }
+  ],
+  "eccv": [
+    {
+      "year": 2022,
+      "rate": 28.34,
+      "accepted": 1645,
+      "submitted": 5804
+    },
+    {
+      "year": 2024,
+      "rate": 27.8,
+      "accepted": 2387,
+      "submitted": 8585
+    },
+    {
+      "year": 2026,
+      "rate": 27.06,
+      "accepted": 2834,
+      "submitted": 10473
+    }
+  ],
+  "ecir": [
+    {
+      "year": 2022,
+      "rate": 19.44,
+      "accepted": 35,
+      "submitted": 180
+    },
+    {
+      "year": 2023,
+      "rate": 28.51,
+      "accepted": 65,
+      "submitted": 228
+    },
+    {
+      "year": 2024,
+      "rate": 20.36,
+      "accepted": 57,
+      "submitted": 280
+    }
+  ],
+  "ecmlpkdd": [
+    {
+      "year": 2021,
+      "rate": 21.31,
+      "accepted": 146,
+      "submitted": 685
+    },
+    {
+      "year": 2023,
+      "rate": 23.64,
+      "accepted": 196,
+      "submitted": 829
+    },
+    {
+      "year": 2024,
+      "rate": 24.46,
+      "accepted": 202,
+      "submitted": 826
+    },
+    {
+      "year": 2026,
+      "rate": 24.35,
+      "accepted": 280,
+      "submitted": 1150
+    }
+  ],
+  "ecoop": [
+    {
+      "year": 2021,
+      "rate": 38.6,
+      "accepted": 22,
+      "submitted": 57
+    },
+    {
+      "year": 2023,
+      "rate": 45.36,
+      "accepted": 44,
+      "submitted": 97
+    },
+    {
+      "year": 2024,
+      "rate": 41.96,
+      "accepted": 47,
+      "submitted": 112
+    },
+    {
+      "year": 2025,
+      "rate": 41.18,
+      "accepted": 42,
+      "submitted": 102
+    },
+    {
+      "year": 2026,
+      "rate": 30.61,
+      "accepted": 30,
+      "submitted": 98
+    }
+  ],
+  "edbt": [
+    {
+      "year": 2021,
+      "rate": 25.0,
+      "accepted": 27,
+      "submitted": 108
+    }
+  ],
+  "egsr": [
+    {
+      "year": 2021,
+      "rate": 63.46,
+      "accepted": 33,
+      "submitted": 52
+    },
+    {
+      "year": 2022,
+      "rate": 57.45,
+      "accepted": 27,
+      "submitted": 47
+    }
+  ],
+  "emnlp": [
+    {
+      "year": 2021,
+      "rate": 22.66,
+      "accepted": 846,
+      "submitted": 3734
+    },
+    {
+      "year": 2022,
+      "rate": 19.79,
+      "accepted": 829,
+      "submitted": 4190
+    },
+    {
+      "year": 2023,
+      "rate": 21.33,
+      "accepted": 1047,
+      "submitted": 4909
+    },
+    {
+      "year": 2024,
+      "rate": 20.82,
+      "accepted": 1271,
+      "submitted": 6105
+    },
+    {
+      "year": 2025,
+      "rate": 22.16,
+      "accepted": 1811,
+      "submitted": 8174
+    }
+  ],
+  "emsoft": [
+    {
+      "year": 2023,
+      "rate": 23.33,
+      "accepted": 21,
+      "submitted": 90
+    },
+    {
+      "year": 2025,
+      "rate": 27.0,
+      "accepted": 27,
+      "submitted": 100
+    },
+    {
+      "year": 2026,
+      "rate": 26.63,
+      "accepted": 49,
+      "submitted": 184
+    }
+  ],
+  "er": [
+    {
+      "year": 2026,
+      "rate": 31.73,
+      "accepted": 33,
+      "submitted": 104
+    }
+  ],
+  "esa": [
+    {
+      "year": 2021,
+      "rate": 25.0,
+      "accepted": 80,
+      "submitted": 320
+    },
+    {
+      "year": 2022,
+      "rate": 30.67,
+      "accepted": 92,
+      "submitted": 300
+    },
+    {
+      "year": 2023,
+      "rate": 27.84,
+      "accepted": 103,
+      "submitted": 370
+    },
+    {
+      "year": 2024,
+      "rate": 30.93,
+      "accepted": 103,
+      "submitted": 333
+    },
+    {
+      "year": 2025,
+      "rate": 30.91,
+      "accepted": 115,
+      "submitted": 372
+    },
+    {
+      "year": 2026,
+      "rate": 32.44,
+      "accepted": 158,
+      "submitted": 487
+    }
+  ],
+  "esem": [
+    {
+      "year": 2021,
+      "rate": 19.35,
+      "accepted": 24,
+      "submitted": 124
+    },
+    {
+      "year": 2023,
+      "rate": 32.56,
+      "accepted": 42,
+      "submitted": 129
+    },
+    {
+      "year": 2025,
+      "rate": 19.31,
+      "accepted": 28,
+      "submitted": 145
+    }
+  ],
+  "esorics": [
+    {
+      "year": 2021,
+      "rate": 20.23,
+      "accepted": 71,
+      "submitted": 351
+    },
+    {
+      "year": 2022,
+      "rate": 18.51,
+      "accepted": 104,
+      "submitted": 562
+    },
+    {
+      "year": 2023,
+      "rate": 19.46,
+      "accepted": 93,
+      "submitted": 478
+    },
+    {
+      "year": 2024,
+      "rate": 16.07,
+      "accepted": 86,
+      "submitted": 535
+    },
+    {
+      "year": 2025,
+      "rate": 16.67,
+      "accepted": 100,
+      "submitted": 600
+    },
+    {
+      "year": 2026,
+      "rate": 14.74,
+      "accepted": 130,
+      "submitted": 882
+    }
+  ],
+  "etaps": [
+    {
+      "year": 2021,
+      "rate": 44.23,
+      "accepted": 115,
+      "submitted": 260
+    },
+    {
+      "year": 2022,
+      "rate": 30.66,
+      "accepted": 111,
+      "submitted": 362
+    },
+    {
+      "year": 2023,
+      "rate": 34.35,
+      "accepted": 124,
+      "submitted": 361
+    },
+    {
+      "year": 2024,
+      "rate": 33.24,
+      "accepted": 117,
+      "submitted": 352
+    },
+    {
+      "year": 2025,
+      "rate": 32.22,
+      "accepted": 106,
+      "submitted": 329
+    },
+    {
+      "year": 2026,
+      "rate": 30.26,
+      "accepted": 138,
+      "submitted": 456
+    }
+  ],
+  "eurocrypt": [
+    {
+      "year": 2021,
+      "rate": 19.5,
+      "accepted": 78,
+      "submitted": 400
+    },
+    {
+      "year": 2022,
+      "rate": 22.85,
+      "accepted": 85,
+      "submitted": 372
+    },
+    {
+      "year": 2023,
+      "rate": 26.27,
+      "accepted": 109,
+      "submitted": 415
+    },
+    {
+      "year": 2024,
+      "rate": 21.0,
+      "accepted": 105,
+      "submitted": 500
+    },
+    {
+      "year": 2025,
+      "rate": 20.43,
+      "accepted": 123,
+      "submitted": 602
+    },
+    {
+      "year": 2026,
+      "rate": 21.04,
+      "accepted": 142,
+      "submitted": 675
+    }
+  ],
+  "eurogp": [
+    {
+      "year": 2021,
+      "rate": 62.96,
+      "accepted": 17,
+      "submitted": 27
+    },
+    {
+      "year": 2022,
+      "rate": 54.29,
+      "accepted": 19,
+      "submitted": 35
+    },
+    {
+      "year": 2023,
+      "rate": 57.89,
+      "accepted": 22,
+      "submitted": 38
+    },
+    {
+      "year": 2024,
+      "rate": 54.17,
+      "accepted": 13,
+      "submitted": 24
+    },
+    {
+      "year": 2025,
+      "rate": 55.56,
+      "accepted": 15,
+      "submitted": 27
+    },
+    {
+      "year": 2026,
+      "rate": 55.88,
+      "accepted": 19,
+      "submitted": 34
+    }
+  ],
+  "eurographics": [
+    {
+      "year": 2021,
+      "rate": 36.43,
+      "accepted": 47,
+      "submitted": 129
+    },
+    {
+      "year": 2022,
+      "rate": 33.61,
+      "accepted": 40,
+      "submitted": 119
+    },
+    {
+      "year": 2023,
+      "rate": 30.63,
+      "accepted": 34,
+      "submitted": 111
+    },
+    {
+      "year": 2024,
+      "rate": 32.92,
+      "accepted": 53,
+      "submitted": 161
+    },
+    {
+      "year": 2025,
+      "rate": 36.59,
+      "accepted": 75,
+      "submitted": 205
+    },
+    {
+      "year": 2026,
+      "rate": 37.94,
+      "accepted": 96,
+      "submitted": 253
+    }
+  ],
+  "europar": [
+    {
+      "year": 2021,
+      "rate": 27.94,
+      "accepted": 38,
+      "submitted": 136
+    },
+    {
+      "year": 2022,
+      "rate": 24.51,
+      "accepted": 25,
+      "submitted": 102
+    },
+    {
+      "year": 2023,
+      "rate": 29.88,
+      "accepted": 49,
+      "submitted": 164
+    },
+    {
+      "year": 2025,
+      "rate": 29.55,
+      "accepted": 78,
+      "submitted": 264
+    },
+    {
+      "year": 2026,
+      "rate": 26.2,
+      "accepted": 87,
+      "submitted": 332
+    }
+  ],
+  "eurosp": [
+    {
+      "year": 2021,
+      "rate": 32.26,
+      "accepted": 40,
+      "submitted": 124
+    },
+    {
+      "year": 2022,
+      "rate": 29.79,
+      "accepted": 42,
+      "submitted": 141
+    },
+    {
+      "year": 2023,
+      "rate": 35.0,
+      "accepted": 63,
+      "submitted": 180
+    },
+    {
+      "year": 2024,
+      "rate": 21.63,
+      "accepted": 45,
+      "submitted": 208
+    },
+    {
+      "year": 2025,
+      "rate": 20.0,
+      "accepted": 60,
+      "submitted": 300
+    },
+    {
+      "year": 2026,
+      "rate": 17.83,
+      "accepted": 82,
+      "submitted": 460
+    }
+  ],
+  "eurosys": [
+    {
+      "year": 2021,
+      "rate": 20.99,
+      "accepted": 38,
+      "submitted": 181
+    },
+    {
+      "year": 2022,
+      "rate": 27.95,
+      "accepted": 45,
+      "submitted": 161
+    },
+    {
+      "year": 2025,
+      "rate": 12.21,
+      "accepted": 85,
+      "submitted": 696
+    }
+  ],
+  "eurovis": [
+    {
+      "year": 2021,
+      "rate": 25.43,
+      "accepted": 44,
+      "submitted": 173
+    },
+    {
+      "year": 2022,
+      "rate": 24.72,
+      "accepted": 44,
+      "submitted": 178
+    },
+    {
+      "year": 2023,
+      "rate": 26.87,
+      "accepted": 36,
+      "submitted": 134
+    },
+    {
+      "year": 2024,
+      "rate": 26.12,
+      "accepted": 35,
+      "submitted": 134
+    },
+    {
+      "year": 2025,
+      "rate": 27.54,
+      "accepted": 46,
+      "submitted": 167
+    },
+    {
+      "year": 2026,
+      "rate": 26.67,
+      "accepted": 52,
+      "submitted": 195
+    }
+  ],
+  "eusipco": [
+    {
+      "year": 2017,
+      "rate": 63.15,
+      "accepted": 461,
+      "submitted": 730
+    },
+    {
+      "year": 2018,
+      "rate": 57.69,
+      "accepted": 409,
+      "submitted": 709
+    },
+    {
+      "year": 2020,
+      "rate": 60.19,
+      "accepted": 499,
+      "submitted": 829
+    }
+  ],
+  "euvip": [
+    {
+      "year": 2023,
+      "rate": 55.0,
+      "accepted": 33,
+      "submitted": 60
+    }
+  ],
+  "evoapplications": [
+    {
+      "year": 2021,
+      "rate": 65.38,
+      "accepted": 51,
+      "submitted": 78
+    },
+    {
+      "year": 2022,
+      "rate": 68.66,
+      "accepted": 46,
+      "submitted": 67
+    },
+    {
+      "year": 2025,
+      "rate": 65.62,
+      "accepted": 63,
+      "submitted": 96
+    },
+    {
+      "year": 2026,
+      "rate": 63.21,
+      "accepted": 67,
+      "submitted": 106
+    }
+  ],
+  "evocop": [
+    {
+      "year": 2021,
+      "rate": 33.33,
+      "accepted": 14,
+      "submitted": 42
+    },
+    {
+      "year": 2022,
+      "rate": 46.43,
+      "accepted": 13,
+      "submitted": 28
+    },
+    {
+      "year": 2023,
+      "rate": 46.88,
+      "accepted": 15,
+      "submitted": 32
+    },
+    {
+      "year": 2024,
+      "rate": 42.86,
+      "accepted": 12,
+      "submitted": 28
+    },
+    {
+      "year": 2025,
+      "rate": 37.21,
+      "accepted": 16,
+      "submitted": 43
+    },
+    {
+      "year": 2026,
+      "rate": 23.81,
+      "accepted": 10,
+      "submitted": 42
+    }
+  ],
+  "evomusart": [
+    {
+      "year": 2021,
+      "rate": 46.97,
+      "accepted": 31,
+      "submitted": 66
+    },
+    {
+      "year": 2023,
+      "rate": 49.09,
+      "accepted": 27,
+      "submitted": 55
+    },
+    {
+      "year": 2024,
+      "rate": 45.45,
+      "accepted": 25,
+      "submitted": 55
+    },
+    {
+      "year": 2025,
+      "rate": 53.85,
+      "accepted": 28,
+      "submitted": 52
+    },
+    {
+      "year": 2026,
+      "rate": 48.28,
+      "accepted": 28,
+      "submitted": 58
+    }
+  ],
+  "fast": [
+    {
+      "year": 2021,
+      "rate": 21.54,
+      "accepted": 28,
+      "submitted": 130
+    },
+    {
+      "year": 2022,
+      "rate": 21.54,
+      "accepted": 28,
+      "submitted": 130
+    },
+    {
+      "year": 2023,
+      "rate": 22.95,
+      "accepted": 28,
+      "submitted": 122
+    },
+    {
+      "year": 2024,
+      "rate": 17.89,
+      "accepted": 22,
+      "submitted": 123
+    },
+    {
+      "year": 2025,
+      "rate": 21.56,
+      "accepted": 36,
+      "submitted": 167
+    },
+    {
+      "year": 2026,
+      "rate": 17.39,
+      "accepted": 44,
+      "submitted": 253
+    }
+  ],
+  "fc": [
+    {
+      "year": 2021,
+      "rate": 24.22,
+      "accepted": 54,
+      "submitted": 223
+    },
+    {
+      "year": 2022,
+      "rate": 22.64,
+      "accepted": 36,
+      "submitted": 159
+    },
+    {
+      "year": 2023,
+      "rate": 22.53,
+      "accepted": 41,
+      "submitted": 182
+    },
+    {
+      "year": 2024,
+      "rate": 21.11,
+      "accepted": 42,
+      "submitted": 199
+    },
+    {
+      "year": 2025,
+      "rate": 15.33,
+      "accepted": 46,
+      "submitted": 300
+    },
+    {
+      "year": 2026,
+      "rate": 18.7,
+      "accepted": 46,
+      "submitted": 246
+    }
+  ],
+  "fg": [
+    {
+      "year": 2023,
+      "rate": 60.0,
+      "accepted": 51,
+      "submitted": 85
+    }
+  ],
+  "fm": [
+    {
+      "year": 2021,
+      "rate": 26.72,
+      "accepted": 35,
+      "submitted": 131
+    },
+    {
+      "year": 2023,
+      "rate": 29.47,
+      "accepted": 28,
+      "submitted": 95
+    },
+    {
+      "year": 2024,
+      "rate": 24.72,
+      "accepted": 44,
+      "submitted": 178
+    }
+  ],
+  "fmcad": [
+    {
+      "year": 2021,
+      "rate": 41.67,
+      "accepted": 30,
+      "submitted": 72
+    },
+    {
+      "year": 2022,
+      "rate": 45.45,
+      "accepted": 40,
+      "submitted": 88
+    },
+    {
+      "year": 2023,
+      "rate": 42.47,
+      "accepted": 31,
+      "submitted": 73
+    },
+    {
+      "year": 2024,
+      "rate": 51.79,
+      "accepted": 29,
+      "submitted": 56
+    },
+    {
+      "year": 2025,
+      "rate": 42.19,
+      "accepted": 27,
+      "submitted": 64
+    },
+    {
+      "year": 2026,
+      "rate": 31.7,
+      "accepted": 71,
+      "submitted": 224
+    }
+  ],
+  "focs": [
+    {
+      "year": 2021,
+      "rate": 34.41,
+      "accepted": 117,
+      "submitted": 340
+    },
+    {
+      "year": 2022,
+      "rate": 37.16,
+      "accepted": 110,
+      "submitted": 296
+    },
+    {
+      "year": 2024,
+      "rate": 28.73,
+      "accepted": 133,
+      "submitted": 463
+    },
+    {
+      "year": 2025,
+      "rate": 25.09,
+      "accepted": 137,
+      "submitted": 546
+    }
+  ],
+  "forte": [
+    {
+      "year": 2021,
+      "rate": 50.0,
+      "accepted": 13,
+      "submitted": 26
+    },
+    {
+      "year": 2022,
+      "rate": 42.86,
+      "accepted": 12,
+      "submitted": 28
+    },
+    {
+      "year": 2023,
+      "rate": 50.0,
+      "accepted": 13,
+      "submitted": 26
+    },
+    {
+      "year": 2024,
+      "rate": 39.39,
+      "accepted": 13,
+      "submitted": 33
+    },
+    {
+      "year": 2025,
+      "rate": 52.0,
+      "accepted": 13,
+      "submitted": 25
+    },
+    {
+      "year": 2026,
+      "rate": 55.56,
+      "accepted": 15,
+      "submitted": 27
+    }
+  ],
+  "fpga": [
+    {
+      "year": 2022,
+      "rate": 25.0,
+      "accepted": 18,
+      "submitted": 72
+    },
+    {
+      "year": 2023,
+      "rate": 28.05,
+      "accepted": 23,
+      "submitted": 82
+    }
+  ],
+  "fscd": [
+    {
+      "year": 2021,
+      "rate": 38.89,
+      "accepted": 28,
+      "submitted": 72
+    },
+    {
+      "year": 2022,
+      "rate": 52.54,
+      "accepted": 31,
+      "submitted": 59
+    },
+    {
+      "year": 2024,
+      "rate": 52.63,
+      "accepted": 30,
+      "submitted": 57
+    },
+    {
+      "year": 2025,
+      "rate": 40.26,
+      "accepted": 31,
+      "submitted": 77
+    },
+    {
+      "year": 2026,
+      "rate": 42.11,
+      "accepted": 32,
+      "submitted": 76
+    }
+  ],
+  "fse": [
+    {
+      "year": 2021,
+      "rate": 23.83,
+      "accepted": 97,
+      "submitted": 407
+    },
+    {
+      "year": 2022,
+      "rate": 23.97,
+      "accepted": 58,
+      "submitted": 242
+    },
+    {
+      "year": 2023,
+      "rate": 27.02,
+      "accepted": 127,
+      "submitted": 470
+    },
+    {
+      "year": 2024,
+      "rate": 27.43,
+      "accepted": 48,
+      "submitted": 175
+    },
+    {
+      "year": 2025,
+      "rate": 26.21,
+      "accepted": 135,
+      "submitted": 515
+    },
+    {
+      "year": 2026,
+      "rate": 28.06,
+      "accepted": 55,
+      "submitted": 196
+    },
+    {
+      "year": 2026,
+      "rate": 26.41,
+      "accepted": 211,
+      "submitted": 799
+    }
+  ],
+  "gecco": [
+    {
+      "year": 2021,
+      "rate": 37.02,
+      "accepted": 134,
+      "submitted": 362
+    },
+    {
+      "year": 2022,
+      "rate": 37.0,
+      "accepted": 158,
+      "submitted": 427
+    },
+    {
+      "year": 2023,
+      "rate": 34.68,
+      "accepted": 180,
+      "submitted": 519
+    },
+    {
+      "year": 2025,
+      "rate": 36.13,
+      "accepted": 181,
+      "submitted": 501
+    }
+  ],
+  "globecom": [
+    {
+      "year": 2023,
+      "rate": 39.23,
+      "accepted": 1262,
+      "submitted": 3217
+    },
+    {
+      "year": 2024,
+      "rate": 39.69,
+      "accepted": 911,
+      "submitted": 2295
+    }
+  ],
+  "gmp": [
+    {
+      "year": 2021,
+      "rate": 35.42,
+      "accepted": 17,
+      "submitted": 48
+    },
+    {
+      "year": 2022,
+      "rate": 33.33,
+      "accepted": 14,
+      "submitted": 42
+    },
+    {
+      "year": 2023,
+      "rate": 33.33,
+      "accepted": 12,
+      "submitted": 36
+    },
+    {
+      "year": 2024,
+      "rate": 28.57,
+      "accepted": 40,
+      "submitted": 140
+    },
+    {
+      "year": 2025,
+      "rate": 26.79,
+      "accepted": 15,
+      "submitted": 56
+    },
+    {
+      "year": 2026,
+      "rate": 35.0,
+      "accepted": 21,
+      "submitted": 60
+    }
+  ],
+  "group": [
+    {
+      "year": 2023,
+      "rate": 35.75,
+      "accepted": 69,
+      "submitted": 193
+    }
+  ],
+  "hicss": [
+    {
+      "year": 2022,
+      "rate": 48.87,
+      "accepted": 759,
+      "submitted": 1553
+    },
+    {
+      "year": 2023,
+      "rate": 47.45,
+      "accepted": 678,
+      "submitted": 1429
+    },
+    {
+      "year": 2024,
+      "rate": 47.16,
+      "accepted": 764,
+      "submitted": 1620
+    },
+    {
+      "year": 2025,
+      "rate": 48.55,
+      "accepted": 736,
+      "submitted": 1516
+    },
+    {
+      "year": 2026,
+      "rate": 46.63,
+      "accepted": 727,
+      "submitted": 1559
+    }
+  ],
+  "hotnets": [
+    {
+      "year": 2021,
+      "rate": 30.69,
+      "accepted": 31,
+      "submitted": 101
+    },
+    {
+      "year": 2022,
+      "rate": 30.77,
+      "accepted": 32,
+      "submitted": 104
+    },
+    {
+      "year": 2023,
+      "rate": 27.97,
+      "accepted": 40,
+      "submitted": 143
+    },
+    {
+      "year": 2025,
+      "rate": 28.09,
+      "accepted": 50,
+      "submitted": 178
+    },
+    {
+      "year": 2026,
+      "rate": 22.87,
+      "accepted": 43,
+      "submitted": 188
+    }
+  ],
+  "hotstorage": [
+    {
+      "year": 2021,
+      "rate": 37.5,
+      "accepted": 15,
+      "submitted": 40
+    },
+    {
+      "year": 2022,
+      "rate": 40.43,
+      "accepted": 19,
+      "submitted": 47
+    },
+    {
+      "year": 2024,
+      "rate": 39.13,
+      "accepted": 18,
+      "submitted": 46
+    },
+    {
+      "year": 2026,
+      "rate": 29.49,
+      "accepted": 23,
+      "submitted": 78
+    }
+  ],
+  "hpca": [
+    {
+      "year": 2022,
+      "rate": 29.3,
+      "accepted": 80,
+      "submitted": 273
+    },
+    {
+      "year": 2023,
+      "rate": 25.28,
+      "accepted": 91,
+      "submitted": 360
+    },
+    {
+      "year": 2026,
+      "rate": 21.14,
+      "accepted": 119,
+      "submitted": 563
+    }
+  ],
+  "hpdc": [
+    {
+      "year": 2022,
+      "rate": 19.44,
+      "accepted": 21,
+      "submitted": 108
+    },
+    {
+      "year": 2024,
+      "rate": 17.33,
+      "accepted": 26,
+      "submitted": 150
+    },
+    {
+      "year": 2026,
+      "rate": 12.46,
+      "accepted": 35,
+      "submitted": 281
+    }
+  ],
+  "ica3pp": [
+    {
+      "year": 2021,
+      "rate": 35.98,
+      "accepted": 145,
+      "submitted": 403
+    },
+    {
+      "year": 2022,
+      "rate": 47.25,
+      "accepted": 43,
+      "submitted": 91
+    },
+    {
+      "year": 2024,
+      "rate": 49.43,
+      "accepted": 131,
+      "submitted": 265
+    },
+    {
+      "year": 2025,
+      "rate": 57.09,
+      "accepted": 310,
+      "submitted": 543
+    }
+  ],
+  "icaif": [
+    {
+      "year": 2025,
+      "rate": 32.38,
+      "accepted": 113,
+      "submitted": 349
+    }
+  ],
+  "icalp": [
+    {
+      "year": 2021,
+      "rate": 37.85,
+      "accepted": 137,
+      "submitted": 362
+    },
+    {
+      "year": 2022,
+      "rate": 29.33,
+      "accepted": 127,
+      "submitted": 433
+    },
+    {
+      "year": 2023,
+      "rate": 29.8,
+      "accepted": 132,
+      "submitted": 443
+    },
+    {
+      "year": 2024,
+      "rate": 29.48,
+      "accepted": 153,
+      "submitted": 519
+    },
+    {
+      "year": 2025,
+      "rate": 30.2,
+      "accepted": 170,
+      "submitted": 563
+    },
+    {
+      "year": 2026,
+      "rate": 30.25,
+      "accepted": 190,
+      "submitted": 628
+    }
+  ],
+  "icann": [
+    {
+      "year": 2021,
+      "rate": 53.43,
+      "accepted": 265,
+      "submitted": 496
+    },
+    {
+      "year": 2022,
+      "rate": 45.45,
+      "accepted": 255,
+      "submitted": 561
+    },
+    {
+      "year": 2023,
+      "rate": 44.98,
+      "accepted": 426,
+      "submitted": 947
+    },
+    {
+      "year": 2025,
+      "rate": 45.33,
+      "accepted": 170,
+      "submitted": 375
+    }
+  ],
+  "icaps": [
+    {
+      "year": 2022,
+      "rate": 30.69,
+      "accepted": 85,
+      "submitted": 277
+    },
+    {
+      "year": 2023,
+      "rate": 30.62,
+      "accepted": 79,
+      "submitted": 258
+    },
+    {
+      "year": 2024,
+      "rate": 24.48,
+      "accepted": 82,
+      "submitted": 335
+    },
+    {
+      "year": 2025,
+      "rate": 22.37,
+      "accepted": 51,
+      "submitted": 228
+    },
+    {
+      "year": 2026,
+      "rate": 22.67,
+      "accepted": 90,
+      "submitted": 397
+    }
+  ],
+  "icassp": [
+    {
+      "year": 2024,
+      "rate": 48.52,
+      "accepted": 2812,
+      "submitted": 5796
+    }
+  ],
+  "icc": [
+    {
+      "year": 2021,
+      "rate": 40.3,
+      "accepted": 758,
+      "submitted": 1881
+    },
+    {
+      "year": 2022,
+      "rate": 38.04,
+      "accepted": 962,
+      "submitted": 2529
+    },
+    {
+      "year": 2023,
+      "rate": 39.52,
+      "accepted": 1098,
+      "submitted": 2778
+    },
+    {
+      "year": 2024,
+      "rate": 39.72,
+      "accepted": 939,
+      "submitted": 2364
+    }
+  ],
+  "iccad": [
+    {
+      "year": 2021,
+      "rate": 23.54,
+      "accepted": 121,
+      "submitted": 514
+    },
+    {
+      "year": 2022,
+      "rate": 22.18,
+      "accepted": 132,
+      "submitted": 595
+    },
+    {
+      "year": 2023,
+      "rate": 22.93,
+      "accepted": 172,
+      "submitted": 750
+    },
+    {
+      "year": 2025,
+      "rate": 24.68,
+      "accepted": 266,
+      "submitted": 1078
+    },
+    {
+      "year": 2026,
+      "rate": 25.32,
+      "accepted": 371,
+      "submitted": 1465
+    }
+  ],
+  "iccbr": [
+    {
+      "year": 2021,
+      "rate": 24.71,
+      "accepted": 21,
+      "submitted": 85
+    },
+    {
+      "year": 2022,
+      "rate": 38.24,
+      "accepted": 26,
+      "submitted": 68
+    },
+    {
+      "year": 2023,
+      "rate": 32.91,
+      "accepted": 26,
+      "submitted": 79
+    },
+    {
+      "year": 2024,
+      "rate": 31.87,
+      "accepted": 29,
+      "submitted": 91
+    },
+    {
+      "year": 2025,
+      "rate": 37.04,
+      "accepted": 30,
+      "submitted": 81
+    },
+    {
+      "year": 2026,
+      "rate": 42.35,
+      "accepted": 36,
+      "submitted": 85
+    }
+  ],
+  "iccv": [
+    {
+      "year": 2021,
+      "rate": 26.2,
+      "accepted": 1612,
+      "submitted": 6152
+    },
+    {
+      "year": 2023,
+      "rate": 26.16,
+      "accepted": 2161,
+      "submitted": 8260
+    },
+    {
+      "year": 2025,
+      "rate": 24.03,
+      "accepted": 2701,
+      "submitted": 11239
+    }
+  ],
+  "icdar": [
+    {
+      "year": 2021,
+      "rate": 53.53,
+      "accepted": 182,
+      "submitted": 340
+    },
+    {
+      "year": 2023,
+      "rate": 48.73,
+      "accepted": 154,
+      "submitted": 316
+    },
+    {
+      "year": 2024,
+      "rate": 54.75,
+      "accepted": 144,
+      "submitted": 263
+    },
+    {
+      "year": 2025,
+      "rate": 45.22,
+      "accepted": 142,
+      "submitted": 314
+    },
+    {
+      "year": 2026,
+      "rate": 47.46,
+      "accepted": 140,
+      "submitted": 295
+    }
+  ],
+  "icde": [
+    {
+      "year": 2022,
+      "rate": 27.05,
+      "accepted": 211,
+      "submitted": 780
+    },
+    {
+      "year": 2023,
+      "rate": 30.61,
+      "accepted": 229,
+      "submitted": 748
+    },
+    {
+      "year": 2024,
+      "rate": 25.39,
+      "accepted": 376,
+      "submitted": 1481
+    }
+  ],
+  "icdf2c": [
+    {
+      "year": 2021,
+      "rate": 42.31,
+      "accepted": 22,
+      "submitted": 52
+    },
+    {
+      "year": 2022,
+      "rate": 35.0,
+      "accepted": 28,
+      "submitted": 80
+    },
+    {
+      "year": 2024,
+      "rate": 44.44,
+      "accepted": 40,
+      "submitted": 90
+    },
+    {
+      "year": 2026,
+      "rate": 24.39,
+      "accepted": 30,
+      "submitted": 123
+    }
+  ],
+  "icdm": [
+    {
+      "year": 2021,
+      "rate": 9.9,
+      "accepted": 98,
+      "submitted": 990
+    },
+    {
+      "year": 2022,
+      "rate": 9.77,
+      "accepted": 85,
+      "submitted": 870
+    },
+    {
+      "year": 2023,
+      "rate": 19.94,
+      "accepted": 200,
+      "submitted": 1003
+    },
+    {
+      "year": 2024,
+      "rate": 11.09,
+      "accepted": 67,
+      "submitted": 604
+    },
+    {
+      "year": 2025,
+      "rate": 13.5,
+      "accepted": 106,
+      "submitted": 785
+    }
+  ],
+  "icdt": [
+    {
+      "year": 2021,
+      "rate": 47.62,
+      "accepted": 20,
+      "submitted": 42
+    },
+    {
+      "year": 2022,
+      "rate": 39.02,
+      "accepted": 16,
+      "submitted": 41
+    },
+    {
+      "year": 2023,
+      "rate": 42.86,
+      "accepted": 21,
+      "submitted": 49
+    },
+    {
+      "year": 2024,
+      "rate": 29.73,
+      "accepted": 22,
+      "submitted": 74
+    },
+    {
+      "year": 2025,
+      "rate": 36.25,
+      "accepted": 29,
+      "submitted": 80
+    },
+    {
+      "year": 2026,
+      "rate": 27.4,
+      "accepted": 20,
+      "submitted": 73
+    }
+  ],
+  "iceccs": [
+    {
+      "year": 2022,
+      "rate": 43.64,
+      "accepted": 24,
+      "submitted": 55
+    },
+    {
+      "year": 2023,
+      "rate": 37.93,
+      "accepted": 22,
+      "submitted": 58
+    },
+    {
+      "year": 2024,
+      "rate": 32.35,
+      "accepted": 22,
+      "submitted": 68
+    },
+    {
+      "year": 2025,
+      "rate": 34.29,
+      "accepted": 24,
+      "submitted": 70
+    }
+  ],
+  "icfem": [
+    {
+      "year": 2022,
+      "rate": 37.7,
+      "accepted": 23,
+      "submitted": 61
+    },
+    {
+      "year": 2023,
+      "rate": 38.24,
+      "accepted": 13,
+      "submitted": 34
+    },
+    {
+      "year": 2024,
+      "rate": 44.0,
+      "accepted": 22,
+      "submitted": 50
+    },
+    {
+      "year": 2025,
+      "rate": 42.55,
+      "accepted": 20,
+      "submitted": 47
+    }
+  ],
+  "icfp": [
+    {
+      "year": 2021,
+      "rate": 33.02,
+      "accepted": 35,
+      "submitted": 106
+    },
+    {
+      "year": 2023,
+      "rate": 36.67,
+      "accepted": 33,
+      "submitted": 90
+    }
+  ],
+  "icic": [
+    {
+      "year": 2021,
+      "rate": 41.92,
+      "accepted": 192,
+      "submitted": 458
+    },
+    {
+      "year": 2022,
+      "rate": 46.55,
+      "accepted": 209,
+      "submitted": 449
+    },
+    {
+      "year": 2023,
+      "rate": 40.7,
+      "accepted": 337,
+      "submitted": 828
+    },
+    {
+      "year": 2024,
+      "rate": 39.42,
+      "accepted": 863,
+      "submitted": 2189
+    },
+    {
+      "year": 2025,
+      "rate": 42.88,
+      "accepted": 1729,
+      "submitted": 4032
+    },
+    {
+      "year": 2026,
+      "rate": 40.43,
+      "accepted": 1844,
+      "submitted": 4561
+    }
+  ],
+  "icics": [
+    {
+      "year": 2021,
+      "rate": 24.26,
+      "accepted": 49,
+      "submitted": 202
+    },
+    {
+      "year": 2022,
+      "rate": 22.67,
+      "accepted": 34,
+      "submitted": 150
+    },
+    {
+      "year": 2023,
+      "rate": 20.95,
+      "accepted": 44,
+      "submitted": 210
+    },
+    {
+      "year": 2024,
+      "rate": 26.02,
+      "accepted": 32,
+      "submitted": 123
+    },
+    {
+      "year": 2025,
+      "rate": 25.49,
+      "accepted": 91,
+      "submitted": 357
+    }
+  ],
+  "icip": [
+    {
+      "year": 2021,
+      "rate": 46.02,
+      "accepted": 793,
+      "submitted": 1723
+    },
+    {
+      "year": 2022,
+      "rate": 44.1,
+      "accepted": 863,
+      "submitted": 1957
+    },
+    {
+      "year": 2023,
+      "rate": 44.44,
+      "accepted": 732,
+      "submitted": 1647
+    },
+    {
+      "year": 2024,
+      "rate": 47.38,
+      "accepted": 596,
+      "submitted": 1258
+    },
+    {
+      "year": 2025,
+      "rate": 39.62,
+      "accepted": 412,
+      "submitted": 1040
+    }
+  ],
+  "iclr": [
+    {
+      "year": 2021,
+      "rate": 28.7,
+      "accepted": 860,
+      "submitted": 2997
+    },
+    {
+      "year": 2022,
+      "rate": 32.29,
+      "accepted": 1095,
+      "submitted": 3391
+    },
+    {
+      "year": 2023,
+      "rate": 31.88,
+      "accepted": 1574,
+      "submitted": 4938
+    },
+    {
+      "year": 2024,
+      "rate": 31.12,
+      "accepted": 2260,
+      "submitted": 7262
+    },
+    {
+      "year": 2025,
+      "rate": 31.92,
+      "accepted": 3704,
+      "submitted": 11603
+    },
+    {
+      "year": 2026,
+      "rate": 27.43,
+      "accepted": 5355,
+      "submitted": 19525
+    }
+  ],
+  "icme": [
+    {
+      "year": 2022,
+      "rate": 29.65,
+      "accepted": 381,
+      "submitted": 1285
+    },
+    {
+      "year": 2023,
+      "rate": 34.49,
+      "accepted": 488,
+      "submitted": 1415
+    },
+    {
+      "year": 2024,
+      "rate": 32.5,
+      "accepted": 666,
+      "submitted": 2049
+    },
+    {
+      "year": 2025,
+      "rate": 27.27,
+      "accepted": 1019,
+      "submitted": 3737
+    }
+  ],
+  "icmi": [
+    {
+      "year": 2021,
+      "rate": 37.65,
+      "accepted": 93,
+      "submitted": 247
+    },
+    {
+      "year": 2022,
+      "rate": 32.84,
+      "accepted": 66,
+      "submitted": 201
+    },
+    {
+      "year": 2024,
+      "rate": 38.31,
+      "accepted": 59,
+      "submitted": 154
+    }
+  ],
+  "icml": [
+    {
+      "year": 2023,
+      "rate": 27.94,
+      "accepted": 1827,
+      "submitted": 6538
+    },
+    {
+      "year": 2024,
+      "rate": 27.54,
+      "accepted": 2609,
+      "submitted": 9473
+    },
+    {
+      "year": 2025,
+      "rate": 26.93,
+      "accepted": 3260,
+      "submitted": 12107
+    },
+    {
+      "year": 2026,
+      "rate": 26.57,
+      "accepted": 6552,
+      "submitted": 24661
+    }
+  ],
+  "icmr": [
+    {
+      "year": 2022,
+      "rate": 34.39,
+      "accepted": 54,
+      "submitted": 157
+    },
+    {
+      "year": 2024,
+      "rate": 41.64,
+      "accepted": 117,
+      "submitted": 281
+    },
+    {
+      "year": 2026,
+      "rate": 35.15,
+      "accepted": 277,
+      "submitted": 788
+    }
+  ],
+  "icnp": [
+    {
+      "year": 2023,
+      "rate": 18.78,
+      "accepted": 34,
+      "submitted": 181
+    },
+    {
+      "year": 2024,
+      "rate": 24.39,
+      "accepted": 50,
+      "submitted": 205
+    },
+    {
+      "year": 2025,
+      "rate": 25.21,
+      "accepted": 60,
+      "submitted": 238
+    },
+    {
+      "year": 2026,
+      "rate": 24.19,
+      "accepted": 67,
+      "submitted": 277
+    }
+  ],
+  "iconip": [
+    {
+      "year": 2022,
+      "rate": 35.79,
+      "accepted": 359,
+      "submitted": 1003
+    },
+    {
+      "year": 2023,
+      "rate": 51.02,
+      "accepted": 650,
+      "submitted": 1274
+    },
+    {
+      "year": 2024,
+      "rate": 60.72,
+      "accepted": 790,
+      "submitted": 1301
+    },
+    {
+      "year": 2025,
+      "rate": 39.01,
+      "accepted": 426,
+      "submitted": 1092
+    }
+  ],
+  "icpc": [
+    {
+      "year": 2022,
+      "rate": 47.06,
+      "accepted": 48,
+      "submitted": 102
+    },
+    {
+      "year": 2023,
+      "rate": 32.84,
+      "accepted": 22,
+      "submitted": 67
+    },
+    {
+      "year": 2024,
+      "rate": 36.59,
+      "accepted": 30,
+      "submitted": 82
+    },
+    {
+      "year": 2025,
+      "rate": 41.3,
+      "accepted": 38,
+      "submitted": 92
+    }
+  ],
+  "icpr": [
+    {
+      "year": 2022,
+      "rate": 46.28,
+      "accepted": 716,
+      "submitted": 1547
+    },
+    {
+      "year": 2024,
+      "rate": 44.26,
+      "accepted": 945,
+      "submitted": 2135
+    }
+  ],
+  "icra": [
+    {
+      "year": 2021,
+      "rate": 43.59,
+      "accepted": 1690,
+      "submitted": 3877
+    },
+    {
+      "year": 2022,
+      "rate": 43.1,
+      "accepted": 1428,
+      "submitted": 3313
+    },
+    {
+      "year": 2023,
+      "rate": 42.91,
+      "accepted": 1341,
+      "submitted": 3125
+    },
+    {
+      "year": 2024,
+      "rate": 44.7,
+      "accepted": 1760,
+      "submitted": 3937
+    },
+    {
+      "year": 2025,
+      "rate": 37.79,
+      "accepted": 1606,
+      "submitted": 4250
+    }
+  ],
+  "ics": [
+    {
+      "year": 2021,
+      "rate": 24.84,
+      "accepted": 39,
+      "submitted": 157
+    },
+    {
+      "year": 2022,
+      "rate": 24.22,
+      "accepted": 39,
+      "submitted": 161
+    },
+    {
+      "year": 2023,
+      "rate": 29.41,
+      "accepted": 40,
+      "submitted": 136
+    }
+  ],
+  "icse": [
+    {
+      "year": 2021,
+      "rate": 22.44,
+      "accepted": 138,
+      "submitted": 615
+    },
+    {
+      "year": 2022,
+      "rate": 28.51,
+      "accepted": 197,
+      "submitted": 691
+    },
+    {
+      "year": 2023,
+      "rate": 26.1,
+      "accepted": 208,
+      "submitted": 797
+    },
+    {
+      "year": 2024,
+      "rate": 22.26,
+      "accepted": 234,
+      "submitted": 1051
+    },
+    {
+      "year": 2025,
+      "rate": 21.3,
+      "accepted": 245,
+      "submitted": 1150
+    },
+    {
+      "year": 2026,
+      "rate": 21.85,
+      "accepted": 321,
+      "submitted": 1469
+    }
+  ],
+  "icsme": [
+    {
+      "year": 2021,
+      "rate": 21.39,
+      "accepted": 43,
+      "submitted": 201
+    },
+    {
+      "year": 2022,
+      "rate": 22.79,
+      "accepted": 31,
+      "submitted": 136
+    },
+    {
+      "year": 2023,
+      "rate": 22.69,
+      "accepted": 27,
+      "submitted": 119
+    },
+    {
+      "year": 2024,
+      "rate": 25.52,
+      "accepted": 49,
+      "submitted": 192
+    },
+    {
+      "year": 2025,
+      "rate": 23.94,
+      "accepted": 45,
+      "submitted": 188
+    }
+  ],
+  "icsoc": [
+    {
+      "year": 2021,
+      "rate": 31.75,
+      "accepted": 60,
+      "submitted": 189
+    },
+    {
+      "year": 2022,
+      "rate": 19.91,
+      "accepted": 44,
+      "submitted": 221
+    },
+    {
+      "year": 2023,
+      "rate": 21.63,
+      "accepted": 45,
+      "submitted": 208
+    },
+    {
+      "year": 2024,
+      "rate": 22.35,
+      "accepted": 57,
+      "submitted": 255
+    },
+    {
+      "year": 2025,
+      "rate": 28.77,
+      "accepted": 63,
+      "submitted": 219
+    }
+  ],
+  "icst": [
+    {
+      "year": 2021,
+      "rate": 27.59,
+      "accepted": 24,
+      "submitted": 87
+    },
+    {
+      "year": 2022,
+      "rate": 29.41,
+      "accepted": 25,
+      "submitted": 85
+    },
+    {
+      "year": 2023,
+      "rate": 28.89,
+      "accepted": 26,
+      "submitted": 90
+    },
+    {
+      "year": 2024,
+      "rate": 25.0,
+      "accepted": 28,
+      "submitted": 112
+    },
+    {
+      "year": 2025,
+      "rate": 29.91,
+      "accepted": 32,
+      "submitted": 107
+    },
+    {
+      "year": 2026,
+      "rate": 29.14,
+      "accepted": 44,
+      "submitted": 151
+    }
+  ],
+  "ictai": [
+    {
+      "year": 2021,
+      "rate": 43.12,
+      "accepted": 235,
+      "submitted": 545
+    },
+    {
+      "year": 2025,
+      "rate": 33.02,
+      "accepted": 209,
+      "submitted": 633
+    }
+  ],
+  "icvrv": [
+    {
+      "year": 2024,
+      "rate": 27.92,
+      "accepted": 55,
+      "submitted": 197
+    },
+    {
+      "year": 2025,
+      "rate": 31.12,
+      "accepted": 178,
+      "submitted": 572
+    }
+  ],
+  "icws": [
+    {
+      "year": 2021,
+      "rate": 23.71,
+      "accepted": 46,
+      "submitted": 194
+    },
+    {
+      "year": 2022,
+      "rate": 12.35,
+      "accepted": 21,
+      "submitted": 170
+    },
+    {
+      "year": 2023,
+      "rate": 19.78,
+      "accepted": 53,
+      "submitted": 268
+    },
+    {
+      "year": 2024,
+      "rate": 19.56,
+      "accepted": 80,
+      "submitted": 409
+    },
+    {
+      "year": 2025,
+      "rate": 18.5,
+      "accepted": 64,
+      "submitted": 346
+    }
+  ],
+  "idc": [
+    {
+      "year": 2023,
+      "rate": 35.63,
+      "accepted": 31,
+      "submitted": 87
+    },
+    {
+      "year": 2024,
+      "rate": 33.66,
+      "accepted": 34,
+      "submitted": 101
+    }
+  ],
+  "ieeeacmcgo": [
+    {
+      "year": 2021,
+      "rate": 34.83,
+      "accepted": 31,
+      "submitted": 89
+    },
+    {
+      "year": 2022,
+      "rate": 27.27,
+      "accepted": 27,
+      "submitted": 99
+    }
+  ],
+  "ieeecec": [
+    {
+      "year": 2023,
+      "rate": 56.52,
+      "accepted": 130,
+      "submitted": 230
+    },
+    {
+      "year": 2024,
+      "rate": 52.63,
+      "accepted": 350,
+      "submitted": 665
+    }
+  ],
+  "ieeevis": [
+    {
+      "year": 2022,
+      "rate": 25.87,
+      "accepted": 119,
+      "submitted": 460
+    },
+    {
+      "year": 2023,
+      "rate": 24.68,
+      "accepted": 133,
+      "submitted": 539
+    },
+    {
+      "year": 2024,
+      "rate": 22.26,
+      "accepted": 124,
+      "submitted": 557
+    },
+    {
+      "year": 2025,
+      "rate": 24.39,
+      "accepted": 131,
+      "submitted": 537
+    }
+  ],
+  "ieeevr": [
+    {
+      "year": 2021,
+      "rate": 23.65,
+      "accepted": 92,
+      "submitted": 389
+    },
+    {
+      "year": 2022,
+      "rate": 21.53,
+      "accepted": 90,
+      "submitted": 418
+    },
+    {
+      "year": 2023,
+      "rate": 21.24,
+      "accepted": 130,
+      "submitted": 612
+    },
+    {
+      "year": 2024,
+      "rate": 28.71,
+      "accepted": 180,
+      "submitted": 627
+    },
+    {
+      "year": 2025,
+      "rate": 26.88,
+      "accepted": 211,
+      "submitted": 785
+    },
+    {
+      "year": 2026,
+      "rate": 29.42,
+      "accepted": 228,
+      "submitted": 775
+    }
+  ],
+  "ifipwg119": [
+    {
+      "year": 2025,
+      "rate": 40.0,
+      "accepted": 10,
+      "submitted": 25
+    },
+    {
+      "year": 2026,
+      "rate": 30.77,
+      "accepted": 12,
+      "submitted": 39
+    }
+  ],
+  "ihmmsec": [
+    {
+      "year": 2022,
+      "rate": 47.37,
+      "accepted": 18,
+      "submitted": 38
+    },
+    {
+      "year": 2025,
+      "rate": 50.0,
+      "accepted": 20,
+      "submitted": 40
+    }
+  ],
+  "iiswc": [
+    {
+      "year": 2021,
+      "rate": 39.58,
+      "accepted": 19,
+      "submitted": 48
+    },
+    {
+      "year": 2022,
+      "rate": 47.92,
+      "accepted": 23,
+      "submitted": 48
+    },
+    {
+      "year": 2025,
+      "rate": 41.76,
+      "accepted": 38,
+      "submitted": 91
+    }
+  ],
+  "ijcai": [
+    {
+      "year": 2021,
+      "rate": 13.96,
+      "accepted": 587,
+      "submitted": 4204
+    },
+    {
+      "year": 2022,
+      "rate": 14.97,
+      "accepted": 679,
+      "submitted": 4537
+    },
+    {
+      "year": 2023,
+      "rate": 14.08,
+      "accepted": 643,
+      "submitted": 4566
+    },
+    {
+      "year": 2024,
+      "rate": 14.0,
+      "accepted": 791,
+      "submitted": 5651
+    },
+    {
+      "year": 2025,
+      "rate": 17.62,
+      "accepted": 1023,
+      "submitted": 5806
+    }
+  ],
+  "ijcar": [
+    {
+      "year": 2022,
+      "rate": 48.24,
+      "accepted": 41,
+      "submitted": 85
+    },
+    {
+      "year": 2024,
+      "rate": 39.13,
+      "accepted": 45,
+      "submitted": 115
+    },
+    {
+      "year": 2026,
+      "rate": 43.75,
+      "accepted": 49,
+      "submitted": 112
+    }
+  ],
+  "ijcb": [
+    {
+      "year": 2021,
+      "rate": 40.24,
+      "accepted": 66,
+      "submitted": 164
+    },
+    {
+      "year": 2023,
+      "rate": 36.18,
+      "accepted": 72,
+      "submitted": 199
+    },
+    {
+      "year": 2024,
+      "rate": 32.18,
+      "accepted": 56,
+      "submitted": 174
+    },
+    {
+      "year": 2025,
+      "rate": 39.09,
+      "accepted": 95,
+      "submitted": 243
+    }
+  ],
+  "ijcnlp": [
+    {
+      "year": 2021,
+      "rate": 21.19,
+      "accepted": 710,
+      "submitted": 3350
+    },
+    {
+      "year": 2022,
+      "rate": 26.53,
+      "accepted": 147,
+      "submitted": 554
+    },
+    {
+      "year": 2023,
+      "rate": 25.9,
+      "accepted": 94,
+      "submitted": 363
+    },
+    {
+      "year": 2025,
+      "rate": 15.93,
+      "accepted": 232,
+      "submitted": 1456
+    }
+  ],
+  "ijcnn": [
+    {
+      "year": 2021,
+      "rate": 58.22,
+      "accepted": 1183,
+      "submitted": 2032
+    },
+    {
+      "year": 2023,
+      "rate": 54.77,
+      "accepted": 1034,
+      "submitted": 1888
+    },
+    {
+      "year": 2025,
+      "rate": 38.94,
+      "accepted": 2152,
+      "submitted": 5526
+    }
+  ],
+  "imc": [
+    {
+      "year": 2021,
+      "rate": 27.92,
+      "accepted": 55,
+      "submitted": 197
+    },
+    {
+      "year": 2022,
+      "rate": 26.57,
+      "accepted": 38,
+      "submitted": 143
+    },
+    {
+      "year": 2023,
+      "rate": 25.0,
+      "accepted": 52,
+      "submitted": 208
+    },
+    {
+      "year": 2024,
+      "rate": 21.74,
+      "accepted": 55,
+      "submitted": 253
+    }
+  ],
+  "indocrypt": [
+    {
+      "year": 2021,
+      "rate": 40.91,
+      "accepted": 27,
+      "submitted": 66
+    },
+    {
+      "year": 2022,
+      "rate": 35.23,
+      "accepted": 31,
+      "submitted": 88
+    },
+    {
+      "year": 2023,
+      "rate": 31.4,
+      "accepted": 27,
+      "submitted": 86
+    },
+    {
+      "year": 2024,
+      "rate": 32.29,
+      "accepted": 31,
+      "submitted": 96
+    },
+    {
+      "year": 2025,
+      "rate": 22.89,
+      "accepted": 19,
+      "submitted": 83
+    }
+  ],
+  "infocom": [
+    {
+      "year": 2022,
+      "rate": 19.84,
+      "accepted": 224,
+      "submitted": 1129
+    },
+    {
+      "year": 2023,
+      "rate": 19.21,
+      "accepted": 252,
+      "submitted": 1312
+    },
+    {
+      "year": 2024,
+      "rate": 19.59,
+      "accepted": 256,
+      "submitted": 1307
+    },
+    {
+      "year": 2025,
+      "rate": 18.66,
+      "accepted": 272,
+      "submitted": 1458
+    },
+    {
+      "year": 2026,
+      "rate": 18.79,
+      "accepted": 327,
+      "submitted": 1740
+    }
+  ],
+  "inscrypt": [
+    {
+      "year": 2021,
+      "rate": 34.57,
+      "accepted": 28,
+      "submitted": 81
+    },
+    {
+      "year": 2022,
+      "rate": 38.24,
+      "accepted": 26,
+      "submitted": 68
+    },
+    {
+      "year": 2023,
+      "rate": 29.61,
+      "accepted": 45,
+      "submitted": 152
+    },
+    {
+      "year": 2024,
+      "rate": 29.49,
+      "accepted": 46,
+      "submitted": 156
+    },
+    {
+      "year": 2025,
+      "rate": 25.08,
+      "accepted": 79,
+      "submitted": 315
+    }
+  ],
+  "interact": [
+    {
+      "year": 2023,
+      "rate": 32.27,
+      "accepted": 71,
+      "submitted": 220
+    }
+  ],
+  "internetware": [
+    {
+      "year": 2023,
+      "rate": 40.0,
+      "accepted": 30,
+      "submitted": 75
+    },
+    {
+      "year": 2024,
+      "rate": 45.19,
+      "accepted": 47,
+      "submitted": 104
+    },
+    {
+      "year": 2025,
+      "rate": 43.86,
+      "accepted": 50,
+      "submitted": 114
+    }
+  ],
+  "interspeech": [
+    {
+      "year": 2021,
+      "rate": 48.39,
+      "accepted": 963,
+      "submitted": 1990
+    },
+    {
+      "year": 2022,
+      "rate": 51.5,
+      "accepted": 1102,
+      "submitted": 2140
+    },
+    {
+      "year": 2023,
+      "rate": 49.71,
+      "accepted": 1097,
+      "submitted": 2207
+    },
+    {
+      "year": 2024,
+      "rate": 48.13,
+      "accepted": 1029,
+      "submitted": 2138
+    },
+    {
+      "year": 2025,
+      "rate": 49.89,
+      "accepted": 1164,
+      "submitted": 2333
+    },
+    {
+      "year": 2026,
+      "rate": 44.91,
+      "accepted": 1360,
+      "submitted": 3028
+    }
+  ],
+  "ipsn": [
+    {
+      "year": 2021,
+      "rate": 24.76,
+      "accepted": 26,
+      "submitted": 105
+    },
+    {
+      "year": 2022,
+      "rate": 30.16,
+      "accepted": 38,
+      "submitted": 126
+    },
+    {
+      "year": 2023,
+      "rate": 26.51,
+      "accepted": 22,
+      "submitted": 83
+    },
+    {
+      "year": 2024,
+      "rate": 21.51,
+      "accepted": 20,
+      "submitted": 93
+    }
+  ],
+  "iros": [
+    {
+      "year": 2022,
+      "rate": 47.95,
+      "accepted": 1716,
+      "submitted": 3579
+    },
+    {
+      "year": 2023,
+      "rate": 43.33,
+      "accepted": 1196,
+      "submitted": 2760
+    },
+    {
+      "year": 2025,
+      "rate": 46.24,
+      "accepted": 1991,
+      "submitted": 4306
+    },
+    {
+      "year": 2026,
+      "rate": 36.45,
+      "accepted": 1585,
+      "submitted": 4348
+    }
+  ],
+  "isaac": [
+    {
+      "year": 2021,
+      "rate": 33.49,
+      "accepted": 72,
+      "submitted": 215
+    },
+    {
+      "year": 2022,
+      "rate": 36.72,
+      "accepted": 65,
+      "submitted": 177
+    },
+    {
+      "year": 2023,
+      "rate": 29.89,
+      "accepted": 55,
+      "submitted": 184
+    },
+    {
+      "year": 2024,
+      "rate": 29.02,
+      "accepted": 56,
+      "submitted": 193
+    },
+    {
+      "year": 2025,
+      "rate": 29.21,
+      "accepted": 52,
+      "submitted": 178
+    }
+  ],
+  "isbra": [
+    {
+      "year": 2021,
+      "rate": 37.78,
+      "accepted": 51,
+      "submitted": 135
+    },
+    {
+      "year": 2022,
+      "rate": 41.67,
+      "accepted": 30,
+      "submitted": 72
+    },
+    {
+      "year": 2024,
+      "rate": 39.41,
+      "accepted": 93,
+      "submitted": 236
+    },
+    {
+      "year": 2025,
+      "rate": 39.52,
+      "accepted": 66,
+      "submitted": 167
+    },
+    {
+      "year": 2026,
+      "rate": 36.31,
+      "accepted": 61,
+      "submitted": 168
+    }
+  ],
+  "isc": [
+    {
+      "year": 2021,
+      "rate": 24.14,
+      "accepted": 21,
+      "submitted": 87
+    },
+    {
+      "year": 2022,
+      "rate": 29.17,
+      "accepted": 21,
+      "submitted": 72
+    },
+    {
+      "year": 2023,
+      "rate": 29.59,
+      "accepted": 29,
+      "submitted": 98
+    },
+    {
+      "year": 2024,
+      "rate": 27.5,
+      "accepted": 33,
+      "submitted": 120
+    },
+    {
+      "year": 2025,
+      "rate": 36.36,
+      "accepted": 28,
+      "submitted": 77
+    }
+  ],
+  "isca": [
+    {
+      "year": 2022,
+      "rate": 16.75,
+      "accepted": 67,
+      "submitted": 400
+    },
+    {
+      "year": 2023,
+      "rate": 21.24,
+      "accepted": 79,
+      "submitted": 372
+    },
+    {
+      "year": 2024,
+      "rate": 19.62,
+      "accepted": 83,
+      "submitted": 423
+    }
+  ],
+  "iscas": [
+    {
+      "year": 2026,
+      "rate": 51.94,
+      "accepted": 869,
+      "submitted": 1673
+    }
+  ],
+  "isit": [
+    {
+      "year": 2022,
+      "rate": 68.86,
+      "accepted": 566,
+      "submitted": 822
+    },
+    {
+      "year": 2023,
+      "rate": 64.57,
+      "accepted": 463,
+      "submitted": 717
+    }
+  ],
+  "ismar": [
+    {
+      "year": 2021,
+      "rate": 23.63,
+      "accepted": 56,
+      "submitted": 237
+    },
+    {
+      "year": 2022,
+      "rate": 21.09,
+      "accepted": 93,
+      "submitted": 441
+    },
+    {
+      "year": 2023,
+      "rate": 32.24,
+      "accepted": 128,
+      "submitted": 397
+    },
+    {
+      "year": 2024,
+      "rate": 30.43,
+      "accepted": 133,
+      "submitted": 437
+    },
+    {
+      "year": 2025,
+      "rate": 28.44,
+      "accepted": 217,
+      "submitted": 763
+    }
+  ],
+  "ismb": [
+    {
+      "year": 2021,
+      "rate": 19.03,
+      "accepted": 55,
+      "submitted": 289
+    },
+    {
+      "year": 2022,
+      "rate": 19.75,
+      "accepted": 48,
+      "submitted": 243
+    },
+    {
+      "year": 2023,
+      "rate": 17.86,
+      "accepted": 60,
+      "submitted": 336
+    },
+    {
+      "year": 2024,
+      "rate": 18.24,
+      "accepted": 58,
+      "submitted": 318
+    },
+    {
+      "year": 2025,
+      "rate": 16.96,
+      "accepted": 67,
+      "submitted": 395
+    },
+    {
+      "year": 2026,
+      "rate": 15.93,
+      "accepted": 65,
+      "submitted": 408
+    }
+  ],
+  "ispass": [
+    {
+      "year": 2021,
+      "rate": 36.92,
+      "accepted": 24,
+      "submitted": 65
+    },
+    {
+      "year": 2022,
+      "rate": 28.92,
+      "accepted": 24,
+      "submitted": 83
+    },
+    {
+      "year": 2024,
+      "rate": 34.29,
+      "accepted": 24,
+      "submitted": 70
+    },
+    {
+      "year": 2025,
+      "rate": 28.28,
+      "accepted": 28,
+      "submitted": 99
+    },
+    {
+      "year": 2026,
+      "rate": 39.13,
+      "accepted": 54,
+      "submitted": 138
+    }
+  ],
+  "ispd": [
+    {
+      "year": 2023,
+      "rate": 52.0,
+      "accepted": 13,
+      "submitted": 25
+    },
+    {
+      "year": 2024,
+      "rate": 37.5,
+      "accepted": 18,
+      "submitted": 48
+    },
+    {
+      "year": 2025,
+      "rate": 37.5,
+      "accepted": 18,
+      "submitted": 48
+    },
+    {
+      "year": 2026,
+      "rate": 34.15,
+      "accepted": 14,
+      "submitted": 41
+    }
+  ],
+  "iss": [
+    {
+      "year": 2021,
+      "rate": 29.87,
+      "accepted": 23,
+      "submitted": 77
+    }
+  ],
+  "issre": [
+    {
+      "year": 2021,
+      "rate": 27.51,
+      "accepted": 52,
+      "submitted": 189
+    },
+    {
+      "year": 2022,
+      "rate": 29.01,
+      "accepted": 47,
+      "submitted": 162
+    },
+    {
+      "year": 2023,
+      "rate": 28.34,
+      "accepted": 70,
+      "submitted": 247
+    },
+    {
+      "year": 2024,
+      "rate": 25.85,
+      "accepted": 53,
+      "submitted": 205
+    },
+    {
+      "year": 2025,
+      "rate": 27.65,
+      "accepted": 47,
+      "submitted": 170
+    }
+  ],
+  "issta": [
+    {
+      "year": 2021,
+      "rate": 23.29,
+      "accepted": 51,
+      "submitted": 219
+    },
+    {
+      "year": 2022,
+      "rate": 24.4,
+      "accepted": 61,
+      "submitted": 250
+    },
+    {
+      "year": 2024,
+      "rate": 20.61,
+      "accepted": 143,
+      "submitted": 694
+    },
+    {
+      "year": 2026,
+      "rate": 23.65,
+      "accepted": 210,
+      "submitted": 888
+    }
+  ],
+  "iswc": [
+    {
+      "year": 2021,
+      "rate": 20.79,
+      "accepted": 42,
+      "submitted": 202
+    },
+    {
+      "year": 2022,
+      "rate": 19.23,
+      "accepted": 30,
+      "submitted": 156
+    },
+    {
+      "year": 2023,
+      "rate": 19.41,
+      "accepted": 33,
+      "submitted": 170
+    },
+    {
+      "year": 2024,
+      "rate": 23.42,
+      "accepted": 26,
+      "submitted": 111
+    },
+    {
+      "year": 2025,
+      "rate": 21.66,
+      "accepted": 60,
+      "submitted": 277
+    }
+  ],
+  "itc": [
+    {
+      "year": 2023,
+      "rate": 18.52,
+      "accepted": 30,
+      "submitted": 162
+    },
+    {
+      "year": 2024,
+      "rate": 23.23,
+      "accepted": 36,
+      "submitted": 155
+    },
+    {
+      "year": 2025,
+      "rate": 24.39,
+      "accepted": 40,
+      "submitted": 164
+    }
+  ],
+  "itcasia": [
+    {
+      "year": 2023,
+      "rate": 64.52,
+      "accepted": 20,
+      "submitted": 31
+    }
+  ],
+  "iui": [
+    {
+      "year": 2021,
+      "rate": 26.56,
+      "accepted": 64,
+      "submitted": 241
+    },
+    {
+      "year": 2024,
+      "rate": 24.4,
+      "accepted": 61,
+      "submitted": 250
+    },
+    {
+      "year": 2025,
+      "rate": 25.06,
+      "accepted": 97,
+      "submitted": 387
+    }
+  ],
+  "iwqos": [
+    {
+      "year": 2025,
+      "rate": 28.97,
+      "accepted": 124,
+      "submitted": 428
+    }
+  ],
+  "kr": [
+    {
+      "year": 2021,
+      "rate": 26.13,
+      "accepted": 75,
+      "submitted": 287
+    },
+    {
+      "year": 2022,
+      "rate": 26.61,
+      "accepted": 58,
+      "submitted": 218
+    },
+    {
+      "year": 2023,
+      "rate": 23.6,
+      "accepted": 80,
+      "submitted": 339
+    },
+    {
+      "year": 2024,
+      "rate": 24.46,
+      "accepted": 91,
+      "submitted": 372
+    },
+    {
+      "year": 2025,
+      "rate": 34.69,
+      "accepted": 85,
+      "submitted": 245
+    },
+    {
+      "year": 2026,
+      "rate": 24.4,
+      "accepted": 112,
+      "submitted": 459
+    }
+  ],
+  "ksem": [
+    {
+      "year": 2021,
+      "rate": 33.33,
+      "accepted": 164,
+      "submitted": 492
+    },
+    {
+      "year": 2022,
+      "rate": 33.94,
+      "accepted": 169,
+      "submitted": 498
+    },
+    {
+      "year": 2023,
+      "rate": 36.46,
+      "accepted": 144,
+      "submitted": 395
+    },
+    {
+      "year": 2024,
+      "rate": 32.32,
+      "accepted": 160,
+      "submitted": 495
+    },
+    {
+      "year": 2025,
+      "rate": 48.59,
+      "accepted": 172,
+      "submitted": 354
+    },
+    {
+      "year": 2026,
+      "rate": 41.01,
+      "accepted": 285,
+      "submitted": 695
+    }
+  ],
+  "lctes": [
+    {
+      "year": 2023,
+      "rate": 40.0,
+      "accepted": 14,
+      "submitted": 35
+    }
+  ],
+  "lics": [
+    {
+      "year": 2021,
+      "rate": 40.09,
+      "accepted": 91,
+      "submitted": 227
+    },
+    {
+      "year": 2022,
+      "rate": 34.81,
+      "accepted": 63,
+      "submitted": 181
+    },
+    {
+      "year": 2023,
+      "rate": 32.81,
+      "accepted": 63,
+      "submitted": 192
+    },
+    {
+      "year": 2025,
+      "rate": 30.7,
+      "accepted": 66,
+      "submitted": 215
+    },
+    {
+      "year": 2026,
+      "rate": 27.99,
+      "accepted": 82,
+      "submitted": 293
+    }
+  ],
+  "lisa": [
+    {
+      "year": 2021,
+      "rate": 61.4,
+      "accepted": 35,
+      "submitted": 57
+    }
+  ],
+  "log": [
+    {
+      "year": 2022,
+      "rate": 28.72,
+      "accepted": 56,
+      "submitted": 195
+    },
+    {
+      "year": 2023,
+      "rate": 31.15,
+      "accepted": 38,
+      "submitted": 122
+    }
+  ],
+  "mdm": [
+    {
+      "year": 2026,
+      "rate": 30.51,
+      "accepted": 18,
+      "submitted": 59
+    }
+  ],
+  "miccai": [
+    {
+      "year": 2021,
+      "rate": 32.58,
+      "accepted": 531,
+      "submitted": 1630
+    },
+    {
+      "year": 2022,
+      "rate": 31.35,
+      "accepted": 574,
+      "submitted": 1831
+    },
+    {
+      "year": 2023,
+      "rate": 32.44,
+      "accepted": 730,
+      "submitted": 2250
+    },
+    {
+      "year": 2024,
+      "rate": 30.82,
+      "accepted": 857,
+      "submitted": 2781
+    },
+    {
+      "year": 2025,
+      "rate": 29.79,
+      "accepted": 1027,
+      "submitted": 3447
+    },
+    {
+      "year": 2026,
+      "rate": 26.51,
+      "accepted": 1167,
+      "submitted": 4402
+    }
+  ],
+  "micro": [
+    {
+      "year": 2021,
+      "rate": 21.86,
+      "accepted": 94,
+      "submitted": 430
+    },
+    {
+      "year": 2022,
+      "rate": 23.85,
+      "accepted": 83,
+      "submitted": 348
+    },
+    {
+      "year": 2023,
+      "rate": 23.27,
+      "accepted": 101,
+      "submitted": 434
+    },
+    {
+      "year": 2024,
+      "rate": 22.74,
+      "accepted": 113,
+      "submitted": 497
+    },
+    {
+      "year": 2025,
+      "rate": 20.77,
+      "accepted": 124,
+      "submitted": 597
+    }
+  ],
+  "mlsys": [
+    {
+      "year": 2021,
+      "rate": 23.53,
+      "accepted": 52,
+      "submitted": 221
+    },
+    {
+      "year": 2025,
+      "rate": 22.51,
+      "accepted": 61,
+      "submitted": 271
+    },
+    {
+      "year": 2026,
+      "rate": 26.79,
+      "accepted": 135,
+      "submitted": 504
+    }
+  ],
+  "mmm": [
+    {
+      "year": 2021,
+      "rate": 43.98,
+      "accepted": 73,
+      "submitted": 166
+    },
+    {
+      "year": 2022,
+      "rate": 43.56,
+      "accepted": 71,
+      "submitted": 163
+    },
+    {
+      "year": 2023,
+      "rate": 39.45,
+      "accepted": 86,
+      "submitted": 218
+    },
+    {
+      "year": 2024,
+      "rate": 47.48,
+      "accepted": 113,
+      "submitted": 238
+    },
+    {
+      "year": 2025,
+      "rate": 44.04,
+      "accepted": 122,
+      "submitted": 277
+    },
+    {
+      "year": 2026,
+      "rate": 54.58,
+      "accepted": 137,
+      "submitted": 251
+    }
+  ],
+  "mmsys": [
+    {
+      "year": 2021,
+      "rate": 32.73,
+      "accepted": 18,
+      "submitted": 55
+    },
+    {
+      "year": 2022,
+      "rate": 34.78,
+      "accepted": 16,
+      "submitted": 46
+    },
+    {
+      "year": 2023,
+      "rate": 24.11,
+      "accepted": 27,
+      "submitted": 112
+    },
+    {
+      "year": 2024,
+      "rate": 39.29,
+      "accepted": 22,
+      "submitted": 56
+    },
+    {
+      "year": 2025,
+      "rate": 24.05,
+      "accepted": 19,
+      "submitted": 79
+    },
+    {
+      "year": 2026,
+      "rate": 25.53,
+      "accepted": 24,
+      "submitted": 94
+    }
+  ],
+  "mobicom": [
+    {
+      "year": 2019,
+      "rate": 18.97,
+      "accepted": 55,
+      "submitted": 290
+    },
+    {
+      "year": 2024,
+      "rate": 20.85,
+      "accepted": 103,
+      "submitted": 494
+    }
+  ],
+  "mobihoc": [
+    {
+      "year": 2022,
+      "rate": 19.83,
+      "accepted": 24,
+      "submitted": 121
+    },
+    {
+      "year": 2023,
+      "rate": 22.06,
+      "accepted": 30,
+      "submitted": 136
+    },
+    {
+      "year": 2024,
+      "rate": 24.52,
+      "accepted": 38,
+      "submitted": 155
+    },
+    {
+      "year": 2025,
+      "rate": 23.08,
+      "accepted": 39,
+      "submitted": 169
+    }
+  ],
+  "mobilehci": [
+    {
+      "year": 2023,
+      "rate": 38.18,
+      "accepted": 42,
+      "submitted": 110
+    }
+  ],
+  "mobisys": [
+    {
+      "year": 2022,
+      "rate": 21.59,
+      "accepted": 38,
+      "submitted": 176
+    },
+    {
+      "year": 2024,
+      "rate": 16.35,
+      "accepted": 43,
+      "submitted": 263
+    },
+    {
+      "year": 2025,
+      "rate": 18.03,
+      "accepted": 42,
+      "submitted": 233
+    },
+    {
+      "year": 2026,
+      "rate": 22.52,
+      "accepted": 68,
+      "submitted": 302
+    }
+  ],
+  "models": [
+    {
+      "year": 2021,
+      "rate": 27.43,
+      "accepted": 31,
+      "submitted": 113
+    },
+    {
+      "year": 2023,
+      "rate": 24.59,
+      "accepted": 30,
+      "submitted": 122
+    },
+    {
+      "year": 2024,
+      "rate": 23.42,
+      "accepted": 26,
+      "submitted": 111
+    },
+    {
+      "year": 2025,
+      "rate": 25.0,
+      "accepted": 20,
+      "submitted": 80
+    }
+  ],
+  "msr": [
+    {
+      "year": 2021,
+      "rate": 34.29,
+      "accepted": 48,
+      "submitted": 140
+    },
+    {
+      "year": 2022,
+      "rate": 34.06,
+      "accepted": 47,
+      "submitted": 138
+    },
+    {
+      "year": 2023,
+      "rate": 36.44,
+      "accepted": 43,
+      "submitted": 118
+    },
+    {
+      "year": 2025,
+      "rate": 29.19,
+      "accepted": 47,
+      "submitted": 161
+    }
+  ],
+  "naacl": [
+    {
+      "year": 2021,
+      "rate": 26.54,
+      "accepted": 477,
+      "submitted": 1797
+    },
+    {
+      "year": 2024,
+      "rate": 23.21,
+      "accepted": 565,
+      "submitted": 2434
+    }
+  ],
+  "ncmmsc": [
+    {
+      "year": 2024,
+      "rate": 76.1,
+      "accepted": 156,
+      "submitted": 205
+    },
+    {
+      "year": 2025,
+      "rate": 65.15,
+      "accepted": 157,
+      "submitted": 241
+    }
+  ],
+  "ndss": [
+    {
+      "year": 2021,
+      "rate": 15.18,
+      "accepted": 87,
+      "submitted": 573
+    },
+    {
+      "year": 2022,
+      "rate": 16.18,
+      "accepted": 83,
+      "submitted": 513
+    },
+    {
+      "year": 2023,
+      "rate": 16.38,
+      "accepted": 94,
+      "submitted": 574
+    },
+    {
+      "year": 2024,
+      "rate": 20.17,
+      "accepted": 140,
+      "submitted": 694
+    },
+    {
+      "year": 2026,
+      "rate": 17.89,
+      "accepted": 265,
+      "submitted": 1481
+    }
+  ],
+  "networking": [
+    {
+      "year": 2023,
+      "rate": 27.08,
+      "accepted": 52,
+      "submitted": 192
+    }
+  ],
+  "netys": [
+    {
+      "year": 2021,
+      "rate": 53.12,
+      "accepted": 17,
+      "submitted": 32
+    },
+    {
+      "year": 2022,
+      "rate": 20.0,
+      "accepted": 20,
+      "submitted": 100
+    },
+    {
+      "year": 2023,
+      "rate": 38.71,
+      "accepted": 12,
+      "submitted": 31
+    },
+    {
+      "year": 2024,
+      "rate": 40.48,
+      "accepted": 17,
+      "submitted": 42
+    },
+    {
+      "year": 2025,
+      "rate": 37.78,
+      "accepted": 17,
+      "submitted": 45
+    },
+    {
+      "year": 2026,
+      "rate": 39.47,
+      "accepted": 15,
+      "submitted": 38
+    }
+  ],
+  "neurips": [
+    {
+      "year": 2021,
+      "rate": 25.59,
+      "accepted": 2334,
+      "submitted": 9122
+    },
+    {
+      "year": 2022,
+      "rate": 25.67,
+      "accepted": 2672,
+      "submitted": 10411
+    },
+    {
+      "year": 2023,
+      "rate": 26.07,
+      "accepted": 3218,
+      "submitted": 12343
+    },
+    {
+      "year": 2024,
+      "rate": 25.76,
+      "accepted": 4037,
+      "submitted": 15671
+    },
+    {
+      "year": 2025,
+      "rate": 24.52,
+      "accepted": 5290,
+      "submitted": 21575
+    }
+  ],
+  "nlpcc": [
+    {
+      "year": 2021,
+      "rate": 23.32,
+      "accepted": 104,
+      "submitted": 446
+    },
+    {
+      "year": 2022,
+      "rate": 25.38,
+      "accepted": 83,
+      "submitted": 327
+    },
+    {
+      "year": 2023,
+      "rate": 29.92,
+      "accepted": 143,
+      "submitted": 478
+    },
+    {
+      "year": 2024,
+      "rate": 35.7,
+      "accepted": 161,
+      "submitted": 451
+    },
+    {
+      "year": 2025,
+      "rate": 30.1,
+      "accepted": 152,
+      "submitted": 505
+    }
+  ],
+  "noms": [
+    {
+      "year": 2022,
+      "rate": 24.86,
+      "accepted": 43,
+      "submitted": 173
+    },
+    {
+      "year": 2023,
+      "rate": 22.34,
+      "accepted": 44,
+      "submitted": 197
+    },
+    {
+      "year": 2024,
+      "rate": 29.41,
+      "accepted": 50,
+      "submitted": 170
+    },
+    {
+      "year": 2025,
+      "rate": 27.12,
+      "accepted": 48,
+      "submitted": 177
+    }
+  ],
+  "nossdav": [
+    {
+      "year": 2022,
+      "rate": 31.58,
+      "accepted": 12,
+      "submitted": 38
+    },
+    {
+      "year": 2023,
+      "rate": 28.57,
+      "accepted": 10,
+      "submitted": 35
+    },
+    {
+      "year": 2024,
+      "rate": 34.48,
+      "accepted": 10,
+      "submitted": 29
+    },
+    {
+      "year": 2025,
+      "rate": 38.89,
+      "accepted": 14,
+      "submitted": 36
+    },
+    {
+      "year": 2026,
+      "rate": 38.98,
+      "accepted": 23,
+      "submitted": 59
+    }
+  ],
+  "nsdi": [
+    {
+      "year": 2021,
+      "rate": 15.99,
+      "accepted": 59,
+      "submitted": 369
+    },
+    {
+      "year": 2022,
+      "rate": 19.7,
+      "accepted": 78,
+      "submitted": 396
+    },
+    {
+      "year": 2023,
+      "rate": 17.14,
+      "accepted": 96,
+      "submitted": 560
+    },
+    {
+      "year": 2024,
+      "rate": 18.64,
+      "accepted": 112,
+      "submitted": 601
+    },
+    {
+      "year": 2025,
+      "rate": 12.46,
+      "accepted": 83,
+      "submitted": 666
+    },
+    {
+      "year": 2026,
+      "rate": 22.76,
+      "accepted": 150,
+      "submitted": 659
+    }
+  ],
+  "nspw": [
+    {
+      "year": 2021,
+      "rate": 25.0,
+      "accepted": 8,
+      "submitted": 32
+    },
+    {
+      "year": 2022,
+      "rate": 45.45,
+      "accepted": 10,
+      "submitted": 22
+    }
+  ],
+  "oopsla": [
+    {
+      "year": 2021,
+      "rate": 34.63,
+      "accepted": 71,
+      "submitted": 205
+    },
+    {
+      "year": 2023,
+      "rate": 36.18,
+      "accepted": 110,
+      "submitted": 304
+    },
+    {
+      "year": 2024,
+      "rate": 38.54,
+      "accepted": 148,
+      "submitted": 384
+    }
+  ],
+  "osdi": [
+    {
+      "year": 2021,
+      "rate": 18.79,
+      "accepted": 31,
+      "submitted": 165
+    },
+    {
+      "year": 2022,
+      "rate": 19.37,
+      "accepted": 49,
+      "submitted": 253
+    },
+    {
+      "year": 2023,
+      "rate": 19.61,
+      "accepted": 50,
+      "submitted": 255
+    },
+    {
+      "year": 2024,
+      "rate": 18.01,
+      "accepted": 49,
+      "submitted": 272
+    },
+    {
+      "year": 2025,
+      "rate": 15.63,
+      "accepted": 53,
+      "submitted": 339
+    },
+    {
+      "year": 2026,
+      "rate": 20.03,
+      "accepted": 134,
+      "submitted": 669
+    }
+  ],
+  "pacificvis": [
+    {
+      "year": 2021,
+      "rate": 25.0,
+      "accepted": 20,
+      "submitted": 80
+    },
+    {
+      "year": 2022,
+      "rate": 28.0,
+      "accepted": 21,
+      "submitted": 75
+    },
+    {
+      "year": 2023,
+      "rate": 28.75,
+      "accepted": 23,
+      "submitted": 80
+    },
+    {
+      "year": 2024,
+      "rate": 30.0,
+      "accepted": 27,
+      "submitted": 90
+    },
+    {
+      "year": 2025,
+      "rate": 11.38,
+      "accepted": 14,
+      "submitted": 123
+    },
+    {
+      "year": 2026,
+      "rate": 19.19,
+      "accepted": 19,
+      "submitted": 99
+    }
+  ],
+  "pakdd": [
+    {
+      "year": 2021,
+      "rate": 25.0,
+      "accepted": 157,
+      "submitted": 628
+    },
+    {
+      "year": 2022,
+      "rate": 21.68,
+      "accepted": 121,
+      "submitted": 558
+    },
+    {
+      "year": 2023,
+      "rate": 17.59,
+      "accepted": 143,
+      "submitted": 813
+    },
+    {
+      "year": 2024,
+      "rate": 24.58,
+      "accepted": 177,
+      "submitted": 720
+    },
+    {
+      "year": 2025,
+      "rate": 24.14,
+      "accepted": 168,
+      "submitted": 696
+    },
+    {
+      "year": 2026,
+      "rate": 25.27,
+      "accepted": 184,
+      "submitted": 728
+    }
+  ],
+  "pam": [
+    {
+      "year": 2021,
+      "rate": 44.0,
+      "accepted": 33,
+      "submitted": 75
+    },
+    {
+      "year": 2022,
+      "rate": 48.39,
+      "accepted": 30,
+      "submitted": 62
+    },
+    {
+      "year": 2023,
+      "rate": 33.75,
+      "accepted": 27,
+      "submitted": 80
+    },
+    {
+      "year": 2024,
+      "rate": 42.19,
+      "accepted": 27,
+      "submitted": 64
+    },
+    {
+      "year": 2025,
+      "rate": 29.85,
+      "accepted": 20,
+      "submitted": 67
+    },
+    {
+      "year": 2026,
+      "rate": 31.58,
+      "accepted": 18,
+      "submitted": 57
+    }
+  ],
+  "pdcat": [
+    {
+      "year": 2021,
+      "rate": 24.74,
+      "accepted": 24,
+      "submitted": 97
+    },
+    {
+      "year": 2022,
+      "rate": 25.26,
+      "accepted": 24,
+      "submitted": 95
+    },
+    {
+      "year": 2024,
+      "rate": 41.23,
+      "accepted": 47,
+      "submitted": 114
+    },
+    {
+      "year": 2025,
+      "rate": 29.75,
+      "accepted": 47,
+      "submitted": 158
+    }
+  ],
+  "pepm": [
+    {
+      "year": 2021,
+      "rate": 55.56,
+      "accepted": 10,
+      "submitted": 18
+    },
+    {
+      "year": 2022,
+      "rate": 75.0,
+      "accepted": 6,
+      "submitted": 8
+    },
+    {
+      "year": 2023,
+      "rate": 50.0,
+      "accepted": 7,
+      "submitted": 14
+    }
+  ],
+  "percom": [
+    {
+      "year": 2024,
+      "rate": 9.49,
+      "accepted": 15,
+      "submitted": 158
+    }
+  ],
+  "performance": [
+    {
+      "year": 2021,
+      "rate": 26.83,
+      "accepted": 22,
+      "submitted": 82
+    },
+    {
+      "year": 2023,
+      "rate": 26.92,
+      "accepted": 14,
+      "submitted": 52
+    }
+  ],
+  "pets": [
+    {
+      "year": 2021,
+      "rate": 18.81,
+      "accepted": 82,
+      "submitted": 436
+    },
+    {
+      "year": 2022,
+      "rate": 23.97,
+      "accepted": 128,
+      "submitted": 534
+    },
+    {
+      "year": 2023,
+      "rate": 21.85,
+      "accepted": 123,
+      "submitted": 563
+    },
+    {
+      "year": 2024,
+      "rate": 20.9,
+      "accepted": 148,
+      "submitted": 708
+    },
+    {
+      "year": 2025,
+      "rate": 26.24,
+      "accepted": 169,
+      "submitted": 644
+    },
+    {
+      "year": 2026,
+      "rate": 22.41,
+      "accepted": 160,
+      "submitted": 714
+    }
+  ],
+  "pg": [
+    {
+      "year": 2021,
+      "rate": 32.1,
+      "accepted": 26,
+      "submitted": 81
+    },
+    {
+      "year": 2022,
+      "rate": 38.62,
+      "accepted": 56,
+      "submitted": 145
+    },
+    {
+      "year": 2023,
+      "rate": 29.32,
+      "accepted": 56,
+      "submitted": 191
+    },
+    {
+      "year": 2024,
+      "rate": 30.28,
+      "accepted": 109,
+      "submitted": 360
+    },
+    {
+      "year": 2025,
+      "rate": 37.74,
+      "accepted": 97,
+      "submitted": 257
+    }
+  ],
+  "pkc": [
+    {
+      "year": 2021,
+      "rate": 33.33,
+      "accepted": 52,
+      "submitted": 156
+    },
+    {
+      "year": 2022,
+      "rate": 29.2,
+      "accepted": 40,
+      "submitted": 137
+    },
+    {
+      "year": 2023,
+      "rate": 26.78,
+      "accepted": 49,
+      "submitted": 183
+    },
+    {
+      "year": 2024,
+      "rate": 30.68,
+      "accepted": 54,
+      "submitted": 176
+    },
+    {
+      "year": 2025,
+      "rate": 30.15,
+      "accepted": 60,
+      "submitted": 199
+    },
+    {
+      "year": 2026,
+      "rate": 25.1,
+      "accepted": 65,
+      "submitted": 259
+    }
+  ],
+  "pldi": [
+    {
+      "year": 2021,
+      "rate": 27.19,
+      "accepted": 87,
+      "submitted": 320
+    },
+    {
+      "year": 2022,
+      "rate": 20.86,
+      "accepted": 68,
+      "submitted": 326
+    },
+    {
+      "year": 2023,
+      "rate": 29.54,
+      "accepted": 83,
+      "submitted": 281
+    },
+    {
+      "year": 2025,
+      "rate": 28.48,
+      "accepted": 90,
+      "submitted": 316
+    }
+  ],
+  "podc": [
+    {
+      "year": 2021,
+      "rate": 25.58,
+      "accepted": 44,
+      "submitted": 172
+    }
+  ],
+  "pods": [
+    {
+      "year": 2025,
+      "rate": 35.43,
+      "accepted": 45,
+      "submitted": 127
+    }
+  ],
+  "popl": [
+    {
+      "year": 2022,
+      "rate": 22.73,
+      "accepted": 65,
+      "submitted": 286
+    },
+    {
+      "year": 2023,
+      "rate": 26.91,
+      "accepted": 74,
+      "submitted": 275
+    },
+    {
+      "year": 2025,
+      "rate": 27.43,
+      "accepted": 79,
+      "submitted": 288
+    },
+    {
+      "year": 2026,
+      "rate": 24.53,
+      "accepted": 91,
+      "submitted": 371
+    }
+  ],
+  "ppopp": [
+    {
+      "year": 2023,
+      "rate": 23.66,
+      "accepted": 31,
+      "submitted": 131
+    }
+  ],
+  "ppsn": [
+    {
+      "year": 2022,
+      "rate": 45.95,
+      "accepted": 85,
+      "submitted": 185
+    },
+    {
+      "year": 2024,
+      "rate": 34.35,
+      "accepted": 101,
+      "submitted": 294
+    },
+    {
+      "year": 2026,
+      "rate": 31.31,
+      "accepted": 165,
+      "submitted": 527
+    }
+  ],
+  "prcv": [
+    {
+      "year": 2021,
+      "rate": 39.18,
+      "accepted": 201,
+      "submitted": 513
+    },
+    {
+      "year": 2022,
+      "rate": 41.31,
+      "accepted": 233,
+      "submitted": 564
+    },
+    {
+      "year": 2024,
+      "rate": 37.94,
+      "accepted": 579,
+      "submitted": 1526
+    },
+    {
+      "year": 2025,
+      "rate": 29.2,
+      "accepted": 692,
+      "submitted": 2370
+    },
+    {
+      "year": 2026,
+      "rate": 27.48,
+      "accepted": 772,
+      "submitted": 2809
+    }
+  ],
+  "pricai": [
+    {
+      "year": 2021,
+      "rate": 31.41,
+      "accepted": 120,
+      "submitted": 382
+    },
+    {
+      "year": 2022,
+      "rate": 30.09,
+      "accepted": 130,
+      "submitted": 432
+    },
+    {
+      "year": 2023,
+      "rate": 31.04,
+      "accepted": 131,
+      "submitted": 422
+    },
+    {
+      "year": 2024,
+      "rate": 33.15,
+      "accepted": 180,
+      "submitted": 543
+    },
+    {
+      "year": 2025,
+      "rate": 42.12,
+      "accepted": 286,
+      "submitted": 679
+    }
+  ],
+  "qrs": [
+    {
+      "year": 2021,
+      "rate": 25.1,
+      "accepted": 61,
+      "submitted": 243
+    },
+    {
+      "year": 2022,
+      "rate": 27.47,
+      "accepted": 75,
+      "submitted": 273
+    },
+    {
+      "year": 2023,
+      "rate": 23.48,
+      "accepted": 54,
+      "submitted": 230
+    },
+    {
+      "year": 2024,
+      "rate": 26.46,
+      "accepted": 50,
+      "submitted": 189
+    },
+    {
+      "year": 2025,
+      "rate": 24.16,
+      "accepted": 65,
+      "submitted": 269
+    },
+    {
+      "year": 2026,
+      "rate": 25.54,
+      "accepted": 71,
+      "submitted": 278
+    }
+  ],
+  "raid": [
+    {
+      "year": 2022,
+      "rate": 25.18,
+      "accepted": 35,
+      "submitted": 139
+    },
+    {
+      "year": 2023,
+      "rate": 23.47,
+      "accepted": 50,
+      "submitted": 213
+    },
+    {
+      "year": 2024,
+      "rate": 25.0,
+      "accepted": 43,
+      "submitted": 172
+    },
+    {
+      "year": 2025,
+      "rate": 22.06,
+      "accepted": 62,
+      "submitted": 281
+    },
+    {
+      "year": 2026,
+      "rate": 19.22,
+      "accepted": 59,
+      "submitted": 307
+    }
+  ],
+  "re": [
+    {
+      "year": 2021,
+      "rate": 29.11,
+      "accepted": 23,
+      "submitted": 79
+    },
+    {
+      "year": 2022,
+      "rate": 25.81,
+      "accepted": 16,
+      "submitted": 62
+    },
+    {
+      "year": 2023,
+      "rate": 21.13,
+      "accepted": 15,
+      "submitted": 71
+    },
+    {
+      "year": 2024,
+      "rate": 19.1,
+      "accepted": 17,
+      "submitted": 89
+    },
+    {
+      "year": 2025,
+      "rate": 21.3,
+      "accepted": 23,
+      "submitted": 108
+    },
+    {
+      "year": 2026,
+      "rate": 24.0,
+      "accepted": 24,
+      "submitted": 100
+    }
+  ],
+  "recomb": [
+    {
+      "year": 2021,
+      "rate": 20.51,
+      "accepted": 40,
+      "submitted": 195
+    },
+    {
+      "year": 2022,
+      "rate": 21.28,
+      "accepted": 40,
+      "submitted": 188
+    },
+    {
+      "year": 2023,
+      "rate": 23.4,
+      "accepted": 44,
+      "submitted": 188
+    },
+    {
+      "year": 2024,
+      "rate": 16.19,
+      "accepted": 57,
+      "submitted": 352
+    },
+    {
+      "year": 2025,
+      "rate": 16.22,
+      "accepted": 55,
+      "submitted": 339
+    }
+  ],
+  "recsys": [
+    {
+      "year": 2020,
+      "rate": 17.89,
+      "accepted": 39,
+      "submitted": 218
+    },
+    {
+      "year": 2021,
+      "rate": 18.35,
+      "accepted": 49,
+      "submitted": 267
+    },
+    {
+      "year": 2022,
+      "rate": 16.88,
+      "accepted": 39,
+      "submitted": 231
+    },
+    {
+      "year": 2023,
+      "rate": 17.47,
+      "accepted": 47,
+      "submitted": 269
+    },
+    {
+      "year": 2024,
+      "rate": 21.8,
+      "accepted": 58,
+      "submitted": 266
+    },
+    {
+      "year": 2025,
+      "rate": 18.77,
+      "accepted": 49,
+      "submitted": 261
+    }
+  ],
+  "refsq": [
+    {
+      "year": 2021,
+      "rate": 28.85,
+      "accepted": 15,
+      "submitted": 52
+    },
+    {
+      "year": 2022,
+      "rate": 42.22,
+      "accepted": 19,
+      "submitted": 45
+    },
+    {
+      "year": 2024,
+      "rate": 37.29,
+      "accepted": 22,
+      "submitted": 59
+    },
+    {
+      "year": 2025,
+      "rate": 39.19,
+      "accepted": 29,
+      "submitted": 74
+    }
+  ],
+  "rss": [
+    {
+      "year": 2021,
+      "rate": 32.62,
+      "accepted": 92,
+      "submitted": 282
+    },
+    {
+      "year": 2022,
+      "rate": 31.9,
+      "accepted": 74,
+      "submitted": 232
+    },
+    {
+      "year": 2023,
+      "rate": 33.63,
+      "accepted": 112,
+      "submitted": 333
+    },
+    {
+      "year": 2024,
+      "rate": 31.91,
+      "accepted": 135,
+      "submitted": 423
+    },
+    {
+      "year": 2025,
+      "rate": 27.44,
+      "accepted": 163,
+      "submitted": 594
+    }
+  ],
+  "rtas": [
+    {
+      "year": 2022,
+      "rate": 24.18,
+      "accepted": 22,
+      "submitted": 91
+    },
+    {
+      "year": 2023,
+      "rate": 29.41,
+      "accepted": 25,
+      "submitted": 85
+    },
+    {
+      "year": 2024,
+      "rate": 25.0,
+      "accepted": 29,
+      "submitted": 116
+    }
+  ],
+  "rtss": [
+    {
+      "year": 2021,
+      "rate": 29.32,
+      "accepted": 39,
+      "submitted": 133
+    },
+    {
+      "year": 2022,
+      "rate": 28.91,
+      "accepted": 37,
+      "submitted": 128
+    }
+  ],
+  "rulemlrr": [
+    {
+      "year": 2021,
+      "rate": 48.72,
+      "accepted": 19,
+      "submitted": 39
+    },
+    {
+      "year": 2022,
+      "rate": 36.54,
+      "accepted": 19,
+      "submitted": 52
+    },
+    {
+      "year": 2023,
+      "rate": 34.78,
+      "accepted": 16,
+      "submitted": 46
+    },
+    {
+      "year": 2024,
+      "rate": 45.71,
+      "accepted": 16,
+      "submitted": 35
+    },
+    {
+      "year": 2025,
+      "rate": 41.18,
+      "accepted": 14,
+      "submitted": 34
+    }
+  ],
+  "rv": [
+    {
+      "year": 2021,
+      "rate": 45.0,
+      "accepted": 18,
+      "submitted": 40
+    },
+    {
+      "year": 2022,
+      "rate": 55.0,
+      "accepted": 22,
+      "submitted": 40
+    },
+    {
+      "year": 2023,
+      "rate": 51.28,
+      "accepted": 20,
+      "submitted": 39
+    },
+    {
+      "year": 2024,
+      "rate": 58.06,
+      "accepted": 18,
+      "submitted": 31
+    },
+    {
+      "year": 2025,
+      "rate": 40.32,
+      "accepted": 25,
+      "submitted": 62
+    }
+  ],
+  "sac": [
+    {
+      "year": 2021,
+      "rate": 38.33,
+      "accepted": 23,
+      "submitted": 60
+    },
+    {
+      "year": 2022,
+      "rate": 39.62,
+      "accepted": 21,
+      "submitted": 53
+    },
+    {
+      "year": 2023,
+      "rate": 46.67,
+      "accepted": 21,
+      "submitted": 45
+    },
+    {
+      "year": 2024,
+      "rate": 28.09,
+      "accepted": 25,
+      "submitted": 89
+    },
+    {
+      "year": 2025,
+      "rate": 26.61,
+      "accepted": 29,
+      "submitted": 109
+    },
+    {
+      "year": 2026,
+      "rate": 25.66,
+      "accepted": 29,
+      "submitted": 113
+    }
+  ],
+  "sacmat": [
+    {
+      "year": 2026,
+      "rate": 31.33,
+      "accepted": 26,
+      "submitted": 83
+    }
+  ],
+  "sai": [
+    {
+      "year": 2023,
+      "rate": 35.81,
+      "accepted": 193,
+      "submitted": 539
+    },
+    {
+      "year": 2024,
+      "rate": 39.39,
+      "accepted": 180,
+      "submitted": 457
+    },
+    {
+      "year": 2026,
+      "rate": 39.21,
+      "accepted": 198,
+      "submitted": 505
+    }
+  ],
+  "saner": [
+    {
+      "year": 2021,
+      "rate": 25.45,
+      "accepted": 42,
+      "submitted": 165
+    },
+    {
+      "year": 2022,
+      "rate": 24.12,
+      "accepted": 48,
+      "submitted": 199
+    },
+    {
+      "year": 2023,
+      "rate": 27.05,
+      "accepted": 56,
+      "submitted": 207
+    },
+    {
+      "year": 2024,
+      "rate": 25.62,
+      "accepted": 62,
+      "submitted": 242
+    },
+    {
+      "year": 2025,
+      "rate": 23.11,
+      "accepted": 52,
+      "submitted": 225
+    },
+    {
+      "year": 2026,
+      "rate": 17.74,
+      "accepted": 47,
+      "submitted": 265
+    }
+  ],
+  "sas": [
+    {
+      "year": 2021,
+      "rate": 45.83,
+      "accepted": 22,
+      "submitted": 48
+    },
+    {
+      "year": 2022,
+      "rate": 41.86,
+      "accepted": 18,
+      "submitted": 43
+    },
+    {
+      "year": 2023,
+      "rate": 50.0,
+      "accepted": 20,
+      "submitted": 40
+    },
+    {
+      "year": 2024,
+      "rate": 40.0,
+      "accepted": 18,
+      "submitted": 45
+    },
+    {
+      "year": 2025,
+      "rate": 46.88,
+      "accepted": 15,
+      "submitted": 32
+    },
+    {
+      "year": 2026,
+      "rate": 46.51,
+      "accepted": 20,
+      "submitted": 43
+    }
+  ],
+  "sat": [
+    {
+      "year": 2021,
+      "rate": 50.68,
+      "accepted": 37,
+      "submitted": 73
+    },
+    {
+      "year": 2022,
+      "rate": 44.29,
+      "accepted": 31,
+      "submitted": 70
+    },
+    {
+      "year": 2023,
+      "rate": 44.78,
+      "accepted": 30,
+      "submitted": 67
+    },
+    {
+      "year": 2024,
+      "rate": 40.0,
+      "accepted": 28,
+      "submitted": 70
+    },
+    {
+      "year": 2025,
+      "rate": 38.96,
+      "accepted": 30,
+      "submitted": 77
+    },
+    {
+      "year": 2026,
+      "rate": 43.16,
+      "accepted": 41,
+      "submitted": 95
+    }
+  ],
+  "satml": [
+    {
+      "year": 2023,
+      "rate": 26.32,
+      "accepted": 40,
+      "submitted": 152
+    },
+    {
+      "year": 2024,
+      "rate": 21.52,
+      "accepted": 34,
+      "submitted": 158
+    },
+    {
+      "year": 2025,
+      "rate": 29.44,
+      "accepted": 53,
+      "submitted": 180
+    },
+    {
+      "year": 2026,
+      "rate": 23.61,
+      "accepted": 55,
+      "submitted": 233
+    }
+  ],
+  "sc": [
+    {
+      "year": 2025,
+      "rate": 21.99,
+      "accepted": 137,
+      "submitted": 623
+    }
+  ],
+  "sca": [
+    {
+      "year": 2022,
+      "rate": 38.46,
+      "accepted": 30,
+      "submitted": 78
+    }
+  ],
+  "scam": [
+    {
+      "year": 2021,
+      "rate": 29.17,
+      "accepted": 14,
+      "submitted": 48
+    },
+    {
+      "year": 2022,
+      "rate": 37.78,
+      "accepted": 17,
+      "submitted": 45
+    },
+    {
+      "year": 2023,
+      "rate": 40.38,
+      "accepted": 21,
+      "submitted": 52
+    }
+  ],
+  "sdm": [
+    {
+      "year": 2024,
+      "rate": 29.25,
+      "accepted": 98,
+      "submitted": 335
+    }
+  ],
+  "sec": [
+    {
+      "year": 2021,
+      "rate": 25.0,
+      "accepted": 28,
+      "submitted": 112
+    },
+    {
+      "year": 2022,
+      "rate": 22.83,
+      "accepted": 29,
+      "submitted": 127
+    },
+    {
+      "year": 2023,
+      "rate": 25.35,
+      "accepted": 18,
+      "submitted": 71
+    },
+    {
+      "year": 2024,
+      "rate": 27.87,
+      "accepted": 34,
+      "submitted": 122
+    },
+    {
+      "year": 2025,
+      "rate": 25.23,
+      "accepted": 28,
+      "submitted": 111
+    },
+    {
+      "year": 2026,
+      "rate": 23.78,
+      "accepted": 39,
+      "submitted": 164
+    }
+  ],
+  "secon": [
+    {
+      "year": 2021,
+      "rate": 26.43,
+      "accepted": 37,
+      "submitted": 140
+    }
+  ],
+  "securecomm": [
+    {
+      "year": 2021,
+      "rate": 34.13,
+      "accepted": 43,
+      "submitted": 126
+    },
+    {
+      "year": 2022,
+      "rate": 31.75,
+      "accepted": 40,
+      "submitted": 126
+    },
+    {
+      "year": 2024,
+      "rate": 36.0,
+      "accepted": 81,
+      "submitted": 225
+    },
+    {
+      "year": 2025,
+      "rate": 34.9,
+      "accepted": 119,
+      "submitted": 341
+    },
+    {
+      "year": 2026,
+      "rate": 31.47,
+      "accepted": 45,
+      "submitted": 143
+    }
+  ],
+  "seke": [
+    {
+      "year": 2021,
+      "rate": 34.18,
+      "accepted": 67,
+      "submitted": 196
+    },
+    {
+      "year": 2022,
+      "rate": 39.41,
+      "accepted": 67,
+      "submitted": 170
+    },
+    {
+      "year": 2023,
+      "rate": 38.53,
+      "accepted": 84,
+      "submitted": 218
+    }
+  ],
+  "sensys": [
+    {
+      "year": 2021,
+      "rate": 17.99,
+      "accepted": 25,
+      "submitted": 139
+    },
+    {
+      "year": 2022,
+      "rate": 24.88,
+      "accepted": 52,
+      "submitted": 209
+    },
+    {
+      "year": 2023,
+      "rate": 18.99,
+      "accepted": 34,
+      "submitted": 179
+    },
+    {
+      "year": 2024,
+      "rate": 18.53,
+      "accepted": 58,
+      "submitted": 313
+    },
+    {
+      "year": 2025,
+      "rate": 19.15,
+      "accepted": 45,
+      "submitted": 235
+    }
+  ],
+  "setta": [
+    {
+      "year": 2021,
+      "rate": 41.03,
+      "accepted": 16,
+      "submitted": 39
+    },
+    {
+      "year": 2022,
+      "rate": 48.28,
+      "accepted": 14,
+      "submitted": 29
+    },
+    {
+      "year": 2024,
+      "rate": 44.68,
+      "accepted": 21,
+      "submitted": 47
+    },
+    {
+      "year": 2025,
+      "rate": 39.13,
+      "accepted": 18,
+      "submitted": 46
+    }
+  ],
+  "sigcomm": [
+    {
+      "year": 2021,
+      "rate": 22.82,
+      "accepted": 55,
+      "submitted": 241
+    },
+    {
+      "year": 2022,
+      "rate": 19.71,
+      "accepted": 55,
+      "submitted": 279
+    },
+    {
+      "year": 2024,
+      "rate": 16.94,
+      "accepted": 62,
+      "submitted": 366
+    }
+  ],
+  "sigcse": [
+    {
+      "year": 2023,
+      "rate": 34.81,
+      "accepted": 165,
+      "submitted": 474
+    },
+    {
+      "year": 2024,
+      "rate": 32.29,
+      "accepted": 216,
+      "submitted": 669
+    },
+    {
+      "year": 2026,
+      "rate": 31.81,
+      "accepted": 174,
+      "submitted": 547
+    }
+  ],
+  "sigir": [
+    {
+      "year": 2021,
+      "rate": 20.97,
+      "accepted": 151,
+      "submitted": 720
+    },
+    {
+      "year": 2022,
+      "rate": 20.3,
+      "accepted": 161,
+      "submitted": 793
+    },
+    {
+      "year": 2023,
+      "rate": 20.07,
+      "accepted": 165,
+      "submitted": 822
+    },
+    {
+      "year": 2024,
+      "rate": 20.23,
+      "accepted": 160,
+      "submitted": 791
+    }
+  ],
+  "sigkdd": [
+    {
+      "year": 2023,
+      "rate": 22.1,
+      "accepted": 313,
+      "submitted": 1416
+    },
+    {
+      "year": 2024,
+      "rate": 20.09,
+      "accepted": 411,
+      "submitted": 2046
+    }
+  ],
+  "sigmetrics": [
+    {
+      "year": 2024,
+      "rate": 15.48,
+      "accepted": 52,
+      "submitted": 336
+    },
+    {
+      "year": 2025,
+      "rate": 17.28,
+      "accepted": 66,
+      "submitted": 382
+    }
+  ],
+  "sigmod": [
+    {
+      "year": 2023,
+      "rate": 28.18,
+      "accepted": 186,
+      "submitted": 660
+    },
+    {
+      "year": 2024,
+      "rate": 27.73,
+      "accepted": 213,
+      "submitted": 768
+    },
+    {
+      "year": 2025,
+      "rate": 24.8,
+      "accepted": 250,
+      "submitted": 1008
+    }
+  ],
+  "sigspatial": [
+    {
+      "year": 2022,
+      "rate": 25.52,
+      "accepted": 49,
+      "submitted": 192
+    },
+    {
+      "year": 2023,
+      "rate": 20.11,
+      "accepted": 38,
+      "submitted": 189
+    }
+  ],
+  "slt": [
+    {
+      "year": 2021,
+      "rate": 46.89,
+      "accepted": 151,
+      "submitted": 322
+    },
+    {
+      "year": 2022,
+      "rate": 42.15,
+      "accepted": 153,
+      "submitted": 363
+    },
+    {
+      "year": 2024,
+      "rate": 45.58,
+      "accepted": 170,
+      "submitted": 373
+    }
+  ],
+  "smi": [
+    {
+      "year": 2021,
+      "rate": 35.0,
+      "accepted": 14,
+      "submitted": 40
+    },
+    {
+      "year": 2022,
+      "rate": 41.67,
+      "accepted": 10,
+      "submitted": 24
+    }
+  ],
+  "socg": [
+    {
+      "year": 2021,
+      "rate": 35.37,
+      "accepted": 58,
+      "submitted": 164
+    },
+    {
+      "year": 2022,
+      "rate": 36.78,
+      "accepted": 64,
+      "submitted": 174
+    },
+    {
+      "year": 2023,
+      "rate": 34.86,
+      "accepted": 61,
+      "submitted": 175
+    },
+    {
+      "year": 2024,
+      "rate": 34.89,
+      "accepted": 82,
+      "submitted": 235
+    },
+    {
+      "year": 2025,
+      "rate": 34.67,
+      "accepted": 78,
+      "submitted": 225
+    },
+    {
+      "year": 2026,
+      "rate": 34.93,
+      "accepted": 95,
+      "submitted": 272
+    }
+  ],
+  "soda": [
+    {
+      "year": 2021,
+      "rate": 28.08,
+      "accepted": 180,
+      "submitted": 641
+    },
+    {
+      "year": 2022,
+      "rate": 30.14,
+      "accepted": 148,
+      "submitted": 491
+    },
+    {
+      "year": 2023,
+      "rate": 29.14,
+      "accepted": 190,
+      "submitted": 652
+    },
+    {
+      "year": 2024,
+      "rate": 29.45,
+      "accepted": 192,
+      "submitted": 652
+    },
+    {
+      "year": 2025,
+      "rate": 29.31,
+      "accepted": 192,
+      "submitted": 655
+    }
+  ],
+  "sosp": [
+    {
+      "year": 2021,
+      "rate": 15.52,
+      "accepted": 54,
+      "submitted": 348
+    },
+    {
+      "year": 2025,
+      "rate": 17.66,
+      "accepted": 65,
+      "submitted": 368
+    }
+  ],
+  "soups": [
+    {
+      "year": 2021,
+      "rate": 26.47,
+      "accepted": 36,
+      "submitted": 136
+    },
+    {
+      "year": 2022,
+      "rate": 27.82,
+      "accepted": 37,
+      "submitted": 133
+    },
+    {
+      "year": 2023,
+      "rate": 22.45,
+      "accepted": 33,
+      "submitted": 147
+    },
+    {
+      "year": 2024,
+      "rate": 21.15,
+      "accepted": 33,
+      "submitted": 156
+    },
+    {
+      "year": 2025,
+      "rate": 19.11,
+      "accepted": 30,
+      "submitted": 157
+    }
+  ],
+  "sp": [
+    {
+      "year": 2022,
+      "rate": 14.53,
+      "accepted": 147,
+      "submitted": 1012
+    },
+    {
+      "year": 2025,
+      "rate": 14.77,
+      "accepted": 257,
+      "submitted": 1740
+    },
+    {
+      "year": 2026,
+      "rate": 12.68,
+      "accepted": 253,
+      "submitted": 1995
+    }
+  ],
+  "spm": [
+    {
+      "year": 2023,
+      "rate": 29.63,
+      "accepted": 16,
+      "submitted": 54
+    },
+    {
+      "year": 2024,
+      "rate": 27.08,
+      "accepted": 13,
+      "submitted": 48
+    }
+  ],
+  "srds": [
+    {
+      "year": 2021,
+      "rate": 29.25,
+      "accepted": 31,
+      "submitted": 106
+    },
+    {
+      "year": 2022,
+      "rate": 22.86,
+      "accepted": 24,
+      "submitted": 105
+    },
+    {
+      "year": 2023,
+      "rate": 37.7,
+      "accepted": 23,
+      "submitted": 61
+    },
+    {
+      "year": 2024,
+      "rate": 29.89,
+      "accepted": 26,
+      "submitted": 87
+    },
+    {
+      "year": 2026,
+      "rate": 30.7,
+      "accepted": 35,
+      "submitted": 114
+    }
+  ],
+  "sse": [
+    {
+      "year": 2023,
+      "rate": 53.49,
+      "accepted": 23,
+      "submitted": 43
+    },
+    {
+      "year": 2024,
+      "rate": 37.93,
+      "accepted": 22,
+      "submitted": 58
+    },
+    {
+      "year": 2025,
+      "rate": 35.85,
+      "accepted": 19,
+      "submitted": 53
+    },
+    {
+      "year": 2026,
+      "rate": 40.0,
+      "accepted": 40,
+      "submitted": 100
+    }
+  ],
+  "stoc": [
+    {
+      "year": 2023,
+      "rate": 32.29,
+      "accepted": 155,
+      "submitted": 480
+    }
+  ],
+  "systor": [
+    {
+      "year": 2021,
+      "rate": 30.16,
+      "accepted": 19,
+      "submitted": 63
+    },
+    {
+      "year": 2022,
+      "rate": 29.27,
+      "accepted": 12,
+      "submitted": 41
+    },
+    {
+      "year": 2023,
+      "rate": 40.0,
+      "accepted": 12,
+      "submitted": 30
+    },
+    {
+      "year": 2024,
+      "rate": 36.84,
+      "accepted": 14,
+      "submitted": 38
+    },
+    {
+      "year": 2025,
+      "rate": 37.21,
+      "accepted": 16,
+      "submitted": 43
+    }
+  ],
+  "tase": [
+    {
+      "year": 2021,
+      "rate": 40.68,
+      "accepted": 24,
+      "submitted": 59
+    },
+    {
+      "year": 2022,
+      "rate": 36.62,
+      "accepted": 26,
+      "submitted": 71
+    },
+    {
+      "year": 2023,
+      "rate": 42.86,
+      "accepted": 21,
+      "submitted": 49
+    },
+    {
+      "year": 2024,
+      "rate": 34.21,
+      "accepted": 26,
+      "submitted": 76
+    },
+    {
+      "year": 2025,
+      "rate": 31.82,
+      "accepted": 21,
+      "submitted": 66
+    },
+    {
+      "year": 2026,
+      "rate": 43.75,
+      "accepted": 28,
+      "submitted": 64
+    }
+  ],
+  "tcc": [
+    {
+      "year": 2021,
+      "rate": 40.99,
+      "accepted": 66,
+      "submitted": 161
+    },
+    {
+      "year": 2022,
+      "rate": 43.17,
+      "accepted": 60,
+      "submitted": 139
+    },
+    {
+      "year": 2023,
+      "rate": 40.48,
+      "accepted": 68,
+      "submitted": 168
+    },
+    {
+      "year": 2024,
+      "rate": 39.53,
+      "accepted": 68,
+      "submitted": 172
+    },
+    {
+      "year": 2025,
+      "rate": 28.93,
+      "accepted": 70,
+      "submitted": 242
+    }
+  ],
+  "uai": [
+    {
+      "year": 2021,
+      "rate": 26.38,
+      "accepted": 205,
+      "submitted": 777
+    },
+    {
+      "year": 2023,
+      "rate": 31.23,
+      "accepted": 243,
+      "submitted": 778
+    },
+    {
+      "year": 2024,
+      "rate": 26.88,
+      "accepted": 200,
+      "submitted": 744
+    }
+  ],
+  "ubicomp": [
+    {
+      "year": 2016,
+      "rate": 25.96,
+      "accepted": 101,
+      "submitted": 389
+    }
+  ],
+  "uist": [
+    {
+      "year": 2022,
+      "rate": 26.34,
+      "accepted": 98,
+      "submitted": 372
+    },
+    {
+      "year": 2023,
+      "rate": 25.05,
+      "accepted": 121,
+      "submitted": 483
+    },
+    {
+      "year": 2024,
+      "rate": 24.01,
+      "accepted": 146,
+      "submitted": 608
+    }
+  ],
+  "usenixatc": [
+    {
+      "year": 2021,
+      "rate": 18.77,
+      "accepted": 64,
+      "submitted": 341
+    },
+    {
+      "year": 2022,
+      "rate": 16.24,
+      "accepted": 64,
+      "submitted": 394
+    },
+    {
+      "year": 2023,
+      "rate": 18.41,
+      "accepted": 65,
+      "submitted": 353
+    },
+    {
+      "year": 2024,
+      "rate": 15.78,
+      "accepted": 77,
+      "submitted": 488
+    },
+    {
+      "year": 2025,
+      "rate": 15.77,
+      "accepted": 100,
+      "submitted": 634
+    }
+  ],
+  "usenixsecurity": [
+    {
+      "year": 2022,
+      "rate": 18.1,
+      "accepted": 256,
+      "submitted": 1414
+    },
+    {
+      "year": 2023,
+      "rate": 29.22,
+      "accepted": 422,
+      "submitted": 1444
+    },
+    {
+      "year": 2024,
+      "rate": 18.19,
+      "accepted": 414,
+      "submitted": 2276
+    },
+    {
+      "year": 2025,
+      "rate": 17.06,
+      "accepted": 407,
+      "submitted": 2385
+    },
+    {
+      "year": 2026,
+      "rate": 11.96,
+      "accepted": 362,
+      "submitted": 3028
+    }
+  ],
+  "vee": [
+    {
+      "year": 2021,
+      "rate": 55.56,
+      "accepted": 15,
+      "submitted": 27
+    }
+  ],
+  "vldb": [
+    {
+      "year": 2021,
+      "rate": 24.04,
+      "accepted": 212,
+      "submitted": 882
+    },
+    {
+      "year": 2022,
+      "rate": 27.15,
+      "accepted": 265,
+      "submitted": 976
+    },
+    {
+      "year": 2023,
+      "rate": 24.77,
+      "accepted": 266,
+      "submitted": 1074
+    },
+    {
+      "year": 2024,
+      "rate": 19.49,
+      "accepted": 280,
+      "submitted": 1437
+    }
+  ],
+  "vmcai": [
+    {
+      "year": 2021,
+      "rate": 47.92,
+      "accepted": 23,
+      "submitted": 48
+    },
+    {
+      "year": 2022,
+      "rate": 45.83,
+      "accepted": 22,
+      "submitted": 48
+    },
+    {
+      "year": 2023,
+      "rate": 50.0,
+      "accepted": 17,
+      "submitted": 34
+    },
+    {
+      "year": 2024,
+      "rate": 40.54,
+      "accepted": 30,
+      "submitted": 74
+    },
+    {
+      "year": 2025,
+      "rate": 41.67,
+      "accepted": 20,
+      "submitted": 48
+    },
+    {
+      "year": 2026,
+      "rate": 33.33,
+      "accepted": 18,
+      "submitted": 54
+    }
+  ],
+  "wacv": [
+    {
+      "year": 2022,
+      "rate": 34.64,
+      "accepted": 406,
+      "submitted": 1172
+    },
+    {
+      "year": 2023,
+      "rate": 40.65,
+      "accepted": 641,
+      "submitted": 1577
+    },
+    {
+      "year": 2025,
+      "rate": 37.84,
+      "accepted": 930,
+      "submitted": 2458
+    },
+    {
+      "year": 2026,
+      "rate": 32.63,
+      "accepted": 832,
+      "submitted": 2550
+    }
+  ],
+  "wasa": [
+    {
+      "year": 2024,
+      "rate": 35.88,
+      "accepted": 108,
+      "submitted": 301
+    },
+    {
+      "year": 2025,
+      "rate": 36.88,
+      "accepted": 104,
+      "submitted": 282
+    }
+  ],
+  "wcnc": [
+    {
+      "year": 2021,
+      "rate": 48.84,
+      "accepted": 359,
+      "submitted": 735
+    },
+    {
+      "year": 2022,
+      "rate": 48.65,
+      "accepted": 361,
+      "submitted": 742
+    }
+  ],
+  "wicon": [
+    {
+      "year": 2022,
+      "rate": 35.56,
+      "accepted": 16,
+      "submitted": 45
+    },
+    {
+      "year": 2023,
+      "rate": 40.0,
+      "accepted": 14,
+      "submitted": 35
+    }
+  ],
+  "wine": [
+    {
+      "year": 2022,
+      "rate": 30.16,
+      "accepted": 38,
+      "submitted": 126
+    },
+    {
+      "year": 2023,
+      "rate": 29.86,
+      "accepted": 66,
+      "submitted": 221
+    },
+    {
+      "year": 2024,
+      "rate": 26.61,
+      "accepted": 66,
+      "submitted": 248
+    },
+    {
+      "year": 2025,
+      "rate": 29.78,
+      "accepted": 67,
+      "submitted": 225
+    }
+  ],
+  "wisa": [
+    {
+      "year": 2021,
+      "rate": 56.31,
+      "accepted": 116,
+      "submitted": 206
+    },
+    {
+      "year": 2023,
+      "rate": 55.87,
+      "accepted": 119,
+      "submitted": 213
+    }
+  ],
+  "wise": [
+    {
+      "year": 2021,
+      "rate": 36.68,
+      "accepted": 84,
+      "submitted": 229
+    },
+    {
+      "year": 2023,
+      "rate": 53.28,
+      "accepted": 73,
+      "submitted": 137
+    },
+    {
+      "year": 2024,
+      "rate": 44.84,
+      "accepted": 165,
+      "submitted": 368
+    },
+    {
+      "year": 2025,
+      "rate": 54.29,
+      "accepted": 76,
+      "submitted": 140
+    }
+  ],
+  "wisec": [
+    {
+      "year": 2021,
+      "rate": 28.1,
+      "accepted": 34,
+      "submitted": 121
+    },
+    {
+      "year": 2024,
+      "rate": 20.14,
+      "accepted": 29,
+      "submitted": 144
+    },
+    {
+      "year": 2025,
+      "rate": 22.76,
+      "accepted": 28,
+      "submitted": 123
+    },
+    {
+      "year": 2026,
+      "rate": 19.01,
+      "accepted": 23,
+      "submitted": 121
+    }
+  ],
+  "wsdm": [
+    {
+      "year": 2023,
+      "rate": 17.83,
+      "accepted": 123,
+      "submitted": 690
+    },
+    {
+      "year": 2024,
+      "rate": 17.72,
+      "accepted": 109,
+      "submitted": 615
+    }
+  ],
+  "www": [
+    {
+      "year": 2023,
+      "rate": 19.21,
+      "accepted": 365,
+      "submitted": 1900
+    },
+    {
+      "year": 2024,
+      "rate": 20.17,
+      "accepted": 405,
+      "submitted": 2008
+    },
+    {
+      "year": 2025,
+      "rate": 16.36,
+      "accepted": 409,
+      "submitted": 2500
+    },
+    {
+      "year": 2026,
+      "rate": 20.06,
+      "accepted": 676,
+      "submitted": 3370
+    }
+  ]
+}
