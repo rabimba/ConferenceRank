@@ -37,7 +37,7 @@ server.registerTool(
   {
     title: "Search venues",
     description:
-      "Search 987 CS conferences + 11,782 journals by title/acronym/publisher/ISSN, with optional rank and discipline filters. Returns summaries with rank, acceptance rate, and upcoming deadlines.",
+      "Search CS conferences and journals by title/acronym/publisher/ISSN (live counts in the API manifest at index.json), with optional rank and discipline filters. Returns summaries with rank, acceptance rate, and upcoming deadlines.",
     inputSchema: {
       query: z.string().describe("Free-text: title, acronym (e.g. 'SOSP', 'TPAMI'), publisher, or ISSN"),
       type: z.enum(["all", "conference", "journal"]).optional().describe("Venue kind; default all"),

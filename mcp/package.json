@@ -17,6 +17,7 @@
   "scripts": {
     "build": "tsc",
     "smoke": "npm run build && node test/smoke.mjs",
+    "test": "npm run build && node --test test/parse-ddl.test.mjs",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {

@@ -28,11 +28,12 @@ if os.path.exists(CA):
     session.verify = CA
 
 
-def cached_get(url: str, name: str) -> str:
+def cached_get(url: str, name: str, max_age_days: int | None = None) -> str:
     RAW.mkdir(parents=True, exist_ok=True)
     path = RAW / name
-    if path.exists():
-        return path.read_text(encoding="utf-8")
+    if path.exists() and not os.environ.get("FORCE_FETCH"):
+        if max_age_days is None or (time.time() - path.stat().st_mtime) < max_age_days * 86400:
+            return path.read_text(encoding="utf-8")
     last_err = None
     for attempt in range(3):
         try:

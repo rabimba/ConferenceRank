@@ -1,6 +1,6 @@
 # conferencerank-mcp
 
-MCP server exposing the [ConferenceRank](https://rabimba.github.io/ConferenceRank/) dataset to AI agents: CORE/ICORE conference ranks, SCImago journal quartiles, multi-decade acceptance rates, and upcoming submission deadlines — 987 conferences + 11,782 journals, refreshed weekly.
+MCP server exposing the [ConferenceRank](https://rabimba.github.io/ConferenceRank/) dataset to AI agents: CORE/ICORE conference ranks, SCImago journal quartiles, multi-decade acceptance rates, and upcoming submission deadlines — refreshed daily (live counts in `api/index.json`).
 
 Data is served from the site's static JSON API and cached locally at `~/.cache/conferencerank/` with manifest-based revalidation. No API keys, no accounts.
 

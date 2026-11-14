@@ -1,6 +1,6 @@
 ---
 name: conferencerank
-description: Query the ConferenceRank dataset — CORE/SJR ranks, acceptance-rate history, and submission deadlines for 987 CS conferences and 11,782 journals — via its static JSON API. Use when advising on where to submit a paper, evaluating whether a venue is legitimate or predatory, comparing venues, checking upcoming deadlines (including abstract-registration cutoffs), or looking up acceptance rates.
+description: Query the ConferenceRank dataset — CORE/SJR ranks, acceptance-rate history, and submission deadlines for CS conferences and journals (CORE-ranked plus emerging venues) — via its static JSON API. Use when advising on where to submit a paper, evaluating whether a venue is legitimate or predatory, comparing venues, checking upcoming deadlines (including abstract-registration cutoffs), or looking up acceptance rates.
 ---
 
 # ConferenceRank API
@@ -12,7 +12,7 @@ Static JSON over HTTPS. No auth. Base: `https://rabimba.github.io/ConferenceRank
 | Endpoint | Contents |
 |---|---|
 | `index.json` | Manifest: version, generatedAt, counts |
-| `conferences.json` | All 987 conferences, full records (rank, rank_history, stats, deadlines, categories, openalex) — ~1.2MB |
+| `conferences.json` | All conferences (CORE-ranked + emerging), full records (rank, rank_history, stats, deadlines, categories, openalex) — ~2MB; live count in `index.json` |
 | `conference/{id}.json` | One conference (numeric id) |
 | `journals-index.json` | Slim records for all 11,782 journals (id, title, acronym, core_rank, sjr_score, sjr_quartile, h_index, impact_factor, is_oa, categories, publisher, issn) — ~2MB |
 | `journals/{letter}.json` | FULL journal records chunked by first char of id (`a`–`z`, `0`–`9`, `other`) |

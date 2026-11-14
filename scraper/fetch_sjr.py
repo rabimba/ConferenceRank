@@ -74,7 +74,13 @@ def best_quartile(q1: str | None, q2: str | None) -> str | None:
 
 def fetch_and_parse_sjr(allowed_prefixes: tuple[str, ...] = CS_FIELD_PREFIXES):
     RAW_FILE.parent.mkdir(parents=True, exist_ok=True)
-    if not RAW_FILE.exists():
+    max_age = int(os.environ.get("SJR_MAX_AGE_DAYS", "30"))
+    cache_fresh = (RAW_FILE.exists()
+                   and not os.environ.get("FORCE_FETCH")
+                   and (time.time() - RAW_FILE.stat().st_mtime) < max_age * 86400)
+    if not cache_fresh:
+        if RAW_FILE.exists():
+            RAW_FILE.unlink()  # stale cache; refetch below
         if CACHED_RAW_FILE and CACHED_RAW_FILE.exists():
             print(f"Copying cached {CACHED_RAW_FILE} to {RAW_FILE}...")
             shutil.copy(CACHED_RAW_FILE, RAW_FILE)

@@ -56,17 +56,26 @@ class FetchFailed(Exception):
     """
 
 
+# Re-fetch cached raw API responses older than this many days.
+CACHE_TTL_DAYS = int(os.environ.get("OPENALEX_CACHE_TTL_DAYS", "30"))
+
+
 def api_get(path: str, params: dict) -> dict:
-    """Fetch with session and local file caching."""
+    """Fetch with session and local file caching (TTL-bounded)."""
     import hashlib
+    api_key = os.environ.get("OPENALEX_API_KEY")
+    if api_key:
+        params = {**params, "api_key": api_key}
     h = hashlib.sha256((path + json.dumps(params, sort_keys=True)).encode()).hexdigest()[:16]
     search_slug = re.sub(r"[^a-zA-Z0-9]+", "_", str(params.get("search", ""))).strip("_")[:30]
     path_slug = re.sub(r"[^a-zA-Z0-9]+", "_", path).strip("_")
     cache_key = f"{path_slug}_{search_slug}_{h}"
     RAW.mkdir(parents=True, exist_ok=True)
     p = RAW / f"{cache_key}.json"
-    if p.exists():
-        return json.loads(p.read_text(encoding="utf-8"))
+    if p.exists() and not os.environ.get("FORCE_FETCH"):
+        age = time.time() - p.stat().st_mtime
+        if age < CACHE_TTL_DAYS * 86400:
+            return json.loads(p.read_text(encoding="utf-8"))
 
     url = f"{API}{path}"
     n_429 = 0
@@ -241,6 +250,8 @@ def main():
                     help="max venues to process this run (0 = no limit)")
     ap.add_argument("--refresh-unmatched", action="store_true",
                     help="retry venues previously recorded as no-match")
+    ap.add_argument("--max-age-days", type=int, default=180,
+                    help="re-fetch venues whose data is older than this (0 = never refresh)")
     args = ap.parse_args()
 
     if not CORE.exists():
@@ -273,10 +284,25 @@ def main():
 
     matched = sum(1 for x in result.values() if x)
     processed = 0
+    today = datetime.date.today().isoformat()
+
+    def stale(rec: dict | None) -> bool:
+        """True when a matched venue's data is older than --max-age-days."""
+        if not rec or not args.max_age_days:
+            return False
+        fetched = rec.get("fetched_at")
+        if not fetched:
+            return True
+        try:
+            age = datetime.date.fromisoformat(fetched)
+        except ValueError:
+            return True
+        return (datetime.date.today() - age).days > args.max_age_days
+
     try:
         for i, v in enumerate(venues, 1):
             vid = v["id"]
-            if vid in result and (result[vid] is not None or not args.refresh_unmatched):
+            if vid in result and not stale(result[vid]) and (result[vid] is not None or not args.refresh_unmatched):
                 continue
             if args.limit and processed >= args.limit:
                 print(f"--limit {args.limit} reached; stopping", flush=True)
@@ -287,7 +313,8 @@ def main():
                 result[vid] = None  # remember no-match; skip on future runs
             else:
                 sibs = collect_sibling_sources(m["id"], m["name"])
-                result[vid] = {"match": m, **fetch_venue(sibs)}
+                prev = result.get(vid) if isinstance(result.get(vid), dict) else {}
+                result[vid] = {**prev, **{"match": m, **fetch_venue(sibs)}, "fetched_at": today}
                 matched += 1
             if processed % 10 == 0:
                 print(f"  processed {i}/{len(venues)} (new {processed}), matched {matched}", flush=True)

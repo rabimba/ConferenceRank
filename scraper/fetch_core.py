@@ -19,10 +19,38 @@ import requests
 CA_BUNDLE = os.environ.get("PROXY_CA", "/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem")
 
 BASE = "https://portal.core.edu.au/conf-ranks/"
-SOURCES = [
+BASE_SOURCES = [
     "ICORE2026", "CORE2023", "CORE2021", "CORE2020", "CORE2018",
     "CORE2017", "CORE2014", "CORE2013", "ERA2010", "CORE2008",
 ]
+
+
+def discover_sources() -> list[str]:
+    """Scrape the portal index for (I)CORE/ERA edition names; union with known list."""
+    found = set(BASE_SOURCES)
+    try:
+        r = session.get(BASE, timeout=60)
+        r.raise_for_status()
+        found |= set(re.findall(r"\b(?:ICORE|CORE|ERA)\d{4}\b", r.text, flags=re.I))
+    except Exception as e:
+        print(f"Warning: source discovery failed ({e}); using known list", flush=True)
+
+    def year_key(s: str):
+        m = re.search(r"(\d{4})", s)
+        return (0 if s.upper().startswith("ICORE") else 1, -int(m.group(1)) if m else 0)
+
+    return sorted(found, key=year_key)
+
+
+SOURCES = None  # resolved lazily via get_sources() after session setup
+
+
+def get_sources() -> list[str]:
+    global SOURCES
+    if SOURCES is None:
+        SOURCES = discover_sources()
+    return SOURCES
+
 RAW = Path(__file__).parent / "data" / "raw" / "core"
 OUT = Path(__file__).parent / "data" / "core.json"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 conf-rank-scraper/1.0"
@@ -34,11 +62,12 @@ if os.path.exists(CA_BUNDLE):
     session.verify = CA_BUNDLE
 
 
-def cached_get(url: str, name: str) -> str:
+def cached_get(url: str, name: str, max_age_days: int | None = None) -> str:
     RAW.mkdir(parents=True, exist_ok=True)
     path = RAW / name
-    if path.exists():
-        return path.read_text(encoding="utf-8")
+    if path.exists() and not os.environ.get("FORCE_FETCH"):
+        if max_age_days is None or (time.time() - path.stat().st_mtime) < max_age_days * 86400:
+            return path.read_text(encoding="utf-8")
     last_err = None
     for attempt in range(3):
         try:
@@ -116,7 +145,7 @@ def main():
     all_rows: dict[str, dict] = {}
     # Merge every edition, newest first: venues absent from ICORE2026 are kept
     # (marked via `source_edition`) instead of vanishing silently.
-    for source in SOURCES:
+    for source in get_sources():
         rows = fetch_csv(source)
         print(f"  {source}: {len(rows)} rows")
         for r in rows:

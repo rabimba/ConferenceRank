@@ -30,7 +30,8 @@ if os.path.exists(CA):
 
 def main():
     RAW.parent.mkdir(parents=True, exist_ok=True)
-    if RAW.exists():
+    max_age = int(os.environ.get("LIXIN_MAX_AGE_DAYS", "7"))
+    if RAW.exists() and not os.environ.get("FORCE_FETCH") and (time.time() - RAW.stat().st_mtime) < max_age * 86400:
         text = RAW.read_text()
     else:
         for attempt in range(3):

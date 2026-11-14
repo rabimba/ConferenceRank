@@ -204,13 +204,54 @@ export interface DeadlineArgs {
   deadlineType?: "paper" | "abstract";
 }
 
-function parseDdl(s: string | null | undefined): number {
+function resolveIanaOffset(iana: string, at: Date): string | null {
+  try {
+    const dtf = new Intl.DateTimeFormat("en-US", {
+      timeZone: iana,
+      timeZoneName: "longOffset",
+    });
+    const part = dtf.formatToParts(at).find((p) => p.type === "timeZoneName");
+    if (!part) return null;
+    const m = part.value.match(/^GMT(?:([+-])(\d{1,2})(?::(\d{2}))?)?$/);
+    if (!m) return null;
+    if (!m[1]) return "Z";
+    return `${m[1]}${m[2].padStart(2, "0")}:${(m[3] ?? "00").padStart(2, "0")}`;
+  } catch {
+    return null; // unknown IANA name
+  }
+}
+
+function offsetMs(s: string, timezone: string | undefined): number {
+  const tz = (timezone ?? "").trim();
+  if (/aoe|anywhere on earth/i.test(tz)) return 12 * 3600 * 1000; // UTC-12
+  const explicit = tz.match(/^(?:UTC)?([+-])(\d{1,2})(?::?(\d{2}))?$/i);
+  if (explicit) {
+    const sign = explicit[1] === "-" ? -1 : 1;
+    return -sign * (+explicit[2] * 3600 + +(explicit[3] ?? "0") * 60) * 1000;
+  }
+  // IANA zone: resolve the offset at the deadline instant; unknown zone -> AoE
+  const m = s.trim().match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?/);
+  if (m) {
+    const [, y, mo, d, h = "23", mi = "59"] = m;
+    const naive = Date.UTC(+y, +mo - 1, +d, +h, +mi);
+    const off = resolveIanaOffset(tz, new Date(naive));
+    if (off === null) return 12 * 3600 * 1000;
+    if (off === "Z") return 0;
+    const sign = off[0] === "-" ? -1 : 1;
+    const hh = +off.slice(1, 3);
+    const mm = +off.slice(4, 6);
+    return -sign * (hh * 3600 + mm * 60) * 1000; // offset subtracted from local-to-UTC
+  }
+  return 12 * 3600 * 1000;
+}
+
+export function parseDdl(s: string | null | undefined, timezone?: string): number {
   if (!s) return NaN;
   const m = s.trim().match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?/);
   if (!m) return NaN;
   const [, y, mo, d, h = "23", mi = "59", sec = "59"] = m;
-  // AoE = UTC-12: a deadline "23:59 AoE" is 11:59 UTC the NEXT day. Add 12h.
-  return Date.UTC(+y, +mo - 1, +d, +h, +mi, +sec) + 12 * 3600 * 1000;
+  // Wall-clock deadline in its zone -> UTC epoch.
+  return Date.UTC(+y, +mo - 1, +d, +h, +mi, +sec) + offsetMs(s, timezone);
 }
 
 export async function upcomingDeadlines(a: DeadlineArgs) {
@@ -224,7 +265,7 @@ export async function upcomingDeadlines(a: DeadlineArgs) {
     .map((d: DeadlineEntry) => {
       const effStr = a.deadlineType === "abstract" ? d.abstract_deadline : d.paper_deadline;
       if (!effStr) return null;
-      const ts = parseDdl(effStr);
+      const ts = parseDdl(effStr, d.timezone);
       if (isNaN(ts) || ts < now || ts > horizon) return null;
       if (ranks.length && !ranks.includes(d.rank)) return null;
       if (cats.length && !d.categories.some((c) => cats.includes(c))) return null;

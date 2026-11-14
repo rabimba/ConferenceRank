@@ -62,9 +62,11 @@ export interface Conference {
   avg_rating?: number | null;
   rank_history: RankHistoryEntry[];
   stats: YearStat[] | null;
-  stats_source: "papercopilot" | "lixin4ever" | "papercopilot+lixin4ever" | null;
+  stats_source: string | null;
   openalex?: OpenAlexData;
   deadlines?: ConferenceDeadline[] | null;
+  /** Newly discovered venue, not yet in any CORE edition. */
+  emerging?: boolean;
 }
 
 export const ALL_CATEGORIES = [
