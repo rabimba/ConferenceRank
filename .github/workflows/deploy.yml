@@ -34,20 +34,20 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: conf-rank/package-lock.json
-      - id: basepath
-        run: |
-          repo="${GITHUB_REPOSITORY#*/}"
-          if [[ "$repo" == *.github.io ]]; then bp=""; else bp="/$repo"; fi
-          echo "bp=$bp" >> "$GITHUB_OUTPUT"
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
       - name: Build
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.basepath.outputs.bp }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
           cd conf-rank
           npm ci
           npx eslint src
           npm run build
           touch out/.nojekyll
+          echo "conferencerank.rabimba.fyi" > out/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
           path: conf-rank/out

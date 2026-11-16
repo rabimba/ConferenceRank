@@ -6,7 +6,10 @@ const repo = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "conf-rank";
 const isUserPages = repo.endsWith(".github.io");
 const derived =
   process.env.GITHUB_ACTIONS === "true" && !isUserPages ? `/${repo}` : "";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? derived;
+const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH !== undefined
+    ? process.env.NEXT_PUBLIC_BASE_PATH
+    : derived;
 
 const nextConfig: NextConfig = {
   output: "export",

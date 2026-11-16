@@ -145,7 +145,9 @@ write("index.json", {
   name: "ConferenceRank Static API",
   version: 1,
   generatedAt: new Date().toISOString(),
-  baseUrl: "https://rabimba.github.io/ConferenceRank/api",
+  baseUrl: process.env.NEXT_PUBLIC_SITE_URL
+    ? `${process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "")}/api`
+    : "https://rabimba.github.io/ConferenceRank/api",
   endpoints: {
     conferences: "conferences.json",
     conference_by_id: "conference/{id}.json",
