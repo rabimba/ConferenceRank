@@ -846,13 +846,13 @@
   {
    "year": 2026,
    "tiers": {
-    "Poster": 5117,
-    "Oral": 223,
-    "Reject": 8418
+    "Poster": 5126,
+    "Oral": 224,
+    "Reject": 8343
    },
-   "accepted": 5340,
+   "accepted": 5350,
    "total": 19814,
-   "rate": 26.95
+   "rate": 27.0
   },
   {
    "year": 2027,
