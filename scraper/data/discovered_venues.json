@@ -5051,6 +5051,23 @@
     "emerging": true
   },
   {
+    "id": "pc-adiot",
+    "title": "The International Conference on Attacks and Defenses for Internet-of-Things",
+    "acronym": "ADIoT",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "https://adiot.sptagelab.org/2026/",
+    "evidence": [
+      "feed-curated:sec-deadlines",
+      "sec-deadlines:ADIoT"
+    ],
+    "emerging": true
+  },
+  {
     "id": "pc-aiccps",
     "title": "International Workshop on Artificial Intelligence, Cyber and Cyber-Physical Security",
     "acronym": "AI&CCPS",
