@@ -280,6 +280,24 @@
     "emerging": true
   },
   {
+    "id": "or-aims",
+    "title": "Conference on AI Measurement Science at Stanford 2027",
+    "acronym": "AIMS",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "https://aims.stanford.edu/",
+    "evidence": [
+      "openreview-verified:stanford.edu/Stanford_University/AIMS/2027/Conference",
+      "openreview-year:stanford.edu/Stanford_University/AIMS/2027/Conference",
+      "openreview:stanford.edu/Stanford_University/AIMS/2027/Conference"
+    ],
+    "emerging": true
+  },
+  {
     "id": "or-airodyssey",
     "title": "AI & Robotics Odyssey 2027",
     "acronym": "AIRodyssey",
@@ -1328,6 +1346,24 @@
       "openreview-verified:ECA/2027/Conference",
       "openreview-year:ECA/2027/Conference",
       "openreview:ECA/2027/Conference"
+    ],
+    "emerging": true
+  },
+  {
+    "id": "or-ecaf",
+    "title": "Sixth European Conference on Algorithmic Fairness",
+    "acronym": "ECAF",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "2027.ecafconference.org",
+    "evidence": [
+      "openreview-verified:ecafconference.org/ECAF/2027/Conference",
+      "openreview-year:ecafconference.org/ECAF/2027/Conference",
+      "openreview:ecafconference.org/ECAF/2027/Conference"
     ],
     "emerging": true
   },
