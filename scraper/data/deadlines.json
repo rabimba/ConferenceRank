@@ -7033,6 +7033,18 @@
       "conference_dates": "July 25, 2026",
       "cfp_url": "https://sigir-ictir.github.io/ictir2026/",
       "source": "ccf"
+    },
+    {
+      "cycle": null,
+      "year": 2026,
+      "abstract_deadline": null,
+      "paper_deadline": "2026-04-17 12:10:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "Melbourne, Australia",
+      "conference_dates": "Jul 25 2026",
+      "cfp_url": "https://sigir-ictir.github.io/ictir2026/",
+      "source": "openreview"
     }
   ],
   "2216": [
@@ -7140,6 +7152,18 @@
     }
   ],
   "2237": [
+    {
+      "cycle": null,
+      "year": 2025,
+      "abstract_deadline": null,
+      "paper_deadline": "2025-06-15 23:58:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "",
+      "conference_dates": "Oct 09 2025",
+      "cfp_url": "https://dsaa.ieee.org/2025/",
+      "source": "openreview"
+    },
     {
       "cycle": null,
       "year": 2026,
@@ -8945,18 +8969,6 @@
     {
       "cycle": null,
       "year": 2026,
-      "abstract_deadline": "2026-03-26 11:59:00",
-      "paper_deadline": "2026-04-01 00:00:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Rio de Janeiro",
-      "conference_dates": "Nov 10 2026",
-      "cfp_url": "https://2026.acmmm.org/",
-      "source": "openreview"
-    },
-    {
-      "cycle": null,
-      "year": 2026,
       "abstract_deadline": "2026-03-25 23:59:00",
       "paper_deadline": "2026-04-01 23:59:59",
       "notification_date": null,
@@ -9355,6 +9367,18 @@
       "conference_dates": "November 5-7, 2025",
       "cfp_url": "https://2025.emnlp.org/",
       "source": "ccf"
+    },
+    {
+      "cycle": null,
+      "year": 2025,
+      "abstract_deadline": null,
+      "paper_deadline": "2025-08-02 12:00:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "Suzhou, China",
+      "conference_dates": "Nov 05 2025",
+      "cfp_url": "https://2025.emnlp.org/",
+      "source": "openreview"
     },
     {
       "cycle": "ARR Submission",
@@ -10007,20 +10031,6 @@
       "conference_dates": "August 29 - September 2, 2027",
       "cfp_url": "https://interspeech2027.org/",
       "source": "ccf"
-    }
-  ],
-  "495": [
-    {
-      "cycle": null,
-      "year": 2025,
-      "abstract_deadline": "2025-05-22 13:00:00",
-      "paper_deadline": "2025-05-29 13:00:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "FernUniversit\u00e4t in Hagen, Hagen, Germany",
-      "conference_dates": "Sep 23 2025",
-      "cfp_url": "https://ecsqaru2025.krportal.org/",
-      "source": "openreview"
     }
   ],
   "50": [
@@ -14059,6 +14069,18 @@
       "source": "ccf"
     },
     {
+      "cycle": null,
+      "year": 2025,
+      "abstract_deadline": "2024-10-04 12:15:00",
+      "paper_deadline": "2024-10-11 12:15:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "Mai Khao, Thailand",
+      "conference_dates": "May 03 2025",
+      "cfp_url": "https://aistats.org/aistats2025",
+      "source": "openreview"
+    },
+    {
       "cycle": "1st Round",
       "year": 2025,
       "abstract_deadline": null,
@@ -14473,7 +14495,7 @@
   ],
   "936": [
     {
-      "cycle": null,
+      "cycle": "Optional abstract registration: December 1, 2026 (AoE)",
       "year": 2027,
       "abstract_deadline": "2026-12-01 23:59:59",
       "paper_deadline": "2026-12-03 23:59:59",
@@ -14769,7 +14791,7 @@
       "timezone": "AoE",
       "location": "Brisbane, Australia",
       "conference_dates": "May 26-28, 2027",
-      "cfp_url": "http://2027.cscwd.org",
+      "cfp_url": "https://cscwd2027.dailyeliteevents.com.au/",
       "source": "ccf"
     }
   ],
@@ -14906,6 +14928,18 @@
     },
     {
       "cycle": null,
+      "year": 2025,
+      "abstract_deadline": "2025-05-12 11:59:00",
+      "paper_deadline": "2025-05-16 11:59:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "San Diego, USA",
+      "conference_dates": "Dec 01 2025",
+      "cfp_url": "https://neurips.cc/",
+      "source": "openreview"
+    },
+    {
+      "cycle": null,
       "year": 2026,
       "abstract_deadline": "2026-05-05 11:59:00",
       "paper_deadline": "2026-05-07 11:59:00",
@@ -14919,7 +14953,7 @@
     {
       "cycle": null,
       "year": 2026,
-      "abstract_deadline": "2026-05-05 11:59:00",
+      "abstract_deadline": "2026-05-05 11:59:59",
       "paper_deadline": "2026-05-07 11:59:59",
       "notification_date": null,
       "timezone": "UTC+0",
@@ -15407,20 +15441,6 @@
       "source": "openreview"
     }
   ],
-  "or-aizaman": [
-    {
-      "cycle": null,
-      "year": 2025,
-      "abstract_deadline": null,
-      "paper_deadline": "2025-08-20 23:59:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Kazan, Tatarstan, Russian Federation",
-      "conference_dates": "Sep 17 2025",
-      "cfp_url": "https://aizaman.ru",
-      "source": "openreview"
-    }
-  ],
   "or-ajcai": [
     {
       "cycle": null,
@@ -15626,18 +15646,6 @@
   "or-bnaicbenelearn": [
     {
       "cycle": null,
-      "year": 2025,
-      "abstract_deadline": "2025-10-14 12:00:00",
-      "paper_deadline": "2025-10-14 12:00:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Namur, Belgium",
-      "conference_dates": "Nov 19 2025",
-      "cfp_url": "https://bnaic2025.unamur.be",
-      "source": "openreview"
-    },
-    {
-      "cycle": null,
       "year": 2026,
       "abstract_deadline": null,
       "paper_deadline": "2026-09-05 11:59:00",
@@ -15755,18 +15763,6 @@
       "conference_dates": "Jun 25 2025",
       "cfp_url": "https://www.chilconference.org/",
       "source": "openreview"
-    },
-    {
-      "cycle": null,
-      "year": 2026,
-      "abstract_deadline": null,
-      "paper_deadline": "2026-02-06 04:59:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Seattle, Washington, United States",
-      "conference_dates": "Jun 28 2026",
-      "cfp_url": "https://www.chilconference.org/",
-      "source": "openreview"
     }
   ],
   "or-cied": [
@@ -15850,6 +15846,18 @@
     }
   ],
   "or-clear": [
+    {
+      "cycle": null,
+      "year": 2025,
+      "abstract_deadline": null,
+      "paper_deadline": "2024-11-05 11:59:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "Lausanne",
+      "conference_dates": "May 07 2025",
+      "cfp_url": "https://www.cclear.cc/2025",
+      "source": "openreview"
+    },
     {
       "cycle": null,
       "year": 2026,
@@ -16219,20 +16227,6 @@
       "source": "openreview"
     }
   ],
-  "or-fastml": [
-    {
-      "cycle": null,
-      "year": 2026,
-      "abstract_deadline": null,
-      "paper_deadline": "2026-07-02 23:59:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "UC San Diego",
-      "conference_dates": "Aug 31 2026",
-      "cfp_url": "https://indico.cern.ch/event/1654479/",
-      "source": "openreview"
-    }
-  ],
   "or-fdsl": [
     {
       "cycle": null,
@@ -16425,20 +16419,6 @@
       "source": "openreview"
     }
   ],
-  "or-icdl": [
-    {
-      "cycle": null,
-      "year": 2026,
-      "abstract_deadline": null,
-      "paper_deadline": "2026-04-04 11:59:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Kyoto, Japan",
-      "conference_dates": "Sep 15 2026",
-      "cfp_url": "https://attend.ieee.org/icdl-2026/",
-      "source": "openreview"
-    }
-  ],
   "or-ichi": [
     {
       "cycle": null,
@@ -16514,20 +16494,6 @@
       "location": "Chiang Mai,Thailand",
       "conference_dates": "Feb 21 2026",
       "cfp_url": "https://conference.cs.cityu.edu.hk/icicip/",
-      "source": "openreview"
-    }
-  ],
-  "or-icim": [
-    {
-      "cycle": null,
-      "year": 2026,
-      "abstract_deadline": "2025-10-08 22:00:00",
-      "paper_deadline": "2025-10-08 22:00:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Oxford",
-      "conference_dates": "Mar 27 2026",
-      "cfp_url": "https://www.icim.org/",
       "source": "openreview"
     }
   ],
@@ -17091,6 +17057,20 @@
       "source": "openreview"
     }
   ],
+  "or-lion": [
+    {
+      "cycle": null,
+      "year": 2025,
+      "abstract_deadline": null,
+      "paper_deadline": "2025-02-15 23:59:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "Prague, Czech Republic",
+      "conference_dates": "Jun 19 2025",
+      "cfp_url": "https://lion19.org",
+      "source": "openreview"
+    }
+  ],
   "or-loft": [
     {
       "cycle": null,
@@ -17210,6 +17190,18 @@
       "location": "Copenhagen, Denmark",
       "conference_dates": "Jun 23 2025",
       "cfp_url": "https://sites.google.com/view/misd-2025/",
+      "source": "openreview"
+    },
+    {
+      "cycle": null,
+      "year": 2026,
+      "abstract_deadline": null,
+      "paper_deadline": "2026-04-06 11:59:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "Los Angeles, CA, USA",
+      "conference_dates": "May 26 2026",
+      "cfp_url": "https://sites.google.com/view/misd-2026/home",
       "source": "openreview"
     }
   ],
@@ -17390,18 +17382,6 @@
     }
   ],
   "or-nldl": [
-    {
-      "cycle": null,
-      "year": 2025,
-      "abstract_deadline": null,
-      "paper_deadline": "2024-09-10 23:59:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Troms\u00f8, Norway",
-      "conference_dates": "Jan 07 2025",
-      "cfp_url": "https://www.nldl.org",
-      "source": "openreview"
-    },
     {
       "cycle": null,
       "year": 2026,
@@ -17731,20 +17711,6 @@
       "source": "openreview"
     }
   ],
-  "or-sadasccom": [
-    {
-      "cycle": null,
-      "year": 2026,
-      "abstract_deadline": null,
-      "paper_deadline": "2025-11-10 13:00:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Marrakech, Morocco",
-      "conference_dates": "Jan 29 2026",
-      "cfp_url": "https://sadasc.com/",
-      "source": "openreview"
-    }
-  ],
   "or-saf": [
     {
       "cycle": null,
@@ -17922,6 +17888,20 @@
       "location": "Cluj-Napoca, Romania",
       "conference_dates": "Oct 19 2025",
       "cfp_url": "https://sped.pub.ro/",
+      "source": "openreview"
+    }
+  ],
+  "or-spelll": [
+    {
+      "cycle": null,
+      "year": 2025,
+      "abstract_deadline": null,
+      "paper_deadline": "2025-09-03 23:59:00",
+      "notification_date": null,
+      "timezone": "UTC",
+      "location": "Indian Institute of Information Technology (IIIT), Kottayam, India",
+      "conference_dates": "Dec 18 2025",
+      "cfp_url": "https://spelll.org/",
       "source": "openreview"
     }
   ],
@@ -18150,20 +18130,6 @@
       "location": "Toronto, Ontario, Canada",
       "conference_dates": "Jun 23 2026",
       "cfp_url": "https://www.transitdata2026.ca/",
-      "source": "openreview"
-    }
-  ],
-  "or-tt": [
-    {
-      "cycle": null,
-      "year": 2026,
-      "abstract_deadline": "2026-01-12 23:29:00",
-      "paper_deadline": "2026-01-12 23:59:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "RWTH Aachen University, Aachen, NRW, Germany",
-      "conference_dates": "Sep 09 2026",
-      "cfp_url": "https://www.anglistik.rwth-aachen.de/cms/Anglistik/Forschung/Konferenzen-Veranstaltungen/~bofdcv/Translation-in-Transition-Conference/",
       "source": "openreview"
     }
   ],
@@ -20607,18 +20573,6 @@
       "source": "ccf"
     },
     {
-      "cycle": null,
-      "year": 2026,
-      "abstract_deadline": "2026-01-24 11:59:00",
-      "paper_deadline": "2026-01-31 11:59:00",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Sydney, Australia",
-      "conference_dates": "Jul 13 2026",
-      "cfp_url": "https://roboticsconference.org/",
-      "source": "openreview"
-    },
-    {
       "cycle": "Stage 1: initial 6-page extended abstract submission",
       "year": 2027,
       "abstract_deadline": null,
@@ -21159,18 +21113,6 @@
       "conference_dates": "July 9-11, 2025",
       "cfp_url": "https://2025.worldhaptics.org/",
       "source": "ccf"
-    },
-    {
-      "cycle": null,
-      "year": 2027,
-      "abstract_deadline": null,
-      "paper_deadline": "2027-01-29 23:59:59",
-      "notification_date": null,
-      "timezone": "UTC",
-      "location": "Boston, Massachusetts, USA",
-      "conference_dates": "July 12-15, 2027",
-      "cfp_url": "https://2027.worldhaptics.org/",
-      "source": "conference-deadlines"
     },
     {
       "cycle": null,
