@@ -1054,6 +1054,24 @@
     "emerging": true
   },
   {
+    "id": "or-coriataln",
+    "title": "34e Conf\u00e9rence sur le Traitement Automatique des Langues Naturelles",
+    "acronym": "CORIA-TALN",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "https://coria-taln-2027.sciencesconf.org/",
+    "evidence": [
+      "openreview-verified:ls2n.fr/CORIA-TALN/2027/Conference",
+      "openreview-year:ls2n.fr/CORIA-TALN/2027/Conference",
+      "openreview:ls2n.fr/CORIA-TALN/2027/Conference"
+    ],
+    "emerging": true
+  },
+  {
     "id": "or-cpal",
     "title": "The Third Conference on Parsimony and Learning (Proceedings Track)",
     "acronym": "CPAL",
