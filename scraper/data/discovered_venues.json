@@ -1700,6 +1700,24 @@
     "emerging": true
   },
   {
+    "id": "or-fcrar",
+    "title": "Florida Conference on Recent Advances in Robotics",
+    "acronym": "FCRAR",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "https://fcrar.robolat.org/",
+    "evidence": [
+      "openreview-verified:FCRAR/2027/Conference",
+      "openreview-year:FCRAR/2027/Conference",
+      "openreview:FCRAR/2027/Conference"
+    ],
+    "emerging": true
+  },
+  {
     "id": "or-fdsl",
     "title": "Formal Description of Slavic Languages 18",
     "acronym": "FDSL",
