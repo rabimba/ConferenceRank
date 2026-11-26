@@ -4214,6 +4214,24 @@
     "emerging": true
   },
   {
+    "id": "or-saiv",
+    "title": "The 10th International Symposium on AI Verification",
+    "acronym": "SAIV",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "https://aiverification.org/2027/",
+    "evidence": [
+      "openreview-verified:SAIV/2027/Conference",
+      "openreview-year:SAIV/2027/Conference",
+      "openreview:SAIV/2027/Conference"
+    ],
+    "emerging": true
+  },
+  {
     "id": "or-salt",
     "title": "The 35th meeting of Semantics and Linguistic Theory",
     "acronym": "SALT",
@@ -4430,6 +4448,24 @@
       "openreview-verified:smfi.in/SMF/2025/Conference",
       "openreview-year:smfi.in/SMF/2025/Conference",
       "openreview:smfi.in/SMF/2025/Conference"
+    ],
+    "emerging": true
+  },
+  {
+    "id": "or-smilr",
+    "title": "Statistical Modelling and Inference for Language Research",
+    "acronym": "SMILR",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "https://s4ln.github.io/conference.html",
+    "evidence": [
+      "openreview-verified:SMILR/2027/Conference",
+      "openreview-year:SMILR/2027/Conference",
+      "openreview:SMILR/2027/Conference"
     ],
     "emerging": true
   },
@@ -4904,6 +4940,24 @@
       "openreview-verified:VAR4LCR/2025/Conference",
       "openreview-year:VAR4LCR/2025/Conference",
       "openreview:VAR4LCR/2025/Conference"
+    ],
+    "emerging": true
+  },
+  {
+    "id": "or-visbg",
+    "title": "VI Brazilian Symposium on Geomatics 2027",
+    "acronym": "VISBG",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "https://www.fct.unesp.br/#!/eventos/vi-simposio-de-geomatica/inicio/presentation/",
+    "evidence": [
+      "openreview-verified:VISBG/2027/Conference",
+      "openreview-year:VISBG/2027/Conference",
+      "openreview:VISBG/2027/Conference"
     ],
     "emerging": true
   },
