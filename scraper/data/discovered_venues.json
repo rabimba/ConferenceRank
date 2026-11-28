@@ -3714,6 +3714,24 @@
     "emerging": true
   },
   {
+    "id": "or-nodalida",
+    "title": "The 26th Nordic Conference on Computational Linguistics",
+    "acronym": "NoDaLiDa",
+    "rank": "Unranked",
+    "for_codes": [],
+    "categories": [
+      "General & Interdisciplinary CS"
+    ],
+    "dblp_url": null,
+    "website": "http://nodalida2027.ku.dk/",
+    "evidence": [
+      "openreview-verified:NoDaLiDa/2027/Conference",
+      "openreview-year:NoDaLiDa/2027/Conference",
+      "openreview:NoDaLiDa/2027/Conference"
+    ],
+    "emerging": true
+  },
+  {
     "id": "or-norsk",
     "title": "Norsk Spr\u00e5kteknologikonferanse 2026 \u2013 NorSK 1",
     "acronym": "NorSK",
